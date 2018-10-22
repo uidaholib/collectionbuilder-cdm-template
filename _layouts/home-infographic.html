@@ -1,0 +1,28 @@
+---
+layout: home-default
+---
+{%- assign items = site.data[site.metadata] -%}
+{% include index/jumbotron.html %}
+{% include index/collection-nav.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+
+      {% include index/description.html %} {% include index/carousel.html %}
+
+    </div>
+    <div class="col-md-4">
+
+      {% include index/eras.html %} 
+      {% include index/subjects.html %} 
+      {% include index/forms.html %} 
+      {% include index/documents.html %}
+
+    </div>
+    <div class="col-md-12">
+
+      {% include index/sources.html %}
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+field,display-name,dc-map,glossary-link
+title,Title,DC.title,
+catalog-number,Catalog Number,
+source,Source,,
+description,Description,DC.description,
+site-location,Site Location,,
+site-date,Site Date,,
+functional-category,Functional Category,,
+material,Material,,true
+vessel-form,Vessel Form,,true
+artifact-dimensions,Artifact Dimensions,,
+pigment-application,Pigment Application,,true
+decoration-type,Decoration Type,,true
+exterior-decoration-method,Exterior Decoration Method,,true
+exterior-decoration-color,Exterior Decoration Color,,
+exterior-decoration-elements,Exterior Decoration Elements,,
+interior-decoration-method,Interior Decoration Method,,true
+interior-decoration-color,Interior Decoration Color,,
+interior-decoration-elements,Interior Decoration Elements,,
+marks,Marks,,
+manufacture-origin,Manufacture Origin,,
+manufacture-range,Manufacture Date Range,,

@@ -1,0 +1,43 @@
+# Jekyll Digital Collection Generator
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
+# Site settings
+title: Collection Title
+tagline: "Digital collection generator"
+description: "Bigger description about synopsis..."
+keywords: university of idaho, digital collections
+email: ewilliamson@uidaho.edu
+
+# url variables
+#url: https://uidaholib.github.io
+url: https://www.lib.uidaho.edu
+#baseurl: /HJCCC_source
+baseurl: /digital/hjccc
+collection-ids: HJCCC
+
+cdm-url: https://digital.lib.uidaho.edu
+digital-assets: https://www.lib.uidaho.edu/digital/assets
+
+jumbotron-image: /objects/aacc-bowls-4-center-crop4.jpg
+
+
+#style with Bootswatch
+bstheme: # leave blank or comment out for plain bootstrap
+
+# Dev variables: 
+# choose metadata set, i.e. easily switch between full or dev version
+# be sure to also change page_gen data setting!
+metadata: hjccc-objects
+
+# collection display variables 
+# see _data/metadata-fields.csv
+
+# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - data: 'hjccc-objects'
+    template: 'items'
+    name: 'object-id'
+    dir: 'data'
+    extension: 'html'    

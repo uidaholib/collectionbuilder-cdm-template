@@ -1,0 +1,11 @@
+---
+# facets generator
+---
+{%- assign fields = "functional-category,material,vessel-form,pigment-application,decoration-type,exterior-decoration-method,exterior-decoration-color,exterior-decoration-elements,interior-decoration-method,interior-decoration-color,interior-decoration-elements,manufacture-origin,manufacture-range" | split: "," -%}
+facets
+
+{% for f in fields %}
+
+{% include util/find-uniq-csv field=f split-on=";" %}
+
+{% endfor %}

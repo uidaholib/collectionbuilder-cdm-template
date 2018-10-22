@@ -1,0 +1,38 @@
+<meta name="author" content="{{ page.creator }}" >
+<meta name="keywords" content="{{ page.subject }}" >
+<meta name="description" content="Research document from the Idaho Waters Digital Library. {{ page.description | truncatewords: 25 }}">
+<!-- DC meta -->
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.title" content="{{ page.title | xml_escape }}" xml:lang="en" />
+<meta name="DC.creator" content="{{ page.creator | xml_escape }}" xml:lang="en" />
+<meta name="DCTERMS.created" content="{{ page.date | xml_escape }}" xml:lang="en" scheme="DCTERMS.W3CDTF" />
+<meta name="DC.description" content="{{ page.description | truncatewords: 25 | xml_escape  }}" xml:lang="en" />
+{% assign subs = page.subject | split: ";" %}{% for s in subs %}<meta name="DC.subject" content="{{ s | strip | xml_escape }}" xml:lang="en" />
+{% endfor %}
+<meta name="DC.type" content="{{ page.type | xml_escape }}" xml:lang="en" />
+<!-- Open Graph meta -->
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Research document from the Idaho Waters Digital Library. {{ page.description | truncatewords: 25 }}" />
+<meta property="og:image" content="https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": {{ page.title | jsonify }},
+    "author": [ {% assign authors = page.creator | split: ";" %}{% for author in authors %}{{ author | strip | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %} ],
+    "datePublished": {{ page.date | jsonify }},
+    "description": {{ page.description | truncatewords: 28 | jsonify }},
+    "about": [ {% for s in subs %}{{ s | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %} ],
+    {% if page.location %}"spatialCoverage": [ {% assign places = page.location | split: ";" %}{% for place in places %}{{ place | strip | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %} ],{% endif %}
+    "image": "https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg",
+    "url": {{ page.url | absolute_url | jsonify }}
+}
+</script> 
+<!-- breadcrumbs schema -->
+<script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "{{ "/" | absolute_url }}", "name": "IWDL", "image": "{{ "/images/pinecreek.jpg" | absolute_url }}" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "{{ "/data/" | absolute_url }}", "name": "Documents" } },{ "@type": "ListItem", "position": 3, "item": { "@id": "{{ page.url | absolute_url }}", "name": "{{ page.title }}", "image": "https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg" } }] }</script>

@@ -1,0 +1,53 @@
+{%- assign items = site.data[site.metadata] -%}
+<!-- load leaflet dependencies -->
+<script src="{{ '/assets/leaflet/leaflet.js' | prepend: digital-assets }}"></script>
+<script src="{{ '/assets/leaflet/fuse.min.js' | prepend: digital-assets }}"></script>
+<script src="{{ '/assets/leaflet/leaflet.fusesearch.js' | prepend: digital-assets }}"></script>
+
+<!-- add collection map data -->
+<script>
+    var geodata = { "type": "FeatureCollection", "features": [ 
+    {% for item in items %}{% if item.latitude and item.longitude %}
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude }},{{ item.latitude }}] }, "properties":{ "title": {{ item.title | jsonify }}, "creator": {{ item.creator | jsonify }}, "date": {{ item.date | jsonify }}, "subjects": {{ item.subject | jsonify}}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    ]};
+</script>
+
+<!-- int map and search -->
+<script>
+    /* init and set zoom */
+    var map = L.map('map').setView([{{page.mapcenter}}], {{page.zoom}});
+    /* load map layer */ 
+    /* var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+        maxZoom: 16
+    });
+    Esri_NatGeoWorldMap.addTo(map);
+     */
+    var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+    });
+    Esri_WorldStreetMap.addTo(map);
+
+    /* add search, https://github.com/naomap/leaflet-fusesearch */
+    var options = {
+        title: 'Search documents',
+        placeholder: 'Search documents...',
+        threshold: 0.35 // 1 = anything, 0 = exact match
+    };
+    var searchCtrl = L.control.fuseSearch(options);
+    searchCtrl.addTo(map);
+    searchCtrl.indexFeatures(geodata.features, ['title', 'subjects', 'date', 'creator']);
+
+    /* add geojson marker and popup */
+    L.geoJson(geodata, {
+        pointToLayer: function(feature,latlng){
+            var marker = L.marker(latlng);
+            marker.bindPopup('<h5>' + feature.properties.title + '</h5><p>Authors: '+ feature.properties.creator + '<br>Date: ' + feature.properties.date + '<br>Subjects: ' + feature.properties.subjects + '<br>Identifier: ' + feature.properties.id + '</p><h5><a href="{{ site.baseurl }}/docs/'+feature.properties.id+'.html" >View Document</a><h5>');
+            return marker;
+        }, 
+        onEachFeature: function (feature, layer) {
+            feature.layer = layer;
+        }
+    }).addTo(map);
+
+</script>

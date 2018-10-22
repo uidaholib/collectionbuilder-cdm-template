@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{% assign items = site.data[site.metadata] %}
+{% assign eras = "Tokugawa (1603-1868);Early Meiji (1868-1885);Middle Meiji (1885-1895);Late Meiji (1895-1912);Taisho (1912-1926);Showa (1926-1989)" | split: ";" %}
+
+<style> .img-thumbnail { height: 200px; } </style>
+
+<div class="dropdown">
+    <button class="btn btn-ponderosa-pine dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="year-nav">
+      {% for y in eras %}
+      <a class="dropdown-item" href="#{{ y | slugify }}">{{ y }}</a>{% endfor %}
+    </div>
+</div>
+
+{{ content }}
+
+<table id="timeline" class="table table-striped">
+  {% for era in eras %}
+  <tr>
+    <th><h3 id="{{ era | slugify }}">{{ era }}</h2></th>
+    <td>
+    {% for item in items %}{% if item.timeline-era contains era %}
+    {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.manufacture-range }}"></a>
+    {% endif %}{% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

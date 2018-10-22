@@ -1,0 +1,9 @@
+<div class="card mb-3" >
+  <div class="card-body">
+    <h5 class="card-title">Data</h5>
+    <p class="card-text"><a href="{{ '/data/' | relative_url }}">{{ items | size }} items, {{ site.data.hjccc-images | size }} images</a></p>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#data">Download Data</button>
+
+    {% include data-download.html%}
+  </div>
+</div>

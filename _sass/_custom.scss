@@ -1,0 +1,130 @@
+/* base */
+/*body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    color: $text-color;
+    background: $background-color;
+}*/
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    color: $black-color;
+}
+a {
+    color: $clearwater;
+    text-decoration: none;
+    font-weight: normal;
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+/* banner */
+#title {
+    a { 
+        font-size: 32px;
+        font-weight: 300;
+        color: $text-color;
+    }
+    h1 {
+        line-height: 1;
+    }
+    p {
+        font-size: 13.5px;
+        line-height: 1;
+    }
+ }
+/* nav bar */
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    color: $text-color;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: darken($link-color, 25%);
+    text-decoration: underline;
+}
+nav, footer {
+    background: $nav-background;
+}
+
+/** all Collections nav **/
+.ijclist{
+    padding-left:0px;
+}
+#ijclink{
+    font-size:13px !important;
+    margin-left:20px;
+}
+.hangingindent {
+    padding-left: 22px ;
+    text-indent: -22px ;
+}
+
+/* item page */
+.gallery-img {
+    cursor: pointer;
+}
+.jumbotron {
+    height:400px;
+    @include media-query($on-palm) {
+        height:430px;
+    }
+}
+dt {
+    font-size:20px;
+}
+.glossary-def {
+    font-size:26px;
+}
+.lg-outer .lg-thumb-outer {
+    background-color: transparent !important;
+}
+.nav-link {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+.jumbo-text{
+    background:rgba(171, 167, 167, 0.0);
+}    
+.card-title{
+    font-size:1.5rem;
+}    
+.collection-list{
+    list-style: none;
+    padding-left:10px;
+    ul{
+       list-style: none;
+    padding-left:20px; 
+    }
+    a{
+        font-weight: normal;
+    }
+}
+#collectionslink {
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    font-size: 14px;
+    background: #999;
+    border-radius: 0px 0px 0px 20px;
+    padding: 5px 20px;
+    border-bottom: 1px #dadada solid;
+    margin: 0;
+    font-weight: 300; }
+  
+#collectionslink p {
+    margin: 0; }
+/* glossary */
+#glossary-list {
+    a {
+        text-decoration: underline;
+    }
+}

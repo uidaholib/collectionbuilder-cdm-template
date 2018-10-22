@@ -1,0 +1,91 @@
+---
+layout: default
+gallery: true
+---
+{%- assign fields = site.data.metadata-fields -%}
+{%- assign glossary = site.data.hjccc-glossary | map: "search" -%}
+
+<div class="container py-3">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/data/' | absolute_url }}">Items</a></li>
+        <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-3" id="lightgallery" >
+            {% assign images = site.data.hjccc-images | where: "object-id", page.object-id %}
+            {% for image in images %}
+            <div class="card mb-2">
+                <div>
+                    <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
+                        <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                        <p class="text-center"><small>Click to view full screen</small></p>
+                    </div>
+                </div>
+                <div class="text-center my-2">
+                    <p>{{ image.title }}</p>
+                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-outline-clearwater" title="image download">Download Image</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-6">
+            <div id="item-metadata" class="metadata">
+                <dl>
+                    {% for f in fields %}{% if page[f.field] %}
+                    <dt class="field">{{ f.display-name }}:</dt>
+                    <dd class="field-value">
+                        {% if f.glossary-link == "true" %}
+                        {% if glossary contains page[f.field] %}
+                        <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/glossary/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
+                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
+                        {% else %}{{ page[f.field] }}{% endif %}
+                    </dd>
+                    {% endif %}{% endfor %}
+                </dl>
+            </div>
+        </div>
+        <div class="col-md-3">
+                <div class="card mb-2">
+                        <div class="card-header">Related Items</div>
+                        <div class="card-body">
+                            {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
+                            <p>
+                            {% for f in facets %}
+                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: '/browse.html#' | relative_url }}">{{ page[f] }}</a> 
+                            {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+            <div class="card mb-2">
+                <div class="card-header">Source</div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Preferred Image Citation:</dt> 
+                        <dd>{{ page.preferred-image-citation }}</dd>
+                        <dt>Metadata Created By:</dt>
+                        <dd>Renae Campbell (2018)</dd>
+                        <dt>Reference Link:</dt>
+                        <dd>{{ page.url | absolute_url }}</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="card mb-2">
+                    <div class="card-header">Rights</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Rights:</dt> 
+                            <dd>{{ page.rights }}</dd>
+                            <dt>Standardized Rights:</dt>
+                            <dd><a target="_blank" href="{{ page.standardized-rights }}">{{ page.standardized-rights }}</a></dd>
+                        </dl>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">&laquo; Back to browse</a>
+    </div>
+</div>

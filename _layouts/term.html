@@ -1,0 +1,49 @@
+---
+layout: default
+gallery: true
+---
+{% assign objects = site.data.hjccc-objects %}
+
+<div class="container py-3">
+
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ '/glossary/' | absolute_url }}">Glossary</a></li>
+            <li class="breadcrumb-item active">{{ page.term }}</li>
+        </ul>
+    
+        <div class="row" id="lightgallery">
+            <div class="col-md-6" >
+                <h2>{{ page.term }}</h2>
+                <p>{{ page.definition }}</p>
+                <p><a class="btn btn-clearwater btn-lg" id="gallery-open">View Gallery</a>
+                    <a class="btn btn-outline-secondary btn-lg ml-2" href="{{ '/browse.html#' | append: page.search | relative_url }}">Browse Records</a></p>
+            </div>
+            
+            {% for item in objects %}
+            {% if item.subjects contains page.search %}
+            {% assign image = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+            <div class="col-6 col-md-3">
+                <div class="card mb-2">
+                    <div>
+                        <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
+                            <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_th.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="text-center my-2">
+                        <p class="d-none d-md-block">{{ image.title }}</p>
+                        <a href="{{ '/data/' | absolute_url | append: image.object-id | append: '.html' }}" class="btn btn-outline-clearwater" title="image download">Item Record</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
+        <div class="text-center">
+            <a class="btn btn-secondary" href="{{ '/glossary/' | relative_url }}" role="button">&laquo; Glossary</a>
+        </div>
+    </div>
+
+</div>
