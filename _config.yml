@@ -4,26 +4,41 @@
 # JEKYLL_ENV=production jekyll build
 
 # Site settings
+# title appears in the header
 title: Collection Title
+# tagline appears in the header, should be short
 tagline: "Digital collection generator"
+# description is for metadata tags
+# might appear in search result lists, keep around 160 characters max
 description: "Bigger description about synopsis..."
+# for metatags
 keywords: university of idaho, digital collections
+# contact person
 email: ewilliamson@uidaho.edu
 
+# images
+# banner-image appears in index header
+banner-image: /assets/example.jpg
+# featured-image appears in meta tags
+# represents the collection in other aggregations
+featured-image: /objects/aacc-bowls-4-center-crop4.jpg
+
 # url variables
-#url: https://uidaholib.github.io
+# library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
-#baseurl: /HJCCC_source
+# location on the website, normally in /digital
+# e.g. /digital/hjccc
 baseurl: /digital/hjccc
+# CDM collection alias
 collection-ids: HJCCC
 
+# url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu
+# url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
 
-jumbotron-image: /objects/aacc-bowls-4-center-crop4.jpg
-
-
-#style with Bootswatch
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bstheme: # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
