@@ -3,12 +3,13 @@ layout: home-default
 ---
 {%- assign items = site.data[site.metadata] -%}
 {% include index/jumbotron.html %}
-{% include index/collection-nav.html %}
+{% include collection-nav.html %}
 <div class="container">
   <div class="row">
     <div class="col-md-8">
 
-      {% include index/description.html %} {% include index/carousel.html %}
+      {% include index/description.html %}
+      {% include index/carousel.html %}
 
     </div>
     <div class="col-md-4">
