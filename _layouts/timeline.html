@@ -1,30 +1,36 @@
 ---
 layout: page
 ---
-
-{% assign items = site.data[site.metadata] %}
-{% assign eras = "Tokugawa (1603-1868);Early Meiji (1868-1885);Middle Meiji (1885-1895);Late Meiji (1895-1912);Taisho (1912-1926);Showa (1926-1989)" | split: ";" %}
-
-<style> .img-thumbnail { height: 200px; } </style>
-
-<div class="dropdown">
-    <button class="btn btn-ponderosa-pine dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="year-nav">
-      {% for y in eras %}
-      <a class="dropdown-item" href="#{{ y | slugify }}">{{ y }}</a>{% endfor %}
+{%- if page.year-navigation -%}
+{%- assign navYears = page.year-navigation | split: ";" -%}
+<ul class="nav nav-pills float-right" id="year-nav">
+  <li class="nav-item dropdown ">
+    <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Year</a>
+    <div class="dropdown-menu">
+      {% for y in navYears %}
+      <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
     </div>
-</div>
+  </li>
+</ul>
+{%- endif -%}
 
 {{ content }}
 
+{% assign items = site.data[site.metadata] %}
+{% assign raw-dates = site.data.metadata | map: 'date' | compact%}
+{% capture clean-years %}{% for date in raw-dates %}{% if date contains "-" %}{{date | split: "-" | first }}{% elsif date contains "/" %}{{ date | split: "/" | last }}{% else %}{{ date }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{% endcapture %}
+{%- assign years = clean-years | split: ";" | sort  -%}
+{%- assign uniqueYears = years | uniq | sort -%}
+
+<h3><a href="#{{ years | first }}">{{ years | first }}</a> to <a href="#{{ years | last }}">{{ years | last }}</a></h3>
+
 <table id="timeline" class="table table-striped">
-  {% for era in eras %}
+  {% for year in uniqueYears %}
   <tr>
-    <th><h3 id="{{ era | slugify }}">{{ era }}</h2></th>
+    <th><h3 id="{{ year }}">{{ year }}</h3></th>
     <td>
-    {% for item in items %}{% if item.timeline-era contains era %}
-    {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
-    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.manufacture-range }}"></a>
+    {% for item in items %}{% if item.date contains year %}
+    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
     {% endif %}{% endfor %}
     </td>
   </tr>
