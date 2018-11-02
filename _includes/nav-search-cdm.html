@@ -1,0 +1,10 @@
+<script>
+    function cdm_search() {
+        var query = document.getElementById("nav-search").value;
+        window.open("https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.collection-ids }}/searchterm/" + encodeURI(query) + "/field/all/mode/all/conn/and/order/title/ad/asc", "_blank" );
+    }
+</script>
+<form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="cdm_search(); return false;">
+    <input id="nav-search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-pride-gold my-2 my-sm-0" type="submit">Search</button>
+</form>
