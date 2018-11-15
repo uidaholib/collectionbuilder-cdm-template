@@ -2,8 +2,7 @@
 layout: default
 gallery: true
 ---
-{%- assign fields = site.data.metadata-fields -%}
-{%- assign glossary = site.data.hjccc-glossary | map: "search" -%}
+{%- assign fields = site.data.metadata-config -%}
 
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -39,7 +38,7 @@ gallery: true
                         {% if f.glossary-link == "true" %}
                         {% if glossary contains page[f.field] %}
                         <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/glossary/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
-                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
+                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
@@ -53,7 +52,7 @@ gallery: true
                             {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
                             <p>
                             {% for f in facets %}
-                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: '/browse.html#' | relative_url }}">{{ page[f] }}</a> 
+                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ page[f] }}</a> 
                             {% endfor %}
                             </p>
                         </div>

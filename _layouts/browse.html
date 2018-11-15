@@ -3,54 +3,45 @@ layout: page
 ---
 {% assign items = site.data[site.metadata] %}
 
-<h1 class="text"> Search Items</h1>
-    <p class="text">Use this page to search by different attributes, such as vessel form; decoration type, method, element or color; paste type; or vessel size. To view attribute terms by frequency, visit the <a href="{{ '/subjects.html' | relative_url }}" >Subjects page</a>.</p>
+{{ content }}
 
-<h2 class="text-center">
-    <input type="text" id="quicksearch" placeholder=" Filter ... " > 
-    <input class="btn btn-pride-gold align-top" title="Search" type="submit" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
-    <a class="btn btn-secondary align-top filter" href="#" data-filter="">Reset</a>
-    <br class="hidden-md-up">
-    <span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} items</span>
-</h2>
+<div class="row mb-3 justify-content-center">
+    <div class="col-md-8 text-center">
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control form-control-lg" id="quicksearch" placeholder="Filter ... " > 
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" onclick="filterItems()">Search</button>
+                <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>    
+            </div>
+        </div>
+        <span class="info2 h2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} items</span>
+    </div>
+</div>
 
 <div class="row" id="browse-items">
     {% for item in items %}
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-    <div class="card" >
-        <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}">
-            {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
-            <img class="card-img-top lazy" {% if forloop.index < 20 %}src{% else %}data-original{% endif %}="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}">
-        </a>
-        <div class="card-body">
-            <h4 class="card-title">{{ item.title }}</h4>
-            {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
-            <p>
-            {% for f in facets %}
-                <a class="btn btn-sm btn-clearwater m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ item[f] | trim | uri_escape | prepend: '/browse.html#' | relative_url }}">{{ item[f] }}</a> 
-            {% endfor %} 
-            </p>
-            <p class="card-text"><strong>Decoration Type: </strong>{{ item.decoration-type }}</p>
-            <p class="card-text"><strong>Description: </strong>{{ item.description | truncatewords: 20 }}</p>
-            <p class="card-text"><strong>Source: </strong>{{ item.source }}</p>
-            <p class="card-text"><strong>Catalog Number: </strong>{{ item.catalog-number }}</p>
-            <p class="d-none card-text">{{ item.subjects }}</p>
-            <p class="d-none card-text">{{ item.artifact-dimensions}}</p>
-            <p class="d-none card-text">{{ item.site-location}}</p>
-            <p class="d-none card-text">{{ item.site-date}}</p>
-            <p class="d-none card-text">{{ item.pigment-application}}</p>
-            <p class="d-none card-text">{{ item.exterior-decoration-method}}</p>
-            <p class="d-none card-text">{{ item.exterior-decoration-color}}</p>
-            <p class="d-none card-text">{{ item.exterior-decoration-elements}}</p>
-            <p class="d-none card-text">{{ item.interior-decoration-method}}</p>
-            <p class="d-none card-text">{{ item.interior-decoration-color}}</p>
-            <p class="d-none card-text">{{ item.interior-decoration-elements}}</p>
-            <p class="d-none card-text">{{ item.marks}}</p>
-            <p>
-                <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" class="btn btn-pride-gold" title="link to {{ item.title | escape }}">View Item</a>
-            </p>
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="{{ '/data/' | absolute_url | append: item.resource-identifier | append: '.html' }}">
+                <img class="card-img-top lazy" {% if forloop.index < 20 %}src="{{ site.objects | append: '/' | append: page.resource-identifier | append: '_sm.jpg' }}"{% else %}data-original="{{ site.objects | append: '/' | append: page.resource-identifier | append: '_sm.jpg' }}"{% endif %} alt="collection object image">
+            </a>
+            <div class="card-body text-center">
+                <h3 class="card-title">{{ item.title }}</h3>
+                <p class="card-text"><strong>Date:</strong> {{ item.date }}</p>
+                <p>
+                    {%- assign subjects = item.subject | split: ';' -%}
+                    {%- assign location = item.place | split: ';' -%}
+                    {%- assign topics = subjects | concat: location -%}
+                    {% for topic in topics %}{% if topic !=" " %}
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | trim |escape }}" href="{{ topic | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ topic }}</a> 
+                    {% endif %}{% endfor %} 
+                </p>
+                <p class="card-text">{{item.description | truncatewords: 20}}</p>
+                <p>
+                    <a href="{{ '/data/' | absolute_url | append: item.resource-identifier | append: '.html' }}" class="btn btn-info" title="link to {{ item.title | escape }}">View Item</a>
+                </p>
+            </div>
         </div>
-    </div>
     </div>
     {% endfor %}
 </div>

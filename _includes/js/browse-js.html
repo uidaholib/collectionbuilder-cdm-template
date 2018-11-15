@@ -1,4 +1,4 @@
-<script src="{{ '/assets/js/jquery.lazyload.js' | prepend: digital-assets }}"></script>
+<script src="{{ '/js/jquery.lazyload.js' | prepend: site.digital-assets }}"></script>
 <script>
   var $imgs = $("img.lazy");
   // Lazy Load images when they appear in DOM
@@ -33,13 +33,12 @@
     $(this).addClass('active');
     $('a.filter').not(this).removeClass('active');
       var filterValue = $(this).attr('data-filter');
-      var filterClass = $(this).attr('data-filter').replace(" ","-").replace(" ","-");
+      
     $('#quicksearch').val($('#quicksearch').val() + filterValue);
     $('#goButton').click();
-        window.location.hash = filterValue; 
-      var filterValueclass = "." + filterClass;
-    $(filterValueclass).addClass('active');
+    
     $imgs.lazyload();
+    $("#goButton").focus();
   };
   // run filterit function when link/button with class filter clicked
   $('a.filter').click(filterit);
@@ -59,8 +58,7 @@
   });
 
   // get hash from url
-  var hashfilter = location.hash.substr(1).replace(/%20/g, " ");
-  var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-"); 
+  var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " "); 
 
   $(document).ready(function() {
     $("#quicksearch").focus();
@@ -68,7 +66,6 @@
     // code to be executed if a hash is contained in the url
     $('#quicksearch').val($('#quicksearch').val() + hashfilter);
     $('#goButton').click();
-    $(hashfilterclass).addClass('active');
     $imgs.lazyload();
     }
     else{ }

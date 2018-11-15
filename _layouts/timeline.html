@@ -30,7 +30,7 @@ layout: page
     <th><h3 id="{{ year }}">{{ year }}</h3></th>
     <td>
     {% for item in items %}{% if item.date contains year %}
-    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="{{ site.objects | append: '/' | append: page.resource-identifier | append: '_th.jpg' }}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
     {% endif %}{% endfor %}
     </td>
   </tr>

@@ -6,9 +6,8 @@
     {%- for item in items -%}
     {
         "title": {{ item.title | jsonify }},
-        "catalog-number": {{ item.catalog-number | jsonify }},
-        "vessel-form": {{ item.vessel-form | jsonify }},
-        "source": {{ item.source | jsonify }},
+        "date": {{ item.date | jsonify }},
+        "subjects": {{ item.subject | split: ';' | jsonify }},
         "description": {{ item.description | truncatewords: 20 | jsonify }},
         "link": {{ "/data/" | absolute_url | append: item.object-id | append: ".html" | jsonify }}
     }{% unless forloop.last %},{% endunless %}

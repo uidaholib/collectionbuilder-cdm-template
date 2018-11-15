@@ -2,7 +2,7 @@
 # create custom metadata csv for download
 ---
 {%- assign items = site.data[site.metadata] -%}
-{%- assign fields = "title,catalog-number,source,description,site-location,site-date,functional-category,material,vessel-form,artifact-dimensions,pigment-application,decoration-type,exterior-decoration-method,exterior-decoration-color,exterior-decoration-elements,interior-decoration-method,interior-decoration-color,interior-decoration-elements,marks,manufacture-origin,manufacture-range,publisher,rights,standardized-rights,preferred-image-citation,identifier,metadata-creator,format,type" | split: "," -%}
+{%- assign fields = site.data.metadata-config | map: "field" -%}
 {{ fields | join: "," }}
 {% for item in items %}{% for f in fields %}"{{ item[f] }}",{% endfor %},"{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}"
 {% endfor %}

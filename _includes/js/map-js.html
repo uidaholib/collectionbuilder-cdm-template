@@ -1,14 +1,14 @@
 {%- assign items = site.data[site.metadata] -%}
 <!-- load leaflet dependencies -->
-<script src="{{ '/assets/leaflet/leaflet.js' | prepend: digital-assets }}"></script>
-<script src="{{ '/assets/leaflet/fuse.min.js' | prepend: digital-assets }}"></script>
-<script src="{{ '/assets/leaflet/leaflet.fusesearch.js' | prepend: digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
 
 <!-- add collection map data -->
 <script>
     var geodata = { "type": "FeatureCollection", "features": [ 
     {% for item in items %}{% if item.latitude and item.longitude %}
-    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude }},{{ item.latitude }}] }, "properties":{ "title": {{ item.title | jsonify }}, "creator": {{ item.creator | jsonify }}, "date": {{ item.date | jsonify }}, "subjects": {{ item.subject | jsonify}}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":{ "title": {{ item.title | jsonify }}, "creator": {{ item.creator | jsonify }}, "date": {{ item.date | jsonify }}, "subjects": {{ item.subject | jsonify}}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 </script>
 
@@ -42,7 +42,7 @@
     L.geoJson(geodata, {
         pointToLayer: function(feature,latlng){
             var marker = L.marker(latlng);
-            marker.bindPopup('<h5>' + feature.properties.title + '</h5><p>Authors: '+ feature.properties.creator + '<br>Date: ' + feature.properties.date + '<br>Subjects: ' + feature.properties.subjects + '<br>Identifier: ' + feature.properties.id + '</p><h5><a href="{{ site.baseurl }}/docs/'+feature.properties.id+'.html" >View Document</a><h5>');
+            marker.bindPopup('<h3>' + feature.properties.title + '</h3>' + '<img class="" style="height:160px;" src="{{ site.objects }}/' +  feature.properties.id + '_sm.jpg" alt="thumbnail">' + '<p>Date: ' + feature.properties.date + '<br>Subjects: ' + feature.properties.subjects + '<br>Location: ' + feature.properties.place + '<br>Coordinates: ' + feature.geometry.coordinates[1] + ', ' + feature.geometry.coordinates[0]  + '</p><h4><a href="{{ '/data/' | absolute_url }}' + feature.properties.id + '.html" >View Item</a><h4>');
             return marker;
         }, 
         onEachFeature: function (feature, layer) {

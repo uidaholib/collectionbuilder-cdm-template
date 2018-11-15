@@ -10,5 +10,5 @@ Use: {% include util/find-uniq-csv field="example" split-on=";" %}
 {{ include.field }},count,link
 {% for unique in uniqueArray %}
 {%- assign count = array | where_exp: "item", "item == unique" | size -%}
-"{{ unique }}",{{ count }},"{{ unique | uri_escape | prepend: "/browse.html#" | absolute_url }}"
+"{{ unique }}",{{ count }},"{{ unique | url_param_escape | prepend: "/browse.html#" | absolute_url }}"
 {% endfor %}
