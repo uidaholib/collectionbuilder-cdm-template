@@ -17,14 +17,14 @@ gallery: true
             {% for image in images %}
             <div class="card mb-2">
                 <div>
-                    <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
-                        <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                    <div class="gallery-img" data-src="{% include image/original.html %}">
+                        <img src="{% include image/large.html %}" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
                         <p class="text-center"><small>Click to view full screen</small></p>
                     </div>
                 </div>
                 <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-outline-clearwater" title="image download">Download Image</a>
+                    <a href="{% include image/original.html %}" target="_blank" class="btn btn-outline-clearwater" title="image download">Download Image</a>
                 </div>
             </div>
             {% endfor %}
@@ -38,7 +38,7 @@ gallery: true
                         {% if f.glossary-link == "true" %}
                         {% if glossary contains page[f.field] %}
                         <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/glossary/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
-                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
+                        {% elsif f.field == "subject" %}<a href="{{ page[f.field] | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}

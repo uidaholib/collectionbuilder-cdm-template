@@ -5,34 +5,51 @@
 
 # Site settings
 # title appears in the header
-title: Collection Title
+#title: Collection Title
 # tagline appears in the header, should be short
-tagline: "Digital collection generator"
+#tagline: "Digital collection generator"
 # description is for metadata tags
 # might appear in search result lists, keep around 160 characters max
-description: "Bigger description about synopsis..."
+#description: "Bigger description about synopsis..."
 # for metatags
 keywords: university of idaho, digital collections
 # contact person
 email: ewilliamson@uidaho.edu
+
+title: Psychiana Digital Collection
+tagline: Materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s
+subjects:  #separate semi-colon(';')
+description: "Materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s" 
+mediatypes: images; documents; audio; correspondence #options[documents,images,video,sound,data] separate semi-colon(';')
+locations: Moscow, ID #separate by semi-colon(';')
+latitude: 46.733711 #to determine center of map
+longitude: -117.001252 #to determine center of map
+
+
 
 # images
 # banner-image appears in index header
 banner-image: /assets/example.jpg
 # featured-image appears in meta tags
 # represents the collection in other aggregations
-featured-image: /objects/aacc-bowls-4-center-crop4.jpg
+featured-image: http://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=psychiana&CISOPTR=548&action=2&DMSCALE=80&DMWIDTH=2000&DMHEIGHT=800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0
 
 # url variables
 # library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/hjccc
+baseurl: /digital/psychiana
 # CDM collection alias
-collection-ids: HJCCC
+collection-id: psychiana
 # Objects dir location
-objects: https://www.lib.uidaho.edu/digital/objects/ferl
+objects: https://www.lib.uidaho.edu/digital/objects/
+
+# repository variables (leave blank if self-contained)
+repo-url: https://digital.lib.uidaho.edu 
+repo-collection-id: psychiana
+repo-link: #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
+
 
 # url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu
@@ -48,19 +65,19 @@ navbar-color: navbar-dark
 navbar-background: bg-secondary
 # theme with Bootswatch (https://github.com/thomaspark/bootswatch)
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bootswatch: # leave blank or comment out for plain bootstrap
+bootswatch: materia # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version
 # be sure to also change page_gen data setting!
-metadata: hjccc-objects
+metadata: psychiana
 
 # collection display variables 
 # see _data/metadata-config.csv
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'hjccc-objects'
+  - data: 'psychiana'
     template: 'items'
     name: 'object-id'
     dir: 'data'
