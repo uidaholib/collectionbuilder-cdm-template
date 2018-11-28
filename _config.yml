@@ -32,7 +32,7 @@ longitude: -117.001252 #to determine center of map
 banner-image: /assets/example.jpg
 # featured-image appears in meta tags
 # represents the collection in other aggregations
-featured-image: http://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=psychiana&CISOPTR=548&action=2&DMSCALE=80&DMWIDTH=2000&DMHEIGHT=800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0
+featured-image: https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=psychiana&CISOPTR=548&action=2&DMSCALE=80&DMWIDTH=2000&DMHEIGHT=800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0
 
 # url variables
 # library's domain (only changed if using github pages)
