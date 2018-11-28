@@ -26,8 +26,8 @@ layout: page
 
 <table id="timeline" class="table table-striped">
   {% for year in uniqueYears %}
-  <tr>
-    <th><h3 id="{{ year }}">{{ year }}</h3></th>
+  <tr id="{{ year }}">
+    <th><h3 >{{ year }}</h3></th>
     <td>
     {% for item in items %}{% if item.date contains year %}
     <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>

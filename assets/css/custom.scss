@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // base variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'oswald',"Helvetica Neue", Helvetica, Arial, sans-serif;
 $text-color:       #111;
 $black-color:       #111;
 $background-color: #fdfdfd;
@@ -57,7 +57,7 @@ $gray-800: #191919;
 
 $theme-colors: (
   primary: $blue,
-  success: $green,
+  success: $yellow,
   info: $cyan,
   warning: $yellow,
   danger: $red,

@@ -22,15 +22,23 @@ layout: page
     {% for item in items %}
     <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
         <div class="card">
+                {% assign lowercase_type = item.type | downcase %} {% if lowercase_type contains ";" %}
+                {% elsif lowercase_type contains "image" %}
             <a href="{% include item-link.html %}">
-
-                <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/60.html %}" alt="Image of {{ item.title }}">
-                
+                <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title }}">           
             </a>
+            {%endif%}
             <div class="card-body text-center">
-                <h3 class="card-title">{{ item.title }}</h3>
-                <p class="card-text"><strong>Date:</strong> {{ item.date }}</p>
+                <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
+                <p class="card-text"><strong>Date:</strong> {{ item.date }} | Type:  {% assign lowercase_type = item.type | downcase %}
+    
+                    <a data-filter="{{ item.format | trim |escape | slice: -3,3 }}" href="{{ item.format | trim | slice: -3,3 | prepend: '/browse.html#' | relative_url }}" title="{{item.format | escape | slice: -3,3}}" class="filter"><i class="far {% if lowercase_type contains "image" %}fa-image{% elsif lowercase_type contains "text" %} fa-file{% elsif lowercase_type contains "sound" %} fa-file-audio{% elsif lowercase_type contains "video" %} fa-file-video{% endif %}"></i> <small></small></a>
+                </a></p>
                 <p>
+                        {% unless lowercase_type contains "image" %}<p >
+                                <a  target="_blank" href="{% include item-link.html %}">
+                                 <img class="card-img-top thumb lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}{% include image/thumb.html %}" alt="item thumbnail">
+                                </a></p> {% endunless %}
                     {%- assign subjects = item.subject | split: ';' -%}
                     {%- assign location = item.place | split: ';' -%}
                     {%- assign topics = subjects | concat: location -%}

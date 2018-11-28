@@ -24,7 +24,7 @@ mediatypes: images; documents; audio; correspondence #options[documents,images,v
 locations: Moscow, ID #separate by semi-colon(';')
 latitude: 46.733711 #to determine center of map
 longitude: -117.001252 #to determine center of map
-
+mediatypes: images,mp3,pdf # default to "images"
 
 
 # images
@@ -62,7 +62,7 @@ digital-assets: https://www.lib.uidaho.edu/digital/assets
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-navbar-background: bg-secondary
+navbar-background: bg-dark
 # theme with Bootswatch (https://github.com/thomaspark/bootswatch)
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: materia # leave blank or comment out for plain bootstrap
@@ -80,5 +80,5 @@ page_gen:
   - data: 'psychiana'
     template: 'items'
     name: 'object-id'
-    dir: 'data'
+    dir: 'items'
     extension: 'html'    

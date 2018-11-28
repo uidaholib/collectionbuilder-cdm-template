@@ -1,9 +1,9 @@
 field,display-name,dc-map,browse-link
-title,Item title,DC.title
+title,Title,DC.title
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 description,Description,DC.description
-subject,Subjects,DC.subject
+subject,Subjects,DC.subject,true
 place,Location
 latitude,Latitude
 longitude,Longitude

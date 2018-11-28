@@ -1,0 +1,1 @@
+{% if lowercase_type contains "image" %}{% include download/image.html %}{% elsif lowercase_type contains "text" %}{% include download/pdf.html %}{% elsif lowercase_type contains "sound" %}{% include download/mp3.html %}{% elsif lowercase_type contains "video" %} {% include download/video.html %}{%endif%}
