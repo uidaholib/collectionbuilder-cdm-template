@@ -16,19 +16,19 @@ gallery: true
          
             <div class="card mb-2">
                 <div>
-                    <div class="gallery-img" data-src="{% include image/original.html %}">
                         {% assign lowercase_type = page.type | downcase %}
-                        {% if lowercase_type contains ";" %}
-                        <p class="text-center">
-                            <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p> 
-                        {% elsif lowercase_type contains "image" %}
+                        {% if lowercase_type contains "image" %}
+                    <div class="gallery-img" data-src="{% include image/original.html %}">
                         <img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                         <p class="text-center"><small>Click to view full screen</small></p>
-                        {%else%}
+                    </div>
+                     {%else%}
+                     <div class="thumb-img">
                         <p class="text-center">
                             <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p>
-                            {%endif%}
+                            
                     </div>
+                    {%endif%}
                 </div>
                 <div class="text-center my-2">
                     <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="image download">Download {{page.format | slice: -3,3 }}</a>
@@ -105,3 +105,7 @@ gallery: true
 </div>
 
 
+<ul class="pager">
+        <li class="previous"><a href="#">Previous</a></li>
+        <li class="next"><a href="#">Next</a></li>
+      </ul>

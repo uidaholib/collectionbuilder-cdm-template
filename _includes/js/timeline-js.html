@@ -11,11 +11,12 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
     // get hash from url
-  var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " "); 
+  
  
   $(document).ready(function(){
-    if($("tr").attr("id") == hashfilter)
-    {$("#" + hashfilter).addClass("bg-dark");
-            }
+    var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " "); 
+   
+        $("#" + hashfilter).addClass("bg-info");
+           
         });
 </script>
