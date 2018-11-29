@@ -1,16 +1,17 @@
-{% if page.layout == "home-infographic" and page.banner-image %}
+{% if page.layout == "home-infographic" and site.home-banner-image %}
 <style>
 #home-banner {
-    background-image: url('{{ site.banner-image | relative_url }}');
-    background-size: cover;
+    background-image: url('{{ site.home-banner-image | relative_url }}');
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    height: {{site.home-banner-size}};
 }
 </style>
 <div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0">
-    <div class="float-right d-none d-md-block"><a href="https://www.lib.uidaho.edu/digital/" title="University of Idaho Library Digital Initiatives" ><img alt="Digital Initiatives [logo]" class="float-right" src="https://www.lib.uidaho.edu/digital/dilogo_allwhite_sm.png" ></a></div>
-    <div class="jumbo-text p-4">
-        <h1 class="display-4">{{ site.title }}</h1>
+    <div class="float-right d-none d-md-block mr-3" style="margin-top:{{site.home-title-margin-top}}"><a href="https://www.lib.uidaho.edu/digital/" title="University of Idaho Library Digital Initiatives" ><img alt="Digital Initiatives [logo]" class="float-right" src="https://www.lib.uidaho.edu/digital/dilogo_allwhite_sm.png" ></a></div>
+    <div class="jumbo-text p-4" style="color:{{site.home-title-color}};">
+        <h1 class="display-4" style="margin-top:{{site.home-title-margin-top}}">{{ site.title }}</h1>
         <p>{{ site.tagline }}</p>
     </div>
 </div>
