@@ -108,15 +108,13 @@ gallery: true
 
         </div>
     </div>
-    <div class="text-center">
-            <a class="btn btn-secondary" href="{{page.object-id | minus: 1 | append: ".html"}}" role="button">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        <a class="btn btn-secondary" href="{{page.object-id | plus: 1 | append: ".html"}}" role="button">Next &raquo;</a>
-    </div>
+<div class="text-center">
+    <a class="btn btn-secondary" href="{{page.object-id | minus: 1 | append: '.html'}}" role="button">&laquo; Previous</a>
+    <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+    <a class="btn btn-secondary" href="{{page.object-id | plus: 1 | append: '.html'}}" role="button">Next &raquo;</a>
 </div>
-
-
-
-        <a class="previous bg-secondary text-white  btn btn-lg" href="{{page.object-id | minus: 1 | append: ".html"}}" class="text-white">&laquo;</a>
-        <a class="next bg-secondary text-white btn btn-lg" href="{{page.object-id | plus: 1 | append: ".html"}}" class="text-white">&raquo;</a></div>
+<div id="item-nav">
+    <a class="previous bg-secondary text-white  btn btn-lg" href="{{page.object-id | minus: 1 | append: '.html'}}" class="text-white">&laquo;</a>
+    <a class="next bg-secondary text-white btn btn-lg" href="{{page.object-id | plus: 1 | append: '.html'}}" class="text-white">&raquo;</a>
+</div>
       
