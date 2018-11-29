@@ -18,7 +18,7 @@
                 "subject": {{ item.subject | jsonify}},
                 "place": {{ item.place | jsonify }},
                 "identifier": {{ item.object-id | jsonify }},
-                "link": {{ "/data/" | absolute_url | append: item.object-id | append: ".html" | jsonify }}
+                "link": {{ "/items/" | absolute_url | append: item.object-id | append: ".html" | jsonify }}
             }
         }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]
