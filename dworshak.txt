@@ -14,19 +14,18 @@
 # for metatags
 keywords: university of idaho, digital collections
 # contact person
-email: ewilliamson@uidaho.edu
+email: dbecker@uidaho.edu
 
-title: Psychiana Digital Collection
-tagline: Materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s
+title: Dworshak Dam Collection
+tagline: Documenting the Development and Construction of the Doworshak Dam, 1952 - 1975
 subjects:  #separate semi-colon(';')
-description: "Materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s" 
-mediatypes: images; documents; audio; correspondence #options[documents,images,video,sound,data] separate semi-colon(';')
-locations: Moscow, ID #separate by semi-colon(';')
-latitude: 46.733711 #to determine center of map
-longitude: -117.001252 #to determine center of map
-mediatypes: images,mp3,pdf # default to "images"
-subjectcolor: blue # Leave blank if you just want the link color for bootstrap; options [orange,red,blue,green,purple,gray]
-subjectcloud-background-color: # default '#40524f';
+description: "Digitized photographs and documents pertaining to the planning, development and construction of the Dworshak Dam, featuring documents and photographs detailing both the legislative and physical development of the dam." 
+mediatypes: documents; correspondence; images #options[documents,images,video,sound,data] separate semi-colon(';')
+locations: Dworshak Dam, Idaho #separate by semi-colon(';')
+latitude: 46.515697 #to determine center of map
+longitude: -116.296881 #to determine center of map
+
+
 # images
 # banner-image appears in index header
 banner-image: /assets/example.jpg
@@ -39,15 +38,15 @@ featured-image: https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=psychi
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/psychiana
+baseurl: /digital/dworshak
 # CDM collection alias
-collection-id: psychiana
+collection-id: dworshak
 # Objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/
 
 # repository variables (leave blank if self-contained)
 repo-url: https://digital.lib.uidaho.edu 
-repo-collection-id: psychiana
+repo-collection-id: dworshak
 repo-link: #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
 
 
@@ -70,14 +69,14 @@ bootswatch: materia # leave blank or comment out for plain bootstrap
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version
 # be sure to also change page_gen data setting!
-metadata: psychiana
+metadata: dworshak
 
 # collection display variables 
 # see _data/metadata-config.csv
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'psychiana'
+  - data: 'dworshak'
     template: 'items'
     name: 'object-id'
     dir: 'items'

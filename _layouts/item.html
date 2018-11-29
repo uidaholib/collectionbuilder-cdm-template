@@ -22,8 +22,17 @@ gallery: true
                         <img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                         <p class="text-center"><small>Click to view full screen</small></p>
                     </div>
+                    {%elsif lowercase_type == "sound"%}
+                    <div class="mt-4">
+                            <p class="text-center">
+                        <audio controls class="mp3-item-player">
+                            <source src="{% include download/item.html %}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                          </audio>
+                            </p>
+                    </div>
                      {%else%}
-                     <div class="thumb-img">
+                     <div class="mt-4">
                         <p class="text-center">
                             <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p>
                             
@@ -75,7 +84,7 @@ gallery: true
                 <div class="card-body">
                     <dl>
                         <dt>Preferred Citation:</dt> 
-                        <dd>{{ page.title }},{{site.title}}, University of Idaho Library</dd>
+                        <dd>{{ page.title }},{{site.title}}, Digital Initiatives, University of Idaho Library</dd>
                         <dt>Reference Link:</dt>
                         <dd>{{ page.url | absolute_url }}</dd>
                     </dl>
@@ -100,12 +109,14 @@ gallery: true
         </div>
     </div>
     <div class="text-center">
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">&laquo; Back to browse</a>
+            <a class="btn btn-secondary" href="{{page.object-id | minus: 1 | append: ".html"}}" role="button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+        <a class="btn btn-secondary" href="{{page.object-id | plus: 1 | append: ".html"}}" role="button">Next &raquo;</a>
     </div>
 </div>
 
 
-<ul class="pager">
-        <li class="previous"><a href="#">Previous</a></li>
-        <li class="next"><a href="#">Next</a></li>
-      </ul>
+
+        <a class="previous bg-secondary text-white  btn btn-lg" href="{{page.object-id | minus: 1 | append: ".html"}}" class="text-white">&laquo;</a>
+        <a class="next bg-secondary text-white btn btn-lg" href="{{page.object-id | plus: 1 | append: ".html"}}" class="text-white">&raquo;</a></div>
+      

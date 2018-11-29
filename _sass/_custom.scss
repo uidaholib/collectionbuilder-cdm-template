@@ -133,3 +133,21 @@ dt {
     max-width: 100px;
     box-shadow: 2px 2px 2px grey;
 }
+
+.mp3-item-player{width:100%;}
+.previous{position: absolute;;
+top:500px; 
+left:10px;
+opacity:.3;
+&:hover{opacity:1}
+@include media-query($on-palm) {
+    top:200px; 
+} }
+.next{position:absolute;
+    top:500px;
+    right:10px;
+    opacity:.3;
+    &:hover{opacity:1}
+    @include media-query($on-palm) {
+        top:200px; 
+    }}
