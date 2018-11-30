@@ -26,6 +26,7 @@ latitude: 46.515697 #to determine center of map
 longitude: -116.296881 #to determine center of map
 mediatypes: images,pdf # default to "images"
 subjectcolor: blue # Leave blank if you just want the link color for bootstrap; opt
+subject-min: 2 # min size for subject cloud, too many terms = slow load time!
 home-banner-image: https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=dworshak&CISOPTR=688&action=2&DMSCALE=100&DMWIDTH=6000&DMHEIGHT=6000&DMX=0&DMY=0&DMTEXT=&DMROTATE=0
 home-banner-size: 600px # the size of your homepage banner; default 1000px
 
