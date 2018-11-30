@@ -6,5 +6,7 @@
 {% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
 {% if page.layout == "subjects" %}{% include js/subjects-js.html %}{% endif %}
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
-{% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
+{% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
+{% if layout.gallery == true %}{% include js/gallery-js.html %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>{% endif %}
 {% if page.layout == "home-infographic" %}{% include js/carousel-js.html %}{% endif %}

@@ -1,18 +1,34 @@
 {% if page.layout == "home-infographic" and site.home-banner-image %}
 <style>
 #home-banner {
-    background-image: url('{{ site.home-banner-image | relative_url }}');
+    background-image: url('https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT={{site.repo-collection-id}}&CISOPTR={{site.home-banner-image-number}}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top;
-    height: {{site.home-banner-size}};
+}
+#collectionslink {
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    font-size: 14px;
+    border-radius: 0px 0px 0px 20px;
+    padding: 5px 20px;
+    border-bottom: 1px #dadada solid;
+    margin: 0;
+    font-weight: 300;
 }
 </style>
+<p id="collectionslink" class="bg-secondary"><a href="https://www.lib.uidaho.edu/digital/" title="University of Idaho Library Digital Initiatives" ><img alt="Digital Initiatives [logo]"  src="https://www.lib.uidaho.edu/digital/dilogo_allwhite_sm.png" ></a></p>
 <div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0">
-    <div class="float-right d-none d-md-block mr-3" style="margin-top:{{site.home-title-margin-top}}"><a href="https://www.lib.uidaho.edu/digital/" title="University of Idaho Library Digital Initiatives" ><img alt="Digital Initiatives [logo]" class="float-right" src="https://www.lib.uidaho.edu/digital/dilogo_allwhite_sm.png" ></a></div>
-    <div class="jumbo-text p-4" style="color:{{site.home-title-color}};">
-        <h1 class="display-4" style="margin-top:{{site.home-title-margin-top}}">{{ site.title }}</h1>
-        <p>{{ site.tagline }}</p>
+    <br>
+    <div class="col-md-8 mx-auto display-block text-center" style="padding: {{site.home-title-y-padding}} 0;">
+        <div class="card" style="color:{% if site.home-title-color %}{{site.home-title-color}}{%else%}#191919{%endif%};background-color:#ffffff85;">
+            <h1 class="display-4">{{ site.title }}</h1>
+            <p>{{ site.tagline }}</p>
+        </div>
     </div>
 </div>
 {%- else -%}

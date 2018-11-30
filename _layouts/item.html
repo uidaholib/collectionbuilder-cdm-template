@@ -3,6 +3,7 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.metadata-config -%}
+{%capture year%}{% if page.date contains "-" %}{{page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%endcapture%}
 
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -51,13 +52,14 @@ gallery: true
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                        {% if page[f.field] contains ";" %}
+                        {% if page[f.field] contains "subject" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
-                            <a class="filter mx-2" data-filter="{{ t | trim |escape }}" href="{{ t | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t }}</a> 
+                            <a class="filter mr-3" data-filter="{{ t | trim |escape }}" href="{{ t | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t }}</a> 
                         {% endfor %}
                         {% elsif f.field contains "date" %}
-                        {{ page[f.field] }} <a class="ml-4" href="{{  page.date | trim | slice: 0,4 | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
+                        {{ page[f.field] }} 
+                        <a class="ml-4" href="{{ year | trim | slice: 0,4 | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
