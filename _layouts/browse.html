@@ -28,7 +28,7 @@ layout: page
                 <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title }}">           
             </a>
             {%endif%}
-            <div class="card-body text-center">
+            <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text"><strong>Date:</strong> {{ item.date }} | Type:  {% assign lowercase_type = item.type | downcase %}
     
