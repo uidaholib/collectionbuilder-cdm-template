@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md {{ site.navbar-color }} {{ site.navbar-background }}">
+<nav class="navbar navbar-expand-md {{ site.data.theme.navbar-color }} {{ site.data.theme.navbar-background }}">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
                 </li>
                 {% endfor %}
                 <li class="nav-item ">
-                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.collection-ids }}/" target="_blank">Database</a>
+                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
                 </li>
             </ul>
             {% include nav-search-cdm.html %}

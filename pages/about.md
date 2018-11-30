@@ -8,6 +8,6 @@ featured-image: "objects/test001.jpg"
 
 {% include index/jumbotron.html %}
 
-# About {{ site.title }}
+# About {{ site.data.theme.title }}
 
 {% include credits.md %}

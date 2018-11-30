@@ -1,6 +1,6 @@
 {%- comment -%} find all words used in the subject metadata {%- endcomment -%}
 {%- assign min-count = 1 -%}
-{%- assign raw-subjects = site.data[site.csvtitle] | map: "subject" | compact | join: ";" | split: ";" -%}
+{%- assign raw-subjects = site.data[site.data.theme.metadata] | map: "subject" | compact | join: ";" | split: ";" -%}
 {%- capture subjects -%}{% for s in raw-subjects %}{% if s != "" %}{{- s | strip | downcase -}};{% endif %}{%- endfor -%}{%- endcapture -%}
 {%- assign subjects = subjects | split: ";" -%}
 {%- assign uniqueSubjects = subjects | uniq | sort -%}

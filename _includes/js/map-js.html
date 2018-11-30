@@ -1,8 +1,8 @@
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.data.theme.metadata] -%}
 <!-- load leaflet dependencies -->
-<script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.js' | prepend: site.data.theme.digital-assets }}"></script>
+<script src="{{ '/leaflet/fuse.min.js' | prepend: site.data.theme.digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.data.theme.digital-assets }}"></script>
 
 <!-- add collection map data -->
 <script>
@@ -41,7 +41,7 @@
     L.geoJson(geodata, {
         pointToLayer: function(feature,latlng){
             var marker = L.marker(latlng);
-            marker.bindPopup('<h3>' + feature.properties.title + '</h3><a target="_blank" class="btn btn-light" href="{% if site.repo-link %}{{ site.repo-url }}/cdm/ref/collection/{{ site.repo-collection-id }}/id/'+feature.properties.id+'{% else %}{{ site.baseurl }}/items/'+feature.properties.id+'.html{% endif %}" ><img class="thumb" src="{{ site.repo-url }}/utils/getthumbnail/collection/{{ site.repo-collection-id }}/id/'+feature.properties.id+'" /></a><p>Date: ' + feature.properties.date + '<br>Subjects: ' + feature.properties.subjects + '</p><h4><a target="_blank" class="btn btn-light" href="{% if site.repo-link %}{{ site.repo-url }}/cdm/ref/collection/{{ site.repo-collection-id }}/id/'+feature.properties.id+'{% else %}{{ site.baseurl }}/items/'+feature.properties.id+'.html{% endif %}" >View Item</a><h4>');
+            marker.bindPopup('<h3>' + feature.properties.title + '</h3><a target="_blank" class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/'+feature.properties.id+'{% else %}{{ site.baseurl }}/items/'+feature.properties.id+'.html{% endif %}" ><img class="thumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/'+feature.properties.id+'" /></a><p>Date: ' + feature.properties.date + '<br>Subjects: ' + feature.properties.subjects + '</p><h4><a target="_blank" class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/'+feature.properties.id+'{% else %}{{ site.baseurl }}/items/'+feature.properties.id+'.html{% endif %}" >View Item</a><h4>');
             return marker;
         }, 
         onEachFeature: function (feature, layer) {

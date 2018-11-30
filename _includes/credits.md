@@ -11,7 +11,7 @@ Document metadata is exposed using [Schema.org](http://schema.org) and [Open Gra
 
 Questions can be directed to **libstatic.uidaho@gmail.com**
 
-Get the [Source code]({{ site.repository }}) for this site!
+Get the [Source code]({{ site.data.theme.repository }}) for this site!
 
 Last build date: {{ site.time | date: "%Y-%m-%d" }}.
 

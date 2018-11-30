@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.digital-assets }}">
+<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.data.theme.digital-assets }}">
 
 <button type="button" class="btn btn-pride-gold btn-lg float-md-right" data-toggle="modal" data-target="#data">Download Data</button>
 <!-- Modal -->
@@ -28,7 +28,7 @@ layout: page
                 <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/places.csv' | absolute_url }}" target="_blank">Places CSV</a>
                 <br>
                 <!--<a class="btn btn-secondary col-md-6 col-md-offset-3 mt-2" href="#">Download All Items</a>-->
-                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ site.repository }}" target="_blank">Source Code</a>
+                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ site.data.theme.repository }}" target="_blank">Source Code</a>
                 <br>
             </div>
         </div>

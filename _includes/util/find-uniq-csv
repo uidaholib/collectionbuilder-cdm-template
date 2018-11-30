@@ -3,7 +3,7 @@ Provide a metadata field and split-on,
 this function returns a CSV of all unique values and their counts. 
 Use: {% include util/find-uniq-csv field="example" split-on=";" %}
 {%- endcomment -%}
-{%- assign raw = site.data[site.metadata] | map: include.field | join: include.split-on | split: include.split-on -%}
+{%- assign raw = site.data[site.data.theme.metadata] | map: include.field | join: include.split-on | split: include.split-on -%}
 {%- capture array -%}{% for s in raw %}{% if s != "" %}{{ s | strip | downcase }};{% endif %}{%- endfor -%}{%- endcapture -%}
 {%- assign array = array | split: ";" -%}
 {%- assign uniqueArray = array | uniq | sort -%}

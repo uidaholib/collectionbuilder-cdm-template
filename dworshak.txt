@@ -45,8 +45,8 @@ collection-id: dworshak
 objects: https://www.lib.uidaho.edu/digital/objects/
 
 # repository variables (leave blank if self-contained)
-repo-url: https://digital.lib.uidaho.edu 
-repo-collection-id: dworshak
+cdm-url: https://digital.lib.uidaho.edu 
+cdm-collection-id: dworshak
 repo-link: #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
 
 

@@ -1,14 +1,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>{{ site.title }} | {{ page.title }}</title>
+<title>{{ site.data.theme.title }} | {{ page.title }}</title>
 <meta http-equiv="Content-Language" content="en-us" >
 {% if page.layout != "item" %}{% include page-meta.html %}{% endif %}
 {% if page.layout == "item" %}{% include item-meta.html %}{% endif %}
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-{% if site.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
-{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
-{% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+{% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">
+{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">{% endif %}
+{% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 {% include google-analytics-php.html %}

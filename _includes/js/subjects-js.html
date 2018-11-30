@@ -1,7 +1,7 @@
 <script>
 $.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
     /* set the min count for subject terms, too many terms = slow page load! */
-    var minSize = {{ site.subject-min }};
+    var minSize = {{ site.data.theme.subject-min }};
     var subjectTerms = json.subjects.filter(function(x) { return x.count > minSize; }); 
     //var countMax = subjectTerms.reduce((max, p) => p.count > max ? p.count : max, subjectTerms[0].count);
     var counts = subjectTerms.map(function(obj){ return obj.count; });

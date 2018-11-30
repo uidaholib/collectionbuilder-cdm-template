@@ -1,6 +1,6 @@
 <meta name="author" content="{{ page.creator }}" >
 <meta name="keywords" content="{{ page.subject }}" >
-<meta name="description" content="Item from {{ site.title }}: {{ page.description | truncatewords: 25 }}">
+<meta name="description" content="Item from {{ site.data.theme.title }}: {{ page.description | truncatewords: 25 }}">
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
@@ -12,11 +12,11 @@
 {% endfor %}
 <meta name="DC.type" content="{{ page.type | xml_escape }}" xml:lang="en" />
 <!-- Open Graph meta -->
-<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}" />
 <meta property="og:type" content="article" />
 <meta property="og:description" content="Research document from the Idaho Waters Digital Library. {{ page.description | truncatewords: 25 }}" />
 <meta property="og:image" content="https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg" />
-<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:site_name" content="{{ site.data.theme.title }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
 <!-- schema.org JSON-LD -->
