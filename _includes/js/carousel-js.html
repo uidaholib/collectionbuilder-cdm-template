@@ -5,7 +5,7 @@
     carouselItems.sort(function() { return 0.5 - Math.random() });
     var i;
     for (i=0; i < 9; i++) {
-        slide = "<div class='carousel-item text-center'><img class='image-fluid mx-auto' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/iiif/{{ site.repo-collection-id }}/" + carouselItems[i].id + "/full/pct:50/0/default.jpg'> <div class='carousel-caption'> <h5> <a target='_blank' href='{{ site.baseurl }}/items/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
+        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/iiif/{{ site.repo-collection-id }}/" + carouselItems[i].id + "/full/pct:50/0/default.jpg'> <div class='carousel-caption'> <h5> <a target='_blank' href='{{ site.baseurl }}/items/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
         carousel.innerHTML += slide;
     }
     $(".carousel-item").first().addClass("active");
