@@ -70,7 +70,6 @@ nav, footer {
     cursor: pointer;
 }
 .jumbotron {
-    height:1000px;
     @include media-query($on-palm) {
         height:430px;
     }

@@ -6,7 +6,7 @@
             // use DataTables ajax load 
             ajax: { url: '{{ "/data/metadata.json" | relative_url }}', dataSrc: 'documents' },
             // get the data from the metadata.json
-            columns: [ { data: 'title' }, { data: 'date' }, { data: 'subjects' }, { data: 'description' }, { data: 'link' } ],
+            columns: [ { data: 'title' }, { data: 'date' }, { data: 'description' }, { data: 'subjects' }, { data: 'link' } ],
             columnDefs: [ 
                 // combine link and title for first column
                 { "render": function ( data, type, row ) { return '<a href="' + row.link +'">'+ data +'</a>'; },"targets": 0 },
