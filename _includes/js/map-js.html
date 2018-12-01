@@ -8,7 +8,7 @@
 <script>
     var geodata = { "type": "FeatureCollection", "features": [ 
     {% for item in items %}{% if item.latitude and item.longitude %}
-    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":{ "title": {{ item.title | jsonify }}, "creator": {{ item.creator | jsonify }}, "date": {{ item.date | jsonify }}, "subjects": {{ item.subject | jsonify}}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":{ "title": {{ item.title | jsonify }}, "creator": {{ item.creator | jsonify }}, "date": {{ item.date | jsonify }}, "subjects": {{ item.subject | jsonify}}, "id": {{ item.cdm-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 </script>
 <!-- int map and search -->
