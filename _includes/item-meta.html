@@ -14,8 +14,8 @@
 <!-- Open Graph meta -->
 <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}" />
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Research document from the Idaho Waters Digital Library. {{ page.description | truncatewords: 25 }}" />
-<meta property="og:image" content="https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg" />
+<meta property="og:description" content="Item from the {{site.data.theme.title}}. {{ page.description | truncatewords: 30 }}" />
+<meta property="og:image" content="{% if page.format == "image/jpg" %}{% include image/original.html %}{% else %}{%include image/thumb.html%}{% endif %}" />
 <meta property="og:site_name" content="{{ site.data.theme.title }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
