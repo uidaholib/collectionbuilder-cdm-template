@@ -6,8 +6,8 @@
 {% if page.layout == "item" %}{% include item-meta.html %}{% endif %}
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-{% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">
-{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">{% endif %}
-{% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.data.theme.digital-assets }}" type="text/css">{% endif %}
+{% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
+{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+{% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
 {% include google-analytics-php.html %}

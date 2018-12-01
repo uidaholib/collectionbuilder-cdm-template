@@ -10,8 +10,6 @@ metadata: dworshak
 cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
 cdm-collection-id: dworshak
-# url to the shared assets folder on Digital
-digital-assets: https://www.lib.uidaho.edu/digital/assets
 
 # header and head metadata
 tagline: Documenting the Development and Construction of the Doworshak Dam, 1952 - 1975
@@ -46,3 +44,4 @@ navbar-background: bg-dark
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: materia # leave blank or comment out for plain bootstrap
 
+gh-repository: https://github.com/uidaholib/collectionbuilder-cdm-template

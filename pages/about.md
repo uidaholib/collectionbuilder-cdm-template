@@ -9,15 +9,15 @@ featured-image: "objects/test001.jpg"
 <p>The Dworshak Dam Collection is comprised of over 500 digital items, including both historical photographs and documents, that span the years 1952 to 1975 and portray the history of the Dworshak Dam, which is located on the North Fork Clearwater River, near Orofino, Idaho and is currently the third largest dam in the United States.</p>
 <p>The digital collection documents the legislation that led to the dam's construction, local reaction to the dam's proposal, approval, and construction, and the construction itself. </p>
 <h3 style="text-align:center;">A Timeline of Dworshak Dam Related Events<br /><span style="font-size:10px"><a href="fulltimeline.html" target="_blank">Full Screen Version</a></span></h3>
-  <div id="timeline-embed" style="height:800px;"></div>
-  <script type="text/javascript">
-    var timeline_config = {
-     width: "100%",
-     height: "500px",	 
-     source: 'https://docs.google.com/spreadsheet/pub?key=0AoVwEx0I-KYAdGFZdXdvcEdkbkVUOVlQd1ZJQkx4aWc&output=html'
-    }
-  </script>
-  <script type="text/javascript" src="https://www.lib.uidaho.edu/digital/TimelineJS-master/compiled/js/storyjs-embed.js"></script>
+<div id="timeline-embed" style="height:800px;"></div>
+<script type="text/javascript">
+  var timeline_config = {
+    width: "100%",
+    height: "500px",	 
+    source: 'https://docs.google.com/spreadsheet/pub?key=0AoVwEx0I-KYAdGFZdXdvcEdkbkVUOVlQd1ZJQkx4aWc&output=html'
+  }
+</script>
+<script type="text/javascript" src="https://www.lib.uidaho.edu/digital/TimelineJS-master/compiled/js/storyjs-embed.js"></script>
 <p>The materials in the collection were drawn from the papers and photographs of A.B. Curtis, who served as  mayor of Orofino, Idaho from 1950 to 1973. These materials were donated to the University of Idaho Library by Mr. Curtis in October 1982. The physical collection is stored in four archival file boxes that occupy approximately four linear feet of shelf spaces </p> 		
 <h2>About A.B. Curtis </h2>
 <p>A.B. "Bert" Curtis was born on a ranch near Salem, Oregon, August 1, 1903. His parents, Charles Garret Curtis of Independence, Missouri, and Elizabeth Ann Milne, who was born near Dundee, Scotland, were early pioneers. When the family moved to Orofino, Idaho, in 1912 Charles Curtis operated the Cottage Hotel for a time before he returned to ranching.
@@ -38,19 +38,12 @@ Curtis died in 1985.
 <br>
 <p>For more information, see the <a href="https://en.wikipedia.org/wiki/Dworshak_Dam">Wikipedia entry on the Dworshak Dam</a>.</p>
 
-              <h2finding aid<="" h2="">
-	
-	
- <p> <a target="_blank" href="https://digital.lib.uidaho.edu/cdm4/document.php?CISOROOT=/spec_fa&amp;CISOPTR=2813&amp;REC=3">To access the finding aid to the A.B. Curtis Collection, describing all items held by Special Collections &amp; Archives, click here. </a></p>            
-			<p> <a href="https://digital.lib.uidaho.edu/cgi-bin/showfile.exe?CISOROOT=/spec_fa&amp;CISOPTR=1582&amp;CISOMODE=print" target="_blank">To download the entire 200+ page listing of all contents in the A.B. Curtis Collection, as held by Special Collections &amp; Archives, click here. </a></p>
-			<br>
+## Finding Aid 
+
+<p> <a target="_blank" href="https://digital.lib.uidaho.edu/cdm4/document.php?CISOROOT=/spec_fa&amp;CISOPTR=2813&amp;REC=3">To access the finding aid to the A.B. Curtis Collection, describing all items held by Special Collections &amp; Archives, click here. </a></p>            
+<p> <a href="https://digital.lib.uidaho.edu/cgi-bin/showfile.exe?CISOROOT=/spec_fa&amp;CISOPTR=1582&amp;CISOMODE=print" target="_blank">To download the entire 200+ page listing of all contents in the A.B. Curtis Collection, as held by Special Collections &amp; Archives, click here. </a></p>
+<br>
 <hr>
 <br>
-	
-			  
-           
-		
-		
-
 
 {% include credits.md %}
