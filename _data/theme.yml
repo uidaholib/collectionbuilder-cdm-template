@@ -20,7 +20,8 @@ author: dcnb # You! Add your github username
 # home page and browse
 home-banner-image-number: 688
 home-title-y-padding: 19em # the margin from the top your title portion will appear
-subjects:  #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects:  #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects-max: 6 # set number of top subjects to display if auto generating
 locations: Dworshak Dam, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 mediatypes: documents; correspondence; images #options[documents,images,video,sound,data] separate semi-colon(';')
 
