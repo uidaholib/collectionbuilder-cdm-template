@@ -35,6 +35,10 @@ subjectcolor: blue # Leave blank if you just want the link color for bootstrap; 
 subject-min: 3 # min size for subject cloud, too many terms = slow load time!
 stopwords: # need to figure out
 
+# timeline
+year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
+year-nav-increment: 5 # set increments when auto gen nav years
+
 # Theme Options
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
