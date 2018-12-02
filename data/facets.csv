@@ -1,7 +1,7 @@
 ---
 # facets generator
 ---
-{%- assign fields = "functional-category,material,vessel-form,pigment-application,decoration-type,exterior-decoration-method,exterior-decoration-color,exterior-decoration-elements,interior-decoration-method,interior-decoration-color,interior-decoration-elements,manufacture-origin,manufacture-range" | split: "," -%}
+{%- assign fields = "" | split: "," -%}
 facets
 
 {% for f in fields %}
