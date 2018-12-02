@@ -6,7 +6,6 @@ layout: page
 {%- assign raw-dates = site.data[site.data.theme.metadata] | map: 'date' | compact | uniq -%}
 {%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign uniqueYears = clean-years | split: ";" | uniq | sort -%}
-
 {%- if site.data.theme.year-navigation -%}
 {%- assign navYears = site.data.theme.year-navigation | split: ";" -%}
 {%- else -%}
@@ -34,9 +33,10 @@ layout: page
   <tr id="{{ year }}">
     <th><h3 >{{ year }}</h3></th>
     <td>
-    {% for item in items %}{% if item.date contains year %}
+    {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+    {% for item in inYear %}
     <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
-    {% endif %}{% endfor %}
+    {% endfor %}
     </td>
   </tr>
   {% endfor %}
