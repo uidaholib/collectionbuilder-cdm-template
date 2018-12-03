@@ -34,10 +34,10 @@ browse-buttons: # true / false, adds previous/next arrows to items, but doubles 
 # map page
 latitude: 46.515697 #to determine center of map
 longitude: -116.296881 #to determine center of map
-
+zoom-level: # zoom level for map 
 
 # subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
+subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 2 # min size for subject cloud, too many terms = slow load time!
 stopwords: # need to figure out
 
