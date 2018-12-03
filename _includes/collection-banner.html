@@ -1,4 +1,4 @@
-{% if page.layout == "home-infographic" and site.data.theme.home-banner-image-number %}
+{% if page.layout == "home-infographic" %}
 <style>
 #home-banner {
     background-image: url('{% if site.data.theme.home-banner-image-number %}{{site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{site.data.theme.cdm-collection-id}}&CISOPTR={{site.data.theme.home-banner-image-number}}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0{%else%}{{site.data.theme.home-banner-image-link}}{%endif%}');

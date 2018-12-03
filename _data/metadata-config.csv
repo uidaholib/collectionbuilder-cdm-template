@@ -12,3 +12,4 @@ identifier,Source Identifier
 type,Type,DC.type
 format,Format
 rightsstatement,Rights
+format-original, Original Format
