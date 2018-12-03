@@ -1,4 +1,6 @@
 ---
 # find all unique subjects used in the metadata 
 ---
+{%- if site.data.theme.subjects-off == false -%}
 {% include util/find-uniq-csv field="subject" split-on=";" %}
+{%- endif -%}
