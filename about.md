@@ -8,7 +8,7 @@ featured-image: "objects/test001.jpg"
 <h3>About the {{site.data.theme.title}}</h3>
 <p>The Dworshak Dam Collection is comprised of over 500 digital items, including both historical photographs and documents, that span the years 1952 to 1975 and portray the history of the Dworshak Dam, which is located on the North Fork Clearwater River, near Orofino, Idaho and is currently the third largest dam in the United States.</p>
 <p>The digital collection documents the legislation that led to the dam's construction, local reaction to the dam's proposal, approval, and construction, and the construction itself. </p>
-<h3 style="text-align:center;">A Timeline of Dworshak Dam Related Events<br /><span style="font-size:10px"><a href="fulltimeline.html" target="_blank">Full Screen Version</a></span></h3>
+<h3 style="text-align:center;">A Timeline of Dworshak Dam Related Events</h3>
 <div id="timeline-embed" style="height:800px;"></div>
 <script type="text/javascript">
   var timeline_config = {
