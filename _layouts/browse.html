@@ -1,7 +1,7 @@
 ---
 layout: page 
 ---
-{% assign items = site.data[site.data.theme.metadata] %}
+{%- assign items = site.data[site.data.theme.metadata] -%}
 
 {{ content }}
 
@@ -22,31 +22,33 @@ layout: page
     {% for item in items %}
     <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
         <div class="card">
-                {% assign lowercase_type = item.type | downcase %} 
-                {% if lowercase_type contains "image" %}
+            {%- assign lowercase_type = item.type | downcase -%}
+            {%- assign extension = item.format | strip | split: '/' | last -%}
+            {%- if lowercase_type contains "image" -%}
             <a href="{% include item-link.html %}">
-                <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title }}">           
+                <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
             </a>
-            {%endif%}
+            {%- endif -%}
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
-                <p class="card-text"><strong>Date:</strong> {{ item.date }} | Type:  {% assign lowercase_type = item.type | downcase %}
-    
-                    <a data-filter="{{ item.format | trim |escape | slice: -3,3 }}" href="{{ item.format | trim | slice: -3,3 | prepend: '/browse.html#' | relative_url }}" title="{{item.format | escape | slice: -3,3}}" class="filter"><i class="far {% if lowercase_type contains "image" %}fa-image{% elsif lowercase_type contains "text" %} fa-file{% elsif lowercase_type contains "sound" %} fa-file-audio{% elsif lowercase_type contains "video" %} fa-file-video{% endif %}"></i> <small>{{ item.format | trim | slice: -3,3}}</small></a>
-                </a></p>
+                <p class="card-text">
+                    <strong>Date:</strong> {{ item.date }}
+                    | Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"><span class="far {% if lowercase_type contains 'image' %}fa-image{% elsif lowercase_type contains 'text' %}fa-file{% elsif lowercase_type contains 'sound' %}fa-file-audio{% elsif lowercase_type contains 'video' %}fa-file-video{% endif %}"></span> <small>{{ extension }}</small></a>
+                </p>
+                {%- unless lowercase_type contains 'image' -%}
                 <p>
-                        {% unless lowercase_type contains "image" %}<p >
-                                <a  target="_blank" href="{% include item-link.html %}">
-                                 <img class="card-img-top thumb lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}{% include image/thumb.html %}" alt="item thumbnail">
-                                </a></p> {% endunless %}
+                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/thumb.html %}" alt="item thumbnail"></a>
+                </p>
+                {%- endunless -%}
+                <p>
                     {%- assign subjects = item.subject | split: ';' -%}
                     {%- assign location = item.place | split: ';' -%}
                     {%- assign topics = subjects | concat: location -%}
                     {% for topic in topics %}{% if topic !=" " %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | trim |escape }}" href="{{ topic | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ topic }}</a> 
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | strip | escape }}" href="{{ topic | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ topic }}</a> 
                     {% endif %}{% endfor %} 
                 </p>
-                <p class="card-text">{{item.description | truncatewords: 20}}</p>
+                <p class="card-text">{{ item.description | truncatewords: 20 }}</p>
                 <p>
                     <a href="{% include item-link.html %}" class="btn btn-info" title="link to {{ item.title | escape }}">View Item</a>
                 </p>
