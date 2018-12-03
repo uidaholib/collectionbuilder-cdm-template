@@ -7,7 +7,7 @@ metadata: dworshak
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://digital.lib.uidaho.edu 
+cdm-url: https://cdm17254.contentdm.oclc.org #https://digital.lib.uidaho.edu 
 # contentdm collection name 
 cdm-collection-id: dworshak
 
@@ -25,6 +25,9 @@ featured-subjects-max: 6 # set number of top subjects to display if auto generat
 featured-locations: Dworshak Dam, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-locations-max: 5
 mediatypes: documents; correspondence; images #options[documents,images,video,sound,data] separate semi-colon(';')
+
+# item page 
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
 # map page
 latitude: 46.515697 #to determine center of map
