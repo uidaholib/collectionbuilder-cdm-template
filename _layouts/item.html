@@ -3,90 +3,88 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.metadata-config -%}
-{%capture year%}{% if page.date contains "-" %}{{page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%endcapture%}
-
+{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ '/browse/' | absolute_url }}">Items</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/browse.html' | absolute_url }}">Items</a></li>
         <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
     </ul>
 
     <div class="row">
         <div class="col-md-6" id="lightgallery" >
-         
             <div class="card mb-2">
-                <div>
-                        {% assign lowercase_type = page.type | downcase %}
-                        {% if lowercase_type contains "image" %}
-                    <div class="gallery-img" data-src="{% include image/original.html %}">
-                        <img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
-                        <p class="text-center"><small>Click to view full screen</small></p>
-                    </div>
-                    {%elsif lowercase_type == "sound"%}
-                    <div class="mt-4">
-                            <p class="text-center">
+                {%- assign lowercase_type = page.type | downcase -%}
+                {% if lowercase_type contains "image" %}
+                <div class="gallery-img" data-src="{% include image/original.html %}">
+                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    <p class="text-center"><small>Click to view full screen</small></p>
+                </div>
+                {%- elsif lowercase_type == "sound" -%}
+                <div class="mt-4">
+                    <p class="text-center">
                         <audio controls class="mp3-item-player">
                             <source src="{% include download/item.html %}" type="audio/mpeg">
                             Your browser does not support the audio element.
-                          </audio>
-                            </p>
-                    </div>
-                     {%else%}
-                     <div class="mt-4">
-                        <p class="text-center">
-                            <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p>
-                            
-                    </div>
-                    {%endif%}
+                        </audio>
+                    </p>
                 </div>
+                {%- else -%}
+                <div class="mt-4">
+                    <p class="text-center">
+                    <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p> 
+                </div>
+                {%- endif -%}
                 <div class="text-center my-2">
-                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="image download">Download {{page.format | slice: -3,3 }}</a>
+                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last }}</a>
                 </div>
             </div>
-          
         </div>
+
         <div class="col-md-6">
             <div id="item-metadata" class="metadata">
                 <dl>
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                        {% if page[f.field] contains "subject" %}
+                        {% if f.field contains "subject" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
-                            <a class="filter mr-3" data-filter="{{ t | trim |escape }}" href="{{ t | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t }}</a> 
+                            <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
                         {% endfor %}
                         {% elsif f.field contains "date" %}
                         {{ page[f.field] }} 
-                        <a class="ml-4" href="{{ year | trim | slice: 0,4 | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
+                        <a class="ml-4" href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
                 </dl>
             </div>
         </div>
-        <div class="row">
+
+    </div>
+
+    <div class="row">
         <div class="col-md-3">
-                <div class="card mb-2">
-                        <div class="card-header">Related Items</div>
-                        <div class="card-body">
-                            {% assign facets = page.subject | split: ";" %}
-                            <p>
-                            {% for f in facets %}
-                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ f | trim |escape }}" href="{{ f | trim | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
-                            {% endfor %}
-                            </p>
-                        </div>
-                    </div>
+            <div class="card mb-2">
+                <div class="card-header">Related Items</div>
+                <div class="card-body">
+                    {% assign facets = page.subject | split: ";" %}
+                    <p>
+                    {% for f in facets %}
+                        <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ f | strip | escape }}" href="{{ f | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
+                    {% endfor %}
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
             <div class="card mb-2">
                 <div class="card-header">Source</div>
                 <div class="card-body">
                     <dl>
                         <dt>Preferred Citation:</dt> 
-                        <dd>{{ page.title }},{{site.data.theme.title}}, Digital Initiatives, University of Idaho Library</dd>
+                        <dd>{{ page.title }}, {{ site.data.theme.title }}, Digital Initiatives, University of Idaho Library</dd>
                         <dt>Reference Link:</dt>
                         <dd>{{ page.url | absolute_url }}</dd>
                     </dl>
@@ -95,28 +93,27 @@ gallery: true
         </div>
         <div class="col-md-5">
             <div class="card mb-2">
-                    <div class="card-header">Rights</div>
-                    <div class="card-body">
-                        <dl>
-                            {%if page.rights%}
-                            <dd>{{ page.rights }}</dd>{%endif%}
-                            {%if page.standardized-rights%}<dt>Standardized Rights:</dt>
-                            <dd><a target="_blank" href="{{ page.standardized-rights }}">{{ page.standardized-rights }}</a></dd>{%endif%}
-                        </dl>
-                    </div>
+                <div class="card-header">Rights</div>
+                <div class="card-body">
+                    <dl>
+                        {% if page.rights %}
+                        <dd>{{ page.rights }}</dd>{% endif %}
+                        {% if page.standardized-rights %}<dt>Standardized Rights:</dt>
+                        <dd><a target="_blank" href="{{ page.standardized-rights }}">{{ page.standardized-rights }}</a></dd>{% endif %}
+                    </dl>
                 </div>
             </div>
         </div>
-
-        </div>
     </div>
-<div class="text-center">
-    <a class="btn btn-secondary" href="{{page.object-id | minus: 1 | append: '.html'}}" role="button">&laquo; Previous</a>
-    <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-    <a class="btn btn-secondary" href="{{page.object-id | plus: 1 | append: '.html'}}" role="button">Next &raquo;</a>
-</div>
-<div id="item-nav">
-    <a class="previous bg-secondary text-white  btn btn-lg" href="{{page.object-id | minus: 1 | append: '.html'}}" class="text-white">&laquo;</a>
-    <a class="next bg-secondary text-white btn btn-lg" href="{{page.object-id | plus: 1 | append: '.html'}}" class="text-white">&raquo;</a>
-</div>
+
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{{page.object-id | minus: 1 | append: '.html'}}" role="button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+        <a class="btn btn-secondary" href="{{page.object-id | plus: 1 | append: '.html'}}" role="button">Next &raquo;</a>
+    </div>
+    <div id="item-nav">
+        <a class="previous bg-secondary text-white  btn btn-lg" href="{{page.object-id | minus: 1 | append: '.html'}}" class="text-white">&laquo;</a>
+        <a class="next bg-secondary text-white btn btn-lg" href="{{page.object-id | plus: 1 | append: '.html'}}" class="text-white">&raquo;</a>
+    </div>
       
+</div>
