@@ -26,9 +26,9 @@ keywords: "{{item.Subjects}}" # describing the whole collection -- add to the tw
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: {%if item.image-number %}{{item.image-number}}{%endif%}# use number of photo from collection
-home-banner-image-link: {%if item.image-number %}{%else%}{{item.Image}}{%endif%}# leave blank unless no cdm number to generate item
-home-banner-image-title: {{item.ImageTitle}} from {{item.ImageLink}}# for accessibility 
+home-banner-image-number: {%if item.image-number %}{{item.image-number}}{%endif%} # use number of photo from collection
+home-banner-image-link: {%if item.image-number %}{%else%}{{item.Image}}{%endif%} # leave blank unless no cdm number to generate item
+home-banner-image-title: {{item.ImageTitle}} from {{item.ImageLink}} # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
@@ -45,7 +45,6 @@ longitude: {{item.Long}} #to determine center of map
 
 
 # subject page
-subjectcolor: blue # Leave blank if you just want the link color for bootstrap; opt
 subject-min: 2 # min size for subject cloud, too many terms = slow load time!
 stopwords: # need to figure out
 

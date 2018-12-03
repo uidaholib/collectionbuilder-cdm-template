@@ -33,7 +33,7 @@ layout: page
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
                     <strong>Date:</strong> {{ item.date }}
-                    | Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"><span class="far {% if lowercase_type contains 'image' %}fa-image{% elsif lowercase_type contains 'text' %}fa-file{% elsif lowercase_type contains 'sound' %}fa-file-audio{% elsif lowercase_type contains 'video' %}fa-file-video{% endif %}"></span> <small>{{ extension }}</small></a>
+                    <br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"><span class="far {% if lowercase_type contains 'image' %}fa-image{% elsif lowercase_type contains 'text' %}fa-file{% elsif lowercase_type contains 'sound' %}fa-file-audio{% elsif lowercase_type contains 'video' %}fa-file-video{% endif %}"></span>{{ extension }}</a></small>
                 </p>
                 {%- unless lowercase_type contains 'image' -%}
                 <p>
