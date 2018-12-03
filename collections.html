@@ -1,39 +1,47 @@
+---
+layout: page
+title: collection configurations
+permalink: /coll-config/
+---
+{% assign items = site.data.digital %}
+{% for item in items %}
+<pre>
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Dworshak Dam Collection
+title: {{item.colltitle}}
 # choose metadata, be sure to also change page_gen data setting!
-metadata: dworshak # check against cdm-collection-id below -- this should be used in config file as well
+metadata: {{item.path}} # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
-cdm-collection-id: dworshak # 
+cdm-collection-id: {{item.CDMID}} # 
 
 # header and head metadata
-tagline: Documenting the Development and Construction of the Doworshak Dam, 1952 - 1975
-description: "Digitized photographs and documents pertaining to the planning, development and construction of the Dworshak Dam, featuring documents and photographs detailing both the legislative and physical development of the dam." 
-keywords: "Dams; Construction; Water; Northwest; Idaho; Maps;" # describing the whole collection -- add to the two provided
+tagline: {{item.short_desc}}
+description: "{{item.Description}}" 
+keywords: "{{item.Subjects}}" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 552# use number of photo from collection
-home-banner-image-link: # leave blank unless no cdm number to generate item
-home-banner-image-title: Aerial view of clearwater river before construction of Dworshak Dam from https://digital.lib.uidaho.edu/cdm/ref/collection/dworshak/id/552# for accessibility 
+home-banner-image-number: {%if item.image-number %}{{item.image-number}}{%endif%}# use number of photo from collection
+home-banner-image-link: {%if item.image-number %}{%else%}{{item.Image}}{%endif%}# leave blank unless no cdm number to generate item
+home-banner-image-title: {{item.ImageTitle}} from {{item.ImageLink}}# for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Dworshak Dam, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: {{item.Location}} #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: documents; correspondence; images #options[documents,images,video,sound,data] separate semi-colon(';')
+mediatypes: {{item.MediaType}} #options[documents,images,video,sound,data] separate semi-colon(';')
 
 # item page 
 browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
 
 # map page
-latitude: 46.515697 #to determine center of map
-longitude: -116.296881 #to determine center of map
+latitude: {{item.Lat}} #to determine center of map
+longitude: {{item.Long}} #to determine center of map
 
 
 # subject page
@@ -57,3 +65,8 @@ navbar-background: bg-dark
 bootswatch: # leave blank or comment out for plain bootstrap
 
 gh-repository: https://github.com/uidaholib/collectionbuilder-cdm-template
+
+
+    </pre>
+    <br /> <br /> <hr /> <br /> <br /> <br />
+{%endfor%}

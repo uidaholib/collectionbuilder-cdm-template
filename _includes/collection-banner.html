@@ -1,14 +1,14 @@
 {% if page.layout == "home-infographic" and site.data.theme.home-banner-image-number %}
 <style>
 #home-banner {
-    background-image: url('{{site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{site.data.theme.cdm-collection-id}}&CISOPTR={{site.data.theme.home-banner-image-number}}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0');
+    background-image: url('{% if site.data.theme.home-banner-image-number %}{{site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{site.data.theme.cdm-collection-id}}&CISOPTR={{site.data.theme.home-banner-image-number}}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0{%else%}{{site.data.theme.home-banner-image-link}}{%endif%}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
 
 </style>
-<div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0">
+<div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0" aria-label="{{site.data.theme.home-banner-image-title}}">
     <br>
     <div class="col-md-8 mx-auto display-block text-center" style="padding: {{site.data.theme.home-title-y-padding}} 0;">
         <div class="card text-dark" style="background-color:#ffffff85;">
