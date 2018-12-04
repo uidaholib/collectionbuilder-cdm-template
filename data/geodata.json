@@ -16,7 +16,7 @@
                 "creator": {{ item.creator | jsonify }},
                 "date": {{ item.date | jsonify }},
                 "subject": {{ item.subject | jsonify}},
-                "place": {{ item.place | jsonify }},
+                "place": {{ item.location | jsonify }},
                 "identifier": {{ item.object-id | jsonify }},
                 "link": {{ "/items/" | absolute_url | append: item.object-id | append: ".html" | jsonify }}
             }

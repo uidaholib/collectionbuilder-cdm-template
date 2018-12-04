@@ -41,7 +41,7 @@ layout: page
                 {%- endunless -%}
                 <p>
                     {%- assign subjects = item.subject | split: ';' -%}
-                    {%- assign location = item.place | split: ';' -%}
+                    {%- assign location = item.location | split: ';' -%}
                     {%- assign topics = subjects | concat: location -%}
                     {% for topic in topics %}{% if topic !=" " %}
                     <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | strip | escape }}" href="{{ topic | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ topic }}</a> 
