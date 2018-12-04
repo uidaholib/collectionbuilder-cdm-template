@@ -46,12 +46,12 @@ gallery: true
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                        {% if f.field contains "subject" %}
+                        {% if f.field == "subject" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
                             <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
                         {% endfor %}
-                        {% elsif f.field contains "date" %}
+                        {% elsif f.field == "date" %}
                         {{ page[f.field] }} 
                         <a class="ml-4" href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
                         {% else %}{{ page[f.field] }}{% endif %}
