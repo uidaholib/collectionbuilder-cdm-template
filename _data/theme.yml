@@ -9,7 +9,7 @@ metadata: boxing # check against cdm-collection-id below -- this should be used 
 # url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
-cdm-collection-id: boxing # 
+cdm-collection-id: boxing 
 
 # header and head metadata
 tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
@@ -36,11 +36,10 @@ latitude: 46.727485 #to determine center of map
 longitude: -117.014185 #to determine center of map
 zoom-level: 5 # zoom level for map 
 
-
 # subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
-stopwords: # need to figure out
+stopwords: boxers;boxing # set of subjects separated by ;, e.g. boxers;boxing
 
 # timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
