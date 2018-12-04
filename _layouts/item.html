@@ -85,7 +85,7 @@ gallery: true
                         <dt>Preferred Citation:</dt> 
                         <dd>{{ page.title }}, {{ site.data.theme.title }}, Digital Initiatives, University of Idaho Library</dd>
                         <dt>Reference Link:</dt>
-                        <dd>{{ page.url | absolute_url }}</dd>
+                        <dd>{{ page.url | relative_url | prepend: "https://www.lib.uidaho.edu" }}</dd>
                     </dl>
                 </div>
             </div>
@@ -115,9 +115,9 @@ gallery: true
     {% endif %}
     {%- endfor -%}
     <div class="text-center">
-        {% if back %}<a class="btn btn-secondary" href="{{ list[back] | relative_url }}" role="button">&laquo; Previous</a>{% endif %}
+        {% if back %}<a class="btn btn-secondary" href="{{ list[back] | relative_url }}" role="button" id="prev-page-button">&laquo; Previous</a>{% endif %}
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        {% if forward %}<a class="btn btn-secondary" href="{{ list[forward] | relative_url }}" role="button">Next &raquo;</a>{% endif %}
+        {% if forward %}<a class="btn btn-secondary" href="{{ list[forward] | relative_url }}" role="button" id="next-page-button">Next &raquo;</a>{% endif %}
     </div>
     <div id="item-nav">
         {% if back %}<a class="previous bg-secondary text-white  btn btn-lg" href="{{ list[back] | relative_url }}" class="text-white">&laquo;</a>{% endif %}
