@@ -2,6 +2,7 @@
 layout: page 
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
+{%- assign fields = site.data.browse-config -%}
 
 {{ content }}
 
@@ -31,8 +32,8 @@ layout: page
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
-                    <strong>Date:</strong> {{ item.date }}
-                    <br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>
+                    {% if item.date %}<strong>Date:</strong> {{ item.date }}
+                    <br>{% endif %}<small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
@@ -40,14 +41,18 @@ layout: page
                 </p>
                 {%- endunless -%}
                 <p>
-                    {%- assign subjects = item.subject | split: ';' -%}
-                    {%- assign location = item.location | split: ';' -%}
-                    {%- assign topics = subjects | concat: location -%}
-                    {% for topic in topics %}{% if topic !=" " %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | strip | escape }}" href="{{ topic | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ topic }}</a> 
+                    {%- capture btns -%}{% for f in fields %}{% if f.display-name-or-btn == 'btn' %}{{ item[f.field] | strip }};{% endif %}{% endfor %}{%- endcapture -%}
+                    {%- assign btns = btns | split: ';' -%}
+                    {% for b in btns %}{% if b !=" " %}
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ b | strip | escape }}" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
                     {% endif %}{% endfor %} 
                 </p>
-                <p class="card-text">{{ item.description | truncatewords: 20 }}</p>
+                <p class="card-text">
+                    {% for f in fields %}{% if f.display-name-or-btn != 'btn' %}
+                    {% if f.display-name-or-btn %}<strong>{{ f.display-name-or-btn }}:</strong> {% endif %}{{ item[f.field] | truncatewords: 20 }}
+                    {% unless forloop.last %}<br>{% endunless %}  
+                    {% endif %}{% endfor %}
+                </p>
                 <p>
                     <a href="{% include item-link.html %}" class="btn btn-info" title="link to {{ item.title | escape }}">View Item</a>
                 </p>

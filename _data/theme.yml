@@ -17,7 +17,7 @@ description: "A digital collection comprised of 52 photographs of boxers and box
 keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
-# home page and browse
+# Home page
 home-banner-image-number: 15 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
@@ -28,25 +28,29 @@ featured-locations: University of Idaho; Sacramento, California; #separate by se
 featured-locations-max: 3
 mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
-# item page 
+# Browse page
+# see _data/browse-config.csv for field display options
+# fields given the "btn" option can be multivalued with ";" such as subjects.
+
+# Item page 
 browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
-# map page
+# Map page
 latitude: 46.727485 #to determine center of map
 longitude: -117.014185 #to determine center of map
 zoom-level: 5 # zoom level for map 
 
-# subject page
+# Subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
 stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
-# timeline
+# Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
-# about page
-about-off: true # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+# About page
+about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
 
 # Theme Options
 # navbar text color
