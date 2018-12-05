@@ -28,21 +28,6 @@ a {
         line-height: 1;
     }
  }
-/* nav bar */
-.navbar-light .navbar-nav .nav-link {
-    font-size: 18px;
-    color: $text-color;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: darken($link-color, 25%);
-    text-decoration: underline;
-}
-nav, footer {
-    background: $nav-background;
-}
 
 /** all Collections nav **/
 .ijclist{
@@ -56,32 +41,6 @@ nav, footer {
     padding-left: 22px ;
     text-indent: -22px ;
 }
-
-/* item page */
-.gallery-img {
-    cursor: pointer;
-}
-.jumbotron {
-    @include media-query($on-palm) {
-        height:430px;
-    }
-}
-dt {
-    font-size:20px;
-}
-.glossary-def {
-    font-size:26px;
-}
-.lg-outer .lg-thumb-outer {
-    background-color: transparent !important;
-}
-
-.jumbo-text{
-    background:rgba(171, 167, 167, 0.0);
-}    
-.card-title{
-    font-size:1.5rem;
-}    
 .collection-list{
     list-style: none;
     padding-left:10px;
@@ -107,21 +66,41 @@ dt {
     border-bottom: 1px #dadada solid;
     margin: 0;
     font-weight: 300; }
-  
 #collectionslink p {
     margin: 0; }
-/* glossary */
-#glossary-list {
-    a {
-        text-decoration: underline;
+
+/* item page */
+.gallery-img {
+    cursor: pointer;
+}
+.jumbotron {
+    @include media-query($on-palm) {
+        height:430px;
     }
 }
-
-.thumb {
-    max-width: 100px;
-    box-shadow: 2px 2px 2px grey;
+dt {
+    font-size:20px;
+}
+.glossary-def {
+    font-size:26px;
+}
+.lg-outer .lg-thumb-outer {
+    background-color: transparent !important;
 }
 
+.jumbo-text{
+    background:rgba(171, 167, 167, 0.0);
+}    
+.card-title{
+    font-size:1.5rem;
+}
+
+/* map */
+.mapthumb {
+    height: 100px;
+    box-shadow: 2px 2px 2px grey;
+}
+/* item page */
 .mp3-item-player{width:100%;}
 
 #item-nav {
@@ -138,91 +117,86 @@ dt {
     .next{ right:10px; }
 }
 
-//Subject Cloud 
-
-
-     
+/* Subject Cloud */
 .tagcloud0{
     font-size:0.8em;
     z-index: 10; }
-  
-  .tagcloud0 a {
-    color: #1D1E33; }
-  
-  .tagcloud1{
-    font-size:0.8em;
-    z-index: 9; }
-  
-  .tagcloud1 a {
-    color: #18171C; }
-  
-  .tagcloud2{
-    font-size:1.2em;
-    z-index: 8; }
-  
-  .tagcloud2 a {
-    color: #1E2460; }
-  
-  .tagcloud3{
-    font-size:1.4em;
-    z-index: 7; }
-  
-  .tagcloud3 a {
-    color: #3E5F8A; }
-  
-  .tagcloud4{
-    font-size:1.7em;
-    z-index: 6; }
-  
-  .tagcloud4 a {
-    color: #26252D; }
-  
-  .tagcloud5{
-    font-size:2.0em;
-    z-index: 5; }
-  
-  .tagcloud5 a {
-    color: #025669; }
-  
-  .tagcloud6{
-    font-size:2.4em;
-    z-index: 4; }
-  
-  .tagcloud6 a {
-    color: #0E294B; }
-  
-  .tagcloud7{
-    font-size:2.7em;
-    z-index: 3; }
-  
-  .tagcloud7 a {
-    color: #231A24; }
-  
-  .tagcloud8{
-    font-size:3em;
-    z-index: 2; }
-  
-  .tagcloud8 a {
-    color: #3B83BD; }
-  
-  .tagcloud9{
-    font-size:3.3em;
-    z-index: 1; }
-  
-  .tagcloud9 a {
-    color: #1E213D; }
-  
-  .tagcloud10{
-    font-size:3.6em;
-    z-index: 0; }
-  
-  .tagcloud10 a {
-    color: #606E8C; }
-  
-  
-  #cloud {
-    margin: 0px 30px 30px;
-    background: none repeat scroll 0% 0% #40524f;
-    padding: 4px; }
+.tagcloud0 a {
+color: #1D1E33; }
+
+.tagcloud1{
+font-size:0.8em;
+z-index: 9; }
+
+.tagcloud1 a {
+color: #18171C; }
+
+.tagcloud2{
+font-size:1.2em;
+z-index: 8; }
+
+.tagcloud2 a {
+color: #1E2460; }
+
+.tagcloud3{
+font-size:1.4em;
+z-index: 7; }
+
+.tagcloud3 a {
+color: #3E5F8A; }
+
+.tagcloud4{
+font-size:1.7em;
+z-index: 6; }
+
+.tagcloud4 a {
+color: #26252D; }
+
+.tagcloud5{
+font-size:2.0em;
+z-index: 5; }
+
+.tagcloud5 a {
+color: #025669; }
+
+.tagcloud6{
+font-size:2.4em;
+z-index: 4; }
+
+.tagcloud6 a {
+color: #0E294B; }
+
+.tagcloud7{
+font-size:2.7em;
+z-index: 3; }
+
+.tagcloud7 a {
+color: #231A24; }
+
+.tagcloud8{
+font-size:3em;
+z-index: 2; }
+
+.tagcloud8 a {
+color: #3B83BD; }
+
+.tagcloud9{
+font-size:3.3em;
+z-index: 1; }
+
+.tagcloud9 a {
+color: #1E213D; }
+
+.tagcloud10{
+font-size:3.6em;
+z-index: 0; }
+
+.tagcloud10 a {
+color: #606E8C; }
+
+#cloud {
+margin: 0px 30px 30px;
+background: none repeat scroll 0% 0% #40524f;
+padding: 4px; }
   
 
