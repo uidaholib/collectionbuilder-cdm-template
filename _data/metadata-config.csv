@@ -2,7 +2,7 @@ field,display-name,dc-map,browse-link
 title,Title,DC.title
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
-date is approximate,Approximated Date
+date_approximate,Approximated Date
 description,Description,DC.description
 subject,Subjects,DC.subject,true
 location,Location
