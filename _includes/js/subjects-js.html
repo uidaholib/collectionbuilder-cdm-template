@@ -2,8 +2,10 @@
 $.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
     /* set the min count for subject terms, too many terms = slow page load! */
     var minSize = {{ site.data.theme.subject-min }};
-    var subjectTerms = json.subjects.filter(function(x) { return x.count > minSize; }); 
-    //var countMax = subjectTerms.reduce((max, p) => p.count > max ? p.count : max, subjectTerms[0].count);
+    var subjectTerms = json.subjects.filter(function(x) { return x.count > minSize; });
+    {% if site.data.theme.stopwords %}
+    var stopWords = {{ site.data.theme.stopwords | downcase | split: ';' | jsonify }};
+    subjectTerms = subjectTerms.filter(function(a) { return stopWords.indexOf(a.subject) < 0;});{% endif %}
     var counts = subjectTerms.map(function(obj){ return obj.count; });
     var countMax = counts.reduce(function(a, b) { return Math.max(a, b); });
     var cloud = document.getElementById("cloud");
@@ -21,11 +23,10 @@ $.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
     function mapSize(x) { return Math.round(x * 9 / countMax + 1); }
     /* create cloud */
     function makeGrid(array) {
-        var i;
+        var i, item, size;
         //shuffle(array);
-        var item;
         for (i = 0; i < array.length; i++) {
-            var size = mapSize(array[i].count)
+            size = mapSize(array[i].count);
             item = '<a class="btn btn-outline-info m-1 wrd tagcloud' + size + '" href="' + array[i].link + '" >' + array[i].subject + '</a>';
             cloud.innerHTML += item;
         }

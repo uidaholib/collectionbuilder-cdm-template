@@ -14,13 +14,12 @@ gallery: true
     <div class="row">
         <div class="col-md-6" id="lightgallery" >
             <div class="card mb-2">
-                {%- assign lowercase_type = page.type | downcase -%}
-                {% if lowercase_type contains "image" %}
+                {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                     <p class="text-center"><small>Click to view full screen</small></p>
                 </div>
-                {%- elsif lowercase_type == "sound" -%}
+                {%- elsif page.format contains 'audio' -%}
                 <div class="mt-4">
                     <p class="text-center">
                         <audio controls class="mp3-item-player">
@@ -36,7 +35,7 @@ gallery: true
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
-                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last }}</a>
+                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last | upcase }}</a>
                 </div>
             </div>
         </div>
@@ -47,12 +46,12 @@ gallery: true
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                        {% if f.field contains "subject" %}
+                        {% if f.field == "subject" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
                             <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
                         {% endfor %}
-                        {% elsif f.field contains "date" %}
+                        {% elsif f.field == "date" %}
                         {{ page[f.field] }} 
                         <a class="ml-4" href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
                         {% else %}{{ page[f.field] }}{% endif %}
@@ -86,7 +85,7 @@ gallery: true
                         <dt>Preferred Citation:</dt> 
                         <dd>{{ page.title }}, {{ site.data.theme.title }}, Digital Initiatives, University of Idaho Library</dd>
                         <dt>Reference Link:</dt>
-                        <dd>{{ page.url | absolute_url }}</dd>
+                        <dd>{{ page.url | relative_url | prepend: "https://www.lib.uidaho.edu" }}</dd>
                     </dl>
                 </div>
             </div>
@@ -116,9 +115,9 @@ gallery: true
     {% endif %}
     {%- endfor -%}
     <div class="text-center">
-        {% if back %}<a class="btn btn-secondary" href="{{ list[back] | relative_url }}" role="button">&laquo; Previous</a>{% endif %}
+        {% if back %}<a class="btn btn-secondary" href="{{ list[back] | relative_url }}" role="button" id="prev-page-button">&laquo; Previous</a>{% endif %}
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        {% if forward %}<a class="btn btn-secondary" href="{{ list[forward] | relative_url }}" role="button">Next &raquo;</a>{% endif %}
+        {% if forward %}<a class="btn btn-secondary" href="{{ list[forward] | relative_url }}" role="button" id="next-page-button">Next &raquo;</a>{% endif %}
     </div>
     <div id="item-nav">
         {% if back %}<a class="previous bg-secondary text-white  btn btn-lg" href="{{ list[back] | relative_url }}" class="text-white">&laquo;</a>{% endif %}
