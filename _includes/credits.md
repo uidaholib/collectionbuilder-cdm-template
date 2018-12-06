@@ -3,7 +3,7 @@
 <div class="card-body">
 <div class="card-text" markdown="1">
 
-[CollectionBuilder](https://github.com/CollectionBuilder/collectionbuilder-gh) is a project of University of Idaho Library's [Digital Initiatives](https://www.lib.uidaho.edu/digital/) as part of the Lib-STATIC toolkit. 
+This site is built using the [CONTENTdm-modified](https://github.com/uidaholib/collectionbuilder-cdm-template) version of [CollectionBuilder](https://github.com/CollectionBuilder/collectionbuilder-gh), which is a project of University of Idaho Library's [Digital Initiatives](https://www.lib.uidaho.edu/digital/) as part of the Lib-STATIC toolkit. 
 It uses the open source static site generator [Jekyll](https://jekyllrb.com/) built into hosting from [GitHub Pages](https://pages.github.com/).
 The basic frame work is created using [Bootstrap](https://getbootstrap.com/) and [jQuery](https://jquery.com/).
 Metadata visualizations are created using [DataTables](https://datatables.net/), [Leafletjs](http://leafletjs.com/), and [Lunr.js](https://lunrjs.com/).
