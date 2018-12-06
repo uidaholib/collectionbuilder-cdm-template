@@ -11,5 +11,6 @@ longitude,Longitude
 collection,Source Collection
 identifier,Source Identifier
 type,Type,DC.type
+format original,Format Original
 format,Format
 rightsstatement,Rights
