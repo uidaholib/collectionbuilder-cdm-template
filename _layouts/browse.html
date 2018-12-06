@@ -23,7 +23,7 @@ layout: page
     {% for item in items %}
     <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
         <div class="card">
-            {%- assign extension = item.format | strip | split: '/' | last -%}
+            {%- assign extension = item.format | strip | split: '/' | last | downcase -%}
             {%- if item.format contains 'image' -%}
             <a href="{% include item-link.html %}">
                 <img class="card-img-top lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
@@ -42,7 +42,7 @@ layout: page
                 {%- endunless -%}
                 <p>
                     {%- capture btns -%}{% for f in fields %}{% if f.display-name-or-btn == 'btn' %}{{ item[f.field] | strip }};{% endif %}{% endfor %}{%- endcapture -%}
-                    {%- assign btns = btns | split: ';' -%}
+                    {%- assign btns = btns | split: ';' | compact -%}
                     {% for b in btns %}{% if b !=" " %}
                     <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ b | strip | escape }}" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
                     {% endif %}{% endfor %} 
