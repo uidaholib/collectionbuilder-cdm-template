@@ -32,8 +32,8 @@ layout: page
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
-                    {% if item.date %}<strong>Date:</strong> {{ item.date }}
-                    <br>{% endif %}<small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>
+                    {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
+                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>{%endif%}
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
@@ -43,7 +43,7 @@ layout: page
                 <p>
                     {%- capture btns -%}{% for f in fields %}{% if f.display-name-or-btn == 'btn' %}{{ item[f.field] | strip }};{% endif %}{% endfor %}{%- endcapture -%}
                     {%- assign btns = btns | split: ';' | compact -%}
-                    {% for b in btns %}{% if b !=" " %}
+                    {% for b in btns %}{% if b !=" " and b != "" %}
                     <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ b | strip | escape }}" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
                     {% endif %}{% endfor %} 
                 </p>

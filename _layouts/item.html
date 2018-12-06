@@ -35,7 +35,9 @@ gallery: true
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
-                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last | upcase }}</a>
+                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last | upcase }}</a> {%if page.date %}<a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="object download">View Year on Timeline</a>{%endif%}
+                    {%if page.latitude%}
+                    <a href="{{ 'https://www.google.com/maps/search/?api=1&query=' | append: page.latitude  | append: ',' | append: page.longitude }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="object view on map">View on Map</a>{%endif%}
                 </div>
             </div>
         </div>
@@ -54,7 +56,11 @@ gallery: true
                         {% elsif f.field == "date" %}
                         {{ page[f.field] }} 
                         <a class="ml-4" href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
-                        {% else %}{{ page[f.field] }}{% endif %}
+                        {% elsif f.field == "latitude" %}
+                        {{ page[f.field] }} 
+                        <a class="ml-4" href="{{ 'https://www.google.com/maps/search/?api=1&query=' | append: page[f.field]  | append: ',' | append: page.longitude }}"><small>View on Google Map</small></a>
+                        {% else %}
+                        {{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
                 </dl>
@@ -123,5 +129,15 @@ gallery: true
         {% if back %}<a class="previous bg-secondary text-white  btn btn-lg" href="{{ list[back] | relative_url }}" class="text-white">&laquo;</a>{% endif %}
         {% if forward %}<a class="next bg-secondary text-white btn btn-lg" href="{{ list[forward] | relative_url }}" class="text-white">&raquo;</a>{% endif %}
     </div>
-{%- endif -%}    
+    {%- elsif site.data.theme.browse-buttons == "numerical-order" -%}
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{%if page.cdm-id == "0" %}{{ site.data.theme.last-item-number | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | minus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}" role="button" id="prev-page-button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+        <a class="btn btn-secondary" href="{%if page.cdm-id == site.data.theme.last-item-number %}{{ '0' | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | plus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}" role="button" id="next-page-button">Next &raquo;</a>
+    </div>
+    <div id="item-nav">
+        <a class="previous bg-secondary text-white  btn btn-lg" href="{%if page.cdm-id == "0" %}{{ site.data.theme.last-item-number | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | minus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}">&laquo;</a>
+        <a class="next bg-secondary text-white btn btn-lg" href="{%if page.cdm-id == site.data.theme.last-item-number %}{{ '0' | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | plus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}">&raquo;</a>
+    </div>
+{%- endif -%}      
 </div>
