@@ -47,6 +47,9 @@ subjects-off: false # true / false, turns off subject generation to lower dev bu
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
 stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
+# Locations page
+locations-on: # true/false
+
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
