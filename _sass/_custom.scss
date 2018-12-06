@@ -77,7 +77,7 @@ a {
 }
 .jumbotron {
     @include media-query($on-palm) {
-        height:430px;
+        //height:430px;
     }
 }
 dt {

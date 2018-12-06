@@ -48,7 +48,7 @@ gallery: true
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                        {% if f.field == "subject" %}
+                        {% if f.browse-link == "true" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
                             <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
