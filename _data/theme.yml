@@ -7,7 +7,7 @@ metadata: boxing # check against cdm-collection-id below -- this should be used 
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://digital.lib.uidaho.edu 
+cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
 cdm-collection-id: boxing 
 
@@ -56,6 +56,11 @@ year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
 about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+
+# images 
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
 
 # Theme Options
 # navbar text color
