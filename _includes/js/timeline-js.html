@@ -1,22 +1,17 @@
 <script src="{{ '/js/jquery.lazyload.js' | prepend: site.digital-assets }}"></script>
 <script>
-    var $imgs = $("img.lazy");
-    // Lazy Load images when they appear in DOM
-    $imgs.lazyload({ 
-       effect: "fadeIn",
-       failure_limit: Math.max($imgs.length - 1, 0)
-    });
-    // init tooltips
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-    // get hash from url
-  
- 
-  $(document).ready(function(){
-    var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " "); 
-   
-        $("#" + hashfilter).addClass("bg-info");
-           
-        });
+var $imgs = $("img.lazy");
+// Lazy Load images when they appear in DOM
+$imgs.lazyload({ 
+    effect: "fadeIn",
+    failure_limit: Math.max($imgs.length - 1, 0)
+});
+// init tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+$(document).ready(function(){
+    var hashfilter = decodeURIComponent(location.hash.substr(1));
+    $("#" + hashfilter).addClass("bg-info");
+});
 </script>

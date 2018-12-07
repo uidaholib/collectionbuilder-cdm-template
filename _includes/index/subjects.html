@@ -16,7 +16,7 @@
     <h5 class="card-title">Top Subjects</h5>
     <p class="card-text">
         {% for s in topSubjects %}
-        <a class="btn btn-sm btn-info m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
+        <a class="btn btn-sm btn-clearwater m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
     </p>
   </div>
 </div>

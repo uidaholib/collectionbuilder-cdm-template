@@ -33,11 +33,11 @@ layout: page
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
-                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>{%endif%}
+                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>{% endif %}
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
-                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazy" {% if forloop.index < 20 %}src={% else %}data-original={%endif%}"{% include image/thumb.html %}" alt="item thumbnail"></a>
+                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazy" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
                 </p>
                 {%- endunless -%}
                 <p>
@@ -54,7 +54,7 @@ layout: page
                     {% endif %}{% endfor %}
                 </p>
                 <p>
-                    <a href="{% include item-link.html %}" class="btn btn-info" title="link to {{ item.title | escape }}">View Item</a>
+                    <a href="{% include item-link.html %}" class="btn btn-clearwater" title="link to {{ item.title | escape }}">View Item</a>
                 </p>
             </div>
         </div>

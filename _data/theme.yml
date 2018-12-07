@@ -22,7 +22,7 @@ home-banner-image-number: 15 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: # must be in px; default is 300px.
+carousel-height: # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: University of Idaho; Sacramento, California; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
@@ -46,6 +46,9 @@ zoom-level: 5 # zoom level for map
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
 stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
+
+# Locations page
+locations-on: # true/false
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
