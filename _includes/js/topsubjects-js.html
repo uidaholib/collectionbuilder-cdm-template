@@ -6,7 +6,7 @@ function makeTop(array) {
     var i;
     var item;
     for (i = 0; i < 9; i++) {
-        item = '<a class="filter btn btn-sm btn-info m-1" href="{{ "/browse.html" | relative_url }}#' + array[i].subject + '">' + array[i].subject + '</a>';
+        item = '<a class="filter btn btn-sm btn-clearwater m-1" href="{{ "/browse.html" | relative_url }}#' + array[i].subject + '">' + array[i].subject + '</a>';
         cloud.innerHTML += item;
     }
 }
