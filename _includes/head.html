@@ -4,7 +4,6 @@
 <meta http-equiv="Content-Language" content="en-us" >
 {% if page.layout == "item" %}{% include item-meta.html %}{% else %}{% include page-meta.html %}{% endif %}
 
-<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 {% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 {% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
