@@ -4,7 +4,6 @@
 {%- if site.data.theme.subjects-off == false -%}
 {%- assign subjects = site.data[site.data.theme.metadata] | map: "subject" | join: ";" | downcase | split: ";" | array_count_uniq -%}
 subject,count,link
-{% for s in subjects %}
-"{{ s[0] }}",{{ s[1] }},"{{ s[0] | url_param_escape | prepend: '/browse.html#' | absolute_url }}"
+{% for s in subjects %}"{{ s[0] }}",{{ s[1] }},"{{ s[0] | url_param_escape | prepend: '/browse.html#' | absolute_url }}"
 {% endfor %}
 {%- endif -%}
