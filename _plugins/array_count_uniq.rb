@@ -1,5 +1,5 @@
-# use like {{ var | array_count_uniq }}
-# where var is a liquid array 
+# use like {{ myarray | array_count_uniq }}
+# where myarray is a liquid array 
 # returns a hash of the unique values + counts
 module Jekyll
   module AssetFilter
