@@ -2,6 +2,7 @@
 # Generate pages from individual records in yml files
 # (c) 2014-2016 Adolfo Villafiorita
 # Distributed under the conditions of the MIT License
+# modified by evan will 2018, adding 'index_number' to the page objects
 
 module Jekyll
 
