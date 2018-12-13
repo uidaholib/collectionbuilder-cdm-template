@@ -1,15 +1,24 @@
 {% if page.layout == "home-infographic" %}
 <style>
 #home-banner {
-    background-image: url('{% if site.data.theme.home-banner-image-number %}{{site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{site.data.theme.cdm-collection-id}}&CISOPTR={{site.data.theme.home-banner-image-number}}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0{%else%}{{site.data.theme.home-banner-image-link}}{%endif%}');
+    background-image: url('{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
+#home-title-box {
+    padding-top: {{ site.data.theme.home-title-y-padding }};
+    padding-bottom: {{ site.data.theme.home-title-y-padding }};
+}
+.title-card {
+    background-color: #ffffffd1;
+    border: 2px solid #191919;
+    border-style: ridge;
+}
 </style>
-<div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0" aria-label="{{site.data.theme.home-banner-image-title}}">
+<div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0" aria-label="{{ site.data.theme.home-banner-image-title }}">
     
-    <div class="col-md-8 mx-auto display-block text-center" style="padding: {{site.data.theme.home-title-y-padding}} 0;">
+    <div id="home-title-box" class="col-md-8 mx-auto display-block text-center">
         <div class="card text-dark title-card">
             <h1 class="display-4">{{ site.data.theme.title }}</h1>
             <p>{{ site.data.theme.tagline }}</p>
@@ -17,7 +26,7 @@
             <img id="digleft" src="https://www.lib.uidaho.edu/digital/justdi_logo_sm.png" alt="digital initiatives logo" ></a>
         </div>
     </div>
-    <div class="text-right p-1"><small><a class="text-info" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{%else%}{{site.data.theme.home-banner-image-link}}{%endif%}">Featured Image</a></small></div>
+    <div class="text-right p-1"><small><a class="text-info" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}">Featured Image</a></small></div>
 </div>
 {%- else -%}
 <div class="container">
