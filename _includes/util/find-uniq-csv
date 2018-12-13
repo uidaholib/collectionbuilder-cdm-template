@@ -3,12 +3,7 @@ Provide a metadata field and split-on,
 this function returns a CSV of all unique values and their counts. 
 Use: {% include util/find-uniq-csv field="example" split-on=";" %}
 {%- endcomment -%}
-{%- assign raw = site.data[site.data.theme.metadata] | map: include.field | join: include.split-on | split: include.split-on -%}
-{%- capture array -%}{% for s in raw %}{% if s != "" and s != " " %}{{ s | strip | downcase }};{% endif %}{%- endfor -%}{%- endcapture -%}
-{%- assign array = array | split: ";" -%}
-{%- assign uniqueArray = array | uniq | sort -%}
+{%- assign uniqueArray = site.data[site.data.theme.metadata] | map: include.field | join: include.split-on | split: include.split-on | array_count_uniq -%}
 {{ include.field }},count,link
-{% for unique in uniqueArray %}
-{%- assign count = array | where_exp: "item", "item == unique" | size -%}
-"{{ unique }}",{{ count }},"{{ unique | url_param_escape | prepend: "/browse.html#" | absolute_url }}"
+{% for unique in uniqueArray %}"{{ unique[0] }}",{{ unique[1] }},"{{ unique[0] | url_param_escape | prepend: '/browse.html#' | absolute_url }}"
 {% endfor %}
