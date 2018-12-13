@@ -1,14 +1,9 @@
 {%- if site.data.theme.featured-subjects -%}
 {%- assign topSubjects = site.data.theme.featured-subjects | split: ";" -%}
 {%- else -%}
-{%- assign raw-subjects = site.data[site.data.theme.metadata] | map: "subject" | join: ";" | split: ";" -%}
-{%- capture subjects -%}{%- for s in raw-subjects -%}{%- if s != "" and s != " " -%}{{ s | strip | downcase }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
-{%- assign subjects = subjects | split: ";" -%}
-{%- assign uniqueSubjects = subjects | uniq | sort -%}
-{%- capture subjects-count -%}{% for unique in uniqueSubjects %}{% assign count = subjects | where_exp: 'item', 'item == unique' | size %}{{ count | prepend: '0000' | slice: -4, 4 }}||{{ unique }}{% unless forloop.last %};{% endunless %}{% endfor %}{%- endcapture -%}
-{%- assign subjects-count = subjects-count | split: ";" | sort | reverse -%}
+{%- assign subjects = site.data[site.data.theme.metadata] | map: "subject" | join: ";" | downcase | split: ";" | array_count_uniq -%}
 {%- capture topSubjects -%}
-{% for i in subjects-count limit: site.data.theme.featured-subjects-max %}{{ i | split: "||" | last }};{% endfor %}{% endcapture %}
+{% for i in subjects limit: site.data.theme.featured-subjects-max %}{{ i[0] }};{% endfor %}{% endcapture %}
 {%- assign topSubjects = topSubjects | split: ";" -%}
 {%- endif -%}
 <div class="card mb-3">
