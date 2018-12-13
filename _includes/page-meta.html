@@ -6,7 +6,7 @@
 <meta property="og:description" content="{{ site.data.theme.description | escape }}" />
 <meta property="og:site_name" content="{{ site.data.theme.title | escape }}" />
 <meta property="og:type" content="website" />
-{% if site.data.theme.home-banner-image-number %}<meta property="og:image" content="{{ site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{ site.data.theme.cdm-collection-id }}&CISOPTR={{ site.data.theme.home-banner-image-number }}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0" />{% endif %}
+<meta property="og:image" content="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}","author":{"@type":"Person","name":"{{ site.data.theme.author | escape }}"},"description":"{{ site.data.theme.description | escape }}","url":"{{ page.url | absolute_url }}"}</script> 
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}","author":{"@type":"Person","name":"{{ site.data.theme.author | escape }}"},"publisher":"University of Idaho Library","description":"{{ site.data.theme.description | escape }}","url":"{{ page.url | absolute_url }}"}</script> 
