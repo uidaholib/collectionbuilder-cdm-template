@@ -3,7 +3,6 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.metadata-config -%}
-{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -44,10 +43,11 @@ gallery: true
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
-                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="object download">Download {{ page.format | split: '/' | last | upcase }}</a>
-                    {% if page.date %}<a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="view object year on timeline">View on Timeline</a>{% endif %}
+                    <a href="{% include download/item.html %}" target="_blank" class="btn btn-outline-clearwater" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
+                    {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
+                    <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="View object year on timeline">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}
-                    <a href="{{ 'https://www.google.com/maps/search/?api=1&query=' | append: page.latitude  | append: ',' | append: page.longitude }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="view object location on Google map">View on Map</a>{% endif %}
+                    <a href="{{ 'https://www.google.com/maps/search/?api=1&query=' | append: page.latitude  | append: ',' | append: page.longitude }}" target="_blank" class="ml-2 btn btn-outline-clearwater" title="View object location on Google map">View on Map</a>{% endif %}
                 </div>
             </div>
         </div>
@@ -116,32 +116,27 @@ gallery: true
     </div>
 
 {%- if site.data.theme.browse-buttons == true -%}
-    {% assign list = site.html_pages | where: "layout", "item" | map: "url" %}
-    {% for l in list %}
-    {% if l == page.url %}
-    {% unless forloop.first %}{% assign back = forloop.index0 | minus: 1 %}{% endunless %}
-    {% unless forloop.last %}{% assign forward = forloop.index0 | plus: 1 %}{% endunless %}
-    {% break %}
-    {% endif %}
-    {%- endfor -%}
+{% assign last = site.data[site.data.theme.metadata] | size | minus: 1 %}
+{% unless page.index_number == 0 %}
+{% assign back = page.index_number | minus: 1 %}
+{% else %}
+{% assign back = last %}
+{%- endunless -%}
+{% unless page.index_number == last %}
+{% assign forward = page.index_number | plus: 1 %}
+{% else %}
+{% assign forward = 0 %}
+{%- endunless -%}
+{%- assign back_url = site.data[site.data.theme.metadata][back].object-id | append: '.html' | prepend: '/items/' | relative_url -%}
+{%- assign forward_url = site.data[site.data.theme.metadata][forward].object-id | append: '.html' | prepend: '/items/' | relative_url -%}
     <div class="text-center">
-        {% if back %}<a class="btn btn-secondary" href="{{ list[back] | relative_url }}" role="button" id="prev-page-button">&laquo; Previous</a>{% endif %}
+        <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        {% if forward %}<a class="btn btn-secondary" href="{{ list[forward] | relative_url }}" role="button" id="next-page-button">Next &raquo;</a>{% endif %}
+        <a class="btn btn-secondary" href="{{ forward_url }}" role="button" id="next-page-button">Next &raquo;</a>
     </div>
     <div id="item-nav">
-        {% if back %}<a class="previous bg-secondary text-white  btn btn-lg" href="{{ list[back] | relative_url }}" class="text-white">&laquo;</a>{% endif %}
-        {% if forward %}<a class="next bg-secondary text-white btn btn-lg" href="{{ list[forward] | relative_url }}" class="text-white">&raquo;</a>{% endif %}
+        <a class="previous bg-secondary text-white  btn btn-lg" href="{{ back_url }}" class="text-white">&laquo;</a>
+        <a class="next bg-secondary text-white btn btn-lg" href="{{ forward_url }}" class="text-white">&raquo;</a>
     </div>
-    {%- elsif site.data.theme.browse-buttons == "numerical-order" -%}
-    <div class="text-center">
-        <a class="btn btn-secondary" href="{%if page.cdm-id == "0" %}{{ site.data.theme.last-item-number | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | minus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}" role="button" id="prev-page-button">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        <a class="btn btn-secondary" href="{%if page.cdm-id == site.data.theme.last-item-number %}{{ '0' | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | plus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}" role="button" id="next-page-button">Next &raquo;</a>
-    </div>
-    <div id="item-nav">
-        <a class="previous bg-secondary text-white  btn btn-lg" href="{%if page.cdm-id == "0" %}{{ site.data.theme.last-item-number | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | minus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}">&laquo;</a>
-        <a class="next bg-secondary text-white btn btn-lg" href="{%if page.cdm-id == site.data.theme.last-item-number %}{{ '0' | prepend: site.data.theme.metadata | append: '.html'}}{%else%}{{ page.cdm-id | plus: 1 | prepend: site.data.theme.metadata | append: '.html'}}{%endif%}">&raquo;</a>
-    </div>
-{%- endif -%}      
+{%- endif -%}     
 </div>
