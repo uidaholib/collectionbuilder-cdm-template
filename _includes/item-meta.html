@@ -4,18 +4,14 @@
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-<meta name="DC.title" content="{{ page.title | xml_escape }}" xml:lang="en" />
-<meta name="DC.creator" content="{{ page.creator | xml_escape }}" xml:lang="en" />
-<meta name="DCTERMS.created" content="{{ page.date | xml_escape }}" xml:lang="en" scheme="DCTERMS.W3CDTF" />
-<meta name="DC.description" content="{{ page.description | truncatewords: 25 | xml_escape  }}" xml:lang="en" />
-{% assign subs = page.subject | split: ";" %}{% for s in subs %}<meta name="DC.subject" content="{{ s | strip | xml_escape }}" xml:lang="en" />
-{% endfor %}
-<meta name="DC.type" content="{{ page.type | xml_escape }}" xml:lang="en" />
+{%- assign fields = site.data.metadata-config -%}
+{% for f in fields %}{% if f.dc-map %}{% if page[f.field] %}<meta name="{{ f.dc-map }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
+{% endif %}{% endif %}{% endfor %}
 <!-- Open Graph meta -->
 <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:description" content="Item from {{ site.data.theme.title | escape }}. {{ page.description | truncatewords: 30 | escape }}" />
-<meta property="og:image" content="{% if page.format == 'image/jpg' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}" />
+<meta property="og:image" content="{% if page.format == 'image/jpg' %}{% include image/large.html %}{% else %}{% include image/thumb.html %}{% endif %}" />
 <meta property="og:site_name" content="{{ site.data.theme.title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
@@ -23,16 +19,20 @@
 <script type="application/ld+json">
 { 
     "@context": "http://schema.org",
-    "@type": "ScholarlyArticle",
+    "@type": "ItemPage",
     "headline": {{ page.title | jsonify }},
-    "author": [ {% assign authors = page.creator | split: ";" %}{% for author in authors %}{{ author | strip | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %} ],
-    "datePublished": {{ page.date | jsonify }},
-    "description": {{ page.description | truncatewords: 28 | jsonify }},
-    "about": [ {% for s in subs %}{{ s | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %} ],
-    {% if page.location %}"spatialCoverage": [ {% assign places = page.location | split: ";" %}{% for place in places %}{{ place | strip | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %} ],{% endif %}
-    "image": "{% if page.format == 'image/jpg' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+    {% if page.creator %}"creator": {{ page.creator | jsonify }},{%- endif -%}
+    {% if page.date %}"dateCreated": {{ page.date | jsonify }},{%- endif -%}
+    {% if page.description %}"description": {{ page.description | truncatewords: 28 | jsonify }},{%- endif -%}
+    {% if page.subjects %}"keywords": {{ page.subjects | jsonify }},{%- endif -%}
+    {% if page.location %}"contentLocation": {{ page.location | jsonify }},{%- endif -%}
+    "isPartOf": {{ site.data.theme.title | jsonify }},
+    "relatedLink": {{ '/' | absolute_url | jsonify }},
+    "image": "{% if page.format contains 'image' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+    "thumbnailUrl": "{% include image/thumb.html %}",
+    {% if page.standardized-rights %}"license": {{ page.standardized-rights | jsonify }},{%- endif -%}
     "url": {{ page.url | absolute_url | jsonify }}
 }
 </script> 
 <!-- breadcrumbs schema -->
-<script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "{{ "/" | absolute_url }}", "name": {{ site.data.theme.title | jsonify }}, "image": "{{ site.data.theme.cdm-url}}/utils/ajaxhelper/?CISOROOT={{ site.data.theme.cdm-collection-id }}&CISOPTR={{ site.data.theme.home-banner-image-number }}&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=0&DMTEXT=&DMROTATE=0" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "{{ "/data/" | absolute_url }}", "name": "Data" } },{ "@type": "ListItem", "position": 3, "item": { "@id": "{{ page.url | absolute_url }}", "name": {{ page.title | jsonify }}, "image": "{% if page.format == 'image/jpg' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}" } }] }</script>
+<script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "{{ "/" | absolute_url }}", "name": {{ site.data.theme.title | jsonify }}, "image": "{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "{{ '/browse.html' | absolute_url }}", "name": "Browse Collection" } },{ "@type": "ListItem", "position": 3, "item": { "@id": "{{ page.url | absolute_url }}", "name": {{ page.title | jsonify }}, "image": "{% if page.format == 'image/jpg' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}" } }] }</script>

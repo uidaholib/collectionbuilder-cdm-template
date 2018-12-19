@@ -11,7 +11,7 @@ layout: page
         <div class="input-group input-group-lg">
             <input type="text" class="form-control form-control-lg" id="quicksearch" placeholder="Filter ... " > 
             <div class="input-group-append">
-                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" onclick="filterItems()">Filter</button>
+                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" onclick="filterItems()">Search</button>
                 <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>    
             </div>
         </div>
@@ -19,7 +19,7 @@ layout: page
     </div>
 </div>
 
-<div class="row" id="browse-items">
+<div class="row" id="browseItems">
     {% for item in items %}
     <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
         <div class="card">
