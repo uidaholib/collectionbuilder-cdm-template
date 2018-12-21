@@ -3,13 +3,13 @@
 # Site settings
 title: Donald R. Theophilus Boxing Photograph Collection
 # choose metadata, be sure to also change page_gen data setting!
-metadata: dworshak # check against cdm-collection-id below -- this should be used in config file as well
+metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
 cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
-cdm-collection-id: dworshak 
+cdm-collection-id: boxing 
 
 # header and head metadata
 tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
