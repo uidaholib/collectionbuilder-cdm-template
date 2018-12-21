@@ -29,6 +29,18 @@ a {
     }
 }
 
+/* nav bar */
+
+.bg-dark{background-color: #191919!important}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
 /* item page */
 .gallery-img {
     cursor: pointer;
@@ -145,7 +157,7 @@ color: #606E8C; }
 
 #cloud {
 margin: 0px 30px 30px;
-background: none repeat scroll 0% 0% #40524f;
+background: none repeat scroll 0% 0% #191919;
 padding: 4px; }
   
 
