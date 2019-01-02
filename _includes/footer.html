@@ -1,7 +1,50 @@
-<footer class="navbar nav-light border-top">
-    <div class="container py-3">
-        <a href="{{ '/' | absolute_url }}">{{ site.data.theme.title }}</a> 
+<!-- Footer -->
+<footer class="bg-dark mt-3 pt-4 container-fluid">
 
-        <span class="navbar-text navbar-nav"><a href="https://www.lib.uidaho.edu/digital/">University of Idaho Library Digital Initiatives</a> 2018</span>
+      <!-- Grid row -->
+      <div class="row border-bottom border-white pb-4 mb-2">
+
+        <!-- Grid column -->
+        <div class="col-md-7  px-4 mt-2">
+
+          <!-- Content -->
+          <h4 ><a href="{{ '/' | absolute_url }}" class="text-white">{{ site.data.theme.title }}</a></h4>
+          <p class="text-white">{{site.data.theme.description}}</p>
+          <ul class="nav nav-pills ">
+         
+          {% for nav in site.data.nav-configuration %}
+           <li class="nav-item">
+            <a class="nav-link text-light clearwater" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a> 
+          </li>
+          {% endfor %}
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+
+          <!-- Grid column -->
+          <div class="col-md-5 mt-2 text-right">
+
+               
+                        <h4 ><a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid" src="https://www.lib.uidaho.edu/digital/bannerlogo_allwhite.png"/></a></h4>
+        <p class="text-white text-right mr-4"><small><a class="text-white pride-gold" href="https://www.lib.uidaho.edu/digital/">About</a> | <a href="https://www.lib.uidaho.edu/digital/collections.html" class="text-white pride-gold">Collections</a></small></p>
+
+            
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+
+
+    <!-- Copyright -->
+    <div class="col-md-12 text-center pt-3 pb-1">
+        <p class="text-white">{{ site.time | date: '%Y' }} |
+        <a class="text-white pride-gold"  href="https://www.lib.uidaho.edu/">University of Idaho Library</a></p>
     </div>
-</footer>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
