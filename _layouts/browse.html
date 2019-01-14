@@ -44,7 +44,7 @@ layout: page
                     {%- capture btns -%}{% for f in fields %}{% if f.display-name-or-btn == 'btn' %}{{ item[f.field] | strip }};{% endif %}{% endfor %}{%- endcapture -%}
                     {%- assign btns = btns | split: ';' | compact -%}
                     {% for b in btns %}{% if b !=" " and b != "" %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
+                    <a class="btn btn-sm btn-secondary m-1 filter text-wrap" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
                     {% endif %}{% endfor %} 
                 </p>
                 <p class="card-text">
