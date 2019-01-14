@@ -13,7 +13,7 @@
                 "coordinates":[{{ item.longitude }},{{ item.latitude }}]
             },            
             "properties":{
-                {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},
+                {% for f in fields %}"{{ f.field }}": {{ item[f.field] | replace: '""','"' | jsonify }},
                 {% endfor %}
                 "link": {{ '/items/' | absolute_url | append: item.object-id | append: '.html' | jsonify }}
             }
