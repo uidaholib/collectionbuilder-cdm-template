@@ -10,27 +10,28 @@
             </div>
             <div class="modal-body">
 
-<div class="float-right">
-<form action="https://digital.lib.uidaho.edu/cdm4/results.php" method="get">
-<input type="hidden" value="all" name="CISOOP1">
-<input type="text" size="20" name="CISOBOX1" style="font-size:12px;" placeholder=" Search all items ...">
-<input type="hidden" value="CISOSEARCHALL" name="CISOFIELD1">
-<input type="hidden" value="exact" name="CISOOP2">
-<input type="hidden" value="" name="CISOBOX2">
-<input type="hidden" value="CISOSEARCHALL" name="CISOFIELD2">
-<input type="hidden" value="any" name="CISOOP3">
-<input type="hidden" value="" name="CISOBOX3">
-<input type="hidden" value="CISOSEARCHALL" name="CISOFIELD3">
-<input type="hidden" value="none" name="CISOOP4">
-<input type="hidden" value="" name="CISOBOX4">
-<input type="hidden" value="CISOSEARCHALL" name="CISOFIELD4">
-<input type="hidden" value="/" name="CISOROOT">
-<input class="button-all" type="submit" value="Go" style="font-size:12px;">
-</form>
-
+<script>
+  function cdm_search_all() {
+    var query = document.getElementById("cdm-search-all").value;
+    window.open("https://digital.lib.uidaho.edu/digital/search/searchterm/" + encodeURI(query) + "/field/all/mode/all/conn/and/order/nosort/ad/asc", "_blank" );
+  }
+</script>
+<div class="row align-items-center mb-3">
+  <div class="col-md-6">
+    <h4 class="mt-2">All Collections</h4>
+  </div>
+  <div class="col-md-6">
+    <form class="form-inline" role="search" id="search" onsubmit="cdm_search_all(); return false;">
+      <div class="input-group">
+        <input id="cdm-search-all" type="text" class="form-control" placeholder="Search all collections..." aria-label="Search all collections" aria-describedby="search-all-button">
+        <div class="input-group-append">
+          <button class="btn btn-pride-gold" type="submit" id="search-all-button">Go</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
-<h4>Collections A-Z</h4>
 <ul class="collection-list">
 <li><a href="https://www.lib.uidaho.edu/digital/uiext/"><strong> Agricultural</strong> Experiment &amp; UI Extension Publications</a></li>
 <li><a href="https://www.lib.uidaho.edu/digital/argonaut/index.html">The<strong> Argonaut</strong></a></li>
