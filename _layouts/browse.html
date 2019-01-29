@@ -9,13 +9,13 @@ layout: page
 <div class="row mb-3 justify-content-center">
     <div class="col-md-8 text-center">
         <div class="input-group input-group-lg">
-            <input type="text" class="form-control form-control-lg" id="quicksearch" placeholder="Filter ... " > 
+            <input type="text" class="form-control form-control-lg" id="quickSearch" placeholder="Filter ... " > 
             <div class="input-group-append">
-                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" onclick="filterItems()">Search</button>
+                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" >Search</button>
                 <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>    
             </div>
         </div>
-        <span class="info2 h2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} items</span>
+        <span class="info2 h2"><span id="numberOf">{{ items | size }}</span> of {{ items | size }} items</span>
     </div>
 </div>
 
@@ -26,30 +26,30 @@ layout: page
             {%- assign extension = item.format | strip | split: '/' | last | downcase -%}
             {%- if item.format contains 'image' -%}
             <a href="{% include item-link.html %}">
-                <img class="card-img-top lazy" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
+                <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
             </a>
             {%- endif -%}
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
-                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a data-filter="{{ extension | escape }}" href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>{% endif %}
+                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a href="{{ extension | prepend: '/browse.html#' | relative_url }}" title="{{ extension | escape }}" class="filter"></span>{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></a></small>{% endif %}
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
-                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazy" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
+                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
                 </p>
                 {%- endunless -%}
                 <p>
                     {%- capture btns -%}{% for f in fields %}{% if f.display-name-or-btn == 'btn' %}{{ item[f.field] | strip }};{% endif %}{% endfor %}{%- endcapture -%}
                     {%- assign btns = btns | split: ';' | compact -%}
                     {% for b in btns %}{% if b !=" " and b != "" %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ b | strip | escape }}" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
+                    <a class="btn btn-sm btn-secondary m-1 filter text-wrap" href="{{ b | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ b }}</a> 
                     {% endif %}{% endfor %} 
                 </p>
                 <p class="card-text">
                     {% for f in fields %}{% if f.display-name-or-btn != 'btn' %}
-                    {% if f.display-name-or-btn %}<strong>{{ f.display-name-or-btn }}:</strong> {% endif %}{{ item[f.field] | truncatewords: 20 }}
+                    {% if f.display-name-or-btn %}<strong>{{ f.display-name-or-btn }}:</strong> {% endif %}{{ item[f.field] | truncatewords: 20 | replace: '""','"' }}
                     {% unless forloop.last %}<br>{% endunless %}  
                     {% endif %}{% endfor %}
                 </p>

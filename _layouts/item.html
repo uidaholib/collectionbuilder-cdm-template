@@ -64,7 +64,7 @@ gallery: true
                             <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
                         {% endfor %}
                         {% else %}
-                        {{ page[f.field] }}{% endif %}
+                        {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
                 </dl>
