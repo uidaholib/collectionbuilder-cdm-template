@@ -6,7 +6,7 @@ To do so, librarians and staff work with a clean version of a single collection'
 
 See the [Mark Brooks Calnon Collection](https://www.lib.uidaho.edu/digital/calnon/index.html_ for an example of a finished collection using this tool. 
 
-While this tool was built specifically for use at the University of Idaho Library, it should also be usable by any other CONTENTdm using institution. We intend to further refine this and related CollectionBuilder tools over the course of the next year, adding a great deal more documentation and guides for the tool's use. 
+While this tool was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm should also be able to use it with properly formatted metadata (use one of our CSVs as a model) and the correct url assignments in the _config.yml and _data/theme.yml files. We intend to further refine this and related CollectionBuilder tools over the course of the next year, adding a great deal more documentation and guides for the tool's use. 
 
 
 
