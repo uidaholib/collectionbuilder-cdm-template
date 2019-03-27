@@ -12,6 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Item from {{ site.data.theme.title | escape }}. {{ page.description | truncatewords: 30 | escape }}" />
 <meta property="og:image" content="{% if page.format == 'image/jpg' %}{% include image/large.html %}{% else %}{% include image/thumb.html %}{% endif %}" />
+<meta property="og:image:alt" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.title | escape }}{% endif %}" />
 <meta property="og:site_name" content="{{ site.data.theme.title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
