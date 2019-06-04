@@ -81,7 +81,7 @@ gallery: true
                     {% assign facets = page.subject | split: ";" %}
                     <p>
                     {% for f in facets %}
-                        <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ f | strip | escape }}" href="{{ f | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
+                        <a class="btn btn-sm btn-secondary m-1" href="{{ f | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
                     {% endfor %}
                     </p>
                 </div>
