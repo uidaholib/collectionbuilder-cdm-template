@@ -8,7 +8,7 @@ url: https://www.lib.uidaho.edu
 baseurl: /digital/boxing
 
 # url to the shared assets folder on Digital
-digital-assets: https://www.lib.uidaho.edu/digital/assets
+digital-assets: https://www.lib.uidaho.edu/assets
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
