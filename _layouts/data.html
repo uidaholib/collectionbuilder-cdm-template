@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
+{% assign fields = site.data.table-config | map: 'display_name' %}
 <button type="button" class="btn btn-clearwater btn-lg float-md-right" data-toggle="modal" data-target="#data">Download Data</button>
 <!-- Modal -->
 <div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -18,15 +18,9 @@ layout: page
                 <br>
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/metadata.json' | absolute_url }}" target="_blank">JSON</a>
                 <br>
-                <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/geodata.json' | absolute_url }}" target="_blank">GeoJSON</a>
-                <br>
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.json' | absolute_url }}" target="_blank">Subjects JSON</a>
                 <br>
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.csv' | absolute_url }}" target="_blank">Subjects CSV</a>
-                <br>
-                <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/locations.json' | absolute_url }}" target="_blank">Locations JSON</a>
-                <br>
-                <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/locations.csv' | absolute_url }}" target="_blank">Locations CSV</a>
                 <br>
                 <!--<a class="btn btn-secondary col-md-6 col-md-offset-3 mt-2" href="#">Download All Items</a>-->
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ site.data.theme.repository }}" rel="noopener" target="_blank">Source Code</a>
@@ -42,10 +36,9 @@ layout: page
     <table id="item-table" class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Date</th>
-                <th scope="col">Description</th>
-                <th scope="col">Subjects</th>
+                {% for f in fields %}
+                <th scope="col">{{ f }}</th>
+                {% endfor %}
                 <th>Link</th>
             </tr>
         </thead>
