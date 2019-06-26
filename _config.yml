@@ -1,5 +1,8 @@
 # Jekyll Digital Collection Generator
 
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
 # url variables
 # library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
@@ -9,9 +12,6 @@ baseurl: /digital/boxing
 
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
-
-# include google analytics? comment out during dev 
-analytics: true 
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
