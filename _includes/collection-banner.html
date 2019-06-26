@@ -21,7 +21,7 @@
     <div id="home-title-box" class="col-md-8 mx-auto display-block text-center">
         <div class="card text-dark title-card">
             <h1 class="display-4">{{ site.data.theme.title }}</h1>
-            <p>{{ site.data.theme.tagline }}</p>
+            {% if site.data.theme.tagline %}<p>{{ site.data.theme.tagline }}</p>{% endif %}
             <a title="University of Idaho Library Digital Initiatives" class="p-1 pb-3" href="https://www.lib.uidaho.edu/digital">
             <img src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" alt="digital initiatives logo" ></a>
         </div>
@@ -30,20 +30,14 @@
 </div>
 {%- else -%}
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row">
-                <div id="title" class="col-11" >
-                    <h1><a href="{{ site.baseurl }}/" >{{ site.data.theme.title }}</a></h1>	 
-                    <p>{{ site.data.theme.tagline }}</p>
-                </div>
-            </div>
+    <div class="row align-items-center">
+        <div id="title" class="col-md-9">
+            <h1><a href="{{ site.baseurl }}/" >{{ site.data.theme.title }}</a></h1>	 
+            {% if site.data.theme.tagline %}<p>{{ site.data.theme.tagline }}</p>{% endif %}
         </div>
-        <div class="col-md-3 d-none d-md-block">
-            <div class="mt-md-3 float-right">
-                <button type="button" class="btn btn-light border-secondary" data-toggle="modal" data-target="#collections">
-                <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
-            </div>
+        <div class="col-md-3 d-none d-md-block text-right">
+            <button type="button" class="btn btn-light border-secondary" data-toggle="modal" data-target="#collections">
+            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
         </div>
     </div>
 </div>
