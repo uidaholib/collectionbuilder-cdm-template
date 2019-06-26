@@ -1,5 +1,5 @@
 field,display,search
 date,Date,true
-creator,Creator,true
+creator,Creator,false
 subject,Subjects,true
 location,Location,true

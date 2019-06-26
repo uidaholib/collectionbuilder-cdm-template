@@ -5,17 +5,17 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/boxing
+baseurl: /digital/pg1
 
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
 
 # include google analytics? comment out during dev 
-analytics: true 
+# analytics: true 
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'boxing'
+  - data: 'pg1'
     template: 'items'
     name: 'object-id'
     dir: 'items'
