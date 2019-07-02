@@ -15,10 +15,9 @@ a {
 }
 /* banner */
 .title-card {
-    background-color: #fff; // fallback for IE
-    background-color: rgba(255, 255, 255, 0.82);
+    background-color: #fff; /* fallback for IE */
+    background-color: rgba(255, 255, 255, 0.86);
     border: 2px solid #191919;
-    border-style: ridge;
 }
 #title {
     a { 

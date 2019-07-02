@@ -11,14 +11,17 @@
     padding-bottom: {{ site.data.theme.home-title-y-padding }};
 }
 </style>
-<div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0" aria-label="{{ site.data.theme.home-banner-image-title }}">
-    
-    <div id="home-title-box" class="col-md-8 mx-auto display-block text-center">
-        <div class="card text-dark title-card">
-            <h1 class="display-4">{{ site.data.theme.title }}</h1>
-            {% if site.data.theme.tagline %}<p>{{ site.data.theme.tagline }}</p>{% endif %}
-            <a title="University of Idaho Library Digital Initiatives" class="p-1 pb-3" href="https://www.lib.uidaho.edu/digital">
-            <img src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" alt="digital initiatives logo" ></a>
+<div id="home-banner" class="jumbotron jumbotron-fluid mb-0 p-0" aria-label="{{ site.data.theme.home-banner-image-title }}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div id="home-title-box" class="col-12">
+                <div class="text-dark title-card p-2 rounded text-center">
+                    <h1 class="display-4">{{ site.data.theme.title }}</h1>
+                    {% if site.data.theme.tagline %}<p>{{ site.data.theme.tagline }}</p>{% endif %}
+                    <a title="University of Idaho Library Digital Initiatives" href="https://www.lib.uidaho.edu/digital">
+                    <img src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" class="p-1 pb-3" alt="digital initiatives logo" ></a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="text-right p-1"><small><a class="text-info" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}">Featured Image</a></small></div>
