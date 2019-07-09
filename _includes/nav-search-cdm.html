@@ -1,7 +1,7 @@
 <script>
     function cdm_search() {
         var query = document.getElementById("nav-search").value;
-        window.open("https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/searchterm/" + encodeURI(query) + "/field/all/mode/all/conn/and/order/title/ad/asc", "_blank" );
+        window.open("https://digital.lib.uidaho.edu/digital/collection/{{ site.data.theme.cdm-collection-id }}/search/searchterm/" + encodeURI(query), "_blank" );
     }
 </script>
 <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="cdm_search(); return false;">
