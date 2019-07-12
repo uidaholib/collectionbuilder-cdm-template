@@ -2,7 +2,6 @@ field,display-name,dc-map,browse-link
 title,Title,DC.title
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
-date is approximate,Approximated Date
 description,Description,DC.description
 subject,Subjects,DC.subject,true
 location,Location
@@ -11,6 +10,6 @@ longitude,Longitude
 collection,Source Collection
 identifier,Source Identifier
 type,Type,DC.type
-format original,Format Original
 format,Format
 rightsstatement,Rights
+format original, Original Format
