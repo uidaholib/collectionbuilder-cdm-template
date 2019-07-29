@@ -55,7 +55,7 @@ year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown n
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
-about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+about-off: true # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
 
 # images 
 image-percentage-large: # default 70
