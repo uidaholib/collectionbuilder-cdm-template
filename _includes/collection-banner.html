@@ -4,11 +4,11 @@
     background-image: url('{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: {{ site.data.theme.home-banner-image-position | default: top }};
 }
 #home-title-box {
-    padding-top: {{ site.data.theme.home-title-y-padding }};
-    padding-bottom: {{ site.data.theme.home-title-y-padding }};
+    padding-top: {{ site.data.theme.home-title-y-padding | default: 5em }};
+    padding-bottom: {{ site.data.theme.home-title-y-padding | default: 5em }};
 }
 </style>
 <div id="home-banner" class="jumbotron jumbotron-fluid mb-0 p-0" aria-label="{{ site.data.theme.home-banner-image-title }}">
