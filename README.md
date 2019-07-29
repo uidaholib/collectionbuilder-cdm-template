@@ -1,16 +1,18 @@
-# CollectionBuilder CONTENTdm
+# collectionbuilder-cdm-template
 
-This prototype version of CollectionBuilder is used by the University of Idaho Library to create skins for the digital libary collections maintained in a hosted CONTENTdm instance. 
+template base for creating digital collections at [University of Idaho Library Digital Initiatives](https://www.lib.uidaho.edu/digital/)
 
-To do so, librarians and staff work with a clean version of a single collection's metadata, as stored in a .csv document linked via this Jekyll repository's [`_config.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_config.yml) file.
-Collection settings are customized using the [`_data/theme.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_data/theme.yml).
+added mine,depth, and other fields to metadata-config.csv
 
-Prototype examples:
+subjects/keywords have not been changed because they are not well suited for this project. Removed "subjects" page from nav-configuration.csv It might be worth the time to work on the subjects.
+Letters from the old collection website are not present.
+Lat/Long not extracted from Fusion Table yet. Map page removed from nav-configuration.csv
+Scraped the old website page to fill out the about page
 
-- [Mark Brooks Calnon Collection](https://www.lib.uidaho.edu/digital/calnon/index.html) 
-- [Idaho Cities & Towns](https://www.lib.uidaho.edu/digital/cities/)
-- [CCC Idaho](https://www.lib.uidaho.edu/digital/cccidaho/)
-- [Idaho Waters Digital Library](https://www.lib.uidaho.edu/digital/iwdl/)
+2019-07-29 Olivia Wikle
+- locations.json and locations.csv have been altered to map mines, not locations
+- watkins.csv metadata field "subject (lcsh)" changed to "subject" because otherwise subjects.json doesn't work
+- when subject browse-link is turned on the link doesn't work because it's not escaping correctly. I turned it off in the metadata, but it also doesn't work from the buttons in the Top Subjects box or the Related Items box on the item page.
+- still need map data
+- need to re-create the "Letters" exhibit
 
-While this tool was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm should also be able to use it with properly formatted metadata (use one of our CSVs as a model) and the correct url varibles in the `_config.yml` and `_data/theme.yml` files. 
-We intend to further refine this and related CollectionBuilder tools over the course of the next year, adding a great deal more documentation and guides for the tool's use. 
