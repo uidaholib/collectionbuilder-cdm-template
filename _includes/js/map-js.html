@@ -15,8 +15,16 @@
     {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 
+    var hashfilter = decodeURIComponent(location.hash.substr(1));
     /* init map and set zoom */
-    var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});
+/* If url includes a hash in it, the hash will be split by a comma and the two coordinates used to set the specific map view */
+if(window.location.hash) {
+        var latitudeHash = hashfilter.split(',')[0]
+        var longitudeHash = hashfilter.split(',')[1]
+        var map = L.map('map').setView([latitudeHash,longitudeHash],16);
+ }
+ else {
+    var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});}
     /* load map layer */ 
     /* var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
@@ -55,4 +63,6 @@
         }
     }).addTo(map);
 })();
+
+
 </script>
