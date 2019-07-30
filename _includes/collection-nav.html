@@ -5,8 +5,8 @@
         </button>
 
         <div class="d-md-none float-right">
-            <button type="button" class="btn btn-light p-1 border-secondary" data-toggle="modal" data-target="#collections">
-            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
+            <button type="button" class="btn btn p-1" data-toggle="modal" data-target="#collections">
+            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
         </div>
 
         <div class="collapse navbar-collapse" id="page-nav">
@@ -17,7 +17,7 @@
                 </li>
                 {% endfor %}
                 <li class="nav-item ">
-                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
+                    <a class="nav-link mt-1" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
                 </li>
             </ul>
             {% include nav-search-cdm.html %}
