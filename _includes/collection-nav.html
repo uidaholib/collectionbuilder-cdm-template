@@ -13,7 +13,7 @@
             <ul class="navbar-nav mr-auto">
                 {% for nav in site.data.nav-configuration %}
                 <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
-                    <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
+                    <a class="nav-link mt-1" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
                 <li class="nav-item ">
