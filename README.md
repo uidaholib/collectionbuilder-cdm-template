@@ -7,6 +7,7 @@
 
 ## Other
 - Needs a better about page.  Really don't know what to say on this.
+  - Updated the about page.
 
 ## Possible Enhancements
 - Would there be any value in putting these in context of their conferences?  I don't know the history of the conference system or when we were in what, but maybe there is something to that.  Would take a bit of historical research by someone.  
