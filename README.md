@@ -1,16 +1,14 @@
-# CollectionBuilder CONTENTdm
+# Notes
 
-This prototype version of CollectionBuilder is used by the University of Idaho Library to create skins for the digital libary collections maintained in a hosted CONTENTdm instance. 
+## Metadata
+- Changed metadata header "keywords" to "subject"
+- Need to look at the metadata.  It's a frankenstein of the old stuff and the new.  I combined all the unique fields from both the "old" and "new" football.csv spreadsheets.  May be rundundant, may be useful.  Various links, file names, and id fields are all over the place.
+- Subjects are not overly interesting, but provide a nice geographical/school browse option.  This should probably be enhanced to create a list of all schools represented.  Some, like Weber State, are not listed, and just grouped under "utah".
 
-To do so, librarians and staff work with a clean version of a single collection's metadata, as stored in a .csv document linked via this Jekyll repository's [`_config.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_config.yml) file.
-Collection settings are customized using the [`_data/theme.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_data/theme.yml).
+## Other
+- Needs a better about page.  Really don't know what to say on this.
 
-Prototype examples:
-
-- [Mark Brooks Calnon Collection](https://www.lib.uidaho.edu/digital/calnon/index.html) 
-- [Idaho Cities & Towns](https://www.lib.uidaho.edu/digital/cities/)
-- [CCC Idaho](https://www.lib.uidaho.edu/digital/cccidaho/)
-- [Idaho Waters Digital Library](https://www.lib.uidaho.edu/digital/iwdl/)
-
-While this tool was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm should also be able to use it with properly formatted metadata (use one of our CSVs as a model) and the correct url varibles in the `_config.yml` and `_data/theme.yml` files. 
-We intend to further refine this and related CollectionBuilder tools over the course of the next year, adding a great deal more documentation and guides for the tool's use. 
+## Possible Enhancements
+- Would there be any value in putting these in context of their conferences?  I don't know the history of the conference system or when we were in what, but maybe there is something to that.  Would take a bit of historical research by someone.  
+- Also - any information about the artists of these covers?  That would add something.
+- Map could be enhanced by a different basemap, or a layer with something interesting, maybe a conference spatial layer?  Quick search online - no layers that I saw, just a bunch of simple MS Paint maps.
