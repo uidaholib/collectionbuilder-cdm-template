@@ -1,7 +1,7 @@
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Idaho Football Covers Collection
+title: Idaho Vandals Football Program Covers Collection
 # choose metadata, be sure to also change page_gen data setting!
 metadata: footballcovers # check against cdm-collection-id below -- this should be used in config file as well
 
@@ -12,9 +12,9 @@ cdm-url: https://cdm17254.contentdm.oclc.org
 cdm-collection-id: football # 
 
 # header and head metadata
-tagline: 50+ Years worth of Vandal Football Gameday Program Covers, 1908 - 1967
-description: "The Idaho Vandals Football Historical Game day Program Covers Collection consists of over 50 years worth of game day program covers (1908-1967) produced for football contests that took place all over the country." 
-keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
+tagline: 50+ years worth of Vandal Football Game Day Program Covers, 1908 - 1967
+description: "The Idaho Vandals Football Program Covers Collection consists of over 50 years of game day program covers (1908-1967) produced for University of Idaho football contests that took place all over the country." 
+keywords: "UI; Idaho; Sports; Football" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
 
 # home page and browse
