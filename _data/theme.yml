@@ -25,7 +25,7 @@ home-title-y-padding: 12em # the margin from the top your title portion will app
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho (MacLean Field & Neale Stadium); Arizona; California; Montana; West Point (New York); North Dakota; Oregon; Utah; WSU & UW (Washington) #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Moscow (Idaho);Boise (Idaho);Missoula (Montana);Pullman (Washington);Salt Lake City (Utah) #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
