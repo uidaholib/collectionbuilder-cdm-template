@@ -50,7 +50,7 @@ stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # timeline
-year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
+year-navigation: 1922;1941;1960 # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
