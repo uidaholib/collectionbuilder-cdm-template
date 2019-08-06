@@ -18,9 +18,9 @@ keywords: "Postcards; Idaho; Northwest; Forests; Water; Wilderness;" # describin
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 235 # use number of photo from collection
+home-banner-image-number: 383 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Syinga Time, Lake Pend Oreille, North Idaho # for accessibility 
+home-banner-image-title: Twin Falls-Jerome Bridge over Snake River, view half mile below bridge, Twin Falls, Idaho. Perrine Memorial Bridge. # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
