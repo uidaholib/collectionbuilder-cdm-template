@@ -24,9 +24,9 @@ home-banner-image-title: Twin Falls-Jerome Bridge over Snake River, view half mi
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
-featured-subjects-max: 5 # set number of top subjects to display if auto generating
-featured-locations: Idaho; Montana; Oregon; Washington; Wyoming #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-subjects-max: 6 # set number of top subjects to display if auto generating
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 6
 mediatypes: images; correspondence #options[documents,images,video,sound,data] separate semi-colon(';')
 
 # Browse page
