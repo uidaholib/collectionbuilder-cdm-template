@@ -1,33 +1,33 @@
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Stanton Gilbert Fisher Collection
 # choose metadata, be sure to also change page_gen data setting!
-metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
+metadata: fisher # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
+cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
-cdm-collection-id: boxing 
+cdm-collection-id: fisher # 
 
 # header and head metadata
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho" 
-keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
-author: # You! Add your github username 
+tagline: Writings and memorabilia of Stanton Gilbert Fisher, pioneer and Nez Perce War scout, 1840-1915
+description: "Writings and memorabilia of Stanton Gilbert Fisher, pioneer and Nez Perce War scout, 1840-1915. Most of the documents are Nez Perce War collectibles, such as maps, photographs and accounts of the war and its participants. The rest of the papers are personal materials related to Fisher, including autobiographical materials as well as the correspondence and census records of several of his family members." 
+keywords: "Northwest; NativeAmericans" # describing the whole collection -- add to the two provided
+author: # You! Add your github username
 
-# Home page
-home-banner-image-number: 15 # use number of photo from collection
+# home page and browse
+home-banner-image-number: 270 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
+home-banner-image-title: Colonel J. W. Redington from https://digital.lib.uidaho.edu/cdm/ref/collection/fisher/id/290 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: # in px, but don't include the "px"; default is 300.
+carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Central Idaho; Beaverhead National Forest, Montana; Whitebird battleground #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
+mediatypes: documents; images; #options[documents,images,video,sound,data] separate semi-colon(';')
 
 # Browse page
 # see _data/browse-config.csv for field display options
@@ -43,9 +43,9 @@ longitude: -117.014185 #to determine center of map
 zoom-level: 5 # zoom level for map 
 
 # Subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
+subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
-stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
+stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 
 # Locations page
 locations-on: # true/false
