@@ -42,7 +42,7 @@ longitude: -117.01645 #to determine center of map
 zoom-level: 4 # zoom level for map 
 
 # subject page
-subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
+subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
 subject-min: 2 # min size for subject cloud, too many terms = slow load time!
 stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 
@@ -50,7 +50,7 @@ stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # timeline
-year-navigation: 1922;1941;1960 # set years to appear in dropdown nav
+year-navigation: 1931;1941;1951;1961 # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
