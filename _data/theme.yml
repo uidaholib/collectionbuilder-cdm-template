@@ -22,7 +22,7 @@ home-banner-image-number: 270 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: Colonel J. W. Redington from https://digital.lib.uidaho.edu/cdm/ref/collection/fisher/id/290 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: 500px # must be in px; default is 300px.
+carousel-height: 500 # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Central Idaho; Beaverhead National Forest, Montana; Whitebird battleground #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
