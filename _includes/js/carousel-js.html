@@ -1,4 +1,4 @@
-{%- assign carousel-items = site.data[site.data.theme.metadata] | where: "format","image/jpg" -%}
+{%- assign carousel-items = site.data[site.data.theme.metadata] | where: "format","image/jpeg" -%}
 <script> 
     var carouselItems = [ {% for c in carousel-items %}{ "title": {{ c.title | jsonify }}, "cdm": "{{ c.cdm-id }}", "id": "{{ c.object-id }}" }{% unless forloop.last %}, {% endunless %}{% endfor %}];
     var carousel = document.getElementById("carouselInner");
