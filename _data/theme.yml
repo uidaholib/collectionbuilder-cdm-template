@@ -50,7 +50,7 @@ stopwords: photographic postcards;picture postcards # set of subjects separated 
 locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # timeline
-year-navigation: "1900;1910;1920;1930;1940;1950;1960;1970;1980;1990" # set years to appear in dropdown nav
+year-navigation: "1890;1900;1910;1920;1930;1940;1950;1960;1970;1980;1990" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
