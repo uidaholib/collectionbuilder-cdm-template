@@ -43,7 +43,7 @@ zoom-level: 7 # zoom level for map
 
 # subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 10 # min size for subject cloud, too many terms = slow load time!
+subject-min: 5 # min size for subject cloud, too many terms = slow load time!
 stopwords: photographic postcards;picture postcards # set of subjects separated by ;, e.g. boxers;boxing
 
 # Location page (optional )
