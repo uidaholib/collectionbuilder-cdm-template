@@ -1,6 +1,5 @@
 field,display,search
 date,Date,true
-creator,Creator,true
 subject,Subjects,true
 opponent,Opponent,true
 location,Location,true
