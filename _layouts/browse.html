@@ -37,7 +37,7 @@ layout: page
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
-                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
+                    <a href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
                 </p>
                 {%- endunless -%}
                 <p>
