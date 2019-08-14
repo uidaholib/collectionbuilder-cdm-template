@@ -6,3 +6,6 @@ They are all hosted at https://www.lib.uidaho.edu/assets/
 Common images and logos are at https://www.lib.uidaho.edu/media/digital/
 
 Do put specialized assets for this collection here.
+
+
+### Updated 8/13 and 8/14 2019 with revised metadata
