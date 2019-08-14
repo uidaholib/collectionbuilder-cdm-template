@@ -7,9 +7,9 @@ metadata: higgins # check against cdm-collection-id below -- this should be used
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
+cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
-cdm-collection-id: higgins 
+cdm-collection-id: higgins # 
 
 # header and head metadata
 tagline: A collection of photographs by Robert E. Higgins, a professor of plant science at the University of Idaho from 1946 to 1999
@@ -22,45 +22,30 @@ home-banner-image-number: 13 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: Photograph  titled Pioneer. This image of old broken down building was entered into the Boise Camera Club and received a score of 21. # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: 700 # must be in px; default is 300px.
+carousel-height: 700px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
-# Browse page
-# see _data/browse-config.csv for field display options
-# fields given the "btn" option can be multivalued with ";" such as subjects.
+# item page 
+browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
 
-# Item page 
-browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
-
-# Map page
-# see _data/map-config.csv for field display options
+# map page
 latitude: 46.72756 #to determine center of map
 longitude: -117.01412 #to determine center of map
 zoom-level: 10 # zoom level for map 
 
-# Subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 1 # min size for subject cloud, too many terms = slow load time!
-stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
-# Locations page
-locations-on: # true/false
+# subject page
+subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
+subject-min: 2 # min size for subject cloud, too many terms = slow load time!
+stopwords: # need to figure out
 
-# Timeline
+# timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
-
-# About page
-about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
-
-# images 
-image-percentage-large: # default 70
-image-percentage-medium: # default 40 
-image-percentage-small: # default 20
 
 # Theme Options
 # navbar text color
