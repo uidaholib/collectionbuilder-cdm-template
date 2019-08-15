@@ -6,11 +6,7 @@ permalink: /about.html
 featured-image: "objects/test001.jpg"
 ---
 <h3>About the {{site.data.theme.title}}</h3>
-<p>A digital collection comprised of historical photographs of over 130 Idaho Cities and Towns.
-
-The images and documents span the years 1862 to 1998, documenting Idaho's buildings, landscape, and people.
-
-To explore the collection by date or location, or to find out more about the collection, use the tabs above.</p>
+<p>Lewiston Orchards Life was a neighborhood newsletter published in Lewiston, Idaho during the early 1900s that covered the horticultural and residential events of those living in Lewiston Orchards. Special Collection & Archives at the University of Idaho Library holds twenty-six issues as part of their Day Northwest Collection.</p>
 <br>
 <hr>
 <br>

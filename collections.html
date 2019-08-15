@@ -30,7 +30,8 @@ home-banner-image-number: {%if item.image-number %}{{item.image-number}}{%endif%
 home-banner-image-link: {%if item.image-number %}{%else%}{{item.Image}}{%endif%} # leave blank unless no cdm number to generate item
 home-banner-image-title: {{item.ImageTitle}} from {{item.ImageLink}} # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: 500px # must be in px; default is 300px.
+home-banner-image-position: # [options: top, center, bottom] Default: top
+carousel-height: 500 # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: {{item.Location}} #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
@@ -63,7 +64,6 @@ year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
 about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
-
 
 # Theme Options
 # navbar text color

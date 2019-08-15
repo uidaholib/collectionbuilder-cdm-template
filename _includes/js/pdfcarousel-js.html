@@ -1,11 +1,11 @@
 {%- assign carousel-items = site.data[site.data.theme.metadata] | where: "format","application/pdf" -%}
 <script> 
-    var carouselItems = [ {% for c in carousel-items %}{ "title": {{ c.title | jsonify }}, "cdm": "{{ c.cdm-id }}", "id": "{{ c.object-id }}" }{% unless forloop.last %}, {% endunless %}{% endfor %}];
+    var carouselItems = [ { "title": "Lewiston Orchards Life, 1914 February", "cdm": "229", "id": "spec_lof229" },{ "title": "Lewiston Orchards Life, 1914 March", "cdm": "235", "id": "spec_lof235" },{ "title": "Lewiston Orchards Life, 1914 April", "cdm": "230", "id": "spec_lof230" },{ "title": "Lewiston Orchards Life, 1913 August", "cdm": "232", "id": "spec_lof232" }];
     var carousel = document.getElementById("carouselInner");
     carouselItems.sort(function() { return 0.5 - Math.random() });
     var i;
-    for (i=0; i < 9; i++) {
-        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/api/singleitem/image/pdf/{{ site.data.theme.cdm-collection-id }}/" + carouselItems[i].cdm + "/default.png'> <div class='carousel-caption'> <h5> <a target='_blank' href='{{ site.baseurl }}/items/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
+    for (i=0; i < 4; i++) {
+        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/api/singleitem/image/pdf/{{ site.data.theme.cdm-collection-id }}/" + carouselItems[i].cdm + "/default.png'> <div class='carousel-caption'> <h5 class='carousel-item-title text-white py-2'>" + carouselItems[i].title + "</h5><a target='_blank' href='{{ site.baseurl }}/items/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
         carousel.innerHTML += slide;
     }
     $(".carousel-item").first().addClass("active");
