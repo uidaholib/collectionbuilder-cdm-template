@@ -63,6 +63,8 @@ gallery: true
                         {% for t in topics %}
                             <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a> 
                         {% endfor %}
+                        {% elsif f.field == "date" %}
+                        {{ page[f.field] }} <a class="ml-4 pl-4" href="{{  page.date | trim | slice: 0,4 | prepend: '/timeline.html#' | relative_url }}"><small>View Year on Timeline</small></a>
                         {% else %}
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
