@@ -18,9 +18,10 @@ keywords: "Idaho" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 13 # use number of photo from collection
+home-banner-image-number: 0 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Photograph  titled Pioneer. This image of old broken down building was entered into the Boise Camera Club and received a score of 21. # for accessibility 
+home-banner-image-title: Cataract  - an image of  the Shoshoni Falls in Twin Falls Idaho   # for accessibility 
+home-banner-image-position: # [options: top, center, bottom] default: top 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 carousel-height: 700 # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
@@ -58,9 +59,9 @@ year-nav-increment: 5 # set increments when auto gen nav years
 about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
 
 # images 
-image-percentage-large: # default 70
-image-percentage-medium: # default 40 
-image-percentage-small: # default 20
+image-percentage-large: 50 # default 70
+image-percentage-medium: 25 # default 40 
+image-percentage-small: 15 # default 20
 
 # Theme Options
 # navbar text color
