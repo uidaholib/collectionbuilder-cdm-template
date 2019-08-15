@@ -18,14 +18,15 @@ keywords: "Idaho; Northwest; Forests; Wilderness; Fire; Latah; Moscow;Potlatch" 
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 7 # use number of photo from collection
+home-banner-image-number: 4 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Kelvin Daniels in front of fire from http://digital.lib.uidaho.edu/cdm/ref/collection/lcheritage/id/7 # for accessibility 
+home-banner-image-title: Family tradition of cutting down Christmas tree  # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
+home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500px # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Moscow; Potlatch #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 mediatypes: documents; images #options[documents,images,video,sound,data] separate semi-colon(';')
 
@@ -56,8 +57,8 @@ year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown n
 year-nav-increment: 2 # set increments when auto gen nav years
 
 # images 
-image-percentage-large: 40 # default 70
-image-percentage-medium: 25 # default 40 
+image-percentage-large: 50 # default 70
+image-percentage-medium: 35 # default 40 
 image-percentage-small: 15 # default 20
 
 # Theme Options
