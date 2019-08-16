@@ -12,15 +12,15 @@ cdm-url: https://cdm17254.contentdm.oclc.org
 cdm-collection-id: spec_cs # 
 
 # header and head metadata
-tagline: Early twentieth century slides depicting the University of Idaho, as well as the wilderness of Idaho and Idaho residents' attempts at domesticating it
-description: "Charles Houston Shattuck was a professor in the College of Agriculture (now Natural Resources) who initiated 'Arboretum Hill' (now known as the Charles Houston Shattuck Arboretum). These early twentieth century slides depict the University of Idaho, as well as the wilderness of Idaho and Idaho residents' attempts at domesticating it." 
+tagline: Early twentieth century slides related to the Unversity and Forestry
+description: "UI Professor Charles Houston Shattuck created these slides in the early 19th century. They depict the University of Idaho, as well as the wilderness of Idaho and Idaho residents' attempts at domesticating it."
 keywords: "Idaho; UI; Wilderness" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 10 # use number of photo from collection
+home-banner-image-number: 179 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: White Sand Lake (Idaho) from https://digital.lib.uidaho.edu/cdm/ref/collection/spec_cs/id/10 # for accessibility 
+home-banner-image-title: Gymnasium, University of Idaho  # for accessibility 
 home-banner-image-position: center # [options: top, center, bottom] default: top 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 carousel-height: 500px # must be in px; default is 300px.
@@ -51,7 +51,7 @@ stopwords: idaho # set of subjects separated by ;, e.g. boxers;boxing
 locations-on: true # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # timeline
-year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
+year-navigation: 1908 #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
