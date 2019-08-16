@@ -25,3 +25,7 @@ page_gen:
 # profile: true
 
 exclude: [docs/, Rakefile, README.md, LICENSE]
+
+# compress CSS output
+sass:
+  style: compressed
