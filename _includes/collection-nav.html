@@ -4,20 +4,20 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="d-md-none float-right">
-            <button type="button" class="btn btn-light p-1 border-secondary" data-toggle="modal" data-target="#collections">
-            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
+        <div class="d-md-none float-right col-8">
+            <button type="button" class="btn btn p-1  float-right" data-toggle="modal" data-target="#collections">
+            <img class="img-fluid float-right" id="mobile-nav-image" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
         </div>
 
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav mr-auto">
                 {% for nav in site.data.nav-configuration %}
                 <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
-                    <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
+                    <a class="nav-link mt-1" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
                 <li class="nav-item ">
-                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
+                    <a class="nav-link mt-1" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
                 </li>
             </ul>
             {% include nav-search-cdm.html %}
