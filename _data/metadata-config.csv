@@ -4,10 +4,12 @@ creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 date is approximate,Approximated Date
 description,Description,DC.description
+donor,Donor
 subject,Subjects,DC.subject,true
-location,Location
+location,Location,,true
 latitude,Latitude
 longitude,Longitude
+source,Source
 collection,Source Collection
 identifier,Source Identifier
 type,Type,DC.type

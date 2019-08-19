@@ -7,10 +7,9 @@ metadata: cities # check against cdm-collection-id below -- this should be used 
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
+cdm-url: https://digital.lib.uidaho.edu 
 # contentdm collection name 
 cdm-collection-id: cities 
-
 
 # header and head metadata
 tagline: From Aberdeen to Yellow Dog - Historical Photos of 134 Cities and Towns, 1862 - 1998 
@@ -19,24 +18,25 @@ keywords: "Idaho; Buildings; Cities; Landscape" # describing the whole collectio
 author: coroglesby 
 
 # Home page
-home-banner-image-number: 446 # use number of photo from collection
+home-banner-image-number: 882 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Group of people posed together in the woods. Grangeville?, Idaho. 
+home-banner-image-title: Panoramic view from the west of Wallace, Idaho. 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: 500 # in px, but don't include the "px"; default is 300.
+carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 15
-mediatypes: images #options[documents,images,video,audio,data] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
+mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
 # Browse page
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
-# Item page 
-browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
+# item page 
+browse-buttons: numerical-order # true / false / numerical-order, adds previous/next arrows to items, but doubles build time; if items are in numerical order, can add 'numerical-order' for easier build time with same functionality
+last-item-number: 1082 # only fill this in if the option above  for browse buttons is "numerical order"
+
 # Map page
 # see _data/map-config.csv for field display options
 latitude: 46.727485 #to determine center of map
@@ -49,19 +49,14 @@ subject-min: 3 # min size for subject cloud, too many terms = slow load time!
 stopwords: Idaho # set of subjects separated by ;, e.g. boxers;boxing
 
 # Location page (optional )
-locations-on: true # true / false, turns on location generation to create location page; must also add to nav configuration
+locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
-about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
-
-# images 
-image-percentage-large: # default 70
-image-percentage-medium: # default 40 
-image-percentage-small: # default 20
+about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
 
 # Theme Options
 # navbar text color
