@@ -8,7 +8,7 @@ subject,Subjects,DC.subject,true
 location,Location
 latitude,Latitude
 longitude,Longitude
-collection,Source Collection
+source,Source Collection
 identifier,Source Identifier
 type,Type,DC.type
 format original,Format Original
