@@ -4,6 +4,7 @@ creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 date is approximate,Approximated Date
 description,Description,DC.description
+scientific name,Scientific Name
 subject,Subjects,DC.subject,true
 location,Location
 latitude,Latitude
