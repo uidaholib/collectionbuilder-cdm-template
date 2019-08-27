@@ -35,6 +35,21 @@ if(window.location.hash) {
     var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
     });
+     /* add map layers */ 
+     var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+        maxZoom: 16
+    });
+    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    });
+        /* add base layer switcher */
+        var baseMaps = {
+        "Esri World StreetMap": Esri_WorldStreetMap,
+        "Esri National Geo": Esri_NatGeoWorldMap,
+        "Esri Imagery": Esri_WorldImagery
+    };
+    L.control.layers(baseMaps).addTo(map);
     Esri_WorldStreetMap.addTo(map);
 
     /* add search, https://github.com/naomap/leaflet-fusesearch */
@@ -52,10 +67,10 @@ if(window.location.hash) {
         pointToLayer: function(feature,latlng){
             var marker = L.marker(latlng);
             marker.bindPopup('<h3>' + feature.properties.title + 
-            '</h3><p><a target="_blank" class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" ><img class="mapthumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '" /></a>' +
+            '</h3><p><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" ><img class="mapthumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '" /></a>' +
             {% for f in fields %}{% if f.display %}
             '<br><strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + {% endif %}{% endfor %}
-            '<br><a target="_blank" class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></p>');
+            '<br><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></p>');
             return marker;
         }, 
         onEachFeature: function (feature, layer) {
