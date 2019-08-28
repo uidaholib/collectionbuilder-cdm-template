@@ -23,7 +23,7 @@ home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 300.
+carousel-height: 500 # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: University of Idaho; Sacramento, California; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
