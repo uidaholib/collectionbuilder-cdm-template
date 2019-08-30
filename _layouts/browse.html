@@ -24,6 +24,7 @@ layout: page
     <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
         <div class="card">
             {%- assign extension = item.format | strip | split: '/' | last | downcase -%}
+            {%- assign format-for-browse = item.format | strip | split: '/' | first | downcase -%}
             {%- if item.format contains 'image' -%}
             <a href="{% include item-link.html %}">
                 <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
@@ -35,11 +36,10 @@ layout: page
 
                 <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
-                    {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a href="{{ extension | prepend: '/browse.html#' | relative_url }}" class="filter">{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></a></small>{% endif %}
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>
-                    <a target="_blank" href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
+                    <a href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
                 </p>
                 {%- endunless -%}
                 <p>
@@ -50,10 +50,14 @@ layout: page
                     {% endif %}{% endfor %} 
                 </p>
                 <p class="card-text">
-                    {% for f in fields %}{% if f.display-name-or-btn != 'btn' %}
+                    {% for f in fields %}{% if f.display-name-or-btn != 'btn' %}{% if item[f.field] %}
                     {% if f.display-name-or-btn %}<strong>{{ f.display-name-or-btn }}:</strong> {% endif %}{{ item[f.field] | truncatewords: 20 | replace: '""','"' }}
                     {% unless forloop.last %}<br>{% endunless %}  
-                    {% endif %}{% endfor %}
+                    {% endif %}{% endif %}{% endfor %}
+                </p>
+               <p class="card-text">
+                    <small><a href="{{ extension | prepend: '/browse/#' | relative_url }}" class="filter btn btn-sm btn-outline-secondary">{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></a></small>
+                    <span class="hidden-format-for-browse">{{format-for-browse | replace: "application", "application document"}}</span>
                 </p>
                 <p>
                     <a href="{% include item-link.html %}" class="btn btn-clearwater" title="link to {{ item.title | escape }}">View Item</a>

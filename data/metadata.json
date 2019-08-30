@@ -1,8 +1,8 @@
 ---
-# metadata for table ajax
+# metadata for json export
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
-{ "documents": [
+{ "objects": [
     {%- for item in items -%}
     {
         "title": {{ item.title | jsonify }},
