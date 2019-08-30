@@ -30,7 +30,9 @@ layout: page
             </a>
             {%- endif -%}
             <div class="card-body text-center search">
-                <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
+                <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{% if item.region %}{{ item.region}}{% else item.title %}{{ item.title }}{% endif %}</a></h3>
+
+
                 <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
                     {% if site.data.theme.mediatypes contains ";" %}<br><small>Type: <a href="{{ extension | prepend: '/browse.html#' | relative_url }}" class="filter">{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></a></small>{% endif %}

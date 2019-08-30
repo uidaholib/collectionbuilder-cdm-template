@@ -1,10 +1,13 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
+county,County
+region,Region
+features,Features
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
-date is approximate,Approximated Date
+date is approximate?,Approximated Date
 description,Description,DC.description
-subject,Subjects,DC.subject,true
+flight line,Flight Line
 location,Location
 latitude,Latitude
 longitude,Longitude
