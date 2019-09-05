@@ -6,11 +6,9 @@ permalink: /about.html
 featured-image: "objects/test001.jpg"
 ---
 <h3>About the {{site.data.theme.title}}</h3>
-<p>A digital collection comprised of historical photographs of over 130 Idaho Cities and Towns.
+<p>The Idaho Forester Collection consists of 78 volumes of digitized University of Idaho Forestery Department Annuals. Each issue includes reports on activities within the department for that year, as well as articles on various research and other current events.</p>
 
-The images and documents span the years 1862 to 1998, documenting Idaho's buildings, landscape, and people.
-
-To explore the collection by date or location, or to find out more about the collection, use the tabs above.</p>
+<p>The collection was developed with the support of	<a href="http://www.crl.edu/collections/global-resources-partnership/global-resources-agriculture-partnership">Project Ceres</a>, a collaboration between the <a href="http://www.crl.edu/">Center for Research Libraries</a>, the <a href="http://usain.org/">United States Agricultural Information Network (USAIN)</a>, and the <a href="http://agnic.org/">Agriculture Network Information Collaborative (AgNIC)</a>.</p>
 <br>
 <hr>
 <br>
