@@ -1,0 +1,17 @@
+{%- if site.data.theme.grade-level -%}
+{%- assign grade-level = site.data.theme.grade-level | split: ";" -%}
+{%- else -%}
+{%- assign grade = site.data[site.data.theme.metadata] | map: "grade-level" | join: ";" | downcase | split: ";" | array_count_uniq -%}
+{%- capture grade-level -%}
+{% for i in grade limit: site.data.theme.grade-level-max %}{{ i[0] }};{% endfor %}{% endcapture %}
+{%- assign grade-level = grade-level | split: ";" -%}
+{%- endif -%}
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Grade Level</h5>
+    <p class="card-text">
+        {% for s in grade-level %}
+        <a class="btn btn-sm btn-clearwater m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
+    </p>
+  </div>
+</div>
