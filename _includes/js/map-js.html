@@ -4,6 +4,7 @@
 <script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
 <script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
 <script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
 (function(){
@@ -17,14 +18,14 @@
 
     var hashfilter = decodeURIComponent(location.hash.substr(1));
     /* init map and set zoom */
-/* If url includes a hash in it, the hash will be split by a comma and the two coordinates used to set the specific map view */
-if(window.location.hash) {
+    /* If url includes a hash in it, the hash will be split by a comma and the two coordinates used to set the specific map view */
+    if(window.location.hash) {
         var latitudeHash = hashfilter.split(',')[0]
         var longitudeHash = hashfilter.split(',')[1]
         var map = L.map('map').setView([latitudeHash,longitudeHash],16);
- }
- else {
-    var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});}
+    } else {
+        var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});
+    }
     /* load map layer */ 
     /* var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
@@ -43,8 +44,8 @@ if(window.location.hash) {
     var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     });
-        /* add base layer switcher */
-        var baseMaps = {
+    /* add base layer switcher */
+    var baseMaps = {
         "Esri World StreetMap": Esri_WorldStreetMap,
         "Esri National Geo": Esri_NatGeoWorldMap,
         "Esri Imagery": Esri_WorldImagery
@@ -62,6 +63,9 @@ if(window.location.hash) {
     searchCtrl.addTo(map);
     searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});
 
+    /* create cluster group */
+    var markers = L.markerClusterGroup({ maxClusterRadius: {{ site.data.theme.cluster-radius | default: 15 }}, singleMarkerMode: true });
+
     /* add geojson marker and popup */
     L.geoJson(geodata, {
         pointToLayer: function(feature,latlng){
@@ -71,12 +75,14 @@ if(window.location.hash) {
             {% for f in fields %}{% if f.display %}
             '<br><strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + {% endif %}{% endfor %}
             '<br><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></p>');
+            markers.addLayer(marker);
             return marker;
         }, 
         onEachFeature: function (feature, layer) {
             feature.layer = layer;
         }
-    }).addTo(map);
+    });
+    map.addLayer(markers);
 })();
 
 
