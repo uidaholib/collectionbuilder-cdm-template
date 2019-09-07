@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}">Featured Image</a></small>
+        <small><a class="text-info featured-link" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" title="{{ site.data.theme.home-banner-image-title }}">Featured Image</a></small>
     </div>
 </div>
 {%- else -%}
