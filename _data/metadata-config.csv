@@ -1,9 +1,11 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-creator,Creator,DC.creator
-date,Date Created,DCTERMS.created
+author,Authors
+editors,Editors
+date,Date,DCTERMS.created
 date is approximate,Approximated Date
 description,Description,DC.description
+relation-is part of,Relation
 subject,Subjects,DC.subject,true
 location,Location
 latitude,Latitude
