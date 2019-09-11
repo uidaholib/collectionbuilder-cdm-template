@@ -55,7 +55,7 @@ year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown n
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
-about-off: true # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
+about-off: false # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
 
 
 # Theme Options
