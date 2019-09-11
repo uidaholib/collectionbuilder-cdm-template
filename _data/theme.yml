@@ -1,20 +1,20 @@
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Potlatch Historical Society Collection
 # choose metadata, be sure to also change page_gen data setting!
-metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
+metadata: phs # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
 cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
-cdm-collection-id: boxing 
+cdm-collection-id: phs 
 
 # header and head metadata
 tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho" 
-keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
+description: "A digital collection comprised of 1,908 photographs from Potlatch and surrounding areas" 
+keywords: # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
 # Home page
@@ -45,8 +45,8 @@ zoom-level: 5 # zoom level for map
 
 # Subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 1 # min size for subject cloud, too many terms = slow load time!
-stopwords: boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
+subject-min: 5 # min size for subject cloud, too many terms = slow load time!
+stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 
 # Locations page
 locations-on: # true/false
