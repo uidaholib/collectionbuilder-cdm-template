@@ -2,9 +2,10 @@
 {%- assign fields = site.data.map-config -%}
 <!-- load leaflet dependencies -->
 <script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+{% if site.data.theme.map-search == true %}<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>{% endif %}
+{% if site.data.theme.map-cluster == true %}<script src="{{ '/leaflet/leaflet.markercluster.js' | prepend: site.digital-assets }}"></script>{% endif %}
+{% if site.data.theme.map-search == true and site.data.theme.map-cluster == true %}<script src="{{ '/leaflet/leaflet.markercluster.freezable.js' | prepend: site.digital-assets }}"></script>{% endif %}
 
 <script>
 (function(){
