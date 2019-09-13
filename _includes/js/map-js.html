@@ -17,41 +17,36 @@
     {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 
-    var hashfilter = decodeURIComponent(location.hash.substr(1));
     /* init map and set zoom */
-    /* If url includes a hash in it, the hash will be split by a comma and the two coordinates used to set the specific map view */
-    if(window.location.hash) {
+    if (window.location.hash) {
+        /* if url has a hash, it is split by comma into coordinates that set the view */
+        var hashfilter = decodeURIComponent(location.hash.substr(1));
         var latitudeHash = hashfilter.split(',')[0]
         var longitudeHash = hashfilter.split(',')[1]
         var map = L.map('map').setView([latitudeHash,longitudeHash],16);
     } else {
         var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});
     }
-    /* load map layer */ 
-    /* var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-        maxZoom: 16
-    });
-    Esri_NatGeoWorldMap.addTo(map);
-     */
+
+    /* add map layer options */
     var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
     });
-     /* add map layers */ 
-     var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+    var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
         maxZoom: 16
     });
     var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     });
-    /* add base layer switcher */
+    /* add base map switcher */
     var baseMaps = {
         "Esri World StreetMap": Esri_WorldStreetMap,
         "Esri National Geo": Esri_NatGeoWorldMap,
         "Esri Imagery": Esri_WorldImagery
     };
     L.control.layers(baseMaps).addTo(map);
+    /* load base map */
     Esri_WorldStreetMap.addTo(map);
 
     /* add search, https://github.com/naomap/leaflet-fusesearch */
