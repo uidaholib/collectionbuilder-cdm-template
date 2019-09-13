@@ -42,7 +42,9 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but dou
 latitude: 46.727485 #to determine center of map
 longitude: -117.014185 #to determine center of map
 zoom-level: 5 # zoom level for map 
-cluster-radius: 15 # size of clusters
+map-search: true # not suggested with large collections
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
