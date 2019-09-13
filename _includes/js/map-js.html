@@ -49,15 +49,15 @@
     /* load base map */
     Esri_WorldStreetMap.addTo(map);
 
-    /* add search, https://github.com/naomap/leaflet-fusesearch */
+    {% if site.data.theme.map-search == true %}/* add search, https://github.com/naomap/leaflet-fusesearch */
     var options = {
-        title: 'Search documents',
-        placeholder: 'Search documents...',
-        threshold: 0.35 // 1 = anything, 0 = exact match
+        title: 'Search Map Items',
+        placeholder: 'Search map items...',
+        threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }} 
     };
     var searchCtrl = L.control.fuseSearch(options);
     searchCtrl.addTo(map);
-    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});
+    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});{% endif %}
 
     /* create cluster group */
     var markers = L.markerClusterGroup({ maxClusterRadius: {{ site.data.theme.cluster-radius | default: 15 }}, singleMarkerMode: true });
