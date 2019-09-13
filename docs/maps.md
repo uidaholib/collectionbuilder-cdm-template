@@ -29,3 +29,8 @@ Next, configure the display using `_data/map-config.csv`, which controls the met
 
 Because of the way markers are handled, for larger collections it is strongly suggested to turn search off and cluster on.
 Cluster makes loading and navigating the map significantly more efficient.
+
+Object pages that have lat/long will generate a "View on Map" button link. 
+These link to the `map.html` page with a hash value, for example: 
+`/map.html#46.727485,-117.014185`.
+If the url includes a hash, it will be parsed and set as the map view box with full zoom.

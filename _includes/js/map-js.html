@@ -89,7 +89,7 @@
     }){% if site.data.theme.map-cluster != true %}.addTo(map);{% else %};
     map.addLayer(markers);{% endif %}
     
-    {% if site.data.theme.map-cluster == true and site.data.theme.map-cluster == true %}
+    {% if site.data.theme.map-cluster == true and site.data.theme.map-search == true %}
     /* uncluster when search is clicked */
     document.querySelector('a.button').addEventListener("click", function() {
         markers.disableClustering();
