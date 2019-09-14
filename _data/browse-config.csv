@@ -1,3 +1,6 @@
-field,display-name-or-btn
-subject,btn
-location,btn
+field,displayName,btn,hidden
+ccc-camp-number,Camp #,true
+ccc-company-number,Company #,true
+subject,,true
+location,,true
+description,
