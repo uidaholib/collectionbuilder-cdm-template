@@ -1,7 +1,7 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-ccc-camp-number,CCC Camp Number,
-ccc-company-number,CCC Company Number,
+ccc-camp-number,CCC Camp Number,,true
+ccc-company-number,CCC Company Number,,true
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 date is approximate,Approximated Date
