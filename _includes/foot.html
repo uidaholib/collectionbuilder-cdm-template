@@ -10,11 +10,6 @@
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
 {% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
 {% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
-{% if page.layout == "home-infographic" %}
-{% if site.data.theme.mediatypes == "documents" %}
-{% include js/pdfcarousel-js.html %}
-{%elsif site.data.theme.mediatypes contains "image" %} {% include js/carousel-js.html %}
-{% endif %}
-{% endif %}
+
 {% if page.layout == "item" %}{% include js/arrow-page-control-js.html %}{% endif %}
 <script defer src="{{ '/fontawesome/js/all.min.js' | prepend: site.digital-assets }}"></script>
