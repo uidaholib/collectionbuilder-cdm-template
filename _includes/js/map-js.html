@@ -69,11 +69,15 @@
         {% if site.data.theme.map-search == true %}/* bind feature for search */
         feature.layer = layer;{% endif %}
         /* create pop up */
-        var popupTemplate = '<h3>' + feature.properties.title + 
-            '</h3><p><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" ><img class="mapthumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '" /></a>' +
-            {% for f in fields %}{% if f.display %}
-            '<br><strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + {% endif %}{% endfor %}
-            '<br><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></p>';
+        var popupTemplate = '<h4><a class="text-dark" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}' + feature.properties.id + '">' +
+            feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="{{ "/browse/item.html?id=" | relative_url }}' + feature.properties.id + 
+            '" ><img class="mapthumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '" alt="item thumbnail"></a></div><p class="mt-0">';
+        {% for f in fields %}{% if f.display %}
+        if (feature.properties.{{ f.field }}) {
+            popupTemplate += '<strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 
+        }
+        {% endif %}{% endfor %}
+        popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></div>';
         layer.bindPopup(popupTemplate);
     }
     function objectMarkers(feature,latlng) {
