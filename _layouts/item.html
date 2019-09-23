@@ -76,7 +76,8 @@ gallery: true
     </div>
 
     <div class="row">
-        <div class="col-md-3">
+            {% for field in fields %}{%if field.field == "subject" %}{%if field.browse-link == "true" %}
+        <div class="col">
             <div class="card mb-2">
                 <div class="card-header">Related Items</div>
                 <div class="card-body">
@@ -88,8 +89,8 @@ gallery: true
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
+        </div>{%endif%} {%endif%} {%endfor%}
+        <div class="col">
             <div class="card mb-2">
                 <div class="card-header">Source</div>
                 <div class="card-body">
@@ -102,7 +103,7 @@ gallery: true
                 </div>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col">
             <div class="card mb-2">
                 <div class="card-header">Rights</div>
                 <div class="card-body">
