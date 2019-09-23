@@ -1,6 +1,6 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-author,Authors
+author,Authors,,true
 editors,Editors
 date,Date,DCTERMS.created
 date is approximate,Approximated Date

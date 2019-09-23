@@ -76,20 +76,8 @@ gallery: true
     </div>
 
     <div class="row">
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <div class="card-header">Related Items</div>
-                <div class="card-body">
-                    {% assign facets = page.subject | split: ";" %}
-                    <p>
-                    {% for f in facets %}
-                        <a class="btn btn-sm btn-secondary m-1" href="{{ f | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
-                    {% endfor %}
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
+  
+        <div class="col">
             <div class="card mb-2">
                 <div class="card-header">Source</div>
                 <div class="card-body">
@@ -102,7 +90,7 @@ gallery: true
                 </div>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col">
             <div class="card mb-2">
                 <div class="card-header">Rights</div>
                 <div class="card-body">

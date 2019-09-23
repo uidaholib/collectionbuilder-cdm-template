@@ -1,5 +1,6 @@
 field,display_name
 title,Title
+author,Author(s)
 date,Date
 description,Description
-subject,Subjects
+

@@ -1,0 +1,8 @@
+---
+# find and count unique authors
+---
+{%- assign authors = site.data[site.data.theme.metadata] | map: "author" | join: ";" | downcase | split: ";" | array_count_uniq | sort -%}
+{ "authors": [
+    {% for a in authors %}{ "author" : {{ a[0] | jsonify }}, "count" : {{ a[1] | jsonify }}, "link" : {{ a[0] | url_param_escape | prepend: '/browse.html#' | absolute_url | jsonify }} }{% unless forloop.last %},
+    {% endunless %}{% endfor %}
+]}
