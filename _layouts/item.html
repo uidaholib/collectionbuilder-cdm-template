@@ -46,8 +46,13 @@ gallery: true
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
+                        {% if page.format contains "compound_object" %}
+                    <a target="_blank" href="https://digital.lib.uidaho.edu/digital/collection/spec_uihp/id/{{page.cdm-id}}" class="btn btn-outline-clearwater"
+                        title="Object download">View Folder of Images</a>
+                        {%else%}
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-clearwater"
                         title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
+                        {%endif%}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"
                         class="ml-2 btn btn-outline-clearwater" title="View object year on timeline">View on
