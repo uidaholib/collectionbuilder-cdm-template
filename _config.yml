@@ -15,7 +15,7 @@ digital-assets: https://www.lib.uidaho.edu/assets
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'crbproj'
+  - data: 'crbp'
     template: 'items'
     name: 'object-id'
     dir: 'items'

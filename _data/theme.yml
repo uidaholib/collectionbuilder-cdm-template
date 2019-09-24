@@ -3,7 +3,7 @@
 # Site settings
 title: Columbia River Basin Project - PNW Dam Construction
 # choose metadata, be sure to also change page_gen data setting!
-metadata: crbproj # check against cdm-collection-id below -- this should be used in config file as well
+metadata: crbp # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
@@ -19,10 +19,10 @@ author: Dobbkc # You! Add your github username
 
 # home page and browse
 home-banner-image-number: 1040 # use number of photo from collection
-home-banner-image-link:  # leave blank unless no cdm number to generate item
+home-banner-image-link: /digital/crbp/items/crbproj146.html # leave blank unless no cdm number to generate item
 home-banner-image-title: Man stands on siphon from https://digital.lib.uidaho.edu/cdm/ref/collection/crbproj/id/1040 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-home-banner-image-position: # [options: top, center, bottom] Default: top
+home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
@@ -42,18 +42,18 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but dou
 latitude: 47.959223 #to determine center of map
 longitude: -118.974938 #to determine center of map
 zoom-level: 8 # zoom level for map 
-map-search: true # not suggested with large collections
+map-search: false # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
-map-cluster: true # suggested for large collection or with many items in same location
+map-cluster: false # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 2 # min size for subject cloud, too many terms = slow load time!
+subject-min: 1 # min size for subject cloud, too many terms = slow load time!
 stopwords: Columbia Basin Reclamation Project (U.S.); # set of subjects separated by ;, e.g. boxers;boxing
 
 # Locations page
-locations-on: # true/false
+locations-on: true # true/false
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
