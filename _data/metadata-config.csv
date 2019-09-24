@@ -3,11 +3,11 @@ title,Title,DC.title
 creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 description,Description,DC.description
-opponent,Opponent
+opponent,Opponent,,true
 score,Game Final Score (Away - Home)
 location (city),Location
-location (stadium),Stadium
-cost,Program Price
+location,Stadium,,true
+cost,Program Price,,true
 subject,Subjects,DC.subject,true
 relation,Source Collection
 type,Type,DC.type
