@@ -28,7 +28,7 @@ featured-subjects: #separate semi-colon(';') - if left blank, will be automatica
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Wallace, Idaho; Lolo Pass, Montana; Selway-Bitterroot, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: images;documents #options[documents,images,video,sound,data] separate semi-colon(';')
+mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
 # Browse page
 # see _data/browse-config.csv for field display options
