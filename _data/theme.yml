@@ -47,7 +47,7 @@ subjects-off: false # true / false, turns off subject generation to lower dev bu
 subject-min: 1 # min size for subject cloud, too many terms = slow load time!
 stopwords: # set of subjects separated by ;, e.g. boxers;boxing
 
-# Location page (optional )
+# Location page (optional)
 locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
 
 # timeline
