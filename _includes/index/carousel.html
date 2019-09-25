@@ -1,9 +1,9 @@
 <style>
-    #imageCarousel .carousel-item { height: {{ site.data.theme.carousel-height | default: '300' }}px; }
+    #imageCarousel .carousel-item { height: {{ site.data.theme.carousel-height | remove: "px" | default: '300' }}px; }
 </style>
 <div class="card mb-3">
     <div class="card-body">
-        <h5 class="card-title">Sample Images</h5>
+        <h5 class="card-title">Sample Items</h5>
         <div class="row">
             <div class="col-md-12 pb-3">
                 <div id="imageCarousel" class="carousel slide bg-dark rounded" data-ride="carousel">
