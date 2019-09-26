@@ -27,13 +27,13 @@ layout: page
             {%- assign format-for-browse = item.format | strip | split: '/' | first | downcase -%}
             {%- if item.format contains 'image' -%}
             <a href="{% include item-link.html %}">
-                <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
+                <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape  }}">           
             </a>
             {%- endif -%}
             <div class="card-body text-center search">
-                <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
+                <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title | remove: 'Football Program: ' }}</a></h3>
                 <p class="card-text">
-                    {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
+                    {% if item.score %}<strong>Idaho: {{item.score | split: "-" | first}}<br/>{{item.opponent}}: {{item.score | split: "-" | last}}</strong>{% endif %}
                 </p>
                 {%- unless item.format contains 'image' -%}
                 <p>

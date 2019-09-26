@@ -4,7 +4,7 @@ creator,Creator,DC.creator
 date,Date Created,DCTERMS.created
 description,Description,DC.description
 opponent,Opponent,,true
-score,Game Final Score (Away - Home)
+score,Game Final Score (Idaho - Opponent)
 location (city),Location
 location,Stadium,,true
 cost,Program Price,,true
