@@ -3,3 +3,4 @@ date,Date,true
 subject,Subjects,true
 opponent,Opponent,true
 location,Location,true
+score,Score,false

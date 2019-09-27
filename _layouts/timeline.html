@@ -19,7 +19,7 @@ layout: page
   </button>
   <div class="dropdown-menu" aria-labelledby="yearButton">
     {% for y in navYears %}
-      <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
+      <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %} 
   </div>
 </div>
 
@@ -35,7 +35,9 @@ layout: page
     {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
     {% for item in inYear %}
     {%if item.format contains 'image' or item.format contains 'pdf' %}
-    <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazyload img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+    {% assign first = item.score | split: "-" | first | plus: 0  %}
+    {% assign last = item.score | split: "-" | last | plus: 0  %}
+    <a class="p-2 {%if first > last%}bg-success{%endif%}" href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazyload img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }} | Idaho: {{first}} to {{item.opponent}}: {{last}}  "></a>
     {%else%}
     <div class="card col-12 col-sm-8 col-md-6 col-lg-4 float-left mt-1"> 
       <div class="card-body px-0 pt-1 pb-0">
