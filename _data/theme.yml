@@ -34,7 +34,7 @@ mediatypes: images; correspondence #options[documents,images,video,sound,data] s
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
 # item page 
-browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
 # map page
 latitude: 46.716798 #to determine center of map
