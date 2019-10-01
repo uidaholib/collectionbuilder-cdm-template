@@ -29,14 +29,22 @@ gallery: true
                     </p>
                 </div>
                 {%- elsif page.format contains 'video' -%}
+                {%if page.youtube-id%}
+                <div class="mt-4">
+                    <p class="text-center">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{page.youtube-id}}?rel=0" allowfullscreen></iframe></div>
+                    </p> 
+                </div>
+                {%- else -%}
                 <div class="mt-4">
                     <p class="text-center">
                         <video width="320" height="240" controls>
                             <source src="{% include download/video.html %}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </p>
+                    </p> 
                 </div>
+                {%endif%}
                 {%- else -%}
                 <div class="mt-4">
                     <p class="text-center">
@@ -46,8 +54,12 @@ gallery: true
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
+                        {%if page.youtube-id%}
+                        <a target="_blank" href="https://www.youtube.com/watch?v={{youtube-id}}" class="btn btn-outline-clearwater"
+                        title="Object download">View on YouTube</a>
+                       {%else%}
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-clearwater"
-                        title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
+                        title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>{%endif%}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"
                         class="ml-2 btn btn-outline-clearwater" title="View object year on timeline">View on
