@@ -19,16 +19,16 @@ author: # You! Add your github username
 
 # home page and browse
 home-banner-image-number:  # use number of photo from collection
-home-banner-image-link: https://www.lib.uidaho.edu/digital/vandalvideo/jpgs/KYJRPLUCn4g.jpg # leave blank unless no cdm number to generate item
-home-banner-image-title: UI vs. USC, 1925 from https://digital.lib.uidaho.edu/cdm/ref/collection/vandalvideo/id/2 # for accessibility 
+home-banner-image-link: https://cdm17254.contentdm.oclc.org/digital/iiif/football/19/full/max/0/default.jpg # leave blank unless no cdm number to generate item
+home-banner-image-title: Football Program -- Idaho vs Oregon State, 10/15/1960, Neale Stadium, Moscow (Idaho) https://www.lib.uidaho.edu/digital/footballcovers/items/footballcovers19.html # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 home-banner-image-position: # [options: top, center, bottom] Default: top
-carousel-height: 500px # must be in px; default is 300px.
+carousel-height: 300px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho (Maclean Field, Neale Stadium, Kibbie Dome) #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Memorial Gymnasium; Neale Stadium; Kibbie Dome; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: videos #options[documents,images,video,sound,data] separate semi-colon(';')
+mediatypes: youtube #options[documents,images,video,sound,data,youtube] separate semi-colon(';')
 
 # Browse page
 # see _data/browse-config.csv for field display options
