@@ -1,3 +1,6 @@
 field,display-name-or-btn
-subject,btn
-location,btn
+sport,btn
+stadium,btn
+opponent,btn
+duration,Duration
+score,Score

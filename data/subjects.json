@@ -1,9 +1,9 @@
 ---
 # find and count unique subjects
 ---
-{%- if site.data.theme.subjects-off == false -%}
-{%- assign subjects = site.data[site.data.theme.metadata] | map: "subject" | join: ";" | downcase | split: ";" | array_count_uniq | sort -%}
+
+{%- assign subjects = site.data[site.data.theme.metadata] | map: "opponent" | join: ";" | downcase | split: ";" | array_count_uniq | sort -%}
 { "subjects": [
     {% for s in subjects %}{ "subject" : {{ s[0] | jsonify }}, "count" : {{ s[1] | jsonify }}, "link" : {{ s[0] | url_param_escape | prepend: '/browse.html#' | absolute_url | jsonify }} }{% unless forloop.last %},
     {% endunless %}{% endfor %}
-]}{%- endif -%}
+]}
