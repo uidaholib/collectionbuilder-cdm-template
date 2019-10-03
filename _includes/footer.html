@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-dark mt-3 pt-4 container-fluid">
+<footer class="bg-dark pt-4 container-fluid {% unless page.layout=='map' %}mt-3{% endunless %}">
 
   <div class="row border-bottom border-white pb-4 mb-2">
 
@@ -25,6 +25,9 @@
 
       <h4 class="mb-0" ><a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="Digital Initiatives"></a></h4>
       <p class="text-white text-right mr-4"><small><a class="pride-gold" href="https://www.lib.uidaho.edu/digital/">About DI</a> | <a href="https://www.lib.uidaho.edu/digital/collections.html" class="pride-gold">Collections</a></small></p>
+      <p class="text-white">
+        <a href="https://www.lib.uidaho.edu/"><img alt="Digital Initiatives" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" class="img-fluid col-4 col-md-3"></a>
+      </p>
 
     </div>
     <!-- Grid column -->
@@ -33,7 +36,8 @@
 
   <!-- Copyright -->
   <div class="col-md-12 text-center pt-3 pb-1">
-    <p class="text-white">{{ site.time | date: '%Y' }} | <a class="pride-gold"  href="https://www.lib.uidaho.edu/">University of Idaho Library</a></p>
+    <p class="text-white">Last updated {{ site.time | date: '%Y' }} 
+    </p>
   </div>
   <!-- Copyright -->
 
