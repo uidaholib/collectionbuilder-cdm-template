@@ -18,11 +18,11 @@ keywords: "Idaho; Water; Forests;" # describing the whole collection -- add to t
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 370 # use number of photo from collection
+home-banner-image-number: 139 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Dewey Huot's Mama from https://digital.lib.uidaho.edu/cdm/ref/collection/priestlake/id/370 # for accessibility 
+home-banner-image-title: Six children in horse-drawn sled.  # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
-home-banner-image-position: # [options: top, center, bottom] Default: top
+home-banner-image-position: bottom # [options: top, center, bottom] Default: top
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
