@@ -8,6 +8,12 @@ featured-image: "objects/test001.jpg"
 <p style="text-align:center"><em>The below is adapted (with permission) from the Asian American Comparative Collection's <a href="http://www.uiweb.uidaho.edu/LS/AACC/KOOSKIA.HTM">website</a>, written by Dr. Priscilla Wegars. Dr. Wegars has also written a book on the Kooskia Internment Camp; the book's catalog record is linked <a href="http://uidaho.worldcat.org/oclc/639164294">here</a> and below.</em></p>
 
 <h3>ABOUT THE CAMP</h3>
+<div class="float-right ml-3 mb-3 col-md-4">
+<figure class="figure">
+<a href="{{ 'items/kooskia793.html' |relative_url}}"><img class="figure-img img-fluid rounded" alt="Image of sign at Kooskia Internment Camp reading, 'U.S. Department of Justice Kooskia Internment Camp Reservation for next 3 miles. No admission except on official business'. Photo taken from 12-3/4 x 15-1/4 Photograph album of the Kooskia Japanese Internment Camp." src="https://cdm17254.contentdm.oclc.org/digital/iiif/spec_kic/793/full/pct:70/0/default.jpg"></a>
+  <figcaption class="figure-caption">Image of sign at Kooskia Internment Camp reading, "U.S. Department of Justice Kooskia Internment Camp Reservation for next 3 miles. No admission except on official business". Photo taken from 12-3/4 x 15-1/4 Photograph album of the Kooskia Japanese Internment Camp.  </figcaption>
+</figure>
+</div>
 
 <p>The Kooskia (pronounced KOOS-key) Internment Camp is an obscure and virtually forgotten World War II detention facility that was located in a remote area of north central Idaho, 30 miles from the town of Kooskia, and 6 miles east of the hamlet of Lowell, at Canyon Creek. The camp was administered by the U.S. Immigration and Naturalization Service (INS) for the U.S. Department of Justice. It held men of Japanese ancestry who were termed "enemy aliens," even though most of them were long-time U.S. residents.<p>
 
@@ -17,7 +23,7 @@ featured-image: "objects/test001.jpg"
 
 <p>Dr. Wegars' research has uncovered INS, Forest Service, Border Patrol, and University of Idaho photographs and other records. These, combined with internee and employee oral and written interviews, illuminate the internees' experiences, emphasizing the perspectives of the men detained at the Kooskia Internment Camp. For more information see her <a href="http://www.uiweb.uidaho.edu/LS/AACC/KOOSKIA.HTM">website</a>.</p>
 
-<h3>ABOUT THE SCRAPBOOK</h3>
+<h3 class="mt-3">ABOUT THE SCRAPBOOK</h3>
 
 <p>The Kooskia Internment Camp Scrapbook is a hand-made manuscript consisting of 148 photographs (and two drawings) of activities and and buildings related the Kooskia Internment Camp.</p>
 

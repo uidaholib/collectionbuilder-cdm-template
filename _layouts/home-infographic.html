@@ -3,17 +3,21 @@ layout: page
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-9">
+      <p> <span style="font-size:24px;">The Kooskia Internment Camp Scrapbook</span> is a hand-made manuscript consisting of 148 photographs (and two drawings) of activities and and buildings related the Kooskia Internment Camp. </p> 
+
+      <div data-configid="2211907/6796040" style="width: auto; height: 500px; margin:0% auto;" class="issuuembed"></div>
+      <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+      
+     <br/><hr /><br/>
+      {% include index/carousel.html%}
+  </div>
+  <div class="col-md-3">
 
     {% include index/description.html %}
-
-    
-    </div>
-  <div class="col-md-6">  
-    {% include index/carousel.html%}
     {% include index/objects.html %}
-
-  </div>
+    </div>
+  
 
   
 </div>
