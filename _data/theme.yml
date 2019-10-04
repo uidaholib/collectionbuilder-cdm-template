@@ -3,7 +3,7 @@
 # Site settings
 title: Kooskia Internment Camp Scrapbook
 # choose metadata, be sure to also change page_gen data setting!
-metadata: spec_kic # check against cdm-collection-id below -- this should be used in config file as well
+metadata: kooskia # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
@@ -18,9 +18,9 @@ keywords: "Idaho;" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
 
 # home page and browse
-home-banner-image-number: 941 # use number of photo from collection
+home-banner-image-number: 791 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Men walking in Kooskia from https://digital.lib.uidaho.edu/cdm/ref/collection/spec_kic/id/941 # for accessibility 
+home-banner-image-title: Interior shot of a group of men at Kooskia Internment Camp playing a game while sitting on cots in sleeping quarters.  # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500px # must be in px; default is 300px.
@@ -28,19 +28,24 @@ featured-subjects: #separate semi-colon(';') - if left blank, will be automatica
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Kooskia, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: scrapbook; images #options[documents,images,video,sound,data] separate semi-colon(';')
+mediatypes: images #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
 # Browse page
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
 # item page 
-browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
-# map page
+# Map page
+# see _data/map-config.csv for field display options
 latitude: 46.144012 #to determine center of map
 longitude: -115.594819 #to determine center of map
 zoom-level: 10 # zoom level for map 
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # subject page
 subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
