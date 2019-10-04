@@ -1,7 +1,7 @@
 ---
-title: Timeline
+title: Depth
 layout: timeline
-permalink: /timeline.html
+permalink: /depth.html
 ---
 
-## Collection Timeline
+## Depth of Photograph

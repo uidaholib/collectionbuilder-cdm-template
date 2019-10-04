@@ -1,6 +1,7 @@
 display-text,stub
 Home,/
 Browse,/browse.html
-Locations,/locations/
-Data,/data/
+Locations,/locations.html
+Depth,/depth.html
+Data,/data.html
 About,about.html

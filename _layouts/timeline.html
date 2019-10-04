@@ -2,8 +2,8 @@
 layout: page
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
-{%- assign raw-dates = site.data[site.data.theme.metadata] | map: 'date' | compact | uniq -%}
-{%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
+{%- assign raw-dates = site.data[site.data.theme.metadata] | map: 'depth' | compact | uniq -%}
+{%- capture clean-years -%}{% for date in raw-dates %}{% if date.size == 3 %}{{ date | strip | prepend: "0" }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign uniqueYears = clean-years | remove: " " | split: ";" | uniq | sort -%}
 {%- if site.data.theme.year-navigation -%}
 {%- assign navYears = site.data.theme.year-navigation | split: ";" -%}
@@ -25,14 +25,14 @@ layout: page
 
 {{ content }}
  
-<h3><a href="#{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
+<h3><a href="#{{ navYears | first }}">{{ navYears | first }}ft</a> to <a href="#{{ navYears | last }}">{{ navYears | last }}ft</a></h3>
 
 <table id="timeline" class="table table-striped">
-  {% for year in uniqueYears %}
+  {% for year in navYears %}
   <tr id="{{ year }}">
-    <th><h3 >{{ year }}</h3></th>
+    <th><h3 >{{ year }}ft</h3></th>
     <td>
-    {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+    {%- assign inYear = items | where_exp: 'item', 'item.depth contains year' -%}
     {% for item in inYear %}
     {%if item.format contains 'image' or item.format contains 'pdf' %}
     <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazyload img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
