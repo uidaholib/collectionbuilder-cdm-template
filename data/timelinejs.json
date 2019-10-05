@@ -28,8 +28,7 @@
           "year": "{{item.date}}"{%endif%}
         },
         "text": {
-          "headline": {{item.title | jsonify}},
-          "text": {{item.description | jsonify}}
+          "headline": {{item.title | jsonify}}
         }
       }{%unless forloop.last%},{%endunless%}{%endfor%}
     ]
