@@ -53,8 +53,8 @@ a {
 /* index */
 .carousel-item-title{
     background-color: rgba(37, 36, 36, 0.72);
-    margin-left: -50%;
-    margin-right: -50%;
+    margin-left: -20%;
+    margin-right: -20%;
 }
 
 /* item page */
@@ -93,7 +93,9 @@ dt {
 #map { height: 750px; z-index: 98; }
 .mapthumb {
     height: 100px;
-    box-shadow: 2px 2px 2px grey;
+}
+.leaflet-fusesearch-panel .header {
+    padding-bottom: 1.5em;
 }
 
 /* timeline */
