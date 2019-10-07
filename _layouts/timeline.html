@@ -27,10 +27,10 @@ layout: page
  
 <h3><a href="#{{ navYears | first }}">{{ navYears | first }}ft</a> to <a href="#{{ navYears | last }}">{{ navYears | last }}ft</a></h3>
 
-<table id="timeline" class="table table-striped">
+<table id="timeline" class="table ">
   {% for year in navYears %}
-  <tr id="{{ year }}">
-    <th><h3 >{{ year }}ft</h3></th>
+  <tr id="{{ year }}" style="background-color:#{% cycle 'CFCFCF', 'B8B8B8', 'A1A1A1', '8A8A8A', '737373', '5C5C5C', '454545', '2E2E2E', '171717', '000' %}">
+    <th><h3 class="text-white" >{{ year }}ft</h3></th>
     <td>
     {%- assign inYear = items | where_exp: 'item', 'item.depth contains year' -%}
     {% for item in inYear %}

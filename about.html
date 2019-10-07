@@ -41,4 +41,7 @@ featured-image: "objects/test001.jpg"
 
 	</ul>
 </div>
-{% include credits.md %}
+{%capture credits %}
+{% include credits.md  %}
+{%endcapture%}
+{{ credits | markdownify}}
