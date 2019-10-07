@@ -1,24 +1,24 @@
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Donald R. Theophilus Boxing Photograph Collection
+title: University of Idaho Campus Photographs Collection
 # choose metadata, be sure to also change page_gen data setting!
-metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
+metadata: pg1 # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
 cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
-cdm-collection-id: boxing 
+cdm-collection-id: pg1 
 
 # header and head metadata
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
+tagline: 3000 historical photographs of the UI Campus from 1889 to the present
 description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho" 
 keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
 # Home page
-home-banner-image-number: 15 # use number of photo from collection
+home-banner-image-number: 1553 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
