@@ -37,6 +37,9 @@ layout: page
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
+                    {% if item.creator %}<strong>Photographer:</strong> <a href="{{ item.creator | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{item.creator}}</a>{% endif %}
+                </p>
+                <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
                 </p>
                 {%- unless item.format contains 'image' or item.youtube-id -%}
