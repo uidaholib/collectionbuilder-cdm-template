@@ -8,7 +8,7 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/nwpostcards
+baseurl: /digital/postcards
 
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets

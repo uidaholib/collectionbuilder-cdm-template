@@ -19,6 +19,12 @@ gallery: true
                             class="img-fluid"></p>
                     <p class="text-center"><small>Click to view full screen</small></p>
                 </div>
+                {% elsif page.format contains 'pdf' %}
+                <div class="gallery-img" data-src="{% include image/pdf.html %}">
+                    <p><img src="{% include image/pdf.html %}" alt="{{ page.title | escape }}" alt="item thumbnail"
+                            class="img-fluid"></p>
+                    <p class="text-center"><small>Click to view full screen</small></p>
+                </div>
                 {%- elsif page.format contains 'audio' -%}
                 <div class="mt-4">
                     <p class="text-center">
@@ -53,6 +59,7 @@ gallery: true
                                 alt="item thumbnail" class="img-fluid thumb"></a></p>
                 </div>
                 {%- endif -%}
+                {% if page.format contains 'pdf' %}<div class="text-center my-2"><small class="m-2 mb-4" >Use the download button below to see the back of the postcard! </small></div>{%endif%}
                 <div class="text-center my-2">
                         {%if page.youtube-id%}
                         <a target="_blank" href="https://www.youtube.com/watch?v={{youtube-id}}" class="btn btn-outline-clearwater"
