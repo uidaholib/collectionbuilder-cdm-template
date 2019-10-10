@@ -11,6 +11,6 @@ featured-image: "objects/test001.jpg"
 <p>Original copies of these images remain the property of the Forest Service; they may be reproduced with acknowledgement to the USDA-Forest Service. Those photos from Priest River of original cottage interiors, J.A. Larsen, his wife Jenny and daughter Margaret are from the private collection of Ms. Susan Marsh will require authorization from the Marsh family for reproduction.</p>
 {% include aboutlocations.html %}
 <br>
-<hr>
+
 <br>
 {% include credits.md %}
