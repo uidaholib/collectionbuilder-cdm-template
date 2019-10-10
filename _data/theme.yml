@@ -3,7 +3,7 @@
 # Site settings
 title: Experimental Forest and Savenac Nursery Archive
 # choose metadata, be sure to also change page_gen data setting!
-metadata: expforsav # check against cdm-collection-id below -- this should be used in config file as well
+metadata: expforest # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
