@@ -2,8 +2,10 @@
 {%- assign fields = site.data.map-config -%}
 <!-- load leaflet dependencies -->
 <script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
-<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
+{% if site.data.theme.map-search == true %}<script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>{% endif %}
+{% if site.data.theme.map-cluster == true %}<script src="{{ '/leaflet/leaflet.markercluster.js' | prepend: site.digital-assets }}"></script>{% endif %}
+{% if site.data.theme.map-search == true and site.data.theme.map-cluster == true %}<script src="{{ '/leaflet/leaflet.markercluster.freezable.js' | prepend: site.digital-assets }}"></script>{% endif %}
 
 <script>
 (function(){
@@ -12,72 +14,102 @@
     {% for item in items %}{% if item.latitude and item.longitude %}
     { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
     { "title": {{ item.title | jsonify }}, 
-    {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, {% if site.data.theme.mediatypes == "youtube" %} "youtube": {{ item.youtube-id | jsonify }},{%endif%} "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 
-    var hashfilter = decodeURIComponent(location.hash.substr(1));
     /* init map and set zoom */
-/* If url includes a hash in it, the hash will be split by a comma and the two coordinates used to set the specific map view */
-if(window.location.hash) {
+    if (window.location.hash) {
+        /* if url has a hash, it is split by comma into coordinates that set the view */
+        var hashfilter = decodeURIComponent(location.hash.substr(1));
         var latitudeHash = hashfilter.split(',')[0]
         var longitudeHash = hashfilter.split(',')[1]
         var map = L.map('map').setView([latitudeHash,longitudeHash],16);
- }
- else {
-    var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});}
-    /* load map layer */ 
-    /* var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-        maxZoom: 16
-    });
-    Esri_NatGeoWorldMap.addTo(map);
-     */
+    } else {
+        var map = L.map('map').setView([{{ site.data.theme.latitude | default: 46.727485 }},{{ site.data.theme.longitude | default: -117.014185 }}],{{ site.data.theme.zoom-level | default: 5 }});
+    }
+
+    /* add map layer options */
     var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
     });
-     /* add map layers */ 
-     var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+    var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
         maxZoom: 16
     });
     var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     });
-        /* add base layer switcher */
-        var baseMaps = {
+    /* add base map switcher */
+    var baseMaps = {
         "Esri World StreetMap": Esri_WorldStreetMap,
         "Esri National Geo": Esri_NatGeoWorldMap,
         "Esri Imagery": Esri_WorldImagery
     };
     L.control.layers(baseMaps).addTo(map);
+    /* load base map */
     Esri_WorldStreetMap.addTo(map);
 
+    {% if site.data.theme.map-search == true %}
     /* add search, https://github.com/naomap/leaflet-fusesearch */
     var options = {
-        title: 'Search documents',
-        placeholder: 'Search documents...',
-        threshold: 0.35 // 1 = anything, 0 = exact match
+        title: 'Search Map Items',
+        placeholder: 'Search map items...',
+        threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }} 
     };
     var searchCtrl = L.control.fuseSearch(options);
     searchCtrl.addTo(map);
-    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});
+    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});{% endif %}
 
-    /* add geojson marker and popup */
-    L.geoJson(geodata, {
-        pointToLayer: function(feature,latlng){
-            var marker = L.marker(latlng);
-            marker.bindPopup('<h3>' + feature.properties.title + 
-            '</h3><p><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" ><img class="mapthumb" src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '" /></a>' +
-            {% for f in fields %}{% if f.display %}
-            '<br><strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + {% endif %}{% endfor %}
-            '<br><a class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View Item</a></p>');
-            return marker;
-        }, 
-        onEachFeature: function (feature, layer) {
-            feature.layer = layer;
+    {% if site.data.theme.map-cluster == true %}
+    /* create cluster group */
+    var markers = L.markerClusterGroup({ maxClusterRadius: {{ site.data.theme.cluster-radius | default: 15 }}, singleMarkerMode: true {% if site.data.theme.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} });{% endif %}
+
+    /* object popup function */
+    function objectPopups(feature, layer) {
+        {% if site.data.theme.map-search == true %}/* bind feature for search */
+        feature.layer = layer;{% endif %}
+        /* create pop up */
+        var itemHref = {% if site.data.theme.repo-link %}'{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm{% else %}'{{ site.baseurl }}/items/' + feature.properties.id + '.html'{% endif %};
+        {% if site.data.theme.mediatypes == "youtube" %}
+        var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/0.jpg';
+        {%else%}
+        var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm;
+        {%endif%}
+        var popupTemplate = '<h4><a class="text-dark" href="' + itemHref + '">' +
+            feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="' + itemHref + 
+            '" ><img class="mapthumb" src="' + thumbSrc + '" alt="item thumbnail"></a></div><p class="mt-0">';
+        {% for f in fields %}{% if f.display %}
+        if (feature.properties.{{ f.field }}) {
+            popupTemplate += '<strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 
         }
-    }).addTo(map);
-})();
+        {% endif %}{% endfor %}
+        popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >View Item</a></div>';
+        layer.bindPopup(popupTemplate);
+    }
+    function objectMarkers(feature,latlng) {
+        var marker = L.marker(latlng);
+        {% if site.data.theme.map-cluster == true %}markers.addLayer(marker);{% endif %}
+        return marker;
+    }
 
+    /* add objects from geoJson features */
+    L.geoJson(geodata, {
+        onEachFeature: objectPopups,
+        pointToLayer: objectMarkers
+    }){% if site.data.theme.map-cluster != true %}.addTo(map);{% else %};
+    map.addLayer(markers);{% endif %}
+    
+    {% if site.data.theme.map-cluster == true and site.data.theme.map-search == true %}
+    /* uncluster when search is clicked */
+    document.querySelector('a.button').addEventListener("click", function() {
+        markers.disableClustering();
+    });
+    /* recluster when search is closed */
+    document.querySelector('a.close').addEventListener("click", function() {
+        markers.enableClustering();
+        document.querySelector('input.search-input').value = "";
+    });{% endif %}
+
+})();
 
 </script>
