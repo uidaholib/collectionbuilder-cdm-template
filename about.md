@@ -41,7 +41,7 @@ Copyright 2012</p>
 
 <p>Questions? Comments?<br> Contact Devin Becker, digital initiatives librarian at <a href="mailto:dbecker@uidaho.edu">dbecker@uidaho.edu</a>.<br><br></p>
 <br>
-<hr>
+
 <br>
 
 {% include credits.md %}
