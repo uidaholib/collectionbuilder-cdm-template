@@ -18,7 +18,7 @@ The remaining boxes contain copies of all the Psychiana lessons, copies of Psych
 
 This is a very important collection not only for those researching Dr. Frank B. Robinson and the impact of Psychiana, but also for those interested in non-orthodox religion. Anyone interested in effective advertising methods would also find this collection useful.
 
-For more information on Psychiana and Frank B. Robinson, please see our finding aid: http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=psychiana
+For more information on Psychiana and Frank B. Robinson, please see our finding aid: <http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=psychiana>
 
 <hr >
 {% include credits.md %}
