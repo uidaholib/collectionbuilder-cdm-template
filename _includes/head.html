@@ -9,7 +9,9 @@
 {% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 {% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.digital-assets }}">{% endif %}
 {% if page.layout == 'map' %}<link rel="stylesheet" href="{{ '/leaflet/leaflet.css' | prepend: site.digital-assets }}">
-<link rel="stylesheet" href="{{ '/leaflet/leaflet.fusesearch.css' | prepend: site.digital-assets }}">{% endif %}
+{% if site.data.theme.map-search == true %}<link rel="stylesheet" href="{{ '/leaflet/leaflet.fusesearch.css' | prepend: site.digital-assets }}">{% endif %}
+{% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.css' | prepend: site.digital-assets }}">
+<link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.Default.css' | prepend: site.digital-assets }}">{% endif %}{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
 {% include google-analytics.html %}
 <!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->

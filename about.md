@@ -20,7 +20,7 @@ The photos in this collection are compiled from two different collections housed
 The records and photographs belonging to the Potlatch Lumber Company were donated to the University of Idaho by the Potlatch Corporation in November, 1983.
 
 <br>
-<hr>
+
 <br>
 
 {% include credits.md %}

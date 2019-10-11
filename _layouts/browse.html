@@ -29,13 +29,17 @@ layout: page
             <a href="{% include item-link.html %}">
                 <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/medium.html %}" alt="Image of {{ item.title | escape }}">           
             </a>
+            {%elsif item.youtube-id%}
+            <a href="{% include item-link.html %}">
+                    <img class="card-img-top lazyload" {% if forloop.index < 10 %}src={%else%}data-original={%endif%}"{% include image/youtube-md.html %}" alt="Image of {{ item.title | escape }}">           
+                </a>
             {%- endif -%}
             <div class="card-body text-center search">
                 <h3 class="card-title"><a href="{% include item-link.html %}" class="text-dark">{{ item.title }}</a></h3>
                 <p class="card-text">
                     {% if item.date %}<strong>Date:</strong> {{ item.date }}{% endif %}
                 </p>
-                {%- unless item.format contains 'image' -%}
+                {%- unless item.format contains 'image' or item.youtube-id -%}
                 <p>
                     <a href="{% include item-link.html %}"><img class="thumb lazyload" data-original="{% include image/thumb.html %}" alt="item thumbnail"></a>
                 </p>
@@ -54,7 +58,7 @@ layout: page
                     {% endif %}{% endif %}{% endfor %}
                 </p>
                <p class="card-text">
-                    <small><a href="{{ extension | prepend: '/browse/#' | relative_url }}" class="filter btn btn-sm btn-outline-secondary">{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></a></small>
+                    <small><a href="{{ extension | prepend: '/browse.html#' | relative_url }}" class="filter btn btn-sm btn-outline-secondary">{{ extension | upcase }} <span class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></a></small>
                     <span class="hidden-format-for-browse">{{format-for-browse | replace: "application", "application document"}}</span>
                 </p>
                 <p>
