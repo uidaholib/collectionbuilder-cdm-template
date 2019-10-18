@@ -4,7 +4,7 @@
 
 function makeCard(obj) {
     var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
-    var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
+    var card = '<div class="item col-lg-3 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
     if(obj.youtube){
       card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg" alt="Image of ' + obj.title + '"></a>';
@@ -52,7 +52,7 @@ function makeCard(obj) {
       card += '"></span></a></small></p>';
     }
     // view button
-    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
+    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-outline-clearwater" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs
     card += '</div></div></div>';
     // send back big string
