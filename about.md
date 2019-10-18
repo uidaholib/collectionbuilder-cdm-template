@@ -26,6 +26,6 @@ In 1889 T.N. Barnard and his wife moved to Wallace, Idaho where he established h
 </div>
 </div>
 <br>
-<hr>
+
 <br>
 {% include credits.md %}
