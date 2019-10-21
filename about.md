@@ -6,7 +6,7 @@ permalink: /about.html
 featured-image: "objects/test001.jpg"
 ---
 <div id="inline1" style="display: block;">
-<div class="col-3 float-right ml-3 my-2"><a href="https://issuu.com/UIdahoDigital/docs/uiexp01?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Fcolor%2Flayout.xml&amp;backgroundColor=8BA9B8&amp;showFlipBtn=true"><img src="https://www.lib.uidaho.edu/digital/uiext/images/01exp.jpg" alt="Lewiston" style="height:auto;width: 250px;"></a><p style="font-size: 10px;width: 200px;">Idaho Agricultural Experiment Station <br> Bulletin Number 1, September 1892</p></div>
+<div class="col-3 float-right ml-3 my-2"><a href="https://issuu.com/UIdahoDigital/docs/uiexp01?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Fcolor%2Flayout.xml&amp;backgroundColor=8BA9B8&amp;showFlipBtn=true"><img src="https://www.lib.uidaho.edu/digital/uiext/images/01exp.jpg" alt="Lewiston" style="height:auto;width: 250px;"></a><p style="font-size: 14px;width: 200px;">Idaho Agricultural Experiment Station <br> Bulletin Number 1, September 1892</p></div>
 <h2>About the Collection</h2>
 <h3>The History</h3>
 <p>The diffusion of useful and practical, research-based information  on agriculture and related subjects has been a primary responsibility of the Idaho Agricultural Experiment Station and University of Idaho Extension since  their beginnings.</p>
@@ -16,7 +16,7 @@ featured-image: "objects/test001.jpg"
 
 <div class="col-3 float-right ml-3 my-2"><a href="https://issuu.com/UIdahoDigital/docs/uiext01?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Fcolor%2Flayout.xml&amp;backgroundColor=8BA9B8&amp;showFlipBtn=true"><img style="height:auto;width: 250px;" src="https://www.lib.uidaho.edu/digital/uiext/images/01ext.jpg"></a>
 
-<p style="font-size: 10px;width: 200px;">University of Idaho Extension <br> Bulletin Number 1, February 1912</p></div>
+<p style="font-size: 14px;width: 200px;">University of Idaho Extension <br> Bulletin Number 1, February 1912</p></div>
 
 <h3>The Content</h3>
 <p>This collection encompasses the research-based publishing of  the Idaho Agricultural Experiment Station and University of Idaho Extension  since their inceptions. Experiment station publishing started almost  immediately in 1892 with a series of bulletins that ran until 1954. Extension publishing began in 1912 with a series of bulletins that ran until 1953. A new  series of University of Idaho College of Agriculture bulletins began in 1953, starting  with number 200, with contributions coming either from the Idaho Agricultural  Experiment Station or the Idaho Agricultural Extension Service. A series of  shorter College of Agriculture publications, the current information series,  began in 1964 with titles from both the experiment station and extension. A  series of highly technical research bulletins published by the Idaho Agricultural  Experiment Station, the research bulletins, began in 1922.</p>

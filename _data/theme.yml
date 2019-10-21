@@ -35,7 +35,7 @@ mediatypes: documents #options[documents,images,video,sound,data] separate semi-
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
 # item page 
-browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
 # Map page
 # see _data/map-config.csv for field display options
@@ -66,7 +66,15 @@ about-off: # true / false | If left blank, will show "Learn More" button on fron
 image-percentage-large: # default 70
 image-percentage-medium: # default 40 
 image-percentage-small: # default 20
- 
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,date,type,rights,format,link,identifier,pubtype,pubtype-full,rights-standardized,source,number,language,creator,subject,subject-lcsh,publisher,cdm-id,object-id"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,creator"
+
+
 # Theme Options
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors

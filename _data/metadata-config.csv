@@ -1,12 +1,12 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-creator,Creator,DC.creator
+creator,Creator,DC.creator,true
 date,Date Created,DCTERMS.created
+description,Description,DC.description
 pubtype,Publication Type,,true
 number,Number
-description,Description,DC.description
 subject,Subjects,DC.subject,true
-collection,Source Collection
+publisher,Publisher
 identifier,Source Identifier
 type,Type,DC.type
 format,Format
