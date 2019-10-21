@@ -36,6 +36,14 @@ layout: page
                 <br>
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/authors.json' | absolute_url }}" target="_blank">Authors JSON</a>
                 <br>{%endif%}
+                {%if nav-config contains "creator" or nav-config contains "author" %}
+                <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/creators.csv' | absolute_url }}" target="_blank">Creators CSV</a>
+                <br>
+                <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/creators.json' | absolute_url }}" target="_blank">Creators JSON</a>
+                <br>{%endif%}
+                {% if stubs contains "timeline" %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/timelinejs.json' | absolute_url }}" target="_blank">Timeline JSON</a>
+                {% endif %}
                 {% if site.data.theme.metadata-facets-fields %}
                 <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/facets.json' | absolute_url }}" target="_blank">Facets</a>
                 <br>{% endif %}
