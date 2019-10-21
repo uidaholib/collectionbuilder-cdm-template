@@ -36,6 +36,9 @@ layout: page
                 <br>
                 <a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ '/data/authors.json' | absolute_url }}" target="_blank">Authors JSON</a>
                 <br>{%endif%}
+                {% if site.data.theme.metadata-facets-fields %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/facets.json' | absolute_url }}" target="_blank">Facets</a>
+                <br>{% endif %}
                 <!--<a class="btn btn-secondary col-md-6 col-md-offset-3 mt-2" href="#">Download All Items</a>-->
                 <!--<a class="btn btn-clearwater col-md-6 col-md-offset-3 mt-2" href="{{ site.data.theme.repository }}" rel="noopener" target="_blank">Source Code</a>-->
                 <br>
