@@ -1,0 +1,8 @@
+---
+# find and count unique subjects
+---
+{%- assign subjects = site.data[site.data.theme.metadata] | map: "creator" | join: ";" | split: ";" | array_count_uniq | sort -%}
+{ "creators": [
+    {% for s in subjects %}{ "creator" : {{ s[0] | jsonify }}, "count" : {{ s[1] | jsonify }}, "link" : {{ s[0] | url_param_escape | prepend: '/browse.html#' | absolute_url | jsonify }} }{% unless forloop.last %},
+    {% endunless %}{% endfor %}
+]}

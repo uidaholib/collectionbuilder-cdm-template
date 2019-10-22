@@ -44,7 +44,7 @@ The next group of correspondence is an alphabetical subject file, 1971-1981, mai
 Finally there are letters between Frank Woodruff, President of Bunker Hill, and the Hecla Mining Company; correspondence with Hecla on the joint operation of the Star-Morning group, and financial settlements and progress reports of Hecla's work at the Star-Morning Mine.
 
 <br>
-<hr>
+
 <br>
 
 {% include credits.md %}
