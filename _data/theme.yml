@@ -51,6 +51,21 @@ stopwords: newsletters # set of subjects separated by ;, e.g. boxers;boxing
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
 year-nav-increment: 5 # set increments when auto gen nav years
 
+# About page
+about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject"
+
+# images 
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
+
 # Theme Options
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
