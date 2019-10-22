@@ -28,7 +28,7 @@ featured-subjects: #separate semi-colon(';') - if left blank, will be automatica
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Wallace, Idaho; Lolo Pass, Montana; Selway-Bitterroot, Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
+mediatypes: images #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
 # Browse page
 # see _data/browse-config.csv for field display options
@@ -62,6 +62,17 @@ year-nav-increment: 1 # set increments when auto gen nav years
 # About page
 about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
 
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject"
+
+# images 
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
 
 # Theme Options
 # navbar text color
