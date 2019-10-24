@@ -1,71 +1,91 @@
 {%- assign items = site.data[site.data.theme.metadata] -%}
-{%- assign fields = site.data.browse-config -%}
-<script src="{{ '/js/lazysizes.min.js' | prepend: site.digital-assets }}" async=""></script>
+{%- assign fields = site.data.config-browse -%}
 <script>
 
 function makeCard(obj) {
-    var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2" > <div class="card">';
+    // find item link
+    var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
+    // find images
+    if(obj.youtube) {
+      var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg';
+    } else if(obj.format.includes('image')) { 
+      var imgSrc = '{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
+    } else {
+      var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + obj.cdm;
+    }
+    // start card
+    var card = '<div class="item col-lg-3 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
-    if(obj.format.includes('image')){ 
-      card += '<a href="{{ '/items/' | relative_url }}' + obj.id + '.html"> <img class="card-img-top lazyload" data-src="{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg" alt="Image of ' + obj.title + '"></a>';
+    if(imgSrc) {
+      card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center search"> <h3 class="card-title"><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="text-dark">' + obj.title + '</a></h3>';
-    // date
-    if(obj.date){
-      card += '<p class="card-text mb-0">' + '<strong>Date:</strong> ' + obj.date + '</p>';
-    }
-    // media type
-    {% if site.data.theme.mediatypes contains ';' %}
-    card += '<p class="card-text"><small>Type: <a href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
-      obj.format.split("/").pop().toUpperCase() + ' <span class="';
-    if(obj.format.includes('image')){
-      card += 'far fa-image';
-    } else if(obj.format.includes('audio')){
-      card += 'far fa-file-audio';
-    } else if(obj.format.includes('video')){
-      card += 'far fa-file-video';
-    } else {
-      card += 'far fa-file';
-    }
-    card += '"></span></a></small></p>';
-    {% endif %}
+    card += '<div class="card-body text-center"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
     // thumb for non-photo items
-    if(!obj.format.includes('image')){
-      card += '<p><a target="_blank" href="{{ '/items/' | relative_url }}' + obj.id + '.html"><img class="thumb lazyload" data-src="{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + obj.cdm + '" alt="item thumbnail"></a></p>';
+    if(thumbSrc){
+      card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
     }
     // other fields
     card += '<p class="card-text">';
     {% for f in fields %}{% unless f.hidden == 'true' %}
-    if(obj.{{ f.field | replace: "-","" }}){
+    if(obj[{{ f.field | jsonify }}]){
     {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
     {% if f.btn == 'true' %}
-    var btns = obj.{{ f.field | replace: "-","" }}.split(";");
+    var btns = obj[{{ f.field | jsonify }}].split(";");
     for (var i = 0, len = btns.length; i < len; i++) {
-      card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
+      if(btns[i] != "") {
+        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
+      }
     }
     {% else %}
-    card += obj.{{ f.field | replace: "-","" }};
+    card += obj[{{ f.field | jsonify }}];
     {% endif %}
     {% unless forloop.last %}card += '<br>';{% endunless %}
     }
     {% endunless %}{% endfor %}
     card += '</p>';
-
+    // media type
+    if(obj.format != "") {
+      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
+        obj.format.split("/").pop().toUpperCase() + ' <span class="';
+      if(obj.format.includes('image')){
+        card += 'far fa-image';
+      } else if(obj.format.includes('audio')){
+        card += 'far fa-file-audio';
+      } else if(obj.format.includes('video')){
+        card += 'far fa-file-video';
+      } else {
+        card += 'far fa-file';
+      }
+      card += '"></span></a></small></p>';
+    }
     // view button
-    card += '<p> <a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-clearwater" title="link to ">View Item</a></p>';
+    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-outline-clearwater" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs
     card += '</div></div></div>';
     // send back big string
     return card;
-  };
+  }
 
+  /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+  function shuffle(array) {
+    var m = array.length, t, i;
+    while (m) {
+    i = Math.floor(Math.random() * m--);
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+    }
+    return array;
+  }
     
   /* add items */
   var items = [
     {% for i in items %}
-    { "id":{{ i["object-id"] | jsonify }}, "title":{{ i["title"] | strip | jsonify }}, "format":{{ i["format"] | jsonify }}, {% if i["date"] %}"date":{{ i["date"] | jsonify }},{% endif %} {% for f in fields %}{% if i[f.field] %}"{{ f.field | replace: "-","" }}":{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} "cdm":{{ i["cdm-id"] | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | jsonify }}, "format":{% if i.format %}{{ i.format | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %}{% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdm-id | jsonify }}, "id":{{ i.object-id | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
+  /* randomize items once at page load */
+  shuffle(items);
 
   function filterItems(arr,q) {
     // dont filter if no q 
@@ -73,27 +93,7 @@ function makeCard(obj) {
       var filteredItems = arr; 
     } else {
       q = q.toUpperCase(); 
-      // 3 filter options, filter, grep, loop
-
-      // js filter
-      /*
-      var filteredItems = arr.filter(function (obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);}); */
-      
-      // jquery grep
-      /*
-      if(q==""){ var filteredItems = arr; } else {
-        var filteredItems = jQuery.grep(arr, function(obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);});
-      }*/
-      // (/keyword/i).test(source)
-      // js loop
-      /*
-      var filteredItems = [];
-      for (var i = 0, len = arr.length; i < len; i++) {
-        if(Object.values(arr[i]).join(" ").toUpperCase().includes(q)){
-          filteredItems.push(arr[i]);
-        }
-      }*/
-      // for compatible indexOf loop?
+      // for compatible indexOf loop seems fastest
       var filteredItems = [];
       for (var i = 0, len = arr.length; i < len; i++) {
         var val = "";
