@@ -2,26 +2,36 @@
 layout: page
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
+
 <div class="row">
-  <div class="col-md-8">
-
+  <div class="col-12 p-4">
+      <p class="h3 px-4" style="line-height: 1.4;">The economic crash of 1929 was the worst crisis in American history, throwing millions out of work and impoverishing families. President Franklin Delano Roosevelt acted quickly to revitalize the country, in part by creating the Civilian Conservation Corps, which became the most popular program of the New Deal.  The CCC worked to restore devastated forests, cropland and range, support families and communities, and provide job training and education for three million young men between 1933 to 1942, including 86,000 enrollees in Idaho.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
     {% include index/description.html %}
+  </div>
+  <div class="col-md-8">
     {% include index/carousel.html%}
-    
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+      {% include index/time.html %}
     </div>
-  <div class="col-md-4">  
-
-    {% include index/time.html %}
-    {% include index/subjects.html %}
-    {% include index/locations-sm.html %}
-    {% include index/objects.html %}
-
+    <div class="col-md-4">
+      {% include index/subjects.html %}
+    </div>
+    <div class="col-md-3">
+      {% include index/locations-sm.html %}
+    </div>
+    <div class="col-md-3">
+      {% include index/objects.html %}
+    </div>
   </div>
+<div class="row">
   <div class="col-md-12">
-
     {% include index/data-download.html %}
-
   </div>
-
-  
 </div>

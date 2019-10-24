@@ -13,7 +13,7 @@ cdm-collection-id: cccidaho
 
 # header and head metadata
 tagline: A collection of maps, images, and documents pertinent to the history of the CCC in Idaho
-description: "A collection of maps, images, and documents pertinent to the history of the Civilian Conservation Corps (CCC) in Idaho representing the research discoveries of Patricia Hart and Ivar Nelson, who spent over two years traveling across the state to find and scan materials related to the CCC." 
+description: "The CCC in Idaho Digital Project invites engagement and interpretation of the history and legacy of the CCC in the rural West through a focus on its impact on the land, participants, and communities in Idaho. The site encourages participation through access to thousands of digitized photographs, oral histories, articles, maps, and documents donated to the project. Use of this collection is further enhanced by guides, digital tools, and interactive features." 
 keywords: "UI; Idaho; CCC; Civilian Conservation Corps" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
@@ -23,7 +23,7 @@ home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: Portrait of Camp Heyburn Men 1934 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 300.
+carousel-height: 500 # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
