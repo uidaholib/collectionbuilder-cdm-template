@@ -8,6 +8,7 @@
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
 {% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+<script defer src="{{ '/fontawesome/js/all.min.js' | prepend: site.digital-assets }}"></script>
 {% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 {% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.digital-assets }}">{% endif %}
 {% if page.layout == 'map' %}<link rel="stylesheet" href="{{ '/leaflet/leaflet.css' | prepend: site.digital-assets }}">
