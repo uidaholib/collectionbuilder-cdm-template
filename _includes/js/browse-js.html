@@ -1,37 +1,132 @@
-<script src="{{ '/js/jquery.lazyload.js' | prepend: site.digital-assets }}"></script>
+{%- assign items = site.data[site.data.theme.metadata] -%}
+{%- assign fields = site.data.config-browse -%}
 <script>
-(function(){ 
-  /* lazy load images */
-  var $imgs = $("img.lazyload");
-  $imgs.lazyload();
 
-  /* set up browse filter function */
-  function filterItems() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("quickSearch");
-    filter = input.value.toUpperCase();
-    itemcontainer = document.getElementById("browseItems");
-    item = itemcontainer.getElementsByClassName("item");
-    for (i = 0; i < item.length; i++) {
-      itemcontents = item[i].getElementsByClassName("search")[0];
-      if (itemcontents) {
-        if (itemcontents.innerText.toUpperCase().indexOf(filter) > -1) {
-          item[i].style.display = "";
-        } else {
-          item[i].style.display = "none";
-        }
-      }       
+function makeCard(obj) {
+    // find item link
+    var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
+    // find images
+    if(obj.youtube) {
+      var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg';
+    } else if(obj.format.includes('image')) { 
+      var imgSrc = '{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
+    } else {
+      var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + obj.cdm;
     }
-    var numberofint = $('div.card:visible').length;
-    $("#numberOf").html(numberofint);
-    $imgs.lazyload();
-    $("#goButton").focus();
+    // start card
+    var card = '<div class="item col-lg-3 col-md-6 col-sm-12 mb-2"><div class="card">';
+    // top image for photos
+    if(imgSrc) {
+      card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
+    }
+    // title
+    card += '<div class="card-body text-center"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+    // thumb for non-photo items
+    if(thumbSrc){
+      card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
+    }
+    // other fields
+    card += '<p class="card-text">';
+    {% for f in fields %}{% unless f.hidden == 'true' %}
+    if(obj[{{ f.field | jsonify }}]){
+    {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
+    {% if f.btn == 'true' %}
+    var btns = obj[{{ f.field | jsonify }}].split(";");
+    for (var i = 0, len = btns.length; i < len; i++) {
+      if(btns[i] != "") {
+        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
+      }
+    }
+    {% else %}
+    card += obj[{{ f.field | jsonify }}];
+    {% endif %}
+    {% unless forloop.last %}card += '<br>';{% endunless %}
+    }
+    {% endunless %}{% endfor %}
+    card += '</p>';
+    // media type
+    if(obj.format != "") {
+      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
+        obj.format.split("/").pop().toUpperCase() + ' <span class="';
+      if(obj.format.includes('image')){
+        card += 'far fa-image';
+      } else if(obj.format.includes('audio')){
+        card += 'far fa-file-audio';
+      } else if(obj.format.includes('video')){
+        card += 'far fa-file-video';
+      } else {
+        card += 'far fa-file';
+      }
+      card += '"></span></a></small></p>';
+    }
+    // view button
+    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-outline-clearwater" title="link to ' + obj.title + '">View Full Record</a>';
+    // close divs
+    card += '</div></div></div>';
+    // send back big string
+    return card;
   }
-  /* filter if hash in initial URL */ 
-  var hashfilter = decodeURIComponent(location.hash.substr(1));
+
+  /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+  function shuffle(array) {
+    var m = array.length, t, i;
+    while (m) {
+    i = Math.floor(Math.random() * m--);
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+    }
+    return array;
+  }
+    
+  /* add items */
+  var items = [
+    {% for i in items %}
+    { "title":{{ i.title | strip | jsonify }}, "format":{% if i.format %}{{ i.format | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %}{% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdm-id | jsonify }}, "id":{{ i.object-id | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ];
+  /* randomize items once at page load */
+  shuffle(items);
+
+  function filterItems(arr,q) {
+    // dont filter if no q 
+    if (q=="") { 
+      var filteredItems = arr; 
+    } else {
+      q = q.toUpperCase(); 
+      // for compatible indexOf loop seems fastest
+      var filteredItems = [];
+      for (var i = 0, len = arr.length; i < len; i++) {
+        var val = "";
+        for (var k in arr[i]) { val += arr[i][k]; }
+        if(val.toUpperCase().indexOf(q) != -1){
+          filteredItems.push(arr[i]);
+        }
+      }
+    }
+    // add number 
+    $("#numberOf").html(filteredItems.length);
+    // add stuff, make cards first in giant var, then add all at once to speed things up
+    
+    var cards = "";
+    for (var i = 0, len = filteredItems.length; i < len; i++) {
+      cards += makeCard(filteredItems[i]);
+    }
+    $("#browseItems").html(cards);
+
+    // finish
+    $("#goButton").focus();
+    $("#loading").hide();
+  };
+
+  var query = "";
+  /* filter if hash in initial URL */
   if(window.location.hash) {
-    $('#quickSearch').val(hashfilter);
-    filterItems();
+    query = decodeURIComponent(location.hash.substr(1));
+    $('#quickSearch').val(query);
+    filterItems(items,query);
+  } else {
+    query = "";
+    filterItems(items,query);
   }
   /* add hash if search button clicked */ 
   $('#goButton').click( function() {
@@ -45,10 +140,13 @@
   });
   /* filter if hash changes */ 
   $(window).on("hashchange", function() {
-    var hashfilter = decodeURIComponent(location.hash.substr(1));
-    $('#quickSearch').val(hashfilter);
-    filterItems();
+    // show spinner
+    $("#loading").show();
+    // read hash
+    query = decodeURIComponent(location.hash.substr(1));
+    $('#quickSearch').val(query);
+    // filter
+    filterItems(items,query);
   });
 
-})();
 </script>

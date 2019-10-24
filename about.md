@@ -12,7 +12,7 @@ A Moscow resident and businessman for over 50 years, Laughlin took photographs a
 <br><br>
 To explore the collection by date or location, or to find out more about the collection, use the tabs above.</p>
 <br>
-<hr>
+
 <br>
 
 {% include credits.md %}
