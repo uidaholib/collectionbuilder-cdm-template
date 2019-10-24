@@ -9,9 +9,9 @@ function makeCard(obj) {
     if(obj.youtube) {
       var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg';
     } else if(obj.format.includes('image')) { 
-      var imgSrc = '{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
+      var imgSrc = '{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
     } else {
-      var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm;
+      var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + obj.cdm;
     }
     // start card
     var card = '<div class="item col-lg-3 col-md-6 col-sm-12 mb-2"><div class="card">';
