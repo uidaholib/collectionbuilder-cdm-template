@@ -55,7 +55,7 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 
 # Locations page
 locations-page: true # true/false
-locations-fields: location;ccc-camp-number # set of fields separated by ; to be featured in the cloud
+locations-fields: ccc-camp-number;location # set of fields separated by ; to be featured in the cloud
 locations-min: 4 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
