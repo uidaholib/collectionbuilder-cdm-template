@@ -71,7 +71,7 @@ about-off: false # true / false, if true will not show link to about page on fro
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,creator,date,date is approximate,description,ccc-camp-number,ccc-company-number,subject,source,location,latitude,longitude,format-original,digital collection,format,type,contributing institution,language,identifier,rights,standardized-rights,file name,oclc number,date created,date modified,reference url,cdm-id,contentdm-file-name,contentdm-file-path,object-id"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,ccc-camp-number,ccc-company-number,location,format-original,format"
+metadata-facets-fields: "subject,ccc-camp-number,ccc-company-number,location,format-original,format,source"
 
 # images 
 image-percentage-large: # default 70
