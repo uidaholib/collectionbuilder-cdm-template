@@ -50,14 +50,14 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: (species);groups of people;events # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: (species);groups of people;events;united states;idaho;moscow;latah county # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
-locations-page: false # true/false
+locations-page: true # true/false
 locations-fields: location # set of fields separated by ; to be featured in the cloud
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: united states;idaho;moscow;latah county # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
@@ -74,9 +74,9 @@ metadata-export-fields: "title,description,subject,date,date is approximate,sour
 metadata-facets-fields: "subject"
 
 # images 
-image-percentage-large: # default 70
-image-percentage-medium: # default 40 
-image-percentage-small: # default 20
+image-percentage-large: 80 # default 70
+image-percentage-medium: 60 # default 40 
+image-percentage-small: 40 # default 20
 
 # Theme Options
 # navbar text color
