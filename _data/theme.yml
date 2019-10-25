@@ -21,7 +21,7 @@ author: owikle # You! Add your github username
 home-banner-image-number:  # use number of photo from collection
 home-banner-image-link: https://www.lib.uidaho.edu/media/digital/arboretum.jpg # leave blank unless no cdm number to generate item
 home-banner-image-title: Arboretum in Spring from https://commons.wikimedia.org/wiki/File:UofIArboretumGreenery.jpg # for accessibility 
-home-title-y-padding: 15em # the margin from the top your title portion will appear
+home-title-y-padding: 12em # the margin from the top your title portion will appear
 home-banner-image-position: # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 300.
 featured-subjects: # separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
@@ -39,14 +39,14 @@ longitude: -117.014779 #to determine center of map
 zoom-level: 15 # zoom level for map 
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
-map-cluster: false # suggested for large collection or with many items in same location
+map-cluster: true # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud
 subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: newsletters # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+subjects-stopwords: newsletters;arboretums;associations # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
 locations-page: false # true/false
