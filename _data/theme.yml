@@ -48,12 +48,16 @@ map-cluster: true # suggested for large collection or with many items in same lo
 map-cluster-radius: 45 # size of clusters, from ~ 10 to 80
 
 # Subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 5 # min size for subject cloud, too many terms = slow load time!
-stopwords: # set of subjects separated by ;, e.g. boxers;boxing
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: ccc-company-number;subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
-locations-on: true # true/false
+locations-page: true # true/false
+locations-fields: location;ccc-camp-number # set of fields separated by ; to be featured in the cloud
+locations-min: 4 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav

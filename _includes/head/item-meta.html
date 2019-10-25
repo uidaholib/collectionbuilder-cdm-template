@@ -4,7 +4,7 @@
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.dc-map != nil' -%}
-{% for f in fields %}{% if page[f.field] %}<meta name="{{ f.dc-map }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
+{% for f in fields %}{% if page[f.field] %}<meta name="{{ f.dc-map | xml_escape }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
 {% endif %}{% endfor %}
 <!-- Open Graph meta -->
 <meta property="og:title" content="{{ page.title | escape }}" />
@@ -12,7 +12,7 @@
 <meta property="og:description" content="Item from {{ site.data.theme.title| escape }}. {{ page.description | truncatewords: 30 | escape }}" />
 <meta property="og:image" content="{% if page.format contains 'image' %}{% include image/large.html %}{% else %}{% include image/thumb.html %}{% endif %}" />
 <meta property="og:image:alt" content="{{ page.title | escape }}" />
-<meta property="og:site_name" content="{{ site.data.theme.title| escape }}" />
+<meta property="og:site_name" content="{{ site.data.theme.title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
 <!-- schema.org JSON-LD -->
