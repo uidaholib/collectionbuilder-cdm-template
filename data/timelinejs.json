@@ -7,7 +7,7 @@
     "title": {
         "media": {
           "url": "{% include image/featured-image.html %}",
-          "caption": {{ bannerItem[0].title| default: site.data.theme.title | jsonify  }},
+          "caption": {{ bannerItem[0].title | default: site.data.theme.title | jsonify  }},
           "credit": {{ site.data.theme.title | jsonify }}
         },
         "text": {
@@ -18,7 +18,7 @@
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% include image/medium.html %}",
+          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-md.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{% include item-link.html %}",
           "credit": "{{ site.data.theme.title }}"
