@@ -41,13 +41,17 @@ latitude: 47.523164 #to determine center of map
 longitude: -116.13419 #to determine center of map
 zoom-level: 10# zoom level for map 
 
-# subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 2 # min size for subject cloud, too many terms = slow load time!
-stopwords: # set of subjects separated by ;, e.g. boxers;boxing
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: date;subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
-# Location page (optional )
-locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
+# Locations page
+locations-page: false # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
