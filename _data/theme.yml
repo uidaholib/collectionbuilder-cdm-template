@@ -18,9 +18,9 @@ keywords: "UI; Idaho" # describing the whole collection -- add to the two provid
 author: # You! Add your github username 
 
 # Home page
-home-banner-image-number: 1346 # use number of photo from collection
+home-banner-image-number: 1311 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Seven Devils (Idaho) [3] from https://digital.lib.uidaho.edu/digital/collection/spec_kl/id/1346 # for accessibility 
+home-banner-image-title: Beezie [1] - photograph of a child sitting on a coffee table # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 300.
