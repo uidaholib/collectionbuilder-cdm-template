@@ -4,7 +4,8 @@
 {% assign new = site.data[site.data.theme.metadata] | map: c | join: ";" %}
 {% assign terms = terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > site.data.theme.subjects-min' -%}
+{% if page.layout == "subjects" %}{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > site.data.theme.subjects-min' -%}{%else%}
+{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > include.min' -%}{%endif%}
 <script>
 (function(){
     /* subject terms + count */

@@ -6,8 +6,9 @@
 {% if page.layout == "browse" %}{% include js/browse-js.html %}
 {% endif %}
 {% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
-{% if page.layout == "subjects" %}{% assign subject = site.data.theme.subjects-fields | default: "subject" %}{% include js/cloud-js.html fields=subject %}{% endif %}
-{% if page.layout == "locations" %}{% assign location = site.data.theme.locations-fields | default: "location" %}{% include js/cloud-js.html fields=location %}{% endif %}
+{% if page.layout == "subjects" %}{% assign subject = site.data.theme.subjects-fields | default: "subject" %}{% include js/cloud-js.html fields=subject min=site.data.theme.subjects-min %}{% endif %}
+{% if page.layout == "locations" %}{% assign location = site.data.theme.locations-fields | default: "location" %}{% include js/cloud-js.html fields=location  min=4 %}{% endif %}
+{% if page.layout == "photographers" %}{% include js/cloud-js.html fields="creator" min=2 %}{% endif %}
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
 {% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
 {% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}

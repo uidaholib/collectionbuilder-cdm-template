@@ -53,9 +53,9 @@ subjects-min: 6 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
-locations-page: false # true/false
+locations-page: true # true/false
 locations-fields: location # set of fields separated by ; to be featured in the cloud
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-min: 4 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
@@ -68,9 +68,9 @@ about-off: true # true / false, if true will not show link to about page on fron
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
+metadata-export-fields: "title,creator,date,date is approximate?,description,subject,location,geonames,latitude,longitude,source,usfs number,publisher,identifier,format original,format,type,rights,standardized rights,language,cdm-id,object-id"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,location,creator,source"
 
 # images 
 image-percentage-large: # default 70
