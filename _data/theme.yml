@@ -47,12 +47,16 @@ map-cluster: true # suggested for large collection or with many items in same lo
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
-subjects-off: false # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 6 # min size for subject cloud, too many terms = slow load time!
-stopwords: # set of subjects separated by ;, e.g. boxers;boxing
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 6 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
-locations-on: true # true/false
+locations-page: false # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
@@ -60,6 +64,13 @@ year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
 about-off: true # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject"
 
 # images 
 image-percentage-large: # default 70
