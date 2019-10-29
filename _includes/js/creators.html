@@ -1,11 +1,8 @@
 <script>
-$.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
+$.getJSON("{{ '/data/creators.json' | relative_url }}", function(json){
     /* set the min count for subject terms, too many terms = slow page load! */
-    var minSize = {{ site.data.theme.subjects-min | default: "1" }};
-    var subjectTerms = json.subjects.filter(function(x) { return x.count > minSize; });
-    {% if site.data.theme.stopwords %}
-    var stopWords = {{ site.data.theme.stopwords | downcase | split: ';' | jsonify }};
-    subjectTerms = subjectTerms.filter(function(a) { return stopWords.indexOf(a.subject) < 0;});{% endif %}
+    var minSize = {{ site.data.theme.subject-min }};
+    var subjectTerms = json.creators.filter(function(x) { return x.count > minSize; });
     var counts = subjectTerms.map(function(obj){ return obj.count; });
     var countMax = counts.reduce(function(a, b) { return Math.max(a, b); });
     var cloud = document.getElementById("cloud");
@@ -27,7 +24,7 @@ $.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
         //shuffle(array);
         for (i = 0; i < array.length; i++) {
             size = mapSize(array[i].count);
-            item = '<a class="btn btn-outline-clearwater m-1 wrd tagcloud' + size + '" href="' + array[i].link + '" >' + array[i].subject + '</a>';
+            item = '<a class="btn btn-outline-clearwater m-1 wrd tagcloud' + size + '" href="' + array[i].link + '" >' + array[i].creator + '</a>';
             cloud.innerHTML += item;
         }
     }

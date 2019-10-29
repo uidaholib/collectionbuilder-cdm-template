@@ -1,5 +1,6 @@
 ---
 layout: page
+lazyload: true
 ---
 {%- assign items = site.data[site.data.theme.metadata] -%}
 {%- assign raw-dates = site.data[site.data.theme.metadata] | map: 'date' | compact | uniq -%}
@@ -32,22 +33,10 @@ layout: page
   <tr id="{{ year }}">
     <th><h3 >{{ year }}</h3></th>
     <td>
-    {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
-    {% for item in inYear %}
-    {%if item.format contains 'image' or item.format contains 'pdf' %}
-    {% assign first = item.score | split: "-" | first | plus: 0  %}
-    {% assign last = item.score | split: "-" | last | plus: 0  %}
-    <a class="p-2 {%if first > last%}bg-success{%endif%}" href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazyload img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }} | Idaho: {{first}} to {{item.opponent}}: {{last}}  "></a>
-    {%else%}
-    <div class="card col-12 col-sm-8 col-md-6 col-lg-4 float-left mt-1"> 
-      <div class="card-body px-0 pt-1 pb-0">
-          <h3 class="float-left col-2 pt-2"><span  class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></h3>
-          <p class="float-left col-10 mb-1"> <a class="text-dark" href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}">{{item.title}}</a>           
-</p>
-</div></div>
-
-{% endif %}
-    {% endfor %}
+        {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+        {% for item in inYear %}
+        <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtube-id %}https://img.youtube.com/vi/{{ item.youtube-id }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+        {% endfor %}
     </td>
   </tr>
   {% endfor %}
