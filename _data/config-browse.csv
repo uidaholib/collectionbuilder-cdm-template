@@ -1,4 +1,7 @@
 field,displayName,btn,hidden
 date,Date,
-creator,Creator,
+point of origin,Origin
+destination,Destination
+creator,,true
 subject,,true
+location,,true
