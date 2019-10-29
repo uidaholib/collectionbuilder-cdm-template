@@ -55,13 +55,17 @@ map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact m
 map-cluster: true # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-# subject page
-subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 2 # min size for subject cloud, too many terms = slow load time!
-stopwords: # set of subjects separated by ;, e.g. boxers;boxing
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
-# Location page (optional )
-locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
+# Locations page
+locations-page: true # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
@@ -75,7 +79,7 @@ about-off: # true / false | If left blank, will show "Learn More" button on fron
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,location"
 
 # images 
 image-percentage-large: # default 70
