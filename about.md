@@ -7,11 +7,11 @@ featured-image: "objects/test001.jpg"
 ---
 ### About the {{site.data.theme.title}}
 
-*(via [University of Idaho Library Special Collections Bunker Hill Labor History Collection documentation](https://www.lib.uidaho.edu/special-collections/Manuscripts/mg367.htm)&mdash;)*
+*(via [University of Idaho Library Special Collections Bunker Hill Labor History Collection documentation](https://www.lib.uidaho.edu/special-collections/Manuscripts/mg367.htm))*
 
-The Bunker Hill Labor History Collection is 463 letters of correspondence between the mangers and owners of the Bunker Hill Mine & Sullivan M. & C. Co. The correspondence files consists of incoming and outgoing letters, some arranged chronologically, others by subject.
+The Bunker Hill Labor History Collection is 463 letters of correspondence between the mangers and owners of the Bunker Hill Mine & Sullivan M. & C. Co. The correspondence files consist of incoming and outgoing letters, some arranged chronologically, others by subject.
 
-The managers letters are letters from the manager of the mine in Kellogg to the president of the company in San Francisco, detailing the operations of the mine, union activities, and related information. In 1892 the letters were from V.M. Clement to John Hayes Hammond; letters for 1893 are lacking; 1894- 1896 are from F.W. Bradley to N.H. Harris; 1897-1898, Frederick Burbidge to Bradley, also Bradley and Burbidge to Alex Granger; and 1899-1909 Burbidge to Bradley or Granger.
+The manager's letters are letters from the manager of the mine in Kellogg to the president of the company in San Francisco, detailing the operations of the mine, union activities, and related information. In 1892 the letters were from V.M. Clement to John Hayes Hammond; letters for 1893 are lacking; 1894- 1896 are from F.W. Bradley to N.H. Harris; 1897-1898, Frederick Burbidge to Bradley, also Bradley and Burbidge to Alex Granger; and 1899-1909 Burbidge to Bradley or Granger.
 
 Then comes a general correspondence file, 1894-1900 which is an alphabetically arranged group (M-Z, 1898-1900, is lacking). The majority of these letters are inter-company correspondence between the Kellogg and San Francisco offices, although there are a few letters from suppliers.
 
