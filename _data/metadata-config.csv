@@ -1,16 +1,21 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-creator,Creator,DC.creator
+creator,Creator,DC.creator,true
 date,Date Created,DCTERMS.created
 date is approximate,Approximated Date
 description,Description,DC.description
-subject,Subjects,DC.subject,true
-location,Location
+county,County,,true
+region,Region,,true
+features,Features,,true
+flight line,Flight Line,,true
+aerial-type,Photograph Type,,true
 latitude,Latitude
 longitude,Longitude
-collection,Source Collection
+source,Source
 identifier,Source Identifier
+cd rom call number,CDROM Call #
 type,Type,DC.type
 format original,Format Original
 format,Format
 rightsstatement,Rights
+

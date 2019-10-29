@@ -3,12 +3,12 @@
 </style>
 <div class="card mb-3">
     <div class="card-body">
-        <h5 class="card-title">Sample Items</h5>
+        <h5 class="card-title">Indexes to the Photos</h5>
         <div class="row">
             <div class="col-md-12 pb-3">
                 <div id="imageCarousel" class="carousel slide bg-dark rounded" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        {% for i in (1..9) %}
+                        {% for i in (1..13) %}
                         <li data-target="#imageCarousel" data-slide-to="{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}"></li>
                         {% endfor %}
                     </ol>
