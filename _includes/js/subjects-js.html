@@ -1,7 +1,7 @@
 <script>
 $.getJSON("{{ '/data/subjects.json' | relative_url }}", function(json){
     /* set the min count for subject terms, too many terms = slow page load! */
-    var minSize = {{ site.data.theme.subject-min }};
+    var minSize = {{ site.data.theme.subjects-min | default: 1 }};
     var subjectTerms = json.subjects.filter(function(x) { return x.count > minSize; });
     {% if site.data.theme.stopwords %}
     var stopWords = {{ site.data.theme.stopwords | downcase | split: ';' | jsonify }};

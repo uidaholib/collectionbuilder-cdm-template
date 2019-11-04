@@ -46,6 +46,13 @@ a {
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.5);
 }
+.nav-search-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}  
 /* footer */
 .collection-footer{
     background-color: $black-color;
