@@ -26,10 +26,10 @@ lazyload: true
 
 {{ content }}
  
-<h3><a href="#{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
+<h3><a href="#1933">1933</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
 
 <table id="timeline" class="table table-striped">
-  {% for year in uniqueYears %}
+  {% for year in uniqueYears %}{%assign int = year | minus: 0%}{% if int > 1932 %}
   <tr id="{{ year }}">
     <th><h3 >{{ year }}</h3></th>
     <td>
@@ -38,6 +38,6 @@ lazyload: true
         <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtube-id %}https://img.youtube.com/vi/{{ item.youtube-id }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
         {% endfor %}
     </td>
-  </tr>
+  </tr>{% else %}{% endif %}
   {% endfor %}
 </table>
