@@ -1,5 +1,9 @@
 field,displayName,btn,hidden
 date,Date,
 creator,Creator,
+description,,,true
 subject,,true
+subject (lctgm),,true
 location,,true
+format original,,true
+

@@ -6,13 +6,13 @@ date is approximate,Approximated Date
 description,Description,DC.description
 subject,Subjects,DC.subject,true
 subject (lcsh),Subjects - LCSH,,
-subject (lctgm),Subjects - LCTGM,,
-location,Location
+subject (lctgm),Subjects - LCTGM,,true
+location,Location,,true
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 original identifier,Source Identifier
-format original,Format Original
+format original,Format Original,,true
 type,Type,DC.type
 format,Format Digital
 rightsstatement,Rights
