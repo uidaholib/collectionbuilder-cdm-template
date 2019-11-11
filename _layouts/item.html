@@ -15,8 +15,7 @@ gallery: true
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail"
-                            class="img-fluid"></p>
+                    <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
                 {%- elsif page.format contains 'audio' -%}
@@ -47,10 +46,7 @@ gallery: true
                 {%endif%}
                 {%- else -%}
                 <div class="mt-4">
-                    <p>
-                        <a href="{% include download/item.html %}" target="_blank"><img
-                                src="{% include image/thumb.html %}" alt="{{ page.title | escape }}"
-                                alt="item thumbnail" class="img-fluid thumb"></a></p>
+                    <p><a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a></p>
                 </div>
                 {%- endif -%}
                 <div class="my-2">
