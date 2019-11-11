@@ -10,4 +10,4 @@
 <meta property="og:image:alt" content="{%- if site.data.theme.featured-image-objectid -%}{{ bannerItem[0].title | escape }}{% else %}{{ site.data.theme.home-banner-image-title }}{% endif %}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.data.theme.title | escape }}","publisher":"University of Idaho Library Digital Initiatives","description":"{{ site.data.theme.description | escape }}","image":"{% include image/featured-image.html %}","url":"{{ page.url | absolute_url }}"}</script> 
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.data.theme.title | escape }}","publisher":"University of Idaho Library Digital Initiatives","description":{{ site.data.theme.description | jsonify }},"image":"{% include image/featured-image.html %}","url":"{{ page.url | absolute_url }}"}</script> 

@@ -13,8 +13,8 @@
     var geodata = { "type": "FeatureCollection", "features": [ 
     {% for item in items %}{% if item.latitude and item.longitude %}
     { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
-    { "title": {{ item.title | jsonify }}, 
-    {% for f in fields %}"{{ f.field }}": {{ item[f.field] | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, {% if site.data.theme.mediatypes == "youtube" %} "youtube": {{ item.youtube-id | jsonify }},{%endif%} "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    { "title": {{ item.title | escape | jsonify }}, 
+    {% for f in fields %}"{{ f.field | escape }}": {{ item[f.field] | escape | jsonify }},{% endfor %} "cdm": {{ item.cdm-id | jsonify }}, {% if site.data.theme.mediatypes == "youtube" %} "youtube": {{ item.youtube-id | jsonify }},{%endif%} "id": {{ item.object-id | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
     ]};
 
     /* init map and set zoom */
