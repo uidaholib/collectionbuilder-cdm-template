@@ -3,7 +3,7 @@
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-{%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.dc-map != nil' -%}
+{%- assign fields = site.data.metadata-config | where_exp: 'item', 'item.dc-map != nil' -%}
 {% for f in fields %}{% if page[f.field] %}<meta name="{{ f.dc-map | xml_escape }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
 {% endif %}{% endfor %}
 <!-- Open Graph meta -->
