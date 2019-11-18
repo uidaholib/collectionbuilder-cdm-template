@@ -12,16 +12,15 @@ gallery: true
 
     <div class="row">
         <div class="col-md-6" id="lightgallery">
-            <div class="card mb-4">
+            <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail"
-                            class="img-fluid"></p>
-                    <p class="text-center"><small>Click to view full screen</small></p>
+                    <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
+                    <p><small>Click to view full screen</small></p>
                 </div>
                 {%- elsif page.format contains 'audio' -%}
                 <div class="mt-4">
-                    <p class="text-center">
+                    <p>
                         <audio controls class="mp3-item-player">
                             <source src="{% include download/item.html %}" type="audio/mpeg">
                             Your browser does not support the audio element.
@@ -31,13 +30,13 @@ gallery: true
                 {%- elsif page.format contains 'video' -%}
                 {%if page.youtube-id%}
                 <div class="mt-4">
-                    <p class="text-center">
+                    <p>
                         <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{page.youtube-id}}?rel=0" allowfullscreen></iframe></div>
                     </p> 
                 </div>
                 {%- else -%}
                 <div class="mt-4">
-                    <p class="text-center">
+                    <p>
                         <video width="320" height="240" controls>
                             <source src="{% include download/video.html %}" type="video/mp4">
                             Your browser does not support the video tag.
@@ -47,13 +46,10 @@ gallery: true
                 {%endif%}
                 {%- else -%}
                 <div class="mt-4">
-                    <p class="text-center">
-                        <a href="{% include download/item.html %}" target="_blank"><img
-                                src="{% include image/thumb.html %}" alt="{{ page.title | escape }}"
-                                alt="item thumbnail" class="img-fluid thumb"></a></p>
+                    <p><a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a></p>
                 </div>
                 {%- endif -%}
-                <div class="text-center my-2">
+                <div class="my-2">
                         {%if page.youtube-id%}
                         <a target="_blank" href="https://www.youtube.com/watch?v={{youtube-id}}" class="btn btn-outline-clearwater"
                         title="Object download">View on YouTube</a>
