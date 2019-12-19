@@ -13,7 +13,7 @@ cdm-collection-id: idahowater
 
 # header and head metadata
 tagline: A collection of scientific and technical reports relating to water issues in key Idaho river basins
-description: "A collection of scientific and technical reports relating to water issues in key Idaho river basins" 
+description: "The Idaho Waters Digital Library provides open digital access to unique information resources relating to water issues in key Idaho river basins. Making up the core of the collection are more than 700 documents produced by Idaho Water Resources Research Institute, digitized by University of Idaho Library. IWDL supports ongoing research and understanding of the region while preserving an era of previous work and research investment."
 keywords: "university of idaho, Idaho Water Resources Research Institute, Idaho, water resources" # describing the whole collection -- add to the two provided
 author: evanwill # You! Add your github username 
 
@@ -24,10 +24,10 @@ home-banner-image-title: Ian Keefe from Unsplash # for accessibility
 home-title-y-padding: 2em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 300.
-featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
-featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 8
+# featured-subjects: Computer models; Aquifers; Water quality; Heavy metals; Groundwater; Irrigation; Mine wastes; Hydroelectric power; Hydrogeology; Groundwater flow; Water management; Water pollution; Water resources development; Water supply; Benthos; Computer simulation #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects-max: 16 # set number of top subjects to display if auto generating
+# featured-locations: Southern Idaho; Snake Plain Aquifer; Moscow; Coeur d'Alene; Snake River; Southeastern Idaho; Northern Idaho; Palouse; Boise; Salmon River; Clearwater River; Bear River; Pullman #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 15
 mediatypes: documents #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
 # Browse page
@@ -69,9 +69,9 @@ about-off: false # true / false, if true will not show link to about page on fro
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdm-id,contentdm file name,contentdm file path,object-id"
+metadata-export-fields: "title,creator,date,location,latitude,longitude,additional_lat-long,subject,description,collection,series,related-dataset,contributors,publisher,contributing-institution,language,iwrri-number,object-id,rights,rights-standardized,format,type,date-digital,digitization-specifications,metadata-cataloger,cdm-id"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,location,series,collection,creator"
 
 # images 
 image-percentage-large: # default 70

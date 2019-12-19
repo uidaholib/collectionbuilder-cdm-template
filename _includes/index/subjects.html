@@ -19,5 +19,11 @@
         {% for s in topSubjects %}
         <a class="btn btn-sm btn-clearwater m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
     </p>
+    <h5 class="card-title">Top Series</h5>
+    <p class="card-text">
+        {%- assign series = "Water for Idaho; ESPAM; Evaluation criteria for wild and scenic rivers; Low-head dams PNW; Scenic river study; SRPAM" | split: "; " -%}
+        {% for se in series %}
+        <a class="btn btn-sm btn-secondary m-1" href="{{ se | uri_escape | prepend: '/browse/#' | absolute_url }}">{{ se }}</a>{% endfor %}
+    </p>
   </div>
 </div>
