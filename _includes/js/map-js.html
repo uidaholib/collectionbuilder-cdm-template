@@ -70,14 +70,9 @@
         feature.layer = layer;{% endif %}
         /* create pop up */
         var itemHref = {% if site.data.theme.repo-link %}'{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm{% else %}'{{ site.baseurl }}/docs/' + feature.properties.id + '.html'{% endif %};
-        {% if site.data.theme.mediatypes == "youtube" %}
-        var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/0.jpg';
-        {%else%}
-        var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm;
-        {%endif%}
-        var popupTemplate = '<h4><a class="text-dark" href="' + itemHref + '">' +
-            feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="' + itemHref + 
-            '" ><img class="mapthumb" src="' + thumbSrc + '" alt="item thumbnail"></a></div><p class="mt-0">';
+        
+        var popupTemplate = '<h5><a class="text-dark" href="' + itemHref + '">' +
+            feature.properties.title + '</a></h5><p class="mt-0">';
         {% for f in fields %}{% if f.display %}
         if (feature.properties.{{ f.field }}) {
             popupTemplate += '<strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 

@@ -6,7 +6,9 @@ date,Date,DCTERMS.created
 subject,Subjects,DC.subject,true
 description,Abstract,DC.description
 location,Location,,true
-lat-long,Lat-Long,
+latitude,Latitude,
+longitude,Longitude,
+additional_lat-long,Additional Lat-Long,
 collection,Collection,,true
 series,Series,,true
 iwrri-number,IWRRI number,
