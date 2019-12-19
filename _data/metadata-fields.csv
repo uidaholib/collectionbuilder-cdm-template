@@ -1,17 +1,17 @@
-field,display-name,dc-map,browse-link
+field,display-name,dc-map
 title,Title,DC.title
 creator,Authors,DC.creator
 contributors,Contributors,
 date,Date,DCTERMS.created
 subject,Subjects,DC.subject,true
 description,Abstract,DC.description
-location,Location,,true
+location,Location,
 lat-long,Lat-Long,
-collection,Collection,,true
-series,Series,,true
+collection,Collection,
+series,Series,
 iwrri-number,IWRRI number,
-object-id,Object ID,
-rights,Rights,
+resource-identifier,Object ID,
+rights-management,Rights,
 publisher,Publisher,
 contributing-institution,Contributing Institution,
 format,Format,

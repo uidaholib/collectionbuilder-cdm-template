@@ -1,34 +1,34 @@
 # Jekyll Digital Collection Generator
 
 # Site settings
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Idaho Waters Digital Library
 # choose metadata, be sure to also change page_gen data setting!
-metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
+metadata: iwdl-complete # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
 cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
-cdm-collection-id: boxing 
+cdm-collection-id: idahowater
 
 # header and head metadata
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho" 
-keywords: "UI; Idaho; Sports" # describing the whole collection -- add to the two provided
-author: # You! Add your github username 
+tagline: A collection of scientific and technical reports relating to water issues in key Idaho river basins
+description: "A collection of scientific and technical reports relating to water issues in key Idaho river basins" 
+keywords: "university of idaho, Idaho Water Resources Research Institute, Idaho, water resources" # describing the whole collection -- add to the two provided
+author: evanwill # You! Add your github username 
 
 # Home page
-home-banner-image-number: 15 # use number of photo from collection
-home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
-home-title-y-padding: 12em # the margin from the top your title portion will appear.
-home-banner-image-position: # [options: top, center, bottom] Default: top
+#home-banner-image-number: 15 # use number of photo from collection
+home-banner-image-link: https://www.lib.uidaho.edu/digital/iwdl/images/ian-keefe-354195-unsplash.jpg # leave blank unless no cdm number to generate item
+home-banner-image-title: Ian Keefe from Unsplash # for accessibility 
+home-title-y-padding: 2em # the margin from the top your title portion will appear.
+home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
-mediatypes: images #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 8
+mediatypes: documents #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
 # Browse page
 # see _data/browse-config.csv for field display options
@@ -39,9 +39,9 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but dou
 
 # Map page
 # see _data/map-config.csv for field display options
-latitude: 46.727485 #to determine center of map
-longitude: -117.014185 #to determine center of map
-zoom-level: 5 # zoom level for map 
+latitude: 45.177390 #to determine center of map
+longitude: -115.190645 #to determine center of map
+zoom-level: 6 # zoom level for map 
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
 map-cluster: true # suggested for large collection or with many items in same location
