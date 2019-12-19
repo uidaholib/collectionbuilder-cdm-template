@@ -1,4 +1,5 @@
 field,displayName,btn,hidden
+creator,Authors,
 date,Date,
 subject,Subject,true
 location,Location,true
