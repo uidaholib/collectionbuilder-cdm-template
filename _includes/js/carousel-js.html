@@ -5,7 +5,7 @@
     carouselItems.sort(function() { return 0.5 - Math.random() });
     var i;
     for (i=0; i < 9; i++) {
-        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/iiif/{{ site.data.theme.cdm-collection-id }}/" + carouselItems[i].cdm + "/full/!{{ site.data.theme.carousel-height | remove: 'px' | default: '300' }},{{ site.data.theme.carousel-height | remove: 'px' | default: '300' }}/0/default.jpg'> <div class='carousel-caption'><h5 class='carousel-item-title text-white py-2'>" + carouselItems[i].title + "</h5>  <h5> <a target='_blank' href='{{ site.baseurl }}/items/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
+        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='https://cdm17254.contentdm.oclc.org/digital/iiif/{{ site.data.theme.cdm-collection-id }}/" + carouselItems[i].cdm + "/full/!{{ site.data.theme.carousel-height | remove: 'px' | default: '300' }},{{ site.data.theme.carousel-height | remove: 'px' | default: '300' }}/0/default.jpg'> <div class='carousel-caption'><h5 class='carousel-item-title text-white py-2'>" + carouselItems[i].title + "</h5>  <h5> <a target='_blank' href='{{ site.baseurl }}/docs/" + carouselItems[i].id + ".html' class='btn btn-pride-gold'>Go to Item</a></h5> </div> </div>";
         carousel.innerHTML += slide;
     }
     $(".carousel-item").first().addClass("active");

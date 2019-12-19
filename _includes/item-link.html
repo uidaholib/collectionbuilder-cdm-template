@@ -1,1 +1,1 @@
-{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/{{ item.object-id }}{% else %}{{ '/items/' | append: item.object-id | append: '.html' | absolute_url }}{% endif %}
+{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/{{ item.object-id }}{% else %}{{ '/docs/' | append: item.object-id | append: '.html' | absolute_url }}{% endif %}

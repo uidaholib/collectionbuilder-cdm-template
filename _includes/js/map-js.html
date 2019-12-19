@@ -69,7 +69,7 @@
         {% if site.data.theme.map-search == true %}/* bind feature for search */
         feature.layer = layer;{% endif %}
         /* create pop up */
-        var itemHref = {% if site.data.theme.repo-link %}'{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm{% else %}'{{ site.baseurl }}/items/' + feature.properties.id + '.html'{% endif %};
+        var itemHref = {% if site.data.theme.repo-link %}'{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm{% else %}'{{ site.baseurl }}/docs/' + feature.properties.id + '.html'{% endif %};
         {% if site.data.theme.mediatypes == "youtube" %}
         var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/0.jpg';
         {%else%}
