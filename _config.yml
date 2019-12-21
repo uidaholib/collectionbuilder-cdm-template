@@ -12,6 +12,8 @@ baseurl: /digital/iwdl
 
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
+# url to objects folder on Digital
+digital-objects: https://www.lib.uidaho.edu/digital/objects
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:

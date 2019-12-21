@@ -19,7 +19,7 @@ author: evanwill # You! Add your github username
 
 # Home page
 #home-banner-image-number: 15 # use number of photo from collection
-home-banner-image-link: https://www.lib.uidaho.edu/digital/iwdl/images/ian-keefe-354195-unsplash.jpg # leave blank unless no cdm number to generate item
+home-banner-image-link: https://www.lib.uidaho.edu/digital/objects/iwdl/ian-keefe-354195-unsplash.jpg # leave blank unless no cdm number to generate item
 home-banner-image-title: Ian Keefe from Unsplash # for accessibility 
 home-title-y-padding: 2em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top

@@ -50,11 +50,11 @@ This project would not have been possible without the grant support of the [Unit
 <div class="card">
 <div class="card-header">Supporters</div>
 <div class="card-body p-md-3">
-<p class="text-center"><a href="https://www.uidaho.edu/research/entities/iwrri"><img class="img-fluid rounded mt-3" src="{{ "/images/ui-iwrri-logo.jpg" | relative_url }}" alt="IWRRI Logo" ></a></p>
-<p class="text-center"><a href="https://www.usgs.gov/"><img class="img-fluid rounded mt-3" src="{{ "/images/USGS_logo.png" | relative_url }}" alt="USGS Logo"></a></p>
+<p class="text-center"><a href="https://www.uidaho.edu/research/entities/iwrri"><img class="img-fluid rounded mt-3" src="{{ '/iwdl/ui-iwrri-logo.jpg' | prepend: site.digital-objects }}" alt="IWRRI Logo" ></a></p>
+<p class="text-center"><a href="https://www.usgs.gov/"><img class="img-fluid rounded mt-3" src="{{ '/iwdl/USGS_logo.png' | prepend: site.digital-objects }}" alt="USGS Logo"></a></p>
 </div>
 </div>
-<p class="mt-3"><img class="img-fluid rounded" src="{{ "/images/pinecreek.jpg" | relative_url }}" alt="Pine Creek"></p>
+<p class="mt-3"><img class="img-fluid rounded" src="{{ '/iwdl/pinecreek.jpg' | prepend: site.digital-objects }}" alt="Pine Creek"></p>
 </div>
 </div>
 

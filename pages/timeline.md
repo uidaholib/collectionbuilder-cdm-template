@@ -4,4 +4,4 @@ layout: timeline
 permalink: /timeline.html
 ---
 
-## Collection Timeline
+## IWDL Collection Timeline

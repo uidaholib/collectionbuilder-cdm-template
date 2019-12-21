@@ -6,7 +6,7 @@ function makeCard(obj) {
     // find item link
     var itemHref = "{{ '/docs/' | relative_url }}" + obj.id + ".html";
     // find images
-    var thumbSrc = "https://www.lib.uidaho.edu/digital/iwdl/images/thumb/" + obj.id + ".jpg";
+    var thumbSrc = "{{ site.digital-objects }}/iwdl/thumb/" + obj.id + ".jpg";
 
     // start card
     var card = '<div class="item col-md-6 col-sm-12 mb-2"><div class="card">';
