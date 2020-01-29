@@ -23,7 +23,7 @@
     <p class="card-text">
         {%- assign series = "Water for Idaho; ESPAM; Evaluation criteria for wild and scenic rivers; Low-head dams PNW; Scenic river study; SRPAM" | split: "; " -%}
         {% for se in series %}
-        <a class="btn btn-sm btn-secondary m-1" href="{{ se | uri_escape | prepend: '/browse/#' | absolute_url }}">{{ se }}</a>{% endfor %}
+        <a class="btn btn-sm btn-secondary m-1" href="{{ se | uri_escape | prepend: '/browse.html#' | absolute_url }}">{{ se }}</a>{% endfor %}
     </p>
   </div>
 </div>
