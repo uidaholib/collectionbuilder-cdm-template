@@ -56,14 +56,6 @@ page_gen:
     extension: 'html' 
     filter: 'objectid'  
 
-# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
-page_gen:
-  - data: 'boxing'
-    template: 'items'
-    name: 'object-id'
-    dir: 'items'
-    extension: 'html'   
-
 # add liquid profiler to id bottlenecks
 # profile: true
 
