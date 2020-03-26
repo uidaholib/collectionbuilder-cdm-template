@@ -1,4 +1,4 @@
-{%- assign items = site.data[site.data.theme.metadata] -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 {%- assign fields = site.data.config-browse -%}
 <script>
 
@@ -7,29 +7,29 @@ function makeCard(obj) {
     var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
     // find images
     if(obj.youtube) {
-      var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg';
+      var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/hqdefault.jpg';
     } else if(obj.format.includes('image')) { 
-      var imgSrc = '{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
+      var imgSrc = '{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
     } else {
-      var thumbSrc = '{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{{ site.data.theme.cdm-collection-id }}/id/' + obj.cdm;
+      var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm;
     }
     // start card
-    var card = '<div class="item col-lg-3 col-md-6 col-sm-12 mb-2"><div class="card">';
+    var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
     if(imgSrc) {
-      card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
+      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+    card += '<div class="card-body text-center"> <h4 class="card-title"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h4>';
     // thumb for non-photo items
     if(thumbSrc){
-      card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
+      card += '<p><a href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
     }
     // other fields
     card += '<p class="card-text">';
     {% for f in fields %}{% unless f.hidden == 'true' %}
     if(obj[{{ f.field | jsonify }}]){
-    {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
+    {% if f.display_name %}card += '<strong>{{ f.display_name }}:</strong> ';{% endif %}
     {% if f.btn == 'true' %}
     var btns = obj[{{ f.field | jsonify }}].split(";");
     for (var i = 0, len = btns.length; i < len; i++) {
@@ -60,7 +60,7 @@ function makeCard(obj) {
       card += '"></span></a></small></p>';
     }
     // view button
-    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-outline-clearwater" title="link to ' + obj.title + '">View Full Record</a>';
+    card += '<hr><a href="' + itemHref + '" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs
     card += '</div></div></div>';
     // send back big string
@@ -78,11 +78,11 @@ function makeCard(obj) {
     }
     return array;
   }
-    
+
   /* add items */
   var items = [
     {% for i in items %}
-    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | escape | jsonify }},{% endif %}{% endfor %}{% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdm-id | jsonify }}, "id":{{ i.object-id | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdmid | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
   /* randomize items once at page load */
   shuffle(items);
@@ -93,6 +93,22 @@ function makeCard(obj) {
       var filteredItems = arr; 
     } else {
       q = q.trim().toUpperCase(); 
+      // 3 filter options, filter, grep, loop...
+      // js filter
+      /*
+      var filteredItems = arr.filter(function (obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);}); */
+      // jquery grep
+      /*
+      var filteredItems = jQuery.grep(arr, function(obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);}); */
+      // (/keyword/i).test(source)
+      // js loop
+      /*
+      var filteredItems = [];
+      for (var i = 0, len = arr.length; i < len; i++) {
+        if(Object.values(arr[i]).join(" ").toUpperCase().includes(q)){
+          filteredItems.push(arr[i]);
+        }
+      }*/
       // for compatible indexOf loop seems fastest
       var filteredItems = [];
       for (var i = 0, len = arr.length; i < len; i++) {
@@ -104,9 +120,9 @@ function makeCard(obj) {
       }
     }
     // add number 
-    $("#numberOf").html(filteredItems.length);
-    // add stuff, make cards first in giant var, then add all at once to speed things up
+    $("#numberOf").html(filteredItems.length + " of {{ items | size }} items");
     
+    // add stuff, make cards first in giant var, then add all at once to speed things up
     var cards = "";
     for (var i = 0, len = filteredItems.length; i < len; i++) {
       cards += makeCard(filteredItems[i]);
