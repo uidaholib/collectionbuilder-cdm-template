@@ -1,0 +1,18 @@
+field,display_name,browse_link,dc_map,schema_map
+title,Title,,DCTERMS.title,headline
+creator,Creator,,DCTERMS.creator,creator
+recipient,Recipient,
+date,Date Created,,DCTERMS.created,dateCreated
+date-is-approximate,Approximated Date
+description,Description,,DCTERMS.description,description
+item-information,Item Information,
+subject,Subjects,true,DCTERMS.subject,keywords
+location,Location,,,contentLocation
+latitude,Latitude
+longitude,Longitude
+source,Source
+identifier,Source Identifier
+type,Type,,DCTERMS.type
+format original,Format Original
+format,Format,,,encodingFormat
+rightsstatement,,,DCTERMS.rights,license
