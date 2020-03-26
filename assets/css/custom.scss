@@ -5,64 +5,14 @@
 
 // base variables
 $base-font-family: "Ringside Narrow A","Ringside Narrow B",Arial,sans-serif; //{{ site.data.theme.base-font-family | default: '""' }};
-$base-font-size: 1.2em; //{{ site.data.theme.base-font-size | default: '""' }};
-$text-color: #111; //{{ site.data.theme.text-color | default: '""' }};
-$link-color: {{ site.data.theme.link-color | default: '""' }};
+$base-font-size: {{ site.data.theme.base-font-size | default: '"1.2em"' }};
+$text-color: {{ site.data.theme.text-color | default: '"#111"' }};
+$link-color: {{ site.data.theme.link-color | default: '"#00AEC7"' }};
 
-$brand-color:      #B06048;
-
-$base-font-weight: 300;
-$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$light-text-color: #fdfdfd;
-
-$background-color: #fdfdfd;
-$nav-background: #e8e8e8; //#CBCCD0;
-
-$grey-color:       #808080;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$black-color:       #191919;
-$black-color-light: lighten($black-color, 40%);
-$black-color-dark:  darken($black-color, 25%);
-
-// vandal colors 
-$pride-gold:  #F1B300;
-$garnet: #D22630; 
-$wild-rose: #E10098;
-$palouse-green: #00AF66;
-$clearwater: #00AEC7;
-$clearwater-light: #8BD5E5;
-$payette-blue: #003E51;
-$ponderosa-pine: #004E42;
-
-// vandal colors translated into bootstrap
-$blue: #003E51;
-$green: #00AF66;
-$cyan: #00AEC7;
-$red: #D22630;
-$yellow: #F1B300;
-$success: $yellow;
-$gray-800: #191919;
-
-$theme-colors: (
-  primary: $blue,
-  success: $yellow,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  dark: $gray-800
-) !default;
 
 // Width of the content area
 $content-width:    1800px;
-
 $on-palm:          576px;
 $on-laptop:        768px;
 $on-desktop:       992px;
@@ -95,9 +45,4 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-@import "base", "theme-colors", "pages", "custom";
-
-
-@import "uidahofonts", "colors";
-
-@import "custom";
+@import "uidahofonts", "theme-colors", "base", "pages", "custom";
