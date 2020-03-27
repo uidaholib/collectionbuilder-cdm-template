@@ -21,12 +21,10 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Dworshak Dam Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho"  
+tagline: Documenting the Development and Construction of the Doworshak Dam, 1952 - 1975
+description: "Digitized photographs and documents pertaining to the planning, development and construction of the Dworshak Dam, featuring documents and photographs detailing both the legislative and physical development of the dam." 
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
