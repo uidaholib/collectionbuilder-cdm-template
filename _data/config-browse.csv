@@ -1,4 +1,6 @@
 field,display_name,btn,hidden
+creator,Creator
 date,Date,
 subject,,true
+publisher,,true
 identifier,,,

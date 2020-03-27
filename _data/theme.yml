@@ -42,9 +42,9 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: Dworshak Dam Project; # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+subjects-fields: subject;creator;publisher # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 3 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: Dworshak Dam Project;dworshak dam;dam;dams;dworshak;site;curtis, albert b. (albert bruce), 1903-1985;1805;1952;1954;1955;1959;1962;1963;1964;1965;1966;1967;1968;1969;1971;1972;1973;curtis, bert;bruces eddy	 # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
@@ -57,9 +57,9 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 46.727485 #to determine center of map
-longitude: -117.014185 #to determine center of map
-zoom-level: 5 # zoom level for map 
+latitude: 46.515758 #to determine center of map
+longitude: -116.298196 #to determine center of map
+zoom-level: 11 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only

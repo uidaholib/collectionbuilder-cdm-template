@@ -43,15 +43,11 @@ permalink: /about.html
 <br>
 <p>For more information, see the <a href="https://en.wikipedia.org/wiki/Dworshak_Dam">Wikipedia entry on the Dworshak Dam</a>.</p>
 
-<p>To access the finding aid to the A.B. Curtis Collection, describing all items held by Special Collections & Archives, <a href="https://digital.lib.uidaho.edu/cdm4/document.php?CISOROOT=/spec_fa&CISOPTR=2813&REC=3&_ga=2.103297856.1990625513.1567545641-748017992.1559843627">click here</a>.</p>
+<p>To access the finding aid to the A.B. Curtis Collection, describing all items held by Special Collections & Archives, <a href="http://archiveswest.orbiscascade.org/ark:/80444/xv44807/op=fstyle.aspx?t=k&q=albert+curtis">click here</a>.</p>
 
-<p>To download the entire 200+ page listing of all contents in the A.B. Curtis Collection, as held by Special Collections & Archives, <a href="https://digital.lib.uidaho.edu/cgi-bin/showfile.exe?CISOROOT=/spec_fa&CISOPTR=1582&CISOMODE=print&_ga=2.103297856.1990625513.1567545641-748017992.1559843627">click here</a>.</p>
+<!--<p>To download the entire 200+ page listing of all contents in the A.B. Curtis Collection, as held by Special Collections & Archives, <a href="https://digital.lib.uidaho.edu/cgi-bin/showfile.exe?CISOROOT=/spec_fa&CISOPTR=1582&CISOMODE=print&_ga=2.103297856.1990625513.1567545641-748017992.1559843627">click here</a>.</p>-->
 <br>
-<hr>
-<br>
-<p>To explore the collection by date or location, or to find out more about the collection, use the tabs above.</p>
-<br>
-<hr>
+
 <br>
 
 {% include credits.md %}
