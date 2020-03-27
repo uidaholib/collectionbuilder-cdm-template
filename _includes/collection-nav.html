@@ -1,23 +1,37 @@
-<nav class="navbar navbar-expand-md {{ site.data.theme.navbar-color }} {{ site.data.theme.navbar-background }}">
+<nav class="navbar navbar-expand-lg {{ site.data.theme.navbar-color }} {{ site.data.theme.navbar-background }}">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="d-md-none float-right col-8">
+        <span class="d-lg-none text-right">
             <button type="button" class="btn btn p-1  float-right" data-toggle="modal" data-target="#collections">
             <img class="img-fluid float-right" id="mobile-nav-image" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
-        </div>
+            </span>
 
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav mr-auto">
-                {% for nav in site.data.nav-configuration %}
+                {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
+                {% for nav in navItems %}
+                {% if nav.stub %}
                 <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
-                    <a class="nav-link mt-1" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
+                    <a class="nav-link " href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
                 </li>
-                {% endfor %}
+                {%- else -%}
+                <li class="nav-item dropdown">
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
+                    <div class="dropdown-menu">
+                        {% for c in navChildren %}
+                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}" href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+                {%- endfor -%}
                 <li class="nav-item ">
-                    <a class="nav-link mt-1" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.data.theme.cdm-collection-id }}/" target="_blank">Database</a>
+                    <a class="nav-link " href="{{ site.cdm-url }}/cdm/search/collection/{{ site.cdm-collection-id }}/" target="_blank" rel="noopener">Database</a>
                 </li>
             </ul>
             {% include nav-search-cdm.html %}

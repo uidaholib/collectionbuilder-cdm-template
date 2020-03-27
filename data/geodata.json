@@ -1,11 +1,12 @@
 ---
 # generate geojson data for collection items with lat-longs
 ---
-{%- assign fields = site.data.metadata-config -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.latitude != nil and item.longitude != nil' -%}
+{%- assign fields = site.data.theme.metadata-export-fields | split: "," -%}
 {
     "type": "FeatureCollection",
     "features": [ 
-        {% for item in site.data[site.data.theme.metadata] %}{% if item.latitude and item.longitude %}
+        {% for item in items %}
         {
             "type":"Feature",
             "geometry":{
@@ -13,10 +14,10 @@
                 "coordinates":[{{ item.longitude }},{{ item.latitude }}]
             },            
             "properties":{
-                {% for f in fields %}"{{ f.field }}": {{ item[f.field] | replace: '""','"' | jsonify }},
+                {% for f in fields %}{% if item[f] %}{{ f | jsonify }}: {{ item[f] | jsonify }},{% endif %}
                 {% endfor %}
-                "link": {{ '/items/' | absolute_url | append: item.object-id | append: '.html' | jsonify }}
+                "reference_url": {{ '/items/' | absolute_url | append: item.objectid | append: '.html' | jsonify }}
             }
-        }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+        }{% unless forloop.last %}, {% endunless %}{% endfor %}
     ]
 }

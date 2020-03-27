@@ -1,0 +1,7 @@
+---
+# find all unique creators used in the metadata
+---
+{%- assign creators = site.data[site.metadata] | map: "creator" | join: ";" | split: ";" | array_count_uniq -%}
+creator,count,link
+{% for s in creators %}"{{ s[0] }}",{{ s[1] }},"{{ s[0] | url_param_escape | prepend: '/browse.html#' | absolute_url }}"
+{% endfor %}

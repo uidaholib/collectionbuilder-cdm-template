@@ -1,0 +1,12 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "html.format.maxPreserveNewLines": 2,
+    "html.format.wrapLineLength": 0,
+    "editor.codeLens": true,
+    "outline.problems.badges": false,
+    "outline.problems.enabled": false,
+    "outline.problems.colors": false,
+    "problems.decorations.enabled": false,
+    "problems.autoReveal": false
+}
