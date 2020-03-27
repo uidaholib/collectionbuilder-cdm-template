@@ -6,7 +6,7 @@ info,#00AEC7
 warning,
 danger,
 light,
-dark,
+dark, #191919
 pride-gold,#F1B300
 clearwater,#00AEC7
 clearwater-light,#8BD5E5
