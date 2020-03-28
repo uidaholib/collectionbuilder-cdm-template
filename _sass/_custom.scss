@@ -42,3 +42,10 @@
 #collectionslink p {
     margin: 0; 
 }
+
+.browse-sort-menu {
+    a{
+    cursor: pointer;}
+    a.active
+    {color:white; background-color: $grey-color;}
+}
