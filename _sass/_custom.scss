@@ -1,6 +1,10 @@
 .text-underline {
     text-decoration: underline;
 }
+.browse-sort-item.active {
+    color:white; 
+    background-color: $grey-color;
+}
 /* all Collections nav */
 .ijclist{
     padding-left:0px;
@@ -41,11 +45,4 @@
 }
 #collectionslink p {
     margin: 0; 
-}
-
-.browse-sort-menu {
-    a{
-    cursor: pointer;}
-    a.active
-    {color:white; background-color: $grey-color;}
 }
