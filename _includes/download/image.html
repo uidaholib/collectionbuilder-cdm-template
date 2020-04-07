@@ -1,1 +1,1 @@
-{{ site.data.theme.cdm-url }}/digital/iiif/{% if item.title %}{{item.cdm_collection}}/{{ item.cdm-id }}{% else %}{{page.cdm_collection}}/{{ page.cdm-id }}{% endif %}/full/max/0/default.jpg
+{{ site.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{% if item.title %}{{ item.cdmid }}{% else %}{{ page.cdmid }}{% endif %}/full/max/0/default.jpg

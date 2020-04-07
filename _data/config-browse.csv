@@ -1,0 +1,5 @@
+field,display_name,btn,hidden
+date,Date,
+subject,,true
+location,,true
+identifier,ID,,

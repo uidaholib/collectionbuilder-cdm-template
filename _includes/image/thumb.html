@@ -1,1 +1,1 @@
-{{ site.data.theme.cdm-url }}/utils/getthumbnail/collection/{%if item.title %}{{item.cdm_collection}}/id/{{ item.cdm-id }}{%else %}{{page.cdm_collection}}/id/{{ page.cdm-id }}{% endif %}
+{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/{%if item.title %}{{ item.cdmid }}{%else %}{{ page.cdmid }}{% endif %}
