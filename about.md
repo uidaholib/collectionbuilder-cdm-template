@@ -24,7 +24,7 @@ featured-image: "objects/test001.jpg"
 
 <br><br>Second, the photographs' artistic quality provides viewers an understanding of the human element (and superhuman scale) involved in the construction of the Grand Coulee. The photographers responsible for the collection perform a superb journalistic balancing act by documenting the technical aspects of the construction while capturing the grand ambitions and accomplishments of the people behind it.</p>
 <br>
-<hr>
+
 <br>
 
 {% include credits.md %}
