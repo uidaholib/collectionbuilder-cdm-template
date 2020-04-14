@@ -4,10 +4,11 @@ layout: page
 permalink: /about.html
 featured-image: "objects/test001.jpg"
 lazyload: true
-
 # Based on my research, the Columbia Basin Project was an irrigation project, not necessarily a dam construction project. It began with the construction of Grand Coulee Dam but was mainly a large-scale irrigation project. However, none of the other dams, mentioned below, were part of the Columbia Basin Project, they were just other dams constructed in the Pacific Northwest. Therefore, this collection should be renamed to Army Corps of Engineers Dam Construction Photographs, because that is more accurate to what it is. We can still heavily tag Columbia Basin Project and Grand Coulee Dam, since it's the bulk of the collection anyway, so that it comes in Google searches, but as long as those other dams that weren't related to Columbia Basin Project are in the collection, we can't just call it Columbia Basin Project Collection.
 ---
+
 ## About the {{ site.data.theme.title }}
+
 *For a detailed description and inventory of the contents of the collection, please see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv165618/op=fstyle.aspx?t=k&q=). The collection is physically held in [Special Collections & Archives](https://www.lib.uidaho.edu/special-collections/) at University of Idaho Library.*
 
 {% include feature/item-figure.html objectid="crbp1060" float="left" width="25" %}
@@ -17,6 +18,7 @@ The Army Corps of Engineers Dam Construction Photographs contains around 500 his
 <div class="clearfix"></div>
 
 The first 14 folders contain black and white photographs (8x10 inches) of various dam construction scenes in Washington and Idaho. The majority of photographs document the construction of the Grand Coulee Dam in Washington. Other dams include:
+
 - Long Lake Dam (two miles northeast of Stratford, Washington and later renamed Pinto Dam)
 - McNary Lock and Dam
 - Dworshak Dam (two miles upstream on the North Fork of the Clearwater River from the town of Ahsahka, Idaho)
@@ -39,8 +41,8 @@ The Columbia Basin Project irrigation system began pumping water "from the Colum
 
 While the Grand Coulee Dam has played a crucial role in United States and world history, it has also had a profoundly negative impact n species and people native to the region. The dam permanently blocks important fish species, such as salmon and steelhead, from over 1000 miles of spawning ground in the Upper-Columbia River. As a result, Native American populations that depend on the fish for their way of life have lost traditional fishing grounds. The creation of Lake Roosevelt also eliminated habitats for numerous species, including mule deer.
 
-
 ## Research Value
+
 Donated to the library by the University of Idaho College of Engineering, the Army Corps of Engineers Dam Construction Photographs Collection is important for several reasons. First, each image has detailed descriptive metadata and captions, giving researchers a special insight into the construction methods, equipment, locations, and photographers associated with the Columbia Basin Project and the construction of other dams in the Pacific Northwest. Even the contracting companies responsible for carrying out particular projects are listed in the metadata.
 
 Second, the artistic quality of photography during these projects provides viewers with an understanding of the human element, and superhuman scale, involved in the construction of these dams. The photographers responsible for the collection perform a superb journalistic balancing act by documenting the technical aspects of the construction while capturing the grand ambitions and accomplishments of the people behind it.
