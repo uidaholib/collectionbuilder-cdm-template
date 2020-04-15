@@ -1,5 +1,5 @@
-field,displayName,btn,hidden
+field,display_name,btn,hidden
 date,Date,
 creator,Creator,,true
 subject,,true
-location,,true
+identifer,,,true
