@@ -1,39 +1,25 @@
-Eugene Settle, August 4, 1975
+#### Transcript from Interview with Lillian Otness
 
-45:25-54:08
+_Interview conducted on January 16, 1975 by Sam Schrager_
 
-SS: There was that bad flu epidemic at the during World War I.
+Excerpt: 1:48:39 – 1:58:25
 
-ES: During World War I, yeah, the flu. Yeah, that was about 1918, 'cause I was in France. My folks all had it, all except my mother. My brother next to me, he was the one that brought it home. He came home with it and he just about died, too. They thought sure they was gonna lose him. And then they all got down except my mother.
+**SAM:** Well, what about the severity of this flu as you've been told about it?
 
-SS: Were they still able to take care of themselves during that time?
+**L O:** Well, it must have been a virulent form because a great many people were sick, and people died. People I knew of died. The superintendent of schools died. And there was what they called the SATC. It was something at the university. It was, oh, student, some kind of training. Anyhow, it was sort of like ROTC except that they had training here and then went right in to service. And I have heard that when they lined up to get flu shots and so on, some of them would be attacked by flu just while they were waiting, just fall there in line, just pass completely out. Dropping like flies was the way it was told here in town. Apparently, they were just keeling over with it. And the M. R. Lewis House, which is now an apartment house on Seventh and Adams, that was taken over as an auxiliary hospital. And people used to go there, my dad went there and volunteered and helped nurse flu patients. And the town activities were closed up; the movies were closed; the schools were closed; no public meetings were permitted. 
 
-ES: No, my mother, and then we had a neighbor down this way from us- he was a Methodist minister and they run a little one-horse laundry, down about a mile between us and town. And he came up there and got the laundry, took it down there and did the laundry for Mother. Then there was a fellow that worked for my dad on his hay baler, just a transient, and he was coming through the country. And, well, of course, he figured, "Well, I'll go out to Settle's and I'll get a meal or two." He went out there and my mother wouldn't let him in the house, she told him, "We all down with the flu." And he asked 'em, "Well, who's taking care of the stock?" We had four or five horses and three or four cows out there on the place. And she said, "the neighbors come up and take care of 'em and bring the milk to the door." Well, he says, "you tell Mr. Settle if he'll give me enough money so I can buy me a quart of moonshine - whiskey, I'll come out here and stay and take care of the do the chores for you." She says, "You can't stay in the house." "Well," he says, "Just so I get some old blankets and something so I can sleep up there in the hay." And so she went in and talked to Dad. So Dad give him some money, and he went downtown and, I don't know where he got it, but he got him some whiskey and he stayed out there in the barn. And Mother would cook his breakfast and meals for him and give 'em to him. He'd take 'em from the door, he'd go out and eat 'em outside. They wouldn't allow him in the house. He stayed there for 'til I think my dad got on his feet, one of the boys anyway, 'til they got take care of theirself.
+**SAM:** For very long? 
 
-SS: How badly were ?
+**L O:** I don't know. I suppose six weeks or maybe a couple of months would be the limit of it. 
 
-ES: And he left and we never did see him again. And the folks often wondered he was heading down towards Lewiston where it's warmer and they often wondered. He coulda went down there in the Lewiston Jungle and got the flu and maybe died. They never did see him anymore. Never did hear from him.
+**SAM:** Were the servicemen at the university hit the strongest? I've heard the flu, it associated with then particularly. I'm wondering whether it hit as hard against the town itself as against the servicemen? 
 
-SS: They must have really appreciated that he did that.
+**L O:** I don't know, I don't know. But I think the town was badly hit. I think that few families escaped having somebody sick and there were a number of deaths. 
 
-ES: Uh-huh. Yeah, they worried about that guy quite a little bit, talked about it many times afterwards, wondered what ever became of him. They always would have liked to heard from him, found out about him. 'Course, he was just a tramp, a transient. He'd been up to Spokane. He was headed down for the lower country, they called it- down to Lewiston, down that way, where it's warmer, where they can camp out. They wondered probably went on down there, and after he left us, may be got the flu, or he may have died, but we never did hear.
+**SAM:** Do you have any idea of what the course of it was? If somebody got the flu was it a matter of weeks and weeks of sickness? 
 
-SS: And he worked for your father many times before that?
+**L O:** Oh, I don't think so. I think it went into pneumonia with the people that died. And that they died fairly—I don't think that it'd be terribly long time. This aunt of mine that I have told you about that lived in Lewiston was living alone, and somebody notified my dad that she was sick with the flu and needed help. And he went down there and stayed, oh I suppose maybe ten days or so and family tradition has it, it saved her life, because it had gone into uremic poisoning with her. And he just pitched right in and stayed with her day and night and took care of her and brought her through it. But everybody said she would have died if Father hadn't gone down there and looked after her because the doctors were just so overworked, and all the medical facilities were so overtaxed that people did just die for lack of attention. And by the time Dad heard about it and got down there, she was just not able to do anything for herself. And I can remember when he came back, he brought her up here. And she was the weakest most washed out thing—even I could see that, as young as I was. I suppose she stayed with us for two or three weeks, maybe a month or so before she got her strength back. It apparently was very debilitating for people . . .And of course they had no remedies for pneumonia at that time. And this was just something very, very. . . 
 
-ES: No, just worked for him that fall. That summer before on this hay baler. He worked for him that summer while they was baling hay and then they always had to bale straw late in the fall. But he worked just through the haying and he didn't and then he left there when hay season was over he left there and went over in the Yakima country to take in apple harvest. And then that winter he was heading for Lewiston, down to the valley down there where it was warmer, I think it was in November, that's when he stopped there, come out to the folks to get a meal or two before he went on.
+**SAM:** I wonder if people wore gauze face masks when they were treating. . .? 
 
-SS: How long were they down with that?
-
-ES: I don't remember, they must have been down a couple of weeks, or maybe longer. Some of 'em longer than that. Seems like my dad, the ones that had it lighter, some had it worse than others. My brother next to me, he had it the worst of any of 'em. They didn't think he was going to make it. But my dad and my other brother, I don't think they had it too heavy, didn't really have it too heavy. I imagine a week or ten days, before they could get out and kinda help themselves.
-
-SS: Was your mother able to nurse the family?
-
-ES: Yeah, she took care of 'em; all of 'em. As I say, this family that done the hand laundry down there, they always come up every day and got the sheets and bedding, kept the laundry up for her. She didn't have nothing like that to do. That's all she had to do. And then 'til this guy come along, he'd come up in the morning and feed the stock and she'd set the milk bucket out on the porch and he'd go and milk the cows and then bring it back and set it on the porch there for her. And then this guy come along and he took care of it.
-
-SS: That swept through the whole country.
-
-ES: Yes, it sure did. Lots of people died here in Moscow, that epidemic.
-
-SS: Did you hear about all the military boys stationed here that got the flu during that time? I heard they got it really bad.
-
-ES: No, I don't They had a unit here at the University. I know there was a couple of kids, I think we used to be little kid together one of the boys died up here during that time, at the University up here. Kid by the name of Clyde Madison. And I think there was several of 'em died up here at the University. But I don't know in other camps, and I don't remember like Camp Lewis and those places I don't know whether it was bad out in those places or not. I don't remember. I know we didn't have it in France. I had it, I think it was the first or second winter I was home after I got home, I had it. But not very bad.
+**L O:** Um hum, it seems to me I remember people wearing face masks. But as I remember, it was a time of great gloom, that is all the news was bad and there was great head shaking and everybody was upset about it. It really brought things to a standstill in the town. There just weren't enough doctors to go around and not enough the doctors could do for it.

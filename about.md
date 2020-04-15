@@ -18,7 +18,7 @@ The University of Idaho’s first cases were diagnosed in soldiers who had joine
 
 The third and final wave of the influenza arrived worldwide in the winter and spring of 1919, and by that time most of the cases were resolved at the University of Idaho. By summer of 1919, the virus had run its course and the pandemic was over. 
 
-## World War I, the Student Army Training Corps, and UI's First Cases
+## The University's First Cases
 
 Starting in the fall of 1918, the University of Idaho began receiving hundreds of young men to the Student Army Training Corps (SATC). The SATC was a program created by the US War Department to provide a way for young men to train as soldiers while also taking college courses. At the University of Idaho, approximately 500 men entered the program in two sections for academic and vocational training.[^4]
 
@@ -30,7 +30,7 @@ Days after the university’s decisions, President Lindley received word that th
 
 {% include feature/item-figure.html objectid="spanishflu015" float="none col-sm-8 col-md-6 mx-auto" caption="Telegram from Commissioner of Education Regarding Quarantine"  %}
 
-## Care of Patients
+## Patient Care and Community Response
 
 Before the influenza hit the university, physicians and medical professionals were in short supply across the nation, as many doctors and health workers were serving their country in the military. Consequently, many communities were unprepared to care for the vast number of cases that would ultimately come their way. This situation became even more dire after health care professionals began to catch the infection themselves and were no longer able to care for others.
 
@@ -58,7 +58,7 @@ Not all activities were banned across campus, but many social activities, such a
 {:mt-4 border-top}
 ## About the Collection
 
-This collection was compiled by Courtney Berge, ____Student Name?), and Devin Becker from several collections held by the University of Idaho Library. Content on the about page and timeline featured on the collection home page were written by Courntey Berge. The collection website was built using the library's own [CollectionBuilder](https://collectionbuilder.github.io).
+This collection was compiled by Courtney Berge and Devin Becker from several collections held by the University of Idaho Library. Content on the about page and timeline featured on the collection home page were written by Courtney Berge. The collection website was built using the library's own [CollectionBuilder](https://collectionbuilder.github.io).
 
 {% include index/featured-terms.html field="source" title="Featured Collections" btn-color="info" featured="The Argonaut Digital Collection;Latah County Oral History Collection;University of Idaho President's Office. Records, 1893-1965;Esther E. Thomas Scrapbook;" class="col-md-4 float-right ml-4 my-3" %}
 
