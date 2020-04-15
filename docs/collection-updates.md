@@ -69,6 +69,9 @@ Finally, make sure to `add` those changes to the merge commit using the Git menu
 
 Note that the old template about.md had `featured-image` in front matter, but this has been moved the theme.yml `about-featured-image` if necessary. 
 
+Also, "item-figure" include was added to different locations in different collections, and not all versions have compatible options. 
+Preferably update to use the current version, `_include/feature/item-figure.html`.
+
 ## Update metadata fields
 
 Two important updates are necessary on the metadata file. 
