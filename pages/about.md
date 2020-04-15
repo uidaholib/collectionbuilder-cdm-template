@@ -3,9 +3,10 @@ title: About
 layout: page
 permalink: /about.html
 ---
-# Brief History of Psychiana
-*This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection, which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
+# Brief History of Psychiana
+
+*This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection, which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
 While living in Portland, Oregon in the mid 1920s, Frank Robinson had a "vision of the future," seeing himself at the head of a new religion, one based on I Corinthians 3:16: "Know ye not that your bodies are the temples of God - and that the Spirit of God liveth in you?"
 Following this experience, Robinson moved to Yakima, Washington where he worked at the Pioneer Drug Store for about two years, but found that the late hours left him little time to develop his teaching. 
@@ -53,6 +54,7 @@ By 1936, Robinson was no longer able to handle all the correspondence and give l
 When Frank Robinson died on October 19, 1948, his son, Alfred, who had assisted his father since 1947, attempted to continue operations. However, after several years, he was forced to close, citing the rapid rise in postal rates as the main reason. The last mailings were sent out in 1952, and in January 1953, all operations ceased. The sorting of the remaining lessons and other material took several years. By 1955, the University of Idaho Library was fortunate enough to have obtained copies of the lessons and books authored by Dr. Robinson. In august 1955, Robinson's widow and son delivered four sealed boxes to the library, which were to remain sealed for 25 years. After 25 years, these boxes were opened; **the contents, along with a brief biographical history of Dr. Frank Robinson, are described in our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).**
 
 # Contents of the Collection
+
 *For a detailed inventory of the contents of this collection, along with a brief biographical history of Dr. Frank Robinson based on the contents of collection, please see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).*
 
 Included in the three boxes of correspondence are letters between Psychiana headquarters and students in eighteen countries. Carbon copies of Psychiana's replies are attached to most of the original letters from students. The letters from students which Robinson used in his publications are marked with quotation marks; occasionally words were changed or sentences rearranged.
