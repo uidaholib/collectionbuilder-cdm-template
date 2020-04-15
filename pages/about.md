@@ -2,8 +2,6 @@
 title: About
 layout: page
 permalink: /about.html
-# add image to index page bootstrap jumbotron
-featured-image: "objects/test001.jpg"
 ---
 # Brief History of Psychiana
 *This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection, which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
@@ -14,7 +12,7 @@ Following this experience, Robinson moved to Yakima, Washington where he worked 
 Seeking a location where drug stores closed at 6:00 p.m., he and his family moved to Moscow, Idaho, in April 1928. 
 It was not long before he began giving evening lectures in the dining room of the Moscow Hotel on the power of the spirit of God; about sixty people attended his first lecture.
 
-{% include feature/item-figure.html objectid="psychiana019" float="left" width="25" %}
+{% include feature/item-figure.html objectid="psychiana19" float="left" width="25" %}
 
 While working at the Corner Drug Store, he continually jotted notes to himself, and on a Saturday night he locked his door, sat at his typewriter, and in the next thirty-six hours typed the first set of ten lessons for his unnamed religion. 
 Borrowing about $2500.00 from several towns people, Robinson had the lessons printed and commenced advertising. According to the *Psychiana Bulletin* for April 1950, "Psychiana was chartered in the late fall of 1929 and the first Psychiana advertisement was placed shortly after the turn of the year." 
@@ -65,4 +63,4 @@ This is a very important collection not only for those researching Dr. Frank B. 
 
 [^1] News-Review (Moscow, Idaho) November 2, 1936
 
-{% include  about/credits.md %}
+{% include credits.md %}
