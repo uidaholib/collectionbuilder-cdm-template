@@ -6,6 +6,7 @@ permalink: /about.html
 featured-image: "objects/test001.jpg"
 ---
 ### About the {{site.data.theme.title}}
+*For a detailed description and inventory of all our Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). All collections are physically held at University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
 The Potlatch Lumber Company was incorporated in 1903 by several men - Frederick Weyerhaeuser and other investors who collectively founded the Clearwater Timber Company in 1900.[^1] The town of Potlatch, Idaho, was founded as a "company town" in 1905 because the lumber company had become so successful and large.[^2] The Potlatch Lumber Company quickly became the "largest white pine mill in the world" with their first sawmill being built in Potlatch, Idaho along the Potlatch River.[^1] 
 
