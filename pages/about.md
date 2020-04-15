@@ -63,6 +63,6 @@ The remaining boxes contain copies of all the Psychiana lessons, copies of Psych
 
 This is a very important collection not only for those researching Dr. Frank B. Robinson and the impact of Psychiana, but also for those interested in non-orthodox religion. Anyone interested in the history of effective advertising methods would also find this collection useful.
 
-[^1] News-Review (Moscow, Idaho) November 2, 1936
+[^1]: News-Review (Moscow, Idaho) November 2, 1936.
 
 {% include credits.md %}
