@@ -46,10 +46,11 @@ In addition to the lessons, Dr. Robinson also developed a series of radio progra
 By 1936, Robinson was no longer able to handle all the correspondence and give lectures, so he hired Charles Wesley Tenney, a retired Methodist minister associated with the Idaho Institute of Religion Studies on the University of Idaho Campus. Tenney answered almost all of the student mail until he was forced by the Methodist church to sever his relations with Psychiana. He went to Portland where he worked as a hospital orderly. His place as Robinson's assistant was taken by William Walter DeBolt, who, soon after his work with Psychiana began, was expelled by the Church of God. He left Psychiana after several years to become pastor of the Methodist church in Lind, Oregon.
 {% endcapture %}
 
-{% include feature/card.md text=earlyprinting header="Early Printing" width="25" float="left" %}
-{% include feature/card.md text=radio header="Radio" width="25" float="left" %}
-{% include feature/card.md text=assistants header="Robinson's Assistants" width="50" float="left" %}
-<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-4">{% include feature/card.md text=earlyprinting header="Early Printing" %}</div>
+<div class="col-md-4">{% include feature/card.md text=radio header="Radio" %}</div>
+<div class="col-md-4">{% include feature/card.md text=assistants header="Robinson's Assistants" %}</div>
+</div>
 
 When Frank Robinson died on October 19, 1948, his son, Alfred, who had assisted his father since 1947, attempted to continue operations. However, after several years, he was forced to close, citing the rapid rise in postal rates as the main reason. The last mailings were sent out in 1952, and in January 1953, all operations ceased. The sorting of the remaining lessons and other material took several years. By 1955, the University of Idaho Library was fortunate enough to have obtained copies of the lessons and books authored by Dr. Robinson. In august 1955, Robinson's widow and son delivered four sealed boxes to the library, which were to remain sealed for 25 years. After 25 years, these boxes were opened; **the contents, along with a brief biographical history of Dr. Frank Robinson, are described in our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).**
 
