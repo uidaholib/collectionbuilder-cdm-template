@@ -46,3 +46,15 @@
 #collectionslink p {
     margin: 0; 
 }
+.cutoff-img-link{max-height: 240px;
+    overflow: hidden;
+    display: inline-block;}
+
+    .w-33 {
+        width: 33% !important;
+    }
+
+    .img-thumbnail {
+        height: 110px;
+    
+    }

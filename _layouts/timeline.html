@@ -34,10 +34,25 @@ layout: page
             <h3>{{ year }}</h3>
         </th>
         <td>
-            {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
-            {% for item in inYear %}
-            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
-            {% endfor %}
+            <div class="row">
+                {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+                {% for item in inYear %}
+                <div class="col-lg-4 col-md-6">
+                    <a {% if item.format contains 'image' %}class="cutoff-img-link my-2"{% endif%} href="{{ '/items/' | relative_url | append: item.objectid  | append: '.html' }}" >
+                        {% if item.format contains 'application' or item.format contains 'audio' %}
+                        <div class="card"> 
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark">{{ item.title }}</h4>
+                                <img class="lazyload img-thumbnail w-50 " data-src="{% if item.format contains 'audio' %}{{ '/assets/img/audio.svg' | relative_url }}{% else %}{{ '/assets/img/pdf.svg' | relative_url }}{% endif %}" alt="{% if item.format contains 'audio' %}audio{% else %}PDF{% endif %} filetype thumbnail">
+                            </div>
+                        </div>
+                        {% else %}
+                        <img class="lazyload" data-src="{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' | relative_url }}{% else %}{{ item.filename | prepend: '/objects/small/' | relative_url }}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}">
+                        {% endif %}
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
         </td>
     </tr>
     {% endfor %}

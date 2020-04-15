@@ -1,0 +1,7 @@
+field,index,display
+title,true,true
+date,true,true
+creator,true,true
+description,true,true
+subject,true,true
+format-original,true,false

@@ -1,25 +1,24 @@
 ---
-# generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data.timeline-home | where_exp: "item","item.headline" -%}
 {
     "title": {
         "media": {
-          "url": "{% include image/featured-image.html %}",
+          "url": "{% include image/byobjectid.html objectid="spanishflu006" %}",
           "caption": {{ featuredItem.title | jsonify }},
           "credit": {{ site.title | jsonify }}
         },
         "text": {
           "headline": {{ site.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.description | jsonify }}
+          "text": "In 1918, a virulent strain of influenza affected approximately 500 million individuals worldwide. The disease reached the University of Idaho in October of that year, prompting the university to cancel activities, enact a quarantine, and encourage the use of gauze face masks. Use this site and timeline to explore how the 1918 Flu Pandemic impacted the University of Idaho."
         }
     },
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
-          "caption": {{ item.title | jsonify }},
-          "link": "{% include item-link.html %}",
+          "url": "{% if item.format contains 'audio' %}{{ '/assets/img/audio.svg' | relative_url }}{% elsif item.format contains 'application' %}{{ '/assets/img/pdf.svg' | relative_url }}{% elsif item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/maxresdefault.jpg' }}{% else %}{{ item.filename | prepend: '/objects/' | relative_url }}{% endif %}",
+          "caption": {{ item.headline | jsonify }},
+          "link": "{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
@@ -29,7 +28,7 @@
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": {{ item.title | jsonify }}{% if item.description %},
+          "headline": {{ item.headline | jsonify }}{% if item.description %},
           "text": {{ item.description | jsonify }}{% endif %}
         }
       }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}

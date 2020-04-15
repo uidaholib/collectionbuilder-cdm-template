@@ -1,4 +1,8 @@
 field,display_name,btn,hidden
 date,Date,
+creator,Creator,
 subject,,true
-identifer,,,true
+description,,,true
+format original,,,true
+identifier,,,true
+source,,,true

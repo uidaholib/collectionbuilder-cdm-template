@@ -22,7 +22,7 @@ layout: page
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
                 <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
-                {% for o in site.data.config-browse %}{% unless o.btn %}
+                {% for o in site.data.config-browse %}{% unless o.btn or o.hidden %}
                 <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{% if o.display_name %}{{ o.display_name }}{% else %}{{ o.field | capitalize }}{% endif %}</button>
                 {% endunless %}
                 {% endfor %}
