@@ -11,7 +11,7 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/plcphotos/
+baseurl: /digital/plcphotos
 # location of code, the full url to your github repository
 source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
