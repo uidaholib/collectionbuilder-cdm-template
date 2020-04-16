@@ -5,7 +5,7 @@ permalink: /about.html
 # add image to index page bootstrap jumbotron
 featured-image: 
 ---
-### About the {{site.data.theme.title}}
+### Brief History of Potlatch Lumber Company
 
 *For a detailed description and inventory of all our Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). All collections are physically held at University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
@@ -13,15 +13,17 @@ featured-image:
 
 The Potlatch Lumber Company was incorporated in 1903 by several men - Frederick Weyerhaeuser and other investors who collectively founded the Clearwater Timber Company in 1900.[^1] The town of Potlatch, Idaho, was founded as a "company town" in 1905 because the lumber company had become so successful and large.[^2] The Potlatch Lumber Company quickly became the "largest white pine mill in the world" with their first sawmill being built in Potlatch, Idaho along the Potlatch River.[^1] 
 
-{% include feature/modal.md button="Naming the Company" color="success" title="Naming the Company" text="As of April 2020, the PotlatchDeltic website says that the name 'Potlatch was borrowed from the Chinook word for a Native American celebration of goodwill and gift giving.[^1]'" %}
+{% capture funfacts %}
 
-{% include feature/modal.md button="First President" color="success" title="First President" text="Charles Weyerhaeuser, son of Frederick Weyerhaeuser, was the first president of Potlatch Lumber Company." float="left" %}
+- The name "Potlatch was borrowed from the Chinook word for a Native American celebration of goodwill and gift giving.[^1]"
+- Charles Weyerhaeuser, son of Frederick Weyerhaeuser, was the first president of Potlatch Lumber Company.
+- The Potlatch Lumber Company believed that a company town was a necessary investment and a proper step in labor relations and community improvement. When the mill began operating in the fall of 1906, the town consisted of two boarding houses, two schools, a hotel, two churches, a mercantile, bank, post office, and an opera house. Bars and saloons were prohibited in the town, as was gambling. Potlatch attracted many settlers and immigrant families looking for work. The town grew quickly and, for a time, was the second largest town in Latah County.
 
-{% include feature/modal.md button="Company Town" color="success" title="Company Town" text="The Potlatch Lumber Company believed that a company town was a necessary investment and a proper step in labor relations and community improvement. When the mill began operating in the fall of 1906, the town consisted of two boarding houses, two schools, a hotel, two churches, a mercantile, bank, post office, and an opera house. Bars and saloons were prohibited in the town, as was gambling. Potlatch attracted many settlers and immigrant families looking for work. The town grew quickly and, for a time, was the second largest town in Latah County." float="left" %}
-
-<div class="clearfix"></div>
+{% endcapture %}
 
 Potlatch Lumber Company maintained a close relationship the Clearwater Timber Company (founded in 1900) and the Rutledge Lumber Company (founded in 1915).[^1] The three companies merged their "mills and forestland holdings" into the Potlatch Forests, Inc. (PFI.).[^1]
+
+{% include feature/card.md text=funfacts header="Fun Facts" %}
 
 During WWII, Potlatch Forests, Inc. "joined the war effort by directing its traditional products toward military end uses" and "with men at war, women took production jobs in the mills."[^1]
 
@@ -35,9 +37,9 @@ The company sought to "modernize" processes, technologies, and markets throughou
 
 In 2018, the company merged with "Arkansas-based Deltic Timber in an all-stock transaction, creating a leading domestic timberland owner and top-tier wood products manufacturer." As a result, the consolidated company was renamed "PotlatchDeltic Corporation."[^1]
 
-<div class="clearfix"></div>
+Though the population of Potlatch has dwindled over the years since the mill's closure, Potlatch remains a bedroom community for the university towns of Moscow, Idaho (University of Idaho) and Pullman, Washington (Washington State University).
 
-{% include feature/modal.md button="Potlatch Now" color="success" title="Potlatch Now" text="Though the population of Potlatch has dwindled over the years since the mill's closure, Potlatch remains a bedroom community for the university towns of Moscow, Idaho (University of Idaho) and Pullman, Washington (Washington State University)." float="left" %}
+<div class="clearfix"></div>
 
 [^1]: https://www.potlatchdeltic.com/Page/ViewPage/12
 [^2]: https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho
