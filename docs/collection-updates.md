@@ -80,7 +80,9 @@ Change the following metadata fields:
 - `cdm-id` --> `cdmid`
 - `object-id` --> `objectid`
 
-You may also want to change the standardized rights field to use the name `rightsstatement`. 
+Also, check the various rights fields.
+The item pages automatically add a field named "rights" and "rightsstatement" to the rights box--so it is important to have at least one or the other. 
+"rights" is a freeform statement, "rightsstatement" is a link to a specific formal statement such as on http://rightsstatements.org/.
 
 ## Migrate configs
 
