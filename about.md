@@ -11,11 +11,7 @@ lazyload: true
 
 *For a detailed description and inventory of the contents of the collection, please see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv165618/op=fstyle.aspx?t=k&q=). The collection is physically held in [Special Collections & Archives](https://www.lib.uidaho.edu/special-collections/) at University of Idaho Library.*
 
-{% include feature/item-figure.html objectid="crbp973" float="left" width="25" %}
-
 The Army Corps of Engineers Dam Construction Photographs contains around 500 historical photographs collected and/or taken by the Army Corps of Engineers during the construction of various hydroelectric dams in Washington, Oregon, and Idaho between 1933-1965. The bulk of this collection documents the Columbia Basin Project, which resulted in the construction of the Grand Coulee Dam in central Washington state and the largest water reclamation project in the United States, supplying irrigation water to over 670,000 acres.
-
-<div class="clearfix"></div>
 
 The first 14 folders contain black and white photographs (8x10 inches) of various dam construction scenes in Washington and Idaho. The majority of photographs document the construction of the Grand Coulee Dam in Washington. Other dams include:
 
