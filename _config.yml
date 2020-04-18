@@ -59,7 +59,7 @@ page_gen:
 # add liquid profiler to id bottlenecks
 # profile: true
 
-exclude: [docs/, Rakefile, README.md, LICENSE]
+exclude: [docs/, Rakefile, README.md, LICENSE, extras/]
 
 # compress CSS output
 sass:
