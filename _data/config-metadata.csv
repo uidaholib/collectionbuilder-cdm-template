@@ -4,14 +4,17 @@ creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
+donor,Donor,
 subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation
+location (lcsh),Location (LCSH),
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
+publisher,Publisher
 source,Source
 identifier,Source Identifier
 type,Type,,DCTERMS.type
-format-original,Format Original
+format original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license

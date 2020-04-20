@@ -24,7 +24,7 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # title of site appears in banner
 title: Army Corps of Engineers, PNW Dam Construction Photographs
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Historical photographs of Columbia Basin Project and other dams construction in the Pacific Northwest, 1933-1965
+tagline: Historical photographs of Columbia Basin Project and other dams constructed in the Pacific Northwest, 1933-1965
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "Digitized photographs pertaining to the Columbia Basin Project (which includes the construction of the Grand Coulee Dam and the canal systems of Central Washington) and other dams constructed in Washington, Idaho, and Oregon. The bulk of photographs pertain to the construction of the Grand Coulee Dam."
@@ -41,7 +41,7 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: crbp 
+metadata: crbp
 # contentdm collection name, matches collection ID used by CDM
 cdm-collection-id: crbp
 # CONTENTdm server url
