@@ -4,9 +4,9 @@ layout: page
 permalink: /about.html
 ---
 
-# Brief History of Psychiana (MG 101)
+# Brief History of Psychiana
 
-*This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection, which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
+*This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection (MG 101), which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
 While living in Portland, Oregon in the mid 1920s, Frank Robinson had a "vision of the future," seeing himself at the head of a new religion, one based on I Corinthians 3:16: "Know ye not that your bodies are the temples of God - and that the Spirit of God liveth in you?" Following this experience, Robinson moved to Yakima, Washington where he worked at the Pioneer Drug Store for about two years, but found that the late hours left him little time to develop his teaching. Seeking a location where drug stores closed at 6:00 p.m., he and his family moved to Moscow, Idaho, in April 1928. It was not long before he began giving evening lectures in the dining room of the Moscow Hotel on the power of the spirit of God; about sixty people attended his first lecture.
 
