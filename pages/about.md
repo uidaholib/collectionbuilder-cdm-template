@@ -4,7 +4,7 @@ layout: page
 permalink: /about.html
 ---
 
-# Brief History of Psychiana
+# Brief History of Psychiana (MG 101)
 
 *This history is adapted from the extensive [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=) to the "Frank Bruce Robinson Papers, 1929-1951," which was first prepared in 1980 by Judith Nielsen based on the contents of the collection, which is currently held at the University of Idaho Library, [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).*
 
