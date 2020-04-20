@@ -7,7 +7,7 @@ lazyload: true
 # Based on my research, the Columbia Basin Project was an irrigation project, not necessarily a dam construction project. It began with the construction of Grand Coulee Dam but was mainly a large-scale irrigation project. However, none of the other dams, mentioned below, were part of the Columbia Basin Project, they were just other dams constructed in the Pacific Northwest. Therefore, this collection should be renamed to Army Corps of Engineers Dam Construction Photographs, because that is more accurate to what it is. We can still heavily tag Columbia Basin Project and Grand Coulee Dam, since it's the bulk of the collection anyway, so that it comes in Google searches, but as long as those other dams that weren't related to Columbia Basin Project are in the collection, we can't just call it Columbia Basin Project Collection.
 ---
 
-## About the {{ site.data.theme.title }}
+## About the Collection
 
 *For a detailed description and inventory of the contents of the collection, please see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv165618/op=fstyle.aspx?t=k&q=). The collection is physically held in [Special Collections & Archives](https://www.lib.uidaho.edu/special-collections/) at University of Idaho Library.*
 

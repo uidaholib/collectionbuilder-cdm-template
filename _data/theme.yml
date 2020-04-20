@@ -41,7 +41,7 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: spillway and drum gate construction; site preparation; scale models, testing, and oddities; riverbanks and slope protection; powerhouse construction; power plants--washington (state)--grand coulee dam--1940-1950; installation of turbines and generators; farm development; equipment for construction, transportation, and maintenance; equipment failures; engineer recruitment program; employee housing; coulee dam irrigation pumping plant and discharge pipes; construction of pipelines, syphons and tunnels; concrete--evaluation; columbia basin reclamation project (u.s.); canal lining and construction; # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: Columbia Basin Reclamation Project (U.S.); # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
