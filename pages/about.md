@@ -27,13 +27,13 @@ The first 14 folders contain black and white photographs (8x10 inches) of variou
 
 ## The Columbia River Basin Project
 
-{% include feature/item-figure.html objectid="crbp1116" float="left" width="25" %}
+{% include feature/item-figure.html objectid="crbp1116" %}
 
 The bulk of this collection documents the history of the Columbia Basin Project, a large irrigation project in the Columbia basin of central Washington state. As of April 2020, the Bureau of Reclamation website indicates that the "Columbia Basin Project serves about 671,000 acres in east central Washington....There are over 300 miles of main canals, about 2,000 miles of laterals, and 3,500 miles of drains and wasteways on the project."[^1] The irrigation system provides irrigated water to farms but also electricity and water for much of Washington state.
 
 The project began with the construction of the Grand Coulee Dam which took place between 1933-1942. In 1943, "Congress authorized the Columbia Basin Project" but "construction of the irrigation system did not start until after World War II."[^1] During WWII, the dam provided massive amounts of energy to the burgeoning aluminum and aircraft industries of the Pacific Northwest, contributing to one of the primary factors of the ultimate Allies victory in WWII. A significant percentage of that power, it was later revealed, was also diverted to the Hanford Nuclear Site, a crucial component of the Manhattan Project. 
 
-{% include feature/item-figure.html objectid="crbp1031" float="right" width="25" %}
+{% include feature/item-figure.html objectid="crbp1031" %}
 
 The Columbia Basin Project irrigation system began pumping water "from the Columbia River near Pasco in 1948 and was delivered to about 5,400 acres. The irrigation system carried its first water from Grand Coulee Dam to about 66,000 acres in spring of 1952."[^1] Since then, the system has irrigated about 2.5 million acre-feet of water from the Columbia annually, much of that water being reused as "Potholes Reservoir collects runoff from the north for farms in the south."[^1]
 
@@ -43,7 +43,7 @@ While the Grand Coulee Dam has played a crucial role in United States and world 
 
 Donated to the library by the University of Idaho College of Engineering, the Army Corps of Engineers Dam Construction Photographs Collection is important for several reasons. First, each image has detailed descriptive metadata and captions, giving researchers a special insight into the construction methods, equipment, locations, and photographers associated with the Columbia Basin Project and the construction of other dams in the Pacific Northwest. Even the contracting companies responsible for carrying out particular projects are listed in the metadata.
 
-{% include feature/item-figure.html objectid="crbp973" float="left" width="25" %}
+{% include feature/item-figure.html objectid="crbp973" %}
 
 Second, the artistic quality of photography during these projects provides viewers with an understanding of the human element, and superhuman scale, involved in the construction of these dams. The photographers responsible for the collection perform a superb journalistic balancing act by documenting the technical aspects of the construction while capturing the grand ambitions and accomplishments of the people behind it.
 
