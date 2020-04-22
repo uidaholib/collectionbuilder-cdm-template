@@ -50,6 +50,64 @@ In 1863, the U.S. Congress created Idaho Territory which "sprawled across an are
 
 [^7]: https://westernmininghistory.com/towns/idaho/burke/
 
+### Brief history of Challis, Idaho
+
+- Challis was founded in 1878.[^Challis1]
+- The town was named after A.P. Challis, "who was a surveyor when the townsite was laid out."[^Challis2]
+- Challis is the county seat of Custer County, Idaho[^Challis1]
+
+[^Challis1]: https://en.wikipedia.org/wiki/Challis,_Idaho
+[^Challis2]: Wikipedia cites "Boone, Lalia (1988) *Idaho Place Names,* p. 73. Moscow, ID: University of Idaho Press. ISBN 0-89301-119-3. CHECK THIS WHEN I GET BACK
+
+### Brief history of Coeur d'Alene, Idaho
+
+- Coeur d'Alene's earliest settlement days by non-indigenous people date back to the early 1800s when "the Northwest Fur Trading Company...began to establish fur trading posts in the Inland Northwest."[^CDA1] One of the trading posts was located on Lake Pend O'Reille. French fur traders in this area "began to use the French words 'Coeur d'Alene' as a nick name for the Schitsu’umsh people" who traded at the Lake Pend O'Reille post.[^CDA1] "In French 'Coeur' means heart and 'Alene" means awl, a sharp pointed tool used to pierce leather. In other words, they were known as sharp traders with hearts like the point of an awl. Within a few years the Schetsu’umsh people became known as the Coeur d'Alene Tribe and the large lake which was the center of their homeland became Lake Coeur d'Alene."[^CDA1]
+- By 1878, a military fort was built on the lake and the population grew around it. Today, North Idaho College is on the location of that military fort, although "three of the original fort buildings are still in use: the chapel, powder magazine and one of the officer's quarters."[^CDA1]
+- The city incorp[orated in 1887 and continued to grow in population as "railroads and steamboats provided transportation points between the Coeur d'Alene Lake, the St. Joe and Coeur d'Alene Rivers," meaning the lake "soon became a destination for thousands of tourists."[^CDA1]
+
+[^CDA1]: https://www.coeurdalene.org/play/history-heritage/
+
+### Brief history of Concord, Idaho
+
+- Concord is a ghost town in Idaho. Our photos date back to 1932. Not much more is known about this town. Please contact us if you have more information!
+
+### Brief history of Cottonwood, Idaho
+
+- Cottonwood "traces its history from 1862 when it first became a cluster of way station shelters for prospectors and mining suppliers."[^Cottonwood]
+- The name "Cottonwood" comes from "the dense growth of stately cottonwood trees that once lined Cottonwood Creek. Some of these trees went into chairs, tables and other other furniture for the homes built by early settlers."[^Cottonwood]
+
+[^Cottonwood]: https://news.google.com/newspapers?id=JLpeAAAAIBAJ&sjid=mjAMAAAAIBAJ&pg=1056%2C749348
+
+### Brief history of Dixie, Idaho
+
+- Dixie saw its first non-indigenous settlers in 1862 and was "one of the earliest mining camps in Idaho." According to the U.S. Forest Service, the town was settled by "two miners who trekked over the divide from Elk City and discovered golf in Dixie Gulch."[^Dixie1]
+- It is believed that Dixie was named "in honor of Dixie, Georgia, one of the first miner's hometowns."[^Dixie1]
+
+[^Dixie1]: https://westernmininghistory.com/towns/idaho/dixie_id/
+
+### Brief history of Eileen, Idaho
+
+- Not much is known about this town. Please contact us if you have any information!
+
+### Brief history of Elk City, Idaho
+
+- Elk City saw its first non-indigenous settlers in 1861 after "placer gold was discovered...along Newsome Creek in 1861," drawing lots of miners.[^ElkCity1]
+- After the gold rush era, other industries such as "timber, ranching, and tourism have kept Elk City from becoming a ghost town. There has been enough economic activity to keep the town alive for well over 150 years."[^ElkCity1]
+
+[^ElkCity1]: https://westernmininghistory.com/towns/idaho/elk_city_id/
+
+### Brief history of Elk River, Idaho
+
+- Elk River saw its first homesteader, William Trumbull, in 1897.[^ElkRiver1] The town was first named "Trumbull" after him.[^ElkRiver1]
+- By 1910, the Potlatch Lumber Company built the nation's first electric saw mill after buying Trumbull's homestead.[^ElkRiver1] The town saw fast growth and changed its name from "Trumbull" to "Elk River."[^ElkRiver1] 
+- The saw mill and planner mill closed in 1932-1933 after "a newer bigger sawmill was built in Lewiston...and the town started to suffer" in 1927.[^ElkRiver1]
+
+[^ElkRiver1]: https://www.clearwater.adventures.orofino.com/elkriver/
+
+### Brief history of Emmett, Idaho
+
+- Emmett is the county seat and only city in Gem County. 
+
 ### Brief history of Moscow, Idaho
 
 - The first non-indigenous settlers came to Moscow, Idaho in 1871 and was officially given the name “Moscow” in 1877 when a man, Samuel Neff, “filed for a postal permit under the name of Moscow because the area reminded him of his hometown of Moscow, Pennsylvania.”[^Moscow]
