@@ -60,7 +60,7 @@ Not all activities were banned across campus, but many social activities, such a
 
 This collection was compiled by Courtney Berge and Devin Becker from several collections held by the University of Idaho Library. Content on the about page and timeline featured on the collection home page were written by Courtney Berge. The collection website was built using the library's own [CollectionBuilder](https://collectionbuilder.github.io).
 
-{% include index/featured-terms.html field="source" title="Featured Collections" btn-color="info" featured="The Argonaut Digital Collection;Latah County Oral History Collection;University of Idaho President's Office. Records, 1893-1965;Esther E. Thomas Scrapbook;" class="col-md-4 float-right ml-4 my-3" %}
+{% include index/featured-terms.html field="source" title="Collection Sources" btn-color="info" featured="The Argonaut Digital Collection;Latah County Oral History Collection;University of Idaho President's Office. Records, 1893-1965;Esther E. Thomas Scrapbook;" class="col-md-4 float-right ml-4 my-3" %}
 
 
 
