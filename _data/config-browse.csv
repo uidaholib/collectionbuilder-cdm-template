@@ -1,5 +1,8 @@
-field,displayName,btn,hidden
+field,display_name,btn,hidden
 date,Date,
 description,
 location,,true
 aerial-type,,true
+features,,,true
+flight line,,,true
+identifier,,,true

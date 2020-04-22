@@ -1,18 +1,21 @@
 ---
 layout: page
 ---
-{%- assign items = site.data[site.data.theme.metadata] -%}
+{%- assign items = site.data[site.metadata] -%}
 <div class="row">
   <div class="col-md-8">
 
     {% include index/description.html %}
     {% include index/carousel.html%}
     
-    </div>
+  </div>
   <div class="col-md-4">  
 
     {% include index/time.html %}
-    {% include index/locations-sm.html %}
+
+
+    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
+    
     {% include index/objects.html %}
 
   </div>
@@ -22,5 +25,4 @@ layout: page
 
   </div>
 
-  
 </div>

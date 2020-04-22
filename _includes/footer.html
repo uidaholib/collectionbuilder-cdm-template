@@ -1,44 +1,42 @@
-<!-- Footer -->
 <footer class="bg-dark pt-4 container-fluid {% unless page.layout=='map' %}mt-3{% endunless %}">
 
-  <div class="row border-bottom border-white pb-4 mb-2">
+    <div class="row border-bottom border-white pb-4 mb-2">
 
-    <!-- Grid column -->
-    <div class="col-md-7  px-4 mt-2">
+        <div class="col-md-7 px-4 mt-2 mb-4">
 
-      <!-- Content -->
-      <h4 ><a href="{{ '/' | absolute_url }}" class="text-white">{{ site.data.theme.title }}</a></h4>
-      <p class="text-white"><small>{{site.data.theme.description}}</small></p>
-      <ul class="nav nav-pills ">
-        {% for nav in site.data.nav-configuration %}
-        <li class="nav-item">
-          <a class="nav-link text-light clearwater" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a> 
-        </li>
-        {% endfor %}
-      </ul>
+            <h4><a href="{{ '/' | absolute_url }}" class="text-white font-weight-normal">{{ site.title }}</a></h4>
+            <p class="text-white"><small>{{ site.description }}</small></p>
+            <nav>
+                <ul class="nav">
+                    {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
+                    {% for nav in navItems %}
+                    <li class="nav-item">
+                    {% if nav.stub %}
+                        <a class="nav-link text-info{% if page.url == nav.stub %} text-underline active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
+                    {%- else -%}
+                    {% assign childStub = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' | first %}
+                        <a class="nav-link text-info{% if page.url == childStub.stub %} text-underline active{% endif %}" href="{{ childStub.stub | relative_url }}">{{ nav.display_name }}</a>
+                    {% endif %}
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="col-md-5">
+            <div class="row justify-content-center justify-content-md-end">
+                <div class="col-8 col-sm-6 col-md-8 col-xl-6 m-2">
+                    <a href="https://www.lib.uidaho.edu/"><img alt="University of Idaho Library" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
 
     </div>
-    <!-- Grid column -->
 
-    <!-- Grid column -->
-    <div class="col-md-5 mt-2 text-right">
-
-      <h4 class="mb-0" ><a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="Digital Initiatives"></a></h4>
-      <p class="text-white text-right mr-4"><small><a class="pride-gold" href="https://www.lib.uidaho.edu/digital/">About DI</a> | <a href="https://www.lib.uidaho.edu/digital/collections.html" class="pride-gold">Collections</a></small></p>
-      <p class="text-white">
-        <a href="https://www.lib.uidaho.edu/"><img alt="Digital Initiatives" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" class="img-fluid col-4 col-md-3"></a>
-      </p>
-
+    <div class="col-md-12 text-center pt-3 pb-1">
+        <a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid mb-2 footer-diginit" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="Digital Initiatives"></a>
+        <p class="text-white h6"><em></em>Collection last updated: {{ site.time | date: '%Y' }}</em></p>
     </div>
-    <!-- Grid column -->
-
-  </div>
-
-  <!-- Copyright -->
-  <div class="col-md-12 text-center pt-3 pb-1">
-    <p class="text-white">Last updated {{ site.time | date: '%Y' }} 
-    </p>
-  </div>
-  <!-- Copyright -->
 
 </footer>
