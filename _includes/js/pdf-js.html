@@ -9,7 +9,7 @@ var url = '{{ '/objects/guidedread477' | relative_url }}.pdf';
   // shall be specified.
   //
   pdfjsLib.GlobalWorkerOptions.workerSrc =
-    '{{ '/assets/pdf.js/pdfjs-dist/build/pdf.worker.js' | relative_url }}';
+    'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.worker.js';
 
   var pdfDoc = null,
       pageNum = 1,

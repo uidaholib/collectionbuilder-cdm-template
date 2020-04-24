@@ -12,7 +12,7 @@
 {% include head/google-analytics.html %}
 {%- endif -%}
 {% if page.layout == "item" %}
-<script src="{{ '/assets/pdf.js/pdfjs-dist/build/pdf.js' | relative_url }}"></script>{% endif %}
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>{% endif %}
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
 {% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
