@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">PDF</th>
+        <th scope="col">MP3</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data[site.metadata] %}
+      <tr>
+        <td>{{item.title}}</td>
+        <td><a href="{% include download/pdf.html %}">PDF</a></td>
+        <td><a href="{% include download/mp3.html %}">MP3</a></td>
+      </tr>
+      {%endfor%}
+      
+     
+    </tbody>
+  </table>
