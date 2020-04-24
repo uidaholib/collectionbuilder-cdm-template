@@ -1,1 +1,1 @@
-{{ site..cdm-url }}/utils/getstream/collection/{{ site.cdm-collection-id }}/id/{% if item.title %}{{ item.cdmid }}{%else%}{{ page.cdmid }}{% endif %}
+https://server17254.contentdm.oclc.org/dmwebservices/index.php?q=dmGetStreamingFile/{{ site.cdm-collection-id }}/{% if item.title %}{{ item.soundlink }}{%else%}{{ page.soundlink }}{% endif %}/byte/json

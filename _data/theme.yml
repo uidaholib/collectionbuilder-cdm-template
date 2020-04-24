@@ -44,7 +44,7 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 # SUBJECTS PAGE
 #
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
@@ -78,7 +78,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,author,reader,creator type,date,subject,description,location,lat long,grade-level,identifier,format,digital specifications,language,rights,standardized rights,type,contributing institution,full text,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,author,reader,creator type,date,subject,description,location,lat long,grade-level,identifier,format,digital specifications,language,rights,rightsstatement,type,contributing institution,full text,filename,oclc number,date created,date modified,reference url,cdmid,soundid,soundlink,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,grade-level"
 

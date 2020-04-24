@@ -1,0 +1,5 @@
+field,display_name,browse_link,dc_map,schema_map
+title,Title,,DCTERMS.title,headline
+creator,Creator,,DCTERMS.creator,creator
+reader,Reader
+grade-level,Grade,true

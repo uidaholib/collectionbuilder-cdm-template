@@ -24,7 +24,7 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # title of site appears in banner
 title: Guided Reading Library
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A library of guided reading material from the University of Idaho College of Education, curated by Margaret Vaughn# description appears in meta tags and other locations
+tagline: Guided reading material from the University of Idaho College of Education
 # this description might appear in search result lists, keep around 160 characters max
 # header and head metadata
 description: "The Guided Reading Library is a digital collection of short books created by students in the University of Idaho's College of Education. This library is directed by Margaret Vaughn, in collaboration with the Digital Inititiaves department of the University of Idaho Library." 
