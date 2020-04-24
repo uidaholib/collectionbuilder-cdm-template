@@ -13,9 +13,9 @@ home-banner-image-title: Books from https://upload.wikimedia.org/wikipedia/commo
 home-title-y-padding: 5em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 grade-level: kindergardten; first; second; third; fourth; fifth; sixth
-carousel-height: 500 # in px, but don't include the "px"; default is 450.
+carousel-height: 300 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
-carousel-type: image
+carousel-type: thumbs
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
