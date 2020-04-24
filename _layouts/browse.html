@@ -7,23 +7,27 @@ layout: page
 <div class="row mb-3 justify-content-center text-center">
     <div class="col-md-8">
         <div class="input-group input-group-lg">
-            <input type="text" class="form-control form-control-lg" id="quickSearch" placeholder="Filter ... " aria-label="Search">
+            <input type="text" class="form-control form-control-lg" id="quickSearch" placeholder="Filter ... "
+                aria-label="Search">
             <div class="input-group-append">
-                <button class="btn btn-success" type="button" title="Filter items" alt="Search" id="goButton">Search</button>
+                <button class="btn btn-success" type="button" title="Filter items" alt="Search"
+                    id="goButton">Search</button>
                 <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>
             </div>
         </div>
     </div>
     <div class="col-md-2">
         <div class="dropdown">
-            <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sort by <span class="font-weight-bold" id="sortfilter">Random</span>
             </button>
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
                 <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
                 {% for o in site.data.config-browse %}{% unless o.btn %}
-                <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{% if o.display_name %}{{ o.display_name }}{% else %}{{ o.field | capitalize }}{% endif %}</button>
+                <button class="dropdown-item browse-sort-item"
+                    data-filter="{{ o.field | escape }}">{% if o.display_name %}{{ o.display_name }}{% else %}{{ o.field | capitalize }}{% endif %}</button>
                 {% endunless %}
                 {% endfor %}
             </div>
@@ -35,5 +39,56 @@ layout: page
 <div id="loading" class="text-center">
     <div class="spinner-border text-secondary" role="status"><span class="sr-only">Loading...</span></div>
 </div>
+<div class="row">
+    <div class="d-none d-md-block col-md-2">
+        <div id="filters">
+            <div class="vocab-group js-radio-button-group" data-filter-group="subject"
+                style="width:100%; float:left;text-align:center;">
+                <p><span class="info">Grade Level:</span> <br class="hidden-sm-down">
+                    <a class="vocab selectfilter" href="#" data-filter="">All</a><br class="hidden-sm-down">
+                    <a class="vocab Kindergarten" href="#Kindergarten" data-filter="Kindergarten">Kindergarten</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab First" href="#First" data-filter="First">First Grade</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab Second" href="#Second" data-filter="Second">Second Grade</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab Third" href="#Third" data-filter="Third">Third Grade</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab Fourth" href="#Fourth" data-filter="Fourth">Fourth Grade</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab Fifth" href="#Fifth" data-filter="Fifth">Fifth Grade</a><br
+                        class="hidden-sm-down">
 
-<div class="row" id="browseItems"></div>
+                </p>
+                <p><span class="info">Subjects:</span> <br class="hidden-sm-down">
+                    <a class="vocab america" href="#america" data-filter="america">america</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab animation" href="#animation" data-filter="animation">animation</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab amphibian" href="#amphibian" data-filter="amphibian">amphibian</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab cartoons" href="#cartoons" data-filter="cartoons">cartoons</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab cycle" href="#cycle" data-filter="cycle">cycle</a><br class="hidden-sm-down">
+                    <a class="vocab dance" href="#dance" data-filter="dance">dance</a><br class="hidden-sm-down">
+                    <a class="vocab disney" href="#disney" data-filter="disney">disney</a><br class="hidden-sm-down">
+                    <a class="vocab dogs" href="#dogs" data-filter="dogs">dogs</a><br class="hidden-sm-down">
+                    <a class="vocab farm" href="#farm" data-filter="farm">farm</a><br class="hidden-sm-down">
+                    <a class="vocab fish" href="#fish" data-filter="fish">fish</a><br class="hidden-sm-down">
+                    <a class="vocab habitat" href="#habitat" data-filter="habitat">habitat</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab history" href="#history" data-filter="history">history</a><br
+                        class="hidden-sm-down">
+                    <a class="vocab idaho" href="#idaho" data-filter="idaho">idaho</a><br class="hidden-sm-down">
+                    <a class="vocab life" href="#life" data-filter="life">life</a><br class="hidden-sm-down">
+                    <a class="vocab nature" href="#nature" data-filter="nature">nature</a><br class="hidden-sm-down">
+                    <a class="vocab solar" href="#solar" data-filter="solar">solar</a><br class="hidden-sm-down">
+                    <a class="vocab system" href="#system" data-filter="system">system</a><br class="hidden-sm-down">
+                    <a class="vocab turtles" href="#turtles" data-filter="turtles">turtles</a><br
+                        class="hidden-sm-down">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 row" id="browseItems"></div>
