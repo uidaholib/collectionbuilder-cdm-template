@@ -16,21 +16,9 @@ gallery: true
 
                 <div class="p-4">
                     <h2>{{page.title}}</h3>
-                        <h4>Written by {{page.author}}</h3>
-                            <div class="row">
-                                {% for f in fields %}{% if page[f.field] %}
-                                <p class="col my-2 h5"><b class="mr-2">{{ f.display_name }}:</b>
-                                    {% if f.browse_link == "true" %}
-                                    {% assign topics = page[f.field] | split: ";" %}
-                                    {% for t in topics %}
-                                    <a class="filter mr-3 " data-filter="{{ t | strip | escape }}"
-                                        href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
-                                    {% endfor %}
-                                    {% else %}
-                                    {{ page[f.field] | replace: '""','"' }}{% endif %}
-                                </p>
-                                {% endif %}{% endfor %}
-                            </div>
+                        <h4 class="mb-1">Written by {{page.author}} </h4>
+                        <p class="mb-0 ml-4"><a href="#moreinfo" class="text-info"><small>More info</small></a></p>
+                            
                 </div>
 
             </div>
@@ -58,8 +46,8 @@ gallery: true
                     <p><small>Click to view full screen</small></p>
                 </div>
                 {%- else -%}
-                <div class="mt-4">
-                    <p>
+                <div class="mt-1">
+                    
                         {%- if page.format contains 'audio' -%}
                         <audio controls class="w-100">
                             <source src="{% include download/mp3.html %}" type="audio/mpeg">
@@ -75,19 +63,20 @@ gallery: true
                             Your browser does not support the video tag.
                         </video>
                         {%- else -%}
-                        <div class="text-center">
-                            <button id="prev" class="btn btn-lg btn-outline-info">Previous</button>
-                            <button id="next" class="btn btn-lg btn-outline-info">Next</button>
-                            <p class="mt-2 h5">
-                            <span>Pages: <span id="page_num"></span> and <span id="pright"></span> of <span id="page_count"></span></span>
+                        <div class="text-center mb-2 mt-0">
+                            <button id="prev" class="btn btn btn-outline-info">Previous</button>
+                            <button id="next" class="btn btn btn-outline-info">Next</button>
+                            <p class="mt-2 h5 d-none">
+                                <span>Pages: <span id="page_num"></span> and <span id="pright"></span> of <span
+                                        id="page_count"></span></span>
                             </p>
                         </div>
 
-                    
-                            <div class="row justify-content-center">
-                            <canvas id="left" class="justify-content-start mx-1 border"></canvas>
-                            <canvas id="right" class="justify-content-end mx-1 border"></canvas>
-                         
+
+                        <div class="row justify-content-center">
+                            <canvas id="left" class="justify-content-start col-5 mx-1 border"></canvas>
+                            <canvas id="right" class="justify-content-end col-5 mx-1 border"></canvas>
+
                             <span id="pleft" class="left d-none"></span>
                             <span id="pright" class="right d-none"></span>
                         </div>
@@ -114,7 +103,7 @@ gallery: true
                                 PDF.</p>
                         </object>-->
                         {%- endif -%}
-                    </p>
+                    
                 </div>
                 {%- endif -%}
                 <div class="my-2">
@@ -138,7 +127,22 @@ gallery: true
 
 
     </div>
-
+    <div class="row">
+        <div class="col-12 ml-4" id="moreinfo">
+            {% for f in fields %}{% if page[f.field] %}
+            <p class="my-2 h5 ml-4"><b class="mr-2">{{ f.display_name }}:</b>
+                {% if f.browse_link == "true" %}
+                {% assign topics = page[f.field] | split: ";" %}
+                {% for t in topics %}
+                <a class="filter mr-3 " data-filter="{{ t | strip | escape }}"
+                    href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
+                {% endfor %}
+                {% else %}
+                {{ page[f.field] | replace: '""','"' }}{% endif %}
+            </p>
+            {% endif %}{% endfor %}
+        </div>
+    </div>
     <div class="row justify-content-end mt-4">
         <div class="col-md-5">
             <div class="card mb-2">
@@ -193,8 +197,8 @@ gallery: true
         <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>
     </div>
     <div id="item-nav">
-        <div class="d-none d-md-block">
-            <a class="previous btn btn-lg btn-secondary" href="{{ back_url }}">&laquo;</a>
+        <div class="d-none d-lg-block">
+            <a class="previous btn btn-lg btn-secondary " href="{{ back_url }}">&laquo;</a>
             <a class="next btn btn-lg btn-secondary" href="{{ forward_url }}">&raquo;</a>
         </div>
     </div>
