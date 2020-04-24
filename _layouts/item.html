@@ -11,7 +11,45 @@ gallery: true
     </ul>
 
     <div class="row">
-        <div class="col-md-8" id="lightgallery">
+        <div class="col-md-6">
+            <div id="item-metadata" class="metadata">
+
+                <div class="p-4">
+                    <h2>{{page.title}}</h3>
+                        <h4>Written by {{page.author}}</h3>
+                            <div class="row">
+                                {% for f in fields %}{% if page[f.field] %}
+                                <p class="col my-2 h5"><b class="mr-2">{{ f.display_name }}:</b>
+                                    {% if f.browse_link == "true" %}
+                                    {% assign topics = page[f.field] | split: ";" %}
+                                    {% for t in topics %}
+                                    <a class="filter mr-3 " data-filter="{{ t | strip | escape }}"
+                                        href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
+                                    {% endfor %}
+                                    {% else %}
+                                    {{ page[f.field] | replace: '""','"' }}{% endif %}
+                                </p>
+                                {% endif %}{% endfor %}
+                            </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="item-metadata" class="metadata">
+
+                <div class="p-4 card">
+
+                    {% if page.reader %}<h5>Narration by {{page.reader}}</h4>{% endif %}
+                        {% unless page.soundid contains 'nullo' %}<audio controls class="w-100">
+                            <source src="{% include download/mp3streaming.html %}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>{% endunless %}
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
@@ -37,16 +75,40 @@ gallery: true
                             Your browser does not support the video tag.
                         </video>
                         {%- else -%}
-                        <div class="text-center"><p>
-                            <button id="prev" class="btn btn-lg btn-outline-pride-gold">Previous</button>
-                            <button id="next" class="btn btn-lg btn-outline-pride-gold">Next</button>
-                            &nbsp; &nbsp;
-                            <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                        <div class="text-center">
+                            <button id="prev" class="btn btn-lg btn-outline-info">Previous</button>
+                            <button id="next" class="btn btn-lg btn-outline-info">Next</button>
+                            <p class="mt-2 h5">
+                            <span>Pages: <span id="page_num"></span> and <span id="pright"></span> of <span id="page_count"></span></span>
                             </p>
-                          </div>
-                          
-                          <canvas id="the-canvas" style="border: 1px solid black; direction: ltr;"></canvas>
-                          
+                        </div>
+
+                    
+                            <div class="row justify-content-center">
+                            <canvas id="left" class="justify-content-start mx-1 border"></canvas>
+                            <canvas id="right" class="justify-content-end mx-1 border"></canvas>
+                         
+                            <span id="pleft" class="left d-none"></span>
+                            <span id="pright" class="right d-none"></span>
+                        </div>
+                        <style>
+                            span.left,
+                            span.right {
+                                padding: 1em;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                            }
+
+                            .left {
+                                float: left;
+                                clear: left;
+                            }
+
+                            .right {
+                                float: right;
+                                clear: right;
+                            }
+                        </style>
                         <!--<object class="border-bottom pb-4" data="{% include download/item.html %}" type="application/pdf" width="100%" height="725px">
                             <p>The PDF is not rendering in your browser. Please use the button below to download the
                                 PDF.</p>
@@ -63,7 +125,8 @@ gallery: true
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info">Download
                         {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
-                    <a target="_blank" href="{% include download/mp3.html %}" class="btn btn-outline-info ml-2">Download MP3</a>
+                    <a target="_blank" href="{% include download/mp3.html %}" class="btn btn-outline-info ml-2">Download
+                        MP3</a>
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}"
                         class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}
@@ -73,34 +136,7 @@ gallery: true
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div id="item-metadata" class="metadata">
-                
-                <div class="p-4 card">
-                    <h2>{{page.title}}</h3>
-                    <h4>Written by {{page.author}}</h3>
-                    {% if page.reader %}<h5>Narration by {{page.reader}}</h4>{% endif %}
-                {% unless page.soundid contains 'nullo' %}<audio controls class="w-100">
-                    <source src="{% include download/mp3.html %}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>{% endunless %}
-                </div>
-               <div class="ml-4">
-                    {% for f in fields %}{% if page[f.field] %}
-                    <p class="my-4 h5"><b class="mr-2">{{ f.display_name }}:</b>
-                        {% if f.browse_link == "true" %}
-                        {% assign topics = page[f.field] | split: ";" %}
-                        {% for t in topics %}
-                        <a class="filter mr-3 " data-filter="{{ t | strip | escape }}"
-                            href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
-                        {% endfor %}
-                        {% else %}
-                        {{ page[f.field] | replace: '""','"' }}{% endif %}
-                    </p>
-                    {% endif %}{% endfor %}
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <div class="row justify-content-end mt-4">
