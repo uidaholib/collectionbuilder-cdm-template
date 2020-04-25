@@ -1,7 +1,7 @@
 <script>
     // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = '{{ '/objects/guidedread477' | relative_url }}.pdf';
+var url = '{{  page.objectid | prepend: site.digital-objects }}.pdf';
 
   //
   // In cases when the pdf.worker.js is located at the different folder than the
