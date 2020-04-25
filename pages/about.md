@@ -3,9 +3,7 @@ title: About
 layout: page
 permalink: /about.html
 ---
-<h3>About the {{site.data.theme.title}}</h3>
-
-
+<h3>About the {{site.title}}</h3>
 
 <p>
 
