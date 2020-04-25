@@ -1,10 +1,14 @@
 <script>
 function leftArrowPressed() {
-   location.href = document.getElementById("prev-page-button").href;
+    //commenting out normal function to allow flipping pages via keys
+  // location.href = document.getElementById("prev-page-button").href;
+  $('#prev').click();
 }
 
 function rightArrowPressed() {
-    location.href = document.getElementById("next-page-button").href;
+    //commenting out normal function to allow flipping pages via keys
+  // location.href = document.getElementById("next-page-button").href;
+  $('#next').click();
 }
 
 document.onkeydown = function(evt) {
