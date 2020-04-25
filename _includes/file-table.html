@@ -11,7 +11,7 @@
       <tr>
         <td>{{item.title}}</td>
         <td><a href="{% include download/pdf.html %}">PDF</a></td>
-        <td><a href="{% include download/mp3.html %}">MP3</a></td>
+        <td>{% unless item.soundid contains 'nullo' %}<a href="{% include download/mp3.html %}">MP3</a>{% endunless %}</td>
       </tr>
       {%endfor%}
       
