@@ -5,9 +5,7 @@ permalink: /about.html
 # Edit the markdown on in this file to describe your collection
 ---
 
-{% include about/jumbotron.html %}
-
-# About {{ site.title }}.
+# About {{ site.title }}
 
 *An exponent of progressive horticulture and the successful rural community*
 
