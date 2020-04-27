@@ -12,7 +12,7 @@ cdm-url: https://cdm17254.contentdm.oclc.org
 cdm-collection-id: spec_lof # 
 
 # header and head metadata
-tagline: A newsletter documenting daily life in Lewiston Orchards, Idaho (1913-1914)
+tagline: A newsletter documenting daily life in Lewiston Orchards, Idaho (1912-1914)
 description: "Lewiston Orchards Life was a newsletter published in Lewiston, Idaho during the early 1900s. The newsletter covers the residential and horticultural lives of those living in the Lewiston Orchards area, which is now a residential neighborhood." 
 keywords: "Idaho; Agriculture;" # describing the whole collection -- add to the two provided
 author: # You! Add your github username
@@ -55,7 +55,11 @@ year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown n
 year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
-about-off: true # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
+about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well.
+#
+# Featured image on About page - if left blank, CB will use image featured on the home page
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+about-featured-image: nwpostcards/id/588 
 
 # Theme Options
 # navbar text color
