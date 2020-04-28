@@ -55,7 +55,7 @@ gallery: true
         <div class="col-md-6">
             <div id="item-metadata" class="metadata">
                 <dl>
-                    {% for f in fields %}{% if page[f.field] %}
+                    {% for f in fields %}{% if page[f.field] %}{% unless f == "rights" or f == "rightsstatment" %}
                     <dt class="field">{{ f.display_name }}:</dt>
                     <dd class="field-value">
                         {% if f.browse_link == "true" %}
@@ -66,7 +66,7 @@ gallery: true
                         {% else %}
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
-                    {% endif %}{% endfor %}
+                    {% endunless %}{% endif %}{% endfor %}
                 </dl>
             </div>
         </div>
