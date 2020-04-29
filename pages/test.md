@@ -114,3 +114,4 @@ The following `format` values are used in the collection:
 For items in CONTENTdm, format values starting in `image/`, `video/`, or `audio/` are likely to work. 
 However, only `{{ formats_supported | join: '; ' }}` are tested to display and download correctly.
 See [CB docs for details](https://collectionbuilder.github.io/docs/metadata.html#required).
+{:.alert .alert-secondary}
