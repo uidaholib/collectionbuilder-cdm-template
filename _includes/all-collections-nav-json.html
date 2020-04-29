@@ -2,9 +2,18 @@
 <div class="modal fade" id="collections" tabindex="-1" role="dialog" aria-labelledby="digital" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="digital"><a href="https://www.lib.uidaho.edu/digital/">UIdaho Library Digital Initiatives</a></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header bg-dark">
+                <div class="row align-items-center text-center">
+                    <div class="col-5">
+                        <a href="https://www.lib.uidaho.edu/"><img class="img-fluid" alt="University of Idaho Library Logo" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" ></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                            <img class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} logo" >
+                        </a>
+                    </div>
+                </div>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row align-items-center mb-3">
@@ -18,7 +27,7 @@
                                 window.open("https://digital.lib.uidaho.edu/digital/search/searchterm/" + encodeURIComponent(query) + "/field/all/mode/all/conn/and/order/nosort/ad/asc", "_blank" );
                             }
                         </script>
-                        <form class="form-inline" role="search" id="search" onsubmit="cdm_search_all(); return false;">
+                        <form class="form-inline" role="search" id="all-collections-search" onsubmit="cdm_search_all(); return false;">
                         <div class="input-group">
                             <input id="cdm-search-all" type="text" class="form-control" placeholder="Search all collections..." aria-label="Search all collections" aria-describedby="search-all-button">
                             <div class="input-group-append">
