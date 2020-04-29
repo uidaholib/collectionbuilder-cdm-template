@@ -104,10 +104,13 @@ You are missing the `format` field. Please fix before proceeding!
 {% endif %}
 
 {% assign formats = site.data[site.metadata] | map: "format" | uniq | compact %}
-{% assign supported_formats = "image/jpg;application/pdf;video/mp4;audio/mp3" | split: ";" %}
+{% assign formats_supported = "image/jpeg;application/pdf;video/mp4;audio/mp3" | split: ";" %}
 
 The following `format` values are used in the collection:
 {% for f in formats %}
-- {{ f }}, {% if supported_formats contains f %}*supported*{:.text-success}. {% else %}*may not be supported*{:.text-danger}.{% endif %}
+- {{ f }}, {% if formats_supported contains f %}*supported*{:.text-success}. {% else %}*may not be supported*{:.text-danger}.{% endif %}
 {% endfor %}
 
+For items in CONTENTdm, format values starting in `image/`, `video/`, or `audio/` are likely to work. 
+However, only `{{ formats_supported | join: '; ' }}` are tested to display and download correctly.
+See [CB docs for details](https://collectionbuilder.github.io/docs/metadata.html#required).
