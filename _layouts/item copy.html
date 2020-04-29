@@ -25,7 +25,7 @@ gallery: true
             <li class="breadcrumb-item"><a href="{{ '/browse.html' | absolute_url }}">Items</a></li>
             <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
         </ul>
-        <div class="col-3 pt-2 d-none d-md-block">
+        <div class="col-3 pt-2">
             <a class="btn btn-sm btn-outline-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous Book</a> | <a class="btn btn-sm btn-outline-secondary" href="{{ forward_url }}" id="next-page-button">Next Book &raquo;</a>
         </div>
     </div>
@@ -81,7 +81,6 @@ gallery: true
                     </video>
                     {%- else -%}
                     <p class="my-2">Use your keyboard arrow keys or the buttons to navigate the book.</p>
-                    <a class="btn btn-sm btn-outline-secondary" href="{% include download/item.html %}" target="_blank">Open Full PDF</a>
                     <div class="text-center mb-2 mt-0">
                         <button id="prev" class="btn btn-lg btn-outline-pride-gold">&laquo;</button>
                         <button id="next" class="btn btn-lg btn-outline-pride-gold">&raquo;</button>
@@ -92,13 +91,11 @@ gallery: true
 
 
                     <div class="row justify-content-center">
-                        <canvas id="the-canvas" class="justify-content-center col-10 col-md-6  mx-1 border"></canvas>
+                        <canvas id="left" class="justify-content-start col-5 mx-1 border"></canvas>
+                        <canvas id="right" class="justify-content-end col-5 mx-1 border"></canvas>
 
-                       <!-- <canvas id="left" class="justify-content-start col-5 mx-1 border"></canvas>
-                        <canvas id="right" class="justify-content-end col-5 mx-1 border"></canvas>-->
-
-                        <span id="prev" class="left d-none"></span>
-                        <span id="next" class="right d-none"></span>
+                        <span id="pleft" class="left d-none"></span>
+                        <span id="pright" class="right d-none"></span>
                     </div>
                     <style>
                         span.left,
