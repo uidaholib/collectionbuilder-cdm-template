@@ -55,18 +55,18 @@ gallery: true
         <div class="col-md-6">
             <div id="item-metadata" class="metadata">
                 <dl>
-                    {% for f in fields %}{% if page[f.field] %}
+                    {% for f in fields %}{% if page[f.field] %}{% unless f == "rights" or f == "rightsstatment" %}
                     <dt class="field">{{ f.display_name }}:</dt>
                     <dd class="field-value">
                         {% if f.browse_link == "true" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
-                        <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
+                        <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
                         {% endfor %}
                         {% else %}
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
-                    {% endif %}{% endfor %}
+                    {% endunless %}{% endif %}{% endfor %}
                 </dl>
             </div>
         </div>
