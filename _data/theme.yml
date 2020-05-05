@@ -56,6 +56,7 @@ year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
 about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
+about-featured-image: shattuck10
 
 # images 
 image-percentage-large: 25 # default 70
