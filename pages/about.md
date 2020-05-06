@@ -65,4 +65,3 @@ We have a Tumblr blog series that originated from this collection called Oh Dam!
 
 [^1]: Brougher, Lynne. "Columbia Basin Project." Government. Bureau of Reclamation, January 23, 2019. <https://www.usbr.gov/pn/grandcoulee/cbp/index.html>.
 
-{% include credits.md %}

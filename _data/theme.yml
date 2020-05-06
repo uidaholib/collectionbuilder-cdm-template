@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: crbp1060
+featured-image: crbp1040
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500 # in px, but don't include the "px"; default is 450.
@@ -16,8 +16,8 @@ carousel-height: 500 # in px, but don't include the "px"; default is 450.
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Grand Coulee, WA; Canal systems of Central Washington #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 6
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 4
 
 ##########
 # ABOUT PAGE
