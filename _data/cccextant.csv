@@ -50,8 +50,8 @@ extantccc048,Graham Guard Station,Idaho City,1934,43.954067,-115.273146,,,Graham
 extantccc049,Greenhorn Ranger Station,Ketchum,1937,43.594087,-114.411047,F-175,"Camp Alexander Flat, F-175",Greenhorn Guard Station,,
 extantccc050,Heise Ranger Station,Heise,1938,43.642145,-111.683616,,,,HeiseRangerStation.jpg,
 extantccc051,Heyburn State Park - Chatcolet,St Maries,1938,47.376111,-116.760833,SP-1,"Camp Heyburn, SP-1",,,
-extantccc052,Heyburn State Park - Plummer Point,St Maries,1938,47.362222,-116.777222,SP-1,"Camp Heyburn, SP-1",,HeyburnStateParkPlummerPoint01.jpg,HeyburnStateParkPlummerPoint02.jpg; HeyburnStateParkPlummerPoint03.jpg; HeyburnStateParkPlummerPoint04.jpg; HeyburnStateParkPlummerPoint05.jpg; HeyburnStateParkPlummerPoint06.jpg; HeyburnStateParkPlummerPoint07.jpg
-extantccc053,Heyburn State Park - Rocky Point,St Maries,1938,47.354444,-116.748333,SP-1,"Camp Heyburn, SP-1",,HeyburnStateParkRockyPoint01.jpg,HeyburnStateParkRockyPoint02.jpg; HeyburnStateParkRockyPoint03.jpg; HeyburnStateParkRockyPoint04.jpg; HeyburnStateParkRockyPoint05.jpg; HeyburnStateParkRockyPoint06.jpg; HeyburnStateParkRockyPoint07.jpg
+extantccc052,Heyburn State Park - Plummer Point,St Maries,1938,47.362222,-116.777222,SP-1,"Camp Heyburn, SP-1",,HeyburnStateParkPlummerPoint01.jpg,HeyburnStateParkPlummerPoint02.jpg;HeyburnStateParkPlummerPoint03.jpg;HeyburnStateParkPlummerPoint04.jpg;HeyburnStateParkPlummerPoint05.jpg;HeyburnStateParkPlummerPoint06.jpg;HeyburnStateParkPlummerPoint07.jpg
+extantccc053,Heyburn State Park - Rocky Point,St Maries,1938,47.354444,-116.748333,SP-1,"Camp Heyburn, SP-1",,HeyburnStateParkRockyPoint01.jpg,HeyburnStateParkRockyPoint02.jpg;HeyburnStateParkRockyPoint03.jpg;HeyburnStateParkRockyPoint04.jpg;HeyburnStateParkRockyPoint05.jpg;HeyburnStateParkRockyPoint06.jpg;HeyburnStateParkRockyPoint07.jpg
 extantccc054,Hornet Creek Ranger Station,Council,1934,44.839406,-116.629013,,,Hornet Creek Guard Station,,
 extantccc055,Horse Heaven Cabin,Darby MT,1939,45.639105,-114.910292,F-156,"Camp Horse Heaven, F-156",,,
 extantccc056,Horse Mountain Lookout,New Meadows,1935,45.122162,-116.669867,P-221,P-221,,,
@@ -65,11 +65,11 @@ extantccc063,Indian Creek Retaining Walls,Caldwell,1930,43.665696,-116.689222,BR
 extantccc064,Indianola Ranger Station,North Fork,1933,45.401306,-114.167579,,,Indianola Work Center,IndianolaRangerStation.jpg,
 extantccc065,Johnson Creek Guard Station,Yellow Pine,1934,44.924396,-115.480986,F-64,,,JohnsonCreekGuardStation.jpg,
 extantccc066,Ketchum Ranger Station,Ketchum,1933,43.678604,-114.363617,,,Ketchum Ranger District Administrative Site,KetchumRangerStation.jpg,
-extantccc067,Krassel Ranger Station,Yellow Pine,1937,44.970556,-115.731389,,,,KrasselRangerStation01.jpg,KrasselRangerStation02.jpg; KrasselRangerStation03.jpg; KrasselRangerStation04.jpg; KrasselRangerStation05.jpg; KrasselRangerStation06.jpg; KrasselRangerStation07.jpg; KrasselRangerStation08.jpg; KrasselRangerStation09.jpg; KrasselRangerStation10.jpg; KrasselRangerStation11.jpg; KrasselRangerStation12.jpg; KrasselRangerStation13.jpg; KrasselRangerStation14.jpg; KrasselRangerStation15.jpg
+extantccc067,Krassel Ranger Station,Yellow Pine,1937,44.970556,-115.731389,,,,KrasselRangerStation01.jpg,KrasselRangerStation02.jpg;KrasselRangerStation03.jpg;KrasselRangerStation04.jpg;KrasselRangerStation05.jpg;KrasselRangerStation06.jpg;KrasselRangerStation07.jpg;KrasselRangerStation08.jpg;KrasselRangerStation09.jpg;KrasselRangerStation10.jpg;KrasselRangerStation11.jpg;KrasselRangerStation12.jpg;KrasselRangerStation13.jpg;KrasselRangerStation14.jpg;KrasselRangerStation15.jpg
 extantccc068,Laird Park,Harvard,1935,46.944092,-116.645893,,,Laird Park Campground,,
 extantccc069,Lake Park Ranger Station,McCall,1930,44.921257,-115.949667,,,Lake Fork Guard Station,LakeParkRangerStation.jpg,
 extantccc070,Lake Walcott State Park Stone Wall,Rupert,1939,42.675755,-113.475814,BR-27,"Camp Minidoka, BR-27",Lake Walcott State Park Stone Wall,LakeWalcottStateParkStoneWall.jpg,
-extantccc071,Lamb Creek School,Priest River,1934,48.526111,-116.937778,,,,LambCreekSchool01.jpg,LambCreekSchool02.jpg; LambCreekSchool03.jpg; LambCreekSchool04.jpg; LambCreekSchool05.jpg; LambCreekSchool06.jpg; LambCreekSchool07.jpg
+extantccc071,Lamb Creek School,Priest River,1934,48.526111,-116.937778,,,,LambCreekSchool01.jpg,LambCreekSchool02.jpg;LambCreekSchool03.jpg;LambCreekSchool04.jpg;LambCreekSchool05.jpg;LambCreekSchool06.jpg;LambCreekSchool07.jpg
 extantccc072,Landmark Ranger Station,Cascade,1934,44.657679,-115.542057,,,,,
 extantccc073,Lick Creek Lookout,Riggins,1933,45.106826,-116.50486,,,,,
 extantccc074,Little Ski Area,McCall,1938,44.930276,-116.162446,,,Payette Lakes Winter Sports Area,LittleSkiArea.jpg,
@@ -82,10 +82,10 @@ extantccc080,Loon Creek Ranger Station,Casto,1934,44.547133,-114.851477,F-33,"Ca
 extantccc081,Lost River Ranger District,Mackay,1938,43.917627,-113.615516,,,,,
 extantccc082,Luby Bay Ranger Station,Priest River,1935,43.917627,-113.615516,F-142,"Camp Kalispell Bay, F-142",Priest Lake Museum,,
 extantccc083,Magee Ranger Station,Prichard,1935,47.841944,-116.243056,F-132,"Camp Magee, F-132",,MageeRangerStation.jpg,
-extantccc084,Magruder Road,Elk City/Darby,1936,45.706155,-115.342861,F-145; F-184,"Camps Deep Creek, F-145, and Red River, F-184",Montana Road,,
-extantccc085,Manning Crevice Bridge,Riggins,1935,45.401492,-116.11685,F-108; F-109,"Camp French Creek, F-108 and F-109",,,
+extantccc084,Magruder Road,Elk City/Darby,1936,45.706155,-115.342861,F-145;F-184,"Camps Deep Creek, F-145, and Red River, F-184",Montana Road,,
+extantccc085,Manning Crevice Bridge,Riggins,1935,45.401492,-116.11685,F-108;F-109,"Camp French Creek, F-108 and F-109",,,
 extantccc086,May Ranger Station,May,1935,44.607451,-113.910833,,,,,
-extantccc087,McCall District Administrative Site,McCall,1930,44.909722,-116.105833,,,McCall Ranger District,McCallDistrictAdministrativeSite01.jpg,McCallDistrictAdministrativeSite02.jpg; McCallDistrictAdministrativeSite03.jpg; McCallDistrictAdministrativeSite04.jpg; McCallDistrictAdministrativeSite05.jpg; McCallDistrictAdministrativeSite06.jpg; McCallDistrictAdministrativeSite07.jpg; McCallDistrictAdministrativeSite08.jpg; McCallDistrictAdministrativeSite09.jpg; McCallDistrictAdministrativeSite10.jpg; McCallDistrictAdministrativeSite11.jpg; McCallDistrictAdministrativeSite12.jpg; McCallDistrictAdministrativeSite13.jpg; McCallDistrictAdministrativeSite14.jpg; McCallDistrictAdministrativeSite15.jpg; McCallDistrictAdministrativeSite16jpg; McCallDistrictAdministrativeSite17.jpg; McCallDistrictAdministrativeSite18.jpg
+extantccc087,McCall District Administrative Site,McCall,1930,44.909722,-116.105833,,,McCall Ranger District,McCallDistrictAdministrativeSite01.jpg,McCallDistrictAdministrativeSite02.jpg;McCallDistrictAdministrativeSite03.jpg;McCallDistrictAdministrativeSite04.jpg;McCallDistrictAdministrativeSite05.jpg;McCallDistrictAdministrativeSite06.jpg;McCallDistrictAdministrativeSite07.jpg;McCallDistrictAdministrativeSite08.jpg;McCallDistrictAdministrativeSite09.jpg;McCallDistrictAdministrativeSite10.jpg;McCallDistrictAdministrativeSite11.jpg;McCallDistrictAdministrativeSite12.jpg;McCallDistrictAdministrativeSite13.jpg;McCallDistrictAdministrativeSite14.jpg;McCallDistrictAdministrativeSite15.jpg;McCallDistrictAdministrativeSite16jpg;McCallDistrictAdministrativeSite17.jpg;McCallDistrictAdministrativeSite18.jpg
 extantccc088,McPherson Bridge,Eagle,1934,47.94355,-116.099763,F-154,"Camp Devil’s Elbow, F-154",,McPhersonBridge.jpg,
 extantccc089,Mill Creek Guard Station,Council,1930,44.456554,-116.298197,,,Mill Creek Cabin,MillCreekGuardStation.jpg,
 extantccc090,Moscow CCC Camp Barracks,Moscow,1935,46.71559,-117.003408,SCS-1,"Camp Moscow, SCS-1",Plantation Tavern,MoscowCCCCampBarracks.jpg,
@@ -100,10 +100,10 @@ extantccc098,Pomerelle Ski Area Cabin,Rupert,1940,42.318185,-113.607731,,,,,
 extantccc099,Powell Ranger Station Cookhouse,Kooskia,1930,46.509642,-114.709833,,,,,
 extantccc100,Price Valley Ranger Station,Tamarack,1930,45.020779,-116.436465,S-221,S-221,Price Valley Guard Station,,
 extantccc101,Priest River Experimental Station,Priest River,1936,48.3525,-116.796944,F-127,"Camp Experiment Station, F-127",,,
-extantccc102,Rapid River Ranger Station,Stanley,1934,44.54074,-115.070097,,,Seaform Guard Station,RapidRiverRangerStation01.jpg,RapidRiverRangerStation02.jpg; RapidRiverRangerStation03.jpg; RapidRiverRangerStation04.jpg
-extantccc103,Red Ives Ranger Station,Avery,1936,47.055556,-115.351667,F-184,"Camp Red Ives, F-184",Red Ives Cabin,RedIvesRangerStation01.jpg,RedIvesRangerStation02.jpg; RedIvesRangerStation03.jpg; RedIvesRangerStation04.jpg; RedIvesRangerStation05.jpg; RedIvesRangerStation06.jpg
+extantccc102,Rapid River Ranger Station,Stanley,1934,44.54074,-115.070097,,,Seaform Guard Station,RapidRiverRangerStation01.jpg,RapidRiverRangerStation02.jpg;RapidRiverRangerStation03.jpg;RapidRiverRangerStation04.jpg
+extantccc103,Red Ives Ranger Station,Avery,1936,47.055556,-115.351667,F-184,"Camp Red Ives, F-184",Red Ives Cabin,RedIvesRangerStation01.jpg,RedIvesRangerStation02.jpg;RedIvesRangerStation03.jpg;RedIvesRangerStation04.jpg;RedIvesRangerStation05.jpg;RedIvesRangerStation06.jpg
 extantccc104,Redfish Lake Guard Station,Stanley,1933,44.144053,-114.918912,,,,,
-extantccc105,Relic Hall,Franklin,1937,42.018833,-111.802529,,,,RelicHall01.jpg,RelicHall02.jpg; RelicHall03.jpg; RelicHall04.jpg; RelicHall05.jpg; RelicHall06.jpg
+extantccc105,Relic Hall,Franklin,1937,42.018833,-111.802529,,,,RelicHall01.jpg,RelicHall02.jpg;RelicHall03.jpg;RelicHall04.jpg;RelicHall05.jpg;RelicHall06.jpg
 extantccc106,Rock Creek Ranger Station,Rogerson,1941,42.155296,-114.186643,F-402,"Camp Rock Creek, F-402",Rock Creek Guard Station,RockCreekRangerStation.jpg,
 extantccc107,Rush Creek Point Lookout,Salmon,1933,45.166195,-114.934838,,,,,
 extantccc108,Russian John Guard Station,Ketchum,1934,43.805739,-114.58256,,,,,
@@ -116,7 +116,7 @@ extantccc114,Shake Creek Ranger Station,Feathervile,1934,43.615453,-115.163967,,
 extantccc115,Shoshone Park Picnic Area,Mullan,1930,47.466512,-115.72701,,,,,
 extantccc116,Sleeping Deer Lookout,Challis,1935,44.767156,-114.690901,,,,,
 extantccc117,Snake River Ranger Station,Swan Valley,1930,43.460144,-111.414684,,,Snake River Ranger Station  Administrative Site,,
-extantccc118,Snyder Ranger Station,Eastport,1935,48.884722,-116.168611,,,Snyder Guard Station Historical District,SnyderRangerStation01.jpg,SnyderRangerStation02.jpg; SnyderRangerStation03.jpg; SnyderRangerStation04.jpg; SnyderRangerStation05.jpg; SnyderRangerStation06.jpg; SnyderRangerStation07.jpg; SnyderRangerStation08.jpg
+extantccc118,Snyder Ranger Station,Eastport,1935,48.884722,-116.168611,,,Snyder Guard Station Historical District,SnyderRangerStation01.jpg,SnyderRangerStation02.jpg;SnyderRangerStation03.jpg;SnyderRangerStation04.jpg;SnyderRangerStation05.jpg;SnyderRangerStation06.jpg;SnyderRangerStation07.jpg;SnyderRangerStation08.jpg
 extantccc119,Southern Idaho Timber Protective Association (SITPA) Building - Smith's Ferry,McCall,1937,44.909722,-116.108056,S-223,"Camp McCall, S-223",,SITPABuildingSmith_sFerry.jpg,
 extantccc120,Southern Idaho Timber Protective Association (SITPA) Buildings - McCall,Smith's Ferry,1930,44.300685,-116.089945,S-227,"Camp Smith's Ferry, S-227",,,
 extantccc121,Stolle Meadows Guard Station,Cascade,1930,44.585946,-115.677878,,,Stolle Meadows Cabin ,StolleMeadowsGuardStation.jpg,
@@ -129,5 +129,5 @@ extantccc127,Twin Creek Campground,North Fork,1935,45.608307,-113.96797,,,,TwinC
 extantccc128,Valley Creek Ranger Station,Stanley,1933,44.225833,-114.928889,,,Stanley Museum,ValleyCreekRangerStation.jpg,
 extantccc129,Wagonhammer Picnic Area,North Fork,1934,45.395006,-113.982583,,,,,
 extantccc130,Warm River Hatchery,Ashton,1940,44.206269,-111.251294,,,Warm River Cabin,,
-extantccc131,Warren Ranger Station,Warren,1934,45.267222,-115.671111,,,Warren Guard Station,WarrenRangerStation01.jpg,WarrenRangerStation02.jpg; WarrenRangerStation03.jpg; WarrenRangerStation04.jpg; WarrenRangerStation05.jpg
-extantccc132,Yellowjacket Guard Station,Cobalt,1934,45.066396,-114.551811,,,,YellowjacketGuard01.jpg,YellowjacketGuard02.jpg; YellowjacketGuard03.jpg; YellowjacketGuard04.jpg; YellowjacketGuard05.jpg
+extantccc131,Warren Ranger Station,Warren,1934,45.267222,-115.671111,,,Warren Guard Station,WarrenRangerStation01.jpg,WarrenRangerStation02.jpg;WarrenRangerStation03.jpg;WarrenRangerStation04.jpg;WarrenRangerStation05.jpg
+extantccc132,Yellowjacket Guard Station,Cobalt,1934,45.066396,-114.551811,,,,YellowjacketGuard01.jpg,YellowjacketGuard02.jpg;YellowjacketGuard03.jpg;YellowjacketGuard04.jpg;YellowjacketGuard05.jpg
