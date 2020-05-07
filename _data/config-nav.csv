@@ -1,8 +1,11 @@
 display_name,stub,dropdown_parent
-Home,/,
-Browse,/browse.html,
-Subjects,/subjects.html,
-Map,/map.html,
-Timeline,/timeline.html,
-Data,/data/,
-About,/about.html,
+Home,/
+Browse,/browse.html
+Subjects,/subjects.html
+Locations,/locations.html
+Maps,
+Map of Collection Items,/map.html,Maps
+Map of Extant Structures,/extantcccmap.html,Maps
+Timeline,/timeline.html
+Data,/data/
+About,about.html

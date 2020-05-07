@@ -22,12 +22,13 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Civilian Conservation Corps in Idaho Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
+# header and head metadata
+tagline: A collection of maps, images, and documents pertinent to the history of the CCC in Idaho
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho"  
+description: "The CCC in Idaho Digital Project invites engagement and interpretation of the history and legacy of the CCC in the rural West through a focus on its impact on the land, participants, and communities in Idaho. The site encourages participation through access to thousands of digitized photographs, oral histories, articles, maps, and documents donated to the project. Use of this collection is further enhanced by guides, digital tools, and interactive features." 
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
@@ -41,9 +42,9 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: boxing 
+metadata: cccidaho
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: boxing
+cdm-collection-id: cccidaho
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
@@ -55,6 +56,13 @@ page_gen:
     dir: 'items'
     extension: 'html' 
     filter: 'objectid'  
+  - data: 'cccextant'
+    template: 'items-extant'
+    name: 'objectid'
+    dir: 'structures'
+    extension: 'html' 
+    filter: 'objectid'  
+    
 
 # add liquid profiler to id bottlenecks
 # profile: true

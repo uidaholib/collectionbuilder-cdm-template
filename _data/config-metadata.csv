@@ -1,17 +1,19 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
+ccc-camp-number,CCC Camp Number,true,
+ccc-company-number,CCC Company Number,true,
 creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,,,contentLocation
+location,Location,true,,contentLocation
 latitude,Latitude
 longitude,Longitude
-collection,Source Collection
 source,Source
+collection,Source Collection
 identifier,Source Identifier
+format-original,Original Format
 type,Type,,DCTERMS.type
-format-original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
