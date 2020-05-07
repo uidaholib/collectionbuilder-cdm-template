@@ -1,0 +1,91 @@
+---
+layout: default
+gallery: true
+---
+{%- assign fields = site.data.config-metadata-extant | where_exp: 'item', 'item.display_name != nil' -%}
+<div class="container py-3">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/structures/' | absolute_url }}">List of Structures</a></li>
+        <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-6" id="lightgallery">
+            <div class="card mb-4 text-center">
+                {% if page.filename %}
+                <div class="gallery-img" data-src="{{ page.filename | prepend: '/objects/' | relative_url}}">
+                    <p><img src="{{ page.filename | prepend: 'objects/thumbs/' | relative_url}}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
+                    <p><small>Click to view full screen</small></p>
+                </div>
+                {% else %}
+                <p>No photograph available.</p>
+                {% endif %}
+                <div class="my-2">
+                    {% if page.latitude and page.longitude %}
+                    <a href="{{ '/extantcccmap.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info">View on Map</a>{% endif %}
+                </div>
+            </div>
+            {% if page.moreimages %}
+            {% assign moreimages = page.moreimages | split: ';' %}
+            {% for image in moreimages %}
+            <div class="card mb-4 text-center">
+                <div class="gallery-img" data-src="{{ image| prepend: '/objects/' | relative_url}}">
+                    <p><img src="{{ image | prepend: 'objects/thumbs/' | relative_url}}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
+                    <p><small>Click to view full screen</small></p>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="col-md-6">
+            <div id="item-metadata" class="metadata">
+                <dl>
+                    {% for f in fields %}{% if page[f.field] %}{% unless f == "rights" or f == "rightsstatment" %}
+                    <dt class="field">{{ f.display_name }}:</dt>
+                    <dd class="field-value">
+                        {% if f.browse_link == "true" %}
+                        {% assign topics = page[f.field] | split: ";" %}
+                        {% for t in topics %}
+                        <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
+                        {% endfor %}
+                        {% else %}
+                        {{ page[f.field] | replace: '""','"' }}{% endif %}
+                    </dd>
+                    {% endunless %}{% endif %}{% endfor %}
+                </dl>
+            </div>
+        </div>
+    </div>
+
+
+    {%- if site.data.theme.browse-buttons == true -%}
+    {% assign itemset = site.data.cccextant | map: 'objectid' | compact %}
+    {% assign last = itemset | size | minus: 1 %}
+    {% unless page.index_number == 0 %}
+    {% assign back = page.index_number | minus: 1 %}
+    {% else %}
+    {% assign back = last %}
+    {%- endunless -%}
+    {% unless page.index_number == last %}
+    {% assign forward = page.index_number | plus: 1 %}
+    {% else %}
+    {% assign forward = 0 %}
+    {%- endunless -%}
+    {%- assign back_url = '/structures/' | append: itemset[back] | append: '.html' | relative_url -%}
+    {%- assign forward_url = '/structures/' | append: itemset[forward] | append: '.html' | relative_url -%}
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/structures/' | relative_url }}" >Back to Browse</a>
+        <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>
+    </div>
+    <div id="item-nav">
+        <div class="d-none d-md-block">
+            <a class="previous btn btn-lg btn-secondary" href="{{ back_url }}">&laquo;</a>
+            <a class="next btn btn-lg btn-secondary" href="{{ forward_url }}">&raquo;</a>
+        </div>
+    </div>
+    {%- endif -%}
+    
+</div>

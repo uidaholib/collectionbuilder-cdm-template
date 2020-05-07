@@ -1,0 +1,7 @@
+field,display_name,browse_link,dc_map,schema_map
+title,Title,,DCTERMS.title,headline
+nearesttown,Nearest Town,,,
+year,Year,,DCTERMS.created,dateCreated
+ccccampbuilder,CCC Camp,
+browselink,CCC Camp or Company Number,true,
+contemporaryname,Contemporary Name,,,
