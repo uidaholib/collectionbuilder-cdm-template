@@ -14,8 +14,8 @@ gallery: true
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.filename %}
-                <div class="gallery-img" data-src="{{ page.filename | prepend: '/objects/' | relative_url}}">
-                    <p><img src="{{ page.filename | prepend: 'objects/thumbs/' | relative_url}}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
+                <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/cccidaho/objects/{{ page.filename }}">
+                    <p><img src="https://www.lib.uidaho.edu/digital/cccidaho/objects/thumbs/{{ page.filename }}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
                 {% else %}
@@ -30,8 +30,8 @@ gallery: true
             {% assign moreimages = page.moreimages | split: ';' %}
             {% for image in moreimages %}
             <div class="card mb-4 text-center">
-                <div class="gallery-img" data-src="{{ image| prepend: '/objects/' | relative_url}}">
-                    <p><img src="{{ image | prepend: 'objects/thumbs/' | relative_url}}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
+                <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/cccidaho/objects/{{ page.filename }}">
+                    <p><img src="https://www.lib.uidaho.edu/digital/cccidaho/objects/thumbs/{{ page.filename }}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
             </div>
