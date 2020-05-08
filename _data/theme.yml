@@ -11,9 +11,9 @@
 featured-image: https://cdm17254.contentdm.oclc.org/digital/api/singleitem/image/pdf/spec_lof/230/default.png
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: 500 # in px, but don't include the "px"; default is 450.
+carousel-height: 300 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
-carousel-type: image
+carousel-type: pdf
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 
@@ -22,7 +22,7 @@ featured-subjects-max: 6 # set number of top subjects to display if auto generat
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: https://digital.lib.uidaho.edu/digital/collection/nwpostcards/id/588/rec/1
+about-featured-image: https://digital.lib.uidaho.edu/digital/api/singleitem/image/pdf/nwpostcards/588/default.png
 
 ##########
 # BROWSE PAGE
@@ -44,13 +44,6 @@ subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
-# LOCATIONS PAGE
-#
-locations-fields: # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
-
-##########
 # TIMELINE PAGE
 #
 year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
@@ -61,7 +54,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,date,source,identifier,format_original,type,format,rights,rightsstatement,language,datedigital,referenceurl,cdmid,cdmfilename,objectid	subject						"						
+metadata-export-fields: "title,description,creator,date,source,identifier,format_original,type,format,rights,rightsstatement,language,datedigital,referenceurl,cdmid,cdmfilename,objectid	subject"						
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject"
 
