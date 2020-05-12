@@ -1,5 +1,5 @@
 {% if site.data.theme.carousel-type == "pdf" %}
-{%- assign carousel-items = site.data[site.metadata] | where: "format","application/pdf" -%}
+{%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.cdmfilename contains '.pdf'" -%}
 {% capture itemImg %}"{{ site.cdm-url }}/digital/api/singleitem/image/pdf/{{ site.cdm-collection-id }}/" + carouselItems[i][1] + "/default.png"{% endcapture %}
 {% elsif site.data.theme.carousel-type == "youtube" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.youtubeid != nil" -%}
