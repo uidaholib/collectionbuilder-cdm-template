@@ -2,4 +2,4 @@ field,display_name,btn,hidden
 date,Date,
 location,,
 subject,,true
-identifer,,,true
+identifier,,,true

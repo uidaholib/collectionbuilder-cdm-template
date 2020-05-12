@@ -2,7 +2,7 @@
 
     <div class="row border-bottom border-white pb-4 mb-2">
 
-        <div class="col-md-7  px-4 mt-2">
+        <div class="col-md-7 px-4 mt-2 mb-4">
 
             <h4><a href="{{ '/' | absolute_url }}" class="text-white font-weight-normal">{{ site.title }}</a></h4>
             <p class="text-white"><small>{{ site.description }}</small></p>
@@ -24,20 +24,19 @@
 
         </div>
 
-        <div class="col-md-5 mt-2 text-right">
-
-            <h4 class="mb-0" ><a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="Digital Initiatives"></a></h4>
-            <p class="text-white text-right mr-4"><small><a class="text-pride-gold" href="https://www.lib.uidaho.edu/digital/">About DI</a> | <a href="https://www.lib.uidaho.edu/digital/collections.html" class="text-pride-gold">Collections</a></small></p>
-            <p class="text-white">
-                <a href="https://www.lib.uidaho.edu/"><img alt="Digital Initiatives" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" class="img-fluid col-4 col-md-3"></a>
-            </p>
-
+        <div class="col-md-5">
+            <div class="row justify-content-center justify-content-md-end">
+                <div class="col-8 col-sm-6 col-md-8 col-xl-6 m-2">
+                    <a href="https://www.lib.uidaho.edu/"><img alt="University of Idaho Library home" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" class="img-fluid"></a>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <div class="col-md-12 text-center pt-3 pb-1">
-        <p class="text-white">Last updated {{ site.time | date: '%Y' }}</p>
+        <a href="https://www.lib.uidaho.edu/digital/"><img class="img-fluid mb-2 footer-diginit" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="University of Idaho Library Digital Initiatives home"></a>
+        <p class="text-white h6"><em></em>Collection last updated: {{ site.time | date: '%Y' }}</em></p>
     </div>
 
 </footer>
