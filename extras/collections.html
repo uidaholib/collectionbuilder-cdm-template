@@ -30,6 +30,7 @@ home-banner-image-number: {%if item.image-number %}{{item.image-number}}{%endif%
 home-banner-image-link: {%if item.image-number %}{%else%}{{item.Image}}{%endif%} # leave blank unless no cdm number to generate item
 home-banner-image-title: {{item.ImageTitle}} from {{item.ImageLink}} # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
+home-banner-image-position: # [options: top, center, bottom] Default: top
 carousel-height: 500px # must be in px; default is 300px.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
@@ -44,18 +45,27 @@ mediatypes: {{item.MediaType}} #options[documents,images,video,sound,data] separ
 # item page 
 browse-buttons: # true / false, adds previous/next arrows to items, but doubles build time
 
-# map page
+# Map page
+# see _data/map-config.csv for field display options
 latitude: {{item.Lat}} #to determine center of map
 longitude: {{item.Long}} #to determine center of map
 zoom-level: {%if item.zoom%}{{item.zoom}}{%else%}10{%endif%} # zoom level for map 
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-# subject page
-subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 2 # min size for subject cloud, too many terms = slow load time!
-stopwords: # set of subjects separated by ;, e.g. boxers;boxing
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
-# Location page (optional )
-locations-on: # true / false, turns on location generation to create location page; must also add to nav configuration
+# Locations page
+locations-page: true # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # timeline
 year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
@@ -63,6 +73,18 @@ year-nav-increment: 5 # set increments when auto gen nav years
 
 # About page
 about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,object-id"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,location"
+
+# images 
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
 
 
 # Theme Options

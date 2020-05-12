@@ -1,78 +1,110 @@
-# Jekyll Digital Collection Generator
+##########
+# CollectionBuilder Theme Customization
+# values set here help configure details of individual pages in the website
+##########
 
-# Site settings
-title: C. H. Shattuck, Idaho Lantern Slides, 1904-1910
-# choose metadata, be sure to also change page_gen data setting!
-metadata: shattuck # check against cdm-collection-id below -- this should be used in config file as well
-
-# repository variables (leave blank if self-contained)
-# url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
-# contentdm collection name 
-cdm-collection-id: spec_cs # 
-
-# header and head metadata
-tagline: Early twentieth century slides related to the Unversity and Forestry
-description: "UI Professor Charles Houston Shattuck created these slides in the early 19th century. They depict the University of Idaho, as well as the wilderness of Idaho and Idaho residents' attempts at domesticating it."
-keywords: "Idaho; UI; Wilderness" # describing the whole collection -- add to the two provided
-author: # You! Add your github username
-
-# home page and browse
-home-banner-image-number: 74 # use number of photo from collection
-home-banner-image-link:  # leave blank unless no cdm number to generate item
-home-banner-image-title: Priest Lake (Idaho)  # for accessibility 
-home-banner-image-position: center # [options: top, center, bottom] default: top 
-home-title-y-padding: 12em # the margin from the top your title portion will appear
-carousel-height: 500px # must be in px; default is 300px.
+##########
+# HOME PAGE
+#
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: shattuck74
+home-title-y-padding: 12em # the margin from the top your title portion will appear.
+home-banner-image-position: center # [options: top, center, bottom] Default: top
+carousel-height: 500px # in px, but don't include the "px"; default is 450.
+# carousel can feature specific item types: image,pdf,youtube,thumbs
+carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 8
-mediatypes: images #options[documents,images,video,sound,data] separate semi-colon(';')
 
-# Browse page
+##########
+# ABOUT PAGE
+#
+# Featured image on About page - if left blank, CB will use image featured on the home page
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+about-featured-image: shattuck10
+
+##########
+# BROWSE PAGE
+#
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
-# item page 
-browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
+##########
+# ITEM PAGE
+#
+# see _data/metadata-config.csv to define the metadata fields that will display.
+browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
 
-# map page
+##########
+# SUBJECTS PAGE
+#
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: idaho # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# LOCATIONS PAGE
+#
+locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# MAP PAGE
+#
+# see _data/map-config.csv for field display options
 latitude: 46.724545 #to determine center of map
 longitude: -117.015397 #to determine center of map
 zoom-level: 10 # zoom level for map 
+map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-# subject page
-subjects-off: true # true / false, turns off subject generation to lower dev build time (then page doesn't work!)
-subject-min: 2 # min size for subject cloud, too many terms = slow load time!
-stopwords: idaho # set of subjects separated by ;, e.g. boxers;boxing
+##########
+# TIMELINE PAGE
+#
+year-navigation: 1908 #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: 5 # set increments to auto gen nav years
 
-# Location page (optional )
-locations-on: true # true / false, turns on location generation to create location page; must also add to nav configuration
+##########
+# DATA 
+# 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,creator,date,date_is_approximate,location,lcsh_loc,coverage,region,relation,digital_collection,holding_institution,source,notes,original_file_number,identifier,rights,rightsstatement,original_format,type,language,format,url,cdmid,objectid"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject"
 
-# timeline
-year-navigation: 1908 #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
-year-nav-increment: 5 # set increments when auto gen nav years
-
-# About page
-about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
-about-featured-image: shattuck10
-
-# images 
+##########
+# ADVANCED OPTIONS
+#
+# CDM image % for IIIF
 image-percentage-large: 25 # default 70
 image-percentage-medium: 12 # default 40 
 image-percentage-small: 7 # default 20
 
-
-# Theme Options
+# NAVBAR COLORS
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
 navbar-background: bg-dark
-# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+
+# BOOTSWATCH THEMES
+# You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: # leave blank or comment out for plain bootstrap
 
-gh-repository: https://github.com/uidaholib/collectionbuilder-cdm-template
+
+# THEME FONTS
+base-font-size: 1.2em
+text-color: "#111"
+link-color: "#00AEC7"
+base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
