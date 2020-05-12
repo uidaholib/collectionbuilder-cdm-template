@@ -38,5 +38,5 @@ Similar learning experiences use DAMS/[CMS](https://en.wikipedia.org/wiki/Conten
 `collectionbuilder-gh` aims to be well documented and easy to configure by following the example.
 A project in "minimal computing," it provides a depth of learning opportunities, allowing users to take complete ownership over the project and make their work open to the world.
 
-{% include about/credits.md %}
+{% include /credits.md %}
 
