@@ -5,7 +5,15 @@ permalink: /about.html
 # add image to index page bootstrap jumbotron
 featured-image: 
 ---
-{% include feature/card.md text="For a detailed description and inventory of all our Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch)." col-class="col-md-4 float-right ml-5" header="Archival Context" %}
+{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" col-class="col-md-4 float-right ml-5" header="Archival Context" %}
+
+## About the Collection
+
+The photos in this collection are compiled from two different collections housed in the UI Library Special Collections—Potlatch Lumber Company Records, 1901-1979 (MG 135) and Potlatch Corporation Historical Archives, 1900-2007 (MG 457). Due to the inter-relationship of the Potlatch organization, photos in this collection also feature other operations in Latah, Nez Perce, and Clearwater counties.
+
+The records and photographs belonging to the Potlatch Lumber Company were donated to the University of Idaho by the Potlatch Corporation in November, 1983.
+
+{% include feature/item-figure.html objectid="plcphotos34" width="75" %}
 
 ## A Brief History of Potlatch Lumber Company
 
@@ -44,11 +52,5 @@ Though the population of Potlatch has dwindled over the years since the mill's c
 [^1]: https://www.potlatchdeltic.com/Page/ViewPage/12
 [^2]: https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho
 
-### The Photographs
 
-{% include feature/item-figure.html objectid="plcphotos34" width=" col-md-5 float-right" %}
-
-The photos in this collection are compiled from two different collections housed in the UI Library Special Collections—Potlatch Lumber Company Records, 1901-1979 (MG 135) and Potlatch Corporation Historical Archives, 1900-2007 (MG 457). Due to the inter-relationship of the Potlatch organization, photos in this collection also feature other operations in Latah, Nez Perce, and Clearwater counties.
-
-The records and photographs belonging to the Potlatch Lumber Company were donated to the University of Idaho by the Potlatch Corporation in November, 1983.
 
