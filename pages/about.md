@@ -86,7 +86,7 @@ By 1936, Robinson was no longer able to handle all the correspondence and give l
 Tenney's place as Robinson's assistant was taken by [William Walter DeBolt](browse.html#debolt), who, soon after his work with Psychiana began, was expelled by the Church of God. He left Psychiana after several years to become pastor of the Methodist church in Lind, Oregon.
 {% endcapture %}
 
-{:.text-center}
+{:.text-center .mb-5}
 ### Psychiana's Local and National Impact
 
 <div class="row">
