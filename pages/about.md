@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
 
@@ -57,4 +57,3 @@ This is a very important collection not only for those researching Dr. Frank B. 
 
 <div class="clearfix"></div>
 
-{% include credits.md %}
