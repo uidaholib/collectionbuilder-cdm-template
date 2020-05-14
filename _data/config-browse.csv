@@ -1,4 +1,8 @@
 field,display_name,btn,hidden
-date,Date,
-subject,btn,true
+creator,Creator,,,
+date,Date,,,
+subject,,true,
+recipient,,true,
 identifer,,,true
+related-publication,,,true
+

@@ -1,0 +1,8 @@
+
+
+<p class='h6 shadow p-3 about-nav' style="line-height: 1.5em;">Contents:
+    {% assign sections = include.sections | split: ';'%}
+    {% for section in sections %}
+    <a class="mx-2" href="#{{ section | downcase | replace: ' ','-'}}">{{section}}</a> {% unless forloop.last%} |
+    {%endunless%}
+    {% endfor %}</p>
