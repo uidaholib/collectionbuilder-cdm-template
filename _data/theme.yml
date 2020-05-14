@@ -11,13 +11,13 @@
 featured-image: psychiana548
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 450.
+carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
-featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-subjects-max: 8 # set number of top subjects to display if auto generating
+featured-locations:  #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 6
 
 ##########
 # ABOUT PAGE
@@ -41,15 +41,15 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-fields: subject;recipient # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-fields: item-information # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
@@ -78,7 +78,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate?,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,reference-url,cdmid,contentdm-file-name,contentdm-file-path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,recipient"
+metadata-facets-fields: "subject,creator,recipient,item-information,related-publication"
 
 ##########
 # ADVANCED OPTIONS
