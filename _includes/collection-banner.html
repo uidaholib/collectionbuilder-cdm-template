@@ -16,12 +16,19 @@
         padding-bottom: 5em; 
     }
 }
+.liblogo-corner {
+    border-bottom-left-radius: .25rem;
+}
+.liblogo-corner img{height: 40px;}
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
+    
+    <a class="d-none d-md-block float-right title-card p-3 liblogo-corner" href="https://www.lib.uidaho.edu/"><img alt="University of Idaho Library home" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png"></a>
+    
     <div id="home-title-box">
         <div class="title-card p-2 text-center">
             <a class="d-none d-md-block" href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                <img src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} logo" >
+                <img src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} home" >
             </a>
             <h1 class="display-4">{{ site.title }}</h1>
             {% if site.tagline %}<p id="home-tagline">{{ site.tagline }}</p>{% endif %}
@@ -40,7 +47,7 @@
         </div>
         <div class="col-md-3 d-none d-lg-block text-right">
             <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#collections">
-            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
+            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives Collections" alt="University of Idaho Library Digital Initiatives Collections" ></button>
         </div>
     </div>
 </div>
