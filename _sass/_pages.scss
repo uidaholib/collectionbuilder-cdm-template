@@ -42,3 +42,16 @@
 .tagcloud8{font-size:2.5em;}
 .tagcloud9{font-size:2.8em;}
 .tagcloud10{font-size:3.0em;}
+
+/* feature includes */
+@media (min-width: 768px) {
+    .feature-50 {
+        width: 50%;
+    }
+    .feature-float-right {
+        float: right!important;
+    }
+    .feature-float-left {
+        float: left!important;
+    } 
+}
