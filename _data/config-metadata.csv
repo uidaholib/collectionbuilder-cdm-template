@@ -4,8 +4,6 @@ date,Date Created,,DCTERMS.created,dateCreated
 date_is_approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 location,Location,true,,contentLocation
-latitude,Latitude
-longitude,Longitude
 source,Source
 identifier,Source Identifier
 type,Type,,DCTERMS.type
