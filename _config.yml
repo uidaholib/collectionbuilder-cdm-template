@@ -27,7 +27,7 @@ title: Kyle Laughlin Photograph Collection
 tagline: Photographs of Idaho, the PNW, and broader U.S. between 1920s-1960s
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The Kyle Laughlin Photogpraph Collection contains over 800 historical photographs collected or taken by Kyle Laughlin and donated to the Library in 1985. The images span the years 1931 to 1979 and depict Idaho scenery and historical sites, as well as images of Laughlin's travels, family and friends."
+description: "The Kyle Laughlin Photograph Collection contains over 800 historical photographs collected or taken by Kyle Laughlin and donated to the Library in 1985. The images span the years 1931 to 1979 and depict Idaho scenery and historical sites, as well as images of Laughlin's travels, family and friends."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
@@ -53,8 +53,8 @@ page_gen:
     template: 'items'
     name: 'objectid'
     dir: 'items'
-    extension: 'html' 
-    filter: 'objectid'  
+    extension: 'html'
+    filter: 'objectid'
 
 # add liquid profiler to id bottlenecks
 # profile: true
