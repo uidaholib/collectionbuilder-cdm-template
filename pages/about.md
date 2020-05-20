@@ -6,6 +6,10 @@ featured-image: "objects/test001.jpg"
 lazyload: true
 # Based on my research, the Columbia Basin Project was an irrigation project, not necessarily a dam construction project. It began with the construction of Grand Coulee Dam but was mainly a large-scale irrigation project. However, none of the other dams, mentioned below, were part of the Columbia Basin Project, they were just other dams constructed in the Pacific Northwest. Therefore, this collection should be renamed to Army Corps of Engineers Dam Construction Photographs, because that is more accurate to what it is. We can still heavily tag Columbia Basin Project and Grand Coulee Dam, since it's the bulk of the collection anyway, so that it comes in Google searches, but as long as those other dams that weren't related to Columbia Basin Project are in the collection, we can't just call it Columbia Basin Project Collection.
 ---
+
+{% include feature/jumbotron.html %}
+{% include feature/nav-menu.html sections="About the Collection;Dams Depicted in the Collection;The Columbia Basin Project;Research Value;" %}
+
 ## About the Collection
 
 {% include feature/item-figure.html objectid="crbp1103" float="right col-md-4" caption="Most photos in the collection relate to the Grand Coulee Dam (above), but many other Pacific Northwest dams are also depicted" %}
@@ -36,7 +40,7 @@ The first 14 folders contain black and white photographs (8x10 inches) of variou
 </div>
 </div>
 
-## The Columbia River Basin Project
+## The Columbia Basin Project
 
 The bulk of this collection documents the history of the Columbia Basin Project, a large irrigation project in the Columbia basin of central Washington state. As of April 2020, the Bureau of Reclamation website indicates that the "Columbia Basin Project serves about 671,000 acres in east central Washington....There are over 300 miles of main canals, about 2,000 miles of laterals, and 3,500 miles of drains and wasteways on the project."[^1] The irrigation system provides irrigated water to farms but also electricity and water for much of Washington state.
 
