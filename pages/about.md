@@ -8,13 +8,15 @@ featured-image: "objects/priestlake176.jpg"
 
 {% include about/jumbotron.html %}
 
+{% include feature/nav-menu.html sections="Brief History of Priest Lake;About the Photographs" %}
+
 ## Brief History of Priest Lake, Idaho
+
+{% include feature/item-figure.html objectid="priestlake196" float="right col-md-4" %}
 
 Priest Lake is located in the Idaho Panhandle and is part of the Idaho Panhandle National Forests.[^1] The lake was originally called "Kaniksu Lake" by Captain John Mullan in 1865.[^2] According to some accounts, "the name was gradually changed in the early 1900's from Kaniksu Lake to its present name of Priest Lake," with the name "Priest" coming from "the Kalispel Indian word Kaniksu, meaning 'Black Robe,' the name the Indians gave to the Jesuit missionary priests who worked among them."[^3] As a result, Priest Lake appears as Kaniksu Lake on many older maps.
 
 The history of Priest Lake begins with the history of Priest River, some 40 miles south of the lake. The first non-indigenous settlers in what would eventually become the city of Priest River were German immigrants who settled around 1888-1889.[^4] The early 1890s brought a flood of southern Italian immigrants who came to the Priest River area "to hew ties for the Great Northern Railroad" and ever since then, "the woods product industry has fueled Priest River's economic engine."[^5] Many Italian immigrants who arrived in the early 1890s to work on railroads ended up staying even after the railroads were finished. Many of them "settled an area on the east side of the town and the river that became known as the Italian Settlement. The Italian influx continued until about 1920. Priest River was known as 'Little Italy' until well into the 1950s."[^6]
-
-{% include feature/item-figure.html objectid="priestlake196" %}
 
 Although early settlers in the Priest River area looked for economic opportunities in agriculture and mining, they found little success. Logging would become the area's legacy: "For decades, Priest River was a wide-open logging town. By 1920, according to the census, it was the fastest growing town in North Idaho."[^7]
 
