@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 # add image to index page bootstrap jumbotron
 featured-image: "objects/priestlake176.jpg"
@@ -8,7 +8,7 @@ featured-image: "objects/priestlake176.jpg"
 
 {% include about/jumbotron.html %}
 
-{% include feature/nav-menu.html sections="Brief History of Priest Lake;About the Photographs" %}
+{% include feature/nav-menu.html sections="Brief History of Priest Lake;About the Photographs;Sources" %}
 
 ## Brief History of Priest Lake, Idaho
 
@@ -22,13 +22,13 @@ Although early settlers in the Priest River area looked for economic opportuniti
 
 The logging industry that began around Priest River slowly expanded to include the Priest Lake area. "From 1901 through 1949, an annual log drive on the Priest River took place each spring as the industry worked its way into the Priest Lake country."[^8] Priest Lake became known as a logging town.
 
-[^1]: ["Priest Lake Ranger District - Idaho Panhandle N.F." United States Department of Agriculture: Forest Service. Accessed May 7, 2020. https://www.fs.usda.gov/detail/ipnf/learning/history-culture/?cid=fsm9_019005.](https://www.fs.usda.gov/detail/ipnf/learning/history-culture/?cid=fsm9_019005)
+[^1]: ["Priest Lake Ranger District - Idaho Panhandle N.F." United States Department of Agriculture: Forest Service. Accessed May 7, 2020.](https://www.fs.usda.gov/detail/ipnf/learning/history-culture/?cid=fsm9_019005)
 
 [^2]: ibid.
 
 [^3]: ibid.
 
-[^4]: [Cork, Marylyn. "History." Priest River Chamber of Commerce. Accessed May 7, 2020. https://priestriverchamber.com/history/.](https://priestriverchamber.com/history/)
+[^4]: [Cork, Marylyn. "History." Priest River Chamber of Commerce. Accessed May 7, 2020.](https://priestriverchamber.com/history/)
 
 [^5]: ibid.
 
@@ -50,24 +50,22 @@ Some photos in this collection are related to the history of [Blister Rust Disea
 
 "The Priest Lake Museum Association built the collection in the early 1980s after putting out a call for historical photos of the region."[^16] With the help of grant funding provided by the Greater Inland Empire Foundation and the Association for the Humanities in Idaho, members of the association went about gathering photographs from those who answered their call. These photographs were eventually hand-delivered to the University of Idaho Library's Special Collections & Archives Department, where they were digitized, reprinted, and then returned, via the Museum Association, to their original owners.
 
-[^9]: ["Nell Shipman Point." North Idaho: The Northwest's Playground. Accessed May 7, 2020. https://visitnorthidaho.com/activity/nell-shipman-point/](https://visitnorthidaho.com/activity/nell-shipman-point/)
+[^9]: ["Nell Shipman Point." North Idaho: The Northwest's Playground. Accessed May 7, 2020.](https://visitnorthidaho.com/activity/nell-shipman-point/)
 
-[^10]: [Trusky, Tom. "Nell Shipman." Women Film Pioneers Project. Accessed May 8, 2020. https://wfpp.columbia.edu/pioneer/ccp-nell-shipman/.](https://wfpp.columbia.edu/pioneer/ccp-nell-shipman/)
+[^10]: [Trusky, Tom. "Nell Shipman." Women Film Pioneers Project. Accessed May 8, 2020.](https://wfpp.columbia.edu/pioneer/ccp-nell-shipman/)
 
 [^11]: ibid.
 
 [^12]: ibid.
 
-[^13]: [ "Western White Pine." United States Department of Agriculture: Forest Service. Accessed May 8, 2020. https://www.fs.usda.gov/wps/portal/fsinternet/cs/detail/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQwgwNHCwN_DI8zPyBcqYKAfrh-JKR_mA5cnqBuowAAHcARqJ0Y_HgVR-I0P14_C5kJk9-vjN8HPIz83Vb8gNzQ0wiDLBAAiWDdd/dz/d5/L2dBISEvZ0FBIS9nQSEh/?position=Not%20Yet%20Determined.Html&pname=Idaho%20Panhandle%20National%20Forests-%20Nature&ss=110104&navtype=BROWSEBYSUBJECT&pnavid=150000000000000&navid=150130000000000&ttype=detail&cid=fsm9_019137.](https://www.fs.usda.gov/wps/portal/fsinternet/cs/detail/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQwgwNHCwN_DI8zPyBcqYKAfrh-JKR_mA5cnqBuowAAHcARqJ0Y_HgVR-I0P14_C5kJk9-vjN8HPIz83Vb8gNzQ0wiDLBAAiWDdd/dz/d5/L2dBISEvZ0FBIS9nQSEh/?position=Not%20Yet%20Determined.Html&pname=Idaho%20Panhandle%20National%20Forests-%20Nature&ss=110104&navtype=BROWSEBYSUBJECT&pnavid=150000000000000&navid=150130000000000&ttype=detail&cid=fsm9_019137) and [Weaver, Matthew. "UI Extension Workshop Looks to Restore Western White Pine." Capital Press: Empowering Producers of Food & Fiber, May 14, 2019. https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html.](https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html)
+[^13]: [ "Western White Pine." United States Department of Agriculture: Forest Service. Accessed May 8, 2020.](https://www.fs.usda.gov/wps/portal/fsinternet/cs/detail/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQwgwNHCwN_DI8zPyBcqYKAfrh-JKR_mA5cnqBuowAAHcARqJ0Y_HgVR-I0P14_C5kJk9-vjN8HPIz83Vb8gNzQ0wiDLBAAiWDdd/dz/d5/L2dBISEvZ0FBIS9nQSEh/?position=Not%20Yet%20Determined.Html&pname=Idaho%20Panhandle%20National%20Forests-%20Nature&ss=110104&navtype=BROWSEBYSUBJECT&pnavid=150000000000000&navid=150130000000000&ttype=detail&cid=fsm9_019137) and [Weaver, Matthew. "UI Extension Workshop Looks to Restore Western White Pine." Capital Press: Empowering Producers of Food & Fiber, May 14, 2019.](https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html)
 
-[^14]: [Weaver, Matthew. "UI Extension Workshop Looks to Restore Western White Pine." Capital Press: Empowering Producers of Food & Fiber, May 14, 2019. https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html.](https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html)
+[^14]: [Weaver, Matthew. "UI Extension Workshop Looks to Restore Western White Pine." Capital Press: Empowering Producers of Food & Fiber, May 14, 2019.](https://www.capitalpress.com/ag_sectors/timber/ui-extension-workshop-looks-to-restore-western-white-pine/article_913680b8-7350-11e9-a40f-b3ec1d248290.html)
 
-[^15]: [Gidlund, Carl. "Life as Blister Rust Control Worker." The Spokesman-Review. Accessed May 8, 2020. https://www.spokesman.com/stories/2005/oct/29/life-as-blister-rust-control-worker/.](https://www.spokesman.com/stories/2005/oct/29/life-as-blister-rust-control-worker/)
+[^15]: [Gidlund, Carl. "Life as Blister Rust Control Worker." The Spokesman-Review. Accessed May 8, 2020.](https://www.spokesman.com/stories/2005/oct/29/life-as-blister-rust-control-worker/)
 
-[^16]: [Maben, Scott. "Priest Lake History Told through Just-Released Photo Collection." The Spokesman-Review, March 14, 2013. https://www.spokesman.com/stories/2013/mar/14/lake-views/.](https://www.spokesman.com/stories/2013/mar/14/lake-views/)
+[^16]: [Maben, Scott. "Priest Lake History Told through Just-Released Photo Collection." The Spokesman-Review, March 14, 2013.](https://www.spokesman.com/stories/2013/mar/14/lake-views/)
 
 [^17]: The following sources were also consulted but not cited directly: Cork, Marylyn, Jeanne M. Tomlin, and Diane E. Mercer. Priest River and Priest Lake: Kaniksu Country. Images of America. Arcadia Publishing, 2012; Smith, Kris Runberg. Pioneer Voices of Priest Lake. Edited by Kris Runberg Smith. Keokee Books, 2007.
 
-{% include credits.md %}
-
-## Sources[^17]
+## Sources
