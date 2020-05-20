@@ -14,9 +14,9 @@ home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
-featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects: canal lining and construction; power plants in Washington state (Grand Coulee Dam); construction of pipelines, syphons, and tunnels; engineer recruitment program; spillway and drum gate construction; farm development; #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Washington (State); Grant County; Grand Coulee Dam; Quincy; Franklin County; Stevens County; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 4
 
 ##########
@@ -24,7 +24,7 @@ featured-locations-max: 4
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: crbp1060
+about-featured-image: crbp1040
 
 ##########
 # BROWSE PAGE
