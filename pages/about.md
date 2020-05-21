@@ -1,11 +1,11 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
-{% include about/jumbotron.html %} 
+{% include feature/jumbotron.html %} 
 
-## About the {{ site.title }}
+{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
 
 Charles Houston Shattuck arrived at the University of Idaho in 1909 as the head of the newly created Department of Forestry, the second such program established in the Western United States. Shattuck had earned a Ph.D. with high honors in botany the year before at the University of Chicago, and had teaching experience in forestry, botany, natural history, and many other subjects and so was able to bring with him his own collection of illustrative material, such as lantern slides similar to the slides in this collection.  
 
