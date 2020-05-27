@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
 {% include feature/nav-menu.html sections="About the Collection;About Aerial Photography" %}
@@ -27,4 +27,3 @@ Aerial photographs have been taken by commercial as well as state and national g
 
 <div class="clearfix"></div>
 
-{% include credits.md %}

@@ -23,7 +23,7 @@ layout: page
                 <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
                 {% for o in site.data.config-browse %}{% unless o.btn %}
-                <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{% if o.display_name %}{{ o.display_name }}{% else %}{{ o.field | capitalize }}{% endif %}</button>
+                <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{% if o.sort_name %}{{ o.sort_name }}{% endif %}</button>
                 {% endunless %}
                 {% endfor %}
             </div>
