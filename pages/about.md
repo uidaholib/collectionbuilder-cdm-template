@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
 
@@ -26,4 +26,3 @@ Originally farmland, a tree-less plot adjacent to the University of Idaho Golf C
 
 <div class="clearfix"></div>
 
-{% include credits.md %}
