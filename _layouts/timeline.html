@@ -1,8 +1,8 @@
 ---
 layout: page
 ---
-{%- assign items = site.data[site.data.theme.metadata] -%}
-{%- assign raw-dates = site.data[site.data.theme.metadata] | map: 'date' | compact | uniq -%}
+{%- assign items = site.data[site.metadata] -%}
+{%- assign raw-dates = site.data[site.metadata] | map: 'date' | compact | uniq -%}
 {%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign uniqueYears = clean-years | remove: " " | split: ";" | uniq | sort -%}
 {%- if site.data.theme.year-navigation -%}
@@ -14,39 +14,31 @@ layout: page
 {%- assign navYears = navYears | split: ";" -%}
 {%- endif -%}
 <div class="dropdown float-right" id="year-nav">
-  <button class="btn btn-clearwater dropdown-toggle" type="button" id="yearButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Year
-  </button>
-  <div class="dropdown-menu" aria-labelledby="yearButton">
-    {% for y in navYears %}
-      <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
-  </div>
+    <button class="btn btn-info dropdown-toggle" type="button" id="yearButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Year
+    </button>
+    <div class="dropdown-menu" aria-labelledby="yearButton">
+        {% for y in navYears %}
+        <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
+    </div>
 </div>
 
 {{ content }}
- 
+
 <h3><a href="#{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
 
 <table id="timeline" class="table table-striped">
-  {% for year in uniqueYears %}
-  <tr id="{{ year }}">
-    <th><h3 >{{ year }}</h3></th>
-    <td>
-    {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
-    {% for item in inYear %}
-    {%if item.format contains 'image' or item.format contains 'pdf' %}
-    <a href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazyload img-thumbnail m-1" data-original="{% include image/thumb.html%}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
-    {%else%}
-    <div class="card col-12 col-sm-8 col-md-6 col-lg-4 float-left mt-1"> 
-      <div class="card-body px-0 pt-1 pb-0">
-          <h3 class="float-left col-2 pt-2"><span  class="far {% if item.format contains 'image' %}fa-image{% elsif item.format contains 'audio' %}fa-file-audio{% elsif item.format contains 'video' %}fa-file-video{%else%}fa-file{% endif %}"></span></h3>
-          <p class="float-left col-10 mb-1"> <a class="text-dark" href="{{ '/items/' | absolute_url | append: item.object-id | append: '.html' }}">{{item.title}}</a>           
-</p>
-</div></div>
-
-{% endif %}
+    {% for year in uniqueYears %}
+    <tr id="{{ year }}">
+        <th>
+            <h3>{{ year }}</h3>
+        </th>
+        <td>
+            {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+            {% for item in inYear %}
+            <a class="d-inline-block m-1" href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" ></a>
+            {% endfor %}
+        </td>
+    </tr>
     {% endfor %}
-    </td>
-  </tr>
-  {% endfor %}
 </table>

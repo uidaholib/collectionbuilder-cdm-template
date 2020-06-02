@@ -1,25 +1,12 @@
 Readme for lchsphotos - Latah County Historical Society Photos - created Marco SV
 
-Metadata:
+https://www.lib.uidaho.edu/digital/
 
-Did:
--Created location field and populated with general location data Bovill, ID
+This highly customized version of [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) is used by the University of Idaho Library to create skins for the digital library collections maintained in a hosted CONTENTdm instance. 
+Active development takes place in the [CollectionBuilder-CONTENTdm repository](https://github.com/CollectionBuilder/collectionbuilder-contentdm).
 
-To-do:
--could use additional creation of subjects for browse
--Needs an about page or similar
+Librarians and staff work with a clean version of a single collection's metadata, as stored in a .csv file.
+Collection settings are customized using the [`_data/theme.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_data/theme.yml).
+Each digital collection is a branch in this repository.
 
-Theme/Config:
-
-Did:
-
--Hid browse subjects for now
-	-removed-*Subjects,/subjects.html*
-	-Removed  {% include index/subjects.html %}
-
-To-do:
-
-
-Changed name to Bovill Historical Photograph Collection
-
--- probably wouldn't be a bad idea just to add these to the Idaho Cities collection ... 
+While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
