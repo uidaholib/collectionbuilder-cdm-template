@@ -79,7 +79,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,description,creator,date,date is approximate,subject,coverage,latitude,longitude,digital collection,contributing institution,identifier,rights,rightsstatement,format orignal,type,format,language,file name,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator"
+metadata-facets-fields: "subject,creator,description,date"
 
 ##########
 # ADVANCED OPTIONS
