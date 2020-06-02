@@ -1,36 +1,37 @@
 ---
+# generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.data.theme.metadata] | where: "format", "image/jpg" -%}
+{%- assign items = site.data[site.metadata] -%}
 {
     "title": {
         "media": {
-          "url": "https://cdm17254.contentdm.oclc.org/digital/iiif/{{site.data.theme.cdm-collection-id}}/{{site.data.theme.home-banner-image-number}}/full/pct:70/0/default.jpg",
-          "caption": {{site.data.theme.home-banner-image-title | jsonify}},
-          "credit": "{{site.data.theme.title}}"
+          "url": "{% include image/featured-image.html %}",
+          "caption": {{ featuredItem.title | jsonify }},
+          "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": "{{site.data.theme.title}} Timeline",
-          "text": {{site.data.theme.description | jsonify}}
+          "headline": {{ site.title | append: ' Timeline' | jsonify }},
+          "text": {{ site.description | jsonify }}
         }
     },
     "events": [
-      {%for item in items %}{%if item.date%}{
+      {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "https://cdm17254.contentdm.oclc.org/digital/iiif/{{site.data.theme.cdm-collection-id}}/{{item.cdm-id}}/full/pct:70/0/default.jpg",
-          "caption": {{item.title | jsonify }},
+          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+          "caption": {{ item.title | jsonify }},
           "link": "{% include item-link.html %}",
-          "credit": "{{site.data.theme.title | default: 'CollectionBuilder Collection'}}"
+          "credit": "{{ site.title }}"
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
-          "month": "{{dates[1]}}",
-          "day": "{{dates[2]}}",
-          "year": "{{dates[0]}}"{%else%}
-          "year": "{{item.date}}"{%endif%}
+          "month": "{{ dates[1] }}",
+          "day": "{{ dates[2] }}",
+          "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
+          "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": {{item.title | jsonify}}{%if item.description%},
-          "text": {{item.description | jsonify }}{%endif%}
+          "headline": {{ item.title | jsonify }}{% if item.description %},
+          "text": {{ item.description | jsonify }}{% endif %}
         }
-      }{%unless forloop.last%},{%endunless%}{%endif%}{%endfor%}
+      }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
     ]
 }

@@ -1,23 +1,12 @@
 Readme for Stanton Gilbert Fisher
 
-Metadata:
+https://www.lib.uidaho.edu/digital/
 
-Some weirdness with dates that needs to be addressed:
--disparate multiple dates for any one item
--some brackets in there
+This highly customized version of [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) is used by the University of Idaho Library to create skins for the digital library collections maintained in a hosted CONTENTdm instance. 
+Active development takes place in the [CollectionBuilder-CONTENTdm repository](https://github.com/CollectionBuilder/collectionbuilder-contentdm).
 
-Titles could also use some improvement or standardization when dealing with multiples. -Suggest trying to find more descriptive titles versus putting numerical sequence (example title: Chief Joseph [1] --> Sitting portrait of Chief Joseph circa [date])
+Librarians and staff work with a clean version of a single collection's metadata, as stored in a .csv file.
+Collection settings are customized using the [`_data/theme.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_data/theme.yml).
+Each digital collection is a branch in this repository.
 
--needs creation of subject metadata for word cloud page
-
--about has a stub but will need more
-
-Theme/Config:
-
--shut off browse subjects for now
--removed map because no info on it for now
-
-Second Revision for Site on August 13, 2019
-
-- still needs better subject metadata
-- still needs better about page
+While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
