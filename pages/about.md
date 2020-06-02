@@ -3,24 +3,27 @@ title: About
 layout: about
 permalink: /about.html
 ---
-{% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/jumbotron.html %}
+
+{% include feature/nav-menu.html sections="About Bovill;Sources;" %} 
+
+## About Bovill, Idaho
+
+{% include feature/item-figure.html objectid="lchsphotos144" float="right col-md-4" %}
+
+Bovill has been described as "a town whose history exemplifies many of the elements that today we associate with the Wild West."[^1] The story of Bovill begins with Francis Warren who had a personal settlement on the site. An Englishman, Hugh Bovill, came in 1899 to buy Warren's site "and build a hotel that could accommodate fellow hunters and anglers with an appetite for adventure" because he had been "drawn to the American frontier by tales of ample big game."[^1] The town initially grew because the timber industry was growing and drawing "homesteaders to northeast Latah County, so Bovill opened a story to supply their needs."[^1] 
+
+To learn more about Bovill's early days, [Latah County Historical Society](https://www.latahcountyhistoricalsociety.org/) recorded oral histories in the 1970s that "reveal the hardships that folks endured, the kindness of strangers and the fire that destroyed much of the town."[^1]
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+{% include feature/card.md text="Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." float="right col-md-4" header="Archival Context" %}
 
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
+This collection of 153 images depicts the history of Bovill between 1904 and 2000 and was collected by the Latah County Historical Society during a project to document the history of Bovill. Many images depict Bovill schools and schoolchildren, as well as graduation events. Other images depict community events, such as Statehood Day in 1990. Other images depict street scenes, buildings, and residential houses. Finally, some images depict women of Bovill, CCC, sports teams, and lumber and railroad industries.
 
-## About the UI Boxing Team
+<!--- subject ideas: school, children, graduation, Statehood Day, events, people, street scenes, buildings, women, landscape scenes, CCC, sports, railroad, lumber, residential houses,  --->
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+[^1]: [Kersting-Lark, Dulce. “Nearby History: A Short History of a Small Frontier Town,” September 24, 2018.](https://dnews.com/local/nearby-history-a-short-history-of-a-small-frontier-town/article_f96c6c39-7ead-5398-b915-2c4f9ff8db43.html)
 
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
-
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
-
-
-<div class="clearfix"></div>
-
+## Sources
