@@ -5,9 +5,11 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About Stanton Gilbert Fisher;About the Collection;Sources" %} 
+{% include feature/nav-menu.html sections="About Stanton Gilbert Fisher;About the Collection;" %} 
 
 ## About Stanton Gilbert Fisher
+
+{% include feature/item-figure.html objectid="fisher260" float="right col-md-4" %}
 
 Stanton Gilbert Fisher (1840-1915) was an American pioneer best known as a civilian scout for the United States Army during the 1877 Nez Perce War. Fisher was born on July 10, 1840 in Jefferson County, New York. He and his family moved to a farm in Dodge County, Wisconsin in 1850. In 1860, Fisher - a jack of all trades - moved to California to try his hand at his first career, mining.
 
@@ -23,4 +25,8 @@ In 1889, Fisher was appointed Indian Agent for the Fort Hall reservation, a resp
 
 {% include feature/card.md text="Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." float="right col-md-4" header="Archival Context" %}
 
-This collection contains writings and memorabilia of Stanton Gilbert Fisher, pioneer and Nez Perce Wawr scout between 1840-1915. Most of the documents are Nez Perce War collectibles, such as maps, photographs and accounts of the war and its participants. The rest of the papers are personal materials related to Fisher, including autobiographical materials as well as the correspondence and census records of several of his family members.
+This collection contains writings and memorabilia of Stanton Gilbert Fisher during the time of the Nez Perce War in 1877, along with correspondence and other records from members of the Fisher family through 1988. 
+
+Most of the documents include maps, photographs, and written accounts of the war and its participants. There are handwritten letters from the war, maps of Idaho and troop movements, and photographs and drawings of people and places related to the war. Outside literature studying the war is also included, incorporating documents from various magazine clippings, a University of Idaho dramatic production, a small publication pieced together from firsthand accounts, a series of short stories written by one of the scouts, and newspaper articles referencing the war and its scouts. 
+
+The collection also includes personal documents related to Stanton G. Fisher and his youngest son, Don C. Fisher, such as: a trail diary kept by Stanton G. Fisher in 1888; several handwritten essays and a typed manuscript relating adventures he heard or experienced; correspondence between Don Fisher and friends of his father; an envelope from Don Fisher's niece, Freda Terry; a receipt bearing Don Fisher's initials; and census papers from 1880, 1910, and 1930 noting various members of the Fisher family.
