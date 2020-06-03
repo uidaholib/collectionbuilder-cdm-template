@@ -48,7 +48,7 @@ subjects-stopwords: united states;idaho;moscow;latah county # set of subjects se
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: location;region # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: united states;idaho;moscow;latah county # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,object-id"
+metadata-export-fields: "title,description,creator,date,date is approximate?,scientific name,subject,subject (lcsh),subject (lctgm),location,location (lcsh),region,collection,source,identifier,digital identifier,rights,rightsstatement,format original,type,format,date digital,digitization specifications,scanner technician,metadata cataloger,metadata assistants,collection administrator,filename,latitude,longitude,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject;location"
+metadata-facets-fields: "scientific name,subject,subject (lcsh),subject (lctgm),location-old,location,region"
 
 ##########
 # ADVANCED OPTIONS
