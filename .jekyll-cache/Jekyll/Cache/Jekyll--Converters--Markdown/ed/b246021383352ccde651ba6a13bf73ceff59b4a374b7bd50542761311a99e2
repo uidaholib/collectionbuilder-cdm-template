@@ -1,0 +1,37 @@
+I"d
+<h1 id="cb-tests">CB Tests</h1>
+
+<h2 id="_configyml">_config.yml</h2>
+
+<p class="alert alert-success">Currently using <code class="highlighter-rouge">iddings.csv</code> metadata file.</p>
+
+<p class="alert alert-success">The <code class="highlighter-rouge">page_gen</code> data value is correctly configured to use <code class="highlighter-rouge">iddings</code>.</p>
+
+<h2 id="objectid">Objectid</h2>
+
+<p class="alert alert-success">All items have <code class="highlighter-rouge">objectid</code>.</p>
+
+<p class="alert alert-success">All <code class="highlighter-rouge">objectid</code> are unique.</p>
+
+<h2 id="contentdm">CONTENTdm</h2>
+
+<p class="alert alert-success">Currently using <code class="highlighter-rouge">spec_ji</code> CONTENTdm collection (<a href="https://digital.lib.uidaho.edu/cdm/search/collection/spec_ji/" target="_blank" rel="noopener">database link</a>).</p>
+
+<p class="alert alert-success">All items have <code class="highlighter-rouge">cdmid</code>.</p>
+
+<p class="alert alert-success">All <code class="highlighter-rouge">cdmid</code> are unique.</p>
+
+<h2 id="format">Format</h2>
+
+<p class="alert alert-success">All items have <code class="highlighter-rouge">format</code>.</p>
+
+<p>The following <code class="highlighter-rouge">format</code> values are used in the collection:</p>
+
+<ul>
+  <li>image/jpg, <em class="text-danger">may not be supported</em>.</li>
+</ul>
+
+<p class="alert alert-secondary">For items in CONTENTdm, format values starting in <code class="highlighter-rouge">image/</code>, <code class="highlighter-rouge">video/</code>, or <code class="highlighter-rouge">audio/</code> are likely to work. 
+However, only <code class="highlighter-rouge">image/jpeg; application/pdf; video/mp4; audio/mp3</code> are tested to display and download correctly.
+See <a href="https://collectionbuilder.github.io/docs/metadata.html#required">CB docs for details</a>.</p>
+:ET
