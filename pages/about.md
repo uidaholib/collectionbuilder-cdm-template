@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/nav-menu.html sections="About the Collection;About Aerial Photography" %}
 
-{% include about/jumbotron.html %} 
+{% include feature/jumbotron.html %} 
 
 ## About the Collection
 
