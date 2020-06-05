@@ -1,13 +1,13 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DC.title,,headline
-creator,Creator,true, DC.creator
+creator,Creator,true,DC.creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DC.description,description
 county,County,true,,contentLocation
 region,Region,true,,contentLocation
 features,Features,true,
-flight line,Flight Line,true,
+flight_line,Flight Line,true,
 aerial-type,Photograph Type,true,
 latitude,Latitude
 longitude,Longitude
@@ -18,20 +18,3 @@ type,Type,,DC.type
 format original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,Rights,,DCTERMS.rights,license
-
-title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
-date is approximate,Approximated Date
-description,Description,,DCTERMS.description,description
-subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,,,contentLocation
-latitude,Latitude
-longitude,Longitude
-collection,Source Collection
-source,Source
-identifier,Source Identifier
-type,Type,,DCTERMS.type
-format-original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license

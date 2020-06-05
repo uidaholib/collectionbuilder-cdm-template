@@ -4,5 +4,5 @@ description,
 location,,true
 aerial-type,,true
 features,,,true
-flight line,,,true
-identifier,,,true
+flight_line,,,true
+identifier,,,true,Identifier
