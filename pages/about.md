@@ -7,16 +7,15 @@ permalink: /about.html
 
 {% include feature/nav-menu.html sections="About Donald R. Theophilus (Jr.);About the University of Idaho Boxing Team;Sources;" %} 
 
-{% include feature/card.md text="Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." float="right col-md-4" header="Archival Context" %}
-
 ## About Donald R. Theophilus (Jr.)
 
-It’s unclear whether this collection originated from Donald R. Theophilus or Donald R. Theophilus, Jr.
+It is unclear whether this collection originated from Donald R. Theophilus or Donald R. Theophilus, Jr.
 
 Donald R. Theophilus, Jr. was born on September 6, 1931 in Moscow, Idaho (where he is buried) and died August 17, 1983 at age 51.[^1] He was the son of Donald R. Theophilus, (January 6, 1889 – May 11, 1970) who most notably served as President of University of Idaho from 1954-1965.[^2] President Theophilus has long been “remembered for his commitment” to the university mission as a land-grant institution being “responsible for not only educating its students but also providing extension services for residents throughout the state.”[^3] Theophilus later wrote that “the primary objectives of the University have always been the achievement and extension of excellence in learning and in research so that those it serves can be better citizens, make a better living, live better and be more useful and worthy individuals.”[^3] It is said that “he pursued that mission by expanding adult education statewide and working to reopen Lewis-Clark Normal School to train teachers.”[^3]
 
 Upon President Theophilus’ retirement in 1965, Idaho Governor Robert E. Smylie said of him, “No one in Idaho’s history has been able to do so much for so many for so long.”[^3]
 
+{:.pt-3}
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
 ## About the University of Idaho Boxing Team
@@ -35,9 +34,15 @@ Theodore “Ted” Kara and his brother Frank Kara helped “earn the university
 
 As time went on, “the Vandals compiled heaps of national championships as both Kara brothers, Laune Erickson, and John Webster combined to win seven individual titles between 1939 and 1941. Proclaimed the best all-around team in the country, Idaho snapped up team titles in 1940 and 1941.”[^4]
 
-By 1954, there was a national movement to discontinue collegiate boxing and University of Idaho was in agreement. When deciding to drop the sport from the university, President Theophilus wrote, “Spectators should come to a sports contest expecting to watch a demonstration of skill and spirit…Too many spectators come to a boxing match hoping to see someone hurt. Every precaution was taken to protect the collegiate boxer, but I was always afraid that spectators hoping to see destructive force in the ring might be satisfied.”[^4]
+By 1954, there was a national movement to discontinue collegiate boxing and University of Idaho was in agreement. When deciding to drop the sport from the University, President Theophilus wrote, “Spectators should come to a sports contest expecting to watch a demonstration of skill and spirit…Too many spectators come to a boxing match hoping to see someone hurt. Every precaution was taken to protect the collegiate boxer, but I was always afraid that spectators hoping to see destructive force in the ring might be satisfied.”[^4]
 
-By the time boxing ended at the University of Idaho, they had collected “sixteen individual national titles, three national team titles and 24 total PCC crowns.”[^4] In 1960, “the NCAA closed up shop after a Wisconsin boxer was killed in the ring.”[^4]
+By the time boxing ended at the University of Idaho, the team had collected “sixteen individual national titles, three national team titles and 24 total PCC crowns.”[^4] In 1960, “the NCAA closed up shop after a Wisconsin boxer was killed in the ring.”[^4]
+
+<div class="row justify-content-center">
+<div class="col-md-4 pt-3">
+{% include feature/card.md text="Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." header="Archival Context" %}
+</div>
+</div>
 
 [^1]: [“Donald R. Theophilus, Jr.” Find a Grave. Accessed May 29, 2020.](https://www.findagrave.com/memorial/92659389/donald-r-theophilus)
 
@@ -48,3 +53,5 @@ By the time boxing ended at the University of Idaho, they had collected “sixte
 [^4]: [Lawson, Theo. “Kings of Their Ring - Its Tenure Was Short-Lived, but Vandal Boxing Holds Deep Roots in UI’s History.” The University of Idaho Argonaut: For, Of, and By the Students Since 1898, May 5, 2014.](https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/)
 
 ## Sources
+
+<div class="clearfix"></div>
