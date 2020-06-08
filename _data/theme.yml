@@ -30,13 +30,13 @@ about-featured-image:
 ##########
 # BROWSE PAGE
 #
-# see _data/browse-config.csv for field display options
+# see _data/config-browse.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
 ##########
 # ITEM PAGE
 #
-# see _data/metadata-config.csv to define the metadata fields that will display.
+# see _data/config-metadata.csv to define the metadata fields that will display.
 browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
 
 ##########
@@ -77,9 +77,10 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,object-id"
+metadata-export-fields: "title,description,subject,date,date_is_approximate,source,latitude,longitude,subject_lcsh,format_original,donor,identifier,format,language,type,rights,rightsstatement,date_created,filename,date_created,date_modified,reference_url,cdmid,contentdmfilename,contentdmfilepath,objectid,reference_url"
+
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,date"
 
 ##########
 # ADVANCED OPTIONS
