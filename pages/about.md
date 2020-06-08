@@ -20,7 +20,7 @@ permalink: /about.html
 <br>
 <hr>
 <br>
-<p>For more information about Latah County, visit the <a href="https://www.latahcountyhistoricalsociety.org/">Latah County Historical Scociety website</a>.</p>
+<p>For more information about Latah County, visit the <a href="https://www.latahcountyhistoricalsociety.org/">Latah County Historical Society website</a>.</p>
 <p>For more information about the National Endowment for the Humanities (NEH), visit the <a href="https://www.latahcountyhistoricalsociety.org/">NEH website</a>.</p>
 <br>
 <hr>
