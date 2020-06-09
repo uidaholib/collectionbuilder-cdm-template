@@ -6,7 +6,7 @@ permalink: /about.html
 featured-image: "objects/priestlake176.jpg"
 ---
 
-{% include about/jumbotron.html %}
+{% include feature/jumbotron.html %}
 
 {% include feature/nav-menu.html sections="Brief History of Priest Lake;About the Photographs;Sources" %}
 
@@ -40,8 +40,6 @@ The logging industry that began around Priest River slowly expanded to include t
 
 ## About the Photographs
 
-{% include feature/card.md text="For a detailed description and inventory of the Priest Lake Historical Photograph Collection, see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv119445/op=fstyle.aspx?t=k&q=). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." float="right col-md-4" header="Archival Context" %}
-
 This collection depicts seventy years of [family](https://www.lib.uidaho.edu/digital/priestlake/browse.html#families), community, and [business life](https://www.lib.uidaho.edu/digital/priestlake/browse.html#loggers) in the Priest Lake area. Earlier photos show [homesteads](https://www.lib.uidaho.edu/digital/priestlake/browse.html#houses) as well as [Prater Ranch](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake345.html), also known as "half-way house," where, during the regular trips from Priest River to Priest Lake, the [stage](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake244.html) stopped to exchange horses and provide a place for its passengers to have a mid-day meal. Many images also depict logging activity. There are images of [logs on sleds](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake141.html) drawn by horses, [log booms pulled by steamboats](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake224.html) moving between Priest River and Priest Lake, and [logs on multi-trailer trucks](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake366.html) traversing snow-covered roads.
 
 Some photos include [Nell Shipman](https://www.lib.uidaho.edu/digital/priestlake/browse.html#nell), a Canadian-American "silent screen actress, writer, and producer" who is known as "one of cinema's important female pioneers."[^9] She "ran a motion picture company from the isolated woods of Idaho" between 1921-1925 after moving "her production company from Southern California, first to Spokane, Washington, and finally to Lionhead Lodge on the shore of Priest Lake, Idaho."[^10] She finished shooting <emph render="italic">The Grub Stake</emph> (1922) at Priest Lake, the first silent picture the company shot in the Pacific Northwest.[^11] However, "before leaving for Idaho, Shipman had begun purchasing a zoo located in Azusa, California" and [brought her zoo to Idaho](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake167.html) with her to star with her in the silent movies.[^12] For more information about Nell Shipman, please refer to the [Nell Shipman Papers](http://archiveswest.orbiscascade.org/ark:/80444/xv03213) at Boise State University Library, Special Collections and Archives.
@@ -51,6 +49,8 @@ Some photos include [Nell Shipman](https://www.lib.uidaho.edu/digital/priestlake
 Some photos in this collection are related to the history of [Blister Rust Disease in the Priest Lake and Priest River area](https://www.lib.uidaho.edu/digital/priestlake/browse.html#blister%20rust%20control). Blister Rust is a non-native fungus that is extremely damaging to white pine trees.[^13] In North Idaho, "white pine populations were dramatically reduced in the early 1900s due to blister rust."[^14] As such, the federal government sought to combat the disease and attempt to slow the spread amongst white pines in the 1930s. The photos in this collection depict life as a blister rust control worker, and more information about this history can be found here.[^15] The federal government relied on labor from the newly founded [Civilian Conservation Corp (CCC)](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake171.html), whose memberes not only worked on disease control and fought fires, but also built [fire lookouts](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake28.html), campgrounds, and roads. The federal government later used these camps to house [German](https://www.lib.uidaho.edu/digital/priestlake/browse.html#german) and [Italian](https://www.lib.uidaho.edu/digital/priestlake/browse.html#italian) internees during World War II, also pictured in this collection.
 
 "The Priest Lake Museum Association built the collection in the early 1980s after putting out a call for historical photos of the region."[^16] With the help of grant funding provided by the Greater Inland Empire Foundation and the Association for the Humanities in Idaho, members of the association went about gathering photographs from those who answered their call. These photographs were eventually hand-delivered to the University of Idaho Library's Special Collections & Archives Department, where they were digitized, reprinted, and then returned, via the Museum Association, to their original owners.
+
+{% include feature/card.md text="For a detailed description and inventory of the Priest Lake Historical Photograph Collection, see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv119445/op=fstyle.aspx?t=k&q=). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." header="Archival Context" %}
 
 [^9]: ["Nell Shipman Point." North Idaho: The Northwest's Playground. Accessed May 7, 2020.](https://visitnorthidaho.com/activity/nell-shipman-point/)
 
@@ -66,8 +66,9 @@ Some photos in this collection are related to the history of [Blister Rust Disea
 
 [^15]: [Gidlund, Carl. "Life as Blister Rust Control Worker." The Spokesman-Review. Accessed May 8, 2020.](https://www.spokesman.com/stories/2005/oct/29/life-as-blister-rust-control-worker/)
 
-[^16]: [Maben, Scott. "Priest Lake History Told through Just-Released Photo Collection." The Spokesman-Review, March 14, 2013.](https://www.spokesman.com/stories/2013/mar/14/lake-views/)
-
-[^17]: The following sources were also consulted but not cited directly: Cork, Marylyn, Jeanne M. Tomlin, and Diane E. Mercer. Priest River and Priest Lake: Kaniksu Country. Images of America. Arcadia Publishing, 2012; Smith, Kris Runberg. Pioneer Voices of Priest Lake. Edited by Kris Runberg Smith. Keokee Books, 2007.
+[^16]: [Maben, Scott. "Priest Lake History Told through Just-Released Photo Collection." The Spokesman-Review, March 14, 2013.](https://www.spokesman.com/stories/2013/mar/14/lake-views/). Also, see the call on page 2 of [The Priest Lake Museum Association Newsletter, Spring 1984](https://web.archive.org/web/20151218090114/https://plmuseum.org/files/Download/PLM%20Newsletter%20Spring%201984.pdf)
 
 ## Sources
+
+- Cork, Marylyn, Jeanne M. Tomlin, and Diane E. Mercer. *Priest River and Priest Lake: Kaniksu Country*. Images of America. Arcadia Publishing, 2012 
+- Smith, Kris Runberg. *Pioneer Voices of Priest Lake*. Edited by Kris Runberg Smith. Keokee Books, 2007. (Day-NW F.782 P75 2007)
