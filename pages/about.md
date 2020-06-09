@@ -9,24 +9,33 @@ permalink: /about.html
 
 ## About the Collection
 
-<h3>About the Latah County Community Heritage Collection{{site.data.theme.title}}</h3>
-<p>The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) <a href="https://www.neh.gov/grants/preservation/common-heritage"> Common Heritage Grant</a> awarded to the University of Idaho Library in 2016. The materials in this collection were collected via community digitization days held in Moscow and Potlatch in 2016 and 2017. </p>
-<p>The project was a collaboration between the University of Idaho Library and the <a href="https://www.latahcountyhistoricalsociety.org/">Latah County Historical Society</a>; it was directed by Devin Becker, Dulce Kersting, and Erin Stoddart.  If you have any questions about the collection or are interested in donating materials, please email us at <a href="mailto:libspec@uidaho.edu">libspec@uidaho.edu</a>.</p>
-<p>The collection would not be possible without generous donations of time and materials from a variety of individual donors and staff. The directors would like to thank our donors: <p style="width:50%;font-size:larger;text-align:center;float:left;">Wilma Daniels<br /> The City of Moscow<br /> Ariana Burns<br /> LeNelle McInturff<br /> Elizabeth Stevens<br /> Nels Reese<br />  Gary Strong<br /> M Spakoski</p><p style="width:50%;font-size:larger;text-align:center;float:left;"> Janice Palmer<br /> Ann Davis<br /> John Wolheter<br /> Virginia Soncarty<br /> Joe Rohn<br /> Verna Comstock <br/> Dusty Fleener<br/> <br/> </p>
-<p><br/> </p>
-<hr />
-<p>This collection would also not be possible without the help of the following individuals: Jessica Wilson-Saia, Kevin Dobbins, Evan Williamson, Ashlyn Velte, Zach Wnek,  Elizabeth Biancosino, and Autrey Jeskey. Many thanks to them as well. </p>
+The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) [Common Heritage Grant](https://www.neh.gov/grants/preservation/common-heritage) awarded to the University of Idaho Library in 2016. 
+The materials in this collection were collected via community digitization days held in Moscow and Potlatch in 2016 and 2017.
 
-<br>
-<hr>
-<br>
-<p>For more information about Latah County, visit the <a href="https://www.latahcountyhistoricalsociety.org/">Latah County Historical Society website</a>.</p>
-<p>For more information about the National Endowment for the Humanities (NEH), visit the <a href="https://www.latahcountyhistoricalsociety.org/">NEH website</a>.</p>
-<br>
-<hr>
-<br>
+The project was a collaboration between the University of Idaho Library and the [Latah County Historical Society](https://www.latahcountyhistoricalsociety.org/); it was directed by Devin Becker, Dulce Kersting, and Erin Stoddart.
+If you have any questions about the collection or are interested in donating materials, please email us at [libspec@uidaho.edu](mailto:libspec@uidaho.edu).
 
+The collection would not be possible without generous donations of time and materials from a variety of individual donors and staff. 
+The directors would like to thank our donors: 
 
+<div class="row justify-content-center">
+<div class="col-md-3">
+<p class="text-center" markdown="1">
+Wilma Daniels<br> The City of Moscow<br> Ariana Burns<br> LeNelle McInturff<br> Elizabeth Stevens<br> Nels Reese<br>  Gary Strong<br> M Spakoski
+</p>
+</div>
+<div class="col-md-3">
+<p class="text-center" markdown="1">
+Janice Palmer<br> Ann Davis<br> John Wolheter<br> Virginia Soncarty<br> Joe Rohn<br> Verna Comstock <br> Dusty Fleener
+</p>
+</div>
+</div>
+
+This collection would also not be possible without the help of the following individuals: Jessica Wilson-Saia, Kevin Dobbins, Evan Williamson, Ashlyn Velte, Zach Wnek, Elizabeth Biancosino, and Autrey Jeskey. 
+Many thanks to them as well.
+
+For more information about Latah County, visit the [Latah County Historical Society website](https://www.latahcountyhistoricalsociety.org/).
+For more information about the National Endowment for the Humanities (NEH), visit the [NEH website](https://www.latahcountyhistoricalsociety.org/).
 
 <div class="clearfix"></div>
 
