@@ -10,7 +10,10 @@
     - "caption" by default the figure include automatically adds the title of the item from your metadata. The caption option allows you to manually add a different caption, or give the value false for none.
 
 {%- endcomment -%}
-{%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
+{%- assign items = include.objectid | split: ";" %}
+<div class="row">{% for i in items %}
+    {%- assign item = site.data[site.metadata] | where: "objectid", i | first -%}
+<div class="col">
 <div class="text-center">
     <figure class="figure mx-3{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}">
         <a href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}">
@@ -18,4 +21,6 @@
         </a>
         {% unless include.caption == false %}<figcaption class="figure-caption">{% if include.caption %}{{ include.caption }}{% else %}{{ item.title }}{% endif %}</figcaption>{% endunless %}
     </figure>
+</div></div>{%endfor%}
 </div>
+
