@@ -1,10 +1,9 @@
 ---
-title: Locations
+title: Campus Entity
 layout: locations
-permalink: /locations.html
+permalink: /organizations.html
 ---
 
-## Browse Locations
+## Browse Campus Organizations and Events
 
-Use this word cloud visualization to browse locations.
 Word size is determined by frequency and all words link to a corresponding collection search.

@@ -8,15 +8,15 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: boxing15
+featured-image: pg2585
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
-home-banner-image-position: center # [options: top, center, bottom] Default: top
+home-banner-image-position: bottom # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 ##########
@@ -24,7 +24,7 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: boxing15
+about-featured-image: pg21357
 
 ##########
 # BROWSE PAGE
@@ -42,14 +42,14 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 # SUBJECTS PAGE
 #
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-fields: campus organization # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rights (standardized),date created,filename,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,object-id"
+metadata-export-fields: "title,description,date,date is approximate,subject,campus event,campus organization,latitude,longitude,donor,publisher - digital,source,identifier,rights,rightsstatement,format original,type,format,language,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,campus event,campus organization,format original,rightsstatement"
 
 ##########
 # ADVANCED OPTIONS

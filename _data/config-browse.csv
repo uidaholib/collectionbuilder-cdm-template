@@ -1,4 +1,7 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 subject,,true
+campus event,,true
+campus organization,,true,,Campus Org
+description,,,true
 identifier,,,true,Identifier
