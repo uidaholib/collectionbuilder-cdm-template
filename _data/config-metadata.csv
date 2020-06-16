@@ -11,6 +11,7 @@ longitude,Longitude
 collection,Source Collection
 source,Source
 identifier,Source Identifier
+digital-identifier, Digital Identifier
 type,Type,,DCTERMS.type
 format-original,Format Original
 format,Format,,,encodingFormat
