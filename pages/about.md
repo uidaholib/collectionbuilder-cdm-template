@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the Department;About the Digitization Process" %} 
+{% include feature/nav-menu.html sections="About the Collection;About the Department;External Support" %} 
 
 ## About the Collection
 
@@ -13,7 +13,7 @@ The Idaho Forester Collection consists of the digitized University of Idaho Fore
 
 <div class="text-center">
 <figure class="figure">
-<a href="https://digital.lib.uidaho.edu/digital/collection/pg2/id/288/" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg2/288/default.jpg" class="figure-img img-fluid rounded" alt="Associated Foresters, University of Idaho, 1923">
+<a href="https://digital.lib.uidaho.edu/digital/collection/pg2/id/288/" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg2/288/default.jpg" class="figure-img img-fluid rounded" alt="Associated Foresters, University of Idaho, 1923"></a>
 <figcaption class="figure-caption">Associated Foresters, University of Idaho, 1923</figcaption>
 </figure>
 </div>
@@ -29,7 +29,7 @@ University of Idaho created a Department of Forestry in 1909, the second such pr
   </figure>
 </div>
 
-## About the Digitization Process
+## External Support
 
 The collection was developed with the support of [Project Ceres](https://www.crl.edu/collections/global-resources-partnership/global-resources-agriculture-partnership), a collaboration between the [Center for Research Libraries](https://www.crl.edu/), the [United States Agricultural Information Network (USAIN)](https://usain.org/), and the [Agriculture Network Information Collaborative (AgNIC)](https://agnic.org/). 
 
