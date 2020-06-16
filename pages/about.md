@@ -9,11 +9,11 @@ permalink: /about.html
 
 ## About the Collection
 
-This collection contains writings and memorabilia of Stanton Gilbert Fisher during the time of the Nez Perce War in 1877, along with correspondence and other records from members of the Fisher family through 1988. 
-
-{% include feature/item-figure.html objectid="fisher258"%}
+This collection contains writings and memorabilia of [Stanton Gilbert Fisher](#about-stanton-gilbert-fisher) during the time of the Nez Perce War in 1877, along with correspondence and other records from members of the Fisher family through 1988. 
 
 Most of the documents include maps, photographs, and written accounts of the war and its participants. There are handwritten letters from the war, maps of Idaho and troop movements, and photographs and drawings of people and places related to the war. Outside literature studying the war is also included, incorporating documents from various magazine clippings, a University of Idaho dramatic production, a small publication pieced together from firsthand accounts, a series of short stories written by one of the scouts, and newspaper articles referencing the war and its scouts. 
+
+{% include feature/item-figure.html objectid="fisher258"%}
 
 The collection also includes personal documents related to Stanton G. Fisher and his youngest son, Don C. Fisher, such as: a trail diary kept by Stanton G. Fisher in 1888; several handwritten essays and a typed manuscript relating adventures he heard or experienced; correspondence between Don Fisher and friends of his father; an envelope from Don Fisher's niece, Freda Terry; a receipt bearing Don Fisher's initials; and census papers from 1880, 1910, and 1930 noting various members of the Fisher family.
 
@@ -30,6 +30,9 @@ Some Nez Perce signed the 1863 treaty and "moved to the Lapwai reservation in Id
 "In the spring of 1877 Chief Joseph and his brother Ollokot met with General Howard on three occasions to try to avoid war and also asked that they be allowed to remain in the Wallowas. That request was denied. Several young warriors made retaliatory murderous raids against settlers along the Salmon River. Joseph and others knew that war was inevitable."[^12]
 
 The war itself consisted of a series of battles and resulted in hundreds of Nez Perce tribal members leaving their ancestral homeland and traveling on foot and horseback over 1,170 miles through four different states.[^13] The war officially ended on October 5, 1877, "as Chief Joseph rode slowly up a hill at the Bear Paw battlefield to where General Howard and Colonel miles waited. The Bear Paw was only 40 miles from the Canadian border where the Nez Perce hoped to join with Chief Sitting Bull of the Sioux. Some did reach Canada, but the larger number laid down their guns with the promise they could return to their homeland, a promise that was never kept. It was where Joseph was credited with the famous speech: 'From where the sun now sets I will fight no more forever.'"[^14]
+
+{% include feature/item-figure.html objectid="fisher280;fisher263"%}
+
 
 "The Nez Perce were promised by General Miles a safe return to the Wallowa Valley. General Miles was overruled, and the Nez Perce were instead sent to Kansas and Oklahoma, where the survivors of 1877 endured many more years of hardship. It was not until the mid-1880s that the Nez Perce were allowed to return to their homelands. Joseph and the other remaining tribal leaders spent their remaining years on the Colville Indian Reservation."[^15]
 
@@ -49,9 +52,8 @@ In 1889, Fisher was appointed Indian Agent for the Fort Hall reservation while a
 
 The effects of the treaties, war of 1877, and Fisher’s involvement in the war are still felt today.
 
-{% include feature/card.md text="This and other physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." header="Archival Context" %}
-
 ## Sources
+
 *"Indian Country Today" is a daily digital news platform that covers the Indigenous world, including American Indians and Alaska Natives. Many people who work for the non-profit are tribal members. This source was heavily relied upon for the history of the Nez Perce War of 1877 in an effort to ensure Native voices contribute to how Native history is shaped and told.*
 
 [^1]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
