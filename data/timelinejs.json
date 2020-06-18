@@ -1,8 +1,8 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
-{
+{%- assign items = site.data[site.metadata] | where_exp: "item","item.subject contains 'students'" -%}
+  {
     "title": {
         "media": {
           "url": "{% include image/featured-image.html %}",
@@ -10,8 +10,8 @@
           "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.description | jsonify }}
+          "headline": "A Timeline of Class Photos in the Bovill Collection",
+          "text": "Class photos from 1913 to 1990"
         }
     },
     "events": [
