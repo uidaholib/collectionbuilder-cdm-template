@@ -1,7 +1,7 @@
 ---
 layout: default
-gallery: true
 ---
+
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
 <div class="container py-3">
     <ul class="breadcrumb">

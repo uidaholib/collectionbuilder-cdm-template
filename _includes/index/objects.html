@@ -15,8 +15,8 @@
       <a class="text-dark" href="{{ 'audio' | prepend: '/browse.html#' | relative_url }}">Audio <span class="far fa-file-audio"></span></a><br>
       {% when 'video' %}
       <a class="text-dark" href="{{ 'video' | prepend: '/browse.html#' | relative_url }}">Videos <span class="far fa-file-video"></span></a><br>
-      {% else %}
-      <a class="text-dark" href="{{ 'pdf' | prepend: '/browse.html#' | relative_url }}">PDFs <span class="far fa-file"></span></a><br>
+      {% when 'compound_object' %}
+      <a class="text-dark" href="{{ 'compound_object' | prepend: '/browse.html#' | relative_url }}">Compound Objects <span class="far fa-compound_object"></span></a><br>
       {%- endcase -%}
       {%- endif -%}
       {%- endfor -%}
