@@ -1,7 +1,7 @@
 ---
 layout: default
+gallery: true
 ---
-
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -39,19 +39,18 @@ layout: default
                     </p>
                 </div>
                 {%- endif -%}
-                <div class="text-center my-2">
-                        {% if page.format contains "compound_object" %}
-                    <a target="_blank" href="https://digital.lib.uidaho.edu/digital/collection/spec_uihp/id/{{page.cdm-id}}" class="btn btn-outline-info"
+                <div class="my-2">
+                    {% if page.format contains "compound_object" %}
+                    <a target="_blank" href="https://digital.lib.uidaho.edu/digital/collection/spec_uihp/id/{{page.cdmid}}" class="btn btn-outline-info"
                         title="Object download">View Folder of Images</a>
-                        {%else%}
+                        {%- else -%}
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info"
                         title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
-                        {%endif%}
-                <div class="my-2">
+                        {%- endif -%}
                     {% if page.youtubeid %}
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v={{ page.youtubeid }}" class="btn btn-outline-info">View on YouTube</a>
                     {% else %}
-                    <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
+                    {% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}

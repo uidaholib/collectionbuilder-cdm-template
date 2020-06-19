@@ -27,7 +27,7 @@ Images come from ten different photograph collections and one manuscript collect
 * PG 101 Gem of the Mountains Collection 
 * MG 5299 Album of Photographs from [President Theodore Roosevelt's Visit to the University of Idaho](https://www.lib.uidaho.edu/digital/troosevelt/index.html), April 10, 1911
 
-The amount of items being digitized and put online is growing quickly, be sure to check our [Digital Initiatives](https://www.lib.uidaho.edu/digital/) collections often! Descriptions of all images from processed photograph collections housed in Special Collections can be searched through the [Historical Photograph Database](https://www.lib.uidaho.edu/special-collections/histphoto/).
+The amount of items being digitized and put online is growing quickly, so be sure to check our [Digital Initiatives](https://www.lib.uidaho.edu/digital/) collections often! Descriptions of all images from processed photograph collections housed in Special Collections can be searched through the [Historical Photograph Database](https://www.lib.uidaho.edu/special-collections/histphoto/).
 
 <div class="text-center">
 <figure class="figure">
@@ -38,7 +38,7 @@ The amount of items being digitized and put online is growing quickly, be sure t
 
 ## About Special Collections
 
-Head Librarian M. Belle Sweet first brought up the notion of a 'special collection' in September 1933, when in a letter she designated part of an old, unused elevator shaft that had been shelved and made into a small room. She saw the need to protect from environmental injury but also theft any books deemed rare, valuable, unique, or for any reason should be treated with care. 
+Head Librarian M. Belle Sweet first brought up the notion of a 'special collection' in September 1933, when in a letter she designated part of an old, unused elevator shaft that had been made into a small room with shelves. She saw the need to protect from environmental injury and theft any books that were deemed rare, valuable, unique, or for any reason should be treated with care. 
 
 <div class="text-center">
 <figure class="figure">
