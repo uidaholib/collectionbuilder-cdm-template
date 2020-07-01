@@ -1,30 +1,65 @@
-# Jekyll Digital Collection Generator
+##########
+# collectionbuilder-contentdm
+# Jekyll Digital Collection Generator, designed as a skin over CONTENTdm
+# https://github.com/CollectionBuilder/collectionbuilder-contentdm
+##########
 
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-
-# url variables
-# library's domain (only changed if using github pages)
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
 baseurl: /digital/uiext
-
+# location of code, the full url to your github repository
+source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
 
-# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Agricultural Experiment & UI Extension Publications
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: Primary sources for practical, research-based information on Idaho Agriculture, Forestry, Gardening, and Family and Consumer Sciences
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "A collaboration between the Library and University of Idaho Extension, the University of Idaho Extension and Idaho Agricultural Experiment Station Publications collection features over 2000 publications that serve as the primary source for practical, research-based information on Idaho agriculture, forestry, gardening, family and consumer sciences, and other to links." 
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: CollectionBuilder
+# Organization branding
+organization-name: "Digital Initiatives, University of Idaho Library"
+organization-link: https://www.lib.uidaho.edu/digital/
+organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
+organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+
+
+##########
+# COLLECTION SETTINGS
+#
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
+metadata: uiext
+# contentdm collection name, matches collection ID used by CDM
+cdm-collection-id: ui_ep
+# CONTENTdm server url
+cdm-url: https://digital.lib.uidaho.edu
+# page generation settings 
+# "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
   - data: 'uiext'
     template: 'items'
-    name: 'object-id'
+    name: 'objectid'
     dir: 'items'
-    extension: 'html'   
+    extension: 'html' 
+    filter: 'objectid'  
 
 # add liquid profiler to id bottlenecks
 # profile: true
 
-exclude: [docs/, Rakefile, README.md, LICENSE]
+exclude: [docs/, Rakefile, README.md, LICENSE, extras/]
 
 # compress CSS output
 sass:

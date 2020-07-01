@@ -1,92 +1,110 @@
-# Jekyll Digital Collection Generator
+##########
+# CollectionBuilder Theme Customization
+# values set here help configure details of individual pages in the website
+##########
 
-# Site settings
-title: Agricultural Experiment & UI Extension Publications
-# choose metadata, be sure to also change page_gen data setting!
-metadata: uiext # check against cdm-collection-id below -- this should be used in config file as well
-
-# repository variables (leave blank if self-contained)
-# url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
-# contentdm collection name 
-cdm-collection-id: ui_ep # 
-
-# header and head metadata
-tagline: Primary sources for practical, research-based information on Idaho Agriculture, Forestry, Gardening, and Family and Consumer Sciences
-description: "A collaboration between the Library and University of Idaho Extension, the University of Idaho Extension and Idaho Agricultural Experiment Station Publications collection features over 2000 publications that serve as the primary source for practical, research-based information on Idaho agriculture, forestry, gardening, family and consumer sciences, and other to links." 
-keywords: "UIResearch; Agricultural; Environmental; Idaho; UI;" # describing the whole collection -- add to the two provided
-author: # You! Add your github username
-
-# home page and browse
-home-banner-image-number: # use number of photo from collection
-home-banner-image-link: https://www.lib.uidaho.edu/media/digital/uiext/cornerpiece.png # leave blank unless no cdm number to generate item
-home-banner-image-title: A pink Idaho Agricultural Experiment Station cover with a tractor without any text on it  # for accessibility 
-home-title-y-padding: 8em # the margin from the top your title portion will appear
+##########
+# HOME PAGE
+#
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: https://www.lib.uidaho.edu/media/digital/uiext/cornerpiece.png
+home-title-y-padding: 8em # the margin from the top your title portion will appear.
 home-banner-image-position: # [options: top, center, bottom] Default: top
-carousel-height: 300px # must be in px; default is 300px.
+carousel-height: 300px # in px, but don't include the "px"; default is 450.
+# carousel can feature specific item types: image,pdf,youtube,thumbs
+carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 10 # set number of top subjects to display if auto generating
 featured-locations: Idaho; Moscow, ID (Extension Offices); 42 counties and 12 research and extension centers in Idaho #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: documents #options[documents,images,video,sound,data] separate semi-colon(';')
 
-# Browse page
+##########
+# ABOUT PAGE
+#
+# Featured image on About page - if left blank, CB will use image featured on the home page
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+about-featured-image: https://www.lib.uidaho.edu/media/digital/uiext/cornerpiece.png
+
+##########
+# BROWSE PAGE
+#
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
-# item page 
-browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
+##########
+# ITEM PAGE
+#
+# see _data/metadata-config.csv to define the metadata fields that will display.
+browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
 
-# Map page
+##########
+# SUBJECTS PAGE
+#
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 4 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# LOCATIONS PAGE
+#
+locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# MAP PAGE
+#
 # see _data/map-config.csv for field display options
 latitude: 46.728077 #to determine center of map
 longitude: -117.020026 #to determine center of map
 zoom-level: 10 # zoom level for map 
+map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
 map-cluster: true # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-# Subject page
-subjects-page: true # true / false, turns off subject generation 
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud
-subjects-min: 4 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+##########
+# TIMELINE PAGE
+#
+year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: 5 # set increments to auto gen nav years
 
-# Locations page
-locations-page: false # true/false
-locations-fields: location # set of fields separated by ; to be featured in the cloud
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
-
-# timeline
-year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
-year-nav-increment: 5 # set increments when auto gen nav years
-
-# About page
-about-off: # true / false | If left blank, will show "Learn More" button on front page; anything else entered will turn that button off. If no About page, you'll need to erase link in nav-configuration as well. 
-
-# Data 
+##########
+# DATA 
+# 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,date,type,rights,format,link,identifier,pubtype,pubtype-full,rights-standardized,source,number,language,creator,subject,subject-lcsh,publisher,cdm-id,object-id"
+metadata-export-fields: "title,description,date,type,rights,format,link,identifier,pubtype,pubtype-full,rightsstatements,source,number,language,creator,subject,subject-lcsh,publisher,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,publisher,pubtype"
 
-# images 
+##########
+# ADVANCED OPTIONS
+#
+# CDM image % for IIIF
 image-percentage-large: # default 70
 image-percentage-medium: # default 40 
 image-percentage-small: # default 20
 
-# Theme Options
+# NAVBAR COLORS
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
 navbar-background: bg-dark
-# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+
+# BOOTSWATCH THEMES
+# You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: # leave blank or comment out for plain bootstrap
 
-gh-repository: https://github.com/uidaholib/collectionbuilder-cdm-template
+# THEME FONTS
+base-font-size: 1.2em
+text-color: "#111"
+link-color: "#00AEC7"
+base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+

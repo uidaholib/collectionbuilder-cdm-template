@@ -1,5 +1,6 @@
-field,displayName,btn,hidden
-date,Date,
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date
 creator,Creator,
 pubtype,,true
 subject,,true
+identifier,,,true,Identifier
