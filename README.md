@@ -1,15 +1,12 @@
 # Notes
 
-## Metadata
-- Changed metadata header "keywords" to "subject"
-- Need to look at the metadata.  It's a frankenstein of the old stuff and the new.  I combined all the unique fields from both the "old" and "new" football.csv spreadsheets.  May be rundundant, may be useful.  Various links, file names, and id fields are all over the place.
-- Subjects are not overly interesting, but provide a nice geographical/school browse option.  This should probably be enhanced to create a list of all schools represented.  Some, like Weber State, are not listed, and just grouped under "utah".
+https://www.lib.uidaho.edu/digital/
 
-## Other
-- Needs a better about page.  Really don't know what to say on this.
-  - Updated the about page.
+This highly customized version of [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) is used by the University of Idaho Library to create skins for the digital library collections maintained in a hosted CONTENTdm instance. 
+Active development takes place in the [CollectionBuilder-CONTENTdm repository](https://github.com/CollectionBuilder/collectionbuilder-contentdm).
 
-## Possible Enhancements
-- Would there be any value in putting these in context of their conferences?  I don't know the history of the conference system or when we were in what, but maybe there is something to that.  Would take a bit of historical research by someone.  
-- Also - any information about the artists of these covers?  That would add something.
-- Map could be enhanced by a different basemap, or a layer with something interesting, maybe a conference spatial layer?  Quick search online - no layers that I saw, just a bunch of simple MS Paint maps.
+Librarians and staff work with a clean version of a single collection's metadata, as stored in a .csv file.
+Collection settings are customized using the [`_data/theme.yml`](https://github.com/uidaholib/collectionbuilder-cdm-template/blob/master/_data/theme.yml).
+Each digital collection is a branch in this repository.
+
+While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
