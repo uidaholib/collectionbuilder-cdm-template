@@ -1,6 +1,6 @@
 # Notes
 
-Collection updated June 2020. Lat/Long still left out due to ambiguity of locations of images. Descriptions updated and subjects added. About is populated with information scraped from the old website.
+Collection updated June 2020. Lat/Long still left out due to ambiguity of locations of images. Descriptions updated and subjects added. About is populated with information scraped from the old website plus info on the physical collection in Spec.
 
 https://www.lib.uidaho.edu/digital/
 
