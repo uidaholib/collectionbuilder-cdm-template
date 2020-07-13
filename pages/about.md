@@ -5,7 +5,59 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About Idaho Football;About the Collection;Sources" %} 
+{% include feature/nav-menu.html sections="About the Collection;About Idaho Football;Sources" %} 
+
+
+## About the Collection
+
+This collection contains over 50 years of game-day program covers, spanning 1908-1967. The programs include games outside of Idaho as well as home games in Moscow.
+
+<div class="row">
+<div class="col-md-6">{% include feature/item-figure.html objectid="footballcovers9" %}</div>
+<div class="col-md-6">{% include feature/item-figure.html objectid="footballcovers64" %}</div>
+</div>
+
+Programs include games against:
+
+<div class="row">
+<div class="col-md-6 p-md-4" markdown="1">
+- Arizona State University
+- Army
+- Air Force Academy
+- Brigham Young University
+- College of the Pacific
+- Farragut Navy
+- Fresno State College
+- Gonzaga University
+- Idaho State University
+- Montana State University
+- North Dakota Agricultural College
+- North Dakota State College
+- Oregon State University
+- Pacific Memorial
+- Parsons College
+- Portland University
+</div>
+<div class="col-md-6 p-md-4" markdown="1">
+- San Jose State University
+- University of Arizona
+- University of Houston
+- University of Idaho Varsity vs. University of Idaho Alumni
+- University of Missouri
+- University of Montana
+- University of Oregon
+- University of Southern California
+- University of Utah
+- University of Washington
+- Utah State University
+- Washington State College
+- Washington State University
+- Weber State College
+- Willamette University
+</div>
+</div>
+
+{% include feature/item-figure.html objectid="footballcovers14" %}
 
 ## About Idaho Football
 
@@ -61,6 +113,8 @@ The team has a complex history of conference membership[^1]
 - NCAA FCS (formerly I-AA), 2018 - present
     - Big Sky Conference (2018 - present)
 
+{% include feature/item-figure.html objectid="footballcovers87" width="50" %}
+
 ### Rivalries
 
 The football team has 4 rivalries[^1]
@@ -81,17 +135,16 @@ As of 2020, 16 players have advanced to the NFL and 6 have advanced to the CFL i
 
 Between 1937-1968, Idaho football games were held at the wooden Neale Stadium. It was demolished and replaced with the concrete William H. Kibbie-ASUI Activity Center (commonly known as the Kibbie Dome) in 1971. The Kibbie Dome has "just 16,000 permanent seats," making it "the second smallest home stadium for college football in Division I FBS (formerly Division I-A)."[^4] It is likely that prior to Neale Stadium, football games were played on MacLean Field.[^5]
 
-{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/273/default.jpg?highlightTerms=" caption="MacLean Field, football practice, 1922" %}<!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/273 --->
+<div class="row">
+<div class="col-md-3">{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/273/default.jpg?highlightTerms=" caption="MacLean Field, football practice, 1922" %}</div><!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/273 --->
 
-{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/1899/default.jpg?highlightTerms=" caption="Neale Stadium, 1940" %}<!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/1899 --->
+<div class="col-md-3">{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/1899/default.jpg?highlightTerms=" caption="Neale Stadium, 1940" %}</div><!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/1899 --->
 
-{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/708/default.jpg?highlightTerms=" caption="Kibbie-ASUI Activity Center, architect's drawing, 1971" %}<!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/708 --->
+<div class="col-md-3">{% include image.html url="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/708/default.jpg?highlightTerms=" caption="Kibbie-ASUI Activity Center, architect's drawing, 1971" %}</div><!--- https://digital.lib.uidaho.edu/digital/collection/pg1/id/708 --->
 
-## About the Collection
+</div>
 
-This collection contains over 50 years of game-day program covers, spanning 1908-1967. The programs include games outside of Idaho as well as home games in Moscow.
 
-{% include feature/item-figure.html objectid="footballcovers87" width="50" %}
 
 
 [^1]: [Idaho Vandals football](https://en.wikipedia.org/wiki/Idaho_Vandals_football)
