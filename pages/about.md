@@ -3,6 +3,9 @@ title: About the CCC in Idaho
 layout: about
 permalink: /about.html
 ---
+{% include feature/jumbotron.html %} 
+
+{% include feature/nav-menu.html sections="The CCC in Idaho" %}
 
 ## The CCC in Idaho 
 
@@ -74,9 +77,7 @@ The number of camps and enrollees in the CCC peaked in the nation and in Idaho i
 
 Communities, at first curious and even hostile to the idea of outsiders coming to their area, usually became accustomed to seeing them at work and then became CCC boosters. Economic benefits were tangible in terms of goods and services provided to camps. One Palouse farmer, for example, made a business out of feeding the camp's slops to pigs that he then sold back to the camp. 
 
-{% include feature/item-figure.html objectid="cccidaho370" width="75" %}
-
-{% include feature/item-figure.html objectid="cccidaho91" width="75" %}
+{% include feature/item-figure.html objectid="cccidaho370;cccidaho91" %}
 
 Travelers along the remote Magruder Road today can thank the enrollees of Camp Deep Creek who finished the road through the wildest parts of Idaho on July 16, 1936. First with pickaxes and shovels and then with bulldozers, CCC enrollees built roads, trails, and bridges in remote areas, paving the way for economic and recreational development. By opening the backcountry, the CCC also incurred the wrath of wilderness advocates who decried road building that introduced automobiles into natural areas in the West where they had never been before. 
 
@@ -84,13 +85,10 @@ Travelers along the remote Magruder Road today can thank the enrollees of Camp D
 
 Harry Shellworth was a Republican advocate for the CCC from the very beginning. He also used his influence to create CCC partnerships to support commercial interests, especially by arranging for CCC camps to build lookouts for the Southern Idaho Timber Protective Association (SITPA), which he headed. In 1937, CCC Camps McCall and Smith's Ferry finished two stunning SITPA compounds, which were designed by Finnish foremen using a distinctive log joining technique. 
 
-{% include feature/item-figure.html objectid="cccidaho53" width="75" %}
+{% include feature/item-figure.html objectid="cccidaho53;cccidaho1202" %}
 
-{% include feature/item-figure.html objectid="cccidaho1202" width="75" %}
+In July 1941, enrollees bent over radio parts at Lake Fork as part of a national policy shift toward national defense and preparedness. When the CCC was moved to Federal Security Agency in 1939, CCC enrollees could receive training potentially useful should the United States formally enter the Second World War. The CCC initially reflected sentiment against military training due to a desire to stay out of another European war, and training for combat was never allowed in CCC camps. However, hundreds of thousands of young men had learned military-style discipline and teamwork from their time in the CCC and were prepared physically and socially when the time came. When the United States did enter the war on December 8, 1941, many of the new NCOs were former CCC enrollees.  
 
-
-In July 1941, enrollees bent over radio parts at Lake Fork as part of a national policy shift toward national defense and preparedness. When the CCC was moved to Federal Security Agency in 1939, CCC enrollees could receive training potentially useful should the United States formally enter the Second World War. The CCC initially reflected sentiment against military training due to a desire to stay out of another European war, and training for combat was never allowed in CCC camps; however, hundreds of thousands of young men had learned military-style discipline and teamwork from their time in the CCC and were prepared physically and socially when the time came. When the United States did enter the war on December 8, 1941, many of the new NCOs were former CCC enrollees.  
-
-The Civilian Conservation Corps was officially closed June 30, 1942, following the United States  entrance into the Second World War. 
+The Civilian Conservation Corps was officially closed June 30, 1942, following the United States entrance into the Second World War. 
 
 {% include feature/item-figure.html objectid="cccidaho113" width="75" %}
