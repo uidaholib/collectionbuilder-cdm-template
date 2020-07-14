@@ -1,11 +1,10 @@
 ---
 title: About the CCC in Idaho
-layout: page
+layout: about
 permalink: /about.html
 ---
 
-{:.mb-3 .border-bottom .display-2}
-## About the CCC in Idaho 
+## The CCC in Idaho 
 
 On an evening in March 1933, newly elected President Franklin D. Roosevelt sat at a table in Washington D.C. surrounded by some of his new cabinet secretaries and drew a simple diagram on a scrap of paper for a visionary plan to rebuild lives and restore blighted natural resources. In a few strokes, he laid out what was to evolve into the most popular and widely dispersed of the New Deal programs: The Civilian Conservation Corps.
 

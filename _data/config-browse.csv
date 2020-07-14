@@ -1,5 +1,5 @@
-field,display_name,btn,hidden
-date,Date,
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date
 ccc-camp-number,Camp #,true
 ccc-company-number,Company #,true
 subject,,true
@@ -7,3 +7,4 @@ location,,true
 source,,,true
 format-original,,,true
 contributing institution,,,true
+identifier,,,true,Identifier
