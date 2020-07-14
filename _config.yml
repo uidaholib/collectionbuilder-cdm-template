@@ -22,12 +22,12 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: pg2
+title: University of Idaho Student Organizations Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
+tagline: A collection of photographs documenting student organizations from 1893 to 1992
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho"  
+description: "A digital collection comprised of 2634 photographs of student organizations and activities at the University of Idaho from 1893 to 1992."  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding

@@ -5,21 +5,11 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/nav-menu.html sections="About the Collection" %} 
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
-
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
-
-## About the UI Boxing Team
-
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
-
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
-
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+The University of Idaho Student Organizations Collection is a collection of digitized historical images focused on student organizations and events at the University of Idaho's main campus in Moscow, ID. This digital collection is mostly taken from the library's Special Collections & Archive's UI Student Organizations Collection, which is referred to as Photograph Group 2 (PG2). The collection comprises thousands of images spanning from 1893 to the early 1990s.
 
 
 <div class="clearfix"></div>

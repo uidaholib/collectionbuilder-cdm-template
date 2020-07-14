@@ -2,4 +2,6 @@ field,display_name,search
 date,Date,true
 creator,Creator,true
 subject,Subjects,true
+campus event,Campus Event,true
+campus organization,Campus Organization,true
 location,Location,true

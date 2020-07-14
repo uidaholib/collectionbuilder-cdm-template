@@ -5,3 +5,4 @@ campus event,,true
 campus organization,,true,,Campus Org
 description,,,true
 identifier,,,true,Identifier
+donor,,,true,

@@ -5,9 +5,12 @@ date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
+campus event,Campus Event,true,,
+campus organization,Campus Organization,true,,
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
+donor,Donor,true,,
 collection,Source Collection
 source,Source
 identifier,Source Identifier
