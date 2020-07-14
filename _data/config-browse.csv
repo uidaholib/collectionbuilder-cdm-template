@@ -2,3 +2,7 @@ field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 subject,,true
 identifier,,,true,Identifier
+country,,,true
+state,,,true
+county,,,true
+city,,,true
