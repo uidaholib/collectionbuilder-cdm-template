@@ -95,6 +95,3 @@ In July 1941, enrollees bent over radio parts at Lake Fork as part of a national
 The Civilian Conservation Corps was officially closed June 30, 1942, following the United States  entrance into the Second World War. 
 
 {% include feature/item-figure.html objectid="cccidaho113" width="75" %}
-
-<style>
-h2,h3,p{margin-left:auto;margin-right:auto;max-width:645px;}
