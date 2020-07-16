@@ -1,7 +1,8 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 subject,,true
-opponent,,true
-location (city),,true
+location,,true,,Stadium
+opponent,,,true
+location (city),,,true
 cost,Cost
 identifier,,,true,Identifier

@@ -1,5 +1,6 @@
 field,display_name,search
 date,Date,true
-creator,Creator,true
-subject,Subjects,true
+opponent,Opponent,true
 location,Location,true
+score,Score,false
+cost,Cost,false
