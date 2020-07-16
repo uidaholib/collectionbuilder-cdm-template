@@ -1,12 +1,11 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
-date is approximate,Approximated Date
+date_is_approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
-campus event,Campus Event,true,,
-campus organization,Campus Organization,true,,
+campus_event,Campus Event,true,,
+campus_organization,Campus Organization,true,,
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
@@ -15,6 +14,6 @@ collection,Source Collection
 source,Source
 identifier,Source Identifier
 type,Type,,DCTERMS.type
-format-original,Format Original
+format_original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license

@@ -2,7 +2,7 @@
 title: Campus Events
 layout: cloud
 permalink: /events.html
-cloud-fields: campus event
+cloud-fields: campus_event
 ---
 
 ## Browse Campus Events 
