@@ -28,8 +28,6 @@ Dr. Wegars' research has uncovered INS, Forest Service, Border Patrol, and Unive
 These, combined with internee and employee oral and written interviews, illuminate the internees' experiences, emphasizing the perspectives of the men detained at the Kooskia Internment Camp.
 For more information see her [website](http://www.uiweb.uidaho.edu/LS/AACC/KOOSKIA.HTM").
 
-<div class="clearfix"></div>
-
 ## ABOUT THE SCRAPBOOK
 
 The Kooskia Internment Camp Scrapbook is a hand-made manuscript consisting of 148 photographs (and two drawings) of activities and and buildings related the Kooskia Internment Camp.
@@ -50,3 +48,4 @@ Powell, WY: Western History Publications, 2001, pp. 145-183.
 The University of Idaho Library also holds an internment camp diary written in Japanese.
 More information regarding the diary can be found [here](http://www.lib.uidaho.edu/special-collections/dm/dm1997.htm).
 
+<div class="clearfix"></div>
