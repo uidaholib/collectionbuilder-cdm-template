@@ -24,7 +24,8 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/2112/default.jpg
+about-featured-image: 
+
 
 ##########
 # BROWSE PAGE
