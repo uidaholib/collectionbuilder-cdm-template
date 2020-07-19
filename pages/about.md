@@ -13,16 +13,33 @@ The Cattle Producer's Handbook began in the mid 1970s. The first edition was put
 
 The Cattle Producer’s Handbook is prepared by the Western Beef Resource Committee, which consists of beef specialists, economists, range scientists, animal nutritionists, county educators, and veterinarians from the Cooperative Extension System and from cattle industry representatives. The WBRC meets annually to review publication content and represents the following universities: University of Arizona, University of California, Colorado State University, University of Hawaii, University of Idaho, Montana State University, University of Nevada, New Mexico State University, Oregon State University, Utah State University, Washington State University, and University of Wyoming.  
 
-{% include feature/item-figure.html objectid="pg1/2112" %}
+<div class="text-center"> 
 
-## About the UI Boxing Team
+<figure class="figure"> 
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+<a href="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2112" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/2112/default.jpg" class="figure-img img-fluid rounded" alt="Cattle lying in a field at the University of Idaho Farms, circa 1935"></a> 
 
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
+<figcaption class="figure-caption">Cattle lying in a field at the University of Idaho Farms, circa 1935</figcaption> 
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+</figure> 
 
+</div> 
+
+## About the Idaho Cattle Industry
+
+There are over 2.1 million cattle in the state of Idaho raised by 7,700 farming and ranching operations, most of which are family owned. According to the [Idaho State Department of Agriculture](https://agri.idaho.gov/main/idaho-livestock/), dairy is Idaho’s top agricultural industry, with an annual milk yield of over 13 billion pounds and valued at over $2.2 billion. Supporting this industry is the [Animal, Veterinary and Food Sciences Program](https://www.uidaho.edu/cals/animal-veterinary-and-food-sciences/research-and-extension), serving Idaho’s top agricultural commodity of beef cattle. The Idaho beef industry contributes $500 million to $700 million annually, depending on market conditions, to Idaho’s economy. The University of Idaho’s College of Agricultural and Life Sciences and its various research, extension and education centers throughout the state conduct research and provide educational programs in health, production, range cow, integrated resource and sustainable management, as well as cow-calf nutrition and feedlot nutrition. Dairy programs conduct research and provide Extension programs in the areas of nutrition, lactation and reproductive physiology, herd health, milk quality, safety, breeding and genetics. Strong cooperative programs exist with allied industry and cooperator herds across the state. Excellent relationships exist with the United Dairymen of Idaho and association support is substantial. Overall, animal and plant agriculture constitutes over 21 percent of Idaho’s economy.  
+
+<div class="text-center"> 
+
+<figure class="figure"> 
+
+<a href="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2174" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/2174/default.jpg" class="figure-img img-fluid rounded" alt="Cattle grazing at the University of Idaho Farms, circa 1935"></a> 
+
+<figcaption class="figure-caption">Cattle grazing at the University of Idaho Farms, circa 19355</figcaption> 
+
+</figure> 
+
+</div> 
 
 <div class="clearfix"></div>
 
