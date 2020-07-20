@@ -16,7 +16,7 @@ A variety of photographs from several photographic collections held by Special C
 Images come from ten different photograph collections and one manuscript collection, many of which have since been digitized in their entirety or as part of other digital collections. The list of source collections and links if available are below:
 
 * [PG 1 University of Idaho Campus Photographs](https://www.lib.uidaho.edu/digital/campus/) 
-* [PG 2 University of Idaho Student Organizations Collection](https://digital.lib.uidaho.edu/digital/collection/pg2)  
+* [PG 2 University of Idaho Student Organizations Collection](https://www.lib.uidaho.edu/digital/pg2/)  
 * PG 3 University of Idaho Portrait Collection 
 * PG 6 Idaho Collection
 * PG 20 University of Idaho Publications Department Negatives
@@ -51,7 +51,7 @@ Today, Special Collections and Archives specializes in the acquisition, preserva
 
 ## About Digital Initiatives
 
-The department was established in 2008 with an initial charge to digitize and make accessible the library’s renowned International Jazz Collections. Material from the Jazz Collections continue to be added to this day, and we continue to build on our collections. We currently maintain over 70 digital collections and applications, and work that begun in the lab has now been incorporated into a library department, Data and Digital Services, and a University center, the [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/). CDIL is a collaboration between the library and the [College of Letters, Arts, and Social Sciences (CLASS)](https://www.uidaho.edu/class) that intends to improve the capacity for digital scholarship work at UI.
+The department was established in 2008 with an initial charge to digitize and make accessible the library’s renowned International Jazz Collections. Material from the Jazz Collections continue to be added to this day, and we continue to build on our collections. We currently maintain over 70 digital collections and applications, and work that begun in the lab has now been incorporated into a library department, Data and Digital Services, and a University center, the [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/). CDIL is a collaboration between the library and the [College of Letters, Arts, and Social Sciences (CLASS)](https://www.uidaho.edu/class) that advances digital scholarship work at UI.
 
 <div class="text-center">
 <figure class="figure">
@@ -61,6 +61,3 @@ The department was established in 2008 with an initial charge to digitize and ma
 </div>
 
 Starting in 2020, the U of I Library Special Collections department now resides under Digital Initiatives. This gives us the best opportunity for collaboration on digital and physical preservation of materials and to expand our efforts on collection and preservation of born-digital files. 
-
-
-{% include credits.md %}
