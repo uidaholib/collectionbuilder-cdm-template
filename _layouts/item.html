@@ -18,7 +18,22 @@ gallery: true
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
-                {%- else -%}
+                {% elsif page.format contains 'compound' %}
+                    {% assign start = page.cpdstart %}
+                    {% assign end = page.cdmid %}
+                    {%- assign compoundrange_size = end | minus: start -%}
+                    {% for c in (start..end) limit:4 %}{% unless forloop.last %}
+                    <div class="gallery-img border pt-4" {% if forloop.first %}id='first-gal'{% endif %} data-src="{{ site.cdm-url }}/digital/iiif/{{ page.collectionid | default: site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
+                        {% if forloop.first %}<p><small>Click any image to view all {{ compoundrange_size }} images in full-screen gallery</small></p>{% endif %}
+                        <p><img src="{{ site.cdm-url }}/digital/iiif/{{ page.collectionid | default: site.cdm-collection-id }}/{{ c }}/full/pct:{{ site.data.theme.image-percentage-small | default: 20 }}/0/default.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    </div>
+                    {% endunless %}{% endfor %}
+                    {% for c in (start..end) offset:3 %}{% unless forloop.last %}
+                    <div class="gallery-img border pt-4 d-none" {% if forloop.first %}id='first-gal'{% endif %} data-src="{{ site.cdm-url }}/digital/iiif/{{ page.collectionid | default: site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
+                        <p><img src="{{ site.cdm-url }}/digital/iiif/{{ page.collectionid | default: site.cdm-collection-id }}/{{ c }}/full/pct:{{ site.data.theme.image-percentage-small | default: 20 }}/0/default.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    </div>
+                    {% endunless %}{% endfor %}
+                {% else %}
                 <div class="mt-4">
                     <p>
                         {%- if page.format contains 'audio' -%}
@@ -39,14 +54,14 @@ gallery: true
                     </p>
                 </div>
                 {%- endif -%}
+
                 <div class="my-2">
-                    {% if page.format contains "compound_object" %}
-                    <a target="_blank" href="https://digital.lib.uidaho.edu/digital/collection/spec_uihp/id/{{page.cdmid}}" class="btn btn-outline-info"
-                        title="Object download">View Folder of Images</a>
-                        {%- else -%}
+                    {% if page.format contains "compound" %}
+                    <button target="_blank" onclick="$('#first-gal').click();" class="btn btn-outline-info" title="Object download">Download JPG in Gallery</button>
+                    {% else %}
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info"
                         title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
-                        {%- endif -%}
+                    {%- endif -%}
                     {% if page.youtubeid %}
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v={{ page.youtubeid }}" class="btn btn-outline-info">View on YouTube</a>
                     {% else %}
