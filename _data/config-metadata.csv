@@ -6,6 +6,10 @@ date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 contributors,Contributors
 subject,Subjects,true,DCTERMS.subject,keywords
+country,Country,
+state,State
+county,County
+city,City
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
