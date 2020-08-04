@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+The Argonaut Photograph Collection features over 700 photos taken by The Argonaut staff members between the years 1980 and 1988. The images depict sporting events, academic groups, and other aspects of student life. 
 
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
