@@ -59,7 +59,7 @@ The effects of the treaties, war of 1877, and Fisher’s involvement in the war 
 
 [^1]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
 
-[^2]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/); [Smith, Elizabeth M. "History of the Boise National Forest, 1905-1976." Idaho State Historical Society, 1983, p.3-4.](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf)
+[^2]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/); [McNeel, Jack. "10 Things You Should Know About the Nez Perce Tribe." Indian Country Today, April 12, 2017.](https://indiancountrytoday.com/archive/10-things-you-should-know-about-the-nez-perce-tribe-bFbKNrLV6kCvHNe7Eyhc7w); [Smith, Elizabeth M. "History of the Boise National Forest, 1905-1976." Idaho State Historical Society, 1983, p.3-4.](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf)
 
 [^3]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/)
 
