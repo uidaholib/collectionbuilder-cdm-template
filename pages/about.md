@@ -10,7 +10,7 @@ permalink: /about.html
 
 ### The Photographs
 
-The White Pine -- King of Many Waters Collection contains 134 historic photographs of logging methods, sawmills and shingle mills, and lumbermen compiled by Clarence Strong and Clyde Webb in the 1960s while conducting research on early lumber practices in Northern Idaho. 67 of these photos appear in their subsequent book, White Pine: King of Many Waters.
+The White Pine -- King of Many Waters Collection contains 134 historic photographs of logging methods, sawmills and shingle mills, and lumbermen compiled by Clarence Strong and Clyde Webb in the 1960s while conducting research on early lumber practices in Northern Idaho. 67 of these photos appear in their subsequent book, *White Pine: King of Many Waters*.
 
 ### The Book
 
@@ -21,7 +21,7 @@ The book is a culmination of a six year research project by two retired forester
 
 In compiling the date for White Pine, Strong and Webb spent many tedious hours copying information on sawmill locations and output, mill and lumberyard fires, and other historical material from old newspapers and lumber trade journals. They also spent many interesting hours interviewing old-timers--former lumbermen--who were active in Northern Idaho in the early days of lumbering. 
 
-Copies of White Pine: King of Many Waters may be found at the University of Idaho Library. 
+Copies of *White Pine: King of Many Waters* may be found at the University of Idaho Library. 
 
 <div class="clearfix"></div>
 
