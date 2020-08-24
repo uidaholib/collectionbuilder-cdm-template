@@ -7,9 +7,9 @@ description,Description,,DCTERMS.description,description
 contributors,Contributors
 subject,Subjects,true,DCTERMS.subject,keywords
 country,Country,
-state,State
-county,County
-city,City
+state,State,true
+county,County,true
+city,City,true
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
