@@ -8,7 +8,7 @@ subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation
 country,Country
 state,State
-county,county
+county,County
 city,City
 latitude,Latitude
 longitude,Longitude
