@@ -63,7 +63,7 @@ map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStr
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
 map-cluster: true # suggested for large collection or with many items in same location
-map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
+map-cluster-radius: 10 # size of clusters, from ~ 10 to 80
 
 ##########
 # TIMELINE PAGE
