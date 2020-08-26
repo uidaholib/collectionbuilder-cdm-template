@@ -102,7 +102,7 @@ When Frank Robinson died on October 19, 1948, his son, Alfred, who had assisted 
 
 ## About the Collection
 
-By 1955, the University of Idaho Library was fortunate enough to have obtained copies of the lessons and books authored by Dr. Robinson. In august 1955, Robinson's widow and son delivered four sealed boxes to the library, which were to remain sealed for 25 years. After 25 years, these boxes were opened; the contents, along with a brief biographical history of Dr. Frank Robinson, are described in our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).
+By 1955, the University of Idaho Library was fortunate enough to have obtained copies of the lessons and books authored by Dr. Robinson. In August 1955, Robinson's widow and son delivered four sealed boxes to the library, which were to remain sealed for 25 years. After 25 years, these boxes were opened; the contents, along with a brief biographical history of Dr. Frank Robinson, are described in our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).
 
 Included in the three [boxes of correspondence](browse.html#student%20correspondence) are letters between Psychiana headquarters and students in eighteen countries. Carbon copies of Psychiana's replies are attached to most of the original letters from students. The letters from students which Robinson used in his publications are marked with quotation marks; occasionally words were changed or sentences rearranged.
 
