@@ -9,14 +9,14 @@
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
 featured-image: whitepine137
-home-title-y-padding: 10em # the margin from the top your title portion will appear.
-home-banner-image-position: # [options: top, center, bottom] Default: top
+home-title-y-padding: 12em # the margin from the top your title portion will appear.
+home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Kootenai County;Benewah County;Shoshone County #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 ##########
@@ -24,7 +24,7 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: whitepine44
+about-featured-image: whitepine76
 
 ##########
 # BROWSE PAGE
@@ -48,7 +48,7 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: state;county;city # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -76,7 +76,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,description,date,date approximate,subject,source,publisher,book relationship,identifier,format original,format,type,rights,standardized rights,language,date digital,location,geonames,latitude,longitude,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,creator,description,date,date approximate,subject,source,publisher,book relationship,identifier,format original,format,type,rights,rightsstatement,language,date digital,location,state,county,city,geonames,latitude,longitude,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,location,creator"
 
