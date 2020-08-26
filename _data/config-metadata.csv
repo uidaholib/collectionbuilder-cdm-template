@@ -7,6 +7,7 @@ subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
+location,Location
 collection,Source Collection
 source,Source
 identifier,Source Identifier
