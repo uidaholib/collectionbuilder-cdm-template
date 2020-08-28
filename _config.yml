@@ -22,12 +22,12 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Trees Grew Tall Photograph Collection
+title: The Trees Grew Tall Photograph Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs used in the making of the book Trees Grew Tall, 1898 - 1943
+tagline: Photographs used in the making of the book The Trees Grew Tall, 1898 - 1943
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 242 photographs of life in Bovill, Idaho and surrounding areas from 1898 - 1943. These photographs were taken or collected by John B. Miller and used in his book *Trees Grew Tall*."  
+description: "A digital collection comprised of 242 photographs of life in Bovill, Idaho and surrounding areas from 1898 - 1943. These photographs were taken or collected by John B. Miller and used in his book *The Trees Grew Tall*."  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
