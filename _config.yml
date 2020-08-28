@@ -43,7 +43,7 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
 metadata: treesgrewtall 
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: boxing
+cdm-collection-id: treesgrewtall
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
