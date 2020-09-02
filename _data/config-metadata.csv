@@ -11,6 +11,8 @@ longitude,Longitude
 collection,Source Collection
 source,Source
 identifier,Source Identifier
+usfs number,USFS Number
+Publisher,Publisher
 type,Type,,DCTERMS.type
 format-original,Format Original
 format,Format,,,encodingFormat
