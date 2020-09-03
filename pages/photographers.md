@@ -1,7 +1,10 @@
 ---
 title: Photographers
-layout: photographers
+layout: cloud
 permalink: /photographers.html
+cloud-fields: creator
+cloud-min: 1
+cloud-stop: 
 ---
 
 ## Browse Photographers
