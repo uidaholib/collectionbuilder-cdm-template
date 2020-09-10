@@ -14,7 +14,7 @@ permalink: /about.html
   <footer class="blockquote-footer">John B. Miller in <cite title="Source Title">The Trees Grew Tall</cite></footer>
 </blockquote>
 
-The 242 photographs in this collection were taken or collected by John B. Miller during the years 1898 to 1943. They feature homesteading life on the Palouse as well as glimpses into the early lumber, mining, and railroad industries in the area.  
+The 242 photographs in this collection were taken or collected by John B. Miller during the years 1898 to 1943. They feature homesteading life on the Palouse as well as glimpses into the early lumber, mining, and railroad industries in the area. The photographs were used in Miller's book *The Trees Grew Tall*, an eclectic history of Bovill and the surrounding areas.
 
 {% include feature/item-figure.html objectid="trees51" width="50" %}
 
