@@ -9,11 +9,6 @@ permalink: /about.html
 
 ## About the Collection
 
-<blockquote class="blockquote">
-  <p class="mb-0">There was no avoiding the day when it would give the trees of its forest. For in the trees was found — and *still* is found — the real wealth. The trees grew tall.</p>
-  <footer class="blockquote-footer">John B. Miller in <cite title="Source Title">The Trees Grew Tall</cite></footer>
-</blockquote>
-
 The 242 photographs in this collection were taken or collected by John B. Miller during the years 1898 to 1943. They feature homesteading life on the Palouse as well as glimpses into the early lumber, mining, and railroad industries in the area. The photographs were used in Miller's book *The Trees Grew Tall*, an eclectic history of Bovill and the surrounding areas.
 
 {% include feature/item-figure.html objectid="trees51" width="50" %}
@@ -22,14 +17,23 @@ The 242 photographs in this collection were taken or collected by John B. Miller
 
 When John B. Miller set out to record a history of the Bovill area, he wanted to produce more than a rudimentary history of the pioneer era of the town. The recorded history theretofore consisted of county files, newspaper clipping, old photographs, and other disjointed minutiae that lacked the detail necessary to tell the colorful story of Bovill in full. As he began collecting stories for his manuscript, Miller quickly realized that his friends, family, and other contributors would not settle for a basic history; rather, they demanded a “full reflection of the flavor and color of the times” filled with “the funny things, the ridiculous things, the dramatic and tragic things that were part of their lives.”[^1] 
 
-These retellings weave together a vivid history replete with stories like that of settlers Joe and Loud Wells, a married couple who were freed from slavery during the Civil War and moved to the Deary area from North Carolina in 1889. [^2] Other tales tell of clandestine whiskey sales during Prohibition, the felling of the White Pine King, and the multiple fires that devastated parts of downtown Bovill. 
+These retellings weave together a vivid history replete with stories like that of settlers Joe and Loud Wells, a married couple who were freed from slavery during the Civil War and moved to the Deary area from North Carolina in 1889. [^1] Other tales tell of clandestine whiskey sales during Prohibition, the felling of the White Pine King, and the multiple fires that devastated parts of downtown Bovill. 
 
 <div class="row">
 <div class="col-md-6">{% include feature/item-figure.html objectid="trees0" width="50" %}</div>
 <div class="col-md-6">{% include feature/item-figure.html objectid="trees122" %}</div>
 </div>
 
-The Trees Grew Tall serves as an animated catalog of frontier life in Bovill and other areas on the Palouse. To explore it further, find it in the University of Idaho Library [catalog](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71163097320001451). 
+*The Trees Grew Tall* serves as an animated catalog of frontier life in Bovill and other areas on the Palouse. To explore it further, find it in the University of Idaho Library [catalog](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71163097320001451). 
+
+<blockquote class="blockquote">
+  <p class="mb-0">"In the course of things, men work toward comforts and an easier life. In one way or another they will seek wealth, taking whatever the land will give. In the beginning, this land gave gold — sparingly, perhaps, but enough to attract the hopeful. Then, it gave a vigorous life and forest home, and a chance to scrub toward a ranch or farm.*
+
+*There was no avoiding the day when it would give the trees of its forest. For in the trees was found — and still is found — the real wealth. The trees grew tall."</p>
+</blockquote>
+*"In the course of things, men work toward comforts and an easier life. In one way or another they will seek wealth, taking whatever the land will give. In the beginning, this land gave gold — sparingly, perhaps, but enough to attract the hopeful. Then, it gave a vigorous life and forest home, and a chance to scrub toward a ranch or farm.*
+
+*There was no avoiding the day when it would give the trees of its forest. For in the trees was found — and still is found — the real wealth. The trees grew tall."*
 
 ## About John B. Miller
 
@@ -39,7 +43,7 @@ To learn more of Miller's story, listen to an interview from the [Latah County O
 
 {% include feature/button.md text="John B. Miller Oral History Interview" link="https://www.lib.uidaho.edu/digital/lcoh/people/miller_john.html" color="info" size="lg" %}
 
-[^1] Miller, John B. The Trees Grew Tall. Publisher not identified, 1972. 
+[^1] Miller, John B. *The Trees Grew Tall*. Publisher not identified, 1972.
 
 <div class="clearfix"></div>
 
