@@ -26,15 +26,6 @@ These retellings weave together a vivid history replete with stories like that o
 
 *The Trees Grew Tall* serves as an animated catalog of frontier life in Bovill and other areas on the Palouse. To explore it further, find it in the University of Idaho Library [catalog](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71163097320001451). 
 
-<blockquote class="blockquote">
-  <p class="mb-0">"In the course of things, men work toward comforts and an easier life. In one way or another they will seek wealth, taking whatever the land will give. In the beginning, this land gave gold — sparingly, perhaps, but enough to attract the hopeful. Then, it gave a vigorous life and forest home, and a chance to scrub toward a ranch or farm.*
-
-*There was no avoiding the day when it would give the trees of its forest. For in the trees was found — and still is found — the real wealth. The trees grew tall."</p>
-</blockquote>
-*"In the course of things, men work toward comforts and an easier life. In one way or another they will seek wealth, taking whatever the land will give. In the beginning, this land gave gold — sparingly, perhaps, but enough to attract the hopeful. Then, it gave a vigorous life and forest home, and a chance to scrub toward a ranch or farm.*
-
-*There was no avoiding the day when it would give the trees of its forest. For in the trees was found — and still is found — the real wealth. The trees grew tall."*
-
 ## About John B. Miller
 
 John B. Miller was born on a homestead in Bovill, Idaho during the summer of 1912. He grew up in Bovill, where pioneer life influenced the memories and events he would later describe in his book. After graduating from the University of Idaho with a degree in geology, he began work in foreign exploration for Standard Oil of California and moved to Belmont, Californa with his wife, Pastora, whom he met in Colombia during his travels. He returned often to his beloved hometown, usually for Bovill Days, and was an active member of the Latah County Historical Society. His love for the region’s history as well as a passion for communicating history through first-hand experiences led him to write and publish *The Trees Grew Tall* in 1972.  
