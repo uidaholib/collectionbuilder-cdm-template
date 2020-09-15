@@ -17,7 +17,7 @@ The 242 photographs in this collection were taken or collected by John B. Miller
 
 When John B. Miller set out to record a history of the Bovill area, he wanted to produce more than a rudimentary history of the pioneer era of the town. The recorded history theretofore consisted of county files, newspaper clipping, old photographs, and other disjointed minutiae that lacked the detail necessary to tell the colorful story of Bovill in full. As he began collecting stories for his manuscript, Miller quickly realized that his friends, family, and other contributors would not settle for a basic history; rather, they demanded a “full reflection of the flavor and color of the times” filled with “the funny things, the ridiculous things, the dramatic and tragic things that were part of their lives.”[^1] 
 
-These retellings weave together a vivid history replete with stories like that of settlers Joe and Loud Wells, a married couple who were freed from slavery during the Civil War and moved to the Deary area from North Carolina in 1889.[^1] Other tales tell of clandestine whiskey sales during Prohibition, the felling of the White Pine King, and the multiple fires that devastated parts of downtown Bovill. 
+These retellings weave together a vivid history replete with stories like that of settlers Joe and Lou Wells, a married couple who were freed from slavery during the Civil War and moved to the Deary area from North Carolina in 1889.[^1] Other tales tell of clandestine whiskey sales during Prohibition, the felling of the White Pine King, and the multiple fires that devastated parts of downtown Bovill. 
 
 <div class="row">
 <div class="col-md-6">{% include feature/item-figure.html objectid="trees0" width="50" %}</div>
