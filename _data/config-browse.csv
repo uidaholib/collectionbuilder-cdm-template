@@ -2,7 +2,7 @@ field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 sport,,true
 stadium,,true
-opponent,,,true
+opponent,,,true,Opponent
 duration,Duration
 score,Score
 identifier,,,true,Identifier

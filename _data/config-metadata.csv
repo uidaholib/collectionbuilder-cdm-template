@@ -11,6 +11,7 @@ latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 type,Type,,DC.type
+identifier,Identifier
 youtubeid,YouTube ID
 format original,Format Original
 format,Format,,,encodingFormat
