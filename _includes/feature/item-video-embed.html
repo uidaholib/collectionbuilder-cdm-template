@@ -16,7 +16,7 @@
 
 {%- endcomment -%}
 {%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
-<div class="text-center ">
+<div class="text-center mt-5 mb-3">
     <figure class="figure mx-3{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}">
         <div class="embed-responsive embed-responsive-{{ include.ratio | default: '16by9' }}">
             {% if item.youtubeid %}
