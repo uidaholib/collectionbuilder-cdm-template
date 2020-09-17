@@ -2,6 +2,7 @@
 title: Opponents
 layout: subjects
 permalink: /opponents.html
+cloud-fields: opponent
 ---
 
 ## Browse Opponents

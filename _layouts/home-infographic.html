@@ -12,12 +12,10 @@ layout: page
   <div class="col-md-4">  
 
     {% include index/time.html %}
-    {% include index/locations-sm.html %}
-    {% include index/subjects.html %}
 
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" featured=site.data.theme.featured-subjects max=site.data.theme.featured-subjects-max %}
+    {% include index/featured-terms.html field="opponent" title="Top Opponents" btn-color="info" featured=site.data.theme.featured-subjects max=site.data.theme.featured-subjects-max %}
 
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
+    {% include index/featured-terms.html field="stadiums" title="Top Stadiums" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
     
     {% include index/objects.html %}
 

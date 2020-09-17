@@ -21,14 +21,15 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Donald R. Theophilus Boxing Photograph Collection
-# tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho"  
-# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+# Site settings
+title: Vandal Video Collection
+# choose metadata, be sure to also change page_gen data setting!
+# header and head metadata
+tagline: Historic videos of University of Idaho Basketball and Football Games, 1925 - 1997
+description: "The Vandal Video Collection is a collection of 160+ digitized 16mm Film reels that were scouting videos for both football and basketball games.." 
+keywords: "Campus; UI; Sports;" # describing the whole collection -- add to the two provided
+author: # You! Add your github username
+
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
@@ -40,9 +41,9 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: boxing 
+metadata: vandalvideo 
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: boxing
+cdm-collection-id: vandalvideo
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 

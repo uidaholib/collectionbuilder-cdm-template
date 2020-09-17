@@ -3,15 +3,16 @@ title,Title,,DCTERMS.title,headline
 creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
-description,Description,,DCTERMS.description,description
-subject,Subjects,true,DCTERMS.subject,keywords
+opponent,Opponent,true,
+score,Score
+stadium,Stadium,true,
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
-source,Source
-identifier,Source Identifier
-type,Type,,DCTERMS.type
-format-original,Format Original
+type,Type,,DC.type
+youtubeid,YouTube ID
+format original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
+

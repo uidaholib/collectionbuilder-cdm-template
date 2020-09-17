@@ -1,8 +1,11 @@
 display_name,stub,dropdown_parent
 Home,/,
 Browse,/browse.html,
-Subjects,/subjects.html,
+Stadiums,/stadiums.html,
+Opponents,/opponents.html,
 Map,/map.html,
-Timeline,/timeline.html,
+Timeline,,
+Timeline,/timeline.html,Timeline
+Vandal Wins!,/timeline-wins.html,Timeline
 Data,/data/,
 About,/about.html,

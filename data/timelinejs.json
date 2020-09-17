@@ -1,7 +1,7 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.score contains "W"' -%}
 {
     "title": {
         "media": {
@@ -10,12 +10,12 @@
           "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.description | jsonify }}
+          "headline": "Vandals Win!",
+          "text": "This timeline features only those videos that depict Vandal Victories."
         }
     },
     "events": [
-      {% for item in items %}{% if item.date %}{
+      {% for item in items %}{% if item.date and item.objectid != 'vandalvideo30' %}{
         "media": {
           "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "caption": {{ item.title | jsonify }},
@@ -29,7 +29,7 @@
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": {{ item.title | jsonify }}{% if item.description %},
+          "headline": "Vandals Beat {{ item.opponent }} <br >{{ item.score}}!"{% if item.description %},
           "text": {{ item.description | jsonify }}{% endif %}
         }
       }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}

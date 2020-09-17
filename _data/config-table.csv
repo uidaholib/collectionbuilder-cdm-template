@@ -1,5 +1,6 @@
 field,display_name
 title,Title
 date,Date
-description,Description
-subject,Subjects
+opponent,Opponent
+stadium,stadium
+score,Score

@@ -1,7 +1,8 @@
 ---
 title: Stadiums
-layout: locations
+layout: cloud
 permalink: /stadiums.html
+cloud-fields: stadium
 ---
 
 ## Browse Stadiums

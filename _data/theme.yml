@@ -3,35 +3,21 @@
 # values set here help configure details of individual pages in the website
 ##########
 
-# Site settings
-title: Vandal Video Collection
-# choose metadata, be sure to also change page_gen data setting!
-metadata: vandalvideo # check against cdm-collection-id below -- this should be used in config file as well
-
-# repository variables (leave blank if self-contained)
-# url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
-# contentdm collection name 
-cdm-collection-id: vandalvideo # 
-
-# header and head metadata
-tagline: Historic videos of University of Idaho Basketball and Football Games, 1925 - 1997
-description: "The Vandal Video Collection is a collection of 160+ digitized 16mm Film reels that were scouting videos for both football and basketball games.." 
-keywords: "Campus; UI; Sports;" # describing the whole collection -- add to the two provided
-author: # You! Add your github username
-
-# home page and browse
-home-banner-image-number:  # use number of photo from collection
-home-banner-image-link: https://cdm17254.contentdm.oclc.org/digital/iiif/football/19/full/max/0/default.jpg # leave blank unless no cdm number to generate item
-home-banner-image-title: Football Program -- Idaho vs Oregon State, 10/15/1960, Neale Stadium, Moscow (Idaho) https://www.lib.uidaho.edu/digital/footballcovers/items/footballcovers19.html # for accessibility 
-home-title-y-padding: 12em # the margin from the top your title portion will appear
+##########
+# HOME PAGE
+#
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: https://cdm17254.contentdm.oclc.org/digital/iiif/football/19/full/max/0/default.jpg
+home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: # [options: top, center, bottom] Default: top
-carousel-height: 300px # must be in px; default is 300px.
+carousel-height: # in px, but don't include the "px"; default is 450.
+# carousel can feature specific item types: image,pdf,youtube,thumbs
+carousel-type: youtube
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Memorial Gymnasium; Neale Stadium; Kibbie Dome; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Memorial Gymnasium; Neale Stadium; Kibbie Dome;  #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: youtube #options[documents,images,video,sound,data,youtube] separate semi-colon(';')
 
 ##########
 # ABOUT PAGE
@@ -58,14 +44,14 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-fields: stadiums # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: opponents # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -73,8 +59,8 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 46.727212 #to determine center of map
-longitude: -117.01655 #to determine center of map
+latitude: 36.727212 #to determine center of map
+longitude: -100.01655 #to determine center of map
 zoom-level: 4 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
@@ -93,7 +79,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,opponent,abbreviation,sport,date,year,location,stadium,latitude,longitude,score,notes,identifier,original collection,digital collection,publisher,rights,standardized rights,format-original,format,type,duration,digital preservation filename,id number,disc number,youtube-id,reference url,cdm-id,object-id"
+metadata-export-fields: "title,opponent,abbreviation,sport,date,year,location,stadium,latitude,longitude,score,notes,identifier,original collection,digital collection,publisher,rights,standardized rights,format-original,format,type,duration,digital preservation filename,id number,disc number,youtubeid,reference url,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "sport,year,location,stadium,score"
 
