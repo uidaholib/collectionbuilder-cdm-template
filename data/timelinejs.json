@@ -5,8 +5,8 @@
 {
     "title": {
         "media": {
-          "url": "{% include image/featured-image.html %}",
-          "caption": {{ featuredItem.title | jsonify }},
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/football/51/full/max/0/default.jpg",
+          "caption": "Idaho v. Air Force Cover from our <a target='_blank' href='https://www.lib.uidaho.edu/digital/footballcovers/items/footballcovers51.html'>Idaho Vandals Football Program Covers Collection</a>",
           "credit": {{ site.title | jsonify }}
         },
         "text": {
