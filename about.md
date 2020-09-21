@@ -1,9 +1,7 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
-# add image to index page bootstrap jumbotron
-featured-image: "objects/test001.jpg"
 ---
 
 <div markdown="1" class="row">
@@ -57,5 +55,3 @@ This project would not have been possible without the grant support of the [Unit
 <p class="mt-3"><img class="img-fluid rounded" src="{{ '/iwdl/pinecreek.jpg' | prepend: site.digital-objects }}" alt="Pine Creek"></p>
 </div>
 </div>
-
-{% include credits.md %}
