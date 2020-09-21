@@ -11,6 +11,8 @@
         // get the data from the metadata.json
         columns: [ {% for i in (0..fcount) %}{ data: '{{ i }}' }{% unless forloop.last %},{% endunless %}{% endfor %} ],
         columnDefs: [ 
+            // add full link
+            { "render": function ( data ) { return '{{ site.url }}' + data; }, "targets": {{ fcount }} },
             // combine link with first column
             { "render": function ( data, type, row ) { return '<a href="' + row['{{ fcount }}'] +'">'+ data +'</a>'; },"targets": 0 },
             // hide the link column
