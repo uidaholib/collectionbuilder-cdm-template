@@ -35,7 +35,7 @@ lazyload: true
     <td>
         {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
         {% for item in inYear %}
-        <a href="{{ '/docs/' | absolute_url | append: item.object-id | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% include image/thumb.html %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | truncatewords: 15 | escape }} | {{ item.date | escape }}"></a>
+        <a href="{{ '/docs/' | absolute_url | append: item.object-id | append: '.html' }}"><img class="lazyload img-thumbnail m-1" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 3'%3E%3C/svg%3E" data-src="{% include image/thumb.html %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | truncatewords: 15 | escape }} | {{ item.date | escape }}"></a>
         {% endfor %}
     </td>
   </tr>
