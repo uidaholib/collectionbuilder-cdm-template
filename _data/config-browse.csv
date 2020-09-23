@@ -1,4 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
+creator,Creator,,,Creator
 subject,,true
+description,,,true
 identifier,,,true,Identifier

@@ -11,7 +11,7 @@ longitude,Longitude
 collection,Source Collection
 source,Source
 identifier,Source Identifier
+format original,Format Original
 type,Type,,DCTERMS.type
-format-original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
