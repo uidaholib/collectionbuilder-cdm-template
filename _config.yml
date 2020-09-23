@@ -1,30 +1,63 @@
-# Jekyll Digital Collection Generator
+##########
+# collectionbuilder-contentdm
+# Jekyll Digital Collection Generator, designed as a skin over CONTENTdm
+# https://github.com/CollectionBuilder/collectionbuilder-contentdm
+##########
 
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-
-# url variables
-# library's domain (only changed if using github pages)
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
 baseurl: /digital/dworshak
-
+# location of code, the full url to your github repository
+source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
 
-# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Dworshak Dam Collection
+# header and head metadata
+tagline: Documenting the Development and Construction of the Doworshak Dam, 1952 - 1975
+description: "Digitized photographs and documents pertaining to the planning, development and construction of the Dworshak Dam, featuring documents and photographs detailing both the legislative and physical development of the dam." 
+keywords: "Dams; Construction; Water; Northwest; Idaho; Maps;" # describing the whole collection -- add to the two provided
+author: # You! Add your github username
+# Organization branding
+organization-name: "Digital Initiatives, University of Idaho Library"
+organization-link: https://www.lib.uidaho.edu/digital/
+organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
+organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+
+
+##########
+# COLLECTION SETTINGS
+#
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
+metadata: dworshak 
+# contentdm collection name, matches collection ID used by CDM
+cdm-collection-id: dworshak
+# CONTENTdm server url
+cdm-url: https://digital.lib.uidaho.edu
+# page generation settings 
+# "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
   - data: 'dworshak'
     template: 'items'
-    name: 'object-id'
+    name: 'objectid'
     dir: 'items'
-    extension: 'html'   
+    extension: 'html' 
+    filter: 'objectid'  
 
 # add liquid profiler to id bottlenecks
 # profile: true
 
-exclude: [docs/, Rakefile, README.md, LICENSE]
+exclude: [docs/, Rakefile, README.md, LICENSE, extras/]
 
 # compress CSS output
 sass:

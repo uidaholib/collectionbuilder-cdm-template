@@ -1,15 +1,14 @@
 <!-- Optional JS for Bootstrap: jQuery first, then Bootstrap bundle JS -->
-<script src="{{ '/js/jquery-3.4.1.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/js/jquery-3.5.1.min.js' | prepend: site.digital-assets }}"></script>
 <script src="{{ '/js/bootstrap.bundle.min.js' | prepend: site.digital-assets }}"></script>
 <!-- load other js -->
-{% if page.layout == "browse" %}{% include js/browse-js.html %}
-{% endif %}
+<script src="{{ '/js/lazysizes.min.js' | prepend: site.digital-assets }}" async></script>
+{% if layout.gallery == true or page.gallery == true %}{% include js/gallery-js.html %}{% endif %}
+{% if page.layout == "browse" %}{% include js/browse-js.html %}{% endif %}
 {% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
-{% if page.layout == "subjects" %}{% include js/subjects-js.html %}{% endif %}
-{% if page.layout == "locations" %}{% include js/locations-js.html %}{% endif %}
+{% if page.layout == "subjects" and site.data.theme.subjects-fields %}{% include js/cloud-js.html fields=site.data.theme.subjects-fields min=site.data.theme.subjects-min stopwords=site.data.theme.subjects-stopwords %}{% endif %}
+{% if page.layout == "locations" and site.data.theme.locations-fields %}{% include js/cloud-js.html fields=site.data.theme.locations-fields min=site.data.theme.locations-min stopwords=site.data.theme.locations-stopwords %}{% endif %}
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
 {% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
-{% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
-
 {% if page.layout == "item" %}{% include js/arrow-page-control-js.html %}{% endif %}
-<script defer src="{{ '/fontawesome/js/all.min.js' | prepend: site.digital-assets }}"></script>
+{%- if page.layout == "home-infographic" %}{% include js/carousel-js.html %}{% endif -%}
