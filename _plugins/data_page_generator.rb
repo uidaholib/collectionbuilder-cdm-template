@@ -65,7 +65,7 @@ module Jekyll
       @name = (index_files ? "index" : filename) + "." + extension.to_s
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), template + ".html")
+      self.read_yaml(File.join(base, '_layouts'), template + "." + extension)
       self.data['title'] = raw_filename
       # add index number to page object
       self.data['index_number'] = index_number

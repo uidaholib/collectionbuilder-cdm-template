@@ -54,7 +54,13 @@ page_gen:
     name: 'objectid'
     dir: 'items'
     extension: 'html' 
-    filter: 'objectid'  
+    filter: 'objectid' 
+  - data: 'boxing'
+    template: 'items-data'
+    name: 'objectid'
+    dir: 'items'
+    extension: 'json' 
+    filter: 'objectid'
 
 # add liquid profiler to id bottlenecks
 # profile: true

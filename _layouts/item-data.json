@@ -1,0 +1,11 @@
+{%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
+{
+    "objectid": {{ page.objectid | jsonify }},
+    "title": {{ page.title | jsonify }},
+    {% for f in fields %}{% if page[f.field] %}
+    {{ f.display_name | jsonify }} : {{ page[f.field] | escape | jsonify }},
+    {% endif %}{% endfor %}
+    "thumb" : "{% include image/thumb.html %}",
+    "download" : "{% include download/item.html %}",
+    "url" : {{ page.url | replace: '.json','.html' | jsonify }}
+}
