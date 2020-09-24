@@ -1,9 +1,7 @@
-field,displayName,btn,hidden
-date,Date,
-creator,Creator,
-description,,,true
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date
 subject,,true
 subject (lctgm),,true
 location,,true
 format original,,true
-
+identifier,,,true,Identifier
