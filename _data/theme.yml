@@ -24,7 +24,7 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: boxing15
+about-featured-image: https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=bar-stock&CISOPTR=256&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=100&DMTEXT=&DMROTATE=0
 
 ##########
 # BROWSE PAGE
@@ -48,9 +48,9 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: point of origin;destination # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+locations-stopwords: united states; # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # MAP PAGE
@@ -76,7 +76,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rightsstatement,objectid"
+metadata-export-fields: "title,creator,description,date,date is approximate?,subject (lcsh),subject,point of origin,destination,coverage,contributing institution,digital collection,relation,source,identifier,publisher digital,format original,format,type,digitization specifications,rights,rights (standardized),language,date digital,full text,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "creator,date,subject,point of origin,destination"
 
