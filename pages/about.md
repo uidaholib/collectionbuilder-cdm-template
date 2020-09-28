@@ -26,11 +26,6 @@ These retellings weave together a vivid history replete with stories like that o
 
 *The Trees Grew Tall* serves as an animated catalog of frontier life in Bovill and other areas on the Palouse. To explore it further, find it in the University of Idaho Library [catalog](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71163097320001451). 
 
-<blockquote class="blockquote text-right about-contents py-3">
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium nibh nunc, vel gravida velit ullamcorper sit amet. Phasellus vestibulum ligula ac massa sodales tempor. Duis et massa ante. Sed a dolor eu nisl congue fermentum. Vivamus et varius est. Aliquam in aliquet nisl.</h3>
-  <p class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></p>
-</blockquote>
-
 ## About John B. Miller
 
 John B. Miller was born on a homestead in Bovill, Idaho during the summer of 1912. He grew up in Bovill, where pioneer life influenced the memories and events he would later describe in his book. After graduating from the University of Idaho with a degree in geology, he began work in foreign exploration for Standard Oil of California and moved to Belmont, Californa with his wife, Pastora, whom he met in Colombia during his travels. He returned often to his beloved hometown, usually for Bovill Days, and was an active member of the Latah County Historical Society. His love for the region’s history as well as a passion for communicating history through first-hand experiences led him to write and publish *The Trees Grew Tall* in 1972.  
