@@ -9,6 +9,8 @@ permalink: /about.html
 
 ## About the Collection
 
+{% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/708/default.jpg" caption="Kibbie-ASUI Activity Center, architect's drawing, 1971" link="https://digital.lib.uidaho.edu/digital/collection/pg1/id/708" %}
+
 ### The Photographs 
 
 In 1964 the University of Idaho Library received a collection of over 200,000 nitrocellulose and glass plate negatives taken by Nellie Stockbridge and her predecessor and founder of the studio, Mr. T.N. Barnard. The photos were taken during 1894-1964 of various aspects of life in the Wallace/Kellogg mining area. Prints were made of many of the negatives, and the photographs and negatives were cataloged by the Special Collection Department.
