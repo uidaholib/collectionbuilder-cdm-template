@@ -1,8 +1,8 @@
 display_name,stub,dropdown_parent
 Home,/,
+Interview,/interview.html
 Browse,/browse.html,
 Subjects,/subjects.html,
-Interview,/interview.html
 Timeline,/timeline.html,
 Data,/data/,
 About,/about.html,
