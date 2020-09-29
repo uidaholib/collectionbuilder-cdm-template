@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-The Mark Brooks Calnon Collection is made up of 40 photographs, 10 documents, and 3 audio/visual files compiled by Denise Bennett. These items document Lt. Mark B. Calnon's time as a World War II pilot and prisoner of war.
+The Mark Brooks Calnon Collection is made up of 53 photographs, documents, and audio/visual files—including Calnon's memoir, *Some Lived, Some Died It Was Understood*—compiled by Denise Bennett. These items document Lt. Mark B. Calnon's time as a World War II pilot and prisoner of war.
 
 ## About Mark B. Calnon
 
