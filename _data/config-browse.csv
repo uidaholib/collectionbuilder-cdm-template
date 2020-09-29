@@ -1,7 +1,7 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-point of origin,Origin,true
-destination,Destination,true
+point of origin,Origin,,true
+destination,Destination,,true
 creator,,true
 subject,,true
 location,,true
