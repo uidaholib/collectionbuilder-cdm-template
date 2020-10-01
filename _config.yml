@@ -22,7 +22,7 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Electronic Theses and Dissertations
+title: Theses and Dissertations Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
 tagline: Open Access Repository of University of Idaho Graduate ETD
 # description appears in meta tags and other locations
@@ -50,7 +50,7 @@ cdm-url: https://digital.lib.uidaho.edu
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
   - data: 'etd_complete'
-    template: 'items'
+    template: 'etds'
     name: 'objectid'
     dir: 'items'
     extension: 'html' 
