@@ -1,7 +1,7 @@
 ---
 title: Programs
 layout: locations
-permalink: /locations.html
+permalink: /programs.html
 ---
 
 ## Browse Departments and Programs
