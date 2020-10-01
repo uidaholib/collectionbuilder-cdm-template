@@ -4,5 +4,5 @@ date,Date,,,Date
 embargo_remove,Embargo date,,,
 keywords,Keywords,,,
 subject_category,Subject,,,
-department,Program,true,,
+department,,true,,
 identifier,,,true,Identifier
