@@ -45,20 +45,7 @@ function makeCard(obj) {
     }
     {% endunless %}{% endfor %}
     card += '</p>';
-    // media type
-    if(obj.format != "") {
-        card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ "/browse.html" | relative_url }}#' + encodeURIComponent(obj.format) + '">' + obj.format.split("/").pop().toUpperCase() + ' <span class="';
-        if(obj.format.includes('image')){
-            card += 'far fa-image';
-        } else if(obj.format.includes('audio')){
-            card += 'far fa-file-audio';
-        } else if(obj.format.includes('video')){
-            card += 'far fa-file-video';
-        } else {
-            card += 'far fa-file';
-        }
-        card += '"></span></a></small></p>';
-    }
+    
     // view button
     card += '<hr><a href="' + itemHref + '" class="btn btn-sm btn-light" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs

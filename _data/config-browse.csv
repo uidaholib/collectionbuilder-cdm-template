@@ -1,8 +1,8 @@
 field,display_name,btn,hidden,sort_name
 author,Author,,,Author
 date,Date,,,Date
+embargo_remove,Embargo date,,,
 keywords,Keywords,,,
 subject_category,Subject,,,
-department,Department,true,,
-embargo_remove,Embargo date,,,
+department,Program,true,,
 identifier,,,true,Identifier
