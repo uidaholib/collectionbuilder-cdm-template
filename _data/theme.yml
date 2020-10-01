@@ -15,9 +15,9 @@ carousel-height: # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: thumbs
 #featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
-featured-subjects-max: 12 # set number of top subjects to display if auto generating
+featured-subjects-max: 15 # set number of top subjects to display if auto generating
 #featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 12
+featured-locations-max: 15
 
 ##########
 # ABOUT PAGE
