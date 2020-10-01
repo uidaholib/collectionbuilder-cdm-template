@@ -1,5 +1,7 @@
 field,display_name
 title,Title
+author,Author
 date,Date
-description,Description
-subject,Subjects
+department,Department
+subject_category,Subject Category
+keywords,Keywords

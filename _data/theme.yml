@@ -15,9 +15,9 @@ carousel-height: # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
-featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-subjects-max: 12 # set number of top subjects to display if auto generating
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 12
 
 ##########
 # ABOUT PAGE
@@ -41,8 +41,8 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-fields: subject_category;keywords;department # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rightsstatement,objectid"
+metadata-export-fields: "objectid,title,author,author_orcid,date,keywords,abstract,department,subject_category,description,major_professor,committee,identifier,link,rights,type,format_original,format,defense_date,language,cdmid,filename,embargo_code,embargo_remove"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "keywords,department,subject_category,major_professor,committee"
 
 ##########
 # ADVANCED OPTIONS
