@@ -27,13 +27,13 @@ layout: default
                         {% endif %}
                     </p>
                 </div>
+                {% if page.cdmid %}
                 <div class="my-2">
-                    {% if page.cdmid %}
                     <a target="_blank" href="{{ download_link }}" class="btn btn-outline-info">Download {{ page.format | split: '/' | last | upcase }}</a>
-                    {% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                 </div>
+                {% endif %}
             </div>
 
             <div class="card mb-2">
