@@ -1,9 +1,7 @@
-{%- assign items = site.data[site.data.theme.metadata] | where: "object-id", include.item -%}
-{% for item in items%}
+{%- assign item = site.data[site.metadata] | where: "objectid", include.object-id | first -%}
 <div class="float-{{include.float | default: 'right'}} m-2 mb-3 {{include.size | default: 'col-md-3'}}">
     <figure class="figure">
     <a href="{% include item-link.html %}"><img class="figure-img img-fluid rounded" alt="{{item.description | escape}}" src="{%include image/medium.html%}" data-toggle="tooltip" data-placement="bottom" title="{{ item.description | escape }} | {{ item.date | escape }}"></a>
       <figcaption class="figure-caption">{{item.title}} </figcaption>
     </figure>
 </div>
-{%endfor%}
