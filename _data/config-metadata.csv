@@ -5,7 +5,7 @@ author_orcid,ORCID,
 date,Date,,DCTERMS.created,dateCreated
 embargo_remove,Embargo Remove Date,
 keywords,Keywords,true,DCTERMS.subject,keywords
-department,Department,
+department,Program,
 subject_category,Subject Category,
 abstract,Abstract,
 description,Description,,DCTERMS.description,description
