@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 featured-image: "objects/test001.jpg"
 lazyload: true
