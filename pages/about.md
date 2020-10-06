@@ -17,7 +17,7 @@ Watkins was hired to photograph the Anaconda copper mine in Butte by [James Ben 
 
 {% include feature/item-figure.html objectid="watkins3" width="75" %}
 
-Watkins was hired to document the mines so that Haggin could present, later that year, "visually persuasive evidence of the mine's present success and future prospects" to European copper mining syndicates (including the Rothschild family) with whom the American copper mining interests were competing (Hult-Lewis, 247).^1 The photographs served as a threat to the Eurpoeans, indicating that Haggin's mines could produce and distribute such a large quantity of copper that the market value of the metal would be drastically diminished. The threat worked: the Europoean syndicates and the Americans both promised to limit production to better guarantee the market.
+Watkins was hired to document the mines so that Haggin could present, later that year, "visually persuasive evidence of the mine's present success and future prospects" to European copper mining syndicates (including the Rothschild family) with whom the American copper mining interests were competing.[^1] The photographs served as a threat to the Eurpoeans, indicating that Haggin's mines could produce and distribute such a large quantity of copper that the market value of the metal would be drastically diminished. The threat worked: the Europoean syndicates and the Americans both promised to limit production to better guarantee the market.
 
 {% include feature/item-figure.html objectid="watkins19" width="75" %}
 
@@ -46,7 +46,7 @@ Watkins' non-mining photographs are astounding as well, and are definitely worth
 
 {% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
 
-[^1.] Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011.
+[^1] Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011, 247.
 
 <div class="clearfix"></div>
 
