@@ -6,7 +6,7 @@ date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 donor,Donor,
 subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,,,contentLocation
+location,Location,true,,contentLocation
 location (lcsh),Location (LCSH),
 latitude,Latitude
 longitude,Longitude
