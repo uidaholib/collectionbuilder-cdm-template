@@ -1,5 +1,5 @@
 ---
-title: About the Locations
+title: About
 layout: about
 permalink: /aboutlocations.html
 ---
