@@ -46,7 +46,7 @@ Watkins' non-mining photographs are astounding as well, and are definitely worth
 
 {% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
 
-1. Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011.
+[^1.] Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011.
 
 <div class="clearfix"></div>
 
