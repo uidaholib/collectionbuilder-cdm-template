@@ -1,4 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
+mine,Mine,true,
+depth,Depth,true
 subject,,true
 identifier,,,true,Identifier
