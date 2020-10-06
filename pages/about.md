@@ -44,9 +44,7 @@ Watkins' non-mining photographs are astounding as well, and are definitely worth
 - [Carleton E. Watkins Photographs](https://hearstmuseum.berkeley.edu/exhibitions/photo/watkins.html) in an online exhibit at Phoebe A. Hearst Museum of Anthropology.
 - [Mammoth Plate Photographs of the North American West](https://beinecke.library.yale.edu/collections/highlights/mammoth-plate-photographs-north-american-west) by Watkins from the [Beinecke Rare Book and Manuscript Library](https://www.library.yale.edu/beinecke/) at Yale University.
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
-
-[^1] Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011, 247.
+[^1]: Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011, 247.
 
 <div class="clearfix"></div>
 
