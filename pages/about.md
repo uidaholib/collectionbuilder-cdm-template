@@ -42,4 +42,3 @@ Four years later, Potlatch Lumber Company built a new saw mill in what is now El
 *Pres-to-logs*, introduced in 1930, helped Potlatch weather the Great Depression, and World War II brought increased demand for lumber. After the war, Potlatch diversified its product line, acquired mills throughout the United States, and continued to purchase timberland. In 1965, the corporate headquarters were moved to San Francisco, and in 1973, the company's name changed to Potlatch Corporation. In 1997, company officials relocated corporate headquarters to Spokane, Washington, and today Potlatch is a Real Estate Investment Trust with approximately 1.5 million acres of forest land in Arkansas, Idaho, Minnesota, and Wisconsin.
 
 <div class="clearfix"></div>
-
