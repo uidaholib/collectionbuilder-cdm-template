@@ -12,13 +12,13 @@ featured-image: https://upload.wikimedia.org/wikipedia/commons/b/bc/Art_Books_on
 home-banner-image-title: Books from https://upload.wikimedia.org/wikipedia/commons/b/bc/Art_Books_on_Library_Shelf.JPG # for accessibility 
 home-title-y-padding: 5em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-grade-level: kindergardten; first; second; third; fourth; fifth; sixth
+grade-level: kindergarten; first; second; third; fourth; fifth; sixth
 carousel-height: 300 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: thumbs
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 ##########

@@ -1,4 +1,4 @@
-field,display_name,btn,hidden
+field,display_name,btn,hidden,sort_name
 author,Author
 reader,Reader
 grade-level,Grade Level,true

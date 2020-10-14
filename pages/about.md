@@ -1,11 +1,13 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
-<h3>About the {{site.title}}</h3>
+{% include feature/jumbotron.html %} 
 
-<p>
+{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+
+## About the Collection
 
 <div class="card m-3"  style="float:right">
 <div class="card text-center">
@@ -14,7 +16,7 @@ permalink: /about.html
 </div>
 </div>
 
-<p>The Guided Reading Library is a digital collection of short books created by students in the University of Idaho's College of Education. This library is directed by <a href="https://www.uidaho.edu/ed/ci/curriculum-and-instruction-faculty/margaret-vaughn">Margaret Vaughn</a>, in collaboration with the Digital Initiatives unit of the University of Idaho Library.</p>
+The Guided Reading Library is a digital collection of short books created by students in the University of Idaho's College of Education. This library is directed by <a href="https://www.uidaho.edu/ed/ci/curriculum-and-instruction-faculty/margaret-vaughn">Margaret Vaughn</a>, in collaboration with the Digital Initiatives unit of the University of Idaho Library.
 
 <p>The Guided Reading Library developed out of Dr. Vaughn's experiences as an elementary teacher, as well as from conversations and collaborative research with current teachers. One of the project's goals is to engage preservice teachers in authentic literacy work. As such, the library hosts e-books developed as part of a culminating multimodal project in Dr. Vaughn's Children's Literature course.</p>
 
@@ -27,4 +29,3 @@ permalink: /about.html
 <hr>
 <br>
 
-{% include credits.md %}
