@@ -4,7 +4,7 @@ layout: about
 permalink: /about.html
 ---
 {% include feature/jumbotron.html %}
-{% include feature/nav-menu.html sections="Brief History of Priest Lake;About the Photographs;Sources" %}
+{% include feature/nav-menu.html sections="About the Idaho Forest, Wildlife, and Range Experiment Station;About the Collection;" %}
 
 ## About the Idaho Forest, Wildlife, and Range Experiment Station
 
