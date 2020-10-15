@@ -24,10 +24,10 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # title of site appears in banner
 title: Idaho Historical Maps Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Historical Maps from 1863 - 1986
+tagline: Regional Maps from 1863 - 1986
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 9 historical maps depicting various areas in Idaho and the Pacific Northwest between the years 1863 and 1986.  "  
+description: "A digital collection comprised of 9 historical maps depicting various areas in Idaho and the Pacific Northwest between the years 1863 and 1986."  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
