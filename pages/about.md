@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+The Idaho Historical maps Collection is a digital collection comprised of 9 historical maps depicting various areas in Idaho and the Pacific Northwest between the years 1863 and 1986.
 
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
