@@ -1,9 +1,11 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
+author,Authors,true,DCTERMS.creator,creator
+editors,Editors
 date,Date Created,,DCTERMS.created,dateCreated
-date is approximate,Approximated Date
+date is approximate,Approximated Date,true,
 description,Description,,DCTERMS.description,description
+relation-is part of,Relation,,
 subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation
 latitude,Latitude
