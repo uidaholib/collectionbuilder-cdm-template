@@ -1,6 +1,6 @@
 ---
 title: Authors
-layout: authors
+layout: cloud
 permalink: /authors.html
 cloud-fields: author
 cloud-min: 1
