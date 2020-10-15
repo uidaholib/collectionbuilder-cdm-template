@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/nav-menu.html sections="About the Collection;" %} 
 
 ## About the Collection
 
