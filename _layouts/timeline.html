@@ -2,8 +2,8 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
-{%- assign raw-dates = site.data[site.metadata] | map: 'date' | compact | uniq -%}
-{%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
+{%- assign raw-dates = site.data[site.metadata] | map: 'depth' | compact | uniq -%}
+{%- capture clean-years -%}{% for date in raw-dates %}{% if date.size == 3 %}{{ date | strip | prepend: "0" }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign uniqueYears = clean-years | remove: " " | split: ";" | uniq | sort -%}
 {%- if site.data.theme.year-navigation -%}
 {%- assign navYears = site.data.theme.year-navigation | split: ";" -%}
@@ -25,16 +25,14 @@ layout: page
 
 {{ content }}
 
-<h3><a href="#{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
+<h3><a href="#{{ navYears | first }}">{{ navYears | first }}ft</a> to <a href="#{{ navYears | last }}">{{ navYears | last }}ft</a></h3>
 
-<table id="timeline" class="table table-striped">
-    {% for year in uniqueYears %}
-    <tr id="{{ year }}">
-        <th>
-            <h3>{{ year }}</h3>
-        </th>
+<table id="timeline" class="table">
+    {% for year in navYears %}
+    <tr id="{{ year }}" style="background-color:#{% cycle 'CFCFCF', 'B8B8B8', 'A1A1A1', '8A8A8A', '737373', '5C5C5C', '454545', '2E2E2E', '171717', '000' %}">
+        <th><h3 class="text-white" >{{ year }}ft</h3></th>
         <td>
-            {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+            {%- assign inYear = items | where_exp: 'item', 'item.depth == year' -%}
             {% for item in inYear %}
             <a class="d-inline-block m-1" href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" ></a>
             {% endfor %}
