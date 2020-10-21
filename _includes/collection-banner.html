@@ -1,10 +1,10 @@
-{% if page.layout == "home-infographic" and site.data.theme.featured-image %}
+{% if page.layout == "home-infographic" %}
 <style>
 #home-banner {
-    background-image: url('{% include image/featured-image.html %}');
+    background-image: url('{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.cdm-url }}/digital/iiif/{{ site.data.theme.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: {{ site.data.theme.home-banner-image-position | default: 'top' }};
+    background-position: {{ site.data.theme.home-banner-image-position | default: top }};
 }
 #home-title-box {
     padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
@@ -16,38 +16,29 @@
         padding-bottom: 2em; 
     }
 }
-.liblogo-corner {
-    border-bottom-left-radius: .25rem;
-}
-.liblogo-corner img{height: 40px;}
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
-    
-    <a class="d-none d-md-block float-right title-card p-3 liblogo-corner" href="https://www.lib.uidaho.edu/"><img alt="University of Idaho Library home" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png"></a>
-    
     <div id="home-title-box">
         <div class="title-card p-2 text-center">
-            <a class="d-none d-md-block" href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                <img src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} home" >
-            </a>
-            <h1 class="display-4">{{ site.title }}</h1>
-            {% if site.tagline %}<p id="home-tagline">{{ site.tagline }}</p>{% endif %}
+            <a class="d-none d-md-block" href="https://www.lib.uidaho.edu/digital"><img src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="digital initiatives logo" style="height:40px;"></a>
+            <h1 class="display-4">{{ site.data.theme.title }}</h1>
+            {% if site.data.theme.tagline %}<p id="home-tagline">{{ site.data.theme.tagline }}</p>{% endif %}
         </div>
     </div>
-    {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{{ '/items/' | relative_url | append: site.data.theme.featured-image | append: '.html' }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
-    </div>{% endunless %}
+    <div class="text-right p-0 mt-0">
+        <small><a class="text-info featured-link" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/docs/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" title="{{ site.data.theme.home-banner-image-title }}">Featured Image</a></small>
+    </div>
 </div>
 {%- else -%}
 <div class="container">
     <div class="row align-items-center">
         <div id="title" class="col-md-9">
-            <h1><a class="text-dark font-weight-normal" href="{{ site.baseurl }}/" >{{ site.title }}</a></h1>	 
-            {% if site.tagline %}<p>{{ site.tagline }}</p>{% endif %}
+            <h1><a class="text-dark" href="{{ site.baseurl }}/" >{{ site.data.theme.title }}</a></h1>	 
+            {% if site.data.theme.tagline %}<p>{{ site.data.theme.tagline }}</p>{% endif %}
         </div>
-        <div class="col-md-3 d-none d-lg-block text-right">
+        <div class="col-md-3 d-none d-md-block text-right">
             <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#collections">
-            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives Collections" alt="University of Idaho Library Digital Initiatives Collections" ></button>
+            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="University of Idaho Library Digital Initiatives" alt="digital initiatives logo" ></button>
         </div>
     </div>
 </div>

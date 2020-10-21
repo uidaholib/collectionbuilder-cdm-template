@@ -1,26 +1,27 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.data.theme.metadata] -%}
+{%- assign bannerItem = site.data[site.metadata] | where: 'object-id', site.data.theme.featured-image-objectid -%}
 {
     "title": {
         "media": {
           "url": "{% include image/featured-image.html %}",
-          "caption": {{ featuredItem.title | jsonify }},
-          "credit": {{ site.title | jsonify }}
+          "caption": {{ bannerItem[0].title | default: site.data.theme.title | jsonify  }},
+          "credit": {{ site.data.theme.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.description | jsonify }}
+          "headline": {{ site.data.theme.title | append: ' Timeline' | jsonify }},
+          "text": {{ site.data.theme.description | jsonify }}
         }
     },
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-md.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{% include item-link.html %}",
-          "credit": "{{ site.title }}"
+          "credit": "{{ site.data.theme.title }}"
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",

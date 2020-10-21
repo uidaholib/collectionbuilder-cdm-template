@@ -1,67 +1,32 @@
-##########
-# collectionbuilder-contentdm
-# Jekyll Digital Collection Generator, designed as a skin over CONTENTdm
-# https://github.com/CollectionBuilder/collectionbuilder-contentdm
-##########
+# Jekyll Digital Collection Generator
 
-##########
-# URL VARIABLES
-#
-# site domain, full URL to the production location of your collection
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
+# url variables
+# library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
 baseurl: /digital/iwdl
-# location of code, the full url to your github repository
-source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
+
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/assets
 # url to objects folder on Digital
 digital-objects: https://www.lib.uidaho.edu/digital/objects
 
-
-##########
-# SITE SETTINGS
-#
-# title of site appears in banner
-title: Idaho Waters Digital Library
-# tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A collection of scientific and technical reports relating to water issues in key Idaho river basins
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "The Idaho Waters Digital Library provides open digital access to unique information resources relating to water issues in key Idaho river basins. Making up the core of the collection are more than 700 documents produced by Idaho Water Resources Research Institute, digitized by University of Idaho Library. IWDL supports ongoing research and understanding of the region while preserving an era of previous work and research investment."  
-# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: evanwill
-# Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
-
-
-##########
-# COLLECTION SETTINGS
-#
-# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: iwdl
-# contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: idahowater
-# CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
-# page generation settings 
-# "data" value must be the name of the metadata file (other values should be not be changed)
+# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
   - data: 'iwdl'
     template: 'items'
-    name: 'objectid'
-    dir: 'items'
-    extension: 'html' 
-    filter: 'objectid'  
+    name: 'object-id'
+    dir: 'docs'
+    extension: 'html'  
 
 # add liquid profiler to id bottlenecks
 # profile: true
 
-exclude: [docs/, Rakefile, README.md, LICENSE, extras/]
+exclude: [docs/, Rakefile, README.md, LICENSE]
 
 # compress CSS output
 sass:

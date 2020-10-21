@@ -1,11 +1,11 @@
 ---
 # find all unique subjects used in the metadata 
 ---
-{%- if site.data.theme.subjects-fields -%}
-{%- assign subjects-fields = site.data.theme.subjects-fields | split: ";" -%}
+{%- if site.data.theme.subjects-page == true -%}
+{%- assign subjects-fields = site.data.theme.subjects-fields | default: "subject" | split: ";" -%}
 {%- assign subjects = "" -%}
 {%- for c in subjects-fields -%}
-{% assign new = site.data[site.metadata] | map: c | join: ";" %}
+{% assign new = site.data[site.data.theme.metadata] | map: c | join: ";" %}
 {% assign subjects = subjects | append: ";" | append: new %}
 {%- endfor -%}
 {%- assign uniqSubjects = subjects | downcase | split: ";" | array_count_uniq -%}

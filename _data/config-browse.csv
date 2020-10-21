@@ -1,9 +1,8 @@
-field,display_name,btn,hidden,sort_name
+field,displayName,btn,hidden
 creator,Authors,
-date,Date,,,Date
+date,Date,
 subject,Subject,true
 location,Location,true
 description,Abstract,
 collection,Collection
 series,Series,true
-identifier,,,true,Identifier

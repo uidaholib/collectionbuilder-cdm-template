@@ -1,109 +1,92 @@
-##########
-# CollectionBuilder Theme Customization
-# values set here help configure details of individual pages in the website
-##########
+# Jekyll Digital Collection Generator
 
-##########
-# HOME PAGE
-#
-# featured image is used in home page banner and in meta markup to represent the collection
-# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: https://www.lib.uidaho.edu/digital/objects/iwdl/ian-keefe-354195-unsplash.jpg
-home-title-y-padding: 12em # the margin from the top your title portion will appear.
+# Site settings
+title: Idaho Waters Digital Library
+# choose metadata, be sure to also change page_gen data setting!
+metadata: iwdl # check against cdm-collection-id below -- this should be used in config file as well
+
+# repository variables (leave blank if self-contained)
+# url for our CDM server
+cdm-url: https://cdm17254.contentdm.oclc.org
+# contentdm collection name 
+cdm-collection-id: idahowater
+
+# header and head metadata
+tagline: A collection of scientific and technical reports relating to water issues in key Idaho river basins
+description: "The Idaho Waters Digital Library provides open digital access to unique information resources relating to water issues in key Idaho river basins. Making up the core of the collection are more than 700 documents produced by Idaho Water Resources Research Institute, digitized by University of Idaho Library. IWDL supports ongoing research and understanding of the region while preserving an era of previous work and research investment."
+keywords: "university of idaho, Idaho Water Resources Research Institute, Idaho, water resources" # describing the whole collection -- add to the two provided
+author: evanwill # You! Add your github username 
+
+# Home page
+#home-banner-image-number: 15 # use number of photo from collection
+home-banner-image-link: https://www.lib.uidaho.edu/digital/objects/iwdl/ian-keefe-354195-unsplash.jpg # leave blank unless no cdm number to generate item
+home-banner-image-title: Ian Keefe from Unsplash # for accessibility 
+home-title-y-padding: 2em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 450.
-# carousel can feature specific item types: image,pdf,youtube,thumbs
-carousel-type: pdf
-featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+carousel-height: # in px, but don't include the "px"; default is 300.
+# featured-subjects: Computer models; Aquifers; Water quality; Heavy metals; Groundwater; Irrigation; Mine wastes; Hydroelectric power; Hydrogeology; Groundwater flow; Water management; Water pollution; Water resources development; Water supply; Benthos; Computer simulation #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 16 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+# featured-locations: Southern Idaho; Snake Plain Aquifer; Moscow; Coeur d'Alene; Snake River; Southeastern Idaho; Northern Idaho; Palouse; Boise; Salmon River; Clearwater River; Bear River; Pullman #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 15
+mediatypes: documents #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
-##########
-# ABOUT PAGE
-#
-# Featured image on About page - if left blank, CB will use image featured on the home page
-# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: boxing15
-
-##########
-# BROWSE PAGE
-#
+# Browse page
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
-##########
-# ITEM PAGE
-#
-# see _data/metadata-config.csv to define the metadata fields that will display.
-browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
+# Item page 
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
 
-##########
-# SUBJECTS PAGE
-#
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
-
-##########
-# LOCATIONS PAGE
-#
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
-
-##########
-# MAP PAGE
-#
+# Map page
 # see _data/map-config.csv for field display options
 latitude: 45.177390 #to determine center of map
 longitude: -115.190645 #to determine center of map
 zoom-level: 6 # zoom level for map 
-map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
 map-cluster: true # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-##########
-# TIMELINE PAGE
-#
-year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
-##########
-# DATA 
-# 
+# Locations page
+locations-page: false # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+# Timeline
+year-navigation: #"1900;1905;1910;1915;1920" # set years to appear in dropdown nav
+year-nav-increment: 5 # set increments when auto gen nav years
+
+# About page
+about-off: false # true / false, if true will not show link to about page on front. Need to erase link in nav-configuration as well. 
+
+# Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,creator,date,location,latitude,longitude,additional_lat-long,subject,description,collection,series,related-dataset,contributors,publisher,contributing-institution,language,iwrri-number,object-id,rights,rights-standardized,format,type,date-digital,digitization-specifications,metadata-cataloger,cdm-id"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,location,series,collection,creator"
 
-##########
-# ADVANCED OPTIONS
-#
-# CDM image % for IIIF
+# images 
 image-percentage-large: # default 70
 image-percentage-medium: # default 40 
 image-percentage-small: # default 20
 
-# NAVBAR COLORS
+# Theme Options
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
 navbar-background: bg-dark
-
-# BOOTSWATCH THEMES
-# You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: # leave blank or comment out for plain bootstrap
 
-# THEME FONTS
-base-font-size: 1.2em
-text-color: "#111"
-link-color: "#00AEC7"
-base-font-family: # comment out for bootstrap defaults. e.g. Roboto
-font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+gh-repository: https://github.com/uidaholib/collectionbuilder-cdm-template

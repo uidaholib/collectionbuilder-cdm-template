@@ -1,0 +1,11 @@
+---
+# facets generator
+---
+{%- assign fields = "" | split: "," -%}
+facets
+
+{% for f in fields %}
+
+{% include util/find-uniq-csv field=f split-on=";" %}
+
+{% endfor %}
