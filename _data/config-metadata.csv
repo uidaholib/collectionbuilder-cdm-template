@@ -7,13 +7,13 @@ description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
 subject (lcsh),Subjects - LCSH,,
 subject (lctgm),Subjects - LCTGM,,true
-location,Location,,,contentLocation
+location,Location,true,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
-identifier,Source Identifier
+original identifier,Source Identifier
 type,Type,,DCTERMS.type
-format-original,Format Original
+format original,Format Original,true
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
