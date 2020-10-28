@@ -10,6 +10,7 @@ latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
+contributing_institution,Contributing Institution,true
 identifier,Source Identifier
 type,Type,,DCTERMS.type
 format-original,Format Original
