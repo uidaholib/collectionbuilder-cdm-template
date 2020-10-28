@@ -13,6 +13,8 @@ The Cattle Producer's Handbook began in the mid 1970s. The first edition was put
 
 The Cattle Producer’s Handbook is prepared by the Western Beef Resource Committee (WBRC), which consists of beef specialists, economists, range scientists, animal nutritionists, county educators, and veterinarians from the Cooperative Extension System and from cattle industry representatives. The WBRC meets annually to review publication content and represents the following universities: University of Arizona, University of California, Colorado State University, University of Hawaii, University of Idaho, Montana State University, University of Nevada, New Mexico State University, Oregon State University, Utah State University, Washington State University, and University of Wyoming.  
 
+{% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2112" caption="Cattle lying in a field at the University of Idaho Farms, circa 1935" width="75" %}
+
 <div class="text-center"> 
 
 <figure class="figure"> 
