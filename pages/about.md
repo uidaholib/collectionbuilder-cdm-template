@@ -15,33 +15,11 @@ The Cattle Producer’s Handbook is prepared by the Western Beef Resource Commit
 
 {% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2112" caption="Cattle lying in a field at the University of Idaho Farms, circa 1935" width="75" %}
 
-<div class="text-center"> 
-
-<figure class="figure"> 
-
-<a href="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2112" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/2112/default.jpg" class="figure-img img-fluid rounded" alt="Cattle lying in a field at the University of Idaho Farms, circa 1935"></a> 
-
-<figcaption class="figure-caption">Cattle lying in a field at the University of Idaho Farms, circa 1935</figcaption> 
-
-</figure> 
-
-</div> 
-
 ## About the Idaho Cattle Industry
 
 There are over 2.1 million cattle in the state of Idaho raised by 7,700 farming and ranching operations, most of which are family owned. According to the [Idaho State Department of Agriculture](https://agri.idaho.gov/main/idaho-livestock/), dairy is Idaho’s top agricultural industry, with an annual milk yield of over 13 billion pounds and valued at over $2.2 billion. Supporting this industry is the [Animal, Veterinary and Food Sciences Program](https://www.uidaho.edu/cals/animal-veterinary-and-food-sciences/research-and-extension), which includes serving Idaho’s top agricultural commodity of beef cattle. The Idaho beef industry contributes $500 million to $700 million annually, depending on market conditions, to Idaho’s economy. The University of Idaho’s College of Agricultural and Life Sciences and its various research, extension and education centers throughout the state conduct research and provide educational programs in health, production, range cow, integrated resource and sustainable management, as well as cow-calf nutrition and feedlot nutrition. Dairy programs conduct research and provide extension programs in the areas of nutrition, lactation and reproductive physiology, herd health, milk quality, safety, breeding and genetics. Strong cooperative programs exist with allied industry and cooperator herds across the state. Excellent relationships exist with the United Dairymen of Idaho and association support is substantial. Overall, animal and plant agriculture constitutes over 21% of Idaho’s economy.  
 
-<div class="text-center"> 
-
-<figure class="figure"> 
-
-<a href="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2174" target="_blank"><img src="https://digital.lib.uidaho.edu/digital/api/singleitem/image/pg1/2174/default.jpg" class="figure-img img-fluid rounded" alt="Cattle grazing at the University of Idaho Farms, circa 1935"></a> 
-
-<figcaption class="figure-caption">Cattle grazing at the University of Idaho Farms, circa 19355</figcaption> 
-
-</figure> 
-
-</div> 
+{% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/collection/pg1/id/2174" caption="Cattle grazing at the University of Idaho Farms, circa 1935" width="75" %}
 
 <div class="clearfix"></div>
 
