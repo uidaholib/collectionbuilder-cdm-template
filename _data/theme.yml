@@ -11,12 +11,12 @@
 featured-image: https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=bar-stock&CISOPTR=256&action=2&DMSCALE=100&DMWIDTH=3400&DMHEIGHT=2800&DMX=0&DMY=100&DMTEXT=&DMROTATE=0
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 450.
+carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: pdf
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: San Francisco;Kellogg;Wardner; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: San Francisco, CA;Kellogg;Wardner; #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 ##########

@@ -17,7 +17,7 @@ The manager’s letters are letters from the manager of the mine in Kellogg to t
 
 Then comes a general correspondence file, 1894-1900 which is an alphabetically arranged group (M-Z, 1898-1900, is lacking). The majority of these letters are inter-company correspondence between the Kellogg and San Francisco offices, although there are a few letters from suppliers.
 
-{% include feature/item-pdf-embed.html objectid="bunkerhill41" width="75" %}
+{% include feature/item-pdf-embed.html objectid="bunkerhill41" width="50" %}
 
 Correspondence from stockholders contains both incoming and outgoing letters and is arranged alphabetically by the stockholder’s last name. Most letters concern dividend payments, proxies, and stock purchases.
 
@@ -25,7 +25,7 @@ The F.W. Bradley correspondence files are arranged alphabetically by what appear
 
 The manager’s letters of Stanly A. Easton, 1904-1926 (lacking May-December 1911 and January-March 1919) contain originals of Easton’s letters to Bradley, carbon copies of letters from Easton to others which were enclosed in his letters, and copies of Bradley’s replies. One file in this group concerns concentration and slips of paper in the main file refer to this concentration file, while slips in the concentration file refer to letters in the main group. For the years 1921 to May 1926 there is a separate file of carbon letters from Bradley to Easton. The letters from Easton to Jules Labarthe in San Francisco are original letters from Easton and carbons of Labarthe’s replies. Most of these letters concern the cost of smelting.
 
-{% include feature/item-pdf-embed.html objectid="bunkerhill25" width="75" %}
+{% include feature/item-pdf-embed.html objectid="bunkerhill25" width="50" %}
 
 Other topics of note in this collection include:
 
