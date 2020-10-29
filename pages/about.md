@@ -16,36 +16,29 @@ lazyload: true
 
 {% include feature/item-figure.html objectid="crbp1103" caption="Most photos in the collection relate to the Grand Coulee Dam (above), but many other Pacific Northwest dams are also depicted" width="50" %}
 
-The Army Corps of Engineers and PNW Dam Construction Photographs contains around 500 historical photographs collected and/or taken by the Army Corps of Engineers during the construction of various hydroelectric dams in Washington, Oregon, and Idaho between 1933-1965. The bulk of this collection documents the Columbia Basin Project, which resulted in the construction of the Grand Coulee Dam in central Washington state and the largest water reclamation project in the United States, supplying irrigation water to over 670,000 acres.
+This collection contains around 500 historical photographs collected and/or taken by the Army Corps of Engineers during the construction of various hydroelectric dams in Washington, Oregon, and Idaho between 1933-1965. The bulk of this collection documents the Columbia Basin Project, which resulted in the construction of the Grand Coulee Dam in central Washington state and the largest water reclamation project in the United States, supplying irrigation water to over 670,000 acres.
 
-The first 14 folders contain black and white photographs (8x10 inches) of various dam construction scenes in Washington and Idaho. The majority of photographs document the construction of the Grand Coulee Dam in Washington. Other dams include:
+The first 14 folders of the archival collection contain black and white photographs (8x10 inches) of various dam construction scenes in Washington and Idaho. The majority of photographs document the construction of the Grand Coulee Dam in Washington. Other dams include:
 
-
-#### Dams Depicted in the Collection 
-
-<div class="row">
-<div class="col-md-6 p-md-4" markdown="1">
+{% capture dams %}
 - [Long Lake Dam](browse.html#Long Lake Dam), two miles northeast of Stratford, Washington and later renamed Pinto Dam
 - [McNary Lock and Dam](browse.html#McNary Lock and Dam)
 - [Dworshak Dam ](browse.html#Dworshak Dam), two miles upstream on the North Fork of the Clearwater River from the town of Ahsahka, Idaho
 - [John Day Lock and Dam ](browse.html#John Day Lock and Dam), on the Columbia River
-</div>
-<div class="col-md-6 p-md-4" markdown="1">
 - [Lucky Peak Dam ](browse.html#Lucky Peak Dam), a flood control project on the Boise River 9 miles upstream from Boise, Idaho
 - [Ice Harbor Lock and Dam ](browse.html#Ice Harbor Lock and Dam), on the Snake River
 - [Little Goose Lock and Dam ](browse.html#Little Goose Lock and Dam), on the Snake River
 - [Lower Granite Lock and Dam](browse.html#Lower Granite Lock and Dam), at Snake River mile 107.5
 - [Asotin Dam ](browse.html#Asotin Dam), on the Snake River
 - [Grand Coulee Dam](browse.html#Grand Coulee Dam)
-</div>
-</div>
+{% endcapture %}
+{% include feature/card.md header="Dams Depicted in the Collection" text=dams width="50" centered="true" %}
 
 ## The Columbia Basin Project
 
 The bulk of this collection documents the history of the Columbia Basin Project, a large irrigation project in the Columbia basin of central Washington state. As of April 2020, the Bureau of Reclamation website indicates that the "Columbia Basin Project serves about 671,000 acres in east central Washington....There are over 300 miles of main canals, about 2,000 miles of laterals, and 3,500 miles of drains and wasteways on the project."[^1] The irrigation system provides irrigated water to farms but also electricity and water for much of Washington state.
 
 {% include feature/item-figure.html objectid="crbp1116" width="75" %}
-
 
 The project began with the construction of the Grand Coulee Dam which took place between 1933-1942. In 1943, "Congress authorized the Columbia Basin Project" but "construction of the irrigation system did not start until after World War II."[^1] During WWII, the dam provided massive amounts of energy to the burgeoning aluminum and aircraft industries of the Pacific Northwest, contributing to one of the primary factors of the ultimate Allies victory in WWII. A significant percentage of that power, it was later revealed, was also diverted to the Hanford Nuclear Site, a crucial component of the Manhattan Project. 
 
@@ -57,13 +50,11 @@ While the Grand Coulee Dam has played a crucial role in United States and world 
 
 ## Research Value
 
-Donated to the library by the University of Idaho College of Engineering, the Army Corps of Engineers and PNW Dam Construction Photographs collection is important for several reasons. First, each image has detailed descriptive metadata and captions, giving researchers a special insight into the construction methods, equipment, locations, and photographers associated with the Columbia Basin Project and the construction of other dams in the Pacific Northwest. Even the contracting companies responsible for carrying out particular projects are listed in the metadata.
+Donated to the library by the University of Idaho College of Engineering, the Columbia River Basin Project: Dam Construction in the Pacific Northwest collection is important for several reasons. First, each image has detailed descriptive metadata and captions, giving researchers a special insight into the construction methods, equipment, locations, and photographers associated with the Columbia Basin Project and the construction of other dams in the Pacific Northwest. Even the contracting companies responsible for carrying out particular projects are listed in the metadata.
 
 Second, the artistic quality of photography during these projects provides viewers with an understanding of the human element, and superhuman scale, involved in the construction of these dams. The photographers responsible for the collection perform a superb journalistic balancing act by documenting the technical aspects of the construction while capturing the grand ambitions and accomplishments of the people behind it.
 
 {% include feature/item-figure.html objectid="crbp973" width="75" %}
-
-We have a Tumblr blog series that originated from this collection called Oh Dam! It will be added to this Digital site soon. 
 
 <div class="clearfix"></div>
 
