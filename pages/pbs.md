@@ -1,7 +1,8 @@
 ---
 title: Photos Featured in PBS Documentary
-layout: page
+layout: about
 permalink: /pbs.html
+lazyload: true
 ---
 <div class="row">
     <div class="col-md-2">
