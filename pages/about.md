@@ -27,7 +27,9 @@ In 1898, Nellie Jane Stockbridge left her home in central Illinois to accept Tho
 
 {% include feature/item-figure.html objectid="https://www.lib.uidaho.edu/media/digital/nellie.jpg" caption="Nellie Stockbridge Portrait" link="https://www.lib.uidaho.edu/media/digital/nellie.jpg" %}
 
+<div class="text-center">
 {% include feature/button.md text="More on Nellie Stockbridge and the Barnard Stockbridge Collection" link="https://web.archive.org/web/20190509211433/https://www.cdapress.com/archive/article-39017cc5-a6df-5ac6-a3b2-a06609e05cf6.html" color="info" size="lg" %}
+</div>
 
 <div class="clearfix"></div>
 
