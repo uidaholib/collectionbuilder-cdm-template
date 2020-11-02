@@ -22,7 +22,7 @@ Several photos from this collection were used in the production of the PBS Docum
 
 The PBS Documentary [Grand Coulee Dam](https://www.pbs.org/wgbh/americanexperience/films/coulee/#part01) features the history of the Grand Coulee Dam in northeast Washington State. Constructed during the Great Depression, the dam and irrigation project was expected to "make the desert bloom" and bring a boost of hydropower to the entire region. While it did succeed in bringing clean power to the area, while also becoming one of the largest agricultural irrigation projects in the country, the dam leaves behind a complex and contentious legacy. 
 
-A copy of the [DVD](https://search.lib.uidaho.edu/permalink/f/m1uotc/CP71176536250001451) is available at the University of Idaho Library. Watch the trailer for the documentary below to learn more.
+A copy of the [DVD](https://search.lib.uidaho.edu/permalink/f/m1uotc/CP71176536250001451) is available at the University of Idaho Library. Watch the first chapter of the documentary below to learn more.
 
 <figure class="about-narrowed-content">
 <div class="pbs-viral-player-wrapper" style="position: relative; padding-top: calc(56.25% + 43px);">
