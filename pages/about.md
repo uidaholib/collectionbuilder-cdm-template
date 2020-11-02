@@ -5,7 +5,12 @@ permalink: /about.html
 # add image to index page bootstrap jumbotron
 featured-image: 
 ---
-{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" col-class="col-md-4 float-right ml-5" header="Archival Context" %}
+
+{% include feature/jumbotron.html %} 
+
+{% include feature/nav-menu.html sections="About the Collection;A Brief History of Potlatch Lumber Company;" %} 
+
+{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" col-class="col-md-7 ml-5" header="Archival Context" %}
 
 ## About the Collection
 
@@ -20,17 +25,6 @@ The records and photographs belonging to the Potlatch Lumber Company were donate
 The Potlatch Lumber Company was incorporated in 1903 by several men - Frederick Weyerhaeuser and other investors who collectively founded the Clearwater Timber Company in 1900.[^1] The town of Potlatch, Idaho, was founded as a "company town" in 1905 because the lumber company had become so successful and large.[^2] The Potlatch Lumber Company quickly became the "largest white pine mill in the world" with their first sawmill being built in Potlatch, Idaho along the Potlatch River.[^1] 
 
 {% include feature/item-figure.html objectid="plcphotos222" width="75" %}
-
-
-{% capture funfacts %}
-
-- The name "Potlatch was borrowed from the Chinook word for a Native American celebration of goodwill and gift giving.[^1]"
-- Charles Weyerhaeuser, son of Frederick Weyerhaeuser, was the first president of Potlatch Lumber Company.
-- The Potlatch Lumber Company believed that a company town was a necessary investment and a proper step in labor relations and community improvement. When the mill began operating in the fall of 1906, the town consisted of two boarding houses, two schools, a hotel, two churches, a mercantile, bank, post office, and an opera house. Bars and saloons were prohibited in the town, as was gambling. Potlatch attracted many settlers and immigrant families looking for work. The town grew quickly and, for a time, was the second largest town in Latah County.
-
-{% endcapture %}
-
-{% include feature/card.md text=funfacts header="Fun Facts" col-class="col-md-4 float-right m-3"  %}
 
 Potlatch Lumber Company maintained a close relationship with the Clearwater Timber Company (founded in 1900) and the Rutledge Lumber Company (founded in 1915).[^1] The three companies merged their "mills and forestland holdings" into the Potlatch Forests, Inc. (PFI.).[^1]
 
@@ -48,6 +42,16 @@ The company sought to "modernize" processes, technologies, and markets throughou
 In 2018, the company merged with "Arkansas-based Deltic Timber in an all-stock transaction, creating a leading domestic timberland owner and top-tier wood products manufacturer." As a result, the consolidated company was renamed "PotlatchDeltic Corporation."[^1]
 
 Though the population of Potlatch has dwindled over the years since the mill's closure, Potlatch remains a bedroom community for the university towns of Moscow, Idaho (University of Idaho) and Pullman, Washington (Washington State University).
+
+{% capture funfacts %}
+
+- The name "Potlatch was borrowed from the Chinook word for a Native American celebration of goodwill and gift giving.[^1]"
+- Charles Weyerhaeuser, son of Frederick Weyerhaeuser, was the first president of Potlatch Lumber Company.
+- The Potlatch Lumber Company believed that a company town was a necessary investment and a proper step in labor relations and community improvement. When the mill began operating in the fall of 1906, the town consisted of two boarding houses, two schools, a hotel, two churches, a mercantile, bank, post office, and an opera house. Bars and saloons were prohibited in the town, as was gambling. Potlatch attracted many settlers and immigrant families looking for work. The town grew quickly and, for a time, was the second largest town in Latah County.
+
+{% endcapture %}
+
+{% include feature/card.md text=funfacts header="Fun Facts" col-class="col-md-6 m-3"  %}
 
 [^1]: https://www.potlatchdeltic.com/Page/ViewPage/12
 [^2]: https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho
