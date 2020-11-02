@@ -24,22 +24,11 @@ The PBS Documentary [Grand Coulee Dam](https://www.pbs.org/wgbh/americanexperien
 
 A copy of the [DVD](https://search.lib.uidaho.edu/permalink/f/m1uotc/CP71176536250001451) is available at the University of Idaho Library. Watch the trailer for the documentary below to learn more.
 
-<div class="text-center ">
-    <figure class="figure mx-3 w-100">
-        <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://video.pbs.org/viralplayer/2215879030" marginwidth="0" marginheight="0" scrolling="no" seamless="" width="700" height="482" frameborder="0"></iframe>
-        </div>
-       <figcaption class="figure-caption"><a href="https://www.pbs.org/wgbh/americanexperience/features/coulee/">Example caption</a></figcaption>
-    </figure>
+<figure class="about-narrowed-content">
+<div class="pbs-viral-player-wrapper" style="position: relative; padding-top: calc(56.25% + 43px);">
+<iframe src="https://player.pbs.org/viralplayer/2215879030/" allowfullscreen style="position: absolute; top: 0; width: 100%; height: 100%; border: 0;"></iframe>
 </div>
+</figure>
 
-
-    <div class="col-md-10">
-        <h3>Photos from the Columbia River Basin Project featured in PBS Documentary!</h3>
-        <p>Several photos from this collection were used in the production of the PBS documentary <a href="http://www.pbs.org/wgbh/americanexperience/films/coulee/">Grand Coulee Dam</a>, which premiered as part of the <em>American Experience</em> series on April 3, 2012. A preview of the documentary is embedded in the viewer below.</p>
-
-        <p>A copy of the <a href="https://search.lib.uidaho.edu/UID:everything:CP71176536250001451">DVD</a> is available at the University of Idaho Library. For additional resources and information about the movie, visit <a href="http://www.pbs.org/wgbh/americanexperience/films/coulee/player/">the PBS website</a>.</p>
-
-        <iframe src="https://video.pbs.org/viralplayer/2215879030" marginwidth="0" marginheight="0" scrolling="no" seamless="" width="700" height="482" frameborder="0"></iframe>
-    </div>
-
+{:.pt-4}
+For additional resources and information about the movie, visit the [PBS website](http://www.pbs.org/wgbh/americanexperience/films/coulee/player/).
