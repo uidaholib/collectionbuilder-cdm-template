@@ -50,7 +50,7 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 #
 locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 2 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+locations-stopwords: united states; # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # MAP PAGE
