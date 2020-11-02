@@ -1,6 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-date,Date,
-location,Location,true,
+location,Location,,true,Location
+donor,Donor,,true,
 subject,,true
 identifier,,,true,Identifier
