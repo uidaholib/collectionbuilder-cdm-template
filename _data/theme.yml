@@ -48,7 +48,7 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -56,8 +56,8 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 43.921048 #to determine center of map
-longitude: -116.903855 #to determine center of map
+latitude: 38.690082 #to determine center of map
+longitude: -102.445155 #to determine center of map
 zoom-level: 5 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
