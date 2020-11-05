@@ -45,7 +45,7 @@ Rachael Paschal Osborn is a retired water law attorney and Gonzaga University pr
 
 {% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
 
-[^1:] Kershner, Jim. "Osborn, John (b. 1956) and Rachael Paschal (b. 1956)." [HistoryLink](https://www.historylink.org/File/9782), 2011.
+[^1]: Kershner, Jim. "Osborn, John (b. 1956) and Rachael Paschal (b. 1956)." [HistoryLink](https://www.historylink.org/File/9782), 2011.
 
 <div class="clearfix"></div>
 
