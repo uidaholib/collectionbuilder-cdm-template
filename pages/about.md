@@ -31,10 +31,10 @@ It was not long before he began giving evening lectures in the dining room of th
 While working at the Corner Drug Store, Robinson continually jotted notes to himself, and on a Saturday night he locked his door, sat at his typewriter, and in the next thirty-six hours typed the first set of ten lessons for his unnamed religion. Borrowing about $2500.00 from several towns people, Robinson had the lessons printed and commenced advertising. 
 
 {% capture moreinfo %}
-- [Nortwest Public Broadcasting Documentary](https://www.pbs.org/video/idahos-mail-order-messiah-gytws3/)
+- [Northwest Public Broadcasting Documentary](https://www.pbs.org/video/idahos-mail-order-messiah-gytws3/)
     - A half hour documentary on Psychiana, produced in 2019.
 - [Latah County Historical Society Online Exhibit](https://artsandculture.google.com/exhibit/psychiana-moscow-idaho-s-mail-order-religion-latah-county-historical-society/jwIS65lUkTrHJA?hl=en) 
-    - excellent contextual information with more photographs
+    - Excellent contextual information with more photographs
 {% endcapture %}
 
 {% include feature/card.md text=moreinfo header="More Information" width="50" %}
