@@ -28,10 +28,8 @@ The Osborns donated the materials from their prolific environmental conservation
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
 {% capture moreinfo %}
-- [Northwest Public Broadcasting Documentary](https://www.pbs.org/video/idahos-mail-order-messiah-gytws3/)
-    - A half hour documentary on Psychiana, produced in 2019.
+- [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930’s”](www.lib.uidaho.edu/ digital/transitions/items/transitions67.html) by Nick Casner, April 1997
 - [Latah County Historical Society Online Exhibit](https://artsandculture.google.com/exhibit/psychiana-moscow-idaho-s-mail-order-religion-latah-county-historical-society/jwIS65lUkTrHJA?hl=en) 
-    - Excellent contextual information with more photographs
 {% endcapture %}
 
 {% include feature/card.md text=moreinfo header="Notable Issues and Articles" width="50" %} 
