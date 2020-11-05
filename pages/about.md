@@ -5,22 +5,39 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/nav-menu.html sections="About the Collection;About the Journal;About John and Rachael Osborn" %} 
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+The *Transitions* papers were donated to the [University of Idaho Library Special Collections](https://www.lib.uidaho.edu/special-collections/) as part of the John and Rachael Osborn Collection. The collection consists of approximately 300 cubic feet of materials that document pivotal struggles in the region’s environmental history, from forest conservation in Eastern Washington, North Idaho, and Western Montana to water conservation from the late 1900s to the present. 
+
+The Osborns donated the materials from their prolific environmental conservation careers ahead of their semiretirement in 2017. The extensive collection is not fully available to researchers yet, but general questions about its contents can be directed to Special Collections [staff]( https://www.lib.uidaho.edu/special-collections/about.html). Related materials found in the previously donated [John Osborn Papers, 1979-1997]( https://archiveswest.orbiscascade.org/ark:/80444/xv48843/) collection can be viewed in the Special Collections [Reading Room]( https://www.lib.uidaho.edu/special-collections/plan.html). 
+
 
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
-## About the UI Boxing Team
+## About the Journal
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+*Transitions* is a quarterly journal from [The Land Council](https://landscouncil.org/) that highlights the historic transition from resource extraction to long-term community and biological sustainability in the Pacific and Inland Northwest region during the years 1988 to 2000. Journal content includes newspaper stories (some from microfilm scans), photographs, original writing, and political cartoons. Each issue was hand-compiled by editor and publisher John Osborn which, up until about 1994, involved using scalpels, glue sticks, a light table, and a photocopier at Kinko’s. All together, the journal contains roughly 4,000 pages.
 
+<blockquote class="blockquote text-right about-contents py-3">
+  <h3>“<i>Transitions</i> includes the best of my material on wilderness, forest planning, Coeur d’Alene Basin mining and smelting wastes, and the Northern Pacific railroad land grant. [It] focuses on the closing of frontiers—mining and timber. I lived part of this history as a public interest advocate, informing how the story is told.” </h3>
+  <p class="blockquote-footer">John Osborn in <cite title="Source Title">Source Title</cite></p>
+</blockquote>
+
+This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing conflicts. 
 For an extensive history of the Boxing program, see the Argonaut article linked below. 
+
+## About John and Rachael Osborn
+
+John Osborn is a Spokane physician and conservationist who founded and acted as long-time president of The Lands Council. His career as a conservationist also included editing and publishing *Transitions* from 1988 to 2000, co-authoring the book [*Railroads and Clearcuts: Legacy of Congress’s 1864 Northern Pacific Railroad Land Grant – A Photographic Essay*]( https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71126172490001451), and repeatedly testifying before local, state, and federal government bodies. 
+
+Rachael Paschal Osborn is a retired water law attorney and Gonzaga University professor. During her career, she co-founded the [Center for Environmental Law and Policy](https://celp.org/) in 1993 (while later acting as director), was involved with protecting rivers and aquifers in the region, and was a key part of many lawsuits and legal agreements, including a 2009 agreement which required Avista Utilities to “restore enough flow to the Spokane River to make Spokane Falls roar seven days a week, 365 days a year.” [^1]
+
 
 {% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
 
+[^1:] Kershner, Jim. "Osborn, John (b. 1956) and Rachael Paschal (b. 1956)." [HistoryLink](https://www.historylink.org/File/9782), 2011.
 
 <div class="clearfix"></div>
 
