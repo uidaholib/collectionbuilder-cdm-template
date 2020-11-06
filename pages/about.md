@@ -55,7 +55,9 @@ Rachael Paschal Osborn is a retired water law attorney and Gonzaga University pr
 
 {% include feature/item-figure.html objectid="https://thumb.spokesman.com/mhXsygRslMkVlEv8heW_62pd2qQ=/1200x0/media.spokesman.com/photos/2017/05/03/SRX_OSBORN_001_TT_30553513.jpg" link="https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/" caption="John and Rachael Osborn in the vacant office of their home in Spokane in 2017" width="50" %}
 
+<div class="text-center py-4">
 {% include feature/button.md text="Learn more about the Osborns" link="https://www.historylink.org/File/9782" color="info" size="lg" %}
+</div>
 
 [^1]: Kershner, Jim. "Osborn, John (b. 1956) and Rachael Paschal (b. 1956)." [HistoryLink](https://www.historylink.org/File/9782), 2011.
 
