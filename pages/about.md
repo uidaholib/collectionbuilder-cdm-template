@@ -5,16 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the Journal;About John and Rachael Osborn" %} 
-
-## About the Collection
-
-The *Transitions* papers were donated to the [University of Idaho Library Special Collections](https://www.lib.uidaho.edu/special-collections/) as part of the John and Rachael Osborn Collection. The collection consists of approximately 300 cubic feet of materials that document pivotal struggles in the region’s environmental history, from forest conservation in Eastern Washington, North Idaho, and Western Montana to water conservation from the late 1900s to the present. 
-
-The Osborns donated the materials from their prolific environmental conservation careers ahead of their semiretirement in 2017. The extensive collection is not fully available to researchers yet, but general questions about its contents can be directed to Special Collections [staff]( https://www.lib.uidaho.edu/special-collections/about.html). Related materials found in the previously donated [John Osborn Papers, 1979-1997]( https://archiveswest.orbiscascade.org/ark:/80444/xv48843/) collection can be viewed in the Special Collections [Reading Room]( https://www.lib.uidaho.edu/special-collections/plan.html). 
-
-
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
+{% include feature/nav-menu.html sections="About the Journal;About the Collection;About John and Rachael Osborn" %} 
 
 ## About the Journal
 
@@ -23,14 +14,14 @@ The Osborns donated the materials from their prolific environmental conservation
 Journal content includes newspaper stories (some from microfilm scans), photographs, original writing, and political cartoons. Each issue was hand-compiled by editor and publisher John Osborn which, up until about 1994, involved using scalpels, glue sticks, a light table, and a photocopier at Kinko’s. All together, the journal contains roughly 4,000 pages.
 
 <blockquote class="blockquote text-right about-contents py-3">
-  <h3>“<i>Transitions</i> includes the best of my material on wilderness, forest planning, Coeur d’Alene Basin mining and smelting wastes, and the Northern Pacific railroad land grant. [It] focuses on the closing of frontiers—mining and timber. I lived part of this history as a public interest advocate, informing how the story is told.” </h3>
-  <p class="blockquote-footer">John Osborn in <cite title="Source Title">Source Title</cite></p>
+  <h3>“<emph>Transitions</emph> includes the best of my material on wilderness, forest planning, Coeur d’Alene Basin mining and smelting wastes, and the Northern Pacific railroad land grant. [It] focuses on the closing of frontiers—mining and timber. I lived part of this history as a public interest advocate, informing how the story is told.” </h3>
+  <p class="blockquote-footer">John Osborn</p>
 </blockquote>
 
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
 <div class="text-center pb-4">
-{% include feature/button.md text="View the original <i>Transitions</i> Index" link="http://waterplanet.ws/transitions/" color="info" size="lg" %}
+{% include feature/button.md text="View the original <emph>Transitions</emph> Index" link="http://waterplanet.ws/transitions/" color="info" size="lg" %}
 </div>
 
 {% capture moreinfo %}
@@ -42,6 +33,15 @@ This collection marks the first time all issues of *Transitions* have been avail
 <div class="row justify-content-center">
 {% include feature/card.md text=moreinfo header="Notable Issues and Articles" width="50" %}
 </div>
+
+## About the Collection
+
+The *Transitions* papers were donated to the [University of Idaho Library Special Collections](https://www.lib.uidaho.edu/special-collections/) as part of the John and Rachael Osborn Collection. The collection consists of approximately 300 cubic feet of materials that document pivotal struggles in the region’s environmental history, from forest conservation in Eastern Washington, North Idaho, and Western Montana to water conservation from the late 1900s to the present. 
+
+The Osborns donated the materials from their prolific environmental conservation careers ahead of their semiretirement in 2017. The extensive collection is not fully available to researchers yet, but general questions about its contents can be directed to Special Collections [staff]( https://www.lib.uidaho.edu/special-collections/about.html). Related materials found in the previously donated [John Osborn Papers, 1979-1997]( https://archiveswest.orbiscascade.org/ark:/80444/xv48843/) collection can be viewed in the Special Collections [Reading Room]( https://www.lib.uidaho.edu/special-collections/plan.html). 
+
+
+{% include feature/item-figure.html objectid="boxing33" width="75" %}
 
 ## About John and Rachael Osborn
 
