@@ -45,7 +45,7 @@ The Osborns donated the materials from their prolific environmental conservation
 
 ## About John and Rachael Osborn
 
-{% include feature/item-figure.html objectid="https://thumb.spokesman.com/3OIYIGcE8Ue8CHBDQaIudcC8z8s=/1200x0/media.spokesman.com/photos/2015/08/06/water-6.jpg" link="https://www.spokesman.com/stories/2015/aug/06/conservationists-ask-spokane-area-water-users-to/" caption="John Osborn giving a talk on conserving water to help the Spokane River in 2015" width="50" %}
+{% include feature/item-figure.html objectid="https://thumb.spokesman.com/3OIYIGcE8Ue8CHBDQaIudcC8z8s=/1200x0/media.spokesman.com/photos/2015/08/06/water-6.jpg" link="https://www.spokesman.com/stories/2015/aug/06/conservationists-ask-spokane-area-water-users-to/" caption="'Conservationists ask Spokane-area water users to conserve, protect river.' From the Spokesman Review." width="50" %}
 
 John Osborn is a Spokane physician and conservationist who founded and acted as long-time president of The Lands Council. His career as a conservationist also included editing and publishing *Transitions* from 1988 to 2000, co-authoring the book [*Railroads and Clearcuts: Legacy of Congress’s 1864 Northern Pacific Railroad Land Grant – A Photographic Essay*]( https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71126172490001451), and repeatedly testifying before local, state, and federal government bodies. 
 
