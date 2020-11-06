@@ -22,7 +22,7 @@
             <a href="{% unless include.objectid contains '/' %}{{ '/items/' | append: figure.objectid | append: '.html' | relative_url }}{% else %}{{ include.link }}{% endunless %}">
                 <img class="figure-img img-fluid rounded lazyload" alt="{% unless include.objectid contains '/' %}{{ figure.title | escape }}{% else %}{{ include.caption }}{% endunless %}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{% if figure.youtubeid %}https://img.youtube.com/vi/{{ figure.youtubeid }}/maxresdefault.jpg{% elsif figure.format contains 'image' %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ figure.cdmid }}/full/max/0/default.jpg{% elsif figure.format contains 'pdf' %}{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/{{ figure.cdmid }}{% else %}{{ include.objectid }}{% endif %}" >
             </a>
-            {% unless include.caption == false %}<figcaption class="figure-caption">{% if include.caption %}{{ include.caption }}{% else %}{{ figure.title }}{% endif %}</figcaption>{% endunless %}
+            {% unless include.caption == false %}<figcaption class="figure-caption">{% if include.caption %}{{ include.caption | markdownify }}{% else %}{{ figure.title }}{% endif %}</figcaption>{% endunless %}
         </figure>
     </div>
     {% endfor %}

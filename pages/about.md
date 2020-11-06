@@ -53,7 +53,7 @@ John Osborn is a Spokane physician and conservationist who founded and acted as 
 
 Rachael Paschal Osborn is a retired water law attorney and Gonzaga University professor. During her career, she co-founded the [Center for Environmental Law and Policy](https://celp.org/) in 1993 (while later acting as director), was involved with protecting rivers and aquifers in the region, and was a key part of many lawsuits and legal agreements, including a 2009 agreement which required Avista Utilities to “restore enough flow to the Spokane River to make Spokane Falls roar seven days a week, 365 days a year.” [^1]
 
-{% include feature/item-figure.html objectid="https://thumb.spokesman.com/mhXsygRslMkVlEv8heW_62pd2qQ=/1200x0/media.spokesman.com/photos/2017/05/03/SRX_OSBORN_001_TT_30553513.jpg" link="https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/" caption="John and Rachael Osborn in the vacant office of their home in Spokane in 2017" width="50" %}
+{% include feature/item-figure.html objectid="https://thumb.spokesman.com/mhXsygRslMkVlEv8heW_62pd2qQ=/1200x0/media.spokesman.com/photos/2017/05/03/SRX_OSBORN_001_TT_30553513.jpg" link="https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/" caption="John and Rachael Osborn in the vacant office of their home in Spokane in 2017 [newspaper example](https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/)" width="50" %}
 
 <div class="text-center py-4">
 {% include feature/button.md text="Learn more about the Osborns" link="https://www.historylink.org/File/9782" color="info" size="lg" %}
