@@ -23,14 +23,14 @@ The Osborns donated the materials from their prolific environmental conservation
 Journal content includes newspaper stories (some from microfilm scans), photographs, original writing, and political cartoons. Each issue was hand-compiled by editor and publisher John Osborn which, up until about 1994, involved using scalpels, glue sticks, a light table, and a photocopier at Kinko’s. All together, the journal contains roughly 4,000 pages.
 
 <blockquote class="blockquote text-right about-contents py-3">
-  <h3>“<i>Transitions</i> includes the best of my material on wilderness, forest planning, Coeur d’Alene Basin mining and smelting wastes, and the Northern Pacific railroad land grant. [It] focuses on the closing of frontiers—mining and timber. I lived part of this history as a public interest advocate, informing how the story is told.” </h3>
+  <h3>“<emph>Transitions</emph> includes the best of my material on wilderness, forest planning, Coeur d’Alene Basin mining and smelting wastes, and the Northern Pacific railroad land grant. [It] focuses on the closing of frontiers—mining and timber. I lived part of this history as a public interest advocate, informing how the story is told.” </h3>
   <p class="blockquote-footer">John Osborn in <cite title="Source Title">Source Title</cite></p>
 </blockquote>
 
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
 <div class="text-center pb-4">
-{% include feature/button.md text="View the original <i>Transitions</i> Index" link="http://waterplanet.ws/transitions/" color="info" size="lg" %}
+{% include feature/button.md text="View the original <emph>Transitions</emph> Index" link="http://waterplanet.ws/transitions/" color="info" size="lg" %}
 </div>
 
 {% capture moreinfo %}
