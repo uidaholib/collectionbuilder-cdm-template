@@ -28,8 +28,9 @@ The Osborns donated the materials from their prolific environmental conservation
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
 {% capture moreinfo %}
-- [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930’s”](www.lib.uidaho.edu/ digital/transitions/items/transitions67.html) by Nick Casner, April 1997
-- [Latah County Historical Society Online Exhibit](https://artsandculture.google.com/exhibit/psychiana-moscow-idaho-s-mail-order-religion-latah-county-historical-society/jwIS65lUkTrHJA?hl=en) 
+- [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930s”](www.lib.uidaho.edu/digital/transitions/items/transitions67.html) by Nick Casner, April 1997
+- ["Poisoning Children"](www.lib.uidaho.edu/digital/transitions/items/transitions33.html) by John Osborn, November/December 1994
+- ["Unkindest Cut?: Timber Firm Stires Ire Felling Forests Faster Than They Regenerate"](www.lib.uidaho.edu/digital/transitions/items/transitions47.html) by Dennis Farney, April 1992 (article originally published in *The Wall Stree Journal* in 1990)
 {% endcapture %}
 
 {% include feature/card.md text=moreinfo header="Notable Issues and Articles" width="50" %} 
@@ -40,8 +41,9 @@ John Osborn is a Spokane physician and conservationist who founded and acted as 
 
 Rachael Paschal Osborn is a retired water law attorney and Gonzaga University professor. During her career, she co-founded the [Center for Environmental Law and Policy](https://celp.org/) in 1993 (while later acting as director), was involved with protecting rivers and aquifers in the region, and was a key part of many lawsuits and legal agreements, including a 2009 agreement which required Avista Utilities to “restore enough flow to the Spokane River to make Spokane Falls roar seven days a week, 365 days a year.” [^1]
 
+{% include feature/item-figure.html objectid="boxing33" width="75" %}
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+{% include feature/button.md text="Learn more about the Osborns" link="https://www.historylink.org/File/9782" color="info" size="lg" %}
 
 [^1]: Kershner, Jim. "Osborn, John (b. 1956) and Rachael Paschal (b. 1956)." [HistoryLink](https://www.historylink.org/File/9782), 2011.
 
