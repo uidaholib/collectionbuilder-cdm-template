@@ -24,10 +24,10 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # title of site appears in banner
 title: Transitions Journal Digital Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Curated articles on environmental issues in Spokane, WA, 1988-2000
+tagline: Curated articles on environmental, conservation, and ecological issues in the Inland and Pacific Northwest Region, 1988 - 2000
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "Curated articles on environmental issues in Spokane, WA, 1988-2000"  
+description: "The Transitions Journal Digital Collection is a digital repository for <i>Transitions</i>, a conservation-focused publication edited and published by John Osborn from 1988 to 2000."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: owikle
 # Organization branding
