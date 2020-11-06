@@ -29,7 +29,9 @@ Journal content includes newspaper stories (some from microfilm scans), photogra
 
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
+<div class="text-center pb-4">
 {% include feature/button.md text="View the original <i>Transitions</i> Index" link="http://waterplanet.ws/transitions/" color="info" size="lg" %}
+</div>
 
 {% capture moreinfo %}
 - [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930s”](www.lib.uidaho.edu/digital/transitions/items/transitions67.html) by Nick Casner, April 1997
@@ -37,19 +39,21 @@ This collection marks the first time all issues of *Transitions* have been avail
 - ["Unkindest Cut?: Timber Firm Stires Ire Felling Forests Faster Than They Regenerate"](www.lib.uidaho.edu/digital/transitions/items/transitions47.html) by Dennis Farney, April 1992 (article originally published in *The Wall Stree Journal* in 1990)
 {% endcapture %}
 
-{% include feature/card.md text=moreinfo header="Notable Issues and Articles" width="50" %} 
+<div class="row justify-content-center">
+{% include feature/card.md text=moreinfo header="Notable Issues and Articles" width="50" %}
+</div>
 
 ## About John and Rachael Osborn
 
-{% include feature/item-figure.html objectid="https://thumb.spokesman.com/3OIYIGcE8Ue8CHBDQaIudcC8z8s=/1200x0/media.spokesman.com/photos/2015/08/06/water-6.jpg" link="https://www.spokesman.com/stories/2015/aug/06/conservationists-ask-spokane-area-water-users-to/" caption="John Osborn giving a talk on conserving water to help the Spokane River in 2015" width="75" %}
+{% include feature/item-figure.html objectid="https://thumb.spokesman.com/3OIYIGcE8Ue8CHBDQaIudcC8z8s=/1200x0/media.spokesman.com/photos/2015/08/06/water-6.jpg" link="https://www.spokesman.com/stories/2015/aug/06/conservationists-ask-spokane-area-water-users-to/" caption="John Osborn giving a talk on conserving water to help the Spokane River in 2015" width="50" %}
 
 John Osborn is a Spokane physician and conservationist who founded and acted as long-time president of The Lands Council. His career as a conservationist also included editing and publishing *Transitions* from 1988 to 2000, co-authoring the book [*Railroads and Clearcuts: Legacy of Congress’s 1864 Northern Pacific Railroad Land Grant – A Photographic Essay*]( https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71126172490001451), and repeatedly testifying before local, state, and federal government bodies. 
 
-{% include feature/item-figure.html objectid="https://www.spokanejournal.com/?action=img&p=news&src=8037dfbbd39145c76649f9c1f7046619.jpg&crop=true&x=791&y=540" link="https://www.spokanejournal.com/up-close/lawyer-navigates-guardian-role-for-rivers-water-rights/" caption="Rachel Paschal Osborn pictured near Spokane Falls in 2013" width="75" %}
+{% include feature/item-figure.html objectid="https://www.spokanejournal.com/?action=img&p=news&src=8037dfbbd39145c76649f9c1f7046619.jpg&crop=true&x=791&y=540" link="https://www.spokanejournal.com/up-close/lawyer-navigates-guardian-role-for-rivers-water-rights/" caption="Rachel Paschal Osborn pictured near Spokane Falls in 2013" width="50" %}
 
 Rachael Paschal Osborn is a retired water law attorney and Gonzaga University professor. During her career, she co-founded the [Center for Environmental Law and Policy](https://celp.org/) in 1993 (while later acting as director), was involved with protecting rivers and aquifers in the region, and was a key part of many lawsuits and legal agreements, including a 2009 agreement which required Avista Utilities to “restore enough flow to the Spokane River to make Spokane Falls roar seven days a week, 365 days a year.” [^1]
 
-{% include feature/item-figure.html objectid="https://thumb.spokesman.com/mhXsygRslMkVlEv8heW_62pd2qQ=/1200x0/media.spokesman.com/photos/2017/05/03/SRX_OSBORN_001_TT_30553513.jpg" link="https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/" caption="John and Rachael Osborn in the vacant office of their home in Spokane in 2017" width="75" %}
+{% include feature/item-figure.html objectid="https://thumb.spokesman.com/mhXsygRslMkVlEv8heW_62pd2qQ=/1200x0/media.spokesman.com/photos/2017/05/03/SRX_OSBORN_001_TT_30553513.jpg" link="https://www.spokesman.com/stories/2017/may/04/a-legacy-in-land-and-water-longtime-activists-john/" caption="John and Rachael Osborn in the vacant office of their home in Spokane in 2017" width="50" %}
 
 {% include feature/button.md text="Learn more about the Osborns" link="https://www.historylink.org/File/9782" color="info" size="lg" %}
 
