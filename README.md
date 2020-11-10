@@ -10,3 +10,10 @@ Collection settings are customized using the [`_data/theme.yml`](https://github.
 Each digital collection is a branch in this repository.
 
 While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
+
+## Customizations specific to Transitions
+
+PDF downloads are limited to on-campus users only for copyright reasons.
+_includes/image/thumb.html links to digital/objects thumbs. Don't overwrite!
+_layouts/item.html image source is customized to use digital/objects smalls.
+If these are overwritten with cdm api, the thumbs and smalls will not show up off campus.

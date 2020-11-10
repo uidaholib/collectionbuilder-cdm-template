@@ -34,7 +34,7 @@ gallery: true
                             Your browser does not support the video tag.
                         </video>
                         {%- else -%}
-                        <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
+                        <a href="{% include download/item.html %}" target="_blank"><img src="https://www.lib.uidaho.edu/digital/objects/transitions/small/{{ page.identifier }}_sm.jpg" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- endif -%}
                     </p>
                 </div>
