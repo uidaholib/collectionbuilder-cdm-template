@@ -46,9 +46,8 @@ gallery: true
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
-                    {% if page.latitude and page.longitude %}
-                    <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info">View on Map</a>{% endif %}
                 </div>
+                <div class="my-2 text-small">NOTE: PDF downloads are only available on the UI Campus. Email omwikle@uidaho.edu with any questions.</div>
             </div>
         </div>
 
@@ -63,6 +62,13 @@ gallery: true
                         {% for t in topics %}
                         <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
                         {% endfor %}
+                        {% elsif f.display_name == "Articles" %}
+                        {% assign articles = page[f.field] | split: ");" %}
+                        <ul>
+                        {% for a in articles %}
+                        <li>{{ a | strip }})</li>
+                        {% endfor %}
+                        </ul>
                         {% else %}
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
