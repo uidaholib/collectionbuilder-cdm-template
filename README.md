@@ -13,7 +13,9 @@ While this version was built specifically for use at the University of Idaho Lib
 
 ## Customizations specific to Transitions
 
-PDF downloads are limited to on-campus users only for copyright reasons.
-_includes/image/thumb.html links to digital/objects thumbs. Don't overwrite!
-_layouts/item.html image source is customized to use digital/objects smalls.
-If these are overwritten with cdm api, the thumbs and smalls will not show up off campus.
+- PDF downloads are limited to on-campus users only for copyright reasons.
+- _includes/image/thumb.html links to digital/objects thumbs. Don't overwrite!
+- _layouts/item.html image source is customized to use digital/objects smalls.
+- browse-js.html and carousel-js.html customized to use digital/objects thumbs.
+- If these are overwritten with cdm api, the thumbs and smalls will not show up off campus.
+- Data table replaces description with authors

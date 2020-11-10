@@ -11,7 +11,7 @@ permalink: /about.html
 
 *Transitions* is a quarterly journal from [The Land Council](https://landscouncil.org/) that highlights the historic transition from resource extraction to long-term community and biological sustainability in the Pacific and Inland Northwest region during the years 1988 to 2000. Issues of the journal cover a wide range of environmental and conservation topics ranging from forestry management, the logging industry, and railroad land grants to wilderness protection. 
 
-{% include feature/item-figure.html objectid="https://www.lib.uidaho.edu/digital/objects/transitions/about/transitions31.jpg" link="https://www.lib.uidaho.edu/digital/transitions/items/transitions31.html" caption="The cover of the first issue of *Transitions*" width="50" %}
+{% include feature/item-figure.html objectid="https://www.lib.uidaho.edu/digital/objects/transitions/about/transitions31.jpg" link="https://www.lib.uidaho.edu/digital/transitions/items/transitions31.html" caption="The cover of the [first issue](https://www.lib.uidaho.edu/digital/transitions/items/transitions31.html) of *Transitions*" width="50" %}
 
 Journal content includes newspaper stories (some from microfilm scans), photographs, original writing, and political cartoons. Each issue was hand-compiled by editor and publisher John Osborn which, up until about 1994, involved using scalpels, glue sticks, a light table, and a photocopier at Kinko’s. All together, the journal contains roughly 4,000 pages.
 
@@ -20,7 +20,7 @@ Journal content includes newspaper stories (some from microfilm scans), photogra
   <p class="blockquote-footer">John Osborn</p>
 </blockquote>
 
-{% include feature/item-figure.html objectid="https://www.lib.uidaho.edu/digital/objects/transitions/about/transitions28_02.jpg" link="https://www.lib.uidaho.edu/digital/transitions/items/transitions28.html" caption="The beginning of an article from the September/October 1996 issue of *Transitions*, originally published in the Spokesman Review" width="50" %}
+{% include feature/item-figure.html objectid="https://www.lib.uidaho.edu/digital/objects/transitions/about/transitions28_02.jpg" link="https://www.lib.uidaho.edu/digital/transitions/items/transitions28.html" caption="The beginning of an article from the [September/October 1996 issue](https://www.lib.uidaho.edu/digital/transitions/items/transitions28.html) of *Transitions*, originally published in the Spokesman Review" width="50" %}
 
 This collection marks the first time all issues of *Transitions* have been available in digital format. It is John and Rachael Osborn’s hope that expanded access to the journal will help publicly document the environmental history of the region during a critical time while also providing lessons that can be applied to ongoing environmental conflicts. 
 
