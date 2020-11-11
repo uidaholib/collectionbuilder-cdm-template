@@ -47,7 +47,7 @@ gallery: true
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                 </div>
-                <div class="my-2 text-small">NOTE: PDF downloads are only available at the UI Library. Email omwikle@uidaho.edu with any questions.</div>
+                <div class="my-2 text-small">NOTE: PDF downloads are only available at the University of Idaho Library. Email omwikle@uidaho.edu with any questions.</div>
             </div>
         </div>
 
