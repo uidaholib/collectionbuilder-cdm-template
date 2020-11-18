@@ -8,6 +8,8 @@ subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,true,,contentLocation
 latitude,Latitude
 longitude,Longitude
+moscow number,Moscow Number
+fs number,Forest Service Number
 collection,Source Collection
 source,Source
 identifier,Source Identifier

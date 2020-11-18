@@ -1,5 +1,8 @@
 field,display_name,btn,hidden,sort_name
+photographer,Photographer,true,,Photographer
 date,Date,,,Date
 subject,,true
 location,Location,true
 identifier,,,true,Identifier
+moscow number,,,true
+fs number,,,true
