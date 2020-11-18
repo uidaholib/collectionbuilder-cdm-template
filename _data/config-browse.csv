@@ -3,3 +3,4 @@ date,Date,,,Date
 subject,,true
 location,Location,true
 identifier,,,true,Identifier
+description,

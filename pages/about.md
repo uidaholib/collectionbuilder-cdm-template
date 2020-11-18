@@ -25,7 +25,7 @@ On October 9, 1943 his B-17 was shot down and he survived the bailout only to be
 
 The objective of this collection is to preserve and share his story, giving researchers and audiences a deeper understanding of the historical and sociological impact of war and military service, particularly the experiences of an average World War II prisoner of war. Calnon’s oral history serves as a key non-celebrity primary source for historians and people studying World War II.
 
-The Calnon collection was put together by film maker Denise Bennett as part of a Seed Grant funded project. Her research resulted in a documentary film, "[Some Lived: An Idaho POW's Story](https://video.idahoptv.org/video/some-lived-an-idaho-pows-story-e4uxn8/)", aired as part of Idaho Public Television's series *Idaho Experience*. 
+The Calnon collection was put together by film maker Denise Bennett as part of a Seed Grant funded project. Her research resulted in a documentary film, "[Some Lived: An Idaho POW's Story](https://video.idahoptv.org/video/some-lived-an-idaho-pows-story-e4uxn8/)," aired as part of Idaho Public Television's series *Idaho Experience*. 
 
 Mr. Calnon also [recorded an interview](https://www.youtube.com/watch?v=MN1UhBenH5Y&feature=youtu.be) for the [Veterans History Project](http://www.loc.gov/vets/), which is a project of the Library of Congress's [American Folklife Center](https://www.loc.gov/folklife/). 
 
