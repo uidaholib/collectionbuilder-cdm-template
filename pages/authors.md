@@ -3,6 +3,7 @@ title: Authors
 layout: cloud
 permalink: /authors.html
 cloud-fields: creator
+cloud-min: 4
 ---
 
 ## Browse Authors
