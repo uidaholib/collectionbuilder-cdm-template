@@ -1,7 +1,8 @@
 ---
 title: Authors
-layout: authors
+layout: cloud
 permalink: /authors.html
+cloud-fields: creator
 ---
 
 ## Browse Authors
