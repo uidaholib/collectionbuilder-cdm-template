@@ -11,7 +11,7 @@ permalink: /about.html
 
 Since the beginning, one of the primary responsibilities of the Idaho Agricultural Experiment Station and the University of Idaho Extension has been the diffusion of useful and practical, research-based information on agriculture and related subjects.
 
-{% include feature/item-figure.html objectid="uiext6304" width="200" %}
+{% include feature/item-figure.html objectid="uiext6304" %}
 
 The University of Idaho Board of Regents established the Idaho Agricultural Experiment Station at the University of Idaho in 1892 following the passage of the federal Hatch Act (1887), which allowed the creation of agricultural experiment stations at state land-grant colleges. In addition to stimulating agricultural research, the act required the publishing of bulletins or reports of progress on station research and allocated $15,000 per year for conducting investigations and experiments and printing and distributing the results.
 
@@ -19,7 +19,7 @@ The University of Idaho College of Agriculture began establishing an Extension p
 
 ## About the Collection
 
-{% include feature/item-figure.html objectid="uiext13209" width="200" %}
+{% include feature/item-figure.html objectid="uiext13209" %}
 
 This collection encompasses the research-based publishing of the Idaho Agricultural Experiment Station and University of Idaho Extension since their inceptions. Experiment station publishing started almost immediately in 1892 with a series of bulletins that ran until 1954. Extension publishing began in 1912 with a series of bulletins that ran until 1953. A new series of University of Idaho College of Agriculture bulletins began in 1953, starting with number 200, with contributions coming either from the Idaho Agricultural Experiment Station or the Idaho Agricultural Extension Service. A series of shorter College of Agriculture publications, the current information series, began in 1964 with titles from both the experiment station and extension. A series of highly technical research bulletins published by the Idaho Agricultural Experiment Station, the research bulletins, began in 1922. 
 
