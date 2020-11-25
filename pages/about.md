@@ -37,7 +37,7 @@ It takes people to run a saw mill, and because the mill was located in an almost
 
 Four years later, Potlatch Lumber Company built a new saw mill in what is now Elk River, Idaho, and around 1916, the Edward Rutledge Timber Company built one near Coeur d'Alene, Idaho. Clearwater Timber's mill in Lewiston began operation in 1927, and in 1931, the three separate but affiliated companies - Potlatch Lumber Company, Edward Rutledge Timber Company, and Clearwater Timber Company - merged to form Potlatch Forests, Inc., with headquarters in Lewiston.
 
-{% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/iiif/phs/780/full/pct:70/0/default.jpg" width="50" caption="A photograph of Potlatch, Idaho in 1908." %}
+{% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/iiif/phs/780/full/pct:70/0/default.jpg" width="50" caption="A Pres-to-log machine" %}
 
 *Pres-to-logs*, introduced in 1930, helped Potlatch weather the Great Depression, and World War II brought increased demand for lumber. After the war, Potlatch diversified its product line, acquired mills throughout the United States, and continued to purchase timberland. In 1965, the corporate headquarters were moved to San Francisco, and in 1973, the company's name changed to Potlatch Corporation. In 1997, company officials relocated corporate headquarters to Spokane, Washington, and today Potlatch is a Real Estate Investment Trust with approximately 1.5 million acres of forest land in Arkansas, Idaho, Minnesota, and Wisconsin.
 
