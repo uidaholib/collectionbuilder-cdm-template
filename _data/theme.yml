@@ -8,10 +8,10 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: boxing15
+featured-image: https://www.lib.uidaho.edu/digital/objects/rangecoll/rangecoll49.png
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: 500 # in px, but don't include the "px"; default is 450.
+carousel-height: 400 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: pdf
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,authors,date,subject,publisher,identifier,rights,rightsstatement,document type,type,format digital,language,full text,filename,OCLC number,date created,date modified,reference url,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
+metadata-export-fields: "title,description,authors,date,subject,publisher,identifier,rights,rightsstatement,document type,type,format,language,full text,filename,OCLC number,date created,date modified,reference url,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,publisher,date,document type"
 
 ##########
 # ADVANCED OPTIONS

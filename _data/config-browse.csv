@@ -1,4 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
+publisher,Publisher,,
 subject,,true
+document type,,true
 identifier,,,true,Identifier
