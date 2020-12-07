@@ -10,7 +10,8 @@ featured-image:
 
 {% include feature/nav-menu.html sections="About the Collection;A Brief History of Potlatch Lumber Company;" %} 
 
-{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" col-class="col-md-7 ml-5" header="Archival Context" %}
+{:.mt-4}
+{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" width="50" centered="true" header="Archival Context" %}
 
 ## About the Collection
 
@@ -27,7 +28,6 @@ The Potlatch Lumber Company was incorporated in 1903 by several men - Frederick 
 {% include feature/item-figure.html objectid="plcphotos222" width="75" %}
 
 Potlatch Lumber Company maintained a close relationship with the Clearwater Timber Company (founded in 1900) and the Rutledge Lumber Company (founded in 1915).[^1] The three companies merged their "mills and forestland holdings" into the Potlatch Forests, Inc. (PFI.).[^1]
-
 
 During WWII, Potlatch Forests, Inc. "joined the war effort by directing its traditional products toward military end uses" and "with men at war, women took production jobs in the mills."[^1]
 
@@ -51,10 +51,10 @@ Though the population of Potlatch has dwindled over the years since the mill's c
 
 {% endcapture %}
 
-{% include feature/card.md text=funfacts header="Fun Facts" col-class="col-md-6 m-3"  %}
+{% include feature/card.md text=funfacts header="Fun Facts" centered="true" width="50" %}
 
-[^1]: https://www.potlatchdeltic.com/Page/ViewPage/12
-[^2]: https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho
+[^1]: <https://www.potlatchdeltic.com/Page/ViewPage/12>
+[^2]: <https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho>
 
 
 
