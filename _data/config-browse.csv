@@ -2,5 +2,4 @@ field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 subject,,true
 location,,true,
-location,,true
 identifier,,,true,Identifier

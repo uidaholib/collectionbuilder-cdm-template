@@ -5,9 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
-
-## About the Ott Historical Photograph Collection
+## About the Collection
 
 *Excerpted from the Winter 1996 issue of Towers (the newsletter of Library Associates, University of Idaho Library)*
 
