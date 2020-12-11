@@ -15,8 +15,9 @@ IFC research addresses applied forest management questions designed to maintain 
 
 The IFC administration is located in the College of Natural Resources at the University of Idaho, under the direction of Dr. Mark Coleman. The cooperative is governed by a steering committee composed of one representative from each member organization.
 
+<div class="text-center" markdown="1">
 {% include feature/button.md text="Learn more about the Intermountain Forestry Cooperative" link="https://www.uidaho.edu/cnr/intermountain-forestry-cooperative" color="info" size="lg" %}
-
+</div>
 
 <div class="clearfix"></div>
 

@@ -3,3 +3,7 @@ date,Date,,true,Date
 subject,,true
 creator,Authors,
 identifier,,,true,Identifier
+keywords-theme,,,true
+keywords-place,,,true
+keywords-tree,,,true
+coverage (state--county),,,true
