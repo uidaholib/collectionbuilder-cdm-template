@@ -1,5 +1,9 @@
 # CollectionBuilder CONTENTdm
 
+very customize branch for ETD collection. 
+See https://github.com/uidaholib/etd_workflow
+
+
 https://www.lib.uidaho.edu/digital/
 
 This highly customized version of [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) is used by the University of Idaho Library to create skins for the digital library collections maintained in a hosted CONTENTdm instance. 
