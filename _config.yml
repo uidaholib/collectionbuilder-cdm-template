@@ -11,7 +11,7 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/boxing
+baseurl: /digital/sbw
 # location of code, the full url to your github repository
 source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
@@ -41,15 +41,15 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: boxing 
+metadata: sbw 
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: boxing
+cdm-collection-id: sbw
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
-  - data: 'boxing'
+  - data: 'sbw'
     template: 'items'
     name: 'objectid'
     dir: 'items'
