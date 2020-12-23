@@ -1,10 +1,11 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
 creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
+date,Date,,DCTERMS.created,date
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
+interviewee,Interviewee,,DCTERMS.interviewee,interviewee
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
