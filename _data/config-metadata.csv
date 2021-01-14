@@ -7,6 +7,7 @@ description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
 coverage,Coverage,true,
 collection,Source Collection
+insideidaho_link,ArcGIS georectified digital map,
 source,Source
 identifier,Source Identifier
 type,Type,,DCTERMS.type
