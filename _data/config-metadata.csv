@@ -1,5 +1,8 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
+performers,Performers,true
+special-guests,Special Guests,true
+instruments,Instruments,true
 creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
