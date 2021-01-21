@@ -1,6 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-subjects,,true
+subject,,true
 county,,,true,
 city,,true,
 identifier,,,true,Identifier
