@@ -49,7 +49,7 @@ subjects-stopwords: newsletters;arboretums;associations # set of subjects separa
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: creator # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -79,7 +79,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,description,creator,date,date is approximate,subject,coverage,latitude,longitude,digital collection,contributing institution,identifier,rights,rightsstatement,format orignal,type,format,language,file name,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,description,date"
+metadata-facets-fields: "subject,creator,date"
 
 ##########
 # ADVANCED OPTIONS
