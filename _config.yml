@@ -43,9 +43,12 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
 metadata: 1918flu 
 # contentdm collection name, matches collection ID used by CDM
-digital-objects: /digital/1918flu/objects/
 # CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
+#cdm-url: https://digital.lib.uidaho.edu
+
+# digital objects location
+digital-objects: https://webpages.uidaho.edu/library/spec/objects/1918flu
+
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
