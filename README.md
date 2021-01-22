@@ -10,3 +10,9 @@ Collection settings are customized using the [`_data/theme.yml`](https://github.
 Each digital collection is a branch in this repository.
 
 While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
+
+# Collection-specific edits
+
+Featured image is from Idaho CCC Collection: https://www.lib.uidaho.edu/digital/cccidaho/items/cccidaho1249.html
+
+Document type buttons to sort on Browse
