@@ -17,7 +17,7 @@ carousel-type:
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-locations-max: 5
 
 ##########
 # ABOUT PAGE
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,dates,start date,end date,year span,description,person of interest,document type,publisher,subject,location,file type,identifier,source,type,format,rights,language,filename,oclc number,date created,date modified,reference url,cdmid,objectid"
+metadata-export-fields: "title,dates,start_date,end_date,year span,description,person of interest,document type,publisher,subject,location,file type,identifier,source,type,format,rights,language,filename,oclc number,date created,date modified,reference url,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,start date,end date,document type,file type"
+metadata-facets-fields: "subject,start_date,end_date,document type,file type"
 
 ##########
 # ADVANCED OPTIONS
