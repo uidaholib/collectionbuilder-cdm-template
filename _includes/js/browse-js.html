@@ -31,7 +31,14 @@ function makeCard(obj) {
     {% for f in fields %}{% unless f.hidden == 'true' %}
     if(obj[{{ f.field | jsonify }}]){
         {% if f.display_name %}card += '<strong>{{ f.display_name }}:</strong> ';{% endif %}
-        {% if f.btn == 'true' %}
+        {% if f.btn == 'true' and f.field == 'file type' %}
+        var btns = obj[{{ f.field | jsonify }}].split(";");
+        for (var i = 0, len = btns.length; i < len; i++) {
+            if(btns[i] != "") {
+                card += '<a class="btn btn-md btn-payette-blue m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
+            }
+        }
+        {% elsif f.btn == 'true' %}
         var btns = obj[{{ f.field | jsonify }}].split(";");
         for (var i = 0, len = btns.length; i < len; i++) {
             if(btns[i] != "") {
