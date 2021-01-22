@@ -48,6 +48,7 @@ gallery: true
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}
                     <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info">View on Map</a>{% endif %}
+                    <div class="my-2 text-small"><strong>NOTE: </strong>PDF downloads are only available from McCall Public Library computers. Email omwikle@uidaho.edu with any questions.</div>
                 </div>
             </div>
         </div>
