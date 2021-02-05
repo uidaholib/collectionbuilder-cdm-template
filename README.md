@@ -13,6 +13,12 @@ While this version was built specifically for use at the University of Idaho Lib
 
 # Collection-specific edits
 
+Downloads are only available from McCall Public Library computers
+
 Featured image is from Idaho CCC Collection: https://www.lib.uidaho.edu/digital/cccidaho/items/cccidaho1249.html
 
 Document type buttons to sort on Browse
+
+Thumbs and smalls are in digital/objects
+- include/image/thumb.html reflects this path
+- item.html has updated path for small image and a note explaining restricted downloads
