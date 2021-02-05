@@ -3,6 +3,12 @@ layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
 <div class="row">
+  <div class="col-md-12 h4 mb-4 text-center">
+    <strong>Search by Document Type:</strong>
+    <a class="btn btn-outline-payette-blue ml-2 mr-2" type="button" href="{{ 'subject files' | escape | prepend: '/browse.html#' | relative_url }}">Subject Files</a>
+    <a class="btn btn-outline-payette-blue" type="button" href="{{ 'family history files' | escape | prepend: '/browse.html#' | relative_url }}">Family History Files</a>
+  </div>
+
   <div class="col-md-8">
 
     {% include index/description.html %}
