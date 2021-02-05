@@ -1,6 +1,7 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 creator,,,true
+interviewee,,,true
 performers,,,true
 instruments,,true,
 special-guests,,,true

@@ -3,7 +3,8 @@ title,Title,,DCTERMS.title,headline
 performers,Performers,true
 special-guests,Special Guests,true
 instruments,Instruments,true
-creator,Creator,,DCTERMS.creator,creator
+creator,Creator,true,DCTERMS.creator,creator
+interviewee,Interviewee,true
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
