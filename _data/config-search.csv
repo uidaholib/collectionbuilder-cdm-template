@@ -1,0 +1,12 @@
+field,index,display,facet,multi-valued
+title,true,true,false,false
+date,true,true,false,false
+guest_author,true,false,true,true
+guest_artist,true,true,true,true
+program_artists,true,true,false,false
+description,true,false,false,false
+creator,true,false,true,true
+subject,true,false,true,true
+location,true,false,true,true
+type,true,false,true,true
+full_text,true,false,false,false
