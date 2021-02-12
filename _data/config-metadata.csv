@@ -2,6 +2,7 @@ field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
 performers,Performers,true
 special-guests,Special Guests,true
+adjudicators,Adjudicators,true
 instruments,Instruments,true
 creator,Creator,true,DCTERMS.creator,creator
 interviewee,Interviewee,true
