@@ -7,7 +7,7 @@ permalink: /history.html
 # Exploring the History of Jazz at the University of Idaho
 
 Spencer Manning, a University of Idaho student pursuing an M.A. in Trumpet Performance, was the recipient of the 2020 Berry International Jazz Fellowship.
-Over the course of this fellowship, Manning investigated the contents of the [Lionel Hampton Papers](http://archiveswest.orbiscascade.org/ark:/80444/xv46578){:target="_blank" rel="noopener"}, the [Lionel Hampton Digital Collection](https://www.ijc.uidaho.edu/hampton_collection/){:target="_blank" rel="noopener"}, and the University of Idaho International Jazz Festival Collection, with the hope of learning more about the history of UI's jazz festival and Lionel Hampton's role in that history.
+Over the course of this fellowship, Manning investigated the contents of the [Lionel Hampton Papers](http://archiveswest.orbiscascade.org/ark:/80444/xv46578){:target="_blank" rel="noopener"}, the [Lionel Hampton Digital Collection](https://www.ijc.uidaho.edu/hampton_collection/){:target="_blank" rel="noopener"}, and the Lionel Hampton Jazz Festival Collection, with the hope of learning more about the history of UI's jazz festival and Lionel Hampton's role in that history.
 His research led him to one of the most important figures of UI's jazz festival, Lynn "Doc" Skinner.
 
 {% include feature/item-figure.html objectid="jazzfest72" width="50" caption="Doc Skinner and Lionel Hampton, 1992" %}
