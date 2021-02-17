@@ -109,12 +109,18 @@ Going into this project I did not anticipate that he would be a part of my findi
 By talking to Doc, I was able to learn more about how this moment came to be as well as how it impacted the festival that year. 
 It was such a unique moment that it had to be include as one of the highlights of the project. 
 
-Come to find out, Eastwood and Hampton had a previous conversation when Hampton and his big band came through the city where Eastwood was living, Carmel-By-The-Sea. 
+Come to find out, Eastwood and Hampton had a conversation when Hampton and his big band came through the city where Eastwood was living, Carmel-By-The-Sea. 
 At that time, Clint Eastwood was the Mayor and his attendance at this performance was quite significant. 
 After Hampton's performance he had a conversation with Eastwood where he recalls hearing about Eastwood's love for jazz, and that Eastwood himself played jazz as a pianist. 
 Eastwood told Hampton to let him know if there was anything that he could do for him. 
-To which, Hampton invited him to the jazz festival in Moscow, Idaho in his name. 
+To which, Hampton responded by inviting him to the jazz festival in Moscow, Idaho in his name. 
 What came of this was a highly anticipated visit from Eastwood that would add to the reputation to the festival. 
 Doc recalls Eastwood's humble appearance at the festival and his gracious attitudes towards the attendees. 
 I hope you enjoy.
 
+---
+
+{:.py-4}
+**Spencer Manning** is a Master's student at the University of Idaho Lionel Hampton School of Music, studying trumpet performance. 
+He hopes to go on to finish a DMA in trumpet performance upon completion of his degree here. 
+With the aspiration to become a trumpet professor at the collegiate level, Spencer enjoys both performing and studying various musical styles. 

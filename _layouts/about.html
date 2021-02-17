@@ -5,5 +5,7 @@ layout: default
   {{ content }}
 </div>
 
+{% unless page.title == "Jazz Fest History" %}
 {% include credits.html %}
+{% endunless %}
 
