@@ -13,7 +13,7 @@ This collection consists of posters, programs, photographs, and other materials 
 
 ## An Inauspicious Beginning
 
-The University of Idaho held it's first jazz festival in 1967 under the direction of Bruce Bray a faculty member in the University of Idaho School of Music. The following year, the festival was taken over by David Seiler and Robert Spevacek who ensured the focus of the festival was on music and jazz education for students. In the early years of the festival, the concerts showcased the University of Idaho's jazz bands and the top performing high school jazz bands selected during the day's competition. 
+The University of Idaho held it's first jazz festival in 1967 under the direction of Bruce Bray a faculty member in the University of Idaho School of Music. The following year, the festival was taken over by David Seiler and Robert Spevacek who ensured the focus of the festival was on music and jazz education for students. In the early years of the festival, the concerts showcased the University of Idaho's jazz bands and the top performing high school jazz bands from the region selected during the day's competition. 
 
 {% include feature/image.html objectid="jazzfest165" %}
 
@@ -21,7 +21,7 @@ By the mid-1970's, the festival had grown from a single day of competitions culm
 
 In 1978, Lynn "Doc" Skinner took over as director of the festival. As director, Skinner wanted to further expand the educational aspect of the festival to ensure students were able to learn from the jazz festival. By 1980, the festival had grown to include three days of activities, hosting close to 1000 students. Under Skinner's direction the festival continued to grow and in 1982, he was able to secure one of the world's most notable jazz vocalists to perform, Ella Fitzgerald. Performing in Memorial Gym, Fitzgerald's performance brought some attention to the festival.
 
- {% include feature/image.html objectid="jazzfest30" %}
+{% include feature/image.html objectid="jazzfest30" %}
 
 ## The Lionel Hampton Jazz Festival
 
@@ -31,10 +31,10 @@ Lionel Hampton first performed at the University of Idaho Jazz Festival in 1984.
 
 In 1995, Lionel Hampton wished to see the educational aspect of the festival expand into K-12 schools in the region. Thus began the Jazz in Schools program. This program was initially tied directly to the jazz festival. Visiting guest artists would travel to nearby schools to teach students about jazz. Every year during the Jazz in Schools program Hampton would travel to Lapwai, Idaho to teach students about jazz. Today the program continues, but takes place throughout the year and not just during the jazz festival. 
 
- At it's peak the festival was a four day event featuring music, dance, and jazz history clinics; student competitions; and, evening concerts featuring festival competition winners and guest artists. In 2007, the Lionel Hampton Jazz Festival and the University of Idaho were an honored recipient of the National Medal of the Arts, making it the first jazz festival (and university) to receive the highest honor for the arts in the country. 
+At it's peak the festival was a four day event featuring music, dance, and jazz history clinics; student competitions; and, evening concerts featuring festival competition winners and guest artists. In 2007, the Lionel Hampton Jazz Festival and the University of Idaho were an honored recipient of the National Medal of the Arts, making it the first jazz festival (and university) to receive the highest honor for the arts in the country. 
 
 
- {% include feature/image.html objectid="jazzfest161" %}
+{% include feature/image.html objectid="jazzfest161" %}
 
 <div class="clearfix"></div>
 
