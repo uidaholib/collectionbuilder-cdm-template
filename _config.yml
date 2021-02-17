@@ -11,7 +11,7 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/boxing
+baseurl: /digital/marsh
 # location of code, the full url to your github repository
 source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
@@ -22,12 +22,12 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Harry Webb Marsh Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
+tagline: Historic Mining Films from Idaho's Silver Valley Mining District
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 52 photographs of boxers and boxing teams from the University of Idaho"  
+description: "A collection of historic mining films from Idaho's Silver Valley Mining District originally filmed by Harry Webb Marsh."  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 # Organization branding
@@ -41,15 +41,15 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: boxing 
+metadata: marsh 
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: boxing
+cdm-collection-id: 
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
-  - data: 'boxing'
+  - data: 'marsh'
     template: 'items'
     name: 'objectid'
     dir: 'items'
