@@ -17,6 +17,13 @@ The interviews can be viewed in full [in this collection](/digital/jazzfest/brow
 
 We sincerely hope that you enjoy learning more about this storied festival through these interviews.
 
+- [Clip 1: Dizzy and His Masterclass, 1988](#dizzy)
+- [Clip 2: Ella Fitzgerald at the Festival, 1982](#ella)
+- [Clip 3: Naming the Lionel Hampton School of Music, 1987](#naming)
+- [Clip 4: Culture of the Festival](#culture)
+- [Clip 5: Clint Eastwood at the Festival, 1992](#eastwood)
+
+{:#dizzy}
 ## Clip 1: Dizzy and His Masterclass, 1988
 
 {% include feature/item-video-embed.html youtubeid="mGzeYUbW-bA" caption="Dizzy's Masterclass at the Jazz Festival (from [Interview 1](/digital/jazzfest/items/jazzfest55.html))" width="50" %}
@@ -38,6 +45,7 @@ Also, an amazing moment was realized when I made the connection that the room wh
 What an amazing coincidence and truly impactful moment! 
 Enjoy.
 
+{:#ella}
 ## Clip 2: Ella Fitzgerald at the Festival, 1982
 
 {% include feature/item-video-embed.html youtubeid="CR9tnCuwKA8" caption="Ella Fitzgerald at the Jazz Festival (from [Interview 1](/digital/jazzfest/items/jazzfest55.html))" width="50" %}
@@ -56,6 +64,7 @@ This quote was, "never wish for the end of a phrase."
 This is referring to the feeling associated with not wanting something good to end, like the last note of a great tune. 
 The energy and meaning we feel is something that we should all hold on to because even though all good things must come to an end, we should never wish for the end of a "phrase."
 
+{:#naming}
 ## Clip 3: Naming the Lionel Hampton School of Music, 1987
 
 {% include feature/item-video-embed.html youtubeid="pRTpMZaC560" caption="Naming the School of Music (from [Interview 2](/digital/jazzfest/items/jazzfest56.html))" width="50" %}
@@ -75,6 +84,7 @@ This performance was intimate and emotional as Hampton wanted to provide a meani
 So much so, that Hampton had to be cut off after 45 min of playing to attend other events on campus, when he only wanted to keep playing for them. 
 This relationship with the school of music was important to Hampton as he would keep in close contact with the university and its students in a very personal way.
 
+{:#culture}
 ## Clip 4: Culture of the Festival
 
 {% include feature/item-video-embed.html youtubeid="y4dq1Ytv2lg" caption="The culture of the Jazz Festival (from [Interview 2](/digital/jazzfest/items/jazzfest56.html))" width="50" %}
@@ -97,6 +107,7 @@ He recalls in this clip the natural appreciation and admiration that performers 
 He would go on to say that he would like to say that he put the students up to it, but they did it naturally out of the goods of their own hearts. 
 I think that this speaks to the importance of the culture of the festival and the lasting impacts that it would leave on all parties involved in its festivities.
 
+{:#eastwood}
 ## Clip 5: Clint Eastwood at the Festival, 1992
 
 {% include feature/item-video-embed.html youtubeid="h7uYF4Xb4ac" caption="Clint Eastwood at the Jazz Festival (from [Interview 1](/digital/jazzfest/items/jazzfest55.html))" width="50" %}
@@ -122,5 +133,5 @@ I hope you enjoy.
 
 {:.py-4}
 **Spencer Manning** is a Master's student at the University of Idaho Lionel Hampton School of Music, studying trumpet performance. 
-He hopes to go on to finish a DMA in trumpet performance upon completion of his degree here. 
+He hopes to go on to finish a DMA in trumpet performance upon completion of his degree. 
 With the aspiration to become a trumpet professor at the collegiate level, Spencer enjoys both performing and studying various musical styles. 
