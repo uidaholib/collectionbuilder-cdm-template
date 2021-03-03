@@ -1,13 +1,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>{{ page.title | escape }} | {{ site.data.theme.title | escape }}</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">
+<title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+<!--
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">-->
+<meta name="generator" content="collectionbuilder-contentdm" />
 <meta http-equiv="Content-Language" content="en-us" >
+{% comment %} meta tags and analytics are added during production build ONLY {%- endcomment -%}
+{% if jekyll.environment == "production" %}
+{% if site.noindex == true or page.noindex == true %}<meta name="robots" content="noindex" />{% endif %}
 {% if page.layout == "item" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
+{% include head/google-analytics.html %}
+{%- endif -%}
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
 {% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+<script defer src="{{ '/fontawesome/js/all.min.js' | prepend: site.digital-assets }}"></script>
 {% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 {% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.digital-assets }}">{% endif %}
 {% if page.layout == 'map' %}<link rel="stylesheet" href="{{ '/leaflet/leaflet.css' | prepend: site.digital-assets }}">
@@ -15,5 +23,5 @@
 {% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.css' | prepend: site.digital-assets }}">
 <link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.Default.css' | prepend: site.digital-assets }}">{% endif %}{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
-{% include head/google-analytics.html %}
-<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
+
+<!-- build date {{ site.time | date: "%Y-%m-%d" }}, collectionbuilder-cdm-template, metadata: {{ site.metadata }} -->

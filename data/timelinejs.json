@@ -1,27 +1,26 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.data.theme.metadata] -%}
-{%- assign bannerItem = site.data[site.metadata] | where: 'object-id', site.data.theme.featured-image-objectid -%}
+{%- assign items = site.data[site.metadata] -%}
 {
     "title": {
         "media": {
           "url": "{% include image/featured-image.html %}",
-          "caption": {{ bannerItem[0].title| default: site.data.theme.title | jsonify  }},
-          "credit": {{ site.data.theme.title | jsonify }}
+          "caption": {{ featuredItem.title | jsonify }},
+          "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.data.theme.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.data.theme.description | jsonify }}
+          "headline": {{ site.title | append: ' Timeline' | jsonify }},
+          "text": {{ site.description | jsonify }}
         }
     },
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% include image/medium.html %}",
+          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{% include item-link.html %}",
-          "credit": "{{ site.data.theme.title }}"
+          "credit": "{{ site.title }}"
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",
