@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About Harry Webb Marsh;About Mining Companies" %} 
+{% include feature/nav-menu.html sections="About the Collection;About Harry Webb Marsh;About the Coeur d'Alene Mining District" %} 
 
 ## About the Collection
 
@@ -15,7 +15,7 @@ The original moving pictures were filmed in 1926 and 1930 by Harry Webb Marsh, a
 
 ## About Harry Webb Marsh
 
-*To view materials related to Harry Webb Marsh, see the [Harry Webb Marsh Papers finding aid](https://archiveswest.orbiscascade.org/ark:/80444/xv58486) and contact Special Collections & Archives for more information.*
+*To view other materials related to Harry Webb Marsh, see the [Harry Webb Marsh Papers finding aid](https://archiveswest.orbiscascade.org/ark:/80444/xv58486) and contact [Special Collections & Archives](https://www.lib.uidaho.edu/special-collections/) for more information.*
 
 Harry Webb Marsh was born in Moscow, Idaho on March 3, 1886. He was the first of three sons born to William and Mattie Marsh whose home was on the corner of First and B streets. He was educated in the Moscow City schools and the University of Idaho Preparatory School. After working for several years he returned to the University of Idaho to study mining engineering. 
 
@@ -29,21 +29,54 @@ His other activities included serving as Shoshone County vice president of the N
 
 While working in Alaska in 1913 he met Lovina Willson whom he married in Seattle June 8, 1916. They had two children.[^2]
 
-## About Mining Companies
+## About the Coeur d'Alene Mining District
 
-#### Bunker Hill
+Idaho has a rich mining history because it has a rich mineral makeup - “Idaho has seventy-two kinds of gem stones. This is more than any other state, and second only to Africa in the rest of the world.”[^3] This is why Idaho is nicknamed “The Gem State.”[^4] Industrial mining began in Idaho around the 1880s, although the Idaho gold rush began as early as the 1860s.
 
-In 1885, a prospector’s errant burro wandered off only to discover an outcropping of galena, a lead- and silver-rich ore. Within days, the Bunker Hill claim was established. It grew from a strictly mining enterprise to a large industrial complex capable of carrying out every step in the production process from removing ore from the ground to fabricating finished metal products. The company became an important supplier of the nation’s requirements for lead, zinc, silver, and cadmium.
+The Coeur d’Alene Mining District, located in the Silver Valley of Idaho, began as the George R. Marks & Company in the small “gold rush” town of Murray, Idaho. It was the first company in what would become the famous Coeur d’Alene Mining District.[^5]
 
-Starting with the original Bunker Hill and Sullivan claims, the Bunker Hill Mine later encompassed 620 claims totaling 6,2000 acres. From the discovery cuts some 3600 feet above sea level, over 20 major ore zones were mined to nearly 1600 feet below sea level, a vertical distance of about one mile.
+By 1884, the company was a large operation that spanned Murray, Burke, Mullan, Wardner, and Wallace.By 1914, the George Marks Company was renamed as the Coeur d’Alene Hardware Company and merged with Coeur d’Alene Iron Works, ultimately being named the Coeur d’Alene Hardware and Foundry Company.[^5]
 
-At its peak the company produced corroding lead, antimonial lead, silver, special high grade zinc, zinc diecasting alloys, cadmium, specification lead alloys, leaded zinc oxides, dore metal, super purity antimony, sulfuric acid, and phosphoric acid at its Kellogg, Idaho, operations, and manufactured lead products such as sheet, pipe, sleeving, casting, solders, shot, lead oxides and battery oxide, red lead, antimonial lead, and soft and calking lead, at its Seattle, Washington, operations.[^3]
+The company gained an international reputation for producing high-quality manufactured mining products that were distributed across the globe. By 1960, a final name change turned the company into the Coeur d’Alenes Company. The company continued to build strong relationships with various steel companies, particularly in Spokane, Washington and Boise, Idaho.[^6]
 
-#### Coeur d'Alene Mining District
+Throughout its history, the Coeur d’Alene Mining District included many mines in the North Idaho region:
 
-The Coeur d'Alene Mining & Smelting Company was incorporated in the State of Idaho on July 18, 1904, with a capitalization of 1,000,000 shares at a par value of $1.00 a share. Stanley Fairweather was the president of the company until 1915 when he was succeeded by Dennis Goggin. In 1917 Alex D. Wallace became president and remained in that office until 1937.
+*Burke Canyon Mines*
 
-The property of the company originally consisted of seven unpatented claims, about 140 acres, in the Placer Center District, 3.5 miles north of Wallace; three unpatented claims were acquired later. Development, financed by stock assessments, consisted of two tunnels, the upper one of 900 feet, and a lower one of 1400 feet, and a 100 foot shaft. The property became idle in 1935, and was absorbed by Dayrock Mining Company in 1937.[^4]
+- Gem of the Mountains
+- Frisco Mine
+- Mammoth Mine
+- Standard Mine
+- Hecla Mine
+- Tiger-Poorman Mine
+- Hercules Mine
+
+*Other mines in the district*
+
+- Bunker Hill Mine (1886)
+- Star-Morning Mine (1887)
+- Sunshine Mine (1890)
+- Galena Mine (1922)
+- Lucky Friday (1942)
+
+By WWII, the Coeur d’Alene Mining District include 24 mines and 34 mills, the largest of which included the Bunker Hill and Hecla mines.[^7]
+
+*Bunker Hill*
+
+The Bunker Hill Mining Company began in the Coeur d’Alene Mining District as a small and humble operation but grew to be the largest mining-smelting company in Idaho and “one of the largest lead-zinc-silver properties in the world.”[^8] The mine contained “over 150 miles of tunnels, crosscuts and drifts extending from 3,600 feet above sea level to 2,000 feet below.” By 1980, the mine had produced “over 35 million tons of ore” after “93 years of continuous operation.”[^8]
+
+<a href="https://www.lib.uidaho.edu/digital/barstock/items/barstock256.html">
+    <img src="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/256/full/pct:70/0/default.jpg">
+</a>
+
+*Hecla Mine*
+
+Another massive mine in the Coeur d’Alene Mining district was the Hecla Mining Company, a “major producer of silver in the United States.[^9] Hecla began in Burke, Idaho and was originally established as a silver mine. Hecla had produced “41 million ounces of silver before being shut down in 1944.” Eventually the company became involved “in the operation of a number of other base metal and uranium mines in the western United States and British Columbia” while still maintaining the reputation “as one of the most efficient underground mine operators in the world.” At its peak, Hecla employed 800 people and had 12,000 stockholders on the New York and Pacific Stock Exchanges.[^9]
+
+<a href="https://www.lib.uidaho.edu/digital/barstock/items/barstock225.html">
+    <img src="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/225/full/pct:70/0/default.jpg">
+</a>
+
 
 # Sources
 
@@ -51,9 +84,19 @@ The property of the company originally consisted of seven unpatented claims, abo
 
 [^2]: [Nielsen, Judith. "Harry Webb Marsh Papers, 1918-1966." Archives West, 1989.](https://archiveswest.orbiscascade.org/ark:/80444/xv58486)
 
-[^3]: [Thompson, Amy J. "Mine to Mine - Bunker Hill." Idaho Harvester, 3 April 2018](https://harvester.lib.uidaho.edu/posts/2018/04/03/mine-to-mine-bunker-hill.html)
+[^3]: [Mining in Idaho](https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm)
 
-[^4]: [Thompson, Amy J. "Mine to Mine - Cd'A." Idaho Harvester, 6 April 2018](https://harvester.lib.uidaho.edu/posts/2018/04/06/mine-to-mine-cda.html)
+[^4]: [Idaho Gemstone Mining](https://geology.com/gemstones/states/idaho.shtml)
+
+[^5]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 4
+
+[^6]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 4-5
+
+[^7]: [John Fahey, Hecla: A Century of Western Mining, 1990](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71135980620001451)
+
+[^8]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 6
+
+[^9]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 8
 
 <div class="clearfix"></div>
 
