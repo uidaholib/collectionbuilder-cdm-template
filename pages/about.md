@@ -41,8 +41,10 @@ The company gained an international reputation for producing high-quality manufa
 
 Throughout its history, the Coeur d’Alene Mining District included many mines in the North Idaho region:
 
-*Burke Canyon Mines*
-
+<div class="row">
+<div class="col-md-6" markdown="1">
+{% capture card1 %}
+<h4>Burke Canyon Mines</h4>
 - Gem of the Mountains
 - Frisco Mine
 - Mammoth Mine
@@ -50,14 +52,21 @@ Throughout its history, the Coeur d’Alene Mining District included many mines 
 - Hecla Mine
 - Tiger-Poorman Mine
 - Hercules Mine
-
-*Other mines in the district*
-
+{% endcapture %}
+{% include feature/card.md text=card1 centered="true" width="75" %}
+</div>
+<div class="col-md-6" markdown="1">
+{% capture card2 %}
+<h4>Other mines in the district</h4>
 - Bunker Hill Mine (1886)
 - Star-Morning Mine (1887)
 - Sunshine Mine (1890)
 - Galena Mine (1922)
 - Lucky Friday (1942)
+{% endcapture %}
+{% include feature/card.md text=card2 centered="true" width="75"%}
+</div>
+</div>
 
 By WWII, the Coeur d’Alene Mining District include 24 mines and 34 mills, the largest of which included the Bunker Hill and Hecla mines.[^7]
 
