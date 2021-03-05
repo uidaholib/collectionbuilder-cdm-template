@@ -61,22 +61,22 @@ Throughout its history, the Coeur d’Alene Mining District included many mines 
 
 By WWII, the Coeur d’Alene Mining District include 24 mines and 34 mills, the largest of which included the Bunker Hill and Hecla mines.[^7]
 
-*Bunker Hill*
+<div class="row">
+    <div class="col-md-6">
+        {% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/256/full/pct:70/0/default.jpg" caption="miners and ore cars at Bunker Hill, 1904" link="https://www.lib.uidaho.edu/digital/barstock/items/barstock256.html" %}
+    </div>
+    <div class="col-md-6">
+        {% include feature/item-figure.html objectid="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/225/full/pct:70/0/default.jpg" caption="Hecla Mine, 1910" link="https://www.lib.uidaho.edu/digital/barstock/items/barstock225.html" %}
+    </div>
+</div>
+
+### Bunker Hill Mine
 
 The Bunker Hill Mining Company began in the Coeur d’Alene Mining District as a small and humble operation but grew to be the largest mining-smelting company in Idaho and “one of the largest lead-zinc-silver properties in the world.”[^8] The mine contained “over 150 miles of tunnels, crosscuts and drifts extending from 3,600 feet above sea level to 2,000 feet below.” By 1980, the mine had produced “over 35 million tons of ore” after “93 years of continuous operation.”[^8]
 
-<a href="https://www.lib.uidaho.edu/digital/barstock/items/barstock256.html">
-    <img src="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/256/full/pct:70/0/default.jpg">
-</a>
-
-*Hecla Mine*
+### Hecla Mine
 
 Another massive mine in the Coeur d’Alene Mining district was the Hecla Mining Company, a “major producer of silver in the United States.[^9] Hecla began in Burke, Idaho and was originally established as a silver mine. Hecla had produced “41 million ounces of silver before being shut down in 1944.” Eventually the company became involved “in the operation of a number of other base metal and uranium mines in the western United States and British Columbia” while still maintaining the reputation “as one of the most efficient underground mine operators in the world.” At its peak, Hecla employed 800 people and had 12,000 stockholders on the New York and Pacific Stock Exchanges.[^9]
-
-<a href="https://www.lib.uidaho.edu/digital/barstock/items/barstock225.html">
-    <img src="https://digital.lib.uidaho.edu/digital/iiif/bar-stock/225/full/pct:70/0/default.jpg">
-</a>
-
 
 # Sources
 
