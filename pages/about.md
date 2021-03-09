@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-This collection contains historic mining films from Idaho's Silver Valley Mining District and elsewhere, originally filmed by Harry Webb Marsh. These films were preserved thanks to a 2007 Partnership Grant from the National Film Preservation Foundation (NFPF) awarded to the University of Idaho Library's Special Collections & Archives. 
+This collection contains historic mining films from Idaho's Silver Valley Mining District and elsewhere, originally filmed by Harry Webb Marsh. These films were preserved thanks to a 2007 Partnership Grant from the National Film Preservation Foundation (NFPF) awarded to the University of Idaho Library's Special Collections & Archives. Triage Archival Restoration Services in Los Angeles, CA conducted Preservation copying of the films.
 
 The original moving pictures were filmed in 1926 and 1930 by Harry Webb Marsh, a mining engineer employed by the Tamarack and Custer Mining Company of Coeur d'Alene. Shot with one of the first private motion picture film cameras in Idaho, the films appear to be the earliest known footage of the Bunker Hill and Sullivan Smelter (1926), the Hercules and Hecla operations at Burke and Murray (1926), and the Coeur d'Alene Mines and the Little Sunshine Mine (1930). These films are held as part of the Harry Webb Marsh Collection (MG 23).[^1]
 
