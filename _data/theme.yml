@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: boxing15
+featured-image: https://www.lib.uidaho.edu/digital/objects/marsh/gloryhole.jpg
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 450.
@@ -24,7 +24,7 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image:
+about-featured-image: https://www.lib.uidaho.edu/digital/objects/marsh/gloryhole.jpg
 
 ##########
 # BROWSE PAGE
@@ -78,7 +78,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # comma delimited list, reference url is automatic
 metadata-export-fields: "objectid,title,date,subject,description,duration,location,latitude,longitude,source,identifier,format_original,type,format,rights,rightsstatement,youtubeid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "title,location"
+metadata-facets-fields: "date,location"
 
 ##########
 # ADVANCED OPTIONS

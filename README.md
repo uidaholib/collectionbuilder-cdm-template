@@ -1,3 +1,5 @@
+feature image comes from: <https://www.lib.uidaho.edu/digital/barstock/items/barstock256.html>
+
 # CollectionBuilder CONTENTdm
 
 https://www.lib.uidaho.edu/digital/
