@@ -2,4 +2,4 @@ field,display_name,search
 location,Location,true
 date,Date,true
 subject,Subjects,true
-cdm_collection,Collection,false
+collection,Collection,false
