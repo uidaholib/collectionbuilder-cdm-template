@@ -9,7 +9,7 @@
 {% if jekyll.environment == "production" %}
 {% if site.noindex == true or page.noindex == true %}<meta name="robots" content="noindex" />{% endif %}
 {% if page.layout == "item" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
-{% if site.google-analytics-id %}{% include head/google-analytics.html %}{% endif %}
+{% include head/google-analytics.html %}
 {%- endif -%}
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
@@ -24,4 +24,4 @@
 <link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.Default.css' | prepend: site.digital-assets }}">{% endif %}{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
 
-<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
+<!-- build date {{ site.time | date: "%Y-%m-%d" }}, collectionbuilder-cdm-template, metadata: {{ site.metadata }} -->

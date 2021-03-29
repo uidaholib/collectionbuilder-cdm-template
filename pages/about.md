@@ -1,9 +1,9 @@
 ---
 title: About
-layout: page
+layout: about
 permalink: /about.html
 ---
-{% include about/jumbotron.html %} 
+{% include feature/jumbotron.html %} 
 
 ### About {{ site.title}}
 
