@@ -68,17 +68,17 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 ##########
 # TIMELINE PAGE
 #
-year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+year-navigation: 1910;1942 #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: # set increments to auto gen nav years
 
 ##########
 # DATA 
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,date,description,subject,subject (lcsh),subject (lctgm),location depicted,region,source,original collection,publisher - digital,holding institution,ordering information,format original,format,type,identifier,date digital,language,web site,rights,standardized rights,digital specifications,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,creator,interviewee,date,description,subject,interviewer,residence,birth year,family origin,occupation,subject (lcsh),subject (lctgm),location depicted,region,source,original collection,publisher - digital,holding institution,ordering information,format original,format,type,identifier,date digital,language,web site,rights,standardized rights,digital specifications,filename,oclc number,date created,date modified,reference url,cdmid,collectionid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,creator,date,subject(lcsh),subject (lctgm),location depicted,region,source,original collection"
 
 ##########
 # ADVANCED OPTIONS
