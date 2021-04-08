@@ -48,7 +48,7 @@ gallery: true
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}
                     <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info">View on Map</a>{% endif %}
-                    <div class="my-2 text-small"><strong>NOTE: </strong>This link only works on McCall Public Library computers. Email omwikle@uidaho.edu with any questions.</div>
+                    <div class="m-2 text-small"><strong>NOTE: </strong>The "Download PDF" button only works on McCall Public Library computers.<br> Email omwikle@uidaho.edu with any questions.</div>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ gallery: true
                 </div>
             </div>
         </div>
-        {% if page.rights or page.rightsstatment %}
+        {% if page.rights or page.rightsstatement %}
         <div class="col-md-5">
             <div class="card mb-2">
                 <div class="card-header">Rights</div>
