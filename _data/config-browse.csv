@@ -3,3 +3,4 @@ date,Date,,,Date
 subject,,true
 location,,,true,
 identifier,,,true,Identifier
+publisher,,,true

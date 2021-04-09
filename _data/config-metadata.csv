@@ -8,6 +8,7 @@ subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,true,,contentLocation
 latitude,Latitude
 longitude,Longitude
+publisher,Publisher,true
 collection,Source Collection
 source,Source
 identifier,Source Identifier
