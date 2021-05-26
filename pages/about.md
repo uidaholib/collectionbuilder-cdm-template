@@ -5,21 +5,23 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+## Theodore Roosevelt Comes to Moscow
 
-## About the Collection
+A century ago, for about 16 hours over April 9th and 10th, 1911, former President Theodore Roosevelt visited the University of Idaho.
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+{% include feature/item-figure.html objectid="spec_uihp399" width="75" %}
 
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
+Roosevelt arrived at 6:30 p.m. on Sunday, April 9th, and took a room at the Hotel Moscow. He woke to rain and clouds the next morning, breakfasted at Ridenbaugh Hall from 7:45 - 8:45 a.m. “[with a large and select party](https://www.lib.uidaho.edu/digital/troosevelt/arg-2b.pdf),” planted a tree (that still stands today) in front of the Administration Building, and then spoke, just as the rain stopped, to a reported 8,000 people from a platform made of sacks of “[North Idaho’s famous wheat](https://www.lib.uidaho.edu/digital/troosevelt/arg-1.pdf).”
 
-## About the UI Boxing Team
+{% include feature/item-figure.html objectid="spec_uihp430" width="75" %}
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+In his speech, Roosevelt mentioned his first visit to Idaho came before any of the students in attendance were born. He then went on to praise the University and its motto—’For the training of Idaho’s future citizens to their highest usefulness in private life and public service’—as well as Idaho citizens’ “[pioneer spirit]().” After he was finished, the former president took a special 10:30 a.m. train back up to Spokane. 
 
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
+{% include feature/item-figure.html objectid="spec_uihp425" width="75" %}
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+This exhibit is composed of photos curated from the Library’s [Digital Historical Photograph Collection](https://www.lib.uidaho.edu/digital/uihistorical/). 
+
+{% include feature/button.md text="Feature Argonaut Article with Roosevelt's Full Speech" link="https://digital.lib.uidaho.edu/digital/collection/argonaut/id/984?_ga=2.82343638.1711785931.1621878936-461816157.1592333931" color="info" size="lg" %}
 
 
 <div class="clearfix"></div>
