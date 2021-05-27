@@ -1,7 +1,7 @@
 ---
-title: About
+title: Theodore Roosevelt Visit
 layout: about
-permalink: /about.html
+permalink: /theodore.html
 ---
 {% include feature/jumbotron.html %} 
 
@@ -19,10 +19,11 @@ In his speech, Roosevelt mentioned his first visit to Idaho came before any of t
 
 {% include feature/item-figure.html objectid="spec_uihp425" width="75" %}
 
-This exhibit is composed of photos curated from the Library’s [Digital Historical Photograph Collection](https://www.lib.uidaho.edu/digital/uihistorical/). 
+This exhibit is composed of photos curated from the Library’s [Digital Historical Photograph Collection](https://www.lib.uidaho.edu/digital/uihistorical/){:target="_blank" rel="noopener"}. 
 
+<div class="text-center" markdown="1">
 {% include feature/button.md text="Feature Argonaut Article with Roosevelt's Full Speech" link="https://digital.lib.uidaho.edu/digital/collection/argonaut/id/984?_ga=2.82343638.1711785931.1621878936-461816157.1592333931" color="info" size="lg" %}
-
+</div>
 
 <div class="clearfix"></div>
 
