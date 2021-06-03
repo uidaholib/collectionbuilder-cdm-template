@@ -7,7 +7,7 @@ permalink: /theodore.html
 
 ## Theodore Roosevelt Comes to Moscow
 
-A century ago, for about 16 hours over April 9th and 10th, 1911, former President Theodore Roosevelt visited the University of Idaho.
+Over a century ago, for about 16 hours over April 9th and 10th, 1911, former President Theodore Roosevelt visited the University of Idaho.
 
 {% include feature/item-figure.html objectid="spec_uihp399" width="75" %}
 
