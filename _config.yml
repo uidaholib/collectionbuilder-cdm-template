@@ -11,7 +11,7 @@
 url: https://www.lib.uidaho.edu
 # location on the website, normally in /digital
 # e.g. /digital/hjccc
-baseurl: /digital/boxing
+baseurl: /digital/riegger
 # location of code, the full url to your github repository
 source-code: https://github.com/uidaholib/collectionbuilder-cdm-template
 # url to the shared assets folder on Digital
@@ -22,7 +22,7 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Donald R. Theophilus Boxing Photograph Collection
+title: Hal Riegger Papers, 1981-1986
 # tagline, a short phrase that will appear throughout the site in the top banner
 tagline: Photographs of University of Idaho Boxers and Boxing Teams, 1934 - 1953
 # description appears in meta tags and other locations
@@ -49,7 +49,7 @@ cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
-  - data: 'boxing'
+  - data: 'riegger'
     template: 'items'
     name: 'objectid'
     dir: 'items'
