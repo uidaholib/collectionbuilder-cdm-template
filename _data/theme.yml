@@ -16,7 +16,7 @@ carousel-height: # in px, but don't include the "px"; default is 450.
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: University of Idaho; Sacramento, California #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 ##########
@@ -56,8 +56,8 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 46.727485 #to determine center of map
-longitude: -117.014185 #to determine center of map
+latitude: 40.26189123202204 #to determine center of map
+longitude: -99.21712752396226 #to determine center of map
 zoom-level: 5 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
@@ -76,7 +76,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,recipient,point of origin,date,date is approximate,subject,relation,latitude,longitude,digital collection,contributing institution,source,identifier,rights,rightsstatement,format original,type,digital format,language,file name"
+metadata-export-fields: "Title,Description,Creator,Recipient,Point of Origin,Date,Date is Approximate,Subject,Relation,Latitude,Longitude,Digital Collection,Contributing Institution,Source,Identifier,Rights,Rightsstatement,Format Original,Type,Digital Format,Language,File Name,OCLC number,Date created,Date modified,Reference URL,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject"
 
