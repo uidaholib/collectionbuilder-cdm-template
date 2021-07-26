@@ -5,7 +5,13 @@ layout: page
 <div class="row">
   <div class="col-md-8">
 
-    {% include index/description.html %}
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <p class="card-text"><em>Here We Have Idaho</em> is the long standing official magazine of the University of Idaho. It's stories highlight the research, learning, and outreach of U of I students, employees, and alumni, showcasing their impact across the state and the world. This collection provides access to a digital archive of past issues that have been transferred to the library for preservation.</p>
+        <p class="card-text">Please visit the <a href="https://www.uidaho.edu/news/here-we-have-idaho-magazine">Here We Have Idaho home page</a> for current issues, digital subscriptions, and to learn more about this unique publication.</p>
+      </div>
+    </div>
     {% include index/carousel.html%}
     
   </div>
@@ -13,10 +19,6 @@ layout: page
 
     {% include index/time.html %}
 
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" featured=site.data.theme.featured-subjects max=site.data.theme.featured-subjects-max %}
-
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
-    
     {% include index/objects.html %}
 
   </div>
