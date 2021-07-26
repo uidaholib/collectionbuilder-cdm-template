@@ -1,8 +1,9 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
-date is approximate,Approximated Date
+issue,Issue,
+creator,Creator,,DCTERMS.creator,creator
+publisher,Publisher,,,
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation
@@ -10,7 +11,7 @@ latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
-identifier,Source Identifier
+identifier,Identifier
 type,Type,,DCTERMS.type
 format-original,Format Original
 format,Format,,,encodingFormat
