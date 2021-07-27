@@ -16,8 +16,8 @@ carousel-height: # in px, but don't include the "px"; default is 450.
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Potlatch; Deep Creek; Onaway #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 6
 
 ##########
 # ABOUT PAGE
@@ -76,7 +76,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,donor,date,date is approximate,subject,country,state,county,city,latitude,longitude,relation,publisher,source,identifier,rights,rightsstatement,format original,type,format,language,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,description,creator,donor,contributor,date,date is approximate,subject,country,state,county,city,latitude,longitude,relation,publisher,source,identifier,rights,rightsstatement,format original,type,format,language,filename,oclc number,Date created,Date modified,Reference URL,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,format original"
 
