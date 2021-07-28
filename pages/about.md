@@ -17,7 +17,7 @@ Riegger donated his materials to the University of Idaho Library Special Collect
 
 ## About Hal Riegger
 
-Hal Riegger was born in 1913 in Ithaca, New York. He received his B.A. and M.A. degrees at the New York State College of Ceramics and Ohio State University, respectively. Riegger taught ceramics for most of his life,had his work exhibited in museums across the country, and published three books on the subject of ceramic pottery. 
+Hal Riegger was born in 1913 in Ithaca, New York. He received his B.A. and M.A. degrees at the New York State College of Ceramics and The Ohio State University, respectively. Riegger taught ceramics for most of his life, had his work exhibited in museums across the country, and published three books on the subject of ceramic pottery. 
 
 In addition to his professional work in the art world, Riegger was very active in the field of rail history and model railroading—his interest in trains dates back to childhood and a set of Lionel O gauge train models owned by his aunt. He was a member of the National Model Railroad Association and served on its standards committee. 
 
