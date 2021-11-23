@@ -28,6 +28,12 @@ I usually just start manually editing the file, and as a final step manually del
 Once you sort out the conflicts on a file, on Code's Git menu you can click the plus sign to move the file from "Merge changes" to "Staged changes" so that it is ready to commit.
 At that point you can always click on the "Stages changes" to see the git diff visualized, so you can review the changes to make sure they are correct.
 
+## Delete extra files from _data folder (unless this is actually the metadata for the collection you're working on):
+- boxing.csv
+- cities.csv
+- dworshak.csv
+- psychiana.csv
+
 ## General
 
 Do a general overview of the site.
@@ -55,11 +61,15 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 2. Make sure the `date created` field is unique. If there are two `date created` fields, delete one of them.
 3. If the `filename` field (or any other field) is empty, delete the column
 4. Rename the `reference url` field `cdm_url`
-5. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
+5. Make sure all field names are lowercase.
+6. Replace spaces in field names with underscores (`_`)
+7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
 
 ### Check metadata export
 
 1. Stop the jekyll server and run the command `rake deploy`.
+2. Find and open metadata.csv and metadata.json in _site/data folder.
+3. Check to make sure the following fields exist and their values look correct: `object_thumb`, `object_small`, `object_download`, `reference_url` 
 
 ## Commit and push your changes
 
