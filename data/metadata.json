@@ -7,7 +7,10 @@
     {%- for item in items -%}
     { 
         {% for f in fields %}{% if item[f] %}{{ f | jsonify }}: {{ item[f] | jsonify }},{% endif %}
-        {% endfor %}"reference_url": {{ "/items/" | append: item.objectid | append: ".html" | absolute_url | jsonify }}
+        {% endfor %}"object_thumb": "{% include image/thumb.html %}",
+        "object_small": "{% include image/large.html %}",
+        "object_download": "{% include download/item.html %}",
+        "reference_url": {{ "/items/" | append: item.objectid | append: ".html" | absolute_url | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
 ] }
