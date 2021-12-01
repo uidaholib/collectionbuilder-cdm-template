@@ -4,6 +4,7 @@ date,Date Created,,DCTERMS.created,dateCreated
 date_is_approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 location,Location,true,,contentLocation
+region,Region,true,
 notes,Notes
 source,Source
 identifier,Source Identifier
