@@ -39,7 +39,7 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-fields: location; region # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -59,17 +59,17 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 ##########
 # TIMELINE PAGE
 #
-year-navigation: 1908 #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+year-navigation: "1904;1908;1910" #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment:  # set increments to auto gen nav years
 
 ##########
 # DATA 
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,date,date_is_approximate,location,lcsh_loc,coverage,region,relation,digital_collection,holding_institution,source,notes,original_file_number,identifier,rights,rightsstatement,original_format,type,language,format,url,cdmid,objectid"
+metadata-export-fields: "title,description,creator,date,date_is_approximate,location,lcsh_loc,coverage,region,relation,digital_collection,holding_institution,source,notes,original_file_number,identifier,rights,rightsstatement,original_format,type,language,format,cdm_url,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "location,lcsh_loc,coverage,region,notes"
+metadata-facets-fields: "location,lcsh_loc,coverage,region"
 
 ##########
 # ADVANCED OPTIONS
