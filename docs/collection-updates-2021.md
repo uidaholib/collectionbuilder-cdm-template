@@ -8,10 +8,14 @@ First, always make sure your `main` branch is up-to-date, do a `git pull` on mai
 
 ## Select a branch to update
 
-Use the digital_all_collections spreadsheet in AdminCollections google drive folder
+Use the digital_all_collections spreadsheet in AdminCollections google drive folder.
+Select a collection that has a value in the `cb_cdm_branch` field.
 
 ## Merge main into branch
-
+1. switch to barnch you want to merge into
+2. choose a branch to merge into your branch
+3. select main
+4. accept that there will be conflicting files
 ## Sort out merge conflicts
 
 Open the project in VS Code.
@@ -32,6 +36,9 @@ I usually just start manually editing the file, and as a final step manually del
 Once you sort out the conflicts on a file, on Code's Git menu you can click the plus sign to move the file from "Merge changes" to "Staged changes" so that it is ready to commit.
 At that point you can always click on the "Stages changes" to see the git diff visualized, so you can review the changes to make sure they are correct.
 
+current change = customized changes to the branch
+incoming change = changes from the main branch
+
 ## Delete extra files from _data folder (unless this is actually the metadata for the collection you're working on):
 - boxing.csv
 - cities.csv
@@ -40,12 +47,14 @@ At that point you can always click on the "Stages changes" to see the git diff v
 
 ## General
 
+1. Serve the site using the `jekyll s` command.
 Do a general overview of the site.
 Make sure there are no broken links, images not showing up, etc. (if you see something amiss, fix it!)
 Check to see if the map is properly centered and if the word clouds make sense.
 
 ## About Pages
 
+If two about pages, check the content of each. The correct about page should be in the pages/ folder. After you've ensured that no information is missing, delete the about.md file at the root of the repository.
 Check each about page for content and format, cleaning up and making edits as you see fit.
 In particular, keep an eye out for hyperlinked text that says something like "click here."
 When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
@@ -67,6 +76,9 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 4. Rename the `reference url` field `cdm_url`
 5. Make sure all field names are lowercase (you can wait until you're back in vs code for this and use this shortcut: highlight the first row of fieldnames and select ctrl + shift + p, transform to lowercase)
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
+rightsstatement
+
+theme.yml
 
 ### Check metadata export
 
