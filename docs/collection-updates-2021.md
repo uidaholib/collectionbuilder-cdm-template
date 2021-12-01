@@ -6,6 +6,10 @@
 
 First, always make sure your `main` branch is up-to-date, do a `git pull` on main.
 
+## Select a branch to update
+
+Use the digital_all_collections spreadsheet in AdminCollections google drive folder
+
 ## Merge main into branch
 
 ## Sort out merge conflicts
@@ -61,16 +65,18 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 2. Make sure the `date created` field is unique. If there are two `date created` fields, delete one of them.
 3. If the `filename` field (or any other field) is empty, delete the column
 4. Rename the `reference url` field `cdm_url`
-5. Make sure all field names are lowercase.
-6. Replace spaces in field names with underscores (`_`)
+5. Make sure all field names are lowercase (you can wait until you're back in vs code for this and use this shortcut: highlight the first row of fieldnames and select ctrl + shift + p, transform to lowercase)
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
 
 ### Check metadata export
 
-1. Stop the jekyll server and run the command `rake deploy`.
+1. Run the command `jekyll s` to serve the site locally.
 2. Find and open metadata.csv and metadata.json in _site/data folder.
 3. Check to make sure the following fields exist and their values look correct: `object_thumb`, `object_small`, `object_download`, `reference_url` 
 
 ## Commit and push your changes
 
 ## Update the live site
+1. Stop the jekyll server and run the command `rake deploy`.
+2. Copy the site's files from the _site folder to the correct folder on digital/
+3. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the year and month
