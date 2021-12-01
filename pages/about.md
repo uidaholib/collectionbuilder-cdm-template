@@ -19,7 +19,7 @@ The University of Idaho campus was a barren patch of hilly land when Shattuck st
 
 Shattuck left the U of I in 1917 due to differences in administration but stayed active in forestry. The original nursery became an arboretum, a cherished campus landmark, that was posthumously named the Charles Houston Shattuck Arboretum in 1933, two years after his death.  
 
-An early type of photography, lantern slides and the devices used to project the images were originally called “Magic Lanterns” due to the wonder by the audience of being able to see an image cast onto a screen. Besides for entertainment, the ability to project images from lantern slides to a large audience became a popular teaching tool for schools, universities, and museums. The photography process created slides in black and white, any color had to be applied by hand by paining each slide with specially formulated paints and dyes.
+An early type of photography, lantern slides and the devices used to project the images were originally called “Magic Lanterns” due to the wonder by the audience of being able to see an image cast onto a screen. Besides for entertainment, the ability to project images from lantern slides to a large audience became a popular teaching tool for schools, universities, and museums. The photography process created slides in black and white, any color had to be applied by hand by painting each slide with specially formulated paints and dyes.
 
 {% include feature/item-figure.html objectid="shattuck99" width="75" %}
 
