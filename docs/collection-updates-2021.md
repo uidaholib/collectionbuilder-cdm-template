@@ -69,7 +69,7 @@ If the following files exist in _data, delete them (unless one of them is actual
 UI library logos replace the Digital Initiatives logo buttons in the top right on non-home pages, and in the mobile nav.
 The links for these buttons no longer trigger the all-collections modal.
 Instead, the top right logo on the home page links to <https://www.lib.uidaho.edu/>, and the top right logo on the other site pages links back to <https://www.lib.uidaho.edu/digital/>.
-Edits to these logos will appear in `collection-banner.html` and `collection-nav.html` files.
+Edits to these logos will appear in `collection-banner.html` and `collection-nav.html` files, in the _includes folder.
 
 ## Metadata
 
