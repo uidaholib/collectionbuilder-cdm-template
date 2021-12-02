@@ -1,6 +1,6 @@
 # Update collection branches
 
-> major update November 2021
+> major update December 2021
 
 ## Update main!
 
@@ -8,38 +8,34 @@ First, always make sure your `main` branch is up-to-date, do a `git pull` on mai
 
 ## Select a branch to update
 
-Use the digital_all_collections spreadsheet in AdminCollections google drive folder.
-Select a collection that has a value in the `cb_cdm_branch` field.
+1. Use the digital_all_collections spreadsheet in AdminCollections google drive folder.
+2. Select a collection that has a value in the `cb_cdm_branch` field, but no value in the `branch_notes` field.
 
-## Merge main into branch
-1. switch to barnch you want to merge into
-2. choose a branch to merge into your branch
-3. select main
-4. accept that there will be conflicting files
+## Merge main branch into the branch you've selected
+
+1. In GitHub Desktop, find the branch name and switch to it.
+2. In the Branches dropdown on GitHub Desktop, click the bottom button that says "Choose a branch to merge into [whatever branch you're on]," and choose the "main" branch. Once you select "main," the merge will begin.
+3. In most cases, there will be conflicting files, and you'll need to click a button that accepts this to continue the merge.
+
 ## Sort out merge conflicts
 
-Open the project in VS Code.
-If you open one of the files with a conflict, you will see the specific conflict areas highlighted, including the old and new content that conflicts. 
-VS Code or GitHub Desktop offer tools to try to manage these conflicts, however you might just want to "accept both" and then sort it out manually.
-However, I usually start working on the files without the helpers, since in the fairly complicated conflicts you will find in _config.yml and theme.yml they don't really help.
- 
-Git directly marks the conflicts in the text file by adding a pattern:
-
-- The top of the conflict has `<<<<<<< HEAD` on its own line, followed by the content in the old version of the file. 
-- Next you will see a line of `=======`, followed by the content of the new version of the file. 
-- Finally closed by `>>>>>>> branch_name`.
-
-These marks are just new normal text characters added to the file to mark the conflicts (any magical buttons around those marks are added by Code or GitHub Desktop and aren't part of Git). 
-You could just commit it like that (in which case those marks are just a normal part of the file now) and sort it out later.
-I usually just start manually editing the file, and as a final step manually delete the conflict markers. 
-
-Once you sort out the conflicts on a file, on Code's Git menu you can click the plus sign to move the file from "Merge changes" to "Staged changes" so that it is ready to commit.
-At that point you can always click on the "Stages changes" to see the git diff visualized, so you can review the changes to make sure they are correct.
-
-current change = customized changes to the branch
-incoming change = changes from the main branch
+GitHub Desktop will list the conflicts you need to resolve before the merge can be committed. To resolve them: 
+1. Open the project in VS Code and locate and open a file that GitHub desktop says needs to be resolved. 
+2. Scroll down in that file until you see the specific conflict area(s) highlighted, including the old and new content that conflicts. Git directly marks the conflicts in the text file by adding a pattern:
+    - The top of the conflict has `<<<<<<< HEAD` on its own line, followed by the content in the old version of the file. 
+    - Next you will see a line of `=======`, followed by the content of the new version of the file. 
+    - Finally closed by `>>>>>>> branch_name`.
+3. VS Code offers tools to try to manage these conflicts: above the highlighted section, you'll see a series of buttons that say `accept current change`, `accept incoming change`, and `accept both`. (Note these buttons are added by VS Code and aren't part of Git))
+    - `current change` = changes on the current branch
+    - `incoming change` = changes from the main branch
+4. Which option you accept depends on which file you're looking at, so always look carefully at the code before determining which change to accept. In many cases, if the file is in the _includes folder, you'll probably accept the `incoming change` option to incorporate general updates to the collectionbuilder template code. If the file is in the _data folder, you'd be more likely to accept the `current change`, since these files are likely heavily customized to fit the collection. This isn't always the case, though, so take care and don't hesitate to reach out to Olivia to confirm. In some cases you might need to `accept both` and then sort it out manually.
+5. Once you sort out the conflicts on a file, save the file. When you switch back to GitHub Desktop, you should see that the conflict is resolved, so you can move on to the next conflict following the instructions above.
+6. Remember that you can always click on the files you edited in the Changes column of VS Code to see the git diff visualized, so you can review the changes to make sure they are correct.
+7. After you've sorted out all the conflicts, you can either make a commit or move onto the changes below, whichever makes the most sense to you. If there are a lot of files that were changed in the merge, it might make more sense to commit at this point, since you'll be changing more in the steps below and it may be hard to keep track of your changes.
 
 ## Delete extra files from _data folder (unless this is actually the metadata for the collection you're working on):
+
+If the following files exist in _data, delete them (unless they are the metadata for the branch!).
 - boxing.csv
 - cities.csv
 - dworshak.csv
@@ -48,47 +44,63 @@ incoming change = changes from the main branch
 ## General
 
 1. Serve the site using the `jekyll s` command.
-Do a general overview of the site.
-Make sure there are no broken links, images not showing up, etc. (if you see something amiss, fix it!)
-Check to see if the map is properly centered and if the word clouds make sense.
+2. Do a general overview of the site.
+3. On the **browse page** and **item pages**, make sure there are no broken links, images not showing up, etc. (if you see something amiss, fix it!)
+    - Check the config-metadata.csv in the _data folder and compare it with the collection's metadata spreadsheet. Are there any fields you think should be added to the metadata on the collection's item pages? If so, add them to the config-metadata.csv. Make sure any field with browse_link = true in the config-metadata.csv is also included on the browse cards, using the config-browse.csv, since the browse links won't work properly if the fields aren't included on the browse cards. 
+4. Check to see if the **map** is properly centered and if the **word clouds** make sense.
+    - Check the theme.yml file to see what metadata fields are included in the locations and subjects word clouds. First, check the metadata to determine if there are any other fields you should add to these visualizations. Second, make sure the same fields are included on the browse cards, using the config-browse.csv, since the word cloud links won't work properly if the fields aren't included on the browse cards. 
+5. Check the **timeline** dropdown (top right of the timeline page) and change it in theme.yml if it needs editing. Note that in the "Timeline Page" section of theme.yml, only one of the two variable options (`year-navigation` and `year-nav-increment`) should be used. If you're using `year-navigation`, remember to use quotation marks around your series of dates, just as the example does.
 
 ## About Pages
 
-If two about pages, check the content of each. The correct about page should be in the pages/ folder. After you've ensured that no information is missing, delete the about.md file at the root of the repository.
-Check each about page for content and format, cleaning up and making edits as you see fit.
-In particular, keep an eye out for hyperlinked text that says something like "click here."
-When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
+1. Sometimes, there may be two About pages in the repository (one in the base of the repo and one in the pages folder). The correct about page should be in the pages folder. If there are two About pages, check the content of each and make sure the one in the pages folder is the most up to date. After you've ensured that no information is missing, delete the about.md file at the root of the repository, but leave the one in the pages folder.
+2. Check the About page for content and format, cleaning up and making edits as you see fit.
+    - In particular, keep an eye out for hyperlinked text that says something like "click here." When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
 
 ## Library Logos
 
 UI library logos replace the Digital Initiatives logo buttons in the top right on non-home pages, and in the mobile nav.
 The links for these buttons no longer trigger the all collections modal.
-Instead, they link back to https://www.lib.uidaho.edu/digital/.
+Instead, the top right logo on the home page links to <https://www.lib.uidaho.edu/>, and the top right logo on the other site pages links back to <https://www.lib.uidaho.edu/digital/>.
 Edits to these logos will appear in `collection-banner.html` and `collection-nav.html` files.
 
 ## Metadata
 
-### Edit current metadata
+### Edit current metadata in Google Sheets
 
-1. Import metadata csv into google sheets to edit.
-2. Make sure the `date created` field is unique. If there are two `date created` fields, delete one of them.
-3. If the `filename` field (or any other field) is empty, delete the column
-4. Rename the `reference url` field `cdm_url`
-5. Make sure all field names are lowercase (you can wait until you're back in vs code for this and use this shortcut: highlight the first row of fieldnames and select ctrl + shift + p, transform to lowercase)
+1. Import the collection's metadata csv into google sheets to edit.
+2. In most cases, if any column is empty, you can delete that column. If you're not sure, let Olivia know to check it out.
+3. Rename the `reference url` field `cdm_url`
+4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement`. If it's not, change it so it is.
+5. Rename `image/jpg` values to `image/jpeg`
+6. Do a general overview to make sure the metadata looks good. If it seems like there could be lat/long values added, make a note in the digital_collections_all spreadsheet.
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
-rightsstatement
 
-theme.yml
+### Additional metadata edits in VS Code
+
+1. After you've completed your edits in Google Sheets and downloaded the metadata as a CSV, rename the file to whatever the metadata file's name currently is, and drag it back into the _data folder in VS Code. VS Code will as you if you want to replace the current file, since they have the same name. Select Yes.
+2. Run `jekyll s` to serve the site locally.
+3. Open the updated metadata CSV in VS Code. Make sure all field names are lowercase. If they aren't, use this shortcut: highlight the first row of fieldnames and select ctrl + shift + p, transform to lowercase)
+4. Open the theme.yml file and navigate to the data section. Copy the first row in the metadata CSV (the row with all the metadata field names), and paste it in between the quotation marks in the value for the `metadata-export-fields` variable. Remove any metadata fields that you don't feel should be in the export file.
+5. Also in the data section of the theme.yml file, check the values for the `metadata-facets-fields` fields (sometimes it's easier to view this in the browser, by clicking on the "facets json" button at the bottom of the homepage). Determine if there should be other metadata fields added to this list (the fields added should have values that occur more than once across the collection items. Subject will almost always be there, but other common ones might be location, creator, etc.).
 
 ### Check metadata export
 
-1. Run the command `jekyll s` to serve the site locally.
-2. Find and open metadata.csv and metadata.json in _site/data folder.
-3. Check to make sure the following fields exist and their values look correct: `object_thumb`, `object_small`, `object_download`, `reference_url` 
+1. Find and open metadata.csv and metadata.json in _site/data folder.
+2. Check to make sure the following fields exist and their values look correct: `object_thumb`, `object_download`, `reference_url` (you can also do this after you run `rake deploy` in the steps below)
 
 ## Commit and push your changes
 
+Use VS Code and/or GitHub Desktop to commit and push your changes up to GitHub.
+
 ## Update the live site
-1. Stop the jekyll server and run the command `rake deploy`.
-2. Copy the site's files from the _site folder to the correct folder on digital/
-3. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the year and month
+1. Stop the jekyll server and run the command `rake deploy`. This might take a few seconds to generate, depending on how big the collection is. When you see a "done" message in the terminal, this process is finished and you can move to the next step.
+2. Locate the collectionbuilder-cdm-template repository in your file explorer and navigate to the `_site` folder (you can also easily do this from VS Code by right clicking the `_site` folder and selecting `Reveal in File Explorer`). (Note: **you *must* be sure to only copy files from the _site folder**. Files outside of this folder will not be configured correctly for our server.)
+3. Leaving this file explorer window open, proceed to open another file explorer window. In this one, select the `Websites (W:)` drive. Select www-lib-uidaho-edu > Content > Digital > the collection folder you want to update.
+4. Carefully copy and paste the content from your repository folder into the collection folder. As soon as you copy these files over, they will be live.
+    - Note: if you're nervous to copy over the current files, you can always first copy the current files to an empty folder on your computer, copy over the edited files to the server, check to make sure they look correct, and then delete the old files that you temporarily moved to an empty folder.
+5. Check the live site to make sure everything looks correct.
+
+## Update the digital_all_collections spreadsheet
+1. Add "done" and any notes to the klytie_updates column.
+2. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the current year and month.
