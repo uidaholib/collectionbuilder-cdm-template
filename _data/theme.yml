@@ -69,7 +69,7 @@ map-cluster-radius: 10 # size of clusters, from ~ 10 to 80
 # TIMELINE PAGE
 #
 year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+year-nav-increment: 1 # set increments to auto gen nav years
 
 ##########
 # DATA 
