@@ -72,7 +72,7 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 1. Import the collection's metadata csv into google sheets to edit.
 2. In most cases, if any column is empty, you can delete that column. If you're not sure, let Olivia know to check it out.
 3. Rename the `reference url` field `cdm_url`
-4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement` (it might say `rights information` or `rights (standardized)`). If it's not, change it so it is.
+4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement` (it might say `rights information` or `rights (standardized)`). If it's not, change it so it is titled `rightsstatement`.
 5. Rename `image/jpg` values to `image/jpeg`
 6. Do a general overview to make sure the metadata looks good. If it seems like there could be lat/long values added, make a note in the digital_collections_all spreadsheet.
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
