@@ -56,6 +56,7 @@ If the following files exist in _data, delete them (unless they are the metadata
 1. Sometimes, there may be two About pages in the repository (one in the base of the repo and one in the pages folder). The correct about page should be in the pages folder. If there are two About pages, check the content of each and make sure the one in the pages folder is the most up to date. After you've ensured that no information is missing, delete the about.md file at the root of the repository, but leave the one in the pages folder.
 2. Check the About page for content and format, cleaning up and making edits as you see fit.
     - In particular, keep an eye out for hyperlinked text that says something like "click here." When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
+3. If you use the "float" option in the feature/image include, make sure to include the code <div class="clearfix"></div> at the bottom of about.md. This makes sure the layout of the About page works correctly on mobile devices. So if you see <div class="clearfix"></div> already in this file, just leave it there.
 
 ## Library Logos
 
@@ -71,7 +72,7 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 1. Import the collection's metadata csv into google sheets to edit.
 2. In most cases, if any column is empty, you can delete that column. If you're not sure, let Olivia know to check it out.
 3. Rename the `reference url` field `cdm_url`
-4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement`. If it's not, change it so it is.
+4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement` (it might say `rights information` or `rights (standardized)`). If it's not, change it so it is.
 5. Rename `image/jpg` values to `image/jpeg`
 6. Do a general overview to make sure the metadata looks good. If it seems like there could be lat/long values added, make a note in the digital_collections_all spreadsheet.
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
