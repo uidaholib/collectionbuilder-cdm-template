@@ -23,7 +23,9 @@
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
     
-    <a class="d-none d-md-block float-right title-card p-3 liblogo-corner" href="https://www.lib.uidaho.edu/"><img alt="University of Idaho Library home" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png"></a>
+    <a class="d-none d-md-block float-right title-card p-3 liblogo-corner" href="https://www.lib.uidaho.edu/" target="_blank" rel="noopener">
+        <img alt="University of Idaho Library home" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" >
+    </a>
     
     <div id="home-title-box">
         <div class="title-card p-2 text-center">
@@ -46,8 +48,9 @@
             {% if site.tagline %}<p>{{ site.tagline }}</p>{% endif %}
         </div>
         <div class="col-md-3 d-none d-lg-block text-right">
-            <a role="button" class="btn btn-outline-light" href="https://www.lib.uidaho.edu/digital/">
-            <img class="img-fluid" src="https://www.lib.uidaho.edu/media/images/ui_library_horizontal.png" title="University of Idaho Library Digital Initiatives Collections" alt="University of Idaho Library Digital Initiatives Collections"></a>
+            <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                <img class="img-fluid" src="https://www.lib.uidaho.edu/media/images/ui_library_horizontal.png" title="University of Idaho Library Digital Initiatives Collections" alt="University of Idaho Library Digital Initiatives Collections" >
+            </a>
         </div>
     </div>
 </div>
