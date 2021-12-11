@@ -14,3 +14,4 @@ type,Type,,DCTERMS.type
 format-original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
+contributing_departments,Contributing Departments,true
