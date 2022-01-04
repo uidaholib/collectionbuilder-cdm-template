@@ -20,8 +20,8 @@ One of two arboreta on the University of Idaho campus, the Arboretum was initiat
 
 A tree-less plot of farmland adjacent to the U of I Golf Course and across the street from the U of I Executive Residence was chosen. Funds raised through an initial Comprehensive Education Training Act grant helped to establish the site, and donations and membership dues for the Arboretum Associates have covered all plantings since. The Arboretum continues to serve as a point of interest and study for the general public as well as a research and teaching site for classes and faculty in plant and soil sciences, landscape architecture, forestry, and biological sciences. 
 
-<a href="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/Infrastructure/Facilities/Arboretum/printable-map-draft-smaller-logo-1-26-17.jpg">
-    <img src="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/Infrastructure/Facilities/Arboretum/printable-map-draft-smaller-logo-1-26-17.jpg" alt="Map of the University of Idaho Arboretum & Botanical Garden" style="width: 100%;"/>
+<a href="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/Infrastructure/Facilities/Arboretum/tour-maps/printable-map-draft-smaller-logo-1-26-17.jpg">
+    <img src="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/Infrastructure/Facilities/Arboretum/tour-maps/printable-map-draft-smaller-logo-1-26-17.jpg" alt="Map of the University of Idaho Arboretum & Botanical Garden" style="width: 100%;"/>
 </a>
 
 <div class="clearfix"></div>
