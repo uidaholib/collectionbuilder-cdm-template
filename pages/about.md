@@ -7,8 +7,6 @@ permalink: /about.html
 
 {% include feature/nav-menu.html sections="About the Collection;About Hal Riegger" %}  
 
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
-
 ## About the Collection
 
 The Hal Riegger Papers Collection is made up of maps, correspondence, oral history tapes and transcripts, and a large number of photographs dealing with the Camas Prairie Railroad, all collected by Hal Riegger from 1981-1986 and used in the writing of his book, *The Camas Prairie: Idaho’s Railroad on Stilts*. The Camas Prairie Railroad is one of the United States’ most scenic and fascinating railroads. Jointly owned by Northern Pacific Railway and Union Pacific Railroad, it was headquartered in Lewiston, Idaho, with lines running northwest to Ayer, Washington; Grangeville, Idaho; Stites, Idaho; and to Headquarters, Idaho. 
