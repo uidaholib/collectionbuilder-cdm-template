@@ -68,7 +68,7 @@ map-cluster-radius: 15 # size of clusters, from ~ 10 to 80
 ##########
 # TIMELINE PAGE
 #
-year-navigation: "1890;1895;1900;1905;1910;1915;1920;1925;1930;1935;1940;1945;1950;1955;1960" # manually set years to appear in dropdown nav
+year-navigation: "1890;1895;1900;1905;1910;1915;1920;1925;1930;1935;1940;1945;1950;1955" # manually set years to appear in dropdown nav
 year-nav-increment:  # set increments to auto gen nav years
 
 ##########
@@ -76,7 +76,7 @@ year-nav-increment:  # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,photographer,date,date is approximate,description,subject,subject (lcsh),subject (lctgm),location depicted,location,latitude,longitude,original identifier,source,digital collection,holding institution,ordering information,format original,type,format,digital identifier,date digital,language,web site,rightsstatement,rights,digital specifications,original reference url,original contentdm number,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,photographer,date,date is approximate,description,subject,subject (lcsh),subject (lctgm),location depicted,location,latitude,longitude,original identifier,source,digital collection,holding institution,ordering information,format original,type,format,digital identifier,date digital,language,web site,rightsstatement,rights,digital specifications,original reference url,original contentdm number,date created,date modified,cdm_url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "photographer,subject,subject (lcsh),subject (lctgm),location depicted,location,format original"
 
