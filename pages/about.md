@@ -21,7 +21,7 @@ These materials come from the University of Idaho Library's [Special Collections
 
 {% include feature/item-figure.html objectid="bigburn27" width="50" %}
 
-Also included are a [first-person history of the 1910 fires](/digital/bigburn/items/bigburn00.html), written by Elers Koch, and a two-part recording ([Part 1](/digital/bigburn/items/bigburn46.html), [Part 2](/digital/bigburn/items/bigburn47.html)) plus [Transcript](/digital/bigburn/items/bigburn65.html) of an interview with Ione "Pinkie" Adair, who witnessed the fire first hand. Timothy Egan used these histories, photographs, and other materials from the Library's Special Collections & Archives department during the composition of *The Big Burn*, as he notes in the acknowledgements section towards the end of his book.
+Also included are a [first-person history of the 1910 fires](/digital/bigburn/items/bigburn00.html), written by Elers Koch, and a two-part recording ([Part 1](/digital/bigburn/items/bigburn46.html), [Part 2](/digital/bigburn/items/bigburn47.html)) plus [Transcript](/digital/bigburn/items/bigburn65.html) of an interview with Ione "Pinkie" Adair, who witnessed the fire firsthand. Timothy Egan used these histories, photographs, and other materials from the Library's Special Collections & Archives department during the composition of *The Big Burn*, as he notes in the acknowledgements section towards the end of his book.
 
 For additional photos and information on the fires of 1910, see this [special series from the Spokesman Review](https://www.spokesman.com/1910fire/).
 
