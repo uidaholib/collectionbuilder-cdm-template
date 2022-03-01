@@ -1,7 +1,7 @@
 {% comment %}
     
     Item video embed from objectid.
-    This include adds a video embed to the page using Bootstrap responsive embed styles, https://getbootstrap.com/docs/4.3/utilities/embed/
+    This include adds a video embed to the page using Bootstrap responsive embed styles, https://getbootstrap.com/docs/4.5/utilities/embed/
 
     It requires an "objectid" with the include, which is used to find the object title and details.
     Items with youtubeid will use a YouTube embed, others will attempt to use the video element with contentdm src source.
@@ -12,7 +12,7 @@
     - "caption" by default the figure include automatically adds the title of the item from your metadata. The caption option allows you to manually add a different caption, or give the value false for none.
     - "ratio" use Bootstrap embed ratio options "21by9", "16by9", "4by3", or "1by1" to customize the responsive aspect ratio. 16by9 is default.
 
-    Note: if you have issues make sure the item is a video item and that the format is correct, e.g. video/mp4 
+    Note: if you have issues make sure the item is a youtube or video item and that the format is correct, e.g. video/mp4 
 
 {%- endcomment -%}
 {%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
