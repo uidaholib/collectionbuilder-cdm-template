@@ -58,7 +58,7 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # see _data/map-config.csv for field display options
 latitude: 46.859604 #to determine center of map
 longitude: -116.393459 #to determine center of map
-zoom-level: 15 # zoom level for map 
+zoom-level: 12 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,date,date is approximate,description,subject,source,location,latitude,longitude,subject (lcsh),format original,donor,identifier,digital collection,format,type,rights,rightsstatement,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,date,date is approximate,description,subject,source,location,latitude,longitude,subject (lcsh),format original,donor,identifier,digital collection,format,type,rights,rightsstatement,filename,oclc number,date created,date modified,cdm_url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,format original,digital collection"
+metadata-facets-fields: "subject,location,format original,digital collection"
 
 ##########
 # ADVANCED OPTIONS
