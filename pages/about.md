@@ -29,7 +29,7 @@ The manager’s letters of Stanly A. Easton, 1904-1926 (lacking May-December 191
 
 Other topics of note in this collection include:
 
-- A.A. Irish sold mining properties and his correspondence with Bradley, 1916-1928 concerns available mines
+- A.A. Irish sold mining properties and his correspondence with Bradley, 1916-1928 concerns available mines.
 - Oscar A. Hershey was a geologist and consulting engineer who examined properties for Bunker Hill and Sullivan. His files, 1918-1929 contain originals of his letters to Bradley, carbons of his letters to Easton and carbons of Bradley’s letters to him.
 - Easton’s correspondence with the Alaska Juneau Gold Mining Company, 1925-1937 contains photocopies of Easton’s letters which give information on Bunker Hill equipment and National Labor Relations Board hearings.
 - Urlyn Clifton Tainton was the electrometallurgist at Bunker Hill who designed the electrolytic zinc plant in 1926. His letters, 1920-1930, concern the treatment of ore.
