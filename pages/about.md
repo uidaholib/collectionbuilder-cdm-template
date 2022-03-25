@@ -58,5 +58,5 @@ Second, the artistic quality of photography during these projects provides viewe
 
 <div class="clearfix"></div>
 
-[^1]: Brougher, Lynne. "Columbia Basin Project." Government. Bureau of Reclamation, January 23, 2019. <https://www.usbr.gov/pn/grandcoulee/cbp/index.html>.
+[^1]: Brougher, Lynne. "Columbia Basin Project," *Government. Bureau of Reclamation*, January 23, 2019, <https://www.usbr.gov/pn/grandcoulee/cbp/index.html>.
 
