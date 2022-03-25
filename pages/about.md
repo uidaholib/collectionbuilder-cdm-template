@@ -45,7 +45,7 @@ Watkins' non-mining photographs are astounding as well, and are definitely worth
 - [Mammoth Plate Photographs of the North American West](https://beinecke.library.yale.edu/collections/highlights/mammoth-plate-photographs-north-american-west) by Watkins from the [Beinecke Rare Book and Manuscript Library](https://www.library.yale.edu/beinecke/) at Yale University.
 - [Carleton E. Watkins Collection](https://www.sfmoma.org/artist/Carleton_E._Watkins/) at the San Francisco Museum of Modern Art.
 
-[^1]: Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011, 247.
+[^1]: Hult-Lewis, Christine. *The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography* (Boston University, 2011), 247.
 
 <div class="clearfix"></div>
 
