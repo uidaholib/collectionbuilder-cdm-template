@@ -41,8 +41,9 @@ Watkins' non-mining photographs are astounding as well, and are definitely worth
 - [Carleton Watkins Photographs at the Getty Museum](https://www.getty.edu/art/gettyguide/artMakerDetails?maker=1989)
 - [Early Watkins Yosemite Photographs](https://www.yosemite.ca.us/library/watkins/)
 - [Carleton Watkins: The Art of Perception](https://www.nga.gov/exhibitions/2000/watkins.html) at the National Gallery of Art.
-- [Carleton E. Watkins Photographs](https://hearstmuseum.berkeley.edu/exhibitions/photo/watkins.html) in an online exhibit at Phoebe A. Hearst Museum of Anthropology.
+- [Collection of Photographs by Carleton E. Watkins finding aid](https://oac.cdlib.org/findaid/ark:/13030/tf2x0nb5r3/admin/) at the Phoebe A. Hearst Museum of Anthropology.
 - [Mammoth Plate Photographs of the North American West](https://beinecke.library.yale.edu/collections/highlights/mammoth-plate-photographs-north-american-west) by Watkins from the [Beinecke Rare Book and Manuscript Library](https://www.library.yale.edu/beinecke/) at Yale University.
+- [Carleton E. Watkins Collection](https://www.sfmoma.org/artist/Carleton_E._Watkins/) at the San Francisco Museum of Modern Art.
 
 [^1]: Hult-Lewis, Christine. The Mining Photographs of Carleton Watkins, 1858-1891, and the Origins of Corporate Photography. Boston University, 2011, 247.
 
