@@ -15,7 +15,7 @@ Donald R. Theophilus, Jr. was born on September 6, 1931 in Moscow, Idaho (where 
 
 Upon President Theophilus’ retirement in 1965, Idaho Governor Robert E. Smylie said of him, “No one in Idaho’s history has been able to do so much for so many for so long.”[^3]
 
-{:.pt-3}
+
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
 ## About the University of Idaho Boxing Team
@@ -44,14 +44,15 @@ By the time boxing ended at the University of Idaho, the team had collected “s
 </div>
 </div>
 
-[^1]: [“Donald R. Theophilus, Jr.” Find a Grave. Accessed May 29, 2020.](https://www.findagrave.com/memorial/92659389/donald-r-theophilus)
-
-[^2]: [“Donald R. Theophilus” Find a Grave. Accessed May 29, 2020.](https://www.findagrave.com/memorial/23835289/donald-richard-theophilus)
-
-[^3]: [*Legendary Locals of Moscow*. Legendary Locals. Latah County Historical Society, 2015, p. 43.](https://books.google.com/books?id=e7RhCgAAQBAJ&pg=PA85&lpg=PA85&dq=kyle+laughlin+idaho+photographer&source=bl&ots=3j7AUJ1Ox8&sig=ACfU3U1h9YS-2ozTbwUNQvU2ybZh2K5VBA&hl=en&sa=X&ved=2ahUKEwjmhcPFkbTpAhUfJDQIHcYpAFYQ6AEwEXoECAoQAQ#v=onepage&q=kyle%20laughlin&f=false)
-
-[^4]: [Lawson, Theo. “Kings of Their Ring - Its Tenure Was Short-Lived, but Vandal Boxing Holds Deep Roots in UI’s History.” The University of Idaho Argonaut: For, Of, and By the Students Since 1898, May 5, 2014.](https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/)
-
 ## Sources
+
+[^1]: Find a Grave. “Donald R. Theophilus, Jr.” Accessed May 29, 2020. [https://www.findagrave.com/memorial/92659389/donald-r-theophilus](https://www.findagrave.com/memorial/92659389/donald-r-theophilus).
+
+[^2]: Find a Grave. “Donald R. Theophilus, Jr.” Accessed May 29, 2020. [https://www.findagrave.com/memorial/92659389/donald-r-theophilus](https://www.findagrave.com/memorial/92659389/donald-r-theophilus).
+
+[^3]: Latah County Historical Society, *Legendary Locals of Moscow*. (Latah County Historical Society, 2015), 43, [https://www.google.com/books/edition/Legendary_Locals_of_Moscow/e7RhCgAAQBAJ?hl=en&gbpv=0](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/e7RhCgAAQBAJ?hl=en&gbpv=0).
+
+[^4]: Theo Lawson, “Kings of Their Ring - Its Tenure Was Short-Lived, but Vandal Boxing Holds Deep Roots in UI’s History.” *The University of Idaho Argonaut: For, Of, and By the Students Since 1898*, May 5, 2014, [https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/](https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/)
+
 
 <div class="clearfix"></div>
