@@ -16,7 +16,7 @@ permalink: /about.html
 </div>
 </div>
 
-The Guided Reading Library is a digital collection of short books created by students in the University of Idaho's College of Education. This library is directed by <a href="https://www.uidaho.edu/ed/ci/curriculum-and-instruction-faculty/margaret-vaughn">Margaret Vaughn</a>, in collaboration with the Digital Initiatives unit of the University of Idaho Library.
+The Guided Reading Library is a digital collection of short books created by students in the University of Idaho's College of Education. This library is directed by Margaret Vaughn, in collaboration with the Digital Initiatives unit of the University of Idaho Library.
 
 <p>The Guided Reading Library developed out of Dr. Vaughn's experiences as an elementary teacher, as well as from conversations and collaborative research with current teachers. One of the project's goals is to engage preservice teachers in authentic literacy work. As such, the library hosts e-books developed as part of a culminating multimodal project in Dr. Vaughn's Children's Literature course.</p>
 
