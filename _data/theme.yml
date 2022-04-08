@@ -70,17 +70,17 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 ##########
 # TIMELINE PAGE
 #
-year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+year-navigation: "2014;2017" #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment:  # set increments to auto gen nav years
 
 ##########
 # DATA 
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,author,reader,creator type,date,subject,description,location,lat long,grade-level,identifier,format,digital specifications,language,rights,rightsstatement,type,contributing institution,full text,filename,oclc number,date created,date modified,reference url,cdmid,soundid,soundlink,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,author,reader,creator type,date,subject,description,location,lat long,grade-level,identifier,format,digital specifications,language,rights,standardized rights,type,contributing institution,full text,filename,oclc number,date created,date modified,reference url,cdmid,soundid,soundlink,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,grade-level"
+metadata-facets-fields: "subject,grade-level,subject"
 
 ##########
 # ADVANCED OPTIONS
