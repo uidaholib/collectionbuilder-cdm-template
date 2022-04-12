@@ -3,7 +3,9 @@ Home,/,
 Browse,/browse.html,
 Performers,/performers.html,
 Instruments,/instruments.html
-Timeline,/timeline.html,
+Timeline,
+Timeline,/timeline.html,Timeline
+Posters Timeline,/posterstimeline.html,Timeline
 Data,/data/,
 About,
 About the Collection,/about.html,About
