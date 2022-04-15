@@ -17,11 +17,11 @@ The original moving pictures were filmed in 1926 and 1930 by Harry Webb Marsh, a
 
 *To view other materials related to Harry Webb Marsh, see the [Harry Webb Marsh Papers finding aid](https://archiveswest.orbiscascade.org/ark:/80444/xv58486) and contact [Special Collections & Archives](https://www.lib.uidaho.edu/special-collections/) for more information.*
 
-Harry Webb Marsh was born in Moscow, Idaho on March 3, 1886. He was the first of three sons born to William and Mattie Marsh whose home was on the corner of First and B streets. He was educated in the Moscow City schools and the University of Idaho Preparatory School. After working for several years he returned to the University of Idaho to study mining engineering. 
+Harry Webb Marsh was born in Moscow, Idaho on March 3, 1886. He was the first of three sons born to William and Mattie Marsh whose home was on the corner of First and B streets. He was educated in the Moscow City schools and the University of Idaho Preparatory School. After working for several years, he returned to the University of Idaho to study mining engineering. 
 
-In 1903 he made his first trip to the Coeur d'Alene mining area where he worked for a time at the Tiger Poorman Mine before returning to Moscow. His first job upon leaving, the university came in 1910 when he began working in the assay office of the Hercules Mining Company. He also helped on the design and construction of that company's new concentrating plant. In 1912 he went to White Horse, Yukon Territory to manage the Atlas Mining Company, but due to low copper prices the mine shut down in 1913. He then went to Dawson, Yukon Territory, as an engineer with the Canadian Klondike Dredging Company, but at the beginning of World War I all the men in the area enlisted in the Canadian Army. He then went to Alaska where he was employed by the Alaska Treadwell Gold Mining Company on Douglas Island, and later by the Alaska Gastineau Gold Mining Company in Juneau.
+In 1903, he made his first trip to the Coeur d'Alene mining area where he worked for a time at the Tiger Poorman Mine before returning to Moscow. His first job upon leaving, the university came in 1910 when he began working in the assay office of the Hercules Mining Company. He also helped on the design and construction of that company's new concentrating plant. In 1912, he went to White Horse, Yukon Territory to manage the Atlas Mining Company, but due to low copper prices the mine shut down in 1913. He then went to Dawson, Yukon Territory, as an engineer with the Canadian Klondike Dredging Company, but at the beginning of World War I all the men in the area enlisted in the Canadian Army. He then went to Alaska where he was employed by the Alaska Treadwell Gold Mining Company on Douglas Island, and later by the Alaska Gastineau Gold Mining Company in Juneau.
 
-He returned to the Coeur d'Alenes in the fall of 1915 and joined the engineering staff of the Federal Mining and Smelting Company. In 1917 he began work for the Tamarack and Custer Mining Company where he remained until 1933. He continued to work for the Day family mining interests until 1941 when he was asked to go to Boise to assume the office of secretary-treasurer of the Idaho Mining Association, a position he held until his retirement in 1959. In 1949 President Harry S. Truman appointed him to the National Technical Task Committee on Industrial Wastes where he represented the entire non-ferrous metal mining industry.
+He returned to the Coeur d'Alene in the fall of 1915 and joined the engineering staff of the Federal Mining and Smelting Company. In 1917, he began work for the Tamarack and Custer Mining Company where he remained until 1933. He continued to work for the Day family mining interests until 1941 when he was asked to go to Boise to assume the office of secretary-treasurer of the Idaho Mining Association, a position he held until his retirement in 1959. In 1949 President Harry S. Truman appointed him to the National Technical Task Committee on Industrial Wastes where he represented the entire non-ferrous metal mining industry.
 
 From 1935 to 1941 he was in charged of the Shoshone County flood relief program. Working with the Army Corps of Engineers he supervised the construction of 28 Civilian Conservation Corps Camps to assist with this work. One of these camps, Camp F-30 in Pritchard, was renamed Camp Harry Marsh on July 16, 1933.
 
@@ -35,7 +35,7 @@ Idaho has a rich mining history because it has a rich mineral makeup - “Idaho 
 
 The Coeur d’Alene Mining District, located in the Silver Valley of Idaho, began as the George R. Marks & Company in the small “gold rush” town of Murray, Idaho. It was the first company in what would become the famous Coeur d’Alene Mining District.[^5]
 
-By 1884, the company was a large operation that spanned Murray, Burke, Mullan, Wardner, and Wallace.By 1914, the George Marks Company was renamed as the Coeur d’Alene Hardware Company and merged with Coeur d’Alene Iron Works, ultimately being named the Coeur d’Alene Hardware and Foundry Company.[^5]
+By 1884, the company was a large operation that spanned Murray, Burke, Mullan, Wardner, and Wallace. By 1914, the George Marks Company was renamed as the Coeur d’Alene Hardware Company and merged with Coeur d’Alene Iron Works, ultimately being named the Coeur d’Alene Hardware and Foundry Company.[^5]
 
 The company gained an international reputation for producing high-quality manufactured mining products that were distributed across the globe. By 1960, a final name change turned the company into the Coeur d’Alenes Company. The company continued to build strong relationships with various steel companies, particularly in Spokane, Washington and Boise, Idaho.[^6]
 
@@ -68,7 +68,7 @@ Throughout its history, the Coeur d’Alene Mining District included many mines 
 </div>
 </div>
 
-By WWII, the Coeur d’Alene Mining District include 24 mines and 34 mills, the largest of which included the Bunker Hill and Hecla mines.[^7]
+By WWII, the Coeur d’Alene Mining District included 24 mines and 34 mills, the largest of which included the Bunker Hill and Hecla mines.[^7]
 
 <div class="row">
     <div class="col-md-6">
@@ -89,23 +89,23 @@ Another massive mine in the Coeur d’Alene Mining district was the Hecla Mining
 
 # Sources
 
-[^1]: ["Mining Films Preserved." Idaho Harvester, 1 September 2014](https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html)
+[^1]: "Mining Films Preserved." *Idaho Harvester*, September 1, 2014, [https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html](https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html).
 
-[^2]: [Nielsen, Judith. "Harry Webb Marsh Papers, 1918-1966." Archives West, 1989.](https://archiveswest.orbiscascade.org/ark:/80444/xv58486)
+[^2]: Judith Nielsen, "Harry Webb Marsh Papers, 1918-1966." *Archives West*, 1989, [https://archiveswest.orbiscascade.org/ark:/80444/xv58486](https://archiveswest.orbiscascade.org/ark:/80444/xv58486).
 
-[^3]: [Mining in Idaho](https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm)
+[^3]: "Mining in Idaho." *Digital Atlas of Idaho,* [https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm](https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm)
 
-[^4]: [Idaho Gemstone Mining](https://geology.com/gemstones/states/idaho.shtml)
+[^4]: Hobart M. King, "Idaho Gemstone Mining." *Geology.com* [https://geology.com/gemstones/states/idaho.shtml](https://geology.com/gemstones/states/idaho.shtml)
 
-[^5]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 4
+[^5]: Jack G. Peterson and Susan E. Skog,  [*Profiles: A Portrayal of Idaho's Mining Industry*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451) (Boise: Idaho Mining Association, 198-), 4.
 
-[^6]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 4-5
+[^6]: Jack G. Peterson and Susan E. Skog, [*Profiles: A Portrayal of Idaho's Mining Industry*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451) (Boise: Idaho Mining Association, 198-), 4-5
 
-[^7]: [John Fahey, Hecla: A Century of Western Mining, 1990](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71135980620001451)
+[^7]: John Fahey, [*Hecla: A Century of Western Mining*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71135980620001451), (Seattle: University of Washington Press, 1990). 
 
-[^8]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 6
+[^8]: Jack G. Peterson and Susan E. Skog, [*Profiles: A Portrayal of Idaho's Mining Industry*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451) (Boise: Idaho Mining Association, 198-), 6.
 
-[^9]: [Profiles: A Portrayal of Idaho's Mining Industry](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451), p. 8
+[^9]: Jack G. Peterson and Susan E. Skog, [*Profiles: A Portrayal of Idaho's Mining Industry*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451) (Boise: Idaho Mining Association, 198-), 8.
 
 <div class="clearfix"></div>
 
