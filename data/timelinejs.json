@@ -10,7 +10,7 @@
           "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.title | append: ' Timeline' | jsonify }},
+          "headline": "Lionel Hampton Jazz Festival Poster Timeline",
           "text": {{ site.description | jsonify }}
         }
     },
