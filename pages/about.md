@@ -12,7 +12,7 @@ featured-image: "objects/test001.jpg"
 
 ## About Kyle Laughlin
 
-{% include feature/item-figure.html objectid="spec_kl1230" float="right col-md-4" %}
+{% include feature/item-figure.html objectid="spec_kl1230" %}
 
 Kyle Emmett Laughlin (b. 1905 – d. 8 February 1984) was a resident, local businessman, real estate developer, writer, and photographer in Moscow, Idaho for over 50 years.[^1] Laughlin’s photography (and writing) were inspired by “the natural beauty of the Northwest” and serves as pictorial documentation of many historic Pacific Northwest scenes between the 1920s and 1960s.[^2] Some of his photographs captured scenes of the Snake River “before the four Lower Snake River dams were built in the 1960s and 1970s. While much of the landscape is familiar, the photos capture glimpses of the pre-dam river – before the orchards and beaches were flooded by rising reservoirs, and while salmon runs were still abundant.”[^3] Some of these photographs were utilized by conservation groups in 2009 to “offer a vision of what the Lower Snake could return to if the dams were removed to restore salmon runs.”[^4] His photographs contributed to a 20-year debate among scientists and politicians regarding whether “breaching the dams” would “help restore salmon runs.”[^5]
 
@@ -20,7 +20,7 @@ Although Laughlin never viewed himself as a professional photographer, he produc
 
 ## About Marguerite Laughlin
 
-{% include feature/item-figure.html objectid="spec_kl963" float="left col-md-4" %}
+{% include feature/item-figure.html objectid="spec_kl963"%}
 
 Kyle Laughlin and his wife, Marguerite Laughlin, were both teachers who had strong ties to the North Idaho region before finally settling in Moscow, Idaho “in the midst of the Depression.”[^7] Marguerite graduated from Moscow High School in 1925 and University of Idaho in 1929.[^8] She “owned and operated several retail businesses” with her husband.[^9]
 
@@ -30,31 +30,30 @@ Together, Kyle and Marguerite shared three children: Kay, Helen, and John. For M
 
 ## About the Collection
 
-{% include feature/card.md text="For a detailed description and inventory of the Kyle Laughlin Photographs Collection, see our [finding aid](). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." float="right col-md-4" header="Archival Context" %}
-
 This collection contains over 800 historical photographs collected or taken by Kyle Laughlin between 1922 and 1967. These photographs include images of [buildings](https://www.lib.uidaho.edu/digital/laughlin/browse.html#buildings%20(structures)), [family life](https://www.lib.uidaho.edu/digital/laughlin/browse.html#portraits), and [general social/community activities](https://www.lib.uidaho.edu/digital/laughlin/browse.html#parties) in and around Moscow, Idaho.
 
 Nature scenes include various rivers, creeks, agricultural scenes, flowers and plants, and geologic formations. Photographs of people include portraits, Laughlin's children's graduation ceremonies, general family photographs (some of which are genealogical), and [social gatherings at the Laughlin house](https://www.lib.uidaho.edu/digital/laughlin/browse.html#parties).
 
 The photographs were donated to the University of Idaho Library, Special Collections and Archives Department in February of 1985 by Marguerite Laughlin. The collection was processed and described in 1998 and 1999 by Karen Hertel.
 
+{% include feature/card.md header="Archival Context" text="For a detailed description and inventory of the Kyle Laughlin Photographs Collection, see our [finding aid](). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." width="50" centered=true %}
 
-[^1]: [Legendary Locals of Moscow. Legendary Locals. Latah County Historical Society, 2015, p. 85.](https://books.google.com/books?id=e7RhCgAAQBAJ&pg=PA85&lpg=PA85&dq=kyle+laughlin+idaho+photographer&source=bl&ots=3j7AUJ1Ox8&sig=ACfU3U1h9YS-2ozTbwUNQvU2ybZh2K5VBA&hl=en&sa=X&ved=2ahUKEwjmhcPFkbTpAhUfJDQIHcYpAFYQ6AEwEXoECAoQAQ#v=onepage&q=kyle%20laughlin&f=true)
+[^1]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85.  
+[^2]: Ibid.
 
-[^2]: ibid.
+[^3]: Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” *The Spokesman-Review*, March 30, 2009, [https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/](https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/).
 
-[^3]: [Kramer, Becky. “Pre-Dam Photos May Be Glimpse of Future.” The Spokesman-Review, March 2009.](https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/)
+[^4]: Ibid.
 
-[^4]: ibid.
+[^5]: Ibid.
 
-[^5]: ibid.
+[^6]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85.  
 
-[^6]: [Legendary Locals of Moscow. Legendary Locals. Latah County Historical Society, 2015, p. 85.](https://books.google.com/books?id=e7RhCgAAQBAJ&pg=PA85&lpg=PA85&dq=kyle+laughlin+idaho+photographer&source=bl&ots=3j7AUJ1Ox8&sig=ACfU3U1h9YS-2ozTbwUNQvU2ybZh2K5VBA&hl=en&sa=X&ved=2ahUKEwjmhcPFkbTpAhUfJDQIHcYpAFYQ6AEwEXoECAoQAQ#v=onepage&q=kyle%20laughlin&f=true)
+[^7]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html).
 
-[^7]: [“Marguerite Laughlin, 84, Moscow Businesswoman.” The Lewiston Tribune, January 4, 1993.](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html)
+[^8]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 39.  
 
-[^8]: [Legendary Locals of Moscow. Legendary Locals. Latah County Historical Society, 2015, p. 39.](https://books.google.com/books?id=e7RhCgAAQBAJ&pg=PA85&lpg=PA85&dq=kyle+laughlin+idaho+photographer&source=bl&ots=3j7AUJ1Ox8&sig=ACfU3U1h9YS-2ozTbwUNQvU2ybZh2K5VBA&hl=en&sa=X&ved=2ahUKEwjmhcPFkbTpAhUfJDQIHcYpAFYQ6AEwEXoECAoQAQ#v=onepage&q=kyle%20laughlin&f=true)
+[^9]: Ibid.
 
-[^9]: ibid.
+[^10]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html).
 
-[^10]: [“Marguerite Laughlin, 84, Moscow Businesswoman.” The Lewiston Tribune, January 4, 1993.](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html.)
