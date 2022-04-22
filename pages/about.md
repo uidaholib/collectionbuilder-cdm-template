@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) [Common Heritage Grant](https://www.neh.gov/grants/preservation/common-heritage) awarded to the University of Idaho Library in 2016. 
+The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) [Common Heritage Grant](https://www.neh.gov/news/press-release/2015-04-20#:~:text=The%20National%20Endowment%20for%20the%20Humanities%20(NEH)%20today%20announced%20a,wider%20public%20and%20for%20posterity.) awarded to the University of Idaho Library in 2016. 
 The materials in this collection were collected via community digitization days held in Moscow and Potlatch in 2016 and 2017.
 
 The project was a collaboration between the University of Idaho Library and the [Latah County Historical Society](https://www.latahcountyhistoricalsociety.org/); it was directed by Devin Becker, Dulce Kersting, and Erin Stoddart.
@@ -35,7 +35,7 @@ This collection would also not be possible without the help of the following ind
 Many thanks to them as well.
 
 For more information about Latah County, visit the [Latah County Historical Society website](https://www.latahcountyhistoricalsociety.org/).
-For more information about the National Endowment for the Humanities (NEH), visit the [NEH website](https://www.latahcountyhistoricalsociety.org/).
+For more information about the National Endowment for the Humanities (NEH), visit the [NEH website](https://www.neh.gov/).
 
 <div class="clearfix"></div>
 
