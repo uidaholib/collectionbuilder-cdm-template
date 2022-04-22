@@ -62,7 +62,8 @@ If the following files exist in _data, delete them (unless one of them is actual
 1. Sometimes, there may be two About pages in the repository (one in the base of the repo and one in the pages folder). The correct about page should be in the pages folder. If there are two About pages, check the content of each and make sure the one in the pages folder is the most up to date. After you've ensured that no information is missing, delete the about.md file at the root of the repository, but leave the one in the pages folder.
 2. Check the About page for content and format, cleaning up and making edits as you see fit.
     - In particular, keep an eye out for hyperlinked text that says something like "click here." When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
-3. If you use the "float" option in the feature/image include, make sure to include the code `<div class="clearfix"></div>` at the bottom of about.md. This makes sure the layout of the About page works correctly on mobile devices. So if you see `<div class="clearfix"></div>` already in this file, just leave it there.
+3. Check citations to see if they are in the correct format. If not, use [Citation Instructions](https://github.com/uidaholib/collectionbuilder-csv-template/blob/main/docs/about_markdown.md) to reformat.
+4. If you use the "float" option in the feature/image include, make sure to include the code `<div class="clearfix"></div>` at the bottom of about.md. This makes sure the layout of the About page works correctly on mobile devices. So if you see `<div class="clearfix"></div>` already in this file, just leave it there.
 
 ## Library Logos
 
