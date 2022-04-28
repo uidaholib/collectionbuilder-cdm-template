@@ -15,7 +15,7 @@ Located 18 miles north of Moscow, Idaho along the Palouse River in northern Lata
 
 Because of the remote placement of the mill, Potlatch was built as a company town to provide housing, commerce, and other amenities for mill workers. During its height, Potlatch contained the sawmill, hundreds of homes, two churches, a hotel, a school, a hospital, and a mercantile. Many of these buildings have burned or been torn down throughout the last century–including the mill itself–but some of them still stand in Potlatch today.
 
-The mill in Potlatch operated until 1981 when, due to a depressed lumber economy and declining lumber prices, it closed its doors for good. Shortly after the town was sold to its residents. Since the closure of the mill, Potlatch’s population has dwindled but it remains a bedroom community for the university town of Moscow, Idaho and Pullman, Washington. Many efforts have been made by residents to preserve the town’s history, and today Potlatch is home to not only the Potlatch Historical Society, but the Return to Riverside Music Festival as well.
+The mill in Potlatch operated until 1981 when, due to a depressed lumber economy and declining lumber prices, it closed its doors for good. Shortly after the town was sold to its residents. Since the closure of the mill, Potlatch’s population has dwindled but it remains a bedroom community for the university towns of Moscow, Idaho and Pullman, Washington. Many efforts have been made by residents to preserve the town’s history, and today Potlatch is home to not only the Potlatch Historical Society, but the Return to Riverside Music Festival as well.
 
 
 <div class="clearfix"></div>
