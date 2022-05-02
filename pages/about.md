@@ -36,7 +36,7 @@ Nature scenes include various rivers, creeks, agricultural scenes, flowers and p
 
 The photographs were donated to the University of Idaho Library, Special Collections and Archives Department in February of 1985 by Marguerite Laughlin. The collection was processed and described in 1998 and 1999 by Karen Hertel.
 
-{% include feature/card.md header="Archival Context" text="For a detailed description and inventory of the Kyle Laughlin Photographs Collection, see our [finding aid](). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)." width="50" centered=true %}
+The physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).
 
 [^1]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85.  
 [^2]: Ibid.
