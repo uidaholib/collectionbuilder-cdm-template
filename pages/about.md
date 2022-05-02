@@ -14,13 +14,12 @@ This collection contains digitized historical photos of 134 cities and towns in 
 Idaho's landscape has been occupied by Indigenous people for thousands of years. Much archaeological evidence shows that Indigenous people have been living in Idaho for at least 8,000 years, while one study show "there is evidence that intelligent, highly skilled people have lived in Idaho for at least the past twelve to fifteen thousand years."[^1]
 
 In 1805, the Lewis and Clark Expedition traveled through Idaho. When they traveled through the area that became the town of [Gibbonsville](https://www.lib.uidaho.edu/digital/cities/browse.html#gibbonsville), they described it as "filled with rocky hills and dense vegetation," which accurately describes much of Idaho's vast wilderness.[^2]
-
 <div class="row">
     <div class="col-md-6">{% include feature/item-figure.html objectid="cities619" %}</div>
     <div class="col-md-6">{% include feature/item-figure.html objectid="cities674" %}</div>
 </div>
 
-In 1860, gold was discovered near Pierce, Idaho, igniting a fierce gold rush in the state. This gold rush led to the development of a strong [mining industry](https://www.lib.uidaho.edu/digital/cities/browse.html#mines) and the establishment of many mining cities and towns throughout the state, including:[^3]
+In 1860, gold was discovered near Pierce, Idaho, igniting a fierce gold rush in the state. This gold rush led to the development of a strong [mining industry](https://www.lib.uidaho.edu/digital/cities/browse.html#mines) and the establishment of many mining cities and towns throughout the state, including: [^3]
 
 {:.text-center}
 <div class="row">
@@ -85,21 +84,20 @@ In 1957, the Idaho state legislature updated the state seal "in order to more cl
 
 ## Sources
 
-[^1]: [Smith, Elizabeth M. "History of the Boise National Forest 1905-1976," Idaho State Historical Society, 1983.](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf) and [U.S. Forest Service, "Ancient People of the Nez Perce National Forest: A Guide to the Prehistory of the Forest](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf)
+[^1]: Elizabeth M. Smith, [*History of the Boise National Forest 1905-1976*](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf) (Boise: Idaho State Historical Society, 1983).; "Ancient People of the Nez Perce National Forest: A Guide to the Prehistory of the Forest," U.S. Forest Service, [https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf).
 
-[^2]: [Gibbonsville - Mining Camp to Bedroom Community](https://www.legendsofamerica.com/id-gibbonsville/)
+[^2]: Kathy Weister, "Gibbonsville - Mining Camp to Bedroom Community," *Legends of America,* February 2020, [https://www.legendsofamerica.com/id-gibbonsville/](https://www.legendsofamerica.com/id-gibbonsville/).
 
-[^3]: [Idaho Gold Rush History and Districts](https://www.goldmapsonline.com/idaho-gold-rush-history-and-districts.html) and [Idaho's Mineral Resources](https://www.idahogeology.org/mines-minerals)
+[^3]: "Idaho Gold Rush History and Districts," Gold Maps Online, [https://www.goldmapsonline.com/idaho-gold-rush-history-and-districts.html](https://www.goldmapsonline.com/idaho-gold-rush-history-and-districts.html).; "Mines & Minerals," Idaho Geological Survey, [https://www.idahogeology.org/geologic-resources/mines-minerals](https://www.idahogeology.org/geologic-resources/mines-minerals).
 
-[^4]: This is not a comprehensive list of all mining towns in Idaho. [Idaho Mining Towns](https://westernmininghistory.com/state/idaho/)
+[^4]: "Idaho Mining Towns," Western Mining History, [https://westernmininghistory.com/state/idaho/](https://westernmininghistory.com/state/idaho/). (Note: This is not a comprehensive list of all mining towns in Idaho.)
 
-[^5]: [Idaho has a Rich and Fascinating History](https://www.idaho.gov/about-idaho/history/)
+[^5]: "Idaho has a Rich and Fascinating History," Idaho.gov, [https://www.idaho.gov/about-idaho/history/](https://www.idaho.gov/about-idaho/history/).
 
-[^6]: [Idaho](https://www.britannica.com/place/Idaho)
+[^6]: Gregory Lewis McNamee, "Idaho," *Britannica,* [https://www.britannica.com/place/Idaho](https://www.britannica.com/place/Idaho).
 
-[^7]: [Idaho](https://www.britannica.com/place/Idaho)
+[^7]: Ibid.
 
-[^8]: [Idaho Women's Suffrage Amendment (1896)](https://ballotpedia.org/Idaho_Women%27s_Suffrage_Amendment_(1896))
+[^8]: "Idaho Women's Suffrage Amendment (1896)," Ballotpedia, https://ballotpedia.org/Idaho_Women%27s_Suffrage_Amendment_(1896).
 
-[^9]: [Idaho State Seal History](https://sos.idaho.gov/elect/bluebook/Histseal.htm) and [Idaho State Seal](https://gov.idaho.gov/idaho-state-seal/)
-
+[^9]: "Idaho State Seal History," Idaho Secretary of State's Office, [https://sos.idaho.gov/elect/bluebook/Histseal.htm](https://sos.idaho.gov/elect/bluebook/Histseal.htm).; "Idaho State Seal," Idaho Office of the Governor, [https://gov.idaho.gov/idaho-state-seal/](https://gov.idaho.gov/idaho-state-seal/).
