@@ -30,8 +30,8 @@ These series include Bulletins, Notes, Technical Notes, Annual Reports, and more
 
 A gift from the [Idaho Forest Group](http://www.idfg.com/) helped support the creation of this collection. The University of Idaho Library retains physical copies of all material digitized here in the University's Archives.
 
-[^1]: [U of I Experimental Forest](https://www.uidaho.edu/cnr/research/fur-programs/ui-experimental-forest)
+[^1]: "U of I Experimental Forest," University of Idaho, [https://www.uidaho.edu/cnr/research/fur-programs/ui-experimental-forest](https://www.uidaho.edu/cnr/research/fur-programs/ui-experimental-forest). (Archived: [https://perma.cc/XJF8-DNHD](https://perma.cc/XJF8-DNHD))
 
-[^2]: [2005 Idaho Code - 38-702 - DIRECTOR -- CONTROL -- ASSISTANTS AND EMPLOYEES](https://law.justia.com/codes/idaho/2005/38ftoc/380070002.html)
+[^2]: "Experimental Forests and Ranges," Rocky Mountain Research Station, U.S. Forest Service, [https://www.fs.usda.gov/rmrs/experimental-forests-and-ranges](https://www.fs.usda.gov/rmrs/experimental-forests-and-ranges). (Archived: [https://perma.cc/3VTM-PBLN](https://perma.cc/3VTM-PBLN))
 
-[^3]: [Experimental Forests and Ranges](https://www.fs.usda.gov/rmrs/experimental-forests-and-ranges)
+[^3]: "2005 Idaho Code - 38-702 - DIRECTOR -- CONTROL -- ASSISTANTS AND EMPLOYEES," JUSTIA US Law, [https://law.justia.com/codes/idaho/2005/38ftoc/380070002.html](https://law.justia.com/codes/idaho/2005/38ftoc/380070002.html). (Archived: [https://perma.cc/3663-CSPH](https://perma.cc/3663-CSPH))
