@@ -176,12 +176,12 @@ Between 1937-1968, Idaho football games were held at the wooden Neale Stadium. I
 
 ## Sources
 
-[^1]: [Idaho Vandals football](https://en.wikipedia.org/wiki/Idaho_Vandals_football)
-[^2]: [List of Idaho Vandals football seasons](https://en.wikipedia.org/wiki/List_of_Idaho_Vandals_football_seasons)
-[^3]: [Woodyard, Adam. "In Memoriam: Idaho Vandals FBS Football (1996-2017)."](https://www.underdogdynasty.com/2017/12/10/16718212/in-memoriam-idaho-vandals-fbs-football-history-1996-2017-wac-sun-belt-fcs-big-sky-paul-petrino)
-[^4]: [Kibbie Dome](https://en.wikipedia.org/wiki/Kibbie_Dome)
-[^5]: [University of Idaho Digitial Initiatives, "MacLean Field."](https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field)
-[^FanBuzz]: [Pinak, Patrick. "College Football Trivia: What Does 'FBS' Actually Mean?"](https://fanbuzz.com/college-football/what-does-fbs-stand-for/)
+[^1]: "Idaho Vandals football," Wikipedia, [https://en.wikipedia.org/wiki/Idaho_Vandals_football](https://en.wikipedia.org/wiki/Idaho_Vandals_football). (Archived: [https://perma.cc/R8LG-NXLC](https://perma.cc/R8LG-NXLC))
+[^2]: "List of Idaho Vandals football seasons," Wikipedia, [https://en.wikipedia.org/wiki/List_of_Idaho_Vandals_football_seasons](https://en.wikipedia.org/wiki/List_of_Idaho_Vandals_football_seasons). (Archived: [https://perma.cc/HC62-X6BV](https://perma.cc/HC62-X6BV))
+[^3]: Adam Woodyard, "In Memoriam: Idaho Vandals FBS Football (1996-2017)," *SBNATION,* December 10, 2017, [https://www.underdogdynasty.com/2017/12/10/16718212/in-memoriam-idaho-vandals-fbs-football-history-1996-2017-wac-sun-belt-fcs-big-sky-paul-petrino](https://www.underdogdynasty.com/2017/12/10/16718212/in-memoriam-idaho-vandals-fbs-football-history-1996-2017-wac-sun-belt-fcs-big-sky-paul-petrino). (Archived: [https://perma.cc/ZBB3-JZGP](https://perma.cc/ZBB3-JZGP))
+[^4]: Patrick Pinak, "College Football Trivia: What Does 'FBS' Actually Mean?," *Fanbuzz,* December 7, 2021, [https://fanbuzz.com/college-football/what-does-fbs-stand-for/](https://fanbuzz.com/college-football/what-does-fbs-stand-for/). (Archived: [https://perma.cc/67JU-2C65](https://perma.cc/67JU-2C65))
+[^5]: "Kibbie Dome," Wikipedia, [https://en.wikipedia.org/wiki/Kibbie_Dome](https://en.wikipedia.org/wiki/Kibbie_Dome). (Archived: [https://perma.cc/BHP2-K86W](https://perma.cc/BHP2-K86W))
+[^6]: University of Idaho Digitial Initiatives, "MacLean Field." [https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field](https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field).
 
 
 
