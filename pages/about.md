@@ -96,15 +96,15 @@ In 2016, university President Chuck Staben "announced the football program would
 
 {% capture exampletext %}
 
-- Football Bowl Subdivision (FBS) and Football Championship Subdivision (FCS) are two subdivisions of Division I schools. “The main difference between FBS and FCS is how a final winner is determined. The FBS has the four-team College Football Playoff while the FCS hosts a 24-team playoff for the NCAA D-I Football Championship.”[^FanBuzz]
+- Football Bowl Subdivision (FBS) and Football Championship Subdivision (FCS) are two subdivisions of Division I schools. “The main difference between FBS and FCS is how a final winner is determined. The FBS has the four-team College Football Playoff while the FCS hosts a 24-team playoff for the NCAA D-I Football Championship.”[^4]
 
-- FBS (formerly known as Division I-A) is considered to be the top tier of Division I schools and “gets its name for the numerous bowl games that teams play in at the end of each season that generate hundreds of millions of dollars."[^FanBuzz]
+- FBS (formerly known as Division I-A) is considered to be the top tier of Division I schools and “gets its name for the numerous bowl games that teams play in at the end of each season that generate hundreds of millions of dollars."[^4]
 
 - FCS (formerly known as Division I-AA) is considered to be the second tier of Division I schools. 
 
-- “FCS teams can only have 63 players on scholarships, while FBS football teams can have 85.”[^FanBuzz]
+- “FCS teams can only have 63 players on scholarships, while FBS football teams can have 85.”[^4]
 
-- “FCS schools usually play 11-game schedules while FBS programs play 12 each.”[^FanBuzz]
+- “FCS schools usually play 11-game schedules while FBS programs play 12 each.”[^4]
 
 {% endcapture %}
 {% include feature/card.md text=exampletext header="FBS vs. FCS: What's the Difference?" width="50" centered="true" %}
@@ -179,9 +179,9 @@ Between 1937-1968, Idaho football games were held at the wooden Neale Stadium. I
 [^1]: "Idaho Vandals football," Wikipedia, [https://en.wikipedia.org/wiki/Idaho_Vandals_football](https://en.wikipedia.org/wiki/Idaho_Vandals_football). (Archived: [https://perma.cc/R8LG-NXLC](https://perma.cc/R8LG-NXLC))
 [^2]: "List of Idaho Vandals football seasons," Wikipedia, [https://en.wikipedia.org/wiki/List_of_Idaho_Vandals_football_seasons](https://en.wikipedia.org/wiki/List_of_Idaho_Vandals_football_seasons). (Archived: [https://perma.cc/HC62-X6BV](https://perma.cc/HC62-X6BV))
 [^3]: Adam Woodyard, "In Memoriam: Idaho Vandals FBS Football (1996-2017)," *SBNATION,* December 10, 2017, [https://www.underdogdynasty.com/2017/12/10/16718212/in-memoriam-idaho-vandals-fbs-football-history-1996-2017-wac-sun-belt-fcs-big-sky-paul-petrino](https://www.underdogdynasty.com/2017/12/10/16718212/in-memoriam-idaho-vandals-fbs-football-history-1996-2017-wac-sun-belt-fcs-big-sky-paul-petrino). (Archived: [https://perma.cc/ZBB3-JZGP](https://perma.cc/ZBB3-JZGP))
-[^4]: Patrick Pinak, "College Football Trivia: What Does 'FBS' Actually Mean?," *Fanbuzz,* December 7, 2021, [https://fanbuzz.com/college-football/what-does-fbs-stand-for/](https://fanbuzz.com/college-football/what-does-fbs-stand-for/). (Archived: [https://perma.cc/67JU-2C65](https://perma.cc/67JU-2C65))
+[^4]: Patrick Pinak, "College Football Trivia: What Does 'FBS' Actually Mean?," *FanBuzz,* December 7, 2021, [https://fanbuzz.com/college-football/what-does-fbs-stand-for/](https://fanbuzz.com/college-football/what-does-fbs-stand-for/). (Archived: [https://perma.cc/67JU-2C65](https://perma.cc/67JU-2C65))
 [^5]: "Kibbie Dome," Wikipedia, [https://en.wikipedia.org/wiki/Kibbie_Dome](https://en.wikipedia.org/wiki/Kibbie_Dome). (Archived: [https://perma.cc/BHP2-K86W](https://perma.cc/BHP2-K86W))
-[^6]: University of Idaho Digitial Initiatives, "MacLean Field." [https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field](https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field).
+[^6]: University of Idaho Digital Initiatives, "MacLean Field." [https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field](https://digital.lib.uidaho.edu/digital/search/searchterm/maclean%20field).
 
 
 
