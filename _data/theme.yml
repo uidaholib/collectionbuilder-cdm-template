@@ -74,7 +74,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,scale,creator,date,date is approximate,coverage,relation,publisher,source,identifier,rights,rightsstatement,original format,type,format,digitization specifications,language,date digital,filename,OCLC number,date created,date modified,reference URL,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
+metadata-export-fields: "title,description,insideidaho_link,scale,creator,date,date is approximate,coverage,relation,publisher,source,identifier,rights,rightsstatement,original format,type,format,digitization specifications,language,date digital,filename,OCLC number,date created,date modified,cdm_url,cdmid,CONTENTdm file name,CONTENTdm file path,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject"
 
