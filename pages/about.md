@@ -12,7 +12,7 @@ permalink: /about.html
 
 *An exponent of progressive horticulture and the successful rural community*
 
-Lewiston Orchards Life was a neighborhood newsletter published in Lewiston, Idaho during the early 1900s that covered the horticultural and residential events of those living in Lewiston Orchards. Special Collection & Archives at the University of Idaho Library holds twenty-six issues as part of their [Day-Northwest Collection](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/11k6kk2/CP71138804070001451)
+Lewiston Orchards Life was a neighborhood newsletter published in Lewiston, Idaho during the early 1900s that covered the horticultural and residential events of those living in Lewiston Orchards. Special Collection & Archives at the University of Idaho Library holds twenty-six issues as part of their [Day-Northwest Collection](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/11k6kk2/CP71138804070001451).
 
 Lewiston Orchards, a planned agricultural community just south of Lewiston, Idaho, initially began to be developed in 1906. Small tracts of land were divided up to enable the planting of orchards and other small crops set amongst a residential setting. Given an abundance of water provided by a concurrent irrigation project and an idyllic climate, the initial orchard plantings grew well and many people moved to the new location. 
 
