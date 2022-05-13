@@ -76,7 +76,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,date,date is approximate,description,county,region,features,flight_line,aerial-type,source,identifier,digitization specifications,rights,format,type,latitude,longitude,digital_collection,cd rom call number,publisher digital,language,contributors,cdmid,objectid"
+metadata-export-fields: "title,creator,date,date is approximate,description,location,county,region,features,flight_line,aerial-type,source,identifier,digitization specifications,rights,format,type,latitude,longitude,digital_collection,cd rom call number,publisher digital,language,date digital,date loaded,contributors,date created,date modified,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "county,region,features,flight_line,aerial-type,creator"
 
