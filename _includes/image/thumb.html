@@ -1,1 +1,1 @@
-{{ site.cdm-url }}/utils/getthumbnail/collection/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/id/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/id/{{ page.cdmid }}{% endif %}
+https://www.lib.uidaho.edu/digital/objects/mccall/thumbs/{{ item.identifier | downcase }}_th.jpg

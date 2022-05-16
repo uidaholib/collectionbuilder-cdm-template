@@ -9,7 +9,7 @@
 {% capture itemImg %}"{{ site.cdm-url }}/digital/iiif/" + carouselItems[i][3] + "/" + carouselItems[i][1] + "/full/,{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }}/0/default.jpg"{% endcapture %}
 {% else %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.youtubeid == nil" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/utils/getthumbnail/collection/" + carouselItems[i][3] + "/id/" + carouselItems[i][1]{% endcapture %}
+{% capture itemImg %}"https://www.lib.uidaho.edu/digital/objects/mccall/thumbs/" + carouselItems[i][2] + "_th.jpg"{% endcapture %}
 {%- endif -%}
 
 <script> 
