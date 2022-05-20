@@ -76,9 +76,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,item information,postcard type,photographer,date,subject,location,state,publisher,publisher location,source,date is approximate,identifier,rights,standardized rights,original format,type,format,language,latitude,longitude,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,description,item information,postcard type,photographer,date,subject,location,state,publisher,publisher location,source,date is approximate,identifier,rights,rightsstatement,original format,type,format,language,latitude,longitude,date created,date modified,cdm_url,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,postcard type,photographer,date,publisher"
+metadata-facets-fields: "subject,postcard type,photographer,date,publisher,location"
 
 ##########
 # ADVANCED OPTIONS
