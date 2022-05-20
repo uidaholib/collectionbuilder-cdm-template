@@ -12,7 +12,7 @@ featured-image: "objects/priestlake176.jpg"
 
 ## Brief History of Priest Lake, Idaho
 
-{% include feature/item-figure.html objectid="priestlake196" float="right col-md-4" %}
+{% include feature/item-figure.html objectid="priestlake196"%}
 
 Priest Lake is located in the Idaho Panhandle and is part of the Idaho Panhandle National Forests. The lake was originally called "Kaniksu Lake" by Captain John Mullan in 1865. According to some accounts, "the name was gradually changed in the early 1900's from Kaniksu Lake to its present name of Priest Lake," with the name "Priest" coming from "the Kalispel Indian word Kaniksu, meaning 'Black Robe,' the name the Indians gave to the Jesuit missionary priests who worked among them."[^1] As a result, Priest Lake appears as Kaniksu Lake on many older maps.
 
