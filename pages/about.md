@@ -11,7 +11,7 @@ featured-image:
 {% include feature/nav-menu.html sections="About the Collection;A Brief History of Potlatch Lumber Company;" %} 
 
 {:.mt-4}
-{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our [finding aids](http://archiveswest.orbiscascade.org/search/results.aspx?t=i&q=idu&p=0&r=potlatch). Physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" width="50" centered="true" header="Archival Context" %}
+{% include feature/card.md text="For a detailed description and inventory of all Potlatch collections, see our Potlatch Corporation Historical Archives, 1900-2007 [finding aid](https://archiveswest.orbiscascade.org/ark:80444/xv40829?q=Potlatch%20Corporation%20Historical%20Archives) & Potlach Lumber Company Records, 1890-1949 [finding aid](https://archiveswest.orbiscascade.org/ark:80444/xv33863?q=Potlatch%20Lumber%20CompanyPhysical). Both of these collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/)" width="50" centered="true" header="Archival Context" %}
 
 ## About the Collection
 
@@ -53,8 +53,7 @@ Though the population of Potlatch has dwindled over the years since the mill's c
 
 {% include feature/card.md text=funfacts header="Fun Facts" centered="true" width="50" %}
 
-[^1]: <https://www.potlatchdeltic.com/Page/ViewPage/12>
-[^2]: <https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho>
-
+[^1]: "History," Potlach Deltic, [https://www.potlatchdeltic.com/Page/ViewPage/12](https://www.potlatchdeltic.com/Page/ViewPage/12) (Archived: [https://perma.cc/KL6R-3F8G](https://perma.cc/KL6R-3F8G))
+[^2]: "Company Town-Potlach Idaho," Waymarking.com, [https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho](https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho) (Archived:[https://perma.cc/6HCM-CDHY](https://perma.cc/6HCM-CDHY))
 
 
