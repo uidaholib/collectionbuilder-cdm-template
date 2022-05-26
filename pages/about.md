@@ -116,5 +116,10 @@ This is a very important collection not only for those researching Dr. Frank B. 
 
 [^1]: News-Review (Moscow, Idaho) November 2, 1936.
 
+For an extensive history of the Boxing program, see the Argonaut article linked below. 
+
+{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+
+
 <div class="clearfix"></div>
 
