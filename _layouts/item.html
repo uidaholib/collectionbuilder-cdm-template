@@ -18,6 +18,8 @@ gallery: true
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
+                {%- elsif page.format contains 'pdf' -%}
+                <p class="p-3"><a title="View PDF" href="{% include download/item.html %}" target="_blank"><img src="{{ site.cdm-url }}/digital/api/singleitem/image/pdf/{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}/default.png" alt="cover thumbnail for {{ page.title | escape }}" class="img-fluid"></a></p>
                 {%- else -%}
                 <div class="mt-4">
                     <p>
