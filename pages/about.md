@@ -114,7 +114,7 @@ This is a very important collection not only for those researching Dr. Frank B. 
 
 *For a detailed inventory of the contents of this collection, along with a brief biographical history of Dr. Frank Robinson based on the contents of collection, please see our [finding aid](http://archiveswest.orbiscascade.org/ark:/80444/xv97133/op=fstyle.aspx?t=k&q=).*
 
-[^1]: News-Review (Moscow, Idaho) November 2, 1936.
+[^1]: *News-Review* (Moscow, Idaho), November 2, 1936.
 
 For an extensive history of the Boxing program, see the Argonaut article linked below. 
 
