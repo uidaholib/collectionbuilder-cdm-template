@@ -37,7 +37,7 @@ While working at the Corner Drug Store, Robinson continually jotted notes to him
     - Excellent contextual information with more photographs
 {% endcapture %}
 
-{% include feature/card.md text=moreinfo header="More Information" width="50" %}
+{% include feature/card.md text=moreinfo header="More Information" width="50" centered=true %}
 
 According to the *Psychiana Bulletin* for April 1950, "Psychiana was chartered in the late fall of 1929 and the first Psychiana advertisement was placed shortly after the turn of the year." Before long, the advertisements for this new religion appeared in 700 newspaper, 86 magazines, and over 18 radio stations. Anyone answering one of these advertisements received approximately 67 pieces of literature over a 22 week span. 
 
