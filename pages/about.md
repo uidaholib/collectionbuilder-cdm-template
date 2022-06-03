@@ -17,7 +17,7 @@ The Rangeland Center is not a place or a building. Rather, this is an innovative
 
 Effectively addressing rangeland conservation requires blending knowledge from many disciplines. Rangeland Center members are academic professionals with expertise uniquely aligned to grazing, rangeland ecology, entomology, soil science, economics, rural sociology, fish and wildlife management, invasive plant management, forage production, animal science, restoration and the use of spatial technologies to understand rangelands.
 
-<div class="text-center">{% include feature/button.md text="Learn more about the UI Rangeland Center" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}</div>
+<div class="text-center">{% include feature/button.md text="Learn more about the UI Rangeland Center" link="https://www.uidaho.edu/cnr/rangeland-center" color="info" size="lg" %}</div>
 
 
 <div class="clearfix"></div>
