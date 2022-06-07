@@ -1,0 +1,1 @@
+{{ site.cdm-url }}/digital/api/collection/{{ item.collectionid | default: site.cdm-collection-id }}/id/{% if item.title %}{{ item.cdmid }}{% else %}{{ page.cdmid }}{% endif %}/download
