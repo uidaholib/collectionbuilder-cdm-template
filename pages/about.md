@@ -57,44 +57,44 @@ The effects of the treaties, war of 1877, and Fisher’s involvement in the war 
 
 *"Indian Country Today" is a daily digital news platform that covers the Indigenous world, including American Indians and Alaska Natives. Many people who work for the non-profit are tribal members. This source, along with the Nez Perce Tribe website, were heavily relied upon for the history of the Nez Perce War of 1877 in an effort to ensure Native voices contribute to how Native history is shaped and told.*
 
-[^1]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^1]: “The Treaty Era,” National Park Service, December 27, 2017, [https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm). (Archived: [https://perma.cc/VCJ3-LU7T](https://perma.cc/VCJ3-LU7T))
 
-[^2]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/); [McNeel, Jack. "10 Things You Should Know About the Nez Perce Tribe." Indian Country Today, April 12, 2017.](https://indiancountrytoday.com/archive/10-things-you-should-know-about-the-nez-perce-tribe-bFbKNrLV6kCvHNe7Eyhc7w); [Smith, Elizabeth M. "History of the Boise National Forest, 1905-1976." Idaho State Historical Society, 1983, p.3-4.](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf)
+[^2]: "Nez Perce Tribe History," Nez Perce Tribe, [https://nezperce.org/about/history/](https://nezperce.org/about/history/). (Archived: [https://perma.cc/57CC-2BGQ](https://perma.cc/57CC-2BGQ)); Jack McNeel, "10 Things You Should Know About the Nez Perce Tribe," *Indian Country Today*, April 12, 2017, [https://indiancountrytoday.com/archive/10-things-you-should-know-about-the-nez-perce-tribe-bFbKNrLV6kCvHNe7Eyhc7w](https://indiancountrytoday.com/archive/10-things-you-should-know-about-the-nez-perce-tribe-bFbKNrLV6kCvHNe7Eyhc7w). (Archived: [https://perma.cc/L5QX-5BSK](https://perma.cc/L5QX-5BSK)); Elizabeth M. Smith, "History of the Boise National Forest, 1905-1976," *Idaho State Historical Society,* 1983, 3-4, [https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf). (Archived: [https://perma.cc/53LK-MNUV](https://perma.cc/53LK-MNUV))
 
-[^3]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/)
+[^3]: "Nez Perce Tribe History," Nez Perce Tribe, [https://nezperce.org/about/history/](https://nezperce.org/about/history/). (Archived: [https://perma.cc/57CC-2BGQ](https://perma.cc/57CC-2BGQ))
 
-[^4]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^4]: “The Treaty Era,” National Park Service, December 27, 2017, [https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm). (Archived: [https://perma.cc/VCJ3-LU7T](https://perma.cc/VCJ3-LU7T))
 
-[^5]: [McNeel, Jack. “Native History: ‘I Will Fight No More,’ Nez Perce War Ends.” Indian Country Today, October 5, 2013.](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^5]: Jack McNeel, “Native History: ‘I Will Fight No More,’ Nez Perce War Ends,” *Indian Country Today*, last modified September 13, 2018, [https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw). (Archived: [https://perma.cc/EEB9-XLZ8](https://perma.cc/EEB9-XLZ8))
 
-[^6]: [“The Flight of 1877.” National Park Service, February 15, 2018.](https://www.nps.gov/nepe/learn/historyculture/1877.htm)
+[^6]: “The Flight of 1877,” *National Park Service*, February 15, 2018, [https://www.nps.gov/nepe/learn/historyculture/1877.htm](https://www.nps.gov/nepe/learn/historyculture/1877.htm). (Archived: [https://perma.cc/EP6M-VQYC](https://perma.cc/EP6M-VQYC))
 
-[^7]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^7]: “The Treaty Era,” National Park Service, December 27, 2017, [https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm). (Archived: [https://perma.cc/VCJ3-LU7T](https://perma.cc/VCJ3-LU7T))
 
-[^8]: [ibid.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^8]: Ibid.
 
-[^9]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/)
+[^9]: "Nez Perce Tribe History," Nez Perce Tribe, [https://nezperce.org/about/history/](https://nezperce.org/about/history/). (Archived: [https://perma.cc/57CC-2BGQ](https://perma.cc/57CC-2BGQ))
 
-[^10]: [McNeel, Jack. “Native History: ‘I Will Fight No More,’ Nez Perce War Ends.” Indian Country Today, October 5, 2013.](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^10]: Jack McNeel, “Native History: ‘I Will Fight No More,’ Nez Perce War Ends,” *Indian Country Today*, last modified September 13, 2018, [https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw). (Archived: [https://perma.cc/EEB9-XLZ8](https://perma.cc/EEB9-XLZ8))
 
-[^11]: [ibid.](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^11]: Ibid.
 
-[^12]: [“The Treaty Era.” National Park Service, December 27, 2017.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^12]: “The Treaty Era,” National Park Service, December 27, 2017, [https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm). (Archived: [https://perma.cc/VCJ3-LU7T](https://perma.cc/VCJ3-LU7T))
 
-[^13]: [ibid.](https://www.nps.gov/nepe/learn/historyculture/the-treaty-era.htm)
+[^13]: Ibid.
 
-[^14]: [McNeel, Jack. “Native History: ‘I Will Fight No More,’ Nez Perce War Ends.” Indian Country Today, October 5, 2013](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^14]: Jack McNeel, “Native History: ‘I Will Fight No More,’ Nez Perce War Ends,” *Indian Country Today*, last modified September 13, 2018, [https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw). (Archived: [https://perma.cc/EEB9-XLZ8](https://perma.cc/EEB9-XLZ8))
 
-[^15]: [ibid.](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^15]: Ibid.
 
-[^16]: [McNeel, Jack. “Native History: ‘I Will Fight No More,’ Nez Perce War Ends.” Indian Country Today, October 5, 2013.](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw); [“The Flight of 1877.” National Park Service, February 15, 2018.](https://www.nps.gov/nepe/learn/historyculture/1877.htm)
+[^16]: Jack McNeel, “Native History: ‘I Will Fight No More,’ Nez Perce War Ends,” *Indian Country Today*, last modified September 13, 2018, [https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw). (Archived: [https://perma.cc/EEB9-XLZ8](https://perma.cc/EEB9-XLZ8))
 
-[^17]: [McNeel, Jack. “Native History: ‘I Will Fight No More,’ Nez Perce War Ends.” Indian Country Today, October 5, 2013](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw)
+[^17]: Jack McNeel, “Native History: ‘I Will Fight No More,’ Nez Perce War Ends,” *Indian Country Today*, last modified September 13, 2018, [https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw](https://indiancountrytoday.com/archive/native-history-i-will-fight-no-more-nez-perce-war-ends-WsmU7CM0IUypJSOGtTsOdw). (Archived: [https://perma.cc/EEB9-XLZ8](https://perma.cc/EEB9-XLZ8))
 
-[^18]: [Kennaly, David. “The Nez Perce War of 1877.” U.S. Army, October 1, 2009.](https://www.army.mil/article/28124/the_nez_perce_war_of_1877)
+[^18]: David Kennaly, “The Nez Perce War of 1877,” *U.S. Army*, October 1, 2009, [https://www.army.mil/article/28124/the_nez_perce_war_of_1877](https://www.army.mil/article/28124/the_nez_perce_war_of_1877). (Archived: [https://perma.cc/ZNR8-VS7V](https://perma.cc/ZNR8-VS7V))
 
-[^19]: ["Nez Perce Tribe History."](https://nezperce.org/about/history/)
+[^19]: "Nez Perce Tribe History," Nez Perce Tribe, [https://nezperce.org/about/history/](https://nezperce.org/about/history/). (Archived: [https://perma.cc/57CC-2BGQ](https://perma.cc/57CC-2BGQ))
 
-[^20]: [Keenan, Jerry. The Terrible Indian Wars of the West: A History from the Whitman Massacre to Wounded Knee, 1846-1890. First Edition. McFarland & Company, 2016, p. 358.](https://books.google.com/books?id=AUH8CwAAQBAJ&printsec=frontcover#v=onepage&q=fisher&f=false)
+[^20]: Jerry Keenan, *The Terrible Indian Wars of the West: A History from the Whitman Massacre to Wounded Knee, 1846-1890* (McFarland & Company, 2016), 358, [https://books.google.com/books?id=AUH8CwAAQBAJ&printsec=frontcover#v=onepage&q=fisher&f=false](https://books.google.com/books?id=AUH8CwAAQBAJ&printsec=frontcover#v=onepage&q=fisher&f=false). (Archived: [https://perma.cc/VY2F-ZW34](https://perma.cc/VY2F-ZW34))
 
-[^21]: [ibid.](https://books.google.com/books?id=AUH8CwAAQBAJ&printsec=frontcover#v=onepage&q=fisher&f=false)
+[^21]: Ibid.
