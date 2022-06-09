@@ -26,7 +26,7 @@ And then spoke, just as the rain stopped, to a reported 8,000 people from a plat
 {% include feature/item-figure.html objectid="troosevelt043" width="75" %}
 
 {:.py-3}
-In his speech, Roosevelt mentioned his first visit to Idaho came before any of the students in attendance were born. He then went on to praise the University and its motto—’For the training of Idaho’s future citizens to their highest usefulness in private life and public service’—as well as Idaho citizens’ pioneer spirit. 
+In his speech, Roosevelt mentioned his first visit to Idaho came before any of the students in attendance were born. He then went on to praise the University and its motto—'For the training of Idaho’s future citizens to their highest usefulness in private life and public service’—as well as Idaho citizens’ pioneer spirit. 
 After he was finished, the former president took a special 10:30 a.m. train back up to Spokane. 
 
 {% include feature/item-figure.html objectid="troosevelt038" width="75" %}
