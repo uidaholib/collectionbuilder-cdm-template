@@ -68,15 +68,15 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 ##########
 # TIMELINE PAGE
 #
-year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
-year-nav-increment: 5 # set increments to auto gen nav years
+year-navigation: 1911;1938 #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: # set increments to auto gen nav years
 
 ##########
 # DATA 
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,subject,date,date is approximate,source,latitude,longitude,subject (lcsh),format-original,donor,identifier,format,language,type,rights,rightsstatement,objectid"
+metadata-export-fields: "title,creator,description,date,date is approximate?,source,subject,category,coverage,rights,rightsstatement,language,digitization specifications,date digital,identifier,publisher,relation,collection,type,media type,format,date created,date modified,cdm_url,cdmid,contentdm file name,contentdm file path,objectid,collectionid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject"
 
