@@ -29,9 +29,9 @@ This collection marks the first time all issues of *Transitions* have been avail
 </div>
 
 {% capture moreinfo %}
-- [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930s”](www.lib.uidaho.edu/digital/transitions/items/transitions67.html) by Nick Casner, April 1997
-- ["Poisoning Children"](www.lib.uidaho.edu/digital/transitions/items/transitions33.html) by John Osborn, November/December 1994
-- ["Unkindest Cut?: Timber Firm Stirs Ire Felling Forests Faster Than They Regenerate"](www.lib.uidaho.edu/digital/transitions/items/transitions47.html) by Dennis Farney, April 1992 (article originally published in *The Wall Street Journal* in 1990)
+- [“Toxic River Politics and Coeur d’Alene Mining Pollution in the 1930s”]({{ '/items/transitions67.html' | relative_url }}) by Nick Casner, April 1997
+- ["Poisoning Children"]({{ '/items/transitions33.html' | relative_url }}) by John Osborn, November/December 1994
+- ["Unkindest Cut?: Timber Firm Stirs Ire Felling Forests Faster Than They Regenerate"]({{ '/items/transitions47.html' | relative_url }}) by Dennis Farney, April 1992 (article originally published in *The Wall Street Journal* in 1990)
 {% endcapture %}
 
 <div class="row justify-content-center">
