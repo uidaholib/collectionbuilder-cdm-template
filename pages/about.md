@@ -60,4 +60,3 @@ The department was established in 2008 with an initial charge to digitize and ma
   </figure>
 </div>
 
-Starting in 2020, the U of I Library Special Collections department now resides under Digital Initiatives. This gives us the best opportunity for collaboration on digital and physical preservation of materials and to expand our efforts on collection and preservation of born-digital files. 
