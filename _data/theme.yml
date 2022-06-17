@@ -79,7 +79,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,opponent,abbreviation,sport,date,year,location,stadium,latitude,longitude,score,notes,identifier,original collection,digital collection,publisher,rights,standardized rights,format-original,format,type,duration,digital preservation filename,id number,disc number,youtubeid,reference url,cdmid,objectid"
+metadata-export-fields: "title,opponent,abbreviation,sport,date,year,location,stadium,latitude,longitude,score,notes,identifier,original collection,digital collection,publisher,rights,rightsstatement,format-original,format,type,duration,digital preservation filename,id number,disc number,youtubeid,cdm_url,cdmid,objectid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "sport,year,location,stadium,score"
 
