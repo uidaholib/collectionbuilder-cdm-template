@@ -17,7 +17,8 @@ Professional cinematographers shot the footage for the purposes of instruction a
 {% include feature/item-video-embed.html objectid="vandalvideo2"%}
 
 The cinematographers often recorded and developed the films themselves, using the local labs at away games. They then broke these films into offensive and defensive reels for the coaches to use, and the original film went with the head coach for the subsequent Vandal Boosters meeting. This footage was also used to show both the football and basketball games highlights on Idaho and Washington Television stations.
-About the Digital Collection
+
+### About the Digital Collection
 
 The films and tapes of the Vandal Training and Scouting Films Collection were transferred to digital format and saved on DVDs by volunteer Graham Warger in 2010 and 2011. The digital videos seen here were ripped from Warger's DVD digitizations of the original 16mm film, assigned metadata according to location, outcome, date and other information pertinent to each contest. These digital videos were then uploaded to YouTube for web viewing.
 
