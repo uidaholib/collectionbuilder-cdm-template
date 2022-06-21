@@ -30,5 +30,5 @@ To learn more about Bovill's early days, [Latah County Historical Society](https
 
 ## Sources
 
-[^1]: [Kersting-Lark, Dulce. “Nearby History: A Short History of a Small Frontier Town,” September 24, 2018.](https://dnews.com/local/nearby-history-a-short-history-of-a-small-frontier-town/article_f96c6c39-7ead-5398-b915-2c4f9ff8db43.html)
+[^1]: Dulce Kersting-Lark, “Nearby History: A Short History of a Small Frontier Town,” *Moscow-Pullman Daily News,* September 24, 2018, [https://dnews.com/local/nearby-history-a-short-history-of-a-small-frontier-town/article_f96c6c39-7ead-5398-b915-2c4f9ff8db43.html](https://dnews.com/local/nearby-history-a-short-history-of-a-small-frontier-town/article_f96c6c39-7ead-5398-b915-2c4f9ff8db43.html). (Archived: [https://perma.cc/A8AF-NRGV](https://perma.cc/A8AF-NRGV))
 
