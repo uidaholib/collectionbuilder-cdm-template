@@ -89,13 +89,13 @@ Another massive mine in the Coeur d’Alene Mining district was the Hecla Mining
 
 # Sources
 
-[^1]: "Mining Films Preserved." *Idaho Harvester*, September 1, 2014, [https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html](https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html).
+[^1]: "Mining Films Preserved." *Idaho Harvester*, September 1, 2014, [https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html](https://harvester.lib.uidaho.edu/posts/2014/09/01/mining-films-preserved.html). (Archived: [https://perma.cc/VZU8-VBW8](https://perma.cc/VZU8-VBW8))
 
-[^2]: Judith Nielsen, "Harry Webb Marsh Papers, 1918-1966." *Archives West*, 1989, [https://archiveswest.orbiscascade.org/ark:/80444/xv58486](https://archiveswest.orbiscascade.org/ark:/80444/xv58486).
+[^2]: Judith Nielsen, "Harry Webb Marsh Papers, 1918-1966." *Archives West*, 1989, [https://archiveswest.orbiscascade.org/ark:/80444/xv58486](https://archiveswest.orbiscascade.org/ark:/80444/xv58486). (Archived: [https://perma.cc/VF37-JSVE](https://perma.cc/VF37-JSVE))
 
-[^3]: "Mining in Idaho." *Digital Atlas of Idaho,* [https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm](https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm)
+[^3]: "Mining in Idaho." *Digital Atlas of Idaho,* [https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm](https://digitalatlas.cose.isu.edu/geog/mining/minemain.htm). (Archived: [https://perma.cc/33T4-4RQD](https://perma.cc/33T4-4RQD))
 
-[^4]: Hobart M. King, "Idaho Gemstone Mining." *Geology.com* [https://geology.com/gemstones/states/idaho.shtml](https://geology.com/gemstones/states/idaho.shtml)
+[^4]: Hobart M. King, "Idaho Gemstone Mining." *Geology.com* [https://geology.com/gemstones/states/idaho.shtml](https://geology.com/gemstones/states/idaho.shtml). (Archived: [https://perma.cc/22PX-MBJX](https://perma.cc/22PX-MBJX)) 
 
 [^5]: Jack G. Peterson and Susan E. Skog,  [*Profiles: A Portrayal of Idaho's Mining Industry*](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/m1uotc/CP71127080850001451) (Boise: Idaho Mining Association, 198-), 4.
 
