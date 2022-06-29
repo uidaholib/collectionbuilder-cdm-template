@@ -35,7 +35,7 @@ The collection also contains a document from 2014 (the organization's 66th anniv
 The camp packets were donated and digitized in 2017. Since we only digitized bound materials, this collection *does not* contain any associated ephemera from the donor's notebook.
 
 ## Sources
-[^1]: "Chatcolab's History," Chatcolab, Inc., [https://www.chatcolab.org/history/](https://www.chatcolab.org/history/)
+[^1]: "Chatcolab's History," Chatcolab, Inc., [https://www.chatcolab.org/history/](https://www.chatcolab.org/history/) (Archived: [https://perma.cc/5PGG-XA99](https://perma.cc/5PGG-XA99))
 [^2]: Ibid.
 [^3]: Ibid.
 [^4]: Ibid.
