@@ -38,10 +38,11 @@ The photographs were donated to the University of Idaho Library, Special Collect
 
 The physical collections are held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).
 
-[^1]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85.  
+[^1]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85. 
+
 [^2]: Ibid.
 
-[^3]: Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” *The Spokesman-Review*, March 30, 2009, [https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/](https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/).
+[^3]: Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” *The Spokesman-Review*, March 30, 2009, [https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/](https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/). (Archived: [https://perma.cc/LN7F-Q2CW](https://perma.cc/LN7F-Q2CW))
 
 [^4]: Ibid.
 
@@ -49,11 +50,11 @@ The physical collections are held by [Special Collections and Archives](https://
 
 [^6]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 85.  
 
-[^7]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html).
+[^7]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html). (Archived: [https://perma.cc/R9VC-FF4G](https://perma.cc/R9VC-FF4G))
 
 [^8]: Latah County Historical Society, [*Legendary Locals of Moscow*](https://www.google.com/books/edition/Legendary_Locals_of_Moscow/15mgCgAAQBAJ?hl=en&gbpv=0) (Moscow: Arcadia Publishing Incorporated, 2015), 39.  
 
 [^9]: Ibid.
 
-[^10]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html).
+[^10]: “Marguerite Laughlin, 84, Moscow Businesswoman.” *The Lewiston Tribune*, January 4, 1993, [https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html](https://lmtribune.com/obituaries/marguerite-laughlin-moscow-businesswoman/article_0a4f0e30-138f-5e02-856a-c926a91b624a.html). (Archived: [https://perma.cc/R9VC-FF4G](https://perma.cc/R9VC-FF4G))
 
