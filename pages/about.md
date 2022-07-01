@@ -54,6 +54,6 @@ Though the population of Potlatch has dwindled over the years since the mill's c
 {% include feature/card.md text=funfacts header="Fun Facts" centered="true" width="50" %}
 
 [^1]: "History," Potlach Deltic, [https://www.potlatchdeltic.com/Page/ViewPage/12](https://www.potlatchdeltic.com/Page/ViewPage/12) (Archived: [https://perma.cc/KL6R-3F8G](https://perma.cc/KL6R-3F8G))
-[^2]: "Company Town-Potlach Idaho," Waymarking.com, [https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho](https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho) (Archived:[https://perma.cc/6HCM-CDHY](https://perma.cc/6HCM-CDHY))
+[^2]: "Company Town-Potlach Idaho," Waymarking.com, [https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho](https://www.waymarking.com/waymarks/WMAAJR_Company_Town_Potlatch_Idaho) (Archived: [https://perma.cc/6HCM-CDHY](https://perma.cc/6HCM-CDHY))
 
 
