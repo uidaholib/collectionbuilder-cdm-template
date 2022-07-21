@@ -5,6 +5,7 @@ date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
+staff,Staff,true,,
 location,Location,,,contentLocation
 latitude,Latitude
 longitude,Longitude
