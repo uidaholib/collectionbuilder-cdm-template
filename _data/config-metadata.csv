@@ -13,6 +13,7 @@ collection,Source Collection
 source,Source
 identifier,Source Identifier
 type,Type,,DCTERMS.type
-format-original,Format Original
+relation,Relation,,
+format original,Format Original
 format,Format,,,encodingFormat
 rightsstatement,,,DCTERMS.rights,license
