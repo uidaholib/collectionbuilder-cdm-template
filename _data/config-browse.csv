@@ -3,3 +3,4 @@ date,Date,,,Date
 subject,,true
 staff,,,true
 identifier,,,true,Identifier
+description,,,true
