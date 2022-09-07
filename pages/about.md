@@ -9,7 +9,7 @@ permalink: /about.html
 
 ## About the Collection
 
-This digital collection features the Women's Center newsletters and photographs from Box 11 of UG 71, the Women's Center records, 1970-2013. Photographs depict the Women's Center staff, U of I students and community, events, and the Women's Center's interior. The digitized materials span from 1912-2008.
+This digital collection features the Women's Center newsletters and photographs from University of Idaho Special Collections and Archives Box 11 of UG 71, the Women's Center records, 1970-2013. Photographs depict the Women's Center staff, U of I students and community, events, and the Women's Center's interior. The digitized materials span from 1912-2008.
 
 {% include feature/item-pdf-embed.html objectid="womenscenter140" width="50" %}
 
