@@ -2,7 +2,7 @@ field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
 author,Author,,DCTERMS.creator,creator
 author_orcid,ORCID,
-date,Date,,DCTERMS.created,dateCreated
+date,Date,,DCTERMS.date,dateCreated
 embargo_remove,Embargo Remove Date,
 keywords,Keywords,true,DCTERMS.subject,keywords
 department,Program,

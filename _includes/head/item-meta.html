@@ -11,7 +11,7 @@
 <meta property="og:description" content="Item from {{ site.title | escape }}. {{ page.description | truncatewords: 30 | escape }}" />
 <meta property="og:image" content="{% if page.format contains 'image' %}{% include image/large.html %}{% else %}{% include image/thumb.html %}{% endif %}" />
 <meta property="og:image:alt" content="{{ page.title | escape }}" />
-<meta property="og:site_name" content="{{ site.title | escape }}" />
+<meta property="og:site_name" content="{{ site.title | escape }}, University of Idaho Library" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
 <!-- schema.org JSON-LD -->
@@ -22,7 +22,7 @@
     {%- assign sc-fields = site.data.config-metadata | where_exp: 'item', 'item.schema_map != nil' -%}
     {% for f in sc-fields %}{% if page[f.field] %}
     "{{ f.schema_map }}": {{ page[f.field] | jsonify }},{% endif %}{% endfor %}
-    "isPartOf": {{ site.title | jsonify }},
+    "isPartOf": {{ site.title | append: ', University of Idaho Library' | jsonify }},
     {% if page.format contains 'image' %}"image": "{% include image/original.html %}",{% endif %}
     "thumbnailUrl": "{% include image/thumb.html %}",
     "url": {{ page.url | absolute_url | jsonify }}
