@@ -8,7 +8,7 @@
 {% comment %} meta tags and analytics are added during production build ONLY {%- endcomment -%}
 {% if jekyll.environment == "production" %}
 {% if site.noindex == true or page.noindex == true %}<meta name="robots" content="noindex" />{% endif %}
-{% if page.layout == "item" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
+{% if page.layout == "item" or page.layout == "etd" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
 {% include head/google-analytics.html %}
 {%- endif -%}
 
