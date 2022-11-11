@@ -4,10 +4,10 @@
 @charset "utf-8";
 
 // base variables
-$base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
-$base-font-size: {{ site.data.theme.base-font-size | default: '"1.2em"' }};
-$text-color: {{ site.data.theme.text-color | default: '"#111"' }};
-$link-color: {{ site.data.theme.link-color | default: '"#00AEC7"' }};
+$base-font-family: {{ site.data.theme.base-font-family | default: "'Public Sans', sans-serif" }};
+$base-font-size: {{ site.data.theme.base-font-size | default: "1.1em" }};
+$text-color: {{ site.data.theme.text-color | default: "#111" }};
+$link-color: {{ site.data.theme.link-color | default: "#00AEC7" }};
 
 $base-line-height: 1.5;
 
