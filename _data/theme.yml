@@ -100,8 +100,14 @@ navbar-background: bg-dark
 bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS
-base-font-size: 1.2em
-text-color: "#111"
-link-color: "#00AEC7"
-base-font-family: # comment out for bootstrap defaults. e.g. Roboto
-font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+# customized for U of I fonts, using Public Sans
+base-font-size: # default 1.1em
+text-color: # default "#111"
+link-color: # default "#00AEC7"
+base-font-family: # defaults to "'Public Sans', sans-serif" 
+font-cdn: # defaults to using Public Sans google fonts in dev, and lib server font in production 
+
+# google fonts version Public Sans:
+# '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">'
+# bunny fonts version:
+# '<link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=public-sans:400,400i,700,700i" rel="stylesheet" >'
