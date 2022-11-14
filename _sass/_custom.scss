@@ -5,47 +5,6 @@
     color:white; 
     background-color: $grey-color;
 }
-/* all Collections nav */
-.ijclist{
-    padding-left:0px;
-}
-#ijclink{
-    font-size:13px !important;
-    margin-left:20px;
-}
-.hangingindent {
-    padding-left: 22px ;
-    text-indent: -22px ;
-}
-.collection-list{
-    list-style: none;
-    padding-left:10px;
-    ul{
-        list-style: none;
-        padding-left:20px; 
-    }
-    a{
-        font-weight: normal;
-    }
-}
-#collectionslink {
-    cursor: pointer;
-    z-index: 999;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    color: white;
-    font-size: 14px;
-    background: #999;
-    border-radius: 0px 0px 0px 20px;
-    padding: 5px 20px;
-    border-bottom: 1px #dadada solid;
-    margin: 0;
-    font-weight: 300;
-}
-#collectionslink p {
-    margin: 0; 
-}
 
 .footer-diginit {width: 240px;}
 
