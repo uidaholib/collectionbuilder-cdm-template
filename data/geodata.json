@@ -16,7 +16,8 @@
             "properties":{
                 {% for f in fields %}{% if item[f] %}{{ f | jsonify }}: {{ item[f] | jsonify }},{% endif %}
                 {% endfor %}
-                "reference_url": {{ '/items/' | absolute_url | append: item.objectid | append: '.html' | jsonify }}
+                "object_thumb": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif page.youtubeid %}{% include image/youtube-small.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+                "reference_url": "{{ '/items/' | absolute_url }}{{ item.objectid }}.html"
             }
         }{% unless forloop.last %}, {% endunless %}{% endfor %}
     ]
