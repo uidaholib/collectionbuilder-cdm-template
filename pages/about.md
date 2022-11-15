@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/nav-menu.html sections="About the Collection" %} 
 
 ## About the Collection
 
@@ -24,7 +24,7 @@ The Guided Reading Library is a digital collection of short books created by stu
 
 <p>Such an approach to teaching literacy is needed today. According to Madda, Griffo, Pearson and Raphael (2011), all too often educators today are pressured to promote literacy instruction that emphasizes unrealistic tasks often related with "doing school rather than doing life" (p.44). By engaging in authentic literacy projects like the Guided Reading Library, preservice teachers are exposed to thinking about literacy connected to their students' interests, experiences, cultures, and lives.</p>
 
-<p>A future goal of this project is to include elementary, middle school, and high school students in the creation of e-books to be hosted on the site. For more information, please contact Margaret Vaughn at <a href="mvaughn@uidaho.edu">mvaughn@uidaho.edu</a>.</p>
+<p>A future goal of this project is to include elementary, middle school, and high school students in the creation of e-books to be hosted on the site. For more information, please contact Margaret Vaughn at <a href="margaret.vaughn@wsu.edu">margaret.vaughn@wsu.edu</a>.</p>
 <br>
 <hr>
 <br>
