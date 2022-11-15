@@ -14,7 +14,12 @@
 {% if page.layout == "item" %}
 <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>{% endif %}
 
-{% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
+{% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}
+{% elsif jekyll.environment == "production" %}
+<link href="https://www.lib.uidaho.edu/assets/css/uidaho-fonts.css" rel="stylesheet">
+{% else %}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+{% endif %}
 {% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 <script defer src="{{ '/fontawesome/js/all.min.js' | prepend: site.digital-assets }}"></script>
@@ -24,6 +29,6 @@
 {% if site.data.theme.map-search == true %}<link rel="stylesheet" href="{{ '/leaflet/leaflet.fusesearch.css' | prepend: site.digital-assets }}">{% endif %}
 {% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.css' | prepend: site.digital-assets }}">
 <link rel="stylesheet" href="{{ '/leaflet/MarkerCluster.Default.css' | prepend: site.digital-assets }}">{% endif %}{% endif %}
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css?v=22.11' | relative_url }}" type="text/css">
 
 <!-- build date {{ site.time | date: "%Y-%m-%d" }}, collectionbuilder-cdm-template, metadata: {{ site.metadata }} -->
