@@ -3,6 +3,23 @@
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
 
+# Site settings
+title: Idaho Waters Digital Library
+# choose metadata, be sure to also change page_gen data setting!
+metadata: iwdl # check against cdm-collection-id below -- this should be used in config file as well
+
+# repository variables (leave blank if self-contained)
+# url for our CDM server
+cdm-url: https://cdm17254.contentdm.oclc.org
+# contentdm collection name 
+cdm-collection-id: idahowater
+
+# header and head metadata
+tagline: A collection of scientific and technical reports relating to water issues in key Idaho river basins
+description: "The Idaho Waters Digital Library provides open digital access to unique information resources relating to water issues in key Idaho river basins. Making up the core of the collection are more than 700 documents produced by Idaho Water Resources Research Institute, digitized by University of Idaho Library. IWDL supports ongoing research and understanding of the region while preserving an era of previous work and research investment."
+keywords: "university of idaho, Idaho Water Resources Research Institute, Idaho, water resources" # describing the whole collection -- add to the two provided
+author: evanwill # You! Add your github username 
+
 # url variables
 # library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
