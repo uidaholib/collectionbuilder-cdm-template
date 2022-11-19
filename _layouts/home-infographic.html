@@ -3,6 +3,10 @@ layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
 <div class="row">
+  <div class="col-md-12">
+    <div class="card mb-3" id="map"></div>
+  </div>
+
   <div class="col-md-8">
 
     {% include index/description.html %}
@@ -15,7 +19,7 @@ layout: page
 
     {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" featured=site.data.theme.featured-subjects max=site.data.theme.featured-subjects-max %}
 
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
+    {% include index/featured-terms.html field="campus location" title="Locations" btn-color="outline-secondary" featured=site.data.theme.featured-locations max=site.data.theme.featured-locations-max %}
     
     {% include index/objects.html %}
 
