@@ -1,22 +1,20 @@
 ---
-layout: page
+layout: about
 ---
 
 {% assign buildings = site.data.campus-buildings %}
 
-{% for b in buildings %}
 <div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="{{ b.thumbnail-url }}" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                    <h2>{{ b.title }}</h2>
-                </div>
-            </div>
-        </div>
+    {% for b in buildings %}
+    <div class="col-md-4">
+        <figure class="figure mx-3">
+            <a href="{{ '/items/' | append: b.thumbnail-objectid | append: '.html' | relative_url }}">
+                <img class="figure-img img-fluid rounded lazyload" alt="{{ b.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ b.thumbnail-cdmid }}/full/max/0/default.jpg" >
+            </a>
+        </figure>
     </div>
+    <div class="col-md-8">
+        <h2>{{ b.title }}</h2>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
