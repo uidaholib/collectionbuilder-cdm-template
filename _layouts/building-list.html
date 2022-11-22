@@ -1,20 +1,51 @@
 ---
-layout: about
+layout: page
 ---
 
-{% assign buildings = site.data.campus-buildings %}
+<h2>Campus Buildings</h2>
+<p>University of Idaho campus buildings are listed here alphabetically. When available, dates and location for each building are given, along with links to more detailed information about each building.</p>
+
+{% capture letters %}{% for item in site.data.campus-buildings %}{{ item.title | slice: 0 | capitalize }};{% endfor %}{% endcapture %}
+{%- assign uniqueLetters = letters | split: ';' | uniq | sort -%}
+{%- assign buildings = site.data.campus-buildings | sort: "title" -%}
+
+<ul class="list-inline">
+    {% for letter in uniqueLetters %}
+    <li class="list-inline-item h2"><a href="#{{ letter }}">{{ letter }}</a></li>
+    {% endfor %}
+</ul>
+<hr>
+
+<div>
 
 <div class="row">
+    {% for letter in uniqueLetters %}
+    <div class="col-md-12">
+        <h2 class="pt-4" id="{{ letter }}">{{ letter }}</h2>
+    </div>
+
     {% for b in buildings %}
+    {%- assign x = b.title | slice: 0 | capitalize -%}
+    {%- if x == letter -%}
     <div class="col-md-4">
-        <figure class="figure mx-3">
+        <figure class="figure mx-3 text-right">
             <a href="{{ '/items/' | append: b.thumbnail-objectid | append: '.html' | relative_url }}">
-                <img class="figure-img img-fluid rounded lazyload" alt="{{ b.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ b.thumbnail-cdmid }}/full/max/0/default.jpg" >
+                <img class="figure-img img-fluid rounded lazyload w-75"  alt="{{ b.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ b.thumbnail-cdmid }}/full/max/0/default.jpg" >
             </a>
         </figure>
     </div>
     <div class="col-md-8">
-        <h2>{{ b.title }}</h2>
+        <h2 class="pt-4"><a href="{{ b.slug | prepend: '/buildings/' | append: '.html' | relative_url }}">{{ b.title }}</a></h2>
+        <p>
+            {{ b.dates }}
+            <br>
+            {{ b.location_description }}
+        </p>
     </div>
+    <div class="col-md-12">
+        <hr class="pb-3">
+    </div>
+    {% endif %}
+    {% endfor %}
     {% endfor %}
 </div>

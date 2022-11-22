@@ -3,4 +3,16 @@ layout: default
 gallery: true
 ---
 
-{%- assign buildings = site.data.campus-buildings -%}
+<div class="container py-3">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/buildings/index.html' | absolute_url }}">Locations</a></li>
+        <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-6" id="lightgallery">
+            <p>{{ page.title }}</p>
+        </div>
+    </div>
+</div>
