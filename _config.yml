@@ -51,7 +51,12 @@ page_gen:
     name: 'objectid'
     dir: 'items'
     extension: 'html' 
-    filter: 'objectid'  
+    filter: 'objectid'
+  # - data: 'campus-buildings-glossary'
+    # template: 'buildings'
+    # name: 'slug'
+    # dir: 'locations'
+    # extension: 'html'    
 
 # add liquid profiler to id bottlenecks
 # profile: true
