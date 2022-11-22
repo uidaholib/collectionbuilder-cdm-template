@@ -1,26 +1,24 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data.timelinejs-campus -%}
 {
     "title": {
         "media": {
           "url": "{% include image/featured-image.html %}",
-          "caption": {{ featuredItem.title | jsonify }},
-          "credit": {{ site.title | jsonify }}
+          "credit": {{ featuredItem.title | jsonify }}
         },
         "text": {
-          "headline": {{ site.title | append: ' Timeline' | jsonify }},
-          "text": {{ site.description | jsonify }}
+          "headline": {{ 'University of Idaho Campus Building Timeline' | jsonify }},
+          "text": {{ 'Presenting U of I campus buildings according to their construction dates' | jsonify }}
         }
     },
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
           "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
-          "caption": {{ item.title | jsonify }},
           "link": "{% include item-link.html %}",
-          "credit": "{{ site.title }}"
+          "credit": {{ item.mediacredit | jsonify }}
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",
@@ -29,8 +27,8 @@
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": {{ item.title | jsonify }}{% if item.description %},
-          "text": {{ item.description | jsonify }}{% endif %}
+          "headline": {{ item.headline | jsonify }}{% if item.text %},
+          "text": {{ item.text | jsonify }}{% endif %}
         }
       }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
     ]

@@ -1,7 +1,7 @@
 ---
-title: Timeline
+title: Photograph Timeline
 layout: timeline
 permalink: /timeline.html
 ---
 
-## Collection Timeline
+## Campus Photograph Timeline
