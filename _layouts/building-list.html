@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+{% assign buildings = site.data.campus-buildings %}
+
+{% for b in buildings %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{ b.thumbnail-url }}" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h2>{{ b.title }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
