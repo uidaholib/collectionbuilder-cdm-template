@@ -1,7 +1,7 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data.timelinejs-campus -%}
+{%- assign items = site.data.campus-buildings | where_exp: 'item', 'item.timeline-text' -%}
 {
     "title": {
         "media": {
@@ -16,7 +16,7 @@
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
+          "url": "{% include image/medium.html %}",
           "link": "{% include item-link.html %}",
           "credit": "<a target='_blank' href='{{ item.objectid | prepend: '/items/' | append: '.html' | relative_url }}'>{{ item.identifier }}</a>"
         },
@@ -27,8 +27,8 @@
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": "<a href='{{ item.slug | prepend: '/buildings/' | append: '.html' | relative_url }}'>{{ item.title }}</a>"{% if item.text %},
-          "text": {{ item.text | jsonify }}{% endif %}
+          "headline": "<a href='{{ item.slug | prepend: '/buildings/' | append: '.html' | relative_url }}'>{{ item.title }}</a>"{% if item.timeline-text %},
+          "text": {{ item.timeline-text | jsonify }}{% endif %}
         }
       }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
     ]
