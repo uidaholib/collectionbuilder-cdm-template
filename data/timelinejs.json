@@ -18,7 +18,7 @@
         "media": {
           "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "link": "{% include item-link.html %}",
-          "credit": {{ item.mediacredit | jsonify }}
+          "credit": "<a target='_blank' href='{{ item.objectid | prepend: '/items/' | append: '.html' | relative_url }}'>{{ item.identifier }}</a>"
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",
@@ -27,7 +27,7 @@
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
-          "headline": {{ item.headline | jsonify }}{% if item.text %},
+          "headline": "<a href='{{ item.slug | prepend: '/buildings/' | append: '.html' | relative_url }}'>{{ item.title }}</a>"{% if item.text %},
           "text": {{ item.text | jsonify }}{% endif %}
         }
       }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
