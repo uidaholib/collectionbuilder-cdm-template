@@ -10,7 +10,7 @@ title: University of Idaho Campus Photographs Collection
 # choose metadata, be sure to also change page_gen data setting!
 # header and head metadata
 tagline: Historical photographs documenting the history of the U of I Campus from 1889 to the present
-description: "PG1, or Photo Group 1, is a digital collection comprised of over 3000 photographs depicting the University of Idaho campus, buildings, and people. It contains images from the founding of the University in 1889 to the present day. " 
+description: "PG1, or Photo Group 1, is a digital collection comprised of over 3000 photographs depicting the University of Idaho campus, buildings, and people. It contains images from the founding of the University in 1889 to the present day." 
 keywords: "UI; Idaho; Buildings" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
@@ -38,7 +38,7 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: campus-reduced 
+metadata: campus
 # contentdm collection name, matches collection ID used by CDM
 cdm-collection-id: pg1
 # CONTENTdm server url
@@ -46,7 +46,7 @@ cdm-url: https://digital.lib.uidaho.edu
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
-  - data: 'campus-reduced'
+  - data: 'campus'
     template: 'items'
     name: 'objectid'
     dir: 'items'
