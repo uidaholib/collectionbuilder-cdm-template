@@ -34,20 +34,20 @@ about-featured-image: campus02463 # campus00763
 # ITEM PAGE
 #
 # see _data/metadata-config.csv to define the metadata fields that will display.
-browse-buttons: false # true / false, adds previous/next arrows to items, but increases build time
+browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
 
 ##########
 # SUBJECTS PAGE
 #
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-min: 3 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
 locations-fields: campus location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
@@ -74,9 +74,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,date,date is approximate,subject,campus location,latitude,longitude,donor,publisher - digital,source,identifier,id number,photo number,building number,rights,rightsstatement,ordering information,format original,type,format,filename,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+metadata-export-fields: "title,description,date,date is approximate,subject,campus location,latitude,longitude,donor,publisher - digital,source,identifier,id number,photo number,building number,rights,rightsstatement,ordering information,format original,type,format,cdm_url,cdmid,contentdm file name,contentdm file path,objectid,location_identifier"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject"
+metadata-facets-fields: "subject,campus location,donor,type,format"
 
 ##########
 # ADVANCED OPTIONS
