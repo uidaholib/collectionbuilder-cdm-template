@@ -3,6 +3,8 @@ layout: default
 gallery: true
 ---
 
+{% assign images = site.data[site.metadata] | where_exp: "item", "item.location_identifier == page.slug" %}
+
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -10,31 +12,40 @@ gallery: true
         <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
     </ul>
 
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row pb-3">
+        <div class="col-md-12">
             <h2>{{ page.title }}</h2>
+            <a href="#building-info" class="btn btn-info mb-4 mt-1 mr-2" role="button">Building Information</a>
+            {% unless images == empty %}
+            <a href="#image-browse" class="btn btn-outline-info mb-4 mt-1" role="button">Browse Records</a>
+            {% endunless %}
+        </div>
+        <div class="col-md-6">
+            <figure class="figure mx-3 text-center">
+                <a href="{{ '/items/' | append: page.objectid | append: '.html' | relative_url }}">
+                    <img class="figure-img img-fluid rounded lazyload"  alt="{{ page.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ page.cdmid }}/full/max/0/default.jpg" >
+                </a>
+                <figcaption class="figure-caption"><a href="{{ '/items/' | append: page.objectid | append: '.html' | relative_url }}">{{ page.title }}</a></figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6 text-center">
+            <div id="map-{{ page.slug }}" class="building-map mx-auto mb-4"></div>
+            <p><strong>Geographic Coordinates:</strong> {{ page.latitude }}, {{ page.longitude }}</p>
+            {% if page.location_description %}
+            <p><strong>Location:</strong> {{ page.location_description }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row justify-content-center pt-3">
+        <div class="col-md-8">
+            <h3 id="building-info">{{ page.title }}</h3>
+
             {% if page.architect %}
             <p><strong>Architect:</strong> {{ page.architect }}</p>
             {% endif %}
             {% if page.history %}
             <p><strong>History:</strong> {{ page.history }}</p>
-            {% endif %}
-            <figure class="figure mx-3 text-center">
-                <a href="{{ '/items/' | append: page.objectid | append: '.html' | relative_url }}">
-                    <img class="figure-img img-fluid rounded lazyload"  alt="{{ page.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ page.cdmid }}/full/max/0/default.jpg" >
-                </a>
-                <figcaption class="figure-caption"><a href="{{ '/items/' | append: page.objectid | append: '.html' | relative_url }}">PG1, {{ page.identifier }}</a></figcaption>
-            </figure>
-        </div>
-        <div class="col-md-6">
-            {% if page.cost %}
-            <p><strong>Cost:</strong> {{ page.cost }}</p>
-            {% endif %}
-
-            <div id="map-{{ page.slug }}" class="building-map mx-auto mb-4"></div>
-
-            {% if page.location_description %}
-            <p><strong>Location:</strong> <em>{{ page.latitude }}, {{ page.longitude }}</em> | {{ page.location_description }}</p>
             {% endif %}
             {% if page.description %}
             <p><strong>Description:</strong> {{ page.description }}</p>
@@ -48,35 +59,63 @@ gallery: true
             {% if page.date_notes %}
             <p><strong>Date Notes:</strong> {{ page.date_notes }}</p>
             {% endif %}
+            {% if page.cost %}
+            <p><strong>Cost:</strong> {{ page.cost }}</p>
+            {% endif %}
             {% if page.cost_notes %}
             <p><strong>Cost Notes:</strong> {{ page.cost_notes }}</p>
             {% endif %}
             {% if page.sources %}
             <p><strong>Sources:</strong> {{ page.sources }}</p>
             {% endif %}
+            {% unless images == empty %}
+            <p id="image-browse">Scroll down to browse images of the {{ page.title }}</p>
+            {% endunless %}
         </div>
     </div>
-    <div class="row justify-content-center" id="lightgallery">
-        <div class="col-md-12">
-            <p class="text-center">Scroll down to browse images of {{ page.title }}</p>
-        </div>
-        {% assign images = site.data[site.metadata] | where_exp: "item", "item.location_identifier == page.slug" %}
+    {% unless images == empty %}
+    <div class="row justify-content-center py-4" id="lightgallery">
         {% for i in images %}
         <div class="col-md-3">
-            <div class="card text-center">
-                <img class="card-img-top" src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ i.cdmid }}/full/max/0/default.jpg" alt="image of {{ i.title }}">
+            <div class="card text-center mb-3">
+                <div class="gallery-img" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ i.cdmid }}/full/max/0/default.jpg">
+                    <img class="card-img-top lazyload" src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ i.cdmid }}/full/pct:40/0/default.jpg" alt="Image of {{ i.title }}">
+                </div>
                 <div class="card-body">
                     <div class="card-title">
-                        {{ i. title }}
+                        {{ i.title }}
                     </div>
                     <a href="{{ '/items/' | append: i.objectid | append: '.html' | relative_url }}" class="btn btn-outline-secondary" role="button">View Record</a>
                 </div>
             </div>
         </div>
         {% endfor %}
-        <div class="col-md-12">
-            <a href="" class="btn btn-info" role="button">View Gallery</a>
-            <a href="{{ '/browse.html#' | append: page.slug | relative_url }}" class="btn btn-outline-info" role="button">Browse Records</a>
+    </div>
+    {% endunless %}
+
+    {% assign buildingset = site.data.campus-buildings | map: 'slug' | uniq | compact %}
+    {% assign last = buildingset | size | minus: 1 %}
+    {% unless page.index_number == 0 %}
+    {% assign back = page.index_number | minus: 1 %}
+    {% else %}
+    {% assign back = last %}
+    {%- endunless -%}
+    {% unless page.index_number == last %}
+    {% assign forward = page.index_number | plus: 1 %}
+    {% else %}
+    {% assign forward = 0 %}
+    {%- endunless -%}
+    {%- assign back_url = '/buildings/' | append: buildingset[back] | append: '.html' | relative_url -%}
+    {%- assign forward_url = '/buildings/' | append: buildingset[forward] | append: '.html' | relative_url -%}
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/buildings/index.html' | relative_url }}" >Back to Buildings</a>
+        <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>
+    </div>
+    <div id="item-nav">
+        <div class="d-none d-md-block">
+            <a class="previous btn btn-lg btn-secondary" href="{{ back_url }}">&laquo;</a>
+            <a class="next btn btn-lg btn-secondary" href="{{ forward_url }}">&raquo;</a>
         </div>
     </div>
 </div>
@@ -92,5 +131,9 @@ gallery: true
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
     }).addTo(buildingMap);
+
+    L.marker([pageLatitude, pageLongitude]).addTo(buildingMap)
+        .bindPopup("{{ page.title }}")
+        .openPopup();
     
 </script>
