@@ -84,13 +84,13 @@ In 1957, the Idaho state legislature updated the state seal "in order to more cl
 
 ## Sources
 
-[^1]: Elizabeth M. Smith, [*History of the Boise National Forest 1905-1976*](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf) (Boise: Idaho State Historical Society, 1983).; "Ancient People of the Nez Perce National Forest: A Guide to the Prehistory of the Forest," U.S. Forest Service, [https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf).
+[^1]: Elizabeth M. Smith, [*History of the Boise National Forest 1905-1976*](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsbdev3_042206.pdf) (Boise: Idaho State Historical Society, 1983). (Archived: [https://perma.cc/JM5M-63AZ](https://perma.cc/JM5M-63AZ)); "Ancient People of the Nez Perce National Forest: A Guide to the Prehistory of the Forest," U.S. Forest Service, [https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf](https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm91_055713.pdf). (Archived: [https://perma.cc/NV7M-4WU7](https://perma.cc/NV7M-4WU7))
 
 [^2]: Kathy Weister, "Gibbonsville - Mining Camp to Bedroom Community," *Legends of America,* February 2020, [https://www.legendsofamerica.com/id-gibbonsville/](https://www.legendsofamerica.com/id-gibbonsville/). (Archived: [https://perma.cc/WM2L-AYXN](https://perma.cc/WM2L-AYXN))
 
 [^3]: "Idaho Gold Rush History and Districts," Gold Maps Online, [https://www.goldmapsonline.com/idaho-gold-rush-history-and-districts.html](https://www.goldmapsonline.com/idaho-gold-rush-history-and-districts.html). (Archived: [https://perma.cc/U8S8-DV4J](https://perma.cc/U8S8-DV4J)); "Mines & Minerals," Idaho Geological Survey, [https://www.idahogeology.org/geologic-resources/mines-minerals](https://www.idahogeology.org/geologic-resources/mines-minerals). (Archived: [https://perma.cc/P6GS-92K6](https://perma.cc/P6GS-92K6))
 
-[^4]: "Idaho Mining Towns," Western Mining History, [https://westernmininghistory.com/state/idaho/](https://westernmininghistory.com/state/idaho/). (Archived: [https://perma.cc/V85X-5K6Z(https://perma.cc/V85X-5K6Z)]) (Note: This is not a comprehensive list of all mining towns in Idaho.)
+[^4]: "Idaho Mining Towns," Western Mining History, [https://westernmininghistory.com/state/idaho/](https://westernmininghistory.com/state/idaho/). (Archived: [https://perma.cc/V85X-5K6Z](https://perma.cc/V85X-5K6Z)) (Note: This is not a comprehensive list of all mining towns in Idaho.)
 
 [^5]: "Idaho has a Rich and Fascinating History," Idaho.gov, [https://www.idaho.gov/about-idaho/history/](https://www.idaho.gov/about-idaho/history/). (Archived: [https://perma.cc/Z254-MYV7](https://perma.cc/Z254-MYV7))
 
