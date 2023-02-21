@@ -14,7 +14,7 @@ home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: pdf
-featured-subjects: volunteering;organic gardening;farmers' markets;boards of directors;bicycles #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects: bazaars (marketplaces);bicycles;boards of directors;organic gardening;volunteering #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
@@ -42,7 +42,7 @@ browse-buttons: true # true / false, adds previous/next arrows to items, but inc
 # SUBJECTS PAGE
 #
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
-subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
+subjects-min: 3 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: newsletters;cooperatives (business enterprises) # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
