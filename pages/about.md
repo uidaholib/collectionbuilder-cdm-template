@@ -15,7 +15,7 @@ There are 338 digitized newsletters in this collection published by the Moscow F
 
 ## About the Moscow Food Co-op
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+Everyone is welcome at the Moscow Food Co-op. The Co-op has a community of over 7,800 owners. These food-loving individuals put local and natural products first and advocate for Palouse producers and families affected by food insecurity. 
 
 For more information about this collaboratively-owned grocery store, see the Moscow Food Co-op's website linked below. 
 
