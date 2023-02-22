@@ -45,7 +45,7 @@ metadata: moscowcoop
 # contentdm collection name, matches collection ID used by CDM
 cdm-collection-id: moscowcoop
 # CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
+cdm-url: http://cdm17254.contentdm.oclc.org/cdm/ref/collection/moscowcoop/
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
