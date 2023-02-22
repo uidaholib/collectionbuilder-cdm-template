@@ -5,13 +5,9 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
-
 ## About the Collection
 
 There are 338 digitized newsletters in this collection published by the Moscow Food Co-op, which is a cooperatively-owned grocery store in Moscow, Idaho. 
-
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
 
 ## About the Moscow Food Co-op
 
