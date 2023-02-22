@@ -9,17 +9,17 @@ permalink: /about.html
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+There are 338 digitized newsletters in this collection published by the Moscow Food Co-op, which is a cooperatively-owned grocery store in Moscow, Idaho. 
 
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
-## About the UI Boxing Team
+## About the Moscow Food Co-op
 
 The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
 
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
+For more information about this collaboratively-owned grocery store, see the Moscow Food Co-op's website linked below. 
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+{% include feature/button.md text="Moscow Food Co-op Website" link="https://www.moscowfood.coop/" color="info" size="lg" %}
 
 
 <div class="clearfix"></div>
