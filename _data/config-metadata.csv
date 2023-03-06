@@ -1,22 +1,22 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+creator,Creator,,,DCTERMS.creator,creator
+archival_date,Archival Date,,
 date is approximate,Approximated Date
-description,Description,,DCTERMS.description,description
+description,Description,,,DCTERMS.description,description
 interviewee,Interviewee
 interviewer,Interviewer
 family origin,Family Origin
 occupation,Occupation
-subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,,,contentLocation
+subject,Subjects,true,,DCTERMS.subject,keywords
+location,Location,,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
-findingaid,Finding Aid,,true
+finding_aid,Finding Aid Link,,true
 identifier,Source Identifier
-type,Type,,DCTERMS.type
+type,Type,,,DCTERMS.type
 format-original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
