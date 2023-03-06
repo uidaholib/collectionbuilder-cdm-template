@@ -1,8 +1,7 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
 creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
-date is approximate,Approximated Date
+archival_date,Archival Date,,,
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
 keywords,Keywords,true,
