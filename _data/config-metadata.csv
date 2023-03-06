@@ -1,7 +1,7 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
 title,Title,,,DCTERMS.title,headline
 creator,Creator,,,DCTERMS.creator,creator
-date,Date Created,,,DCTERMS.created,dateCreated
+archival_date,Archival Date,,,
 description,Description,,,DCTERMS.description,description
 subject,Subjects,true,,DCTERMS.subject,keywords
 location,Location,,,,contentLocation
@@ -10,7 +10,7 @@ longitude,Longitude
 location,Location
 collection,Source Collection
 source,Source
-finding_aid,Finding Aid,,true,,,
+finding_aid,Finding Aid Link,,true,,,
 identifier,Source Identifier
 type,Type,,,DCTERMS.type
 format-original,Format Original
