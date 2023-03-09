@@ -9,8 +9,6 @@ permalink: /about.html
 
 There are 338 digitized newsletters in this collection published by the Moscow Food Co-op, which is a cooperatively-owned grocery store in Moscow, Idaho. 
 
-{% include feature/item-pdf-embed.html objectid="moscowcoop0004" width="50" %}
-
 ## About the Moscow Food Co-op
 
 Everyone is welcome at the Moscow Food Co-op. The Co-op has a community of over 7,800 owners. These food-loving individuals put local and natural products first and advocate for Palouse producers and families affected by food insecurity. 
