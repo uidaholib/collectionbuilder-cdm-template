@@ -10,3 +10,7 @@ Collection settings are customized using the [`_data/theme.yml`](https://github.
 Each digital collection is a branch in this repository.
 
 While this version was built specifically for use at the University of Idaho Library, any other institution currently using CONTENTdm can also adopt it, starting from the generic base [CollectionBuilder-CONTENTdm](https://github.com/CollectionBuilder/collectionbuilder-contentdm) template.
+
+# Notes
+
+Duplicate images were deleted from this collection. Their object ids are as follows: stonebraker151, stonebraker211, stonebraker243, stonebraker274, stonebraker278, stonebraker283, stonebraker288, stonebraker302, stonebraker348, stonebraker358, stonebraker634, stonebraker655, and stonebraker657.
