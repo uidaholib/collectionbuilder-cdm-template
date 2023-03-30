@@ -3,7 +3,7 @@ title: About
 layout: about
 permalink: /about.html
 ---
-{% include feature/jumbotron.html %} 
+{% include feature/jumbotron.html position="top" %} 
 
 ## About the Collection
 
@@ -15,7 +15,9 @@ Everyone is welcome at the Moscow Food Co-op. The Co-op has a community of over 
 
 For more information about this collaboratively-owned grocery store, see the Moscow Food Co-op's website linked below. 
 
+<div class="text-center">
 {% include feature/button.md text="Moscow Food Co-op Website" link="https://www.moscowfood.coop/" color="info" size="lg" %}
+</div>
 
 ### History of the Moscow Food Co-op
 
