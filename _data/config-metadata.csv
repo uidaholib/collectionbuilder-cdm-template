@@ -3,6 +3,11 @@ title,Title,,DCTERMS.title,headline
 creator,Creator,,DCTERMS.creator,creator
 date,Date Created,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
+editors,Editors,true
+photographs,Photographer,true
+illustrations,Illustrator,true
+graphic design,Graphic Designer,true
+board of directors,Board of Directors,true
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
 location,Location,,,contentLocation

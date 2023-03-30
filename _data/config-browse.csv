@@ -2,3 +2,8 @@ field,display_name,btn,hidden,sort_name
 date,Date,,,Date
 subject,,true
 identifier,,,true,Identifier
+editors,Editors,,true
+photographs,Photographer,,true
+illustrations,Illustrator,,true
+graphic design,Graphic Designer,,true
+board of directors,Board of Directors,,true
