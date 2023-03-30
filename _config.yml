@@ -24,10 +24,10 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # title of site appears in banner
 title: Moscow Food Co-op Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A collection of digitized newsletters published by the Moscow Food Co-op
+tagline: Newsletters published by the Moscow, Idaho Food Co-op
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection comprised of 338 digitized newsletters published by the Moscow Food Co-op, a cooperatively-owned grocery store in Moscow, Idaho"  
+description: "Digitized newsletters published by the Moscow Food Co-op, a cooperatively-owned grocery store in Moscow, Idaho. Newsletter content includes announcements and descriptions of community events, articles on food and gardening, and recipes."  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: juliastone0729
 # Organization branding
