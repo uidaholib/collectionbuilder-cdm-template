@@ -3,7 +3,7 @@ title: About
 layout: about
 permalink: /about.html
 ---
-{% include feature/jumbotron.html position="top" %} 
+{% include feature/jumbotron.html objectid="https://www.lib.uidaho.edu/digital/moscowcoop/assets/moscowcoop-about-image.jpg" %} 
 
 ## About the Collection
 
