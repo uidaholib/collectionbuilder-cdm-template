@@ -56,6 +56,9 @@ gallery: true
             {% if page.use_history %}
             <p><strong>Use History:</strong> {{ page.use_history }}</p>
             {% endif %}
+            {% if page.date %}
+            <p><strong>Date:</strong> {{ page.dates }}</p>
+            {% endif %}
             {% if page.date_notes %}
             <p><strong>Date Notes:</strong> {{ page.date_notes }}</p>
             {% endif %}
