@@ -3,7 +3,7 @@ title: About
 layout: about
 permalink: /about.html
 ---
-{% include feature/jumbotron.html objectid="/assets/hwhi_cover.jpg" %} 
+{% include feature/jumbotron.html objectid="/digital/hwhi/assets/hwhi_cover.jpg" %} 
 
 {% include feature/nav-menu.html sections="About the Collection;About the *Here We Have Idaho* magazine" %} 
 
