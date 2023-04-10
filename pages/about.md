@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the UI Boxing Team" %} 
+{% include feature/nav-menu.html sections="About the Collection;About the *Here We Have Idaho* magazine" %} 
 
 ## About the Collection
 
@@ -13,13 +13,13 @@ The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Colle
 
 {% include feature/item-figure.html objectid="boxing33" width="75" %}
 
-## About the UI Boxing Team
+## About the *Here We Have Idaho* magazine
 
-The boxing team won several national and regional championships during the 1940s and 1950s. These teams also included several individual boxers that were crowned national and regional champions.
+The magazine started in 1998 and is the offical magazine of the University of Idaho. Managed by University Communications and Marketing, it is published twice a year with a circulation of over 100,000 readers. Supported by private funds from the University of Idaho Foundation, Inc., it is the continuation of a series of magazines providing information about the University. Its immediate predecessor was *The University of Idaho* magazine which ran from 1992-1998. 
 
-For an extensive history of the Boxing program, see the Argonaut article linked below. 
+The current issue may be found at the *Here We Have Idaho* home page as well as information on digital subscriptions, see the link below. 
 
-{% include feature/button.md text="Feature Argonaut Article on UI Boxing" link="https://www.uiargonaut.com/2014/05/05/kings-of-their-ring-its-tenure-was-short-lived-but-vandal-boxing-holds-deep-roots-in-uis-history/" color="info" size="lg" %}
+{% include feature/button.md text="Current Issue" link="https://www.uidaho.edu/news/here-we-have-idaho/" color="info" size="lg" %}
 
 
 <div class="clearfix"></div>
