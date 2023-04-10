@@ -3,15 +3,14 @@ title: About
 layout: about
 permalink: /about.html
 ---
-{% include feature/jumbotron.html %} 
+{% include feature/jumbotron.html objectid="/assets/hwhi_cover.jpg" %} 
 
 {% include feature/nav-menu.html sections="About the Collection;About the *Here We Have Idaho* magazine" %} 
 
 ## About the Collection
 
-The 53 photographs that make up the Donald R. Theophilus Boxing Photograph Collection depict the University of Idaho boxing team during its heyday. 
+Digital back issues of *Here We Have Idaho* magazine may be found here. A more complete collection is available in hardcopy in University's main library.  
 
-{% include feature/item-figure.html objectid="boxing33" width="75" %}
 
 ## About the *Here We Have Idaho* magazine
 
