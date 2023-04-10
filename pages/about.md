@@ -9,6 +9,8 @@ permalink: /about.html
 
 ## About the Collection
 
+{% include feature/item-figure.html objectid="/digital/hwhi/assets/hwhi_cover.jpg" width="25"%}
+
 Digital back issues of *Here We Have Idaho* magazine may be found here. A more complete collection is available in hardcopy in University's main library.  
 
 
