@@ -14,6 +14,7 @@ longitude,Longitude
 collection,Source Collection
 source,Source
 holding institution,Holding Institution
+findingaid,Finding Aid,,true
 identifier,Source Identifier
 type,Type,,DCTERMS.type
 format-original,Format Original
