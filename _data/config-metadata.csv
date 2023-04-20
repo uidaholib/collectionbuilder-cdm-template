@@ -1,12 +1,14 @@
 field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
-date,Date Created,,DCTERMS.created,dateCreated
-date_is_approximate,Approximated Date
+creator,Creator,,DCTERMS.creator,creator
+date,Date Created,,DCTERMS.date,dateCreated
+date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 location,Location,true,,contentLocation
 region,Region,true,
 notes,Notes
 source,Source
+findingaid,Finding Aid,,true
 identifier,Source Identifier
 type,Type,,DCTERMS.type
 format,Format,,,encodingFormat
