@@ -8,6 +8,7 @@ latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
+findingaid,Finding Aid,,true
 identifier,Source Identifier
 type,Type,,DCTERMS.type
 format,Format,,,encodingFormat
