@@ -61,6 +61,8 @@ gallery: true
                         {% for t in topics %}
                         <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
                         {% endfor %}
+                        {% elsif f.external_link == "true" %}
+                        <a href="{{ page[f.field] }}" target="_blank" rel="noopener">{{ page[f.field] }}</a>
                         {% else %}
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
@@ -77,7 +79,7 @@ gallery: true
                 <div class="card-body">
                     <dl>
                         <dt>Preferred Citation:</dt>
-                        <dd>"{{ page.title }}", {{ site.title }}, {{ site.organization-name }}</dd>
+                        <dd>"{{ page.title }}." <em>{{ site.title }}</em>{% if page.source %}, {{ page.source }}{% endif %}.</dd>
                         <dt>Reference Link:</dt>
                         <dd>{{ page.url | absolute_url }}</dd>
                     </dl>
@@ -91,7 +93,7 @@ gallery: true
                 <div class="card-body">
                     <dl>
                         {% if page.rights %}
-                        <dd>{{ page.rights }}</dd>{% endif %}
+                        <dd>{{ page.rights | markdownify }}</dd>{% endif %}
                         {% if page.rightsstatement %}<dt>Standardized Rights:</dt>
                         <dd><a target="_blank" rel="noopener" href="{{ page.rightsstatement }}">{{ page.rightsstatement }}</a>
                         </dd>{% endif %}
