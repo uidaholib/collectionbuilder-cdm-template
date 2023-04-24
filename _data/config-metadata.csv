@@ -3,7 +3,7 @@ title,Title,,DCTERMS.title,headline
 ccc-camp-number,CCC Camp Number,true,
 ccc-company-number,CCC Company Number,true,
 creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
+date,Date Created,,DCTERMS.date,dateCreated
 date is approximate,Approximated Date
 description,Description,,DCTERMS.description,description
 subject,Subjects,true,DCTERMS.subject,keywords
@@ -12,6 +12,7 @@ latitude,Latitude
 longitude,Longitude
 source,Source
 collection,Source Collection
+findingaid,Finding Aid,,true
 identifier,Source Identifier
 format-original,Original Format
 type,Type,,DCTERMS.type
