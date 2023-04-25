@@ -7,9 +7,9 @@ permalink: /about.html
 
 {% include feature/nav-menu.html sections="About the Collection;" %} 
 
-## About the Collection
+# About the Collection
 
-*From [University of Idaho Library Special Collections Bunker Hill Labor History Collection documentation](https://www.lib.uidaho.edu/special-collections/Manuscripts/mg367.htm):* 
+*From [University of Idaho Library Special Collections and Archives Bunker Hill Hills Company records](https://archiveswest.orbiscascade.org/ark:80444/xv65328):* 
 
 The Bunker Hill Labor History Collection is 463 letters of correspondence between the managers and owners of the Bunker Hill Mine & Sullivan M. & C. Co. The correspondence files consist of incoming and outgoing letters, some arranged chronologically, others by subject.
 
