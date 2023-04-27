@@ -7,7 +7,7 @@ permalink: /about.html
 
 {% include feature/nav-menu.html sections="About Chatcolab;About the Collection;Sources" %} 
 
-## About Chatcolab (Northwest) Leadership Laboratory
+# About Chatcolab (Northwest) Leadership Laboratory
 
 *Chatcolab is still active today and is an "equal-opportunity, affirmative-action, non-profit educational organization that develops leadership through recreation." To learn more, visit their [website](https://www.chatcolab.org/).*
 
@@ -24,7 +24,7 @@ By 1969, however, attendees and others affiliated with the organization began to
 On the 25th anniversary lab in 1973, 91 people attended Chatcolab.[^5]
 
 
-## About the Collection
+# About the Collection
 
 This collection contains the camp packet from each lab between 1949-2000. The packets detail program planning, activities, stories, menus, and recipes for the lab. 
 
