@@ -11,9 +11,9 @@ This collection features 338 newsletters published by the Moscow Food Co-op, whi
 
 ### About the Moscow Food Co-op
 
-Everyone is welcome at the Moscow Food Co-op. The Co-op has a community of over 7,800 owners. These food-loving individuals put local and natural products first and advocate for Palouse producers and families affected by food insecurity. 
+The Moscow Food Co-op started in 1973 with some fresh local produce, a few bulk bins, and a ton of big ideas. Everyone is welcome at the Moscow Food Co-op. These food-loving individuals put local and natural products first and advocate for Palouse producers and families affected by food insecurity. 
 
-For more information about this collaboratively-owned grocery store, see the Moscow Food Co-op's website linked below. 
+For more information about this collaboratively-owned grocery store, see the Moscow Food Co-op’s website linked below.
 
 <div class="text-center">
 {% include feature/button.md text="Moscow Food Co-op Website" link="https://www.moscowfood.coop/" color="info" size="lg" %}
@@ -21,9 +21,7 @@ For more information about this collaboratively-owned grocery store, see the Mos
 
 ### History of the Moscow Food Co-op
 
-The Moscow Food Co-op was established in 1973 by friends Rod Davis, Jim Eagan, and Dave and Katie Mosel. For more than 45 years, the co-op has promoted their cooperative identity by being good stewards of the earth and each other. 
-
-In the tradition of their founders, co-operative members believe in the ethical values of honesty, openness, social responsibility and caring for others.
+Our co-op was established in 1973 by friends Rod Davis, Jim Eagan, and Dave and Katie Mosel and was originally called the "Good Food Store." It was a fertile time for growing a cooperative grocery store in Moscow. Counterculture ideas and increasing concern about soil, water, and air pollution were spurring the formation of natural food cooperatives all across the country in the late 1960s and early 1970s. The first small storefront on Second Street shared products like peas, lentils, cheese, and spices sold in bulk with minimal packaging. Community members from near and far step into the Co-op today, 50 years later, to see broad collections of local products, local and organic produce, and much more.
 
 <div class="clearfix"></div>
 
