@@ -1,22 +1,22 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
-photographer,Photographer,,DCTERMS.creator,creator
-mine,Mine,true,true
-depth,Depth,true,true
-date,Date Created,,DCTERMS.created,dateCreated
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+photographer,Photographer,,,DCTERMS.creator,creator
+mine,Mine,true,,true
+depth,Depth,true,,true
+date,Date Created,,,DCTERMS.created,dateCreated
 date is approximate,Approximated Date
-description,Description,,DCTERMS.description,description
+description,Description,,,DCTERMS.description,description
 donor,Donor
-subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,true,,contentLocation
+subject,Subjects,true,,DCTERMS.subject,keywords
+location,Location,true,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
 holding institution,Holding Institution
-findingaid,Finding Aid,,true
+finding aid,Finding Aid,,true
 identifier,Source Identifier
-type,Type,,DCTERMS.type
+type,Type,,,DCTERMS.type
 format-original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
