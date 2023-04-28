@@ -7,7 +7,7 @@ permalink: /about.html
 
 {% include feature/jumbotron.html %} 
 
-## About Charles Houston Shattuck
+# About Charles Houston Shattuck
 
 Charles Houston Shattuck arrived at the University of Idaho in 1909 as the head of the newly created Department of Forestry, the second such program established in the Western United States. Shattuck had earned a Ph.D. with high honors in botany the year before at the University of Chicago, and had teaching experience in forestry, botany, natural history, and many other subjects and so was able to bring with him his own collection of illustrative material, such as lantern slides similar to the slides in this collection.  
 
@@ -23,7 +23,7 @@ An early type of photography, lantern slides and the devices used to project the
 
 {% include feature/item-figure.html objectid="shattuck99" width="75" %}
 
-## About the Collection
+# About the Collection
 
 This collection of early twentieth century slides depict the University of Idaho, as well as the wilderness of Idaho and Idaho residents' attempts at domesticating it. The slides came to Special Collections by way of the Latah County Historical Society in 2009. In the late 1970s, they were found next to a dumpster on a street in Moscow, ID by noted historian Keith Petersen. Petersen recognized the potential value of such local history, and when he couldn’t find the original owner, kept them at the Historical Society. Some of the images in these slides appear in a report from C. H. Shattuck, University of Idaho, Dept. of Forestry to Major F. A. Fenn, Supervisor, Clearwater National Forest [Day-NW SD428.C55S5](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/11k6kk2/CP71155848690001451) and in an article by C. H. Shattuck in the [UI Agricultural Experiment Station Bulletin no. 91, Dec. 1916](https://digital.lib.uidaho.edu/digital/collection/ui_ep/id/3327/rec/7) (See also [Idaho S53.E416](https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/11k6kk2/CP71136222480001451)). 
 
