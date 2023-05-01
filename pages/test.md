@@ -1,7 +1,7 @@
 ---
-title: Tests
-layout: page
-permalink: /test/
+# title: Tests
+# layout: page
+# permalink: /test/
 ---
 {% assign items = site.data[site.metadata] %}
 {% assign items_size = items | size %}
