@@ -1,16 +1,25 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
-description,Description,,DCTERMS.description,description
-person of interest,Person of Interest,,DCTERMS.creator,creator
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+creator,Creator,,,DCTERMS.creator,creator
+description,Description,,,DCTERMS.description,description
+person of interest,Person of Interest,,,DCTERMS.creator,creator
 file type,File Type,true
-start_date,Start Date,,DCTERMS.created,dateCreated
+start_date,Start Date,,,DCTERMS.created,dateCreated
 end_date,End Date,
-subject,Subjects,true,DCTERMS.subject,keywords
-location,Location,,,contentLocation
+archival date,Date Created (Archival Standard)
+date,Date Created (ISO Standard),,,DCTERMS.date,dateCreated
+date is approximate,Approximated Date
+subject,Subjects,true,,DCTERMS.subject,keywords
+location,Location,,,,contentLocation
 document type,Document Type,
 publisher,Publisher,
+latitude,Latitude
+longitude,Longitude
+collection,Source Collection
 source,Source
+findingaid,Finding Aid,,true
 identifier,Source Identifier
-type,Type,,DCTERMS.type
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
+type,Type,,,DCTERMS.type
+format-original,Format Original
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
