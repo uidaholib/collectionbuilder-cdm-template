@@ -1,19 +1,22 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
-date,Date Created,,DCTERMS.created,dateCreated
-date_is_approximate,Approximated Date
-description,Description,,DCTERMS.description,description
-subject,Subjects,true,DCTERMS.subject,keywords
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+creator,Creator,,,DCTERMS.creator,creator
+archival date,Date Created (Archival Standard)
+date,Date Created (ISO Standard),,,DCTERMS.date,dateCreated
+date is approximate,Approximated Date
+description,Description,,,DCTERMS.description,description
+subject,Subjects,true,,DCTERMS.subject,keywords
 campus_event,Campus Event,true,,
 campus_organization,Campus Organization,true,,
-location,Location,,,contentLocation
+location,Location,,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 donor,Donor,true,,
 collection,Source Collection
 source,Source
+findingaid,Finding Aid,,true
 identifier,Source Identifier
-type,Type,,DCTERMS.type
-format_original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
+type,Type,,,DCTERMS.type
+format-original,Format Original
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
