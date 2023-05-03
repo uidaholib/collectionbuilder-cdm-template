@@ -1,19 +1,21 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
 authors,Authors,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
+archival date,Date Created (Archival Standard)
+date,Date Created (ISO Standard),,,DCTERMS.date,dateCreated
 date is approximate,Approximated Date
 document type,Document Type,true
-description,Description,,DCTERMS.description,description
-subject,Subjects,true,DCTERMS.subject,keywords
+description,Description,,,DCTERMS.description,description
+subject,Subjects,true,,DCTERMS.subject,keywords
 publisher,Publisher,true
-location,Location,,,contentLocation
+location,Location,,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
 source,Source
+findingaid,Finding Aid,,true
 identifier,Source Identifier
-type,Type,,DCTERMS.type
+type,Type,,,DCTERMS.type
 format-original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
