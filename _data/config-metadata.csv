@@ -8,7 +8,7 @@ location,Location,true,,contentLocation
 region,Region,true,
 notes,Notes
 source,Source
-findingaid,Finding Aid,,true
+finding aid,Finding Aid,,true
 identifier,Source Identifier
 type,Type,,DCTERMS.type
 format,Format,,,encodingFormat
