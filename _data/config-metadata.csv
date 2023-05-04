@@ -1,19 +1,21 @@
-field,display_name,browse_link,dc_map,schema_map
-title,Title,,DCTERMS.title,headline
-creator,Creator,,DCTERMS.creator,creator
-date,Date Created,,DCTERMS.created,dateCreated
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+creator,Creator,,,DCTERMS.creator,creator
+archival date,Date Created (Archival Standard)
+date,Date Created (ISO Standard),,,DCTERMS.date,dateCreated
 date is approximate,Approximated Date
 opponent,Opponent,true,
 score,Score
 stadium,Stadium,true,
-location,Location,,,contentLocation
+location,Location,,,,contentLocation
 latitude,Latitude
 longitude,Longitude
 collection,Source Collection
-type,Type,,DC.type
-identifier,Identifier
+source,Source
+finding aid,Finding Aid,,true
+identifier,Source Identifier
 youtubeid,YouTube ID
+type,Type,,,DCTERMS.type
 format original,Format Original
-format,Format,,,encodingFormat
-rightsstatement,,,DCTERMS.rights,license
-
+format,Format,,,,encodingFormat
+rightsstatement,,,,DCTERMS.rights,license
