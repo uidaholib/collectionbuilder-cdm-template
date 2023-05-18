@@ -1,4 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-subject,,true
+president,President,true,,,
+commencementaddress,Comencement Address Speaker,true
+guestspeakers,Guest Speakers,true
 identifier,,,true,Identifier
