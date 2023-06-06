@@ -22,9 +22,9 @@ digital-assets: https://www.lib.uidaho.edu/assets
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: University of Idaho Historical Photos
+title: University of Idaho Historical Photographs
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Photographs documenting campus life at the University of Idaho from 1890 to 1980
+tagline: Photographs documenting campus life at the University of Idaho from 1890 to 1980.
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "A variety of photographs from several photographic collections held by Special Collections & Archives that depict scenes from the University of Idaho's past. Includes portraits of past professors and alumni, as well as photos of buildings and events."  

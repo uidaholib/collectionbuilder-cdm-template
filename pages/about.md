@@ -9,25 +9,25 @@ permalink: /about.html
 
 ## About the Collection
 
-A variety of photographs from several photographic collections held by Special Collections & Archives that depict scenes from the University of Idaho's past. Includes portraits of past professors and alumni, as well as photos of buildings and events. Images also show prominent homes, scenes, and historical events in Moscow, ID. As one of our earliest digital collections, these images were chosen by Special Collections staff to facilitate often-requested themes and locations, and to give a broad overview of our university history. 
+This digital exhibit showcases a variety of photographs from collections held by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/). These depict scenes from the University of Idaho throughout the years. Included are portraits of past professors and alumni, as well as photos of buildings and events. 
 
 {% include feature/item-figure.html objectid="spec_uihp460" %}
 
-Images come from ten different photograph collections and one manuscript collection, many of which have since been digitized in their entirety or as part of other digital collections. The list of source collections and links if available are below:
+The list of source collections are below:
 
-* [PG 1 University of Idaho Campus Photographs](https://www.lib.uidaho.edu/digital/campus/) 
-* [PG 2 University of Idaho Student Organizations Collection](https://www.lib.uidaho.edu/digital/pg2/)  
-* PG 3 University of Idaho Portrait Collection 
-* PG 6 Idaho Collection
-* PG 20 University of Idaho Publications Department Negatives
-* PG 40 University of Idaho Alumni Association Photographs 
-* PG 67 Moscow Idaho Collection 
-* PG 73 University of Idaho Photographs 
-* PG 92 Hodgins Drug Store Collection 
-* PG 101 Gem of the Mountains Collection 
-* MG 5299 Album of Photographs from [President Theodore Roosevelt's Visit to the University of Idaho](https://www.lib.uidaho.edu/digital/troosevelt/index.html), April 10, 1911
+* [University of Idaho Campus photographs](https://archiveswest.orbiscascade.org/ark:80444/xv382718) 
+* [University of Idaho Student Organizations collection](https://archiveswest.orbiscascade.org/ark:80444/xv867166/)  
+* [University of Idaho Portrait collection](https://archiveswest.orbiscascade.org/ark:80444/xv428765)
+* [Idaho photograph collection](https://archiveswest.orbiscascade.org/ark:80444/xv603274)
+* [University of Idaho Publications Department negatives](https://archiveswest.orbiscascade.org/ark:80444/xv826569)
+* [University of Idaho Alumni Association photograph collection](https://archiveswest.orbiscascade.org/ark:80444/xv564066)
+* [Photographs of Moscow, Idaho](https://archiveswest.orbiscascade.org/ark:80444/xv574126)
+* [University of Idaho photographs](https://archiveswest.orbiscascade.org/ark:80444/xv695094)
+* [Hodgins Drug photographs](https://archiveswest.orbiscascade.org/ark:80444/xv710086)
+* [Gem of the Mountains Collection](https://archiveswest.orbiscascade.org/ark:80444/xv112115)
+* [Photograph album of Theodore Roosevelt's visit](https://archiveswest.orbiscascade.org/ark:80444/xv206144)
 
-The amount of items being digitized and put online is growing quickly, so be sure to check our [Digital Initiatives](https://www.lib.uidaho.edu/digital/) collections often! Descriptions of all images from processed photograph collections housed in Special Collections can be searched through the [Historical Photograph Database](https://www.lib.uidaho.edu/special-collections/histphoto/).
+Be sure to check out more [Digital Collections](https://www.lib.uidaho.edu/digital/). To find out what other archival materials are available, contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).
 
 <div class="text-center">
 <figure class="figure">
@@ -38,7 +38,7 @@ The amount of items being digitized and put online is growing quickly, so be sur
 
 ## About Special Collections
 
-Head Librarian M. Belle Sweet first brought up the notion of a 'special collection' in September 1933, when in a letter she designated part of an old, unused elevator shaft that had been made into a small room with shelves. She saw the need to protect from environmental injury and theft any books that were deemed rare, valuable, unique, or for any reason should be treated with care. 
+Head Librarian, Mary Belle Sweet, first brought up the notion of a 'special collection' in September 1933. In a letter she designated part of an old, unused elevator shaft and it was made into a small room with shelves. She saw the need to protect from environmental injury and theft any books that were deemed rare, valuable, unique, or for any reason should be treated with care. 
 
 <div class="text-center">
 <figure class="figure">
@@ -51,7 +51,7 @@ Today, Special Collections and Archives specializes in the acquisition, preserva
 
 ## About Digital Initiatives
 
-The department was established in 2008 with an initial charge to digitize and make accessible the library’s renowned International Jazz Collections. Material from the Jazz Collections continue to be added to this day, and we continue to build on our collections. We currently maintain over 70 digital collections and applications, and work that begun in the lab has now been incorporated into a library department, Data and Digital Services, and a University center, the [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/). CDIL is a collaboration between the library and the [College of Letters, Arts, and Social Sciences (CLASS)](https://www.uidaho.edu/class) that advances digital scholarship work at UI.
+The department was established in 2008 with an initial charge to digitize and make accessible the library’s renowned International Jazz Collections. Material from the Jazz Collections continue to be added to this day, and we continue to build on our collections. We currently maintain over 70 digital collections and applications, The work which began in the lab was incorporated into a library department, Data and Digital Services, and a University center, the [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/). CDIL is a collaboration between the library and the [College of Letters, Arts, and Social Sciences (CLASS)](https://www.uidaho.edu/class) that advances digital scholarship work at the University of Idaho.
 
 <div class="text-center">
 <figure class="figure">
