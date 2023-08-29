@@ -1,7 +1,7 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
 title,Title,,,DCTERMS.title,headline
 creator,Creator,,,DCTERMS.creator,creator
-archival_date,Archival Date,,
+archival date,Archival Date,,
 date is approximate,Approximated Date
 description,Description,,,DCTERMS.description,description
 interviewee,Interviewee
